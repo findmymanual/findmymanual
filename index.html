@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="JurfCYshi7VZGsZ4J0Q6feUdmIwheNwzshcUrUbfbek" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Find My Manual</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17308900859');
+</script>
+
+  <style>
+    body {
+      
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e8edf1;
+      color: #1a1a1a;
+    }
+    header {
+      background-color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    header h1 {
+      font-size: 1.2rem;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #e8edf1, #c8d6e5);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      max-width: 600px;
+      color: #555;
+    }
+    .search-box {
+      margin-top: 30px;
+      display: flex;
+      max-width: 500px;
+      width: 100%;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .search-box input {
+      flex: 1;
+      padding: 15px;
+      border: none;
+      font-size: 1rem;
+      outline: none;
+    }
+    .search-box button {
+      background-color: #4e6e81;
+      color: white;
+      border: none;
+      padding: 0 30px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .content {
+      background-color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .content h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .content p {
+      max-width: 600px;
+      margin: 0 auto;
+      color: #666;
+    }
+    .mockup-img {
+      margin-top: 30px;
+      max-width: 90%;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1></h1>
+    <nav>
+     
+<a href="contact.html" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; color: #1a237e; margin-bottom: 20px;">
+  Contact Us
+</a>
+
+| <a href="terms.html" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; color: #1a237e; margin-bottom: 20px;">
+  Terms and Conditions
+</a>
+      
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Find My Manual</h2>
+    <p>Browse and search all manuals in one place. Just type in a product or keyword below to begin.</p>
+
+
+  
+
+ <form id="redirectForm" style="max-width: 400px; margin: 0 auto; text-align: center;" onsubmit="redirectToCheckout(event)">
+  
+  <input type="text" name="brand" id="brandInput" placeholder="Brand Name" required style="
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+  ">
+
+  <input type="text" name="model" id="modelInput" placeholder="Model or Serial Number" required style="
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+  ">
+
+  <button type="submit" style="
+    padding: 12px 30px;
+    background: linear-gradient(to right, #4e6e81, #2c3e50);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+  ">
+    Submit
+  </button>
+</form>
+
+<script>
+  function redirectToCheckout(event) {
+    event.preventDefault(); // Prevent normal form submission
+
+    const brand = encodeURIComponent(document.getElementById('brandInput').value);
+    const model = encodeURIComponent(document.getElementById('modelInput').value);
+
+    // Redirect to another HTML page with the data in the URL
+    window.location.href = `checkout.html?brand=${brand}&model=${model}`;
+  }
+</script>
+
+
+<script>
+  document.getElementById('paypalForm').addEventListener('submit', function () {
+    const brand = encodeURIComponent(document.getElementById('brandInput').value);
+    const model = encodeURIComponent(document.getElementById('modelInput').value);
+
+    setTimeout(function () {
+      window.location.href = `pages/checkout.html?brand=${brand}&model=${model}`;
+    }, 2000); // Delay to let PayPal open
+  });
+</script>
+
+
+
+
+
+ </section>
+
+
+
+<section style="display: flex; align-items: center; justify-content: space-between; padding: 60px 5%; gap: 40px; flex-wrap: wrap;">
+
+  <!-- Left Column: Text -->
+  <div style="flex: 1 1 50%; max-width: 600px;">
+    <h2 style="font-size: 2.2rem; font-weight: bold; color: #1a237e; margin-bottom: 20px;">
+      Show User Manual
+    </h2>
+    <p style="font-size: 1.1rem; color: #444;">
+      Find the documents and guides for your products. Filter by category or browse our featured manuals. With thousands of manuals available, we help you find exactly what you need.
+    </p>
+  </div>
+
+  <!-- Right Column: Image -->
+  <div style="flex: 1 1 40%; text-align: center;">
+    <img src="lady.jpg" alt="User Manual Preview" style="
+      height: 400px;
+      width: auto;
+      max-width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    ">
+  </div>
+
+</section>
+
+
+<section style="padding: 60px 20px; text-align: center; background-color: linear-gradient(to right, #e8edf1, #c8d6e5);">
+  <h2 style="font-size: 2.2rem; font-weight: bold; color: #1a237e; margin-bottom: 20px;">
+    Access Thousands of User Manuals Instantly
+  </h2>
+  <p style="font-size: 1.1rem; color: #444; max-width: 700px; margin: 0 auto;">
+    From appliances to electronics, we’ve built one of the largest databases of user manuals online. Whether it’s a new model or a vintage device, we help you find what others can’t. Just search your brand and model — we’ll do the rest.
+  </p>
+  <ul style="list-style: none; padding: 0; margin-top: 30px; font-size: 1rem; color: #333;">
+    <li>📚 Over 100,000 manuals available</li>
+    <li>🔍 Fast & accurate search by brand or model</li>
+    <li>📩 Manuals delivered directly to your inbox</li>
+    <li>💵 Only $19.95 — with a money-back guarantee</li>
+  </ul>
+</section>
+
+<div  style="display: flex; justify-content: center; gap: 20px;">
+  <img src="7days.png" alt="Profile" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;" />
+  <img src="instant.png" alt="Profile" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;" />
+  <img src="secure.png" alt="Profile" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;" />
+</div>
+
+<section style="padding: 30px; background-color: #f5f7fa; border-radius: 12px; text-align: center;">
+  <h2 style="color: #1a237e; font-size: 1.6rem; font-weight: bold; margin-bottom: 20px;">Available Brands</h2>
+  
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">LG</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Samsung</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Whirlpool</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Panasonic</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Hitachi</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Sharp</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Toshiba</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Electrolux</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">GE Appliances</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Bosch</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Midea</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Haier</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Beko</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Philips</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">KitchenAid</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Breville</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Daikin</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Carrier</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Ariston</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">Hisense</div>
+    <div style="background-color: #e3eaf5; color: #1a237e; padding: 10px 18px; border-radius: 30px; font-weight: bold; font-size: 0.95rem;">And many more</div>
+  </div>
+</section>
+
+
+
+
+
+<footer style="background-color: #f2f4f7; padding: 40px 20px; text-align: center; color: #4e6e81; font-size: 0.95rem;">
+
+  <p style="margin-bottom: 20px;">
+    
+   | <a href="terms.html" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>
+
+   | <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+
+   | <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact Us</a>
+     
+      <p style="color: #888;">&copy; Find My manual. All rights reserved.</p>
+</footer>

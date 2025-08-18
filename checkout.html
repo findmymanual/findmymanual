@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PayPal Order Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fa;
+      color: #33475b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    form#orderForm {
+      background: #fff;
+      padding: 30px 35px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(23, 97, 160, 0.2);
+      width: 360px;
+    }
+    form#orderForm label {
+      display: block;
+      margin-bottom: 15px;
+      font-weight: 600;
+      color: #1761a0;
+    }
+    form#orderForm input[type="text"],
+    form#orderForm input[type="email"] {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1.5px solid #a0aec0;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #33475b;
+      transition: border-color 0.3s ease;
+    }
+    form#orderForm input[type="text"]:focus,
+    form#orderForm input[type="email"]:focus {
+      border-color: #1761a0;
+      outline: none;
+    }
+    form#orderForm input[readonly] {
+      background-color: #e2e8f0;
+      cursor: not-allowed;
+    }
+    button {
+      width: 100%;
+      background-color: #1761a0;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 12px 0;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #134a75;
+    }
+  </style>
+</head>
+<body>
+
+<form id="orderForm">
+  <label for="order_number">Order Number</label>
+  <input type="text" id="order_number" name="order_number" readonly />
+
+  <label for="name">Name</label>
+  <input type="text" id="name" name="customer_name" placeholder="Your full name" required />
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="customer_email" placeholder="your.email@example.com" required />
+
+  <label for="phone">Phone Number</label>
+  <input type="text" id="phone" name="customer_phone" placeholder="Phone Number" required />
+
+  <label for="brand">Brand Name</label>
+  <input type="text" id="brand" name="brand_name" placeholder="Brand Name" required />
+
+  <label for="model">Model or Serial Number</label>
+  <input type="text" id="model" name="model_number" placeholder="Model or Serial Number" required />
+
+  <label for="product">Product</label>
+  <input type="text" id="product" name="item_name" value="User Manual" readonly />
+
+  <label for="amount">Amount (USD)</label>
+  <input type="text" id="amount" name="amount" value="19.95" readonly />
+
+  <button type="submit">Pay with PayPal</button>
+</form>
+
+<script>
+  // Generate a random 6-digit order number
+  function generateOrderNumber() {
+    return Math.floor(100000 + Math.random() * 900000).toString();
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("order_number").value = generateOrderNumber();
+  });
+
+  document.getElementById('orderForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const name = form.customer_name.value.trim();
+    const email = form.customer_email.value.trim();
+    const phone = form.customer_phone.value.trim();
+    const brand = form.brand_name.value.trim();
+    const model = form.model_number.value.trim();
+
+    if (!name || !email || !phone || !brand || !model) {
+      alert('Please complete all required fields.');
+      return;
+    }
+
+    // Collect form data (optional: send to Formspree)
+    const formData = new FormData(form);
+
+    try {
+      await fetch('https://formspree.io/f/xwpbjpwg', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      });
+    } catch (error) {
+      console.warn('Formspree failed or is slow:', error);
+    }
+
+    // Redirect to your PayPal link
+    window.location.href = 'https://www.paypal.com/ncp/payment/G7JR8GPE4K9W4';
+  });
+</script>
+
+</body>
+</html>   

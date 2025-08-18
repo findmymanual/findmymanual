@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us | Find My Manual</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f4f7;
+      color: #2c3e50;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h1 {
+      color: #2c3e50;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    p.description {
+      font-size: 1rem;
+      color: #4e6e81;
+      margin-bottom: 25px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      padding: 12px 24px;
+      background: linear-gradient(to right, #4e6e81, #2c3e50);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #4e6e81;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p class="description">Need help finding a manual? Have questions about your order? Reach out to us and we'll get back to you as soon as possible.</p>
+
+    <form action="https://formspree.io/f/xrbkyqgz" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Find My Manual. All rights reserved.
+  </footer>
+
+</body>
+</html>
