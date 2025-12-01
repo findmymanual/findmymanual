@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orders Dashboard</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f0f2f5; padding: 20px; }
+  h1 { text-align: center; color: #333; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+  th { background: #2c3e50; color: #fff; }
+  tr:nth-child(even) { background: #e8edf1; }
+</style>
+</head>
+<body>
+
+<h1>Orders Dashboard</h1>
+
+<table id="ordersTable">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Order #</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Brand</th>
+      <th>Model</th>
+      <th>Amount</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Orders will populate here -->
+  </tbody>
+</table>
+
+<script>
+async function loadOrders() {
+  try {
+    const res = await fetch('https://findmymanual.live/.netlify/functions/getOrders');
+    const orders = await res.json();
+    const tbody = document.querySelector('#ordersTable tbody');
+    tbody.innerHTML = '';
+
+    orders.forEach(order => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${order.order_number}</td>
+        <td>${order.customer_name}</td>
+        <td>${order.customer_email}</td>
+        <td>${order.customer_phone}</td>
+        <td>${order.brand_name}</td>
+        <td>${order.model_number}</td>
+        <td>${order.amount}</td>
+        <td>${order.payment_status || 'pending'}</td>
+        <td>${new Date(order.timestamp).toLocaleString()}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  } catch (err) {
+    console.error("Failed to load orders:", err);
+  }
+}
+
+// Initial load
+loadOrders();
+
+// Refresh every 30 seconds
+setInterval(loadOrders, 30000);
+</script>
+
+</body>
+</html>

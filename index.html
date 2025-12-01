@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><body>
+
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+
+  <meta name="google-site-verification" content="9VtHF5Cduk8ms87GhroJ8whpG7OrQg9eq8YIgAFrhnY" />
+
+      <meta name="robots" content="index, follow">
+<meta name="author" content="Find My Manual">
+<link rel="canonical" href="https://findmymanual.live/">
+
+
+<!-- Google AdSense Auto Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "pub-1424202759904253",
+    enable_page_level_ads: true
+  });
+</script>
+
+  <meta name="google-site-verification" content="JurfCYshi7VZGsZ4J0Q6feUdmIwheNwzshcUrUbfbek" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="google-adsense-account" content="ca-pub-1424202759904253">
+
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; background-color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.05); flex-wrap: wrap;">
+  
+  <!-- Logo / Title -->
+  <h1 style="font-size: 1.2rem; color: #4e6e81; margin: 0;"></h1>
+
+  <!-- Navigation Links -->
+  <nav style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 10px;">
+    <a href="privacy.html" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; font-weight: bold; color: #4e6e81; text-decoration: none;">Privacy Policy</a>
+    <span style="color: #4e6e81;">|</span>
+    <a href="terms.html" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; font-weight: bold; color: #4e6e81; text-decoration: none;">Terms and Conditions</a>
+    <span style="color: #4e6e81;">|</span>
+    <a href="about.html" target="_blank" rel="noopener noreferrer" style="font-size: 0.95rem; font-weight: bold; color: #4e6e81; text-decoration: none;">About Us</a>
+  </nav>
+
+</header>
+
+  <title>Find My Manual</title>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17308900859');
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-1424202759904253">
+</amp-auto-ads>
+
+  
+
+ 
+  <section class="hero" style="text-align:center; padding:60px 20px; background: linear-gradient(to right, #e8edf1, #c8d6e5);">
+  <h2 style="font-size:2.5rem; margin-bottom:20px; color:#4e6e81;">Find My Manual</h2>
+
+  <p> We’ll send your manual directly to your inbox — Simply enter your details below </p><br>
+
+    
+
+ <form id="redirectForm" style="max-width: 400px; margin: 0 auto; text-align: center;" onsubmit="redirectToCheckout(event)">
+  
+  <input type="text" name="brand" id="brandInput" placeholder="Brand Name" required style="
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  ">
+
+  <input type="text" name="model" id="modelInput" placeholder="Model or Serial Number" required style="
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; 
+  ">
+
+  <button type="submit" style="
+    padding: 12px 30px;
+    background: linear-gradient(to right, #4e6e81, #2c3e50);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; 
+  ">
+    Submit
+  </button>
+</form>
+
+<script>
+  function redirectToCheckout(event) {
+    event.preventDefault(); // Prevent normal form submission
+
+    const brand = encodeURIComponent(document.getElementById('brandInput').value);
+    const model = encodeURIComponent(document.getElementById('modelInput').value);
+
+    // Redirect to another HTML page with the data in the URL
+    window.location.href = `checkout.html?brand=${brand}&model=${model}`;
+  }
+</script>
+
+
+<script>
+  document.getElementById('paypalForm').addEventListener('submit', function () {
+    const brand = encodeURIComponent(document.getElementById('brandInput').value);
+    const model = encodeURIComponent(document.getElementById('modelInput').value);
+
+    setTimeout(function () {
+      window.location.href = `pages/checkout.html?brand=${brand}&model=${model}`;
+    }, 2000); // Delay to let PayPal open
+  });
+</script>
+
+
+<section style="display: flex; align-items: center; justify-content: space-between; padding: 60px 5%; gap: 40px; flex-wrap: wrap;">
+
+ 
+  <!-- Left Column: Text -->
+  <div style="flex: 1 1 50%; max-width: 600px; text-align: center;">
+    <h2 style="font-size: 2.2rem; font-weight: bold; color: #4e6e81; margin-bottom: 20px; ">
+      User Manual
+    </h2>
+    <p style="font-size: 1.1rem; color: #444; text-align: center;">
+      Find the documents and guides for your products. Browse by category or explore our featured manuals to quickly locate the information you need. With thousands of manuals available, we make it easy to find exactly what you’re looking for.
+
+Our collection covers a wide range of brands and product types, from home appliances and electronics to tools, gadgets, vehicles and office equipment. Each manual is organized for convenience so you can save time and solve problems faster.
+
+Whether you’ve lost the original booklet, need a digital copy on the go, or simply want to understand your product better, our platform provides clear, reliable, and easy-to-access manuals anytime, anywhere.
+    </p>
+  </div>
+
+  <!-- Right Column: Image -->
+  <div style="flex: 1 1 40%; text-align: center;">
+    <img src="lady.jpg" alt="User Manual Preview" style="
+      height: 400px;
+      width: auto;
+      max-width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    ">
+  </div>
+
+</section>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1424202759904253"
+     crossorigin="anonymous"></script>
+<!-- FMM -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1424202759904253"
+     data-ad-slot="5235434866"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<!-- How It Works -->
+  <section style="text-align:center; padding:40px 20px;">
+  <h2 style="
+    font-size:2rem; 
+    color:#ffffff; 
+    display:inline-block; 
+    padding:12px 30px; 
+    background:#4e6e81; 
+    border-radius:16px; 
+    margin-bottom:30px;
+  ">How It Works</h2>
+    <div class="how-works">
+      <div>
+        <h3 style="font-size:1.4rem; color:#0070ba;">1</h3><br>
+        <img src="e.png" alt="Enter Details" /><br>
+        <p><br><strong>Enter your details, brand, and serial number of the device or appliance.</strong></p>
+      </div>
+      <div>
+        <h3 style="font-size:1.4rem; color:#0070ba;">2</h3><br>
+        <img src="q.png" alt="Checkout Securely" />
+        <p><br><strong>Checkout securely with PayPal.</strong></p>
+      </div>
+      <div>
+        <h3 style="font-size:1.4rem; color:#0070ba;">3</h3><br>
+        <img src="w.png" alt="Receive Manual" />
+        <p><br><strong>Receive your manual straight to your email inbox.</strong></p>
+      </div>
+    </div>
+  </section></div></div>
+
+<section style="padding: 60px 20px; text-align: center; background: linear-gradient(to right, #e8edf1, #c8d6e5);">
+  <h2 style="font-size: 2.2rem; font-weight: bold; color: #4e6e81; margin-bottom: 20px;">
+    Access Thousands of User Manuals Instantly
+  </h2>
+  <p style="font-size: 1.1rem; color: #444; max-width: 700px; margin: 0 auto;">
+    From appliances to electronics, we’ve built one of the largest databases of user manuals online. Whether it’s a new model or a vintage device, we help you find what others can’t. Just enter your brand and model — we’ll do the rest.
+  </p>
+  <ul style="list-style: none; padding: 0; margin-top: 30px; font-size: 1rem; color: #333;">
+    <li>📚 Over 100,000 manuals available</li>
+    <li>🔍 Fast & accurate search by brand or model</li>
+    <li>📩 Manuals delivered directly to your inbox</li>
+    <li>💵 Only $9.95 — with a money-back guarantee if your manual is not available</li>
+  </ul>
+</section>
+
+
+
+
+<!-- Box Container -->
+<section style="text-align:center; padding:40px 30px 30px 30px; background:#f0f4f8;">
+  <h2 style="
+    font-size:2rem; 
+    color:#ffffff; 
+    display:inline-block; 
+    padding:12px 30px; 
+    background:#4e6e81; 
+    border-radius:16px; 
+    margin-bottom:30px;
+  ">
+    Available Brands
+  </h2>
+
+  <!-- Box Container -->
+  <div
+  style="background:#ffffff; border:2px solid #4e6e81; border-radius:16px; padding:30px; max-width:1100px; margin:0 auto;">
+  <div style="
+    display:flex; 
+    flex-wrap:wrap; 
+    justify-content:center; 
+    gap:15px;
+  ">
+    <a href="LgDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">LG</a>
+      <a href="BrotherDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Brother</a>
+<a href="JanomeDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Janome</a>
+      <a href="SingerDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Singer</a>
+      <a href="SonyDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Sony</a>
+    <a href="SamsungDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Samsung</a>
+    <a href="WhirlpoolDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Whirlpool</a>
+    <a href="PanasonicDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Panasonic</a>
+    <a href="HitachiDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Hitachi</a>
+    <a href="SharpDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Sharp</a>
+    <a href="#"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Toshiba</a>
+    <a href="#"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Electrolux</a>
+    <a href="GEDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">GE</a>
+    <a href="#"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Bosch</a>
+    <a href="#"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Midea</a>
+    <a href="#"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Haier</a>
+    <a href="CanonDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Canon</a>
+    <a href="#"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Philips</a>
+    <a href="#"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">KitchenAid</a>
+    <a href="Nikonpdf.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Nikon</a>
+    <a href="#"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Daikin</a>
+    <a href="#"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Carrier</a>
+    <a href="HpDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">HP</a>
+    <a href="#"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Hisense</a>
+    <a href="#"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#cde2ee; color:#1a237e; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">And
+      many more</a>
+  </div>
+</div>
+</section>
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Find My Manual — Get Your Product Manual Sent to Your Email</title>
+    <meta name="description" content="Can’t find your product manual? Request it on Find My Manual and we’ll send the PDF version directly to your email. Fast, easy, and free to request.">
+  <meta name="keywords" content="find my manual, user manual request, get product manual by email, download manual PDF, appliance manual lookup">
+  <link rel="stylesheet" href="style.css"> <!-- your existing CSS -->
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find My Manual — Photo Gallery</title>
+  <style>
+    /* Basic Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #e8edf1;
+      color: #4e6e81;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      max-width: 90%;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+
+    main {
+      width: 100%;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #4e6e81;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .hero-btn, .floating-btn {
+      background:#4e6e81;
+      color:#fff;
+      padding:14px 28px;
+      text-decoration:none;
+      border-radius:6px;
+      font-size:1rem;
+      font-weight:600;
+      display:inline-block;
+    }
+
+    /* How It Works */
+    .how-works {
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:40px;
+      max-width:900px;
+      margin:0 auto;
+    }
+
+    .how-works div {
+      flex:1;
+      min-width:220px;
+      text-align:center;
+    }
+
+    .how-works img {
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      object-fit:cover;
+    }
+
+    .comparison {
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:40px;
+      max-width:900px;
+      margin:0 auto;
+    }
+
+    .comparison div {
+      flex:1;
+      min-width:250px;
+      background:#fff;
+      padding:25px;
+      border-radius:8px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .comparison .service {
+      border:2px solid #0070ba;
+      box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    /* FAQ */
+    .faq-section {
+      padding:50px 20px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+      flex-wrap:wrap;
+      gap:40px;
+      background:#f7f9fc;
+    }
+
+    .faq-section img {
+      max-width:100%;
+      border-radius:8px;
+    }
+
+    .faq-text {
+      flex:2;
+      min-width:300px;
+      color:#444;
+      line-height:1.6;
+      font-size:1rem;
+      text-align:left;
+    }
+
+  
+
+
+    /* Floating Order Button */
+    .floating-btn {
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:linear-gradient(to right, #4e6e81, #2c3e50);
+      box-shadow:0 4px 8px rgba(0,0,0,0.2);
+      z-index:1000;
+    }
+
+    footer {
+      width: 100%;
+      padding: 20px;
+      background:#2c3e50;
+      color:#fff;
+      text-align:center;
+      margin-top:50px;
+    }
+
+    
+    
+  </style>
+</head>
+
+
+<section style="padding: 60px 20px; text-align: center; background: linear-gradient(to right, #e8edf1, #c8d6e5);">
+
+  <!-- Hero Section -->
+  <section style="text-align:center; padding:60px 20px;">
+    <h1 style="font-size:2.2rem; font-weight:bold; color:#4e6e81; margin-bottom:20px;">
+      Get Your Device and Appliance Manual
+    </h1>
+    <p style="font-size:1.1rem; color:#555; margin-bottom:25px;">
+      <strong>Fast • Secure • Delivered directly to your email</strong><br>
+      Never waste time searching for lost booklets – access your complete manual instantly, with all setup instructions, troubleshooting tips, and safety guidelines ready whenever and wherever you need them. Say goodbye to frustration and enjoy full control of your device with ease and confidence.
+    </p>
+    <a href='checkout.html' class="hero-btn">Order Your Manual Now</a>
+  </section>
+
+ 
+<!-- New Section with updated style -->
+<section style="padding: 20px 20px; text-align: center; background: linear-gradient(to right, #e8edf1, #c8d6e5);">
+
+  <h1 style="
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-weight:bold; 
+    font-size:1.5rem; 
+    color:#4e6e81;             /* Blue text */
+    background:#ffffff;         /* White background */
+    border: 2px solid #4e6e81; /* Blue outline */
+    display:inline-block; 
+    padding:12px 30px; 
+    border-radius:16px; 
+    margin-bottom:6px;
+  ">
+    Don’t know your serial number?<br>
+    Click an image below for step-by-step instructions on how to get it.
+  </h1>
+
+</section>
+
+<section style="text-align:center; padding:3px 50px;">
+    <h1 style="font-size:2rem; font-weight:bold; color:#4e6e81; margin-bottom:5px;">
+      
+      Devices & Appliances, Vehicles and many more ..
+    </h1>
+    </section>
+
+
+
+<!-- Container -->
+<div style="display: flex; flex-wrap: wrap; justify-content: center; max-width: 1200px; margin: auto;">
+
+  <!-- Tile -->
+  <div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border-radius: 10px; border: 2px solid #4e6e81; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="speaker SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <!-- Square image container -->
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;"
+      onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="speaker.jpg" alt="Speaker" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Speaker</code></div>
+    </a>
+  </div>
+
+  <!-- Headphones -->
+  <div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="headphone SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;"
+      onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="headphone.jpeg" alt="Headphones" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Headphones / Audio</code></div>
+    </a>
+  </div>
+
+  <!-- Smartphone -->
+  <div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="smartphone SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;" onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="smartphone.avif" alt="Smartphone" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Smartphone</code></div>
+    </a>
+  </div>
+
+  <!-- Camera -->
+  <div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="camera SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;"
+       onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="camera.jpeg" alt="Camera" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Camera</code></div>
+    </a>
+  </div>
+
+</div> 
+
+<!-- Container -->
+<div style="display: flex; flex-wrap: wrap; justify-content: center; max-width: 1200px; margin: auto;">
+
+
+<div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="car SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <!-- Square image container -->
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;"
+       onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="car.png" alt="Speaker" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Car</code></div>
+    </a>
+  </div>
+
+<div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="truck SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <!-- Square image container -->
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;" onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="truck.jpeg" alt="Speaker" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Truck or Van</code></div>
+    </a>
+  </div>
+
+  <div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="motor SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <!-- Square image container -->
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;"
+       onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="motor.jpg" alt="Speaker" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Motorbike</code></div>
+    </a>
+  </div>
+
+  <div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="crane SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <!-- Square image container -->
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;"
+       onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="crane.jpeg" alt="Speaker" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Crane</code></div>
+    </a>
+  </div></div>
+
+  <!-- Container -->
+<div style="display: flex; flex-wrap: wrap; justify-content: center; max-width: 1200px; margin: auto;">
+
+
+<div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="ref SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <!-- Square image container -->
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;"
+       onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="ref.avif" alt="Speaker" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Refrigerator</code></div>
+    </a>
+  </div>
+
+  <div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="washer SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <!-- Square image container -->
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;"
+       onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="washing.avif" alt="Speaker" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Laundry / Washer</code></div>
+    </a>
+  </div>
+
+  <div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="microwave SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <!-- Square image container -->
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;"
+       onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="microwave.png" alt="Speaker" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Microwave / Oven</code></div>
+    </a>
+  </div>
+
+  <div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="vacuum SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <!-- Square image container -->
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;"
+       onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="vacuum.webp" alt="Speaker" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Vacuum</code></div>
+    </a>
+  </div></div>
+
+  <!-- Container -->
+<div style="display: flex; flex-wrap: wrap; justify-content: center; max-width: 1200px; margin: auto;">
+
+
+<div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="sewing SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <!-- Square image container -->
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;"
+       onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="sewing.webp" alt="Speaker" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Sewing Machine</code></div>
+    </a>
+  </div>
+
+<div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="lawn mower SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <!-- Square image container -->
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;"
+       onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="lawn mower.webp" alt="Speaker" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Lawn Mower</code></div>
+    </a>
+  </div>
+
+  <div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="fireplace SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <!-- Square image container -->
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;"
+       onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="fire.jpg" alt="Speaker" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Electric Fireplace</code></div>
+    </a>
+  </div>
+
+<div style="width: 32%; max-width: 180px; margin: 6px; border: 1px solid #ccc; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+
+    <a href="aircon SN.html" style="text-decoration: none; color: inherit; display: block;">
+      <!-- Square image container -->
+      <div style="position: relative; width: 100%; padding-top: 100%; overflow: hidden;"
+       onmouseover="this.style.transform='scale(1.05)'" 
+         onmouseout="this.style.transform='scale(1)'">
+        <img src="aircon.webp" alt="Speaker" style="position: absolute; top: 50%; left: 50%; width: 80%; height: 80%; transform: translate(-50%, -50%); object-fit: contain;">
+      </div>
+      <div style="padding: 6px; font-size: 0.9rem; color: #333;"><code>Airconditioner</code></div>
+    </a>
+  </div>
+
+
+</html><br></section>
+
+
+
+  <section>
+    <h2 style="text-align:center; background:#4e6e81; color:#fff; display:inline-block; padding:12px 30px; border-radius:16px; margin-bottom:40px;">
+      Why Choose Us?
+    </h2>
+
+    <!-- 3-column layout: Image + 2 boxes -->
+<section style="display:flex; flex-wrap:wrap; gap:20px; padding:40px 20px; max-width:1200px; margin:0 auto; align-items: stretch;">
+
+    <!-- Column 1: Box 1 -->
+  <div style="text-align: left; min-width:200px; background:#fff; padding:20px; border:1px solid #ddd; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+    <h3 style="color:#d32f2f; text-align: center;">Searching Online ❌</h3><br>
+    <ul style="list-style:none; padding-left:0; color:#555;">
+      <li>❌ Takes a lot of time</li>
+      <li>❌ Risk of unsafe websites</li>
+      <li>❌ Manuals often incomplete</li>
+      <li>❌ Frustrating to navigate multiple websites
+      <li>❌ Often outdated or incorrect manuals
+      <li>❌ Difficult to find manuals for older or rare models
+      <li>❌ Risk of malware or unsafe downloads
+      <li>❌ Manuals split across different pages or PDFs
+      <li>❌ Time wasted contacting customer support
+      <li>❌ Confusing formats that are hard to read or print
+    </ul>
+  </div>
+
+  <!-- Column 2: Image -->
+  <div style="flex:1; min-width:200px; display:flex; justify-content:center; align-items:center;">
+    <img src="r.jpg" alt="Image" style="width:auto; height:100%; max-height:400px; border-radius:8px; object-fit:cover;" />
+  </div>
+
+  <!-- Column 3: Box 2 -->
+  <div style="text-align: left; flex:1; min-width:200px; background:#fff; padding:20px; border:2px solid #0070ba; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.08);">
+    <h3 style="color:#0070ba; text-align: center;">FindMyManual ✅</h3><br>
+    <ul style="list-style:none; padding-left:0; color:#555;">
+      <li>✅ Money-back guarantee if your manual isn’t available</li>
+      <li>✅ 24/7 customer support — always here to help you find the right manual</li>
+      <li>✅ All brands and models covered — from appliances to electronics</li>
+      <li>✅ Step-by-step assistance if you can’t locate your model number</li>
+      <li>✅ Trusted by users in 50+ countries</li>
+      <li>✅ Thousands of satisfied customers</li>
+      <li>✅ Over 95% manual delivery success rate</li>
+      <li>✅ Verified and high-quality PDF copies</li>
+      <li>✅ No subscriptions — one-time manual requests only</li>
+      <li>✅ Delivered instantly to your email</li>
+      <li>✅ 100% safe & secure payment</li>
+      <li>✅ Easy, fast, and reliable</li>
+    </ul>
+  </div>
+
+</section>
+
+
+  
+  <!-- Floating Order Button -->
+  <a href='checkout.html' class="floating-btn">Order Now</a>
+
+  
+
+</html>
+
+<section style="padding: 60px 20px; text-align: center; background: linear-gradient(to right, #e8edf1, #c8d6e5);">
+
+
+  <!-- Security & Payment Badges -->
+  <section style="max-width: 1000px; margin: 60px auto 20px; padding: 20px; text-align: center;">
+    <h2 style="color: #4e6e81; font-size: 1.6rem; margin-bottom: 18px;">Safe & Secure Checkout</h2>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; align-items: center;">
+      <!-- Security Badges Container -->
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: stretch; gap: 20px; max-width: 1000px; margin: 40px auto;">
+
+  <!-- Badge Style -->
+    <style>
+      .badge {
+        background: #ffffff;
+        border: 2px solid #4e6e81;
+        border-radius: 10px;
+        padding: 12px 18px;
+        display: flex;
+        flex-direction: column;  /* change to column */
+        align-items: center;     /* center the content */
+        gap: 8px;
+        flex: 1 1 180px;
+        min-width: 180px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .badge img {
+        width: 200px;   /* bigger image */
+        height: 200px;
+        object-fit: contain;
+      }
+
+      .badge strong {
+        color: #4e6e81;
+        display: block;
+        font-size: 1rem;
+      }
+
+      .badge small {
+        color: #666;
+        font-size: 0.85rem;
+      }
+    </style>
+
+    <!-- SSL Secure -->
+    <div class="badge">
+      <img src="ssl.jpg" alt="SSL Secure">
+      <strong>SSL Secure</strong>
+      <small>256-bit Encryption</small>
+    </div>
+
+    <!-- Verified Payments -->
+    <div class="badge">
+      <img src="pci.jpg" alt="Verified Payments">
+      <strong>Verified Payments</strong>
+      <small>PCI DSS Compliant</small>
+    </div>
+
+    <!-- Accepted Cards -->
+    <div class="badge">
+      <img src="accepted cards.webp" alt="Accepted Cards">
+      <strong>Accepted Cards</strong>
+      <small>Visa, MasterCard, PayPal</small>
+    </div>
+
+    <!-- Trusted Checkout -->
+    <div class="badge">
+      <img src="secure.jpg" alt="Trusted Checkout">
+      <strong>Trusted Checkout</strong>
+      <small>Secure Transactions</small>
+    </div>
+
+  </div>
+</section>
+
+  </div></div></div></section></html>
+
+<!-- Business Hours -->
+  <div style="margin-top: 20px; text-align: center;">
+    <h3 style="font-size: 1.4rem; color: #4e6e81; margin-bottom: 10px;">We're Here for You</h3>
+    <div style="
+      background-color: #ffffff; 
+      padding: 20px; 
+      border-radius: 10px; 
+      max-width: 650px; 
+      margin: 20px auto; 
+      text-align: center; 
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    ">
+      <p style="color: #4e6e81; font-size: 1rem; line-height: 1.6; margin: 0;">
+        ⏰ <strong>Open 24 hours a day, 7 days a week</strong><br>
+        ✉️ Reach us anytime at 
+        <a href="mailto:findmymanual@outlook.com" style="color: #4e6e81; text-decoration: none; font-weight: bold;">
+          findmymanual@outlook.com
+        </a> — we’re always ready to help!
+      </p>
+    </div>
+  </div></section>
+
+  
+<!-- Footer Section -->
+<footer style="
+  width: 100%;
+  background: linear-gradient(to right, #4e6e81, #2c3e50);
+  border-radius: 16px;
+  color: #ffffff;
+  padding: 60px 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;  
+  text-align: center;
+  box-sizing: border-box;
+">
+
+  <!-- Footer Container -->
+  <div class="footer-container" style="
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start; 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    gap: 60px;
+  ">
+
+    <!-- About -->
+    <div style="min-width: 240px; flex: 1; text-align: center;">
+      <h3 style="
+        color: #ffffff; 
+        font-size: 1.6rem; 
+        margin-bottom: 18px; 
+        border-bottom: 2px solid #4e6e81; 
+        padding-bottom: 6px;
+      ">About</h3>
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        <li><a href="about.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">About Us</a></li>
+        <li><a href="FAQ.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">F.A.Q.</a></li>
+        <li><a href="survey.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">What Our Customers Say</a></li>
+        <li><a href="mailto:findmymanual@outlook.com" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Logo -->
+    <div style="flex: 0 0 auto; text-align: center;">
+      <img src="logo2.png" alt="Find My Manual Logo" style="
+        height: 180px;
+        width: 180px;
+        border-radius: 12px;
+        object-fit: contain;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease;
+      " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    </div>
+
+    <!-- Legal -->
+    <div style="min-width: 240px; flex: 1; text-align: center;">
+      <h3 style="
+        color: #ffffff; 
+        font-size: 1.6rem; 
+        margin-bottom: 18px; 
+        border-bottom: 2px solid #4e6e81; 
+        padding-bottom: 6px;
+      ">Legal</h3>
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        <li><a href="privacy.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Privacy Policy</a></li>
+        <li><a href="cookie.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Cookie Policy</a></li>
+        <li><a href="terms.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Terms of Use</a></li>
+        <li><a href="refund.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Refund Policy</a></li>
+      </ul>
+    </div>
+  </div>
+
+        <div>
+          <strong style="color: #223d4d;">Trusted Checkout</strong><br>
+          <small style="color: #c5a6a6;">100% Safe & Protected</small>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top: 16px; color: #e0e0e0; font-size: 0.95rem;">
+      🔒 Your payment is protected by advanced SSL encryption. We never store your full card details.
+    </p>
+  </section></body>
+
+  
+
+  <!-- Footer Bottom Links -->
+  <div style="text-align: center; margin-top: 25px;">
+    <a href="privacy.html" target="_blank" style="font-size: 1rem; font-weight: bold; color: #4e6e81; text-decoration: none; margin: 0 10px;">Privacy Policy</a> |
+    <a href="terms.html" target="_blank" style="font-size: 1rem; font-weight: bold; color: #4e6e81; text-decoration: none; margin: 0 10px;">Terms and Conditions</a> |
+    <a href="about.html" target="_blank" style="font-size: 1rem; font-weight: bold; color: #4e6e81; text-decoration: none; margin: 0 10px;">About Us</a>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div style="margin-top: 50px; font-size: 0.9rem; color: #4e6e81; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; padding-bottom: 20px; font-weight: bold; text-align: center;">
+    © 2025 Find My Manual. All rights reserved.
+  </div>
+</footer><br>

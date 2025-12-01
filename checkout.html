@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout Page</title>
+
+  <style>
+    body, h2, h3, p, label, input, button {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    body {
+      background-color: #e8edf1;
+      color: #080808;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .order-section {
+      background: linear-gradient(to right, #4e6e81, #2c3e50);
+      border-radius: 12px;
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    .order-section h2 {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+    .order-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: left;
+    }
+    .order-section label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+    .order-section input[type="text"],
+    .order-section input[type="email"],
+    .order-section input[readonly],
+    .order-section input[type="tel"] {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+      color: #33475b;
+      outline: none;
+    }
+    .order-section input[readonly] {
+      background-color: #d1d5db;
+      cursor: not-allowed;
+    }
+    .order-section input::placeholder {
+      color: #7a7a7a;
+    }
+    .order-section button {
+      background: #ffffff;
+      color: #2c3e50;
+      padding: 12px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .order-section button:hover {
+      background: #f5f5f5;
+    }
+    .trust-section {
+      padding: 25px 20px;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 20px;
+      background: linear-gradient(to right, #4e6e81, #2c3e50);
+      color: #ffffff;
+    }
+    .trust-section h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .trust-section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .trust-section .logos {
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+    .trust-section .logos img {
+      height:50px;
+      border-radius:6px;
+      background:#fff;
+      padding:5px;
+    }
+    /* Download button on thank-you page */
+    .download-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #1761a0;
+      color: #fff;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .download-btn:hover { background-color: #0f3c6b; }
+  </style>
+</head>
+
+<body>
+  <div class="order-section">
+    <h2>Order Your Manual</h2>
+    <form id="orderForm">
+      <label for="order_number">Order Number</label>
+      <input type="text" id="order_number" name="order_number" readonly />
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="customer_name" placeholder="Your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="customer_email" placeholder="your.email@example.com" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="customer_phone" placeholder="Phone Number" required />
+
+      <label for="brand">Brand Name</label>
+      <input type="text" id="brand" name="brand_name" placeholder="Brand Name" required />
+
+      <label for="model">Serial Number</label>
+      <input type="text" id="model" name="model_number" placeholder="Serial Number" required />
+
+      <label for="product">Product Name</label>
+      <input type="text" id="product" name="item_name" value="User Manual" readonly />
+
+      <label for="amount">Amount (USD)</label>
+      <input type="text" id="amount" name="amount" value="$9.95" readonly />
+
+      <!-- Hidden input to store the PDF link from the product page -->
+      <input type="hidden" id="pdf_url" name="pdf_url" value="">
+
+      <button type="submit">Pay Now</button>
+
+      <h2 style="color:#4e6e81; text-align:center;">
+        Checkout for: <span id="productName" style="font-weight:bold;">Loading...</span>
+      </h2>
+
+      <div class="trust-section">
+        <h2>Secure & Trusted Payment</h2>
+        <p>Your payment is 100% secure. We use PayPal, the world's trusted payment system, and all transactions are protected by SSL encryption.</p>
+        <div class="logos">
+          <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
+          <img src="mastercard.png" alt="MasterCard">
+          <img src="visa.jpeg" alt="Visa">
+        </div>
+      </div>
+    </form>
+
+    <!-- Container for download button after payment -->
+    <div id="downloadContainer"></div>
+  </div>
+
+<script>
+  // Generate random order number
+  function generateOrderNumber() {
+    return Math.floor(100000 + Math.random() * 900000).toString();
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("order_number").value = generateOrderNumber();
+
+    // Load product name from URL
+    const params = new URLSearchParams(window.location.search);
+    const productName = params.get("product");
+    const productDisplay = document.getElementById("productName");
+    if (productDisplay && productName) {
+      productDisplay.textContent = decodeURIComponent(productName).replace(/_/g, " ");
+      // Save product PDF link if passed in URL
+      const pdfLink = params.get("pdf"); // e.g., ?pdf=https://link-to-pdf
+      if (pdfLink) {
+        document.getElementById("pdf_url").value = pdfLink;
+        localStorage.setItem("lastPDF", pdfLink);
+      }
+    }
+
+    // If returning from PayPal
+    if (params.get('paypal') === 'success') {
+      const downloadContainer = document.getElementById('downloadContainer');
+      const pdfUrl = localStorage.getItem('lastPDF');
+      if (pdfUrl) {
+        const downloadLink = document.createElement('a');
+        downloadLink.href = pdfUrl;
+        downloadLink.className = 'download-btn';
+        downloadLink.textContent = '⬇ Download Your Manual';
+        downloadContainer.appendChild(downloadLink);
+      } else {
+        alert("Thank you for your payment! Please contact support to receive your manual.");
+      }
+    }
+  });
+
+  // Handle form submission
+  document.getElementById("orderForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = Object.fromEntries(new FormData(form).entries());
+    data.payment_status = "pending";
+
+    try {
+      // 1️⃣ Send to Formspree
+      await fetch("https://formspree.io/f/xldpwdpb", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      // 2️⃣ Save order in Netlify backend
+      await fetch("https://findmymanual.live/.netlify/functions/submitOrder", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      // 3️⃣ Redirect to PayPal with custom data including PDF link
+      const query = new URLSearchParams({
+        invoice_number: data.order_number,
+        custom: JSON.stringify({
+          customer_name: data.customer_name,
+          customer_email: data.customer_email,
+          customer_phone: data.customer_phone,
+          pdf: data.pdf_url
+        })
+      });
+
+      window.location.href = `https://www.paypal.com/ncp/payment/G7JR8GPE4K9W4?${query.toString()}`;
+
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("There was an error submitting your order. Please try again.");
+    }
+  });
+</script>
+</body>
+</html>

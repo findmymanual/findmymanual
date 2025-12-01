@@ -1,0 +1,134 @@
+function exportAllFilesLinksToSheet() {
+  var folderId = "1kLC6WMOfJnxEr5l8cy7C_waZbp5eyiRi"; // Replace with your folder ID
+  var folder = DriveApp.getFolderById(folderId);
+  var files = folder.getFiles();
+  
+  // Create a new Google Sheet
+  var ss = SpreadsheetApp.create("Drive File Links");
+  var sheet = ss.getActiveSheet();
+  sheet.appendRow(["File Name", "URL"]); // Header row
+
+  while (files.hasNext()) {
+    var file = files.next();
+    
+    // Make file public if not already
+    if (file.getSharingAccess() !== DriveApp.Access.ANYONE_WITH_LINK) {
+      file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+    }
+
+    // Append name and URL to sheet
+    sheet.appendRow([file.getName(), file.getUrl()]);
+  }
+
+  Logger.log("All links exported! Sheet URL: " + ss.getUrl());
+}
+
+__________________________________________________________________________________________
+
+dir /b *.pdf
+
+__________________________________________________________________________________________
+
+function generateBrother6Urls() {
+  var folderName = 'Brother6';
+  var baseUrl = 'https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/' + folderName + '/';
+
+  var files = [
+    "Brother PE-150V Sewing Machine.pdf",
+    "Brother PE-300S Sewing Machine.pdf",
+    "Brother PE-DESIGN 10 Sewing Machine.pdf",
+    "Brother PE-DESIGN 8 Sewing Machine.pdf",
+    "Brother PE-DESIGN Lite Sewing Machine.pdf",
+    "Brother PE-DESIGN NEXT Sewing Machine.pdf",
+    "Brother PE-DESIGN PLUS2 Sewing Machine.pdf",
+    "Brother PE-DESIGN Ver.4,3,2 Sewing Machine.pdf",
+    "Brother PE-DESIGN Ver.5 Sewing Machine.pdf",
+    "Brother PE-DESIGN Ver.6 Sewing Machine.pdf",
+    "Brother PE-DESIGN Ver.7 Sewing Machine.pdf",
+    "Brother PED-Basic Sewing Machine.pdf",
+    "Brother PR-1000 Sewing Machine.pdf",
+    "Brother PR-600 Sewing Machine.pdf",
+    "Brother PR-600C Sewing Machine.pdf",
+    "Brother PR-600II Sewing Machine.pdf",
+    "Brother PR-600IIC Sewing Machine.pdf",
+    "Brother PR-620 Sewing Machine.pdf",
+    "Brother PR-620C Sewing Machine.pdf",
+    "Brother PR-650 Sewing Machine.pdf",
+    "Brother PR-650C Sewing Machine.pdf",
+    "Brother PR1000e Sewing Machine.pdf",
+    "Brother PR1050X Sewing Machine.pdf",
+    "Brother PR1055X Sewing Machine.pdf",
+    "Brother PR650e Sewing Machine.pdf",
+    "Brother PR650eC Sewing Machine.pdf",
+    "Brother PR655 Sewing Machine.pdf",
+    "Brother PR655C Sewing Machine.pdf",
+    "Brother PR670E Sewing Machine.pdf",
+    "Brother PR670EC Sewing Machine.pdf",
+    "Brother PR680W Sewing Machine.pdf",
+    "Brother PR680WC Sewing Machine.pdf",
+    "Brother Print Fax Servers NC-2010p.pdf",
+    "Brother PT-1230PC P-touch.pdf",
+    "Brother PT-1260 P-touch.pdf",
+    "Brother PT-1280 P-touch.pdf",
+    "Brother PT-1290 P-touch.pdf",
+    "Brother PT-1600 P-touch.pdf",
+    "Brother PT-1650 P-touch.pdf",
+    "Brother PT-1830 P-touch.pdf",
+    "Brother PX-100 Sewing Machine.pdf",
+    "Brother PX-200 Sewing Machine.pdf",
+    "Brother PX-300 Sewing Machine.pdf",
+    "Brother QL-1050 Label Printer.pdf",
+    "Brother QL-1060N Label Printer.pdf",
+    "Brother QL-1110NWB Label Printer.pdf",
+    "Brother QL-500 Label Printer.pdf",
+    "Brother QL-570 Label Printer.pdf",
+    "Brother QL-580N Label Printer.pdf",
+    "Brother QL-700 Label Printer.pdf",
+    "Brother QL-720NW Label Printer.pdf",
+    "Brother QL-800 Label Printer.pdf",
+    "Brother QL-810W Label Printer.pdf",
+    "Brother QL-820NWB Label Printer.pdf",
+    "Brother RJ-3050 Mobile Printer.pdf",
+    "Brother RJ-3050Ai Mobile Printer.pdf",
+    "Brother RJ-3150 Mobile Printer.pdf",
+    "Brother RJ-3150Ai Mobile Printer.pdf",
+    "Brother SC-2000USB Stamp Creator.pdf",
+    "Brother SDX1200 ScanNCut.pdf",
+    "Brother SDX900 P-touch.pdf",
+    "Brother SDX900 ScanNCut.pdf",
+    "Brother SP-1 Creative Printer.pdf",
+    "Brother V14 Sewing Machine.pdf",
+    "Brother X53 Sewing Machine.pdf",
+    "Brother X54 Sewing Machine.pdf",
+    "Brother X55 Sewing Machine.pdf",
+    "Brother X56 Sewing Machine.pdf",
+    "Brother X62 Sewing Machine.pdf",
+    "Brother X64 Sewing Machine.pdf",
+    "Brother X67 Sewing Machine.pdf",
+    "Brother X72 Sewing Machine.pdf",
+    "Brother X74 Sewing Machine.pdf",
+    "Brother X77 Sewing Machine.pdf",
+    "Brother X82 Sewing Machine.pdf",
+    "Brother X84 Sewing Machine.pdf",
+    "Brother X87 Sewing Machine.pdf",
+    "Brother XL-5500 Sewing Machine.pdf",
+    "Brother XR9550 Sewing Machine.pdf",
+    "Brother Z01 ScanNCut.pdf",
+    "Brother Z02 ScanNCut.pdf",
+    "Brother Z03 ScanNCut.pdf",
+    "Brother Z04 ScanNCut.pdf",
+    "Brother Z05 ScanNCut.pdf",
+    "Brother Z09 ScanNCut.pdf"
+  ];
+
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  sheet.clearContents();
+  sheet.appendRow(["Folder", "Filename", "URL"]);
+
+  files.forEach(function(filename) {
+    var url = baseUrl + encodeURIComponent(filename.trim());
+    sheet.appendRow([folderName, filename, url]);
+  });
+
+  Logger.log("Brother6 URLs generated successfully!");
+}

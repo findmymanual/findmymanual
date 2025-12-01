@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Find My Manual">
+  <title>Thank You!</title>
+
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #f0f4f8;
+      text-align: center;
+      padding: 60px;
+    }
+    h1 { color: #1761a0; margin-bottom: 20px; }
+    p { font-size: 18px; color: #333; }
+    a.download-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #1761a0;
+      color: #fff;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    a.download-btn:hover { background-color: #0f3c6b; }
+    img { margin-top: 30px; width: 150px; height: 150px; border-radius: 50%; object-fit: cover; }
+  </style>
+</head>
+<body>
+
+  <h1>Thank You for Your Payment!</h1>
+  <p>Your transaction has been completed successfully.</p>
+  <p>You will receive an email confirmation shortly.</p>
+
+  <img src="logo2.png" alt="Your Logo" />
+
+  <!-- Download button will appear here -->
+  <div id="downloadContainer"></div>
+
+  <p style="margin-top: 30px;">
+    <a href="https://findmymanual.live" style="color: #1761a0; font-weight: bold; text-decoration: none; font-size: 16px;">
+      ← Return to Home
+    </a>
+  </p>
+
+  <script>
+    // Function to parse JSON safely
+    function safeParseJSON(jsonString) {
+      try {
+        return JSON.parse(jsonString);
+      } catch {
+        return null;
+      }
+    }
+
+    window.addEventListener('load', function() {
+      // Get URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const paypalSuccess = urlParams.get('paypal');
+      const customDataStr = urlParams.get('custom');
+
+      if (paypalSuccess === 'success' && customDataStr) {
+        const customData = safeParseJSON(customDataStr);
+        if (customData && customData.pdfFile) {
+          const downloadContainer = document.getElementById('downloadContainer');
+
+          const downloadLink = document.createElement('a');
+          downloadLink.href = "https://findmymanual.live/hppdf/" + encodeURIComponent(customData.pdfFile);
+          downloadLink.className = "download-btn";
+          downloadLink.textContent = "⬇ Download Your Manual";
+          downloadContainer.appendChild(downloadLink);
+        } else {
+          console.error("PDF file not specified in custom data.");
+        }
+      }
+    });
+  </script>
+</body>
+</html>
