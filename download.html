@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Your Free Manual</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 650px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+      color: #333;
+      text-align: center;
+    }
+    h2 {
+      color: #4e6e81;
+      margin-bottom: 20px;
+    }
+    .download-btn {
+      display: inline-block;
+      background: #4e6e81;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 18px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .download-btn:hover {
+      background: #3c5869;
+    }
+    .center { text-align: center; }
+  </style>
+
+  <!-- Google AdSense Script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1424202759904253" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <h2>Your Free PDF Manual is Ready</h2>
+  <p class="center">Click the button below to download your manual instantly.</p>
+
+  <!-- Google AdSense Display Ad -->
+  <div style="margin: 35px 0; text-align:center;">
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center; width:100%; max-width:728px; height:90px;"
+         data-ad-client="ca-pub-1424202759904253"
+         data-ad-slot="5235434866"
+         data-ad-format="horizontal"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <div class="center">
+    <a id="downloadLink" class="download-btn" href="#" download>
+      Download PDF Manual
+    </a>
+  </div>
+
+  <script>
+    // Get PDF file name from URL (example: download.html?file=Whirlpool%20Manual.pdf)
+    const params = new URLSearchParams(window.location.search);
+    const file = params.get("file");
+
+    if (file) {
+        const downloadLink = document.getElementById("downloadLink");
+        const pdfUrl = "https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Whirlpool/" + file;
+
+        // Set the download link
+        downloadLink.href = pdfUrl;
+
+        // Alert to confirm the PDF is ready
+        alert("Your PDF manual is ready! Link: " + pdfUrl);
+
+        // Log in console for debugging
+        console.log("Download link:", pdfUrl);
+    } else {
+        alert("No PDF file specified!");
+        console.error("No PDF file found in URL parameters.");
+    }
+  </script>
+
+</body>
+</html>
