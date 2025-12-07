@@ -1,37 +1,110 @@
+<head>
+    <style>
+        /* PDF Grid Layout */
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 per row on desktop */
+            gap: 20px;
+            justify-items: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 1024px) {
+            .pdf-grid {
+                grid-template-columns: repeat(3, 1fr); /* 3 per row on tablet */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .pdf-grid {
+                grid-template-columns: repeat(3, 1fr); /* 3 per row on mobile */
+            }
+        }
+
+        .pdf-grid div[style*='background:#f5f5f5'] {
+            width: 100%;
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body>
 <section style="max-width: 1200px; margin: 40px auto; padding: 20px;">
-  <h2
-    style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
-    Available HP PDF Manuals
-  </h2>
+    <h2 style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
+        Available Canon PDF Manuals
+    </h2>
 
-  <h2 style="
-  font-size:2rem; 
-  color:#ffffff; 
-  display:inline-block; 
-  padding:12px 30px; 
-  background:#4e6e81; 
-  border-radius:16px; 
-  margin-bottom:30px;
-  font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
-  text-align:center;
-  position:relative;
-  left:50%;
-  transform:translateX(-50%);
-">
+        <input 
+    type="text" 
+    id="pdfSearch" 
+    placeholder="Search model number..." 
+    style="
+        width: 100%;
+        max-width: 400px;
+        padding: 12px 16px;
+        margin: 20px auto;
+        display: block;
+        font-size: 1rem;
+        border: 2px solid #4e6e81;
+        border-radius: 8px;
+        outline: none;
+    ">
 
-    Download Now!</h2>
+    <div style="text-align: center; margin-top: 10px;">
+  <a href="checkout.html" 
+     style="background:#4e6e81; 
+            color:#ffffff; 
+            padding:14px 28px; 
+            text-decoration:none; 
+            border-radius:6px; 
+            font-size:1.1rem; 
+            font-weight:700; 
+            display:inline-block; 
+            border:1px solid rgba(255,255,255,0.2); 
+            transition:background 0.3s ease; 
+            font-family: Georgia, 'Times New Roman', Times, serif;">
+    Can't find your manual? Click here and send us the Brand + Model
+  </a>
+</div>
 
-  <div class="manual-grid" style="
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-items: center;
-    font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
-  ">
+<h2 style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
+        We will find it for you!
+    </h2>
 
     <div
+  style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+  
+  <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'>
+    <strong>Canon <br>IXUS 75 <br>Digital Camera</strong>
+  </h3>
+
+  <!-- UPDATED BUTTON -->
+  <a 
+    href="checkout.html?product=Canon%20IXUS%2075%20Digital%20Camera&pdf=https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Digital%20IXUS%2075%20Camera.pdf"
+    class="pdf-btn"
+    style="display:inline-block; padding:10px 15px; background:#4e6e81; color:white; border-radius:8px; text-decoration:none;">
+    
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+      height='22' stroke='white' fill='none' stroke-width='2'>
+      <style>
+        @keyframes bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(6px); }
+        }
+        .arrow { animation: bounce 1s ease-in-out infinite; }
+      </style>
+      <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+      <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+      <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+    </svg>
+
+    Order Manual
+  </a>
+</div>
+
+    
+    <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Digital IXUS 75 Camera.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>IXUS 75 <br>Digital Camera</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Digital%20IXUS%2075%20Camera.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -59,7 +132,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon E610 Series Printer.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>E610 <br>Series <br>Printer</strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20E610%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -87,7 +160,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon G3000 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> G3000 <br>Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20G3000%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -115,7 +188,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon G600 Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>G600 <br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20G600%20Printer.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -143,7 +216,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon G6000 Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> G6000 <br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20G6000%20Printer.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -171,7 +244,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon GX1000 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>GX1000 <br>Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20GX1000%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -199,7 +272,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon GX2000 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>GX2000 <br>Series<br> Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20GX2000%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -227,7 +300,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon GX3000 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>GX3000<br> Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20GX3000%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -255,7 +328,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon GX4000 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>GX4000<br> Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20GX4000%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -283,7 +356,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon GX5000 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>GX5000<br> Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20GX5000%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -311,7 +384,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon GX5100 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>GX5100 <br>Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20GX5100%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -339,7 +412,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon GX5500 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> GX5500 <br>Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20GX5500%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -367,7 +440,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon GX6000 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>GX6000 <br>Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20GX6000%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -395,7 +468,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon GX6100 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>GX6100 <br>Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20GX6100%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -423,7 +496,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon GX6500 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>GX6500 <br>Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20GX6500%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -451,7 +524,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon GX7000 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>GX7000<br> Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20GX7000%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -479,7 +552,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon GX7100 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>GX7100 <br>Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20GX7100%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -507,7 +580,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon I-Sensys MF272dw.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> I-Sensys <br>MF272dw</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20I-Sensys%20MF272dw.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -535,7 +608,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon I-Sensys MF275dw.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>I-Sensys<br> MF275dw</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20I-Sensys%20MF275dw.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -563,7 +636,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Class MF271dn.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>Image Class <br>MF271dn</strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Class%20MF271dn.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -591,7 +664,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Class MF272dw.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> Image Class <br>MF272dw</strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Class%20MF272dw.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -619,7 +692,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Class MF273dw.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> Image Class <br>MF273dw</strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Class%20MF273dw.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -647,7 +720,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Class MF274dn.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>Image Class <br>MF274dn</strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Class%20MF274dn.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -675,7 +748,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Class MF275dw.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> Image Class <br>MF275dw</strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Class%20MF275dw.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -703,8 +776,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Class MF751Cdw
-          Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>Image Class <br>MF751Cdw<br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Class%20MF751Cdw%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -732,8 +804,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Class MF753Cdw
-          Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>Image Class <br>MF753Cdw<br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Class%20MF753Cdw%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -761,8 +832,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Press V1350
-          Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>Image Press <br>V1350<br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Press%20V1350%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -790,8 +860,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Runner 2230
-          Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>Image Runner<br> 2230<br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Runner%202230%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -819,8 +888,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Runner 2830
-          Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>Image Runner <br>2830<br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Runner%202830%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -848,8 +916,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Runner 3530
-          Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>Image Runner<br> 3530<br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Runner%203530%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -877,8 +944,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Runner Advance DX
-          C5840i.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>Image Runner <br>Advance DX<br>C5840i</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Runner%20Advance%20DX%20C5840i.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -906,8 +972,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Runner Advance DX
-          C5850i.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>Image Runner <br>Advance DX<br>C5850i</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Runner%20Advance%20DX%20C5850i.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -935,8 +1000,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Runner Advance DX
-          C5860i.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>Image Runner <br>Advance DX<br>C5860i</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Runner%20Advance%20DX%20C5860i.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -964,8 +1028,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Image Runner Advance DX
-          C5870i.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>Image Runner <br>Advance DX<br>C5870i</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Image%20Runner%20Advance%20DX%20C5870i.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -993,7 +1056,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon iP8700 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> iP8700 Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20iP8700%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1021,7 +1084,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon iPF670 Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>iPF670<br> Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20iPF670%20Printer.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1049,7 +1112,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon iPF750 Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>iPF750 <br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20iPF750%20Printer.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1077,7 +1140,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon iPF815 Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>iPF815 <br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20iPF815%20Printer.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1105,7 +1168,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon iPF825 Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>iPF825 <br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20iPF825%20Printer.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1133,7 +1196,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon iX6800 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>iX6800 <br>Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20iX6800%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1161,7 +1224,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon IXUS 285 HS Camera.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> IXUS 285 HS <br>Camera</strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20IXUS%20285%20HS%20Camera.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1189,7 +1252,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon MF411dw Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>MF411dw <br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20MF411dw%20Printer.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1217,7 +1280,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon MF416dw Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>MF416dw<br> Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20MF416dw%20Printer.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1245,7 +1308,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon MF418x Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> MF418x <br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20MF418x%20Printer.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1273,7 +1336,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon MF419x Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> MF419x <br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20MF419x%20Printer.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1301,7 +1364,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon MG3500 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>MG3500 <br>Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20MG3500%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1329,7 +1392,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon MG3600 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> MG3600 <br>Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20MG3600%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1357,7 +1420,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon MG7100 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>MG7100 <br>Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20MG7100%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1385,7 +1448,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon MG7700 Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> MG7700 <br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20MG7700%20Printer.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1413,8 +1476,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon Pixma MX920 Series
-          Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>Pixma<br> MX920 Series<br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20Pixma%20MX920%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1442,8 +1504,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon PowerShot Elph 360 HS
-          Camera.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> PowerShot Elph<br> 360 HS<br>Camera</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20PowerShot%20Elph%20360%20HS%20Camera.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1471,7 +1532,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon PowerShot G7 X Camera.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>PowerShot<br> G7 X <br>Camera</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20PowerShot%20G7%20X%20Camera.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1499,8 +1560,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon PowerShot G7 X Mark II
-          Camera.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> PowerShot <br>G7 X Mark II<br>Camera</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20PowerShot%20G7%20X%20Mark%20II%20Camera.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1528,8 +1588,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon PowerShot SD750 Digital ELPH
-          Camera.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> PowerShot <br>SD750 <br>Digital ELPH<br>Camera</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20PowerShot%20SD750%20Digital%20ELPH%20Camera.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1557,7 +1616,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon PRO-100s Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>PRO-100s<br> Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20PRO-100s%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1585,7 +1644,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon PRO-10s Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>PRO-10s <br>Series<br> Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20PRO-10s%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1613,7 +1672,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon PRO-200 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> PRO-200 <br>Series <br>Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20PRO-200%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1641,7 +1700,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon PRO-300 Series.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>PRO-300 <br>Series</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20PRO-300%20Series.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1669,7 +1728,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon PRO-310 series.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>PRO-310<br> Series</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20PRO-310%20series.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1697,7 +1756,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon TS200 Series.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>TS200 <br>Series</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20TS200%20Series.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1725,7 +1784,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon TS3700 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>TS3700 <br>Series<br> Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20TS3700%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1753,7 +1812,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon TS6630 Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon<br> TS6630 <br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20TS6630%20Printer.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1781,7 +1840,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon TS7600i Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>TS7600i<br> Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20TS7600i%20Printer.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1809,7 +1868,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon TS7700 Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>TS7700 <br>Printer</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20TS7700%20Printer.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1837,7 +1896,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon TS9500 Series Printer.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Canon <br>TS9500 <br>Series<br> Printer</strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Canon/Canon%20TS9500%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1865,21 +1924,54 @@
     </div>
 
     <script>
-      // ✅ Attach event listeners AFTER the elements exist
-      document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll('.pdf-btn').forEach(btn => {
-          btn.addEventListener('click', function () {
+document.addEventListener("DOMContentLoaded", () => {
+
+    const search = document.getElementById("pdfSearch");
+
+    // This selects all your gray boxes
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    search.addEventListener("input", function () {
+        const q = this.value.toLowerCase().trim();
+
+        boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+                box.style.display = "";
+            } else {
+                box.style.display = "none";
+            }
+        });
+    });
+
+});
+</script>
+
+
+</body>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Move all PDF boxes into a responsive grid
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    if (boxes.length) {
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+        boxes.forEach(box => grid.appendChild(box));
+        const section = document.querySelector("section");
+        section.appendChild(grid);
+    }
+
+    // PDF button behavior & styling
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
             const productId = this.getAttribute('data-product');
             const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            console.log("Redirecting to:", checkoutUrl); // Debugging
             window.location.href = checkoutUrl;
-          });
         });
-      });
 
-
-      // Button styling & hover animation
-      document.querySelectorAll('.pdf-btn').forEach(btn => {
         const icon = btn.querySelector('svg');
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
@@ -1895,13 +1987,13 @@
         icon.style.transition = 'transform 0.3s ease';
 
         btn.addEventListener('mouseover', () => {
-          icon.style.transform = 'translateY(3px)';
-          btn.style.background = '#5f879a';
+            icon.style.transform = 'translateY(3px)';
+            btn.style.background = '#5f879a';
         });
-
         btn.addEventListener('mouseout', () => {
-          icon.style.transform = 'translateY(0)';
-          btn.style.background = '#4e6e81';
+            icon.style.transform = 'translateY(0)';
+            btn.style.background = '#4e6e81';
         });
-      });
-    </script>
+    });
+});
+</script>

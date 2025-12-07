@@ -3,7 +3,8 @@
         /* PDF Grid Layout */
         .pdf-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4 per row on desktop */
+            grid-template-columns: repeat(4, 1fr);
+            /* 4 per row on desktop */
             gap: 20px;
             justify-items: center;
             padding: 20px 0;
@@ -11,13 +12,15 @@
 
         @media (max-width: 1024px) {
             .pdf-grid {
-                grid-template-columns: repeat(3, 1fr); /* 3 per row on tablet */
+                grid-template-columns: repeat(3, 1fr);
+                /* 3 per row on tablet */
             }
         }
 
         @media (max-width: 768px) {
             .pdf-grid {
-                grid-template-columns: repeat(3, 1fr); /* 3 per row on mobile */
+                grid-template-columns: repeat(3, 1fr);
+                /* 3 per row on mobile */
             }
         }
 
@@ -27,18 +30,15 @@
         }
     </style>
 </head>
-<body>
-<section style="max-width: 1200px; margin: 40px auto; padding: 20px;">
-    <h2 style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
-        Available HITACHI PDF Manuals
-    </h2>
 
-   
-    <input 
-    type="text" 
-    id="pdfSearch" 
-    placeholder="Search model number..." 
-    style="
+<body>
+    <section style="max-width: 1200px; margin: 40px auto; padding: 20px;">
+        <h2
+            style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
+            Available HAIER PDF Manuals
+        </h2>
+
+        <input type="text" id="pdfSearch" placeholder="Search model number..." style="
         width: 100%;
         max-width: 400px;
         padding: 12px 16px;
@@ -50,9 +50,8 @@
         outline: none;
     ">
 
-    <div style="text-align: center; margin-top: 10px;">
-  <a href="checkout.html" 
-     style="background:#4e6e81; 
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="checkout.html" style="background:#4e6e81; 
             color:#ffffff; 
             padding:14px 28px; 
             text-decoration:none; 
@@ -63,19 +62,103 @@
             border:1px solid rgba(255,255,255,0.2); 
             transition:background 0.3s ease; 
             font-family: Georgia, 'Times New Roman', Times, serif;">
-    Can't find your manual? Click here and send us the Brand + Model
-  </a>
-</div>
+                Can't find your manual? Click here and send us the Brand + Model
+            </a>
+        </div>
+
+        <h2
+            style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
+            We will find it for you!
+        </h2>
+
+        <div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Beverage Center<br>HEBF100 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Beverage%20Center%20HEBF100.pdf'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
+
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
+        <div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Beverage Center<br>HEBF100BXS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Beverage%20Center%20HEBF100BXS.pdf'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
+
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
+        <div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Built-In <br>Dishwasher<br>QDP555 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Built-In%20Dishwasher%20QDP555.pdf'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
 
-<h2 style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
-        We will find it for you!
-    </h2>
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
 
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
 
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Air Conditioner<br>RAS-35YHA</strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Air%20Conditioner%20RAS-35YHA.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Built-In <br>Dishwasher<br>QDT125 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Built-In%20Dishwasher%20QDT125.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -102,8 +185,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Air Conditioner<br>RC-AGU1EA0S </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Air%20Conditioner%20RC-AGU1EA0S.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Built-in <br>Electric Oven<br>HOQ-F5AABX </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Built-in%20Electric%20Oven%20HOQ-F5AABX.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -130,8 +213,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Air Conditioner<br> Remote<br>RC-AGU1EA0S</strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Air%20Conditioner%20Remote%20RC-AGU1EA0S.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Built-in <br>Electric Oven<br>HOQ-F5AAGB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Built-in%20Electric%20Oven%20HOQ-F5AAGB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -158,8 +241,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Excavator<br> ZAXIS 160LC </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Excavator%20ZAXIS%20160LC.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Built-in <br>Electric Oven<br>HOQ-F6CASGB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Built-in%20Electric%20Oven%20HOQ-F6CASGB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -186,8 +269,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>EX 1200-6 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20EX%201200-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Built-in <br>Electric Oven<br>HOQ-F6CASGG </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Built-in%20Electric%20Oven%20HOQ-F6CASGG.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -214,8 +297,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS 120-6 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20120-6%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Built-in <br>Electric Oven<br>HOQ-F6CASGW </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Built-in%20Electric%20Oven%20HOQ-F6CASGW.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -242,8 +325,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS 120-7 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20120-7%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Built-in <br>Electric Oven<br>HOQ-P16AN5GB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Built-in%20Electric%20Oven%20HOQ-P16AN5GB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -270,8 +353,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator<br> ZAXIS 130-6N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20130-6N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Built-in <br>Electric Oven<br>HOQ-P16AN5GW </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Built-in%20Electric%20Oven%20HOQ-P16AN5GW.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -298,8 +381,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS <br>130-7H </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20130-7H.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Built-in <br>Electric Oven<br>HOQ-P16AN5SX </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Built-in%20Electric%20Oven%20HOQ-P16AN5SX.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -326,8 +409,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Hydraulic Excavator <br>ZAXIS<br>135US-6 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20135US-6%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Built-in <br>Electric Oven<br>HOQ-P16AS5GB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Built-in%20Electric%20Oven%20HOQ-P16AS5GB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -354,8 +437,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>135US-7H </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20135US-7H.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Built-in <br>Electric Oven<br>HOQ-P16AS5GW </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Built-in%20Electric%20Oven%20HOQ-P16AS5GW.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -382,8 +465,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Hydraulic Excavator <br>ZAXIS<br>160-6 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20160-6%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Built-in <br>Electric Oven<br>HOQ-P16AS5SX </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Built-in%20Electric%20Oven%20HOQ-P16AS5SX.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -410,8 +493,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>160-7 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20160-7%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Built-in Oven<br>HCW2360AES </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Built-in%20Oven%20HCW2360AES.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -438,8 +521,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Hydraulic Excavator <br>ZAXIS<br>160LC-6N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20160LC-6N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Cooking Range<br>HCR6050EES </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Cooking%20Range%20HCR6050EES.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -466,8 +549,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Hydraulic Excavator<br> ZAXIS<br>160LC-7H </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20160LC-7H.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Electric <br>Compact Ranges<br>QAS740 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Electric%20Compact%20Ranges%20QAS740.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -494,8 +577,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>17U-5A </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%2017U-5A.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Electric Range<br>QSS740 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Electric%20Range%20QSS740.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -522,8 +605,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>17U-5N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%2017U-5N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Gas Compact Range<br>QGAS740 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Gas%20Compact%20Range%20QGAS740.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -550,8 +633,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>17U-6 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%2017U-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Gas Range <br>QGSS740 </strong>
+            </h3><a href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Gas%20Range%20QGSS740.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -578,8 +661,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator<br> ZAXIS<br>180-7 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20180-7%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Microwave Oven<br>HMV1472BHS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Microwave%20Oven%20HMV1472BHS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -606,8 +689,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>180LC-6N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20180LC-6N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Microwave Oven<br>QVM7167 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Microwave%20Oven%20QVM7167.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -634,8 +717,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Hydraulic Excavator <br>ZAXIS<br>190LC-7H </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20190LC-7H.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HA10TG21SB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HA10TG21SB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -662,8 +745,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>19U-6 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%2019U-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HA10TG21SS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HA10TG21SS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -690,8 +773,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>200-6 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20200-6%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HA10TG21SW </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HA10TG21SW.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -718,8 +801,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>200-7 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20200-7%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HA12TG21SB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HA12TG21SB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -746,8 +829,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Hydraulic Excavator <br>ZAXIS<br>210-6N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20210-6N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HA12TG21SS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HA12TG21SS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -774,8 +857,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator<br> ZAXIS<br>210LC-6N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20210LC-6N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HA12TG21SW </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HA12TG21SW.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -802,8 +885,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>210LC-7H </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20210LC-7H.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HC27SW20RB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HC27SW20RB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -830,8 +913,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Hydraulic Excavator <br>ZAXIS<br>225US-6 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20225US-6%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HC27SW20RV </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HC27SW20RV.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -858,8 +941,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Hydraulic Excavator <br>ZAXIS<br>240-6 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20240-6%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HC33SW20RB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HC33SW20RB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -886,8 +969,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator<br> ZAXIS<br>240-7 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20240-7%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Refrigerator<br>HC45SG42SB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HC45SG42SB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -914,8 +997,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator<br> ZAXIS<br>245USLC-7H </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20245USLC-7H.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Refrigerator<br>HC45SG42SV </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HC45SG42SV.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -942,8 +1025,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Hydraulic Excavator<br> ZAXIS<br>250LC-6N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20250LC-6N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HC45SG42SW </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HC45SG42SW.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -970,8 +1053,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>250LC-7H </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20250LC-7H.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HC46SF10SV </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HC46SF10SV.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -998,8 +1081,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Hydraulic Excavator <br>ZAXIS<br>26U-5A </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%2026U-5A.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HFW7918EIMB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HFW7918EIMB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1026,8 +1109,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>26U-5N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%2026U-5N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HFW7918EIMP </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HFW7918EIMP.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1054,8 +1137,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>26U-6 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%2026U-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Refrigerator<br>HRB15N3 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HRB15N3.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1082,8 +1165,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>300-6 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20300-6%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HRF-362TBG </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HRF-362TBG.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1110,8 +1193,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Hydraulic Excavator<br> ZAXIS<br>300-7 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20300-7%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HRF-386TBG </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HRF-386TBG.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1138,8 +1221,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator<br> ZAXIS<br>300LC-6N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20300LC-6N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HRF-628AF6 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HRF-628AF6.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1166,8 +1249,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Hydraulic Excavator<br> ZAXIS<br>300LC-7H </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20300LC-7H.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Refrigerator<br>HRF15N3 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HRF15N3.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1194,8 +1277,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator<br> ZAXIS<br>30U-5N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%2030U-5N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Refrigerator<br>HRQ16N3 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HRQ16N3.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1222,8 +1305,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>330-6 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20330-6%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HSW59F18EIMM </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HSW59F18EIMM.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1250,8 +1333,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>330-7 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20330-7%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>HSW59F18EIPT </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20HSW59F18EIPT.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1278,8 +1361,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>345US-6 Class </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20345US-6%20Class.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Refrigerator<br>QHE16HYPFS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20QHE16HYPFS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1306,8 +1389,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>345USLC-6N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20345USLC-6N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Refrigerator<br>QJS15HYRFS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20QJS15HYRFS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1334,8 +1417,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Hydraulic Excavator <br>ZAXIS<br>345USLC-7H </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20345USLC-7H.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator<br>QNE27J </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator%20QNE27J.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1362,8 +1445,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>350LC-6N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20350LC-6N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF-525MB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20%20HRF-525MB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1390,8 +1473,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>350LC-7H </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20350LC-7H.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF-525SS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20%20HRF-525SS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1418,8 +1501,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>35U-5N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%2035U-5N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>FD15FPAA </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20FD15FPAA.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1446,8 +1529,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br>Hydraulic Excavator <br>ZAXIS<br>380LC-6N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%20380LC-6N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HB15FPAA </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HB15FPAA.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1474,8 +1557,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator<br> ZAXIS<br>50U-5N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%2050U-5N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HB16FMAA </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HB16FMAA.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1502,8 +1585,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator<br> ZAXIS<br>60USB-5N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%2060USB-5N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HB16FMAAA </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HB16FMAAA.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1530,8 +1613,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator <br>ZAXIS<br>75US-5N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%2075US-5N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HB17FPAA </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HB17FPAA.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1558,8 +1641,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Hydraulic Excavator<br> ZAXIS<br>85USB-5N </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Hydraulic%20Excavator%20ZAXIS%2085USB-5N.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HDPW5618DWPK </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HDPW5618DWPK.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1586,8 +1669,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Lever Hoist </strong></h3>
-            <a href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Lever%20Hoist.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HDPW5620ANPD </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HDPW5620ANPD.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1614,8 +1697,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Material Handling Machine<br>210LC-3 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Material%20Handling%20Machine%20210LC-3.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HFR5719ENMG </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HFR5719ENMG.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1642,8 +1725,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Material <br>Handling Machine<br>250LC-3 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Material%20Handling%20Machine%20250LC-3.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HFR5719ENMP </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HFR5719ENMP.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1670,8 +1753,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Material <br>Handling Machine<br>350LC-3 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Material%20Handling%20Machine%20350LC-3.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HFR5719ENPB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HFR5719ENPB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1698,8 +1781,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Material <br>Handling Machine<br>470LCH-3 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Material%20Handling%20Machine%20470LCH-3.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HFW7918EIMB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HFW7918EIMB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1726,8 +1809,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Material <br>Handling Machine<br>S-SC200H-A </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Material%20Handling%20Machine%20S-SC200H-A.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HFW7918EIMP </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HFW7918EIMP.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1754,8 +1837,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Material <br>Handling Machine<br>S-SC240H-A </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Material%20Handling%20Machine%20S-SC240H-A.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRB-550CG </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRB-550CG.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1782,8 +1865,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Material <br>Handling Machine<br>S-SC330H-B </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Material%20Handling%20Machine%20S-SC330H-B.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRB-550KG </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRB-550KG.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1810,8 +1893,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Material <br>Handling Machine<br>S-SC450H-A </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Material%20Handling%20Machine%20S-SC450H-A.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF-525MB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF-525MB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1838,8 +1921,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Refrigerator <br>No Frost<br>R-W660FPG3X </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Refrigerator%20No%20Frost%20R-W660FPG3X.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF-525SS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF-525SS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1866,8 +1949,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Refrigerator<br> No Frost<br>R-W660FPND3X </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Refrigerator%20No%20Frost%20R-W660FPND3X.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF-550FB </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF-550FB.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1894,8 +1977,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Refrigerator<br> No Frost<br>R-W660FPRS3X </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Refrigerator%20No%20Frost%20R-W660FPRS3X.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF-550FGS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF-550FGS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1922,8 +2005,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Refrigerator<br> No Frost<br>R-W660PG3 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Refrigerator%20No%20Frost%20R-W660PG3.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF-550FSS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF-550FSS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1950,8 +2033,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Refrigerator<br> No Frost<br>R-W660PND3 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Refrigerator%20No%20Frost%20R-W660PND3.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF-550FW </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF-550FW.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -1978,8 +2061,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Refrigerator <br>No Frost<br>R-W660PRS3 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Refrigerator%20No%20Frost%20R-W660PRS3.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF-578TBG </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF-578TBG.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2006,8 +2089,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Refrigerator<br> No Frost<br>R-W690FP3MSX </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Refrigerator%20No%20Frost%20R-W690FP3MSX.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF-578TBP </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF-578TBP.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2034,8 +2117,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Refrigerator <br>No Frost<br>R-W690P3MS </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Refrigerator%20No%20Frost%20R-W690P3MS.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF-622IBG </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF-622IBG.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2062,8 +2145,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Refrigerator <br>No Frost<br>R-W720FP3MX </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Refrigerator%20No%20Frost%20R-W720FP3MX.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF-622IBS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF-622IBS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2090,8 +2173,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Refrigerator <br>No Frost<br>R-W720P3M </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Refrigerator%20No%20Frost%20R-W720P3M.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF-622ICG </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF-622ICG.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2118,8 +2201,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Refrigerator<br>R-V610PT7 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Refrigerator%20R-V610PT7.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-freezer<br>HRF520BHC </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-freezer%20HRF520BHC.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2146,8 +2229,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Refrigerator<br>R-V660PT7 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Refrigerator%20R-V660PT7.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-freezer<br>HRF520BHS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-freezer%20HRF520BHS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2174,8 +2257,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Super Long Front<br> ZAXIS<br>250LC(N)-7 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Super%20Long%20Front%20ZAXIS%20250LC(N)-7.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-freezer<br>HRF520BS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-freezer%20HRF520BS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2202,8 +2285,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Super Long Front <br>ZAXIS<br>300LC(N)-7 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Super%20Long%20Front%20ZAXIS%20300LC(N)-7.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-freezer<br>HRF520BW </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-freezer%20HRF520BW.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2230,8 +2313,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Super Long Front <br>ZAXIS<br>350LC(N)-7 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Super%20Long%20Front%20ZAXIS%20350LC(N)-7.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-freezer<br>HRF520FHC </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-freezer%20HRF520FHC.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2258,8 +2341,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>TV <br>DS65MU01 </strong></h3>
-            <a href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20TV%20DS65MU01.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-freezer<br>HRF520FHS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-freezer%20HRF520FHS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2286,8 +2369,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Wheel Loader ZW<br>100-6 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20100-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-freezer<br>HRF520FS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-freezer%20HRF520FS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2314,8 +2397,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Wheel Loader ZW<br>120-6</strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20120-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF575XC </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF575XC.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2342,8 +2425,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Wheel Loader ZW<br>140-6 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20140-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF575XHC </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF575XHC.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2370,8 +2453,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Wheel Loader ZW<br>140-7 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20140-7.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF575XHS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF575XHS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2398,8 +2481,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Wheel Loader ZW<br>150-6 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20150-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HRF575XS </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HRF575XS.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2426,8 +2509,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Wheel Loader ZW<br>150PL-6 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20150PL-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-freezer<br>HRF700YCX </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-freezer%20HRF700YCX.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2454,8 +2537,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Wheel Loader ZW<br>160-7 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20160-7.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HSW59F18DIMM </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HSW59F18DIMM.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2482,8 +2565,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Wheel Loader ZW<br>160PL-7 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20160PL-7.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HSW79F18DIPT </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HSW79F18DIPT.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2510,8 +2593,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Wheel Loader ZW<br>180-6 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20180-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HTW5618DWMG </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HTW5618DWMG.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2538,8 +2621,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Wheel Loader ZW<br>180-7 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20180-7.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HTW5618ENMG </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HTW5618ENMG.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2566,8 +2649,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Wheel Loader ZW<br>180PL-7 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20180PL-7.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HTW5618ENMP </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HTW5618ENMP.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2594,8 +2677,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Wheel Loader ZW<br>220-7 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20220-7.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HTW5618EWMG </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HTW5618EWMG.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2622,8 +2705,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Wheel Loader ZW<br>250-6 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20250-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Refrigerator-Freezer<br>HTW5618EWMP </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Refrigerator-Freezer%20HTW5618EWMP.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2650,8 +2733,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Wheel Loader ZW<br>250-7 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20250-7.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Washer-Dryer<br>HWD80-B14979 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Washer-Dryer%20HWD80-B14979.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2678,8 +2761,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Wheel Loader ZW<br>310-6 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20310-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Washing Machine<br>HW80-B14979 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Washing%20Machine%20HW80-B14979.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2706,8 +2789,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Wheel Loader ZW<br>310-7 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20310-7.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Washing Machine<br>HW80-B14979S </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Washing%20Machine%20HW80-B14979S.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2734,8 +2817,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Wheel Loader ZW<br>330-6 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20330-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Washing Machine<br>HW80-BP12929 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Washing%20Machine%20HW80-BP12929.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2762,8 +2845,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Wheel Loader ZW<br>370-6 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20370-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Washing Machine<br>HW80-BP12929S6 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier1/Haier%20Washing%20Machine%20HW80-BP12929S6.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2790,8 +2873,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Wheel Loader ZW<br>50-5B </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%2050-5B.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Washing Machine<br>HW100-B14979 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier2/Haier%20Washing%20Machine%20HW100-B14979.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2818,8 +2901,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Wheel Loader ZW<br>550-6 </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%20550-6.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Washing Machine<br>HW100-B14979S </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier2/Haier%20Washing%20Machine%20HW100-B14979S.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2846,8 +2929,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Wheel Loader ZW<br>80-5B </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi/Hitachi%20Wheel%20Loader%20ZW%2080-5B.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Washing Machine<br>HW120-B14979 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier2/Haier%20Washing%20Machine%20HW120-B14979.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2874,8 +2957,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Air Conditioner<br>RAC-25HTK </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi1/Hitachi%20Air%20Conditioner%20%20RAC-25HTK.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Washing Machine<br>HW120-B14979S </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier2/Haier%20Washing%20Machine%20HW120-B14979S.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2902,8 +2985,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Air Conditioner<br>RAC-30HTK </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi1/Hitachi%20Air%20Conditioner%20%20RAC-30HTK.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Washing Machine<br>HW90-BP12929S6 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier2/Haier%20Washing%20Machine%20HW90-BP12929S6.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2930,8 +3013,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Air Conditioner<br>RAC-20HTK </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi1/Hitachi%20Air%20Conditioner%20RAC-20HTK.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Washing Machine<br>HW90-BP14959S6 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier2/Haier%20Washing%20Machine%20HW90-BP14959S6.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2958,8 +3041,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Air Conditioner<br>RAC-25YHA </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi1/Hitachi%20Air%20Conditioner%20RAC-25YHA.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Washing Machine<br>HWM100-1678ES5 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier2/Haier%20Washing%20Machine%20HWM100-1678ES5.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -2986,8 +3069,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Air Conditioner<br>RAC-35YHA </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi1/Hitachi%20Air%20Conditioner%20RAC-35YHA.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Washing Machine<br>HWM100-316S6 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier2/Haier%20Washing%20Machine%20HWM100-316S6.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -3014,8 +3097,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Air Conditioner<br>RAS-20HTK </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi1/Hitachi%20Air%20Conditioner%20RAS-20HTK.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Washing Machine<br>HWM120-316S6 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier2/Haier%20Washing%20Machine%20HWM120-316S6.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -3042,8 +3125,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Air Conditioner<br>RAS-25HTK </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi1/Hitachi%20Air%20Conditioner%20RAS-25HTK.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Washing Machine<br>HWM70-1269S5 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier2/Haier%20Washing%20Machine%20HWM70-1269S5.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -3070,8 +3153,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi<br> Air Conditioner<br>RAS-25YHA </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi1/Hitachi%20Air%20Conditioner%20RAS-25YHA.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier <br>Washing Machine<br>HWM80-316S6 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier2/Haier%20Washing%20Machine%20HWM80-316S6.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -3098,8 +3181,8 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Hitachi <br>Air Conditioner<br>RAS-30HTK </strong></h3><a
-                href='https://pub-d964cefbb41c41a199a508d46a0f9967.r2.dev/Hitachi1/Hitachi%20Air%20Conditioner%20RAS-30HTK.pdf'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Haier<br> Washing Machine<br>HWM90-316S6 </strong></h3><a
+                href='https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/Haier2/Haier%20Washing%20Machine%20HWM90-316S6.pdf'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -3124,79 +3207,79 @@
                     <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
                 </svg>Download PDF</a>
         </div>
+
 
         <script>
-document.addEventListener("DOMContentLoaded", () => {
+            document.addEventListener("DOMContentLoaded", () => {
 
-    const search = document.getElementById("pdfSearch");
+                const search = document.getElementById("pdfSearch");
 
-    // This selects all your gray boxes
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+                // This selects all your gray boxes
+                const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-    search.addEventListener("input", function () {
-        const q = this.value.toLowerCase().trim();
+                search.addEventListener("input", function () {
+                    const q = this.value.toLowerCase().trim();
 
-        boxes.forEach(box => {
-            const text = box.textContent.toLowerCase();
+                    boxes.forEach(box => {
+                        const text = box.textContent.toLowerCase();
 
-            // show if matched, hide if not
-            if (text.includes(q)) {
-                box.style.display = "";
-            } else {
-                box.style.display = "none";
-            }
-        });
-    });
+                        // show if matched, hide if not
+                        if (text.includes(q)) {
+                            box.style.display = "";
+                        } else {
+                            box.style.display = "none";
+                        }
+                    });
+                });
 
-});
-</script>
+            });
+        </script>
 
 
 </body>
 
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Move all PDF boxes into a responsive grid
+        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+        if (boxes.length) {
+            const grid = document.createElement("div");
+            grid.className = "pdf-grid";
+            boxes.forEach(box => grid.appendChild(box));
+            const section = document.querySelector("section");
+            section.appendChild(grid);
+        }
 
-        <script>
-document.addEventListener("DOMContentLoaded", () => {
-    // Move all PDF boxes into a responsive grid
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
-    if (boxes.length) {
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-        boxes.forEach(box => grid.appendChild(box));
-        const section = document.querySelector("section");
-        section.appendChild(grid);
-    }
+        // PDF button behavior & styling
+        document.querySelectorAll('.pdf-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const productId = this.getAttribute('data-product');
+                const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+                window.location.href = checkoutUrl;
+            });
 
-    // PDF button behavior & styling
-    document.querySelectorAll('.pdf-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const productId = this.getAttribute('data-product');
-            const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            window.location.href = checkoutUrl;
-        });
-
-        const icon = btn.querySelector('svg');
-        btn.style.display = 'inline-flex';
-        btn.style.alignItems = 'center';
-        btn.style.gap = '8px';
-        btn.style.padding = '10px 16px';
-        btn.style.background = '#4e6e81';
-        btn.style.color = '#fff';
-        btn.style.borderRadius = '6px';
-        btn.style.textDecoration = 'none';
-        btn.style.fontWeight = 'bold';
-        btn.style.fontFamily = 'Arial, sans-serif';
-        btn.style.transition = 'background 0.3s ease';
-        icon.style.transition = 'transform 0.3s ease';
-
-        btn.addEventListener('mouseover', () => {
-            icon.style.transform = 'translateY(3px)';
-            btn.style.background = '#5f879a';
-        });
-        btn.addEventListener('mouseout', () => {
-            icon.style.transform = 'translateY(0)';
+            const icon = btn.querySelector('svg');
+            btn.style.display = 'inline-flex';
+            btn.style.alignItems = 'center';
+            btn.style.gap = '8px';
+            btn.style.padding = '10px 16px';
             btn.style.background = '#4e6e81';
+            btn.style.color = '#fff';
+            btn.style.borderRadius = '6px';
+            btn.style.textDecoration = 'none';
+            btn.style.fontWeight = 'bold';
+            btn.style.fontFamily = 'Arial, sans-serif';
+            btn.style.transition = 'background 0.3s ease';
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
         });
     });
-});
 </script>

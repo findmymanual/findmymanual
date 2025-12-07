@@ -1,37 +1,80 @@
+<head>
+    <style>
+        /* PDF Grid Layout */
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 per row on desktop */
+            gap: 20px;
+            justify-items: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 1024px) {
+            .pdf-grid {
+                grid-template-columns: repeat(3, 1fr); /* 3 per row on tablet */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .pdf-grid {
+                grid-template-columns: repeat(3, 1fr); /* 3 per row on mobile */
+            }
+        }
+
+        .pdf-grid div[style*='background:#f5f5f5'] {
+            width: 100%;
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body>
 <section style="max-width: 1200px; margin: 40px auto; padding: 20px;">
-  <h2
-    style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
-    Available HP PDF Manuals
-  </h2>
+    <h2 style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
+        Available HP PDF Manuals
+    </h2>
 
-  <h2 style="
-  font-size:2rem; 
-  color:#ffffff; 
-  display:inline-block; 
-  padding:12px 30px; 
-  background:#4e6e81; 
-  border-radius:16px; 
-  margin-bottom:30px;
-  font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
-  text-align:center;
-  position:relative;
-  left:50%;
-  transform:translateX(-50%);
-">
+  
+<input 
+    type="text" 
+    id="pdfSearch" 
+    placeholder="Search model number..." 
+    style="
+        width: 100%;
+        max-width: 400px;
+        padding: 12px 16px;
+        margin: 20px auto;
+        display: block;
+        font-size: 1rem;
+        border: 2px solid #4e6e81;
+        border-radius: 8px;
+        outline: none;
+    ">
 
-    Download Now!</h2>
+<div style="text-align: center; margin-top: 10px;">
+  <a href="checkout.html" 
+     style="background:#4e6e81; 
+            color:#ffffff; 
+            padding:14px 28px; 
+            text-decoration:none; 
+            border-radius:6px; 
+            font-size:1.1rem; 
+            font-weight:700; 
+            display:inline-block; 
+            border:1px solid rgba(255,255,255,0.2); 
+            transition:background 0.3s ease; 
+            font-family: Georgia, 'Times New Roman', Times, serif;">
+    Can't find your manual? Click here and send us the Brand + Model
+  </a>
+</div>
 
-  <div class="manual-grid" style="
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-items: center;
-    font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
-  ">
+<h2 style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
+        We will find it for you!
+    </h2>
+
 
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP 15-fd0000 Laptop.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>15-fd0000 <br>Laptop </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%2015-fd0000%20Laptop.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -59,7 +102,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Chromebook 14a-ca0000.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Chromebook <br>14a-ca0000 </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Chromebook%2014a-ca0000.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -87,8 +130,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Chromebook 14a-na0000
-          Series.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Chromebook <br>14a-na0000<br>Series </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Chromebook%2014a-na0000%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -116,7 +158,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Chromebook 14a-nd0000.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Chromebook <br>14a-nd0000 </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Chromebook%2014a-nd0000.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -144,7 +186,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Chromebook 14a-ne0000.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Chromebook <br>14a-ne0000 </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Chromebook%2014a-ne0000.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -172,7 +214,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Chromebook 14a-nf0000.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Chromebook <br>14a-nf0000 </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Chromebook%2014a-nf0000.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -200,8 +242,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Color LaserJet Pro MFP
-          3301-3304.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Color LaserJet Pro <br>MFP 3301-3304 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Color%20LaserJet%20Pro%20MFP%203301-3304.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -229,8 +270,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Color LaserJet Pro MFP
-          3301fdw.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> Color LaserJet Pro <br>MFP 3301fdw </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Color%20LaserJet%20Pro%20MFP%203301fdw.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -258,8 +298,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Color LaserJet Pro MFP 3388
-          Series.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Color LaserJet Pro <br>MFP 3388 Series </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Color%20LaserJet%20Pro%20MFP%203388%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -287,7 +326,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP D3500 Camera.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> D3500<br> Camera </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20D3500%20Camera.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -315,7 +354,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP DesignJet Z6 Printer Series.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>DesignJet Z6 <br>Printer  </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20DesignJet%20Z6%20Printer%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -343,7 +382,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP DesignJet Z9 Printer Series.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>DesignJet Z9 <br>Printer </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20DesignJet%20Z9%20Printer%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -371,8 +410,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP DeskJet 2600 All-in-One
-          series.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> DeskJet 2600 <br>All-in-One </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20DeskJet%202600%20All-in-One%20series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -400,8 +438,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP DeskJet 2620 All-in-One
-          Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>DeskJet 2620 <br>All-in-One<br>Printer </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20DeskJet%202620%20All-in-One%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -429,8 +466,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP DeskJet 2700 All-in-One
-          Series.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>DeskJet 2700 <br>All-in-One </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20DeskJet%202700%20All-in-One%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -458,8 +494,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP DeskJet 2720 All-in-One
-          Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>DeskJet <br>2720 <br>All-in-One </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20DeskJet%202720%20All-in-One%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -487,8 +522,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP DeskJet 4120e All-in-One
-          Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>DeskJet <br>4120e <br>All-in-One </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20DeskJet%204120e%20All-in-One%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -516,8 +550,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP DeskJet Plus 4100 All-in-One
-          Series.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>DeskJet Plus<br> 4100 <br>All-in-One </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20DeskJet%20Plus%204100%20All-in-One%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -545,8 +578,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP DeskJet Plus 4100e All-in-One
-          Series.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>DeskJet Plus <br>4100e All-in-One </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20DeskJet%20Plus%204100e%20All-in-One%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -574,8 +606,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP DeskJet Plus 4130 All-in-One
-          Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>DeskJet Plus<br> 4130 <br>All-in-One </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20DeskJet%20Plus%204130%20All-in-One%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -603,8 +634,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Dragonfly Pro Chromebook
-          7P097AV.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> Dragonfly <br>Pro Chromebook<br> 7P097AV </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Dragonfly%20Pro%20Chromebook%207P097AV.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -632,7 +662,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP EliteBook 8 G1i Notebook.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>EliteBook<br> 8 G1i <br>Notebook </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20EliteBook%208%20G1i%20Notebook.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -660,8 +690,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP EliteBook 840 G1 Notebook
-          PC.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> EliteBook <br>840 G1<br> Notebook PC </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20EliteBook%20840%20G1%20Notebook%20PC.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -689,8 +718,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP EliteBook 840 G4 Notebook
-          PC.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> EliteBook <br>840 G4 <br>Notebook PC </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20EliteBook%20840%20G4%20Notebook%20PC.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -718,8 +746,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP EliteBook 848 G4 Notebook
-          PC.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>EliteBook <br>848 G4 <br>Notebook PC </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20EliteBook%20848%20G4%20Notebook%20PC.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -747,8 +774,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP EliteBook Ultra G1i Notebook Next
-          Gen.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>EliteBook <br>Ultra G1i Notebook <br>Next Gen </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20EliteBook%20Ultra%20G1i%20Notebook%20Next%20Gen.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -776,7 +802,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP EliteDisplay E273 Monitor.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>EliteDisplay<br> E273 Monitor </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20EliteDisplay%20E273%20Monitor.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -804,8 +830,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP ENVY 2-in-1 Laptop PC
-          13-bf0000.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>ENVY 2-in-1 <br>Laptop PC<br>13-bf0000 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20ENVY%202-in-1%20Laptop%20PC%2013-bf0000.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -833,7 +858,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP ENVY Inspire 7200e series.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br>ENVY Inspire <br>7200e  </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20ENVY%20Inspire%207200e%20series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -861,7 +886,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP ENVY Inspire 7900e series.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>ENVY Inspire <br>7900e  </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20ENVY%20Inspire%207900e%20series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -889,7 +914,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP ENVY Laptop PC 14-eb0000.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>ENVY <br>Laptop PC <br>14-eb0000 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20ENVY%20Laptop%20PC%2014-eb0000.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -917,7 +942,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP ENVY Laptop PC 16-h1000.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>ENVY<br> Laptop PC <br>16-h1000 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20ENVY%20Laptop%20PC%2016-h1000.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -945,8 +970,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP ENVY Photo 7100 All-in-One
-          Series.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>ENVY Photo <br>7100 <br>All-in-One </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20ENVY%20Photo%207100%20All-in-One%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -974,8 +998,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP Flow
-          M631h.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet <br>Enterprise MFP <br>Flow M631h </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20Flow%20M631h.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1003,8 +1026,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP Flow
-          M632z.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet<br> Enterprise <br>MFP Flow<br> M632z </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20Flow%20M632z.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1032,8 +1054,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP Flow
-          M633z.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet <br>Enterprise <br>MFP Flow<br>M633z </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20Flow%20M633z.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1061,8 +1082,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP
-          M631.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet <br>Enterprise MFP<br>M631 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20M631.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1090,8 +1110,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP
-          M631dn.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet <br>Enterprise MFP<br>M631dn </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20M631dn.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1119,8 +1138,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP
-          M631z.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> LaserJet <br>Enterprise MFP<br>M631z </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20M631z.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1148,8 +1166,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP
-          M632.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet <br>Enterprise MFP<br>M632 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20M632.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1177,8 +1194,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP
-          M632fht.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet<br> Enterprise MFP<br>M632fht </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20M632fht.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1206,8 +1222,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP
-          M632h.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet <br>Enterprise MFP<br>M632h </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20M632h.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1235,8 +1250,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP
-          M633.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet <br>Enterprise MFP<br>M633 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20M633.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1264,8 +1278,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP
-          M633fh.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> LaserJet <br>Enterprise MFP<br>M633fh </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20M633fh.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1293,8 +1306,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP
-          M634.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet<br> Enterprise MFP<br> M634 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20M634.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1322,8 +1334,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP
-          M635.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet <br>Enterprise MFP<br>M635 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20M635.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1351,8 +1362,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP
-          M636.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet<br> Enterprise MFP<br>M636 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20M636.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1380,8 +1390,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Enterprise MFP
-          M637.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet <br>Enterprise MFP<br>M637 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Enterprise%20MFP%20M637.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1409,8 +1418,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Managed Flow MFP
-          E62665.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet <br>Managed Flow MFP<br>E62665 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Managed%20Flow%20MFP%20E62665.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1438,8 +1446,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Managed Flow MFP
-          E62675.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet <br>Managed Flow MFP<br>E62675 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Managed%20Flow%20MFP%20E62675.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1467,7 +1474,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Managed MFP E62655.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet<br> Managed MFP <br>E62655 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Managed%20MFP%20E62655.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1495,7 +1502,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP LaserJet Managed MFP E62665.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>LaserJet <br>Managed MFP <br>E62665 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20LaserJet%20Managed%20MFP%20E62665.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1523,8 +1530,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Mini 5101 Windows Vista
-          Laptop.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Mini 5101 <br>Windows Vista<br>Laptop </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Mini%205101%20Windows%20Vista%20Laptop.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1552,7 +1558,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Mini 5101 Windows XP Laptop.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Mini 5101<br> Windows XP <br>Laptop </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Mini%205101%20Windows%20XP%20Laptop.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1580,7 +1586,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP OfficeJet 250 Printer.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>OfficeJet <br>250 <br>Printer </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20OfficeJet%20250%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1608,8 +1614,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP OfficeJet Pro 8120e Series
-          Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>OfficeJet Pro <br>8120e  <br> Printer </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20OfficeJet%20Pro%208120e%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1637,8 +1642,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP OfficeJet Pro 8130e Series
-          Printer.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>OfficeJet Pro<br> 8130e<br>Printer </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20OfficeJet%20Pro%208130e%20Series%20Printer.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1666,8 +1670,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP OMEN 34c WQHD Curved Gaming
-          Monitor.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>OMEN 34c WQHD <br>Curved Gaming<br>Monitor </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20OMEN%2034c%20WQHD%20Curved%20Gaming%20Monitor.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1695,8 +1698,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP OMEN Gaming Desktop PC
-          GT22-0000i.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>OMEN<br> Gaming Desktop PC<br>GT22-0000i </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20OMEN%20Gaming%20Desktop%20PC%20GT22-0000i.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1724,8 +1726,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP OMEN Gaming Laptop PC
-          16-b0000.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> OMEN <br>Gaming Laptop PC<br>16-b0000 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20OMEN%20Gaming%20Laptop%20PC%2016-b0000.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1753,8 +1754,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP OMEN MAX Gaming Laptop PC
-          16-ah0000.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>OMEN MAX <br>Gaming Laptop PC<br>16-ah0000 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20OMEN%20MAX%20Gaming%20Laptop%20PC%2016-ah0000.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1782,8 +1782,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP OMEN Transcend Gaming Laptop PC
-          14-fb0000 (9D8T1AV).pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> OMEN Transcend <br>Gaming Laptop PC<br>14-fb0000 <br>(9D8T1AV) </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20OMEN%20Transcend%20Gaming%20Laptop%20PC%2014-fb0000%20(9D8T1AV).pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1811,8 +1810,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP OMEN Transcend Gaming Laptop PC
-          14-fb0000 (9P529AV).pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>OMEN Transcend <br>Gaming Laptop PC<br>14-fb0000 <br>(9P529AV) </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20OMEN%20Transcend%20Gaming%20Laptop%20PC%2014-fb0000%20(9P529AV).pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1840,7 +1838,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Pavilion 14-cd0002ne Laptop.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Pavilion <br>14-cd0002ne<br> Laptop </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Pavilion%2014-cd0002ne%20Laptop.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1868,8 +1866,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Pavilion All-in-One PC
-          27-d0000a.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Pavilion <br>All-in-One PC<br>27-d0000a </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Pavilion%20All-in-One%20PC%2027-d0000a.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1897,7 +1894,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Pro 612 G1 Wndows 10.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> Pro 612 G1<br> Windows 10 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Pro%20612%20G1%20Wndows%2010.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1925,7 +1922,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Pro 612 G1 Wndows 7.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Pro 612 G1 <br>Wndows 7 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Pro%20612%20G1%20Wndows%207.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1953,8 +1950,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Pro Tower 400 G9 PCI Desktop
-          PC.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Pro Tower <br>400 G9 PCI <br>Desktop PC </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Pro%20Tower%20400%20G9%20PCI%20Desktop%20PC.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -1982,7 +1978,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP ProBook 440 G9 Notebook PC.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> ProBook <br>440 G9 <br>Notebook PC </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20ProBook%20440%20G9%20Notebook%20PC.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -2010,7 +2006,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP ProBook Notebook AT6F4AV.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>ProBook<br> Notebook<br> AT6F4AV </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20ProBook%20Notebook%20AT6F4AV.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -2038,7 +2034,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Smart Tank 510 Series.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Smart Tank<br> 510  </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Smart%20Tank%20510%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -2066,7 +2062,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Smart Tank 5100 Series.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Smart Tank <br>5100  </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Smart%20Tank%205100%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -2094,7 +2090,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Smart Tank 6000 Series.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Smart Tank <br>6000  </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Smart%20Tank%206000%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -2122,7 +2118,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Smart Tank 7000 Series.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> Smart Tank <br>7000  </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Smart%20Tank%207000%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -2150,7 +2146,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Smart Tank 7300 Series.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> Smart Tank <br>7300  </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Smart%20Tank%207300%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -2178,7 +2174,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Smart Tank 7600 Series.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Smart Tank <br>7600  </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Smart%20Tank%207600%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -2206,8 +2202,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Spectre Convertible PC
-          14-ea0000.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Spectre <br>Convertible PC<br>14-ea0000 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Spectre%20Convertible%20PC%2014-ea0000.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -2235,8 +2230,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Victus Gaming Laptop
-          15-fa0000.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Victus <br>Gaming Laptop<br>15-fa0000 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Victus%20Gaming%20Laptop%2015-fa0000.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -2264,8 +2258,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Victus Gaming Laptop PC
-          16-e0000.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Victus <br>Gaming Laptop PC<br>16-e0000 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Victus%20Gaming%20Laptop%20PC%2016-e0000.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -2293,8 +2286,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP Victus Gaming Laptop PC
-          16-r1000.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP <br>Victus <br>Gaming Laptop PC<br>16-r1000 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20Victus%20Gaming%20Laptop%20PC%2016-r1000.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -2322,8 +2314,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP ZBook Studio G11 Mobile Workstation
-          PC.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>HP<br> ZBook <br>Studio G11 Mobile <br>Workstation PC </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/HP/HP%20ZBook%20Studio%20G11%20Mobile%20Workstation%20PC.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -2351,21 +2342,54 @@
     </div>
 
     <script>
-      // ✅ Attach event listeners AFTER the elements exist
-      document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll('.pdf-btn').forEach(btn => {
-          btn.addEventListener('click', function () {
+document.addEventListener("DOMContentLoaded", () => {
+
+    const search = document.getElementById("pdfSearch");
+
+    // This selects all your gray boxes
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    search.addEventListener("input", function () {
+        const q = this.value.toLowerCase().trim();
+
+        boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+                box.style.display = "";
+            } else {
+                box.style.display = "none";
+            }
+        });
+    });
+
+});
+</script>
+
+
+</body>
+
+   <script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Move all PDF boxes into a responsive grid
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    if (boxes.length) {
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+        boxes.forEach(box => grid.appendChild(box));
+        const section = document.querySelector("section");
+        section.appendChild(grid);
+    }
+
+    // PDF button behavior & styling
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
             const productId = this.getAttribute('data-product');
             const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            console.log("Redirecting to:", checkoutUrl); // Debugging
             window.location.href = checkoutUrl;
-          });
         });
-      });
 
-
-      // Button styling & hover animation
-      document.querySelectorAll('.pdf-btn').forEach(btn => {
         const icon = btn.querySelector('svg');
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
@@ -2381,13 +2405,13 @@
         icon.style.transition = 'transform 0.3s ease';
 
         btn.addEventListener('mouseover', () => {
-          icon.style.transform = 'translateY(3px)';
-          btn.style.background = '#5f879a';
+            icon.style.transform = 'translateY(3px)';
+            btn.style.background = '#5f879a';
         });
-
         btn.addEventListener('mouseout', () => {
-          icon.style.transform = 'translateY(0)';
-          btn.style.background = '#4e6e81';
+            icon.style.transform = 'translateY(0)';
+            btn.style.background = '#4e6e81';
         });
-      });
-    </script>
+    });
+});
+</script>

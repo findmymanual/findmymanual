@@ -1,37 +1,82 @@
+<head>
+    <style>
+        /* PDF Grid Layout */
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 per row on desktop */
+            gap: 20px;
+            justify-items: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 1024px) {
+            .pdf-grid {
+                grid-template-columns: repeat(3, 1fr); /* 3 per row on tablet */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .pdf-grid {
+                grid-template-columns: repeat(3, 1fr); /* 3 per row on mobile */
+            }
+        }
+
+        .pdf-grid div[style*='background:#f5f5f5'] {
+            width: 100%;
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body>
 <section style="max-width: 1200px; margin: 40px auto; padding: 20px;">
-  <h2
-    style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
-    Available HP PDF Manuals
-  </h2>
+    <h2 style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
+        Available LG PDF Manuals
+    </h2>
 
-  <h2 style="
-  font-size:2rem; 
-  color:#ffffff; 
-  display:inline-block; 
-  padding:12px 30px; 
-  background:#4e6e81; 
-  border-radius:16px; 
-  margin-bottom:30px;
-  font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
-  text-align:center;
-  position:relative;
-  left:50%;
-  transform:translateX(-50%);
-">
+   
 
-    Download Now!</h2>
+    <input 
+    type="text" 
+    id="pdfSearch" 
+    placeholder="Search model number..." 
+    style="
+        width: 100%;
+        max-width: 400px;
+        padding: 12px 16px;
+        margin: 20px auto;
+        display: block;
+        font-size: 1rem;
+        border: 2px solid #4e6e81;
+        border-radius: 8px;
+        outline: none;
+    ">
 
-  <div class="manual-grid" style="
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-items: center;
-    font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
-  ">
+    <div style="text-align: center; margin-top: 10px;">
+  <a href="checkout.html" 
+     style="background:#4e6e81; 
+            color:#ffffff; 
+            padding:14px 28px; 
+            text-decoration:none; 
+            border-radius:6px; 
+            font-size:1.1rem; 
+            font-weight:700; 
+            display:inline-block; 
+            border:1px solid rgba(255,255,255,0.2); 
+            transition:background 0.3s ease; 
+            font-family: Georgia, 'Times New Roman', Times, serif;">
+    Can't find your manual? Click here and send us the Brand + Model
+  </a>
+</div>
+
+<h2 style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
+        We will find it for you!
+    </h2>
+
+
 
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Cinema 3D Sound S92T1-C.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Cinema 3D Sound <br>S92T1-C </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20%20Cinema%203D%20Sound%20S92T1-C.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -59,7 +104,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LPXS30866D.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LPXS30866D </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20%20LPXS30866D.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -87,8 +132,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG 43 Inch Class UQ9000 PUD
-          series.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>43 Inch Class <br>UQ9000 PUD</strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%2043%20Inch%20Class%20UQ9000%20PUD%20series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -116,7 +160,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Air Conditioner L6004-1.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Air Conditioner <br>L6004-1 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Air%20Conditioner%20L6004-1.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -144,7 +188,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Air Conditioner LWHD6500R.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Air Conditioner <br>LWHD6500R </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Air%20Conditioner%20LWHD6500R.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -172,7 +216,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Air Conditioner LWHD6500SR.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Air Conditioner <br>LWHD6500SR </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Air%20Conditioner%20LWHD6500SR.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -200,7 +244,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Air Purifier as10GD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Air Purifier <br>as10GD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Air%20Purifier%20as10GD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -228,7 +272,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Air Purifier AS401WWA1.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Air Purifier <br>AS401WWA1 </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Air%20Purifier%20AS401WWA1.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -256,7 +300,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Air Purifier AS60GD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Air Purifier<br> AS60GD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Air%20Purifier%20AS60GD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -284,7 +328,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Cinema 3D Sound BH9520TW.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Cinema 3D Sound <br>BH9520TW </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Cinema%203D%20Sound%20BH9520TW.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -312,7 +356,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Cinema 3D Sound S92T1-S W.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Cinema 3D Sound <br>S92T1-S W </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Cinema%203D%20Sound%20S92T1-S%20W.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -340,7 +384,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Cinema 3D Sound T2.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Cinema 3D <br>Sound T2 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Cinema%203D%20Sound%20T2.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -368,7 +412,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Cinema 3D Sound W2.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Cinema 3D <br>Sound W2 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Cinema%203D%20Sound%20W2.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -396,7 +440,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Class UQ7070 ZUE Series.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Class <br>UQ7070 ZUE  </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Class%20UQ7070%20ZUE%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -424,7 +468,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Digital Signage 49XF3C.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Digital Signage <br>49XF3C </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Digital%20Signage%2049XF3C.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -452,7 +496,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Digital Signage 55XF3C.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Digital Signage <br>55XF3C </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Digital%20Signage%2055XF3C.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -480,7 +524,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Digital Signage 55XS2C.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Digital Signage <br>55XS2C </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Digital%20Signage%2055XS2C.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -508,7 +552,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG G5 MFL69451901.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>G5 MFL69451901 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20G5%20MFL69451901.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -536,7 +580,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED LCD Monitor 26BQ500.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED LCD Monitor <br>26BQ500 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20LCD%20Monitor%2026BQ500.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -564,7 +608,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED LCD Monitor 26WQ500.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> LED LCD Monitor <br>26WQ500 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20LCD%20Monitor%2026WQ500.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -592,7 +636,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED LCD Monitor 29WQ500.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> LED LCD Monitor <br>29WQ500 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20LCD%20Monitor%2029WQ500.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -620,7 +664,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED LCD Monitor 29WQ50T.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> LED LCD Monitor <br>29WQ50T </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20LCD%20Monitor%2029WQ50T.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -648,7 +692,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED LCD Monitor 34WQ500.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED LCD Monitor <br>34WQ500 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20LCD%20Monitor%2034WQ500.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -676,7 +720,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED Monitor 26BQ500.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> LED Monitor <br>26BQ500 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20Monitor%2026BQ500.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -704,7 +748,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED Monitor 26WQ500.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED Monitor <br>26WQ500 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20Monitor%2026WQ500.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -732,7 +776,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED Monitor 29WQ500.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED Monitor <br>29WQ500 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20Monitor%2029WQ500.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -760,7 +804,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED Monitor 29WQ50T.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> LED Monitor<br> 29WQ50T </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20Monitor%2029WQ50T.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -788,7 +832,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED Monitor 34WQ500.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED Monitor<br> 34WQ500 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20Monitor%2034WQ500.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -816,7 +860,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 32LQ630.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>32LQ630 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2032LQ630.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -844,7 +888,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 32LQ630BAUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> LED TV <br>32LQ630BAUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2032LQ630BAUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -872,7 +916,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 32LQ630BPUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV<br> 32LQ630BPUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2032LQ630BPUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -900,7 +944,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 43NANO7.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV<br> 43NANO7 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2043NANO7.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -928,7 +972,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 43NANO75UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV <br>43NANO75UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2043NANO75UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -956,7 +1000,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 43UQ7070ZUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV <br>43UQ7070ZUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2043UQ7070ZUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -984,7 +1028,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 43UQ7070ZUM.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV <br>43UQ7070ZUM </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2043UQ7070ZUM.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1012,7 +1056,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 43UQ7590PUB.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>43UQ7590PUB </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2043UQ7590PUB.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1040,7 +1084,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 43UQ7590PUK.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Led TV <br>43UQ7590PUK </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2043UQ7590PUK.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1068,7 +1112,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 43UQ8000AUB.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 43UQ8000AUB </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2043UQ8000AUB.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1096,7 +1140,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 43UQ8000AUK.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>43UQ8000AUK </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2043UQ8000AUK.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1124,7 +1168,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 43UQ9000PUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>43UQ9000PUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2043UQ9000PUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1152,7 +1196,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 50NANO7.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV<br> 50NANO7 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2050NANO7.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1180,7 +1224,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 50NANO75UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 50NANO75UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2050NANO75UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1208,7 +1252,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 50NANO8.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV <br>50NANO8 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2050NANO8.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1236,7 +1280,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 50NANO80AQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>50NANO80AQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2050NANO80AQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1264,7 +1308,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 50QNED8.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV<br> 50QNED8 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2050QNED8.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1292,7 +1336,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 50QNED80AQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>50QNED80AQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2050QNED80AQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1320,7 +1364,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 50QNED80UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Led TV <br>50QNED80UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2050QNED80UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1348,7 +1392,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 50UQ7070ZUE.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>50UQ7070ZUE </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2050UQ7070ZUE.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1376,7 +1420,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 50UQ7070ZUN.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>50UQ7070ZUN </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2050UQ7070ZUN.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1404,7 +1448,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 50UQ7590PUB.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>50UQ7590PUB </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2050UQ7590PUB.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1432,7 +1476,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 50UQ7590PUK.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 50UQ7590PUK </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2050UQ7590PUK.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1460,7 +1504,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 50UQ8000AUB.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>50UQ8000AUB </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2050UQ8000AUB.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1488,7 +1532,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 50UQ8000AUK.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 50UQ8000AUK </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2050UQ8000AUK.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1516,7 +1560,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 50UQ9000PUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>50UQ9000PUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2050UQ9000PUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1544,7 +1588,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 55NANO7.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV<br> 55NANO7 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2055NANO7.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1572,7 +1616,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 55NANO75UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 55NANO75UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2055NANO75UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1600,7 +1644,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 55NANO8.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV <br>55NANO8 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2055NANO8.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1628,7 +1672,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 55NANO80AQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Led TV<br> 55NANO80AQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2055NANO80AQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1656,7 +1700,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 55NANO9.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> LED TV <br>55NANO9 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2055NANO9.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1684,7 +1728,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 55QNED80AQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 55QNED80AQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2055QNED80AQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1712,7 +1756,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 55QNED80UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 55QNED80UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2055QNED80UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1740,7 +1784,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 55QNED85AQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>55QNED85AQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2055QNED85AQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1768,7 +1812,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 55QNED85UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 55QNED85UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2055QNED85UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1796,7 +1840,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 55UQ7030PUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>55UQ7030PUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2055UQ7030PUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1824,7 +1868,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 55UQ7050ZUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 55UQ7050ZUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2055UQ7050ZUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1852,7 +1896,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 55UQ7070ZUE.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>55UQ7070ZUE </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2055UQ7070ZUE.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1880,7 +1924,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 55UQ7070ZUN.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 55UQ7070ZUN </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2055UQ7070ZUN.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1908,7 +1952,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 55UQ7590PUK.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>55UQ7590PUK </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2055UQ7590PUK.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1936,7 +1980,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 55UQ8000AUB.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>55UQ8000AUB </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2055UQ8000AUB.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1964,7 +2008,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 55UQ8000AUK.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 55UQ8000AUK </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2055UQ8000AUK.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -1992,7 +2036,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 55UQ9000PUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 55UQ9000PUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2055UQ9000PUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2020,7 +2064,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 65NANO7.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV<br> 65NANO7 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2065NANO7.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2048,7 +2092,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65NANO75UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>65NANO75UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065NANO75UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2076,7 +2120,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 65NANO8.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV <br>65NANO8 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2065NANO8.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2104,7 +2148,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65NANO80AQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 65NANO80AQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065NANO80AQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2132,7 +2176,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 65NANO9.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV<br> 65NANO9 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2065NANO9.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2160,7 +2204,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65QNED80AQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 65QNED80AQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065QNED80AQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2188,7 +2232,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65QNED80UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>65QNED80UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065QNED80UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2216,7 +2260,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65QNED85AQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>65QNED85AQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065QNED85AQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2244,7 +2288,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65QNED85UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 65QNED85UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065QNED85UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2272,7 +2316,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65QNED90UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 65QNED90UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065QNED90UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2300,7 +2344,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65QNED99UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 65QNED99UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065QNED99UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2328,7 +2372,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65UQ7030PUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 65UQ7030PUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065UQ7030PUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2356,7 +2400,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65UQ7050ZUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 65UQ7050ZUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065UQ7050ZUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2384,7 +2428,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65UQ7070ZUE.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Led TV <br>65UQ7070ZUE </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065UQ7070ZUE.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2412,7 +2456,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65UQ7070ZUN.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>65UQ7070ZUN </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065UQ7070ZUN.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2440,7 +2484,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65UQ7590PUB.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>65UQ7590PUB </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065UQ7590PUB.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2468,7 +2512,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65UQ7590PUK.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 65UQ7590PUK </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065UQ7590PUK.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2496,7 +2540,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65UQ8000AUB.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 65UQ8000AUB </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065UQ8000AUB.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2524,7 +2568,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65UQ8000AUK.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Led TV <br>65UQ8000AUK </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065UQ8000AUK.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2552,7 +2596,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 65UQ9000PUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Led TV <br>65UQ9000PUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2065UQ9000PUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2580,7 +2624,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 70NANO7.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV<br> 70NANO7 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20LED%20TV%2070NANO7.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2608,7 +2652,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 70NANO75UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Led TV <br>70NANO75UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2070NANO75UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2636,7 +2680,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 70UQ7070ZUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 70UQ7070ZUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2070UQ7070ZUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2664,7 +2708,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 70UQ7070ZUM.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>70UQ7070ZUM </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2070UQ7070ZUM.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2692,7 +2736,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 70UQ7590PUB.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>70UQ7590PUB </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2070UQ7590PUB.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2720,7 +2764,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 70UQ7590PUK.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 70UQ7590PUK </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2070UQ7590PUK.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2748,7 +2792,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 70UQ8000AUB.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 70UQ8000AUB </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2070UQ8000AUB.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2776,7 +2820,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 70UQ8000AUK.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Led TV <br>70UQ8000AUK </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2070UQ8000AUK.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2804,7 +2848,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 70UQ9000PUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>70UQ9000PUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG1/LG%20Led%20TV%2070UQ9000PUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2832,7 +2876,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 75NANO7.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV <br>75NANO7 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20LED%20TV%2075NANO7.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2860,7 +2904,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75NANO75UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 75NANO75UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075NANO75UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2888,7 +2932,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 75NANO8.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV <br>75NANO8 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20LED%20TV%2075NANO8.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2916,7 +2960,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75NANO80AQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>75NANO80AQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075NANO80AQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2944,7 +2988,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 75NANO9.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV <br>75NANO9 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20LED%20TV%2075NANO9.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -2972,7 +3016,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75QNED80AQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>75QNED80AQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075QNED80AQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3000,7 +3044,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75QNED80UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>75QNED80UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075QNED80UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3028,7 +3072,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75QNED85AQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Led TV <br>75QNED85AQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075QNED85AQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3056,7 +3100,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75QNED85UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>75QNED85UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075QNED85UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3084,7 +3128,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75QNED90UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 75QNED90UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075QNED90UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3112,7 +3156,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75QNED99UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>75QNED99UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075QNED99UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3140,7 +3184,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75UQ7050ZUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>75UQ7050ZUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075UQ7050ZUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3168,7 +3212,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75UQ7070ZUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>75UQ7070ZUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075UQ7070ZUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3196,7 +3240,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75UQ7070ZUM.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>75UQ7070ZUM </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075UQ7070ZUM.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3224,7 +3268,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75UQ7590PUB.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>75UQ7590PUB </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075UQ7590PUB.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3252,7 +3296,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75UQ7590PUK.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>75UQ7590PUK </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075UQ7590PUK.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3280,7 +3324,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75UQ8000AUB.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 75UQ8000AUB </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075UQ8000AUB.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3308,7 +3352,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75UQ8000AUK.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 75UQ8000AUK </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075UQ8000AUK.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3336,7 +3380,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 75UQ9000PUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>75UQ9000PUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2075UQ9000PUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3364,7 +3408,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 86NANO7.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV <br>86NANO7 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20LED%20TV%2086NANO7.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3392,7 +3436,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 86NANO75UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>86NANO75UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2086NANO75UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3420,7 +3464,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 86NANO8.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV<br> 86NANO8 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20LED%20TV%2086NANO8.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3448,7 +3492,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LED TV 86NANO9.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>LED TV<br> 86NANO9 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20LED%20TV%2086NANO9.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3476,7 +3520,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 86QNED80AQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Led TV <br>86QNED80AQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2086QNED80AQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3504,7 +3548,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 86QNED80UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>86QNED80UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2086QNED80UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3532,7 +3576,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 86QNED85AQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Led TV<br> 86QNED85AQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2086QNED85AQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3560,7 +3604,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 86QNED85UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 86QNED85UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2086QNED85UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3588,7 +3632,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 86QNED90UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 86QNED90UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2086QNED90UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3616,7 +3660,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 86QNED99UQA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>86QNED99UQA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2086QNED99UQA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3644,7 +3688,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 86UQ7070ZUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>86UQ7070ZUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2086UQ7070ZUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3672,7 +3716,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 86UQ7590PUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV<br> 86UQ7590PUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2086UQ7590PUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3700,7 +3744,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 86UQ8000AUB.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>86UQ8000AUB </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2086UQ8000AUB.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3728,7 +3772,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Led TV 86UQ9000PUD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Led TV <br>86UQ9000PUD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Led%20TV%2086UQ9000PUD.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3756,7 +3800,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LWHD6500R.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> LWHD6500R </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20LWHD6500R.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3784,7 +3828,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG LWHD6500SR.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> LWHD6500SR </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20LWHD6500SR.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -3812,8 +3856,8 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Microwave.Grill Oven
-          MB-3571MCD.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Microwave Grill Oven
+         <br> MB-3571MCD </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Microwave.Grill%20Oven%20MB-3571MCD.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -3841,7 +3885,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Microwave.Oven MFL71680504.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Microwave Oven <br>MFL71680504 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Microwave.Oven%20MFL71680504.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -3869,7 +3913,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Microwave.Oven MH6842B.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Microwave Oven <br>MH6842B </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Microwave.Oven%20MH6842B.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -3897,7 +3941,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Mini Hi-Fi System CJ44.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Mini Hi-Fi System <br>CJ44 </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Mini%20Hi-Fi%20System%20CJ44.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -3925,7 +3969,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Mini Hi-Fi System CJS45F.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Mini Hi-Fi System <br>CJS45F </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Mini%20Hi-Fi%20System%20CJS45F.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -3953,7 +3997,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Mini Hi-Fi System CJS45W.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Mini Hi-Fi System <br>CJS45W </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Mini%20Hi-Fi%20System%20CJS45W.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -3981,7 +4025,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Mini Hi-Fi System CM4590.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Mini Hi-Fi System <br>CM4590 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Mini%20Hi-Fi%20System%20CM4590.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4009,7 +4053,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Musicflow SH7B.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Musicflow<br> SH7B </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Musicflow%20SH7B.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4037,8 +4081,8 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG MyView Smart Monitor
-          27SR73U.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>MyView Smart Monitor
+        <br>  27SR73U </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20MyView%20Smart%20Monitor%2027SR73U.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4066,8 +4110,8 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG MyView Smart Monitor
-          32SR73U.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>MyView Smart Monitor
+        <br>  32SR73U </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20MyView%20Smart%20Monitor%2032SR73U.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4095,7 +4139,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Nano81.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Nano 81 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Nano81.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4123,7 +4167,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 43NANO7.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>NanoCell 75 Series <br>43NANO7 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2043NANO7.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4151,7 +4195,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 50NANO7.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>NanoCell 75 Series <br>50NANO7 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2050NANO7.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4179,7 +4223,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 50NANO8.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>NanoCell 75 Series <br>50NANO8 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2050NANO8.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4207,7 +4251,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 55NANO7.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>NanoCell 75 Series <br>55NANO7 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2055NANO7.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4235,7 +4279,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 55NANO8.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> NanoCell 75 Series <br>55NANO8 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2055NANO8.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4263,7 +4307,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 55NANO9.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>NanoCell 75 Series <br>55NANO9 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2055NANO9.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4291,7 +4335,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 65NANO7.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>NanoCell 75 Series <br>65NANO7 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2065NANO7.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4319,7 +4363,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 65NANO8.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>NanoCell 75 Series <br>65NANO8 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2065NANO8.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4347,7 +4391,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 65NANO9.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> NanoCell 75 Series <br>65NANO9 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2065NANO9.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4375,7 +4419,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 75NANO7.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> NanoCell 75 Series <br>75NANO7 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2075NANO7.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4403,7 +4447,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 75NANO8.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>NanoCell 75 Series <br>75NANO8 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2075NANO8.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4431,7 +4475,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 75NANO9.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> NanoCell 75 Series <br>75NANO9 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2075NANO9.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4459,7 +4503,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 86NANO7.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>NanoCell 75 Series <br>86NANO7 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2086NANO7.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4487,7 +4531,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 86NANO8.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>NanoCell 75 Series <br>86NANO8 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2086NANO8.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4515,7 +4559,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 75 Series 86NANO9.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>NanoCell 75 Series <br>86NANO9 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2075%20Series%2086NANO9.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4543,7 +4587,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell 80 Series 2020.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>NanoCell 80 Series <br>2020 </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%2080%20Series%202020.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4571,7 +4615,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell NANO76.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> NanoCell <br>NANO76 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%20NANO76.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4599,7 +4643,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell NANO81.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> NanoCell <br>NANO81 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%20NANO81.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4627,7 +4671,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG NanoCell TV.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>NanoCell TV </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20NanoCell%20TV.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4655,7 +4699,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Notebook 17Z990 Series.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Notebook 17Z990  </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Notebook%2017Z990%20Series.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -4683,7 +4727,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Notebook 17Z990.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Notebook <br>17Z990 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Notebook%2017Z990.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4711,7 +4755,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED.TV.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED TV </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED.TV.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4739,7 +4783,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED42C4PUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> OLED42C4PUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED42C4PUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4767,7 +4811,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED48B4AUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED48B4AUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED48B4AUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4795,7 +4839,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED48B4PUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED48B4PUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED48B4PUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4823,7 +4867,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED48C4AUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED48C4AUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED48C4AUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4851,7 +4895,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED48C4PUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED48C4PUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED48C4PUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4879,7 +4923,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED55B4AUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> OLED55B4AUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED55B4AUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4907,7 +4951,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED55B4EUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED55B4EUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED55B4EUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4935,7 +4979,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED55B4PUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED55B4PUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED55B4PUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4963,7 +5007,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED55C4AUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED55C4AUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED55C4AUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -4991,7 +5035,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED55C4PUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED55C4PUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED55C4PUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5019,7 +5063,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED55G4SUB.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> OLED55G4SUB </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED55G4SUB.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5047,7 +5091,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED65B4AUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> OLED65B4AUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED65B4AUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5075,7 +5119,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED65B4EUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED65B4EUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED65B4EUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5103,7 +5147,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED65B4PUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> OLED65B4PUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED65B4PUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5131,7 +5175,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED65C4AUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED65C4AUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED65C4AUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5159,7 +5203,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED65C4PUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED65C4PUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED65C4PUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5187,7 +5231,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED65G4SUB.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED65G4SUB </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED65G4SUB.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5215,7 +5259,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED77B4AUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> OLED77B4AUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED77B4AUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5243,7 +5287,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED77B4EUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED77B4EUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED77B4EUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5271,7 +5315,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED77B4PUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED77B4PUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED77B4PUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5299,7 +5343,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED77C4AUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> OLED77C4AUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED77C4AUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5327,7 +5371,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED77C4PUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED77C4PUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED77C4PUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5355,7 +5399,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED77G4WUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> OLED77G4WUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED77G4WUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5383,7 +5427,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED83B4PUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED83B4PUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED83B4PUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5411,7 +5455,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED83C4AUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED83C4AUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED83C4AUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5439,7 +5483,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED83C4PUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED83C4PUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED83C4PUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5467,7 +5511,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED83G4WUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> OLED83G4WUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED83G4WUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5495,7 +5539,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG OLED97G4WUA.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>OLED97G4WUA </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20OLED97G4WUA.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5523,8 +5567,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Portable Bluetooth Speaker
-          PL2B.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Portable <br>Bluetooth Speaker<br>PL2B </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Portable%20Bluetooth%20Speaker%20PL2B.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -5552,8 +5595,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Portable Bluetooth Speaker
-          PL2C.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Portable<br> Bluetooth Speaker<br>PL2C </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Portable%20Bluetooth%20Speaker%20PL2C.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -5581,8 +5623,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Portable Bluetooth Speaker
-          PL2M.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Portable <br>Bluetooth Speaker<br>PL2M </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Portable%20Bluetooth%20Speaker%20PL2M.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -5610,8 +5651,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Portable Bluetooth Speaker
-          PL2P.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Portable<br> Bluetooth Speaker<br>PL2P </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG2/LG%20Portable%20Bluetooth%20Speaker%20PL2P.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -5639,8 +5679,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Portable Bluetooth Speaker
-          PL2S.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Portable <br>Bluetooth Speaker<br>PL2S </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Portable%20Bluetooth%20Speaker%20PL2S.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -5668,8 +5707,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Portable Bluetooth Speaker
-          PL2W.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Portable<br> Bluetooth Speaker<br>PL2W </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Portable%20Bluetooth%20Speaker%20PL2W.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -5697,8 +5735,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Portable.Bluetooth Speaker
-          PL2.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Portable<br>Bluetooth Speaker<br>PL2 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Portable.Bluetooth%20Speaker%20%20PL2.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -5726,7 +5763,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Q8000 AUB Series webOS.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Q8000 AUB Series <br>webOS </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Q8000%20AUB%20Series%20webOS.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -5754,7 +5791,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Refrigerator GM63SGS.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Refrigerator<br> GM63SGS </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Refrigerator%20GM63SGS.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5782,7 +5819,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Refrigerator LFXS24623.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Refrigerator <br>LFXS24623 </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Refrigerator%20LFXS24623.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -5810,7 +5847,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Smart Monitor 27SR73U.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Smart Monitor <br>27SR73U </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Smart%20Monitor%2027SR73U.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -5838,7 +5875,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Smart Monitor 32SR73U.pdf</strong></h3>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Smart Monitor <br>32SR73U </strong></h3>
       <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Smart%20Monitor%2032SR73U.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -5866,7 +5903,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG UltraFine Display 27MD5KL.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>UltraFine Display <br>27MD5KL </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20UltraFine%20Display%2027MD5KL.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -5894,7 +5931,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG UltraFine Display 27MD5KLP.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> UltraFine Display <br>27MD5KLP </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20UltraFine%20Display%2027MD5KLP.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -5922,7 +5959,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG UltraGear 27GL63T.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> UltraGear<br> 27GL63T </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20UltraGear%2027GL63T.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5950,7 +5987,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG UltraGear 32GN500.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>UltraGear<br> 32GN500 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20UltraGear%2032GN500.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -5978,7 +6015,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG UltraGear 32GN550.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>UltraGear <br>32GN550 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20UltraGear%2032GN550.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -6006,7 +6043,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG UltraGear 32GN550P.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>UltraGear <br>32GN550P </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20UltraGear%2032GN550P.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -6034,7 +6071,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG UltraGear 34GL750.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> UltraGear<br> 34GL750 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20UltraGear%2034GL750.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -6062,7 +6099,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG UltraGear 45GR65DC.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> UltraGear <br>45GR65DC </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20UltraGear%2045GR65DC.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -6090,7 +6127,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG UltraGear 45GR75DC.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>UltraGear<br> 45GR75DC </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20UltraGear%2045GR75DC.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -6118,7 +6155,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG UltraGear 45GR95QE.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>UltraGear<br> 45GR95QE </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20UltraGear%2045GR95QE.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -6146,7 +6183,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG UltraGear.32GN50T.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>UltraGear<br>32GN50T </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20UltraGear.32GN50T.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -6174,7 +6211,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG UQ7590 4K LED TV.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>UQ7590 <br>4K LED TV </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20UQ7590%204K%20LED%20TV.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -6202,7 +6239,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Wash and Dryer F2V5PGP0W.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Wash and Dryer <br>F2V5PGP0W </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Wash%20and%20Dryer%20F2V5PGP0W.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -6230,7 +6267,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Wash and Dryer F2V5PGP2T.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Wash and Dryer <br>F2V5PGP2T </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Wash%20and%20Dryer%20F2V5PGP2T.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -6258,7 +6295,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Wash and Dryer WDV5148SGP.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Wash and Dryer <br>WDV5148SGP </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Wash%20and%20Dryer%20WDV5148SGP.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -6286,7 +6323,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Washing Machine WF-T1477TP.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Washing Machine <br>WF-T1477TP </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Washing%20Machine%20WF-T1477TP.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -6314,7 +6351,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Washing Machine WM2077CW.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG<br> Washing Machine <br>WM2077CW </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Washing%20Machine%20WM2077CW.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -6342,7 +6379,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Washing Machine WM2277H.pdf</strong>
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Washing Machine <br>WM2277H </strong>
       </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Washing%20Machine%20WM2277H.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -6370,7 +6407,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Washtower WKEX200H.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Washtower <br>WKEX200H </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Washtower%20WKEX200H.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -6398,7 +6435,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Washtower WKGX201H.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Washtower<br> WKGX201H </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Washtower%20WKGX201H.pdf' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
           stroke='white' fill='none' stroke-width='2'>
@@ -6426,8 +6463,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Watch Sport LG-W280A
-          MFL69843601.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Watch Sport <br>LG-W280A<br>MFL69843601 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Watch%20Sport%20LG-W280A%20MFL69843601.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -6455,8 +6491,7 @@
     </div>
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG Watch Urbane LG-W150
-          MFL69183201.pdf</strong></h3><a
+      <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>LG <br>Watch Urbane <br>LG-W150<br>MFL69183201 </strong></h3><a
         href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/LG3/LG%20Watch%20Urbane%20LG-W150%20MFL69183201.pdf'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
           height='22' stroke='white' fill='none' stroke-width='2'>
@@ -6484,21 +6519,54 @@
     </div>
 
     <script>
-      // ✅ Attach event listeners AFTER the elements exist
-      document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll('.pdf-btn').forEach(btn => {
-          btn.addEventListener('click', function () {
+document.addEventListener("DOMContentLoaded", () => {
+
+    const search = document.getElementById("pdfSearch");
+
+    // This selects all your gray boxes
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    search.addEventListener("input", function () {
+        const q = this.value.toLowerCase().trim();
+
+        boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+                box.style.display = "";
+            } else {
+                box.style.display = "none";
+            }
+        });
+    });
+
+});
+</script>
+
+
+</body>
+
+       <script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Move all PDF boxes into a responsive grid
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    if (boxes.length) {
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+        boxes.forEach(box => grid.appendChild(box));
+        const section = document.querySelector("section");
+        section.appendChild(grid);
+    }
+
+    // PDF button behavior & styling
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
             const productId = this.getAttribute('data-product');
             const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            console.log("Redirecting to:", checkoutUrl); // Debugging
             window.location.href = checkoutUrl;
-          });
         });
-      });
 
-
-      // Button styling & hover animation
-      document.querySelectorAll('.pdf-btn').forEach(btn => {
         const icon = btn.querySelector('svg');
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
@@ -6514,13 +6582,13 @@
         icon.style.transition = 'transform 0.3s ease';
 
         btn.addEventListener('mouseover', () => {
-          icon.style.transform = 'translateY(3px)';
-          btn.style.background = '#5f879a';
+            icon.style.transform = 'translateY(3px)';
+            btn.style.background = '#5f879a';
         });
-
         btn.addEventListener('mouseout', () => {
-          icon.style.transform = 'translateY(0)';
-          btn.style.background = '#4e6e81';
+            icon.style.transform = 'translateY(0)';
+            btn.style.background = '#4e6e81';
         });
-      });
-    </script>
+    });
+});
+</script>
