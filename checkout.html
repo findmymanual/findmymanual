@@ -1,275 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Checkout Page</title>
-
-  <style>
-    body, h2, h3, p, label, input, button {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    body {
-      background-color: #e8edf1;
-      color: #080808;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      min-height: 100vh;
-    }
-    .order-section {
-      background: linear-gradient(to right, #4e6e81, #2c3e50);
-      border-radius: 12px;
-      padding: 30px;
-      width: 100%;
-      max-width: 500px;
-      color: #fff;
-      text-align: center;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-    }
-    .order-section h2 {
-      font-size: 2.2rem;
-      font-weight: bold;
-      margin-bottom: 25px;
-    }
-    .order-section form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      text-align: left;
-    }
-    .order-section label {
-      font-weight: bold;
-      margin-bottom: 5px;
-      color: #ffffff;
-    }
-    .order-section input[type="text"],
-    .order-section input[type="email"],
-    .order-section input[readonly],
-    .order-section input[type="tel"] {
-      width: 100%;
-      padding: 10px 12px;
-      border-radius: 6px;
-      border: none;
-      font-size: 1rem;
-      color: #33475b;
-      outline: none;
-    }
-    .order-section input[readonly] {
-      background-color: #d1d5db;
-      cursor: not-allowed;
-    }
-    .order-section input::placeholder {
-      color: #7a7a7a;
-    }
-    .order-section button {
-      background: #ffffff;
-      color: #2c3e50;
-      padding: 12px 0;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    .order-section button:hover {
-      background: #f5f5f5;
-    }
-    .trust-section {
-      padding: 25px 20px;
-      border-radius: 12px;
-      text-align: center;
-      margin-top: 20px;
-      background: linear-gradient(to right, #4e6e81, #2c3e50);
-      color: #ffffff;
-    }
-    .trust-section h2 {
-      font-size: 1.8rem;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-    .trust-section p {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-    .trust-section .logos {
-      display:flex;
-      justify-content:center;
-      gap:15px;
-      flex-wrap:wrap;
-    }
-    .trust-section .logos img {
-      height:50px;
-      border-radius:6px;
-      background:#fff;
-      padding:5px;
-    }
-    .download-btn {
-      display: inline-block;
-      margin-top: 20px;
-      background-color: #1761a0;
-      color: #fff;
-      padding: 12px 25px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-    .download-btn:hover { background-color: #0f3c6b; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Checkout Page</title>
+<style>
+body, h2, h3, p, label, input, button { font-family: Georgia, 'Times New Roman', Times, serif; }
+body { background-color: #e8edf1; margin:0; padding:20px; display:flex; justify-content:center; min-height:100vh; }
+.order-section { background:linear-gradient(to right, #4e6e81, #2c3e50); border-radius:12px; padding:30px; width:100%; max-width:500px; color:#fff; text-align:center; box-shadow:0 6px 20px rgba(0,0,0,0.2); }
+.order-section h2 { font-size:2.2rem; margin-bottom:25px; }
+.order-section form { display:flex; flex-direction:column; gap:15px; text-align:left; }
+.order-section label { font-weight:bold; margin-bottom:5px; color:#fff; }
+.order-section input[type="text"], .order-section input[type="email"], .order-section input[readonly], .order-section input[type="tel"] { width:100%; padding:10px 12px; border-radius:6px; border:none; font-size:1rem; color:#33475b; outline:none; }
+.order-section input[readonly] { background-color:#d1d5db; cursor:not-allowed; }
+.order-section input::placeholder { color:#7a7a7a; }
+.order-section button { background:#fff; color:#2c3e50; padding:12px 0; border:none; border-radius:6px; font-size:1rem; font-weight:bold; cursor:pointer; transition:0.3s; }
+.order-section button:hover { background:#f5f5f5; }
+.trust-section { padding:25px 20px; border-radius:12px; text-align:center; margin-top:20px; background:linear-gradient(to right,#4e6e81,#2c3e50); color:#fff; }
+.trust-section h2 { font-size:1.8rem; margin-bottom:15px; }
+.trust-section p { font-size:1rem; line-height:1.6; margin-bottom:20px; }
+.trust-section .logos { display:flex; justify-content:center; gap:15px; flex-wrap:wrap; }
+.trust-section .logos img { height:50px; border-radius:6px; background:#fff; padding:5px; }
+.download-btn { display:inline-block; margin-top:20px; background-color:#1761a0; color:#fff; padding:12px 25px; font-size:16px; font-weight:bold; border-radius:6px; text-decoration:none; transition:0.3s; }
+.download-btn:hover { background-color:#0f3c6b; }
+</style>
 </head>
-
 <body>
-  <div class="order-section">
+<div class="order-section">
 
-   <div style="
-  background: #ffffff;
-  border: 2px solid #4e6e81;
-  border-radius: 12px;
-  padding: 20px;
-  margin-top: 20px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-">
-  <h2 style="color:#4e6e81; font-size:1.6rem; margin:0;">
-    Checkout for <br><br>
-    <span id="productName" style="font-weight:bold;">User Manual</span>
-  </h2>
-</div>
-<br>
+  <div style="background:#fff; border:2px solid #4e6e81; border-radius:12px; padding:20px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+    <h2 style="color:#4e6e81; font-size:1.6rem; margin:0;">
+      Checkout for <br><br>
+      <span id="productName" style="font-weight:bold;">User Manual</span>
+    </h2>
+  </div>
+  <br>
 
-    <!-- ORDER FORM -->
-    <form id="orderForm">
+  <form id="orderForm">
+    <label for="order_number">Order Number</label>
+    <input type="text" id="order_number" readonly />
 
-      <label for="order_number">Order Number</label>
-      <input type="text" id="order_number" name="order_number" readonly />
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Your full name" required />
 
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="customer_name" placeholder="Your full name" required />
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="your.email@example.com" required />
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="customer_email" placeholder="your.email@example.com" required />
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" placeholder="Phone Number" required />
 
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="customer_phone" placeholder="Phone Number" required />
+    <label for="brand">Brand Name</label>
+    <input type="text" id="brand" placeholder="Brand Name" required />
 
-      <label for="brand">Brand Name</label>
-      <input type="text" id="brand" name="brand_name" placeholder="Brand Name" required />
+    <label for="model">Serial Number</label>
+    <input type="text" id="model" placeholder="Serial Number" required />
 
-      <label for="model">Serial Number</label>
-      <input type="text" id="model" name="model_number" placeholder="Serial Number" required />
+    <label for="amount">Amount (USD)</label>
+    <input type="text" id="amount" value="$9.95" readonly />
 
-      <label for="product">Product Name</label>
-      <input type="text" id="product" name="item_name" value="User Manual" readonly />
+    <input type="hidden" id="pdf_url" value="">
 
-      <label for="amount">Amount (USD)</label>
-      <input type="text" id="amount" name="amount" value="$9.95" readonly />
+    <button type="submit">Pay Now</button>
+  </form>
 
-      <input type="hidden" id="pdf_url" name="pdf_url" value="">
-
-      <button type="submit">Pay Now</button>
-    </form>
-
-    <!-- Payment trust section -->
-    <div class="trust-section">
-      <h2>Secure & Trusted Payment</h2>
-      <p>Your payment is 100% secure. We use PayPal, the world's trusted payment system.</p>
-      <div class="logos">
-        <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
-        <img src="mastercard.png" alt="MasterCard">
-        <img src="visa.jpeg" alt="Visa">
-      </div>
+  <div class="trust-section">
+    <h2>Secure & Trusted Payment</h2>
+    <p>Your payment is 100% secure. We use PayPal, the world's trusted payment system.</p>
+    <div class="logos">
+      <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
+      <img src="mastercard.png" alt="MasterCard">
+      <img src="visa.jpeg" alt="Visa">
     </div>
-
-    <div id="downloadContainer"></div>
-
   </div>
 
+  <div id="downloadContainer"></div>
+
+</div>
 
 <script>
-  // Generate random order number
-  function generateOrderNumber() {
-    return Math.floor(100000 + Math.random() * 900000).toString();
+// Generate random order number
+function generateOrderNumber() {
+  return Math.floor(100000 + Math.random() * 900000).toString();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("order_number").value = generateOrderNumber();
+
+  // Load product and PDF from localStorage
+  const productName = localStorage.getItem('lastProduct');
+  const pdfUrl = localStorage.getItem('lastPDF');
+
+  if (productName) document.getElementById("productName").textContent = productName;
+  if (pdfUrl) document.getElementById("pdf_url").value = pdfUrl;
+
+  // Show download button if returning from PayPal success
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('paypal') === 'success' && pdfUrl) {
+    const btn = document.createElement('a');
+    btn.href = pdfUrl;
+    btn.target = "_blank";
+    btn.className = 'download-btn';
+    btn.textContent = '⬇ Download Your Manual';
+    document.getElementById('downloadContainer').appendChild(btn);
+
+    // Optional: clear storage after download
+    btn.addEventListener('click', () => localStorage.removeItem('lastPDF'));
   }
+});
 
-  document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("order_number").value = generateOrderNumber();
+// Handle form submission
+document.getElementById("orderForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
 
-    const params = new URLSearchParams(window.location.search);
+  const data = {
+    order_number: document.getElementById("order_number").value,
+    customer_name: document.getElementById("name").value,
+    customer_email: document.getElementById("email").value,
+    customer_phone: document.getElementById("phone").value,
+    brand_name: document.getElementById("brand").value,
+    model_number: document.getElementById("model").value,
+    pdf_url: document.getElementById("pdf_url").value,
+    amount: document.getElementById("amount").value,
+    payment_status: "pending"
+  };
 
-    // Load product name
-    const productName = params.get("product");
-    if (productName) {
-      document.getElementById("productName").textContent =
-        decodeURIComponent(productName).replace(/_/g, " ");
+  try {
+    // Send to Formspree
+    await fetch("https://formspree.io/f/xldpwdpb", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
 
-      document.getElementById("product").value =
-        decodeURIComponent(productName).replace(/_/g, " ");
-    }
+    // Send to backend (Netlify function)
+    await fetch("https://findmymanual.live/.netlify/functions/submitOrder", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
 
-    // Load PDF link
-    const pdfLink = params.get("pdf");
-    if (pdfLink) {
-      document.getElementById("pdf_url").value = pdfLink;
-      localStorage.setItem("lastPDF", pdfLink);
-    }
+    // Redirect to PayPal
+    const query = new URLSearchParams({
+      invoice_number: data.order_number,
+      custom: JSON.stringify({
+        customer_name: data.customer_name,
+        customer_email: data.customer_email,
+        customer_phone: data.customer_phone,
+        pdf: data.pdf_url
+      })
+    });
 
-    // If returning from PayPal success
-    if (params.get("paypal") === "success") {
-      const pdfUrl = localStorage.getItem("lastPDF");
-      if (pdfUrl) {
-        const btn = document.createElement("a");
-        btn.href = pdfUrl;
-        btn.className = "download-btn";
-        btn.textContent = "⬇ Download Your Manual";
-        document.getElementById("downloadContainer").appendChild(btn);
-      }
-    }
-  });
+    window.location.href = `https://www.paypal.com/ncp/payment/G7JR8GPE4K9W4?${query.toString()}`;
 
-  // Submit form: send to backend + redirect to PayPal
-  document.getElementById("orderForm").addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const form = e.target;
-    const data = Object.fromEntries(new FormData(form).entries());
-    data.payment_status = "pending";
-
-    try {
-      await fetch("https://formspree.io/f/xldpwdpb", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-
-      await fetch("https://findmymanual.live/.netlify/functions/submitOrder", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-
-      const query = new URLSearchParams({
-        invoice_number: data.order_number,
-        custom: JSON.stringify({
-          customer_name: data.customer_name,
-          customer_email: data.customer_email,
-          customer_phone: data.customer_phone,
-          pdf: data.pdf_url
-        })
-      });
-
-      window.location.href = `https://www.paypal.com/ncp/payment/G7JR8GPE4K9W4?${query.toString()}`;
-
-    } catch (error) {
-      alert("There was an error submitting your order. Please try again.");
-    }
-  });
+  } catch (err) {
+    alert("Error submitting order. Please try again.");
+  }
+});
 </script>
-
 </body>
 </html>
