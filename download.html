@@ -1,88 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Download is Ready</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Manual is Ready</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 40px;
-      background: #f5f5f5;
-    }
-    .box {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 400px;
-      margin: auto;
-      border: 2px solid #4e6e81;
-    }
-    h2 {
-      color: #4e6e81;
-    }
-    .small {
-      font-size: 14px;
-      color: #555;
-      margin-top: 10px;
-    }
-    .download-btn {
-      display: inline-block;
-      background: #4e6e81;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-    .download-btn:hover {
-      background: #5f879a;
-    }
-  </style>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background:#f5f5f5;
+  text-align:center;
+  padding:40px 20px;
+}
 
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1424202759904253"
-     crossorigin="anonymous"></script>
+.container {
+  max-width:600px;
+  margin:auto;
+  background:#ffffff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color:#4e6e81;
+  margin-bottom:10px;
+}
+
+p {
+  color:#555;
+  font-size:15px;
+}
+
+.download-btn {
+  display:inline-block;
+  background:#4e6e81;
+  color:white;
+  padding:14px 28px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-top:20px;
+  font-size:16px;
+  transition:0.3s;
+}
+
+.download-btn:hover {
+  background:#5f879a;
+}
+
+.related {
+  margin-top:40px;
+  text-align:left;
+}
+
+.related h3 {
+  color:#4e6e81;
+}
+
+.related a {
+  display:block;
+  margin:6px 0;
+  color:#4e6e81;
+  text-decoration:none;
+}
+
+.related a:hover {
+  text-decoration:underline;
+}
+</style>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1424202759904253"
+crossorigin="anonymous"></script>
+
 </head>
 <body>
 
-<div class="box">
-  <h2>Redirecting you now…</h2>
-  <p class="small">Please wait while we prepare your file.</p>
+<div class="container">
 
-  <!-- AdSense Ad -->
-  <ins class="adsbygoogle"
-       style="display:block; text-align:center;"
-       data-ad-client="ca-pub-1424202759904253"
-       data-ad-slot="5235434866"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  <h1>Your Manual is Ready</h1>
+  <p>Please click the button below to start your download.</p>
 
-  <p class="small">If the download doesn’t start automatically, <a id="manualLink" href="#" class="download-btn">click here</a>.</p>
+  <!-- TOP AD -->
+  <div style="margin:25px 0;">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1424202759904253"
+         data-ad-slot="5235434866"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </div>
+
+  <a id="manualLink" href="#" class="download-btn">Download PDF Manual</a>
+
+  <p style="margin-top:15px;font-size:13px;color:#777;">
+    Having trouble? Right-click and choose "Save link as".
+  </p>
+
+  <!-- RELATED MANUALS (Keeps session alive = more revenue) -->
+  <div class="related">
+    <h3>You may also need:</h3>
+    <a href="/whirlpool-washer-manuals.html">Whirlpool Washer Manuals</a>
+    <a href="/whirlpool-dryer-manuals.html">Whirlpool Dryer Manuals</a>
+    <a href="/whirlpool-refrigerator-manuals.html">Whirlpool Refrigerator Manuals</a>
+  </div>
+
 </div>
 
 <script>
-  // Get file URL from query string
-  const urlParams = new URLSearchParams(window.location.search);
-  const fileURL = urlParams.get("url");
+const urlParams = new URLSearchParams(window.location.search);
+const fileURL = urlParams.get("url");
 
-  if (fileURL) {
-    const manualLink = document.getElementById("manualLink");
-    manualLink.href = fileURL;
+if (fileURL) {
+  document.getElementById("manualLink").href = fileURL;
+} else {
+  document.querySelector("h1").textContent = "Download link missing!";
+}
+</script>
 
-    // Auto-download after 5 seconds (enough for AdSense to load)
-    setTimeout(() => {
-      window.location.href = fileURL;
-    }, 5000);
-  } else {
-    document.querySelector("h2").textContent = "Download link missing!";
-  }
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
 </body>
