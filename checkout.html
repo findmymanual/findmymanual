@@ -1,220 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Checkout Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout Page</title>
 
-<!-- Paddle JS -->
-<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+  <!-- Paddle JS -->
+  <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
 
-<style>
-body, h2, h3, p, label, input, button {
-    font-family: Georgia,'Times New Roman',Times,serif;
-}
-body {
-    background:#e8edf1;
-    margin:0;
-    padding:20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    text-align:center;
-}
-.order-section {
-    background: linear-gradient(to right,#e8edf1,#555);
-    border-radius: 12px;
-    padding: 30px;
-    width: 95%;
-    max-width: 700px;
-    color: #33475b;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-    margin:auto;
-    text-align: center;
-}
-.order-section input {
-    width: 95%;
-    padding: 12px 15px;
-    border-radius: 6px;
-    border: none;
-    font-size: 1rem;
-    color: #555;
-    text-align: center;
-}
-.order-section button {
-    background: #555;
-    color: #fff;
-    padding: 14px;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 70%;
-    margin-top: 10px;
-}
-.trusted-box {
-    background:#ffffff;
-    border:2px solid #555;
-    border-radius:10px;
-    padding:15px;
-    margin-top:15px;
-    text-align:center;
-    box-shadow:0 3px 10px rgba(0,0,0,0.15);
-}
-.trusted-box strong { color:#223d4d; }
-.trusted-box small { color:#777; }
-.trusted-box p { margin-top:10px; color:#555; font-size:0.95rem; }
-.trust-section {
-    padding:25px;
-    border-radius:12px;
-    margin-top:20px;
-    background:linear-gradient(to right,#4e6e81,#2c3e50);
-    color:#fff;
-    text-align:center;
-}
-.trust-section .logos {
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-}
-.trust-section img {
-    height:50px;
-    background:#fff;
-    padding:5px;
-    border-radius:6px;
-}
-</style>
+  <style>
+    body, h2, p, label, input, button {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    body {
+      background-color: #e8edf1;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      color: #080808;
+    }
+    .order-section {
+      background: linear-gradient(to right, #4e6e81, #2c3e50);
+      border-radius: 12px;
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    .order-section h2 { font-size: 2.2rem; margin-bottom: 25px; font-weight: bold; }
+    .order-section form { display: flex; flex-direction: column; gap: 15px; text-align: left; }
+    .order-section label { font-weight: bold; margin-bottom: 5px; color: #fff; }
+    .order-section input[type="text"],
+    .order-section input[type="email"],
+    .order-section input[type="tel"] {
+      width: 100%; padding: 10px 12px; border-radius: 6px; border: none; font-size: 1rem; color: #33475b; outline: none;
+    }
+    .order-section input::placeholder { color: #7a7a7a; }
+    .order-section button {
+      background: #fff; color: #2c3e50; padding: 12px 0; border: none; border-radius: 6px;
+      font-size: 1rem; font-weight: bold; cursor: pointer; transition: background 0.3s ease;
+    }
+    .order-section button:hover { background: #f5f5f5; }
+    .trust-section {
+      padding: 25px 20px; border-radius: 12px; text-align: center; margin-top: 20px;
+      background: linear-gradient(to right, #4e6e81, #2c3e50); color: #fff;
+    }
+    .trust-section h2 { font-size: 1.8rem; font-weight: bold; margin-bottom: 15px; }
+    .trust-section p { font-size: 1rem; line-height: 1.6; margin-bottom: 20px; }
+  </style>
 </head>
-
 <body>
-
-<div class="order-section">
-
-    <!-- Header with Manual Name -->
-    <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:20px;color:#555;margin-bottom:20px;">
-        <h2>Checkout for<br><br><span id="productName">User Manual</span></h2>
-    </div>
-
-    <!-- Order Form -->
+  <div class="order-section">
+    <h2>Order Your Manual</h2>
     <form id="orderForm">
-        <label><strong>Order Number</strong></label>
-        <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
-            <input type="text" id="order_number" readonly>
-        </div><br>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="customer_name" placeholder="Your full name" required />
 
-        <label><strong>Full Name</strong></label>
-        <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
-            <input type="text" id="name" required>
-        </div><br>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="customer_email" placeholder="your.email@example.com" required />
 
-        <label><strong>Email</strong></label>
-        <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
-            <input type="email" id="email" required>
-        </div><br>
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="customer_phone" placeholder="Phone Number" required />
 
-        <label><strong>Phone Number</strong></label>
-        <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
-            <input type="tel" id="phone" required>
-        </div><br>
+      <label for="brand">Brand Name</label>
+      <input type="text" id="brand" name="brand_name" placeholder="Brand Name" required />
 
-        <label><strong>Brand Name</strong></label>
-        <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
-            <input type="text" id="brand" required>
-        </div><br>
+      <label for="model">Serial Number</label>
+      <input type="text" id="model" name="model_number" placeholder="Serial Number" required />
 
-        <label><strong>Serial Number</strong></label>
-        <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
-            <input type="text" id="model" required>
-        </div><br>
+      <label for="product">Product Name</label>
+      <input type="text" id="product" name="item_name" value="User Manual" readonly />
 
-        <label><strong>Amount</strong></label>
-        <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
-            <input type="text" id="amount" value="$14.95" readonly>
-        </div><br>
+      <label for="amount">Amount (USD)</label>
+      <input type="text" id="amount" name="amount" value="$14.95" readonly />
 
-        <input type="hidden" id="pdf_url">
-        <button type="submit">Pay Now</button>
-    </form>
+      <input type="hidden" id="pdf_url" name="pdf_url" value="">
 
-    <!-- Trusted Box -->
-    <div class="trusted-box">
-        <strong>Trusted Checkout</strong><br>
-        <small>100% Safe & Protected</small>
-        <p>🔒 Your payment is protected by SSL encryption. We never store your full card details.</p>
-    </div>
+      <button type="submit">Submit Order & Pay</button>
 
-    <!-- Payment Logos -->
-    <div class="trust-section">
-        <h2>Secure Payment</h2>
-        <p>We accept major payment methods supported by our processor.</p>
-        <div class="logos">
-            <img src="mastercard.png">
-            <img src="visa.jpeg">
-            <img src="paypal.webp">
-        </div>
-    </div>
+      <h2 style="color:#4e6e81; text-align:center;">
+        Checkout for: <span id="productName" style="font-weight:bold;">Loading...</span>
+      </h2>
 
+      <div class="trust-section">
+  <h2>Secure & Trusted Payment</h2>
+  <p>Your payment is 100% secure. We use PayPal, the world's trusted payment system, and all transactions are protected by SSL encryption.</p>
+  <div class="logos">
+    <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal" style="height:50px; width:auto;">
+    <img src="mastercard.png" alt="MasterCard" style="height:50px; width:auto;">
+    <img src="visa.jpeg" alt="Visa" style="height:50px; width:auto;">
+  </div>
 </div>
+    </form>
+  </div>
 
 <script>
-// ---- PADDLE SETUP ----
-Paddle.Setup({ vendor: 288927 }); // <-- REPLACE with your numeric Vendor ID
+  Paddle.Setup({ vendor: 288927 });
 
-// ---- GET MANUAL FROM URL ----
-const params = new URLSearchParams(window.location.search);
-const manual = params.get("manual");
-const pdfLink = manual ? "https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/" + manual : "";
+  document.addEventListener("DOMContentLoaded", () => {
+    // Load product name & PDF from URL
+    const params = new URLSearchParams(window.location.search);
+    const product = params.get("product");
+    const pdf = params.get("pdf");
+    if (product) document.getElementById("productName").textContent = decodeURIComponent(product).replace(/_/g, " ");
+    if (pdf) document.getElementById("pdf_url").value = pdf;
+  });
 
-// DISPLAY MANUAL NAME
-if(manual){
-    let fileName = manual.split('/').pop();
-    fileName = decodeURIComponent(fileName);
-    fileName = fileName.replace(".pdf","");
-    document.getElementById("productName").textContent = fileName;
-}
-
-// GENERATE ORDER NUMBER
-document.getElementById("order_number").value = Math.floor(100000 + Math.random() * 900000);
-
-// SAVE PDF LINK
-document.getElementById("pdf_url").value = pdfLink;
-
-// HANDLE FORM SUBMIT
-document.getElementById("orderForm").addEventListener("submit", async function(e) {
+  document.getElementById("orderForm").addEventListener("submit", async function(e) {
     e.preventDefault();
 
-    const data = {
-        order_number: document.getElementById("order_number").value,
-        customer_name: document.getElementById("name").value,
-        customer_email: document.getElementById("email").value,
-        customer_phone: document.getElementById("phone").value,
-        brand_name: document.getElementById("brand").value,
-        model_number: document.getElementById("model").value,
-        pdf_url: pdfLink,
-        amount: "$14.95",
-        payment_status: "pending"
+    const orderData = {
+      customer_name: document.getElementById("name").value,
+      customer_email: document.getElementById("email").value,
+      customer_phone: document.getElementById("phone").value,
+      brand_name: document.getElementById("brand").value,
+      model_number: document.getElementById("model").value,
+      item_name: document.getElementById("product").value,
+      amount: "$14.95",
+      pdf_url: document.getElementById("pdf_url").value,
+      payment_status: "pending"
     };
 
     try {
-        // Optional backend calls (uncomment if needed)
-        // await fetch("https://formspree.io/f/xldpwdpb", {...});
-        // await fetch("https://findmymanual.live/.netlify/functions/submitOrder", {...});
+      // 1️⃣ Submit order to backend to generate order number
+      const res = await fetch("https://findmymanual.live/.netlify/functions/submitOrder", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(orderData)
+      });
+      const result = await res.json();
+      const orderNumber = result.order_number; // Backend generates this
 
-        // ---- OPEN PADDLE CHECKOUT ----
-        Paddle.Checkout.open({
-            product: 'pro_01kkrgayxkqtw8v4s8s5yppv1n', // Replace with your actual product ID
-            email: data.customer_email,
-            successUrl: pdfLink
-        });
+      // 2️⃣ Save order number for thank-you page
+      localStorage.setItem("lastOrderNumber", orderNumber);
+
+      // 3️⃣ Open Paddle checkout
+      Paddle.Checkout.open({
+        product: 'pro_01kkrgayxkqtw8v4s8s5yppv1n',
+        email: orderData.customer_email,
+        passthrough: JSON.stringify({ order_number: orderNumber }),
+        successUrl: `thank-you.html?pdf=${encodeURIComponent(orderData.pdf_url)}`
+      });
 
     } catch(err) {
-        alert("Error submitting order. Please try again.");
-        console.error(err);
+      console.error("Order submission failed:", err);
+      alert("There was an error submitting your order. Please try again.");
     }
-});
+  });
 </script>
-
 </body>
 </html>
