@@ -1,0 +1,18 @@
+<button onclick="pay()">Test Live Checkout</button>
+
+<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+
+<script>
+Paddle.Initialize({
+  token:"live_7fd8fb2221b2b9ec5b3320c704e"
+});
+
+function pay(){
+  Paddle.Checkout.open({
+    items:[
+      { priceId:"pri_01kkrgrb89fvnyhdrd1x0g8fsa", quantity:1 }
+    ],
+    successUrl:"thank-you.html"
+  });
+}
+</script>
