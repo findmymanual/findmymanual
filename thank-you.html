@@ -30,6 +30,12 @@
     }
     a.download-btn:hover { background-color: #0f3c6b; }
     img { margin-top: 30px; width: 150px; height: 150px; border-radius: 50%; object-fit: cover; }
+    .order-number {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #1761a0;
+    }
   </style>
 </head>
 <body>
@@ -39,6 +45,9 @@
   <p>You will receive an email confirmation shortly.</p>
 
   <img src="logo2.png" alt="Your Logo" />
+
+  <!-- Dynamic Order Number -->
+  <p class="order-number" id="orderNumberDisplay"></p>
 
   <!-- Download button will appear here -->
   <div id="downloadContainer"></div>
@@ -50,7 +59,7 @@
   </p>
 
   <script>
-    // Function to parse JSON safely
+    // Safe JSON parsing
     function safeParseJSON(jsonString) {
       try {
         return JSON.parse(jsonString);
@@ -60,23 +69,30 @@
     }
 
     window.addEventListener('load', function() {
-      // Get URL parameters
       const urlParams = new URLSearchParams(window.location.search);
       const paypalSuccess = urlParams.get('paypal');
       const customDataStr = urlParams.get('custom');
 
       if (paypalSuccess === 'success' && customDataStr) {
         const customData = safeParseJSON(customDataStr);
-        if (customData && customData.pdfFile) {
-          const downloadContainer = document.getElementById('downloadContainer');
 
-          const downloadLink = document.createElement('a');
-          downloadLink.href = "https://findmymanual.live/hppdf/" + encodeURIComponent(customData.pdfFile);
-          downloadLink.className = "download-btn";
-          downloadLink.textContent = "⬇ Download Your Manual";
-          downloadContainer.appendChild(downloadLink);
+        if (customData) {
+          // Show order number
+          if (customData.order_number) {
+            document.getElementById('orderNumberDisplay').textContent = "Your Order Number: #" + customData.order_number;
+          }
+
+          // Show download button
+          if (customData.pdfFile) {
+            const downloadContainer = document.getElementById('downloadContainer');
+            const downloadLink = document.createElement('a');
+            downloadLink.href = "https://findmymanual.live/hppdf/" + encodeURIComponent(customData.pdfFile);
+            downloadLink.className = "download-btn";
+            downloadLink.textContent = "⬇ Download Your Manual";
+            downloadContainer.appendChild(downloadLink);
+          }
         } else {
-          console.error("PDF file not specified in custom data.");
+          console.error("Invalid custom data.");
         }
       }
     });
