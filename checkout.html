@@ -27,16 +27,16 @@ body {
     background: linear-gradient(to right,#e8edf1,#555);
     border-radius: 12px;
     padding: 30px;
-    width: 90%;
-    max-width: 500px; /* increased from 500px to 700px */
+    width: 95%;
+    max-width: 700px;
     color: #33475b;
     box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-    margin: auto;
+    margin:auto;
     text-align: center;
 }
 
 .order-section input {
-    width: 95%; /* increased from 90% to 95% */
+    width: 95%;
     padding: 12px 15px;
     border-radius: 6px;
     border: none;
@@ -53,9 +53,10 @@ body {
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
-    width: 70%; /* increased from 60% */
+    width: 70%;
     margin-top: 10px;
 }
+
 .trusted-box {
     background:#ffffff;
     border:2px solid #555;
@@ -99,10 +100,12 @@ body {
 
 <div class="order-section">
 
+    <!-- Header with Manual Name -->
     <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:20px;color:#555;margin-bottom:20px;">
         <h2>Checkout for<br><br><span id="productName">User Manual</span></h2>
     </div>
 
+    <!-- Order Form -->
     <form id="orderForm">
 
         <label><strong>Order Number</strong></label>
@@ -145,12 +148,14 @@ body {
         <button type="submit">Pay Now</button>
     </form>
 
+    <!-- Trusted Box -->
     <div class="trusted-box">
         <strong>Trusted Checkout</strong><br>
         <small>100% Safe & Protected</small>
         <p>🔒 Your payment is protected by SSL encryption. We never store your full card details.</p>
     </div>
 
+    <!-- Payment Logos -->
     <div class="trust-section">
         <h2>Secure Payment</h2>
         <p>We accept major payment methods supported by our processor.</p>
@@ -203,12 +208,14 @@ document.getElementById("orderForm").addEventListener("submit", async function(e
     };
 
     try {
+        // Send to Formspree
         await fetch("https://formspree.io/f/xldpwdpb", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(data)
         });
 
+        // Send to Netlify backend
         await fetch("https://findmymanual.live/.netlify/functions/submitOrder", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
@@ -217,7 +224,7 @@ document.getElementById("orderForm").addEventListener("submit", async function(e
 
         // OPEN PADDLE CHECKOUT
         Paddle.Checkout.open({
-            product: 123456,
+            product: 'pro_01kkrgayxkqtw8v4s8s5yppv1n', // your real product ID
             successUrl: pdfLink
         });
 
