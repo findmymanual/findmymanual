@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Checkout Page</title>
 
+<!-- Paddle JS -->
 <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
 
 <style>
 body, h2, h3, p, label, input, button {
     font-family: Georgia,'Times New Roman',Times,serif;
 }
-
 body {
     background:#e8edf1;
     margin:0;
@@ -22,7 +22,6 @@ body {
     min-height:100vh;
     text-align:center;
 }
-
 .order-section {
     background: linear-gradient(to right,#e8edf1,#555);
     border-radius: 12px;
@@ -34,7 +33,6 @@ body {
     margin:auto;
     text-align: center;
 }
-
 .order-section input {
     width: 95%;
     padding: 12px 15px;
@@ -44,7 +42,6 @@ body {
     color: #555;
     text-align: center;
 }
-
 .order-section button {
     background: #555;
     color: #fff;
@@ -56,7 +53,6 @@ body {
     width: 70%;
     margin-top: 10px;
 }
-
 .trusted-box {
     background:#ffffff;
     border:2px solid #555;
@@ -66,11 +62,9 @@ body {
     text-align:center;
     box-shadow:0 3px 10px rgba(0,0,0,0.15);
 }
-
 .trusted-box strong { color:#223d4d; }
 .trusted-box small { color:#777; }
 .trusted-box p { margin-top:10px; color:#555; font-size:0.95rem; }
-
 .trust-section {
     padding:25px;
     border-radius:12px;
@@ -79,14 +73,12 @@ body {
     color:#fff;
     text-align:center;
 }
-
 .trust-section .logos {
     display:flex;
     justify-content:center;
     gap:15px;
     flex-wrap:wrap;
 }
-
 .trust-section img {
     height:50px;
     background:#fff;
@@ -107,7 +99,6 @@ body {
 
     <!-- Order Form -->
     <form id="orderForm">
-
         <label><strong>Order Number</strong></label>
         <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
             <input type="text" id="order_number" readonly>
@@ -144,7 +135,6 @@ body {
         </div><br>
 
         <input type="hidden" id="pdf_url">
-
         <button type="submit">Pay Now</button>
     </form>
 
@@ -169,10 +159,13 @@ body {
 </div>
 
 <script>
-// GET MANUAL FROM URL
+// ---- PADDLE SETUP ----
+Paddle.Setup({ vendor: 288927 }); // <-- REPLACE with your numeric Vendor ID
+
+// ---- GET MANUAL FROM URL ----
 const params = new URLSearchParams(window.location.search);
 const manual = params.get("manual");
-const pdfLink = "https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/" + manual;
+const pdfLink = manual ? "https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/" + manual : "";
 
 // DISPLAY MANUAL NAME
 if(manual){
@@ -183,10 +176,7 @@ if(manual){
 }
 
 // GENERATE ORDER NUMBER
-function generateOrderNumber() {
-    return Math.floor(100000 + Math.random() * 900000);
-}
-document.getElementById("order_number").value = generateOrderNumber();
+document.getElementById("order_number").value = Math.floor(100000 + Math.random() * 900000);
 
 // SAVE PDF LINK
 document.getElementById("pdf_url").value = pdfLink;
@@ -208,23 +198,14 @@ document.getElementById("orderForm").addEventListener("submit", async function(e
     };
 
     try {
-        // Send to Formspree
-        await fetch("https://formspree.io/f/xldpwdpb", {
-            method: "POST",
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify(data)
-        });
+        // Optional backend calls (uncomment if needed)
+        // await fetch("https://formspree.io/f/xldpwdpb", {...});
+        // await fetch("https://findmymanual.live/.netlify/functions/submitOrder", {...});
 
-        // Send to Netlify backend
-        await fetch("https://findmymanual.live/.netlify/functions/submitOrder", {
-            method: "POST",
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify(data)
-        });
-
-        // OPEN PADDLE CHECKOUT
+        // ---- OPEN PADDLE CHECKOUT ----
         Paddle.Checkout.open({
-            product: 'pro_01kkrgayxkqtw8v4s8s5yppv1n', // your real product ID
+            product: 'pro_01kkrgayxkqtw8v4s8s5yppv1n', // Replace with your actual product ID
+            email: data.customer_email,
             successUrl: pdfLink
         });
 
