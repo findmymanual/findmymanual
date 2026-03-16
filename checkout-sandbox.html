@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Checkout Page</title>
+<title>Checkout Page - Sandbox Test</title>
 
 <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
 
@@ -21,6 +21,19 @@ body{
   min-height:100vh;
   color:#080808;
 }
+.sandbox-banner{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#ffcc00;
+  color:#333;
+  font-weight:bold;
+  text-align:center;
+  padding:10px;
+  z-index:1000;
+  box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
 .order-section{
   background:linear-gradient(to right,#4e6e81,#2c3e50);
   border-radius:12px;
@@ -30,6 +43,7 @@ body{
   color:#fff;
   text-align:center;
   box-shadow:0 6px 20px rgba(0,0,0,0.2);
+  margin-top:50px; /* leave space for sandbox banner */
 }
 .order-section h2{
   font-size:2.2rem;
@@ -107,6 +121,11 @@ body{
 </head>
 <body>
 
+<div class="sandbox-banner">
+⚠️ Sandbox Mode – Test Payments Only ⚠️ <br>
+Use test cards: Visa 4111 1111 1111 1111, MasterCard 5555 5555 5555 4444, Amex 3782 822463 10005
+</div>
+
 <div class="order-section">
 
 <h2>Order Your Manual</h2>
@@ -134,20 +153,6 @@ body{
 
 <button id="payButton">Submit Order & Pay</button>
 
-<div style="margin-top:20px; text-align:center;">
-
-<p style="font-weight:bold; margin-bottom:8px;">
-⭐ Trusted by Customers – Verified Reviews
-</p>
-
-<img src="https://cdn.trustpilot.net/brand-assets/4.1.0/logo-black.svg" 
-alt="Trustpilot Reviews" 
-style="height:30px; margin-bottom:8px;">
-
-
-
-</div>
-
 <!-- Trust & Security Section -->
 <div id="trustSecurity" style="margin-top:20px; text-align:center; padding:20px; background:#f5f7fa; border-radius:12px;">
   <div style="text-align: left; max-width: 600px; margin: 20px auto; font-size: 16px; line-height: 1.6;">
@@ -155,13 +160,12 @@ style="height:30px; margin-bottom:8px;">
   <p style="font-size:1rem; color:#33475b; line-height:1.6; margin-bottom:15px;">
     ✅ 14-day Money-Back Guarantee – no questions asked!<br>
     🔒 Encrypted & Secure Checkout (SSL protected)<br>
-    💳 Trusted Payment Processors: PayPal, Visa, MasterCard, and Paddle<br>
+    💳 Trusted Payment Processors: PayPal, Visa, MasterCard, Amex, and Paddle<br>
     📧 Instant Email Confirmation of Your Order<br>
     🛡️ Fraud Protection for Safe Payments<br>
     ⚡ Immediate Digital Delivery – Download your manual instantly<br>
     🌎 Global Customer Support Available
   </p></div>
-  
 </div>
 
 <div class="trust-section">
@@ -174,36 +178,32 @@ style="height:30px; margin-bottom:8px;">
 <img src="mastercard.png" alt="MasterCard"
 style="width:100px; height:auto;">
 <img src="visa.jpeg" alt="Visa"style="width:100px; height:auto;">
-
+<img src="amex.png" alt="Amex" style="width:100px; height:auto;">
 </div>
 </div>
 </div>
 
 <script>
-// Initialize Paddle with your LIVE client token
+// Initialize Paddle with your SANDBOX token
 Paddle.Initialize({
-  token: "live_7fd8fb2221b2b9ec5b3320c704e"
+  token: "sandbox_2cb1a9e4e01c13ed85805b4f1ff" // <-- your sandbox token
 });
 
 document.getElementById("payButton").addEventListener("click", function() {
 
-  // Collect form values
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const phone = document.getElementById("phone").value.trim();
   const brand = document.getElementById("brand").value.trim();
   const model = document.getElementById("model").value.trim();
 
-  // Validate fields
   if(!name || !email || !phone || !brand || !model){
     alert("Please fill out all required fields.");
     return;
   }
 
-  // Generate a temporary order number
   const order_number = Math.floor(100000 + Math.random() * 900000).toString();
 
-  // Prepare custom data for Paddle
   const customData = {
     name: name,
     phone: phone,
@@ -214,16 +214,15 @@ document.getElementById("payButton").addEventListener("click", function() {
     amount: "$14.95"
   };
 
-  // Open Paddle Checkout
   Paddle.Checkout.open({
     items: [
-      { priceId: "pri_01kkrgrb89fvnyhdrd1x0g8fsa", quantity: 1 }
+      { priceId: "pro_01kkvffeeca0wb765feneb1axn", quantity: 1 } // your sandbox Price ID
     ],
     customer: {
       email: email
     },
     customData: customData,
-    successUrl: "thank-you.html?order=" + order_number
+    successUrl: "thank-you.html?custom=" + encodeURIComponent(JSON.stringify(customData))
   });
 
 });
