@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Find My Manual</title>
-
+  
   <!-- SEO & Verification -->
   <meta name="author" content="Find My Manual">
   <meta name="robots" content="index, follow">
@@ -36,7 +36,7 @@
       font-family: Georgia, 'Times New Roman', Times, serif;
       margin: 0;
       background-color: #e8edf1;
-      color: #4e6e81;
+      color: #555;
     }
     header {
       display: flex;
@@ -50,23 +50,24 @@
     header h1 {
       font-size: 1.5rem;
       margin: 0;
-      color: #4e6e81;
+      color: #555;
     }
     nav a {
       font-size: 0.95rem;
       font-weight: bold;
-      color: #4e6e81;
+      color: #555;
       text-decoration: none;
       margin: 0 5px;
     }
     .hero {
+      font-family: Georgia, 'Times New Roman', Times, serif;
       text-align: center;
       padding: 60px 20px;
       background: linear-gradient(to right, #e8edf1, #c8d6e5);
     }
     .brand-container {
       background:#ffffff; 
-      border:2px solid #4e6e81; 
+      border:2px solid #555; 
       border-radius:16px; 
       padding:30px; 
       max-width:1100px; 
@@ -80,7 +81,7 @@
     }
     .brand-grid a {
       text-decoration:none; 
-      border:2px solid #4e6e81; 
+      border:2px solid #555; 
       background-color:#cde2ee; 
       color:#1a237e; 
       padding:12px 28px; 
@@ -123,6 +124,54 @@
       padding:20px;
       margin-top:50px;
     }
+
+     /* How It Works */
+    .how-works {
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:40px;
+      max-width:900px;
+      margin:0 auto;
+    }
+
+    .how-works div {
+      flex:1;
+      min-width:220px;
+      text-align:center;
+    }
+
+    .how-works img {
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      object-fit:cover;
+    }
+
+    .comparison {
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:40px;
+      max-width:900px;
+      margin:0 auto;
+    }
+
+    .comparison div {
+      flex:1;
+      min-width:250px;
+      background:#fff;
+      padding:25px;
+      border-radius:8px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .comparison .service {
+      border:2px solid #555;
+      box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    
   </style>
 </head>
 
@@ -137,9 +186,88 @@
   </nav>
 </header>
 
-<section class="hero">
-  <h2>Find My Manual</h2>
-  <p>Find My Manual is an independent website providing free user manuals and appliance guides.</p>
+<section class="hero" style="text-align:center; padding:60px 20px; background: linear-gradient(to right, #e8edf1, #c8d6e5);">
+   <h2 style="
+  font-size:2.5rem;
+  margin-bottom:20px;
+  color:#555;
+  
+">
+  Find Your User Manual Instantly
+</h2>
+
+<p> Find My Manual is an independent website providing user manuals and appliance guides.<br>
+   If your manual is not currently in our available collection, you can still submit your details and we’ll find it for you.
+  We’ll send your manual directly to your inbox <br><br>
+  <bold> Simply enter your details below </bold></p><br>
+
+    
+
+ <form id="redirectForm" style="max-width: 400px; margin: 0 auto; text-align: center;" onsubmit="redirectToCheckout(event)">
+  
+  <input type="text" name="brand" id="brandInput" placeholder="Brand Name" required style="
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  ">
+
+  <input type="text" name="model" id="modelInput" placeholder="Model or Serial Number" required style="
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; 
+  ">
+
+  <button type="submit" style="
+    padding: 12px 30px;
+    background: linear-gradient(to right, #ffffff, #555);
+     color: #555;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; 
+  ">
+    Submit
+  </button>
+</form>
+
+<script>
+  function redirectToCheckout(event) {
+    event.preventDefault(); // Prevent normal form submission
+
+    const brand = encodeURIComponent(document.getElementById('brandInput').value);
+    const model = encodeURIComponent(document.getElementById('modelInput').value);
+
+    // Redirect to another HTML page with the data in the URL
+    window.location.href = `checkout.html?brand=${brand}&model=${model}`;
+  }
+</script>
+
+
+<script>
+  document.getElementById('paypalForm').addEventListener('submit', function () {
+    const brand = encodeURIComponent(document.getElementById('brandInput').value);
+    const model = encodeURIComponent(document.getElementById('modelInput').value);
+
+    setTimeout(function () {
+      window.location.href = `pages/checkout.html?brand=${brand}&model=${model}`;
+    }, 2000); // Delay to let PayPal open
+  });
+</script>
+
 
   <!-- AdSense -->
   <ins class="adsbygoogle"
@@ -150,36 +278,112 @@
        data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
-  <h2>Get Your Device & Appliance Manual</h2>
-  <p>Just click the brand name below and choose your PDF manual</p>
+  <h2><bold>Get Your Device & Appliance Manual</bold></h2>
+  <p style="font-size:1.1rem; color:#555; margin-bottom:25px;">
+      <strong>Fast • Secure • Delivered directly to your email</strong><br><br>
+      Never waste time searching for lost booklets – access your complete manual instantly, with all setup instructions, troubleshooting tips, and safety guidelines ready whenever and wherever you need them. Say goodbye to frustration and enjoy full control of your device with ease and confidence.
+    </p><br>
+
+    <p style="font-size:2rem; color:#555; margin-bottom:30px;">
+    <strong>Just click the brand name below and choose your PDF manual</strong>
+  </p>
+
 </section>
 
-<div class="brand-container">
-  <div class="brand-grid">
-    <a href="download.html?url=GEDL1.html">GE</a>
-    <a href="download.html?url=SamsungDL1.html">Samsung</a>
-    <a href="download.html?url=CanonDL1.html">Canon</a>
-    <a href="download.html?url=PanasonicDL1.html">Panasonic</a>
-    <a href="download.html?url=HitachiDL1.html">Hitachi</a>
-    <a href="download.html?url=WhirlpoolDL1.html">Whirlpool</a>
-    <a href="download.html?url=NinjaDL1.html">Ninja</a>
-    <a href="download.html?url=SharpDL1.html">Sharp</a>
-    <a href="download.html?url=LgDL1.html">LG</a>
-    <a href="download.html?url=HpDL1.html">HP</a>
-    <a href="download.html?url=SingerDL1.html">Singer</a>
-    <a href="download.html?url=BrotherDL1.html">Brother</a>
-    <a href="download.html?url=SonyDL1.html">Sony</a>
-    <a href="download.html?url=JanomeDL1.html">Janome</a>
-    <a href="download.html?url=KitchenaidDL1.html">Kitchenaid</a>
-    <a href="download.html?url=KirbyDL1.html">Kirby</a>
-    <a href="download.html?url=SharkDL1.html">Shark</a>
-    <a href="download.html?url=PhilipsDL1.html">Philips</a>
-    <a href="download.html?url=WestinghouseDL1.html">Westinghouse</a>
-    <a href="download.html?url=ElectroluxDL1.html">Electrolux</a>
-    <a href="download.html?url=BoschDL1.html">Bosch</a>
-    <a href="download.html?url=HaierDL1.html">Haier</a>
+<!-- Box Container -->
+  <div
+  style="background:#ffffff; border:2px solid #4e6e81; border-radius:16px; padding:30px; max-width:1100px; margin:0 auto;">
+  <div style="
+    display:flex; 
+    flex-wrap:wrap; 
+    justify-content:center; 
+    gap:15px;
+  ">
+    <a href="LgDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">LG</a>
+      <a href="BoschDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Bosch</a>
+      <a href="ElectroluxDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Electrolux</a>
+      <a href="WestinghouseDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Westinghouse</a>
+      <a href="BrotherDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Brother</a>
+<a href="JanomeDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Janome</a>
+      <a href="SingerDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Singer</a>
+      <a href="SonyDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Sony</a>
+    <a href="SamsungDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Samsung</a>
+    <a href="WhirlpoolDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Whirlpool</a>
+    <a href="PanasonicDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Panasonic</a>
+    <a href="HitachiDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Hitachi</a>
+    <a href="SharpDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Sharp</a>
+    <a href="GEDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">GE</a>
+    <a href="KirbyDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Kirby</a>
+    <a href="GEDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">GE</a>
+    <a href="NinjaDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Ninja</a>
+    <a href="SharkDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Shark</a>
+    <a href="HaierDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Haier</a>
+    <a href="CanonDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Canon</a>
+    <a href="PhilipsDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Philips</a>
+    <a href="KitchenaidDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">KitchenAid</a>
+    <a href="Nikonpdf.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">Nikon</a>
+    <a href="HpDL.html"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">HP</a>
+    <a href="#"
+      style="text-decoration:none; border:2px solid #4e6e81; background-color:#c8d6e5; color:#504d4d; padding:12px 28px; border-radius:50px; font-weight:bold; font-size:0.95rem;">And
+      many more</a>
   </div>
 </div>
+</section>
+</div>
+<section style="text-align:center;">
+<p style="font-size:1.2rem; color:#555; margin-bottom:30px;">
+   <strong> Manual not on the list above? Send us your details and we’ll find it for you.</strong>
+  </p>
+
+<a id="manual-btn" href="checkout.html" class="hero-btn" style="
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(to right, #ffffff, #555);
+    color: #555; /* updated font color */
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    text-decoration: none;
+    text-align: center;
+">
+    Order Your Manual Now
+</a>
+
+<script>
+  // Optional: enforce the font color dynamically (if needed)
+  document.getElementById('manual-btn').style.color = '#555';
+</script>
+
+</script>
 
 <section class="flex-section">
   <div class="text-col">
@@ -192,6 +396,41 @@
     <img src="lady.jpg" alt="User Manual Preview">
   </div>
 </section>
+
+<!-- AdSense -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-1424202759904253"
+       data-ad-slot="5235434866"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  
+
+<!-- How It Works -->
+<section style="text-align:center;">  
+<h2 style="background:#555; color:#fff; display:inline-block; padding:12px 30px; border-radius:16px; margin-bottom:10px;">
+    How It Works</section>
+  </h2>
+
+    <div class="how-works">
+      <div>
+        <h3 style="font-size:2rem; color:#555;">1</h3><br>
+        <img src="e.png" alt="Enter Details" /><br>
+        <p><br><strong>Enter your details, brand, and serial number of the device or appliance.</strong></p>
+      </div>
+      <div>
+        <h3 style="font-size:2rem; color:#555;">2</h3><br>
+        <img src="q.png" alt="Checkout Securely" />
+        <p><br><strong>Checkout securely with PayPal.</strong></p>
+      </div>
+      <div>
+        <h3 style="font-size:2rem; color:#555;">3</h3><br>
+        <img src="w.png" alt="Receive Manual" />
+        <p><br><strong>Receive your manual straight to your email inbox.</strong></p>
+      </div>
+    </div>
+  </section></div></div>
 
 <section style="padding: 60px 20px; text-align:center; background: linear-gradient(to right, #e8edf1, #c8d6e5);">
   <h2>Access Thousands of User Manuals Instantly</h2>
@@ -213,11 +452,13 @@
  </section>
 
 <section style="text-align:center; padding:1px 30px;">
-    <h1 style="font-size:2rem; font-weight:bold; color:#4e6e81; margin-bottom:5px;">
+    <h1 style="font-size:2rem; font-weight:bold; color:#555; margin-bottom:5px;">
       
-     Don’t know your serial number?<br>
-    Click an image below for step-by-step instructions on how to get it.
-    </h1>
+     Don’t know your serial number?<br></h1>
+     <h2 style="font-size:1.5rem; font-weight:bold; color:#555; margin-bottom:5px;">
+    Click an image below for step-by-step instructions on how to get it.<br><br>
+
+    </h2>
     </section>
 
 
@@ -230,174 +471,175 @@
 <div style="display: flex; flex-wrap: wrap; justify-content: center; max-width: 1200px; margin: auto;">
 
   <!-- Speaker -->
-  <div style="width: 32%; max-width: 180px; margin: 6px; border: 2px solid #4e6e81; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
-    <a href="download.html?url=speaker%20SN.html" style="text-decoration: none; color: inherit; display: block;">
+  <div style="width: 32%; max-width: 180px; margin: 6px; border: 2px solid #555; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+    <a href="speaker SN.html" style="text-decoration: none; color: inherit; display: block;">
       <div style="position: relative; width: 100%; padding-top: 100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="speaker.jpg" alt="Speaker" style="position: absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Speaker</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Speaker</code></div>
     </a>
   </div>
 
   <!-- Headphones -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=headphone%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="headphone SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="headphone.jpeg" alt="Headphones" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Headphones / Audio</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Headphones / Audio</code></div>
     </a>
   </div>
 
   <!-- Smartphone -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=smartphone%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="smartphone SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="smartphone.avif" alt="Smartphone" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Smartphone</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Smartphone</code></div>
     </a>
   </div>
 
   <!-- Camera -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=camera%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="camera SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="camera.jpeg" alt="Camera" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Camera</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Camera</code></div>
     </a>
   </div>
 
   <!-- Car -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=car%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="car SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="car.png" alt="Car" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Car</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Car</code></div>
     </a>
   </div>
 
   <!-- Truck -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=truck%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="truck SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="truck.jpeg" alt="Truck" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Truck / Van</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Truck / Van</code></div>
     </a>
   </div>
 
   <!-- Motorbike -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=motor%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="motor SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="motor.jpg" alt="Motorbike" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Motorbike</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Motorbike</code></div>
     </a>
   </div>
 
   <!-- Crane -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=crane%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="crane SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="crane.jpeg" alt="Crane" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Crane</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Crane</code></div>
     </a>
   </div>
 
   <!-- Refrigerator -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=ref%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="ref SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="ref.avif" alt="Refrigerator" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Refrigerator</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Refrigerator</code></div>
     </a>
   </div>
 
   <!-- Washer -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=washer%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="washer SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="washing.avif" alt="Washer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Laundry / Washer</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Laundry / Washer</code></div>
     </a>
   </div>
 
   <!-- Microwave -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=microwave%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="microwave SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="microwave.png" alt="Microwave" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Microwave / Oven</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Microwave / Oven</code></div>
     </a>
   </div>
 
   <!-- Vacuum -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=vacuum%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="vacuum SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="vacuum.webp" alt="Vacuum" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Vacuum</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Vacuum</code></div>
     </a>
   </div>
 
   <!-- Sewing Machine -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=sewing%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="sewing SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="sewing.webp" alt="Sewing Machine" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Sewing Machine</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Sewing Machine</code></div>
     </a>
   </div>
 
   <!-- Lawn Mower -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=lawn%20mower%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="lawn mower SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="lawn%20mower.webp" alt="Lawn Mower" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Lawn Mower</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Lawn Mower</code></div>
     </a>
   </div>
 
   <!-- Fireplace -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=fireplace%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="fireplace SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="fire.jpg" alt="Electric Fireplace" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Electric Fireplace</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Electric Fireplace</code></div>
     </a>
   </div>
 
   <!-- Air Conditioner -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #4e6e81; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="download.html?url=aircon%20SN.html" style="text-decoration:none; color:inherit; display:block;">
+  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="aircon SN.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         <img src="aircon.webp" alt="Air Conditioner" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:0.9rem; color:#333;"><code>Air Conditioner</code></div>
+      <div style="padding:6px; font-size:0.9rem; color:#333; text-align:center"><code>Air Conditioner</code></div>
     </a>
   </div>
 
 </div>
 
 
-</html><br></section>
+</html></section>
 
+<br><br>
 
 
 <section style="text-align:center;">
-  <h2 style="background:#4e6e81; color:#fff; display:inline-block; padding:12px 30px; border-radius:16px; margin-bottom:10px;">
+  <h2 style="background:#555; color:#fff; display:inline-block; padding:12px 30px; border-radius:16px; margin-bottom:10px;">
     Why Choose Us?
   </h2>
 </section>
@@ -407,7 +649,7 @@
 <section style="display:flex; flex-wrap:wrap; gap:20px; padding:40px 20px; max-width:1200px; margin:0 auto; align-items: stretch;">
 
     <!-- Column 1: Box 1 -->
-  <div style="text-align: left; min-width:200px; background:#fff; padding:20px; border:1px solid #ddd; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.05);">
+  <div style="text-align: left; flex:1; min-width:200px; background:#fff; padding:20px; border:2px solid #d32f2f; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.08);">
     <h3 style="color:#d32f2f; text-align: center;">Searching Online ❌</h3><br>
     <ul style="list-style:none; padding-left:0; color:#555;">
       <li>❌ Takes a lot of time</li>
@@ -429,10 +671,11 @@
   </div>
 
   <!-- Column 3: Box 2 -->
-  <div style="text-align: left; flex:1; min-width:200px; background:#fff; padding:20px; border:2px solid #0070ba; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.08);">
-    <h3 style="color:#0070ba; text-align: center;">FindMyManual ✅</h3><br>
+  <div style="text-align: left; flex:1; min-width:200px; background:#fff; padding:20px; border:2px solid #555; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.08);">
+    <h3 style="color:#555; text-align: center;">FindMyManual ✅</h3><br>
     <ul style="list-style:none; padding-left:0; color:#555;">
   
+      <li>✅ Money-back guarantee if your manual isn’t available</li>
       <li>✅ 24/7 customer support — always here to help you find the right manual</li>
       <li>✅ All brands and models covered — from appliances to electronics</li>
       <li>✅ Step-by-step assistance if you can’t locate your model number</li>
@@ -440,6 +683,9 @@
       <li>✅ Thousands of satisfied customers</li>
       <li>✅ Over 95% manual delivery success rate</li>
       <li>✅ Verified and high-quality PDF copies</li>
+      <li>✅ No subscriptions — one-time manual requests only</li>
+      <li>✅ Delivered instantly to your email</li>
+      <li>✅ 100% safe & secure payment</li>
       <li>✅ Easy, fast, and reliable</li>
     </ul>
   </div>
@@ -473,7 +719,7 @@
 
 <!-- Business Hours -->
   <div style="margin-top: 20px; text-align: center;">
-    <h3 style="font-size: 1.4rem; color: #4e6e81; margin-bottom: 10px;">We're Here for You</h3>
+    <h3 style="font-size: 1.4rem; color: #555; margin-bottom: 10px;">We're Here for You</h3>
     <div style="
       background-color: #ffffff; 
       padding: 20px; 
@@ -483,10 +729,10 @@
       text-align: center; 
       box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     ">
-      <p style="color: #4e6e81; font-size: 1rem; line-height: 1.6; margin: 0;">
+      <p style="color: #555; font-size: 1rem; line-height: 1.6; margin: 0;">
         ⏰ <strong>Open 24 hours a day, 7 days a week</strong><br>
         ✉️ Reach us anytime at 
-        <a href="mailto:findmymanual@outlook.com" style="color: #4e6e81; text-decoration: none; font-weight: bold;">
+        <a href="mailto:findmymanual@outlook.com" style="color: #555; text-decoration: none; font-weight: bold;">
           findmymanual@outlook.com
         </a> — we’re always ready to help!
       </p>
@@ -583,6 +829,6 @@
 
   <!-- Footer Bottom -->
   <div style="margin-top: 50px; font-size: 0.9rem; color: #ffffff; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; padding-bottom: 20px; font-weight: bold; text-align: center;">
-    © 2025 Find My Manual. — Free User Manuals & Appliance Guides
+    © 2026 Find My Manual. — User Manuals & Appliance Guides
   </div>
 </footer><br>

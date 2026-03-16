@@ -1,174 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Checkout Page</title>
+
+<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+
 <style>
-body, h2, h3, p, label, input, button { font-family: Georgia, 'Times New Roman', Times, serif; }
-body { background-color: #e8edf1; margin:0; padding:20px; display:flex; justify-content:center; min-height:100vh; }
-.order-section { background:linear-gradient(to right, #4e6e81, #2c3e50); border-radius:12px; padding:30px; width:100%; max-width:500px; color:#fff; text-align:center; box-shadow:0 6px 20px rgba(0,0,0,0.2); }
-.order-section h2 { font-size:2.2rem; margin-bottom:25px; }
-.order-section form { display:flex; flex-direction:column; gap:15px; text-align:left; }
-.order-section label { font-weight:bold; margin-bottom:5px; color:#fff; }
-.order-section input[type="text"], .order-section input[type="email"], .order-section input[readonly], .order-section input[type="tel"] { width:100%; padding:10px 12px; border-radius:6px; border:none; font-size:1rem; color:#33475b; outline:none; }
-.order-section input[readonly] { background-color:#d1d5db; cursor:not-allowed; }
-.order-section input::placeholder { color:#7a7a7a; }
-.order-section button { background:#fff; color:#2c3e50; padding:12px 0; border:none; border-radius:6px; font-size:1rem; font-weight:bold; cursor:pointer; transition:0.3s; }
-.order-section button:hover { background:#f5f5f5; }
-.trust-section { padding:25px 20px; border-radius:12px; text-align:center; margin-top:20px; background:linear-gradient(to right,#4e6e81,#2c3e50); color:#fff; }
-.trust-section h2 { font-size:1.8rem; margin-bottom:15px; }
-.trust-section p { font-size:1rem; line-height:1.6; margin-bottom:20px; }
-.trust-section .logos { display:flex; justify-content:center; gap:15px; flex-wrap:wrap; }
-.trust-section .logos img { height:50px; border-radius:6px; background:#fff; padding:5px; }
-.download-btn { display:inline-block; margin-top:20px; background-color:#1761a0; color:#fff; padding:12px 25px; font-size:16px; font-weight:bold; border-radius:6px; text-decoration:none; transition:0.3s; }
-.download-btn:hover { background-color:#0f3c6b; }
+body, h2, h3, p, label, input, button {
+    font-family: Georgia,'Times New Roman',Times,serif;
+}
+
+body {
+    background:#e8edf1;
+    margin:0;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    text-align:center;
+}
+
+.order-section {
+    background: linear-gradient(to right,#e8edf1,#555);
+    border-radius: 12px;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px; /* increased from 500px to 700px */
+    color: #33475b;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    margin: auto;
+    text-align: center;
+}
+
+.order-section input {
+    width: 95%; /* increased from 90% to 95% */
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+.order-section button {
+    background: #555;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 70%; /* increased from 60% */
+    margin-top: 10px;
+}
+.trusted-box {
+    background:#ffffff;
+    border:2px solid #555;
+    border-radius:10px;
+    padding:15px;
+    margin-top:15px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.trusted-box strong { color:#223d4d; }
+.trusted-box small { color:#777; }
+.trusted-box p { margin-top:10px; color:#555; font-size:0.95rem; }
+
+.trust-section {
+    padding:25px;
+    border-radius:12px;
+    margin-top:20px;
+    background:linear-gradient(to right,#4e6e81,#2c3e50);
+    color:#fff;
+    text-align:center;
+}
+
+.trust-section .logos {
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.trust-section img {
+    height:50px;
+    background:#fff;
+    padding:5px;
+    border-radius:6px;
+}
 </style>
 </head>
+
 <body>
+
 <div class="order-section">
 
-  <div style="background:#fff; border:2px solid #4e6e81; border-radius:12px; padding:20px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
-    <h2 style="color:#4e6e81; font-size:1.6rem; margin:0;">
-      Checkout for <br><br>
-      <span id="productName" style="font-weight:bold;">User Manual</span>
-    </h2>
-  </div>
-  <br>
-
-  <form id="orderForm">
-    <label for="order_number">Order Number</label>
-    <input type="text" id="order_number" readonly />
-
-    <label for="name">Full Name</label>
-    <input type="text" id="name" placeholder="Your full name" required />
-
-    <label for="email">Email</label>
-    <input type="email" id="email" placeholder="your.email@example.com" required />
-
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" placeholder="Phone Number" required />
-
-    <label for="brand">Brand Name</label>
-    <input type="text" id="brand" placeholder="Brand Name" required />
-
-    <label for="model">Serial Number</label>
-    <input type="text" id="model" placeholder="Serial Number" required />
-
-    <label for="amount">Amount (USD)</label>
-    <input type="text" id="amount" value="$.95" readonly />
-
-    <input type="hidden" id="pdf_url" value="">
-
-    <button type="submit">Pay Now</button>
-  </form>
-
-  <br>
-
-   <div>
-          <strong style="color: #223d4d;">Trusted Checkout</strong><br>
-          <small style="color: #c5a6a6;">100% Safe & Protected</small>
-        </div>
-
-   <p style="margin-top: 16px; color: #e0e0e0; font-size: 0.95rem;">
-      🔒 Your payment is protected by advanced SSL encryption. We never store your full card details.
-    </p>
-
-  <div class="trust-section">
-    <h2>Secure & Trusted Payment</h2>
-    <p>Your payment is 100% secure. We use PayPal, the world's trusted payment system.</p>
-    <div class="logos">
-      <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
-      <img src="mastercard.png" alt="MasterCard">
-      <img src="visa.jpeg" alt="Visa">
+    <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:20px;color:#555;margin-bottom:20px;">
+        <h2>Checkout for<br><br><span id="productName">User Manual</span></h2>
     </div>
-  </div>
 
-  <div id="downloadContainer"></div>
+    <form id="orderForm">
+
+        <label><strong>Order Number</strong></label>
+        <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
+            <input type="text" id="order_number" readonly>
+        </div><br>
+
+        <label><strong>Full Name</strong></label>
+        <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
+            <input type="text" id="name" required>
+        </div><br>
+
+        <label><strong>Email</strong></label>
+        <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
+            <input type="email" id="email" required>
+        </div><br>
+
+        <label><strong>Phone Number</strong></label>
+        <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
+            <input type="tel" id="phone" required>
+        </div><br>
+
+        <label><strong>Brand Name</strong></label>
+        <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
+            <input type="text" id="brand" required>
+        </div><br>
+
+        <label><strong>Serial Number</strong></label>
+        <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
+            <input type="text" id="model" required>
+        </div><br>
+
+        <label><strong>Amount</strong></label>
+        <div style="background:#fff;border:2px solid #555;border-radius:12px;padding:12px;">
+            <input type="text" id="amount" value="$14.95" readonly>
+        </div><br>
+
+        <input type="hidden" id="pdf_url">
+
+        <button type="submit">Pay Now</button>
+    </form>
+
+    <div class="trusted-box">
+        <strong>Trusted Checkout</strong><br>
+        <small>100% Safe & Protected</small>
+        <p>🔒 Your payment is protected by SSL encryption. We never store your full card details.</p>
+    </div>
+
+    <div class="trust-section">
+        <h2>Secure Payment</h2>
+        <p>We accept major payment methods supported by our processor.</p>
+        <div class="logos">
+            <img src="mastercard.png">
+            <img src="visa.jpeg">
+            <img src="paypal.webp">
+        </div>
+    </div>
 
 </div>
 
-
-
 <script>
-// Generate random order number
-function generateOrderNumber() {
-  return Math.floor(100000 + Math.random() * 900000).toString();
+// GET MANUAL FROM URL
+const params = new URLSearchParams(window.location.search);
+const manual = params.get("manual");
+const pdfLink = "https://pub-0c35548c48644ff38f704717a8222bd7.r2.dev/" + manual;
+
+// DISPLAY MANUAL NAME
+if(manual){
+    let fileName = manual.split('/').pop();
+    fileName = decodeURIComponent(fileName);
+    fileName = fileName.replace(".pdf","");
+    document.getElementById("productName").textContent = fileName;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("order_number").value = generateOrderNumber();
+// GENERATE ORDER NUMBER
+function generateOrderNumber() {
+    return Math.floor(100000 + Math.random() * 900000);
+}
+document.getElementById("order_number").value = generateOrderNumber();
 
-  // Load product and PDF from localStorage
-  const productName = localStorage.getItem('lastProduct');
-  const pdfUrl = localStorage.getItem('lastPDF');
+// SAVE PDF LINK
+document.getElementById("pdf_url").value = pdfLink;
 
-  if (productName) document.getElementById("productName").textContent = productName;
-  if (pdfUrl) document.getElementById("pdf_url").value = pdfUrl;
+// HANDLE FORM SUBMIT
+document.getElementById("orderForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
 
-  // Show download button if returning from PayPal success
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.get('paypal') === 'success' && pdfUrl) {
-    const btn = document.createElement('a');
-    btn.href = pdfUrl;
-    btn.target = "_blank";
-    btn.className = 'download-btn';
-    btn.textContent = '⬇ Download Your Manual';
-    document.getElementById('downloadContainer').appendChild(btn);
+    const data = {
+        order_number: document.getElementById("order_number").value,
+        customer_name: document.getElementById("name").value,
+        customer_email: document.getElementById("email").value,
+        customer_phone: document.getElementById("phone").value,
+        brand_name: document.getElementById("brand").value,
+        model_number: document.getElementById("model").value,
+        pdf_url: pdfLink,
+        amount: "$14.95",
+        payment_status: "pending"
+    };
 
-    // Optional: clear storage after download
-    btn.addEventListener('click', () => localStorage.removeItem('lastPDF'));
-  }
-});
+    try {
+        await fetch("https://formspree.io/f/xldpwdpb", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(data)
+        });
 
-// Handle form submission
-document.getElementById("orderForm").addEventListener("submit", async (e) => {
-  e.preventDefault();
+        await fetch("https://findmymanual.live/.netlify/functions/submitOrder", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(data)
+        });
 
-  const data = {
-    order_number: document.getElementById("order_number").value,
-    customer_name: document.getElementById("name").value,
-    customer_email: document.getElementById("email").value,
-    customer_phone: document.getElementById("phone").value,
-    brand_name: document.getElementById("brand").value,
-    model_number: document.getElementById("model").value,
-    pdf_url: document.getElementById("pdf_url").value,
-    amount: document.getElementById("amount").value,
-    payment_status: "pending"
-  };
+        // OPEN PADDLE CHECKOUT
+        Paddle.Checkout.open({
+            product: 123456,
+            successUrl: pdfLink
+        });
 
-  try {
-    // Send to Formspree
-    await fetch("https://formspree.io/f/xldpwdpb", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    });
-
-    // Send to backend (Netlify function)
-    await fetch("https://findmymanual.live/.netlify/functions/submitOrder", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    });
-
-    // Redirect to PayPal
-    const query = new URLSearchParams({
-      invoice_number: data.order_number,
-      custom: JSON.stringify({
-        customer_name: data.customer_name,
-        customer_email: data.customer_email,
-        customer_phone: data.customer_phone,
-        pdf: data.pdf_url
-      })
-    });
-
-    window.location.href = `https://www.paypal.com/ncp/payment/G7JR8GPE4K9W4?${query.toString()}`;
-
-  } catch (err) {
-    alert("Error submitting order. Please try again.");
-  }
+    } catch(err) {
+        alert("Error submitting order. Please try again.");
+        console.error(err);
+    }
 });
 </script>
+
 </body>
 </html>
