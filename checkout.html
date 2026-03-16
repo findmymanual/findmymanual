@@ -105,47 +105,43 @@ body{
 </style>
 
 </head>
-
 <body>
 
 <div class="order-section">
 
 <h2>Order Your Manual</h2>
 
-<label>Full Name</label>
-<input type="text" id="name" placeholder="Your full name">
+<label for="name">Full Name</label>
+<input type="text" id="name" placeholder="Your full name" required>
 
-<label>Email</label>
-<input type="email" id="email" placeholder="your.email@example.com">
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="your.email@example.com" required>
 
-<label>Phone Number</label>
-<input type="tel" id="phone" placeholder="Phone Number">
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" placeholder="Phone Number" required>
 
-<label>Brand Name</label>
-<input type="text" id="brand" placeholder="Brand Name">
+<label for="brand">Brand Name</label>
+<input type="text" id="brand" placeholder="Brand Name" required>
 
-<label>Serial Number</label>
-<input type="text" id="model" placeholder="Serial Number">
+<label for="model">Serial Number</label>
+<input type="text" id="model" placeholder="Serial Number" required>
 
-<label>Product Name</label>
+<label for="product">Product Name</label>
 <input type="text" value="User Manual" readonly>
 
-<label>Amount (USD)</label>
+<label for="amount">Amount (USD)</label>
 <input type="text" value="$14.95" readonly>
 
 <button id="payButton">Submit Order & Pay</button>
 
 <div class="trust-section">
-
 <h2>Secure & Trusted Payment</h2>
 <p>Your payment is 100% secure. We use Paddle, a trusted global payment processor.</p>
-
 <div class="logos">
 <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
 <img src="mastercard.png" alt="MasterCard">
 <img src="visa.jpeg" alt="Visa">
 </div>
-
 </div>
 </div>
 
@@ -173,10 +169,9 @@ document.getElementById("payButton").addEventListener("click", function() {
   // Generate a temporary order number
   const order_number = Math.floor(100000 + Math.random() * 900000).toString();
 
-  // Pass customer info to Paddle via customData
+  // Prepare custom data for Paddle
   const customData = {
     name: name,
-    email: email,
     phone: phone,
     brand: brand,
     model: model,
@@ -194,7 +189,7 @@ document.getElementById("payButton").addEventListener("click", function() {
       email: email
     },
     customData: customData,
-    successUrl: "thank-you.html"
+    successUrl: "thank-you.html?order=" + order_number
   });
 
 });
