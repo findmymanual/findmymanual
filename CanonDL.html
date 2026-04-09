@@ -1,34 +1,90 @@
+<head>
+    <style>
+        /* PDF Grid Layout */
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 per row on desktop */
+            gap: 20px;
+            justify-items: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 1024px) {
+            .pdf-grid {
+                grid-template-columns: repeat(3, 1fr); /* 3 per row on tablet */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .pdf-grid {
+                grid-template-columns: repeat(3, 1fr); /* 3 per row on mobile */
+            }
+        }
+
+        .pdf-grid div[style*='background:#f5f5f5'] {
+            width: 100%;
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17308900859'); </script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1424202759904253"
+     crossorigin="anonymous"></script>
+<!-- FMM -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1424202759904253"
+     data-ad-slot="5235434866"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <section style="max-width: 1200px; margin: 40px auto; padding: 20px;">
-  <h2
-    style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
-    Available HP PDF Manuals
-  </h2>
+    <h2 style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
+        Available Brother PDF Manuals
+    </h2>
 
-  <h2 style="
-  font-size:2rem; 
-  color:#ffffff; 
-  display:inline-block; 
-  padding:12px 30px; 
-  background:#4e6e81; 
-  border-radius:16px; 
-  margin-bottom:30px;
-  font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
-  text-align:center;
-  position:relative;
-  left:50%;
-  transform:translateX(-50%);
-">
+        <input 
+    type="text" 
+    id="pdfSearch" 
+    placeholder="Search model number..." 
+    style="
+        width: 100%;
+        max-width: 400px;
+        padding: 12px 16px;
+        margin: 20px auto;
+        display: block;
+        font-size: 1rem;
+        border: 2px solid #4e6e81;
+        border-radius: 8px;
+        outline: none;
+    ">
 
-    Download Now!</h2>
+    <div style="text-align: center; margin-top: 10px;">
+  <a href="checkout.html" 
+     style="background:#4e6e81; 
+            color:#ffffff; 
+            padding:14px 28px; 
+            text-decoration:none; 
+            border-radius:6px; 
+            font-size:1.1rem; 
+            font-weight:700; 
+            display:inline-block; 
+            border:1px solid rgba(255,255,255,0.2); 
+            transition:background 0.3s ease; 
+            font-family: Georgia, 'Times New Roman', Times, serif;">
+    Can't find your manual? Click here and send us the Brand + Model
+  </a>
+</div>
 
-  <div class="manual-grid" style="
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-items: center;
-    font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
-  ">
+<h2 style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
+        We will find it for you!
+    </h2>
 
     <div
       style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
@@ -1865,22 +1921,60 @@
         </svg>Download PDF</a>
     </div>
 
-    <script>
-      // ✅ Attach event listeners AFTER the elements exist
-      document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll('.pdf-btn').forEach(btn => {
-          btn.addEventListener('click', function () {
+    
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const search = document.getElementById("pdfSearch");
+
+    // This selects all your gray boxes
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    search.addEventListener("input", function () {
+        const q = this.value.toLowerCase().trim();
+
+        boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+                box.style.display = "";
+            } else {
+                box.style.display = "none";
+            }
+        });
+    });
+
+});
+
+
+</script>
+
+
+</body>
+
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Move all PDF boxes into a responsive grid
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    if (boxes.length) {
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+        boxes.forEach(box => grid.appendChild(box));
+        const section = document.querySelector("section");
+        section.appendChild(grid);
+    }
+
+    // PDF button behavior & styling
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
             const productId = this.getAttribute('data-product');
             const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            console.log("Redirecting to:", checkoutUrl); // Debugging
             window.location.href = checkoutUrl;
-          });
         });
-      });
 
-
-      // Button styling & hover animation
-      document.querySelectorAll('.pdf-btn').forEach(btn => {
         const icon = btn.querySelector('svg');
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
@@ -1896,13 +1990,15 @@
         icon.style.transition = 'transform 0.3s ease';
 
         btn.addEventListener('mouseover', () => {
-          icon.style.transform = 'translateY(3px)';
-          btn.style.background = '#5f879a';
+            icon.style.transform = 'translateY(3px)';
+            btn.style.background = '#5f879a';
         });
-
         btn.addEventListener('mouseout', () => {
-          icon.style.transform = 'translateY(0)';
-          btn.style.background = '#4e6e81';
+            icon.style.transform = 'translateY(0)';
+            btn.style.background = '#4e6e81';
         });
-      });
-    </script>
+    });
+});
+</script>
+
+
