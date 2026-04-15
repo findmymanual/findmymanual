@@ -5,6 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Find My Manual</title>
 
+  <style>
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .header img {
+      width: 60px;   /* adjust size */
+      height: auto;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+  </style>
+</head>
+
+<body>
+
+  
+
+</body>
+</html>
+
   
   
   <!-- SEO & Verification -->
@@ -180,14 +206,51 @@
 <body>
   
 
-<header>
-  <h1>Find My Manual</h1>
-  <nav>
+<header class="header">
+  <div class="left">
+    <img src="logo2.png" alt="Logo" class="logo">
+    <h1>Find My Manual</h1>
+  </div>
+
+  <nav class="right">
     <a href="privacy.html" target="_blank">Privacy Policy</a> |
     <a href="terms.html" target="_blank">Terms and Conditions</a> |
     <a href="about.html" target="_blank">About Us</a>
   </nav>
 </header>
+
+<style>
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 10px 20px;
+
+    background: white;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  .left h1 {
+    margin: 0;
+  }
+
+  .right a {
+    text-decoration: none;
+    margin: 0 5px;
+  }
+</style>
 
 <section class="hero" style="text-align:center; padding:60px 20px; background: linear-gradient(to right, #e8edf1, #c8d6e5);">
    <h2 style="
