@@ -135,7 +135,6 @@ body{
 <button id="payButton">Submit Order & Pay</button>
 
 <div style="margin-top:20px; text-align:center;">
-
 <p style="font-weight:bold; margin-bottom:8px;">
 ⭐ Trusted by Customers – Verified Reviews
 </p><br>
@@ -143,9 +142,6 @@ body{
 <img src="https://cdn.trustpilot.net/brand-assets/4.1.0/logo-black.svg" 
 alt="Trustpilot Reviews" 
 style="height:50px; margin-bottom:8px;">
-
-
-
 </div>
 
 <!-- Trust & Security Section -->
@@ -161,7 +157,6 @@ style="height:50px; margin-bottom:8px;">
     ⚡ Immediate Digital Delivery – Download your manual instantly<br>
     🌎 Global Customer Support Available
   </p></div>
-  
 </div>
 
 <div class="trust-section">
@@ -171,21 +166,25 @@ style="height:50px; margin-bottom:8px;">
 <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" 
      alt="PayPal" 
      style="width:100px; height:auto;">
-<img src="mastercard.png" alt="MasterCard"
-style="width:100px; height:auto;">
-<img src="visa.jpeg" alt="Visa"style="width:100px; height:auto;">
+<img src="mastercard.png" alt="MasterCard" style="width:100px; height:auto;">
+<img src="visa.jpeg" alt="Visa" style="width:100px; height:auto;">
+</div>
+</div>
 
-</div>
-</div>
 </div>
 
 <script>
-// Initialize Paddle with your LIVE client token
+// Initialize Paddle
 Paddle.Initialize({
   token: "live_7fd8fb2221b2b9ec5b3320c704e"
 });
 
 document.getElementById("payButton").addEventListener("click", function() {
+
+  // 🔥 Google Ads Begin Checkout tracking
+  gtag('event', 'begin_checkout', {
+    'send_to': 'AW-17308900859'
+  });
 
   // Collect form values
   const name = document.getElementById("name").value.trim();
@@ -200,10 +199,10 @@ document.getElementById("payButton").addEventListener("click", function() {
     return;
   }
 
-  // Generate a temporary order number
+  // Generate order number
   const order_number = Math.floor(100000 + Math.random() * 900000).toString();
 
-  // Prepare custom data for Paddle
+  // Custom data
   const customData = {
     name: name,
     phone: phone,
@@ -214,7 +213,7 @@ document.getElementById("payButton").addEventListener("click", function() {
     amount: "$14.95"
   };
 
-  // Open Paddle Checkout
+  // Open Paddle checkout
   Paddle.Checkout.open({
     items: [
       { priceId: "pri_01kkrgrb89fvnyhdrd1x0g8fsa", quantity: 1 }
