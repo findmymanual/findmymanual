@@ -7,6 +7,15 @@
   <meta name="author" content="Find My Manual">
   <title>Thank You!</title>
 
+  <!-- Google Ads Base Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17308900859');
+  </script>
+
   <style>
     body {
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -38,6 +47,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <h1>Thank You for Your Payment!</h1>
@@ -59,6 +69,11 @@
   </p>
 
   <script>
+    // Google Ads Conversion Tracking
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17308900859/5zzyCKLvkqwbEPu7w71A'
+    });
+
     // Safe JSON parsing function
     function safeParseJSON(jsonString) {
       try {
@@ -78,7 +93,8 @@
         if (customData) {
           // Display the order number
           if (customData.order_number) {
-            document.getElementById('orderNumberDisplay').textContent = "Your Order Number: #" + customData.order_number;
+            document.getElementById('orderNumberDisplay').textContent =
+              "Your Order Number: #" + customData.order_number;
           }
 
           // Show download button if PDF file exists

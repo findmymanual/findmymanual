@@ -1,38 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Find My Manual</title>
 
-  <style>
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .header img {
-      width: 60px;   /* adjust size */
-      height: auto;
-    }
-
-    .header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-  </style>
-</head>
-
-<body>
-
-  
-
-</body>
-</html>
-
-  
-  
   <!-- SEO & Verification -->
   <meta name="author" content="Find My Manual">
   <meta name="robots" content="index, follow">
@@ -40,7 +13,7 @@
   <meta name="google-site-verification" content="9VtHF5Cduk8ms87GhroJ8whpG7OrQg9eq8YIgAFrhnY">
   <meta name="google-site-verification" content="JurfCYshi7VZGsZ4J0Q6feUdmIwheNwzshcUrUbfbek">
 
-  <!-- Google Tag -->
+  <!-- Google Ads Tag (FIXED - ONLY ONCE) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -50,15 +23,14 @@
   </script>
 
   <!-- Google AdSense -->
-<script async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1424202759904253"
-  crossorigin="anonymous"></script>
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1424202759904253"
+    crossorigin="anonymous"></script>
 
   <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
+    src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
 
-
+  <!-- BASE STYLES (UNCHANGED) -->
   <style>
     body {
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -66,6 +38,23 @@
       background-color: #e8edf1;
       color: #555;
     }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .header img {
+      width: 60px;
+      height: auto;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
     header {
       display: flex;
       flex-wrap: wrap;
@@ -75,11 +64,13 @@
       background-color: white;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
+
     header h1 {
       font-size: 1.5rem;
       margin: 0;
       color: #555;
     }
+
     nav a {
       font-size: 0.95rem;
       font-weight: bold;
@@ -87,36 +78,41 @@
       text-decoration: none;
       margin: 0 5px;
     }
+
     .hero {
       font-family: Georgia, 'Times New Roman', Times, serif;
       text-align: center;
       padding: 60px 20px;
       background: linear-gradient(to right, #e8edf1, #c8d6e5);
     }
+
     .brand-container {
-      background:#ffffff; 
-      border:2px solid #555; 
-      border-radius:16px; 
-      padding:30px; 
-      max-width:1100px; 
+      background:#ffffff;
+      border:2px solid #555;
+      border-radius:16px;
+      padding:30px;
+      max-width:1100px;
       margin: 30px auto;
     }
+
     .brand-grid {
-      display:flex; 
-      flex-wrap:wrap; 
-      justify-content:center; 
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
       gap:15px;
     }
+
     .brand-grid a {
-      text-decoration:none; 
-      border:2px solid #555; 
-      background-color:#cde2ee; 
-      color:#1a237e; 
-      padding:12px 28px; 
-      border-radius:50px; 
-      font-weight:bold; 
+      text-decoration:none;
+      border:2px solid #555;
+      background-color:#cde2ee;
+      color:#1a237e;
+      padding:12px 28px;
+      border-radius:50px;
+      font-weight:bold;
       font-size:0.95rem;
     }
+
     .flex-section {
       display:flex;
       flex-wrap:wrap;
@@ -125,19 +121,23 @@
       gap:40px;
       padding:60px 5%;
     }
+
     .flex-section .text-col {
       flex:1 1 50%;
       max-width:600px;
     }
+
     .flex-section .text-col p {
       line-height:1.6;
       color:#444;
       font-size:1.1rem;
     }
+
     .flex-section .img-col {
       flex:1 1 40%;
       text-align:center;
     }
+
     .flex-section .img-col img {
       max-width:100%;
       height:400px;
@@ -145,6 +145,7 @@
       object-fit:cover;
       box-shadow:0 4px 15px rgba(0,0,0,0.1);
     }
+
     footer {
       background:#2c3e50;
       color:#fff;
@@ -153,7 +154,6 @@
       margin-top:50px;
     }
 
-     /* How It Works */
     .how-works {
       display:flex;
       justify-content:center;
@@ -198,13 +198,10 @@
       border:2px solid #555;
       box-shadow:0 4px 10px rgba(0,0,0,0.08);
     }
-
-    
   </style>
 </head>
 
 <body>
-  
 
 <header class="header">
   <div class="left">
@@ -259,13 +256,18 @@
   color:#555;
   
 ">
-  Find Your User Manual Instantly
 </h2>
 
-<p> Find My Manual is an independent website providing user manuals and appliance guides.<br>
+<section class="hero">
+
+  <h2 style="font-size:2.5rem; margin-bottom:20px; color:#555;">
+    Find Your User Manual Instantly
+  </h2>
+
+  <p> Find My Manual is an independent website providing user manuals and appliance guides.<br>
    If your manual is not currently in our available collection, you can still submit your details and we’ll find it for you.
   We’ll send your manual directly to your inbox <br><br>
-  <bold> Simply enter your details below </bold></p><br>
+  <bold> <strong>Simply enter your details below </strong></bold></p><br>
 
     
 
@@ -309,31 +311,7 @@
     Submit
   </button>
 </form><br><br>
-
-<script>
-  function redirectToCheckout(event) {
-    event.preventDefault(); // Prevent normal form submission
-
-    const brand = encodeURIComponent(document.getElementById('brandInput').value);
-    const model = encodeURIComponent(document.getElementById('modelInput').value);
-
-    // Redirect to another HTML page with the data in the URL
-    window.location.href = `checkout.html?brand=${brand}&model=${model}`;
-  }
-</script>
-
-
-<script>
-  document.getElementById('paypalForm').addEventListener('submit', function () {
-    const brand = encodeURIComponent(document.getElementById('brandInput').value);
-    const model = encodeURIComponent(document.getElementById('modelInput').value);
-
-    setTimeout(function () {
-      window.location.href = `pages/checkout.html?brand=${brand}&model=${model}`;
-    }, 2000); // Delay to let PayPal open
-  });
-</script>
-
+  <br><br>
 
   <!-- AdSense -->
   <ins class="adsbygoogle"
@@ -342,23 +320,39 @@
        data-ad-slot="5235434866"
        data-ad-format="auto"
        data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
-  <h2><bold>Get Your Device & Appliance Manual</bold></h2>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <h2><b>Get Your Device & Appliance Manual</b></h2>
+
   <p style="font-size:1.1rem; color:#555; margin-bottom:25px;">
+    <strong>Fast • Secure • Instant Download or Delivered directly to your email</strong><br><br>
 
-    
-      <strong>Fast • Secure • Instant Download or Delivered directly to your email</strong><br><br>
+    Never waste time searching for lost booklets – access your complete manual instantly, with all setup instructions, troubleshooting tips, and safety guidelines ready whenever and wherever you need them. Say goodbye to frustration and enjoy full control of your device with ease and confidence.
+  </p>
 
-
-      Never waste time searching for lost booklets – access your complete manual instantly, with all setup instructions, troubleshooting tips, and safety guidelines ready whenever and wherever you need them. Say goodbye to frustration and enjoy full control of your device with ease and confidence.
-    </p><br>
-
-    <p style="font-size:2rem; color:#555; margin-bottom:30px;">
+  <p style="font-size:2rem; color:#555; margin-bottom:30px;">
     <strong>Just click the brand name below and choose your PDF manual</strong>
   </p>
 
 </section>
+
+<!-- SCRIPT FIXED -->
+<script>
+function redirectToCheckout(event) {
+  event.preventDefault();
+
+  const brand = encodeURIComponent(document.getElementById('brandInput').value);
+  const model = encodeURIComponent(document.getElementById('modelInput').value);
+
+  window.location.href = `checkout.html?brand=${brand}&model=${model}`;
+}
+</script>
+
+</body>
+</html>
 
 <!-- Box Container -->
   <div
