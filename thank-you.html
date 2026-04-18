@@ -17,28 +17,30 @@ function gtag(){ dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'AW-17308900859');
 
-/* ==============================
-   GOOGLE ADS CONVERSION (FIXED PLACEMENT)
-============================== */
-const params = new URLSearchParams(window.location.search);
-const orderId = params.get('order');
+/* GOOGLE ADS CONVERSION (SAFE + RELIABLE) */
+(function () {
 
-if (orderId && typeof gtag === "function") {
+  const params = new URLSearchParams(window.location.search);
+  const orderId = params.get('order');
 
-  const key = "conv_" + orderId;
+  if (orderId && typeof gtag === "function") {
 
-  if (!sessionStorage.getItem(key)) {
+    const key = "conv_" + orderId;
 
-    gtag('event', 'conversion', {
-      'send_to': 'AW-17308900859/5zzyCKLvkqwbEPu7w71A',
-      'transaction_id': orderId,
-      'value': 14.95,
-      'currency': 'USD'
-    });
+    if (!sessionStorage.getItem(key)) {
 
-    sessionStorage.setItem(key, 'true');
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17308900859/5zzyCKLvkqwbEPu7w71A',
+        'transaction_id': orderId,
+        'value': 14.95,
+        'currency': 'USD'
+      });
+
+      sessionStorage.setItem(key, 'true');
+    }
   }
-}
+
+})();
 
 /* ==============================
    YOUR EXISTING LOGIC (UNCHANGED)
@@ -52,13 +54,11 @@ window.addEventListener('load', function () {
     try {
       const customData = JSON.parse(customDataStr);
 
-      // Order number
       const orderEl = document.getElementById('orderNumberDisplay');
       if (customData.order_number && orderEl) {
         orderEl.textContent = "Your Order Number: #" + customData.order_number;
       }
 
-      // Download button
       const container = document.getElementById('downloadContainer');
       if (customData.pdfFile && container) {
         const link = document.createElement('a');
@@ -122,10 +122,8 @@ window.addEventListener('load', function () {
 
   <img src="logo2.png" alt="Your Logo" />
 
-  <!-- Dynamic Order Number -->
   <p class="order-number" id="orderNumberDisplay"></p>
 
-  <!-- Download button will appear here -->
   <div id="downloadContainer"></div>
 
   <p style="margin-top: 30px;">
