@@ -250,16 +250,24 @@ document.getElementById("payButton").addEventListener("click", async function ()
   // SEND TO FORMSPREE
   // ==========================
   try {
-    await fetch("https://formspree.io/f/xwpbjpwg", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(orderData)
-    });
-  } catch (error) {
-    console.error("Formspree Error:", error);
+  const response = await fetch("https://formspree.io/f/xldpwdpb", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify(orderData)
+  });
+
+  if (!response.ok) {
+    console.log("Formspree failed:", await response.text());
+  } else {
+    console.log("Formspree success");
   }
+
+} catch (error) {
+  console.error("Formspree Error:", error);
+}
 
   // ==========================
   // SAFETY CHECK FOR PADDLE
