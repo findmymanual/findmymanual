@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-17308900859');
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Checkout Page</title>
@@ -179,11 +188,18 @@ Paddle.Initialize({
   token: "live_7fd8fb2221b2b9ec5b3320c704e"
 });
 
-document.getElementById("payButton").addEventListener("click", function() {
+// Safe tracking helper
+function trackGtag(event, params) {
+  if (typeof gtag === "function") {
+    gtag('event', event, params);
+  }
+}
 
-  // 🔥 Google Ads Begin Checkout tracking
-  gtag('event', 'begin_checkout', {
-    'send_to': 'AW-17308900859'
+document.getElementById("payButton").addEventListener("click", function () {
+
+  // SAFE Google tracking
+  trackGtag('begin_checkout', {
+    send_to: 'AW-17308900859'
   });
 
   // Collect form values
@@ -193,39 +209,45 @@ document.getElementById("payButton").addEventListener("click", function() {
   const brand = document.getElementById("brand").value.trim();
   const model = document.getElementById("model").value.trim();
 
-  // Validate fields
   if(!name || !email || !phone || !brand || !model){
     alert("Please fill out all required fields.");
     return;
   }
 
-  // Generate order number
   const order_number = Math.floor(100000 + Math.random() * 900000).toString();
 
-  // Custom data
   const customData = {
-    name: name,
-    phone: phone,
-    brand: brand,
-    model: model,
-    order_number: order_number,
+    name,
+    phone,
+    brand,
+    model,
+    order_number,
     product: "User Manual",
     amount: "$14.95"
   };
 
-  // Open Paddle checkout
+  // ✅ Make sure Paddle exists
+  if (typeof Paddle === "undefined" || !Paddle.Checkout) {
+    alert("Payment system is still loading. Please try again in a second.");
+    return;
+  }
+
   Paddle.Checkout.open({
-    items: [
-      { priceId: "pri_01kkrgrb89fvnyhdrd1x0g8fsa", quantity: 1 }
-    ],
-    customer: {
-      email: email
-    },
-    customData: customData,
-    successUrl: "thank-you.html?order=" + order_number
-  });
+  items: [
+    { priceId: "pri_01kkrgrb89fvnyhdrd1x0g8fsa", quantity: 1 }
+  ],
+  customer: {
+    email: email
+  },
+  customData: customData,
+  successUrl:
+    "thank-you.html?order=" + order_number +
+    "&custom=" + encodeURIComponent(JSON.stringify(customData))
+});
 
 });
+
+
 </script>
 
 </body>

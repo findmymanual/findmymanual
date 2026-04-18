@@ -9,12 +9,75 @@
 
   <!-- Google Ads Base Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-17308900859');
-  </script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+
+gtag('js', new Date());
+gtag('config', 'AW-17308900859');
+
+window.addEventListener('load', function () {
+
+  const params = new URLSearchParams(window.location.search);
+
+  const orderId = params.get('order');
+  const customDataStr = params.get('custom');
+
+  /* ==============================
+     GOOGLE ADS CONVERSION (SAFE)
+  ============================== */
+  if (orderId && typeof gtag === "function") {
+
+    const key = "conv_" + orderId;
+
+    try {
+      if (!sessionStorage.getItem(key)) {
+
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17308900859/5zzyCKLvkqwbEPu7w71A',
+          'transaction_id': orderId,
+          'value': 14.95,
+          'currency': 'USD'
+        });
+
+        sessionStorage.setItem(key, 'true');
+      }
+    } catch (e) {
+      console.error("Conversion error:", e);
+    }
+  }
+
+  /* ==============================
+     CUSTOM DATA HANDLING (SAFE + SINGLE)
+  ============================== */
+  if (customDataStr) {
+    try {
+      const customData = JSON.parse(customDataStr);
+
+      // Order number
+      const orderEl = document.getElementById('orderNumberDisplay');
+      if (customData.order_number && orderEl) {
+        orderEl.textContent = "Your Order Number: #" + customData.order_number;
+      }
+
+      // Download button
+      const container = document.getElementById('downloadContainer');
+      if (customData.pdfFile && container) {
+        const link = document.createElement('a');
+        link.href = "https://findmymanual.live/hppdf/" + encodeURIComponent(customData.pdfFile);
+        link.className = "download-btn";
+        link.textContent = "⬇ Download Your Manual";
+        container.appendChild(link);
+      }
+
+    } catch (e) {
+      console.error("Invalid custom data.");
+    }
+  }
+
+});
+</script>
 
   <style>
     body {
@@ -69,35 +132,21 @@
   </p>
 
   <script>
-    // Google Ads Conversion Tracking
-    gtag('event', 'conversion', {
-      'send_to': 'AW-17308900859/5zzyCKLvkqwbEPu7w71A'
-    });
+   
 
-    // Safe JSON parsing function
-    function safeParseJSON(jsonString) {
-      try {
-        return JSON.parse(jsonString);
-      } catch {
-        return null;
-      }
-    }
-
-    window.addEventListener('load', function() {
+      // Handle custom data (your existing logic untouched)
       const urlParams = new URLSearchParams(window.location.search);
       const customDataStr = urlParams.get('custom');
 
       if (customDataStr) {
-        const customData = safeParseJSON(customDataStr);
+        try {
+          const customData = JSON.parse(customDataStr);
 
-        if (customData) {
-          // Display the order number
           if (customData.order_number) {
             document.getElementById('orderNumberDisplay').textContent =
               "Your Order Number: #" + customData.order_number;
           }
 
-          // Show download button if PDF file exists
           if (customData.pdfFile) {
             const downloadContainer = document.getElementById('downloadContainer');
             const downloadLink = document.createElement('a');
@@ -106,13 +155,12 @@
             downloadLink.textContent = "⬇ Download Your Manual";
             downloadContainer.appendChild(downloadLink);
           }
-        } else {
+
+        } catch (e) {
           console.error("Invalid custom data.");
         }
-      } else {
-        console.warn("No custom data received.");
       }
-    });
+   
   </script>
 
 </body>
