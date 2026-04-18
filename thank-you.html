@@ -17,63 +17,33 @@ function gtag(){ dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'AW-17308900859');
 
-/* GOOGLE ADS CONVERSION (SAFE + RELIABLE) */
-(function () {
+/* ==============================
+   RELIABLE PURCHASE TRACKING
+============================== */
+function firePurchase() {
 
   const params = new URLSearchParams(window.location.search);
   const orderId = params.get('order');
 
-  if (orderId && typeof gtag === "function") {
+  if (!orderId) return;
 
-    const key = "conv_" + orderId;
+  const key = "conv_" + orderId;
 
-    if (!sessionStorage.getItem(key)) {
+  if (sessionStorage.getItem(key)) return;
 
-      gtag('event', 'purchase', {
-        'send_to': 'AW-17308900859/5zzyCKLvkqwbEPu7w71A',
-        'transaction_id': orderId,
-        'value': 14.95,
-        'currency': 'USD'
-      });
+  gtag('event', 'purchase', {
+    'send_to': 'AW-17308900859/5zzyCKLvkqwbEPu7w71A',
+    'transaction_id': orderId,
+    'value': 14.95,
+    'currency': 'USD'
+  });
 
-      sessionStorage.setItem(key, 'true');
-    }
-  }
+  sessionStorage.setItem(key, 'true');
+}
 
-})();
+/* Fire only when page is fully ready */
+window.addEventListener("load", firePurchase, { once: true });
 
-/* ==============================
-   YOUR EXISTING LOGIC (UNCHANGED)
-============================== */
-
-window.addEventListener('load', function () {
-
-  const customDataStr = new URLSearchParams(window.location.search).get('custom');
-
-  if (customDataStr) {
-    try {
-      const customData = JSON.parse(customDataStr);
-
-      const orderEl = document.getElementById('orderNumberDisplay');
-      if (customData.order_number && orderEl) {
-        orderEl.textContent = "Your Order Number: #" + customData.order_number;
-      }
-
-      const container = document.getElementById('downloadContainer');
-      if (customData.pdfFile && container) {
-        const link = document.createElement('a');
-        link.href = "https://findmymanual.live/hppdf/" + encodeURIComponent(customData.pdfFile);
-        link.className = "download-btn";
-        link.textContent = "⬇ Download Your Manual";
-        container.appendChild(link);
-      }
-
-    } catch (e) {
-      console.error("Invalid custom data.");
-    }
-  }
-
-});
   </script>
 
   <style>
@@ -83,8 +53,10 @@ window.addEventListener('load', function () {
       text-align: center;
       padding: 60px;
     }
+
     h1 { color: #1761a0; margin-bottom: 20px; }
     p { font-size: 18px; color: #333; }
+
     a.download-btn {
       display: inline-block;
       margin-top: 20px;
@@ -97,7 +69,9 @@ window.addEventListener('load', function () {
       text-decoration: none;
       transition: background 0.3s ease;
     }
+
     a.download-btn:hover { background-color: #0f3c6b; }
+
     img {
       margin-top: 30px;
       width: 150px;
@@ -105,6 +79,7 @@ window.addEventListener('load', function () {
       border-radius: 50%;
       object-fit: cover;
     }
+
     .order-number {
       margin-top: 20px;
       font-size: 18px;
