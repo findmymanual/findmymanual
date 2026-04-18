@@ -10,47 +10,44 @@
   <!-- Google Ads Base Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script>
 
-<script>
+  <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){ dataLayer.push(arguments); }
 
 gtag('js', new Date());
 gtag('config', 'AW-17308900859');
 
+/* ==============================
+   GOOGLE ADS CONVERSION (FIXED PLACEMENT)
+============================== */
+const params = new URLSearchParams(window.location.search);
+const orderId = params.get('order');
+
+if (orderId && typeof gtag === "function") {
+
+  const key = "conv_" + orderId;
+
+  if (!sessionStorage.getItem(key)) {
+
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17308900859/5zzyCKLvkqwbEPu7w71A',
+      'transaction_id': orderId,
+      'value': 14.95,
+      'currency': 'USD'
+    });
+
+    sessionStorage.setItem(key, 'true');
+  }
+}
+
+/* ==============================
+   YOUR EXISTING LOGIC (UNCHANGED)
+============================== */
+
 window.addEventListener('load', function () {
 
-  const params = new URLSearchParams(window.location.search);
+  const customDataStr = new URLSearchParams(window.location.search).get('custom');
 
-  const orderId = params.get('order');
-  const customDataStr = params.get('custom');
-
-  /* ==============================
-     GOOGLE ADS CONVERSION (SAFE)
-  ============================== */
-  if (orderId && typeof gtag === "function") {
-
-    const key = "conv_" + orderId;
-
-    try {
-      if (!sessionStorage.getItem(key)) {
-
-        gtag('event', 'conversion', {
-          'send_to': 'AW-17308900859/5zzyCKLvkqwbEPu7w71A',
-          'transaction_id': orderId,
-          'value': 14.95,
-          'currency': 'USD'
-        });
-
-        sessionStorage.setItem(key, 'true');
-      }
-    } catch (e) {
-      console.error("Conversion error:", e);
-    }
-  }
-
-  /* ==============================
-     CUSTOM DATA HANDLING (SAFE + SINGLE)
-  ============================== */
   if (customDataStr) {
     try {
       const customData = JSON.parse(customDataStr);
@@ -77,7 +74,7 @@ window.addEventListener('load', function () {
   }
 
 });
-</script>
+  </script>
 
   <style>
     body {
@@ -101,7 +98,13 @@ window.addEventListener('load', function () {
       transition: background 0.3s ease;
     }
     a.download-btn:hover { background-color: #0f3c6b; }
-    img { margin-top: 30px; width: 150px; height: 150px; border-radius: 50%; object-fit: cover; }
+    img {
+      margin-top: 30px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
     .order-number {
       margin-top: 20px;
       font-size: 18px;
@@ -130,38 +133,6 @@ window.addEventListener('load', function () {
       ← Return to Home
     </a>
   </p>
-
-  <script>
-   
-
-      // Handle custom data (your existing logic untouched)
-      const urlParams = new URLSearchParams(window.location.search);
-      const customDataStr = urlParams.get('custom');
-
-      if (customDataStr) {
-        try {
-          const customData = JSON.parse(customDataStr);
-
-          if (customData.order_number) {
-            document.getElementById('orderNumberDisplay').textContent =
-              "Your Order Number: #" + customData.order_number;
-          }
-
-          if (customData.pdfFile) {
-            const downloadContainer = document.getElementById('downloadContainer');
-            const downloadLink = document.createElement('a');
-            downloadLink.href = "https://findmymanual.live/hppdf/" + encodeURIComponent(customData.pdfFile);
-            downloadLink.className = "download-btn";
-            downloadLink.textContent = "⬇ Download Your Manual";
-            downloadContainer.appendChild(downloadLink);
-          }
-
-        } catch (e) {
-          console.error("Invalid custom data.");
-        }
-      }
-   
-  </script>
 
 </body>
 </html>
