@@ -183,71 +183,109 @@ style="height:50px; margin-bottom:8px;">
 </div>
 
 <script>
-// Initialize Paddle
+// ==========================
+// INIT PADDLE
+// ==========================
 Paddle.Initialize({
   token: "live_7fd8fb2221b2b9ec5b3320c704e"
 });
 
-// Safe tracking helper
+// ==========================
+// SAFE GOOGLE TRACKING
+// ==========================
 function trackGtag(event, params) {
   if (typeof gtag === "function") {
     gtag('event', event, params);
   }
 }
 
-document.getElementById("payButton").addEventListener("click", function () {
+// ==========================
+// BUTTON CLICK
+// ==========================
+document.getElementById("payButton").addEventListener("click", async function () {
 
-  // SAFE Google tracking
+  // Track checkout start
   trackGtag('begin_checkout', {
     send_to: 'AW-17308900859'
   });
 
-  // Collect form values
+  // ==========================
+  // GET FORM VALUES
+  // ==========================
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const phone = document.getElementById("phone").value.trim();
   const brand = document.getElementById("brand").value.trim();
   const model = document.getElementById("model").value.trim();
 
-  if(!name || !email || !phone || !brand || !model){
+  // ==========================
+  // VALIDATION
+  // ==========================
+  if (!name || !email || !phone || !brand || !model) {
     alert("Please fill out all required fields.");
     return;
   }
 
+  // ==========================
+  // GENERATE ORDER NUMBER
+  // ==========================
   const order_number = Math.floor(100000 + Math.random() * 900000).toString();
 
-  const customData = {
-    name,
-    phone,
-    brand,
-    model,
-    order_number,
+  // ==========================
+  // PREPARE DATA
+  // ==========================
+  const orderData = {
+    name: name,
+    email: email,
+    phone: phone,
+    brand: brand,
+    model: model,
+    order_number: order_number,
     product: "User Manual",
-    amount: "$14.95"
+    amount: "$14.95",
+    status: "Pending Payment"
   };
 
-  // ✅ Make sure Paddle exists
+  // ==========================
+  // SEND TO FORMSPREE
+  // ==========================
+  try {
+    await fetch("https://formspree.io/f/xwpbjpwg", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(orderData)
+    });
+  } catch (error) {
+    console.error("Formspree Error:", error);
+  }
+
+  // ==========================
+  // SAFETY CHECK FOR PADDLE
+  // ==========================
   if (typeof Paddle === "undefined" || !Paddle.Checkout) {
-    alert("Payment system is still loading. Please try again in a second.");
+    alert("Payment system is still loading. Please try again.");
     return;
   }
 
+  // ==========================
+  // OPEN PADDLE CHECKOUT
+  // ==========================
   Paddle.Checkout.open({
-  items: [
-    { priceId: "pri_01kkrgrb89fvnyhdrd1x0g8fsa", quantity: 1 }
-  ],
-  customer: {
-    email: email
-  },
-  customData: customData,
-  successUrl:
-    "thank-you.html?order=" + order_number +
-    "&custom=" + encodeURIComponent(JSON.stringify(customData))
-});
+    items: [
+      { priceId: "pri_01kkrgrb89fvnyhdrd1x0g8fsa", quantity: 1 }
+    ],
+    customer: {
+      email: email
+    },
+    customData: orderData,
+    successUrl:
+      "thank-you.html?order=" + order_number +
+      "&custom=" + encodeURIComponent(JSON.stringify(orderData))
+  });
 
 });
-
-
 </script>
 
 </body>
