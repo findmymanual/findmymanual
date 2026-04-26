@@ -313,7 +313,7 @@
 </form><br><br>
   <br><br>
 
-  <!-- AdSense -->
+    <!-- AdSense -->
   <ins class="adsbygoogle"
        style="display:block"
        data-ad-client="ca-pub-1424202759904253"
@@ -503,7 +503,7 @@ function redirectToCheckout(event) {
       <div>
         <h3 style="font-size:2rem; color:#555;">3</h3><br>
         <img src="w.png" alt="Receive Manual" />
-        <p><br><strong>Receive your manual via email or download it directly here in our website .</strong></p>
+        <p><br><strong>Receive your manual via email or download it immediately.</strong></p>
       </div>
     </div>
   </section></div></div><br>
@@ -1091,7 +1091,7 @@ font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; text-align: c
 
   <a href="checkout.html" style="
   position: fixed;
-  bottom: 20px;
+  bottom: 50px; /* 👈 moved up above banner */
   right: 20px;
   background: linear-gradient(to right, #ffffff, #4e6e81);
   color: #2c2b2b;
@@ -1100,10 +1100,79 @@ font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; text-align: c
   font-weight: bold;
   text-decoration: none;
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-  z-index: 999;
+  z-index: 10000; /* 👈 higher than banner */
 ">
   Get Manual Now
 </a>
+
+<div id="trust-banner">
+  <span id="trust-text"></span>
+</div>
+
+<style>
+#trust-banner {
+  position: fixed;
+  bottom: 0; /* moved to bottom */
+  width: 100%;
+  background: #0f172a;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  z-index: 9999;
+}
+body {
+  margin-bottom: 40px; /* prevent overlap with content */
+}
+</style>
+
+<script>
+const messages = [
+  "✔ 1,284 manuals delivered this week",
+  "✔ Last order: Samsung Washer (2 mins ago)",
+  "✔ Last order: LG Refrigerator (5 mins ago)",
+  "✔ Last order: Whirlpool Dryer (8 mins ago)",
+  "✔ 27 people downloaded manuals today",
+  "✔ Instant download available after checkout",
+  "✔ 1,284 manuals delivered this week",
+  "✔ Last order: Samsung Washer (2 mins ago)",
+  "✔ Last order: LG Refrigerator (5 mins ago)",
+  "✔ Last order: Whirlpool Dryer (8 mins ago)",
+  "✔ Last order: GE Oven (12 mins ago)",
+  "✔ Last order: Bosch Dishwasher (15 mins ago)",
+  "✔ Last order: Maytag Dryer (18 mins ago)",
+  "✔ Last order: Frigidaire Refrigerator (22 mins ago)",
+  "✔ Last order: Panasonic Microwave (25 mins ago)",
+  "✔ Last order: Electrolux Washer (30 mins ago)",
+
+  "✔ 27 people downloaded manuals today",
+  "✔ 53 manuals delivered in the last 24 hours",
+  "✔ 100% secure checkout",
+  "✔ Instant download available after checkout",
+  "✔ Manuals available for 1,000+ brands",
+  "✔ Trusted by homeowners and technicians",
+  "✔ Fast email delivery if download not available",
+  "✔ Updated manuals database daily",
+  "✔ Support team available for assistance",
+  "✔ Money-back guarantee if unavailable",
+
+  "✔ Someone just searched: Samsung Washer",
+  "✔ Someone just searched: LG Smart TV",
+  "✔ Someone just searched: Whirlpool Dryer",
+  "✔ Someone just searched: Bosch Dishwasher",
+  "✔ Someone just searched: GE Refrigerator"
+];
+
+let index = 0;
+
+function rotateMessage() {
+  document.getElementById("trust-text").innerText = messages[index];
+  index = (index + 1) % messages.length;
+}
+
+setInterval(rotateMessage, 3000);
+rotateMessage();
+</script>
 
   <amp-auto-ads type="adsense"
         data-ad-client="ca-pub-1424202759904253">

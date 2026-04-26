@@ -1,45 +1,41 @@
-<div style="
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px auto;
-  max-width: 600px;
-  padding: 20px 25px;
-  background: linear-gradient(to right, #4e6e81, #2c3e50);
-  border-radius: 12px;
-  color: #ffffff;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-">
-
-  <!-- Shield Icon -->
-  <div style="
-    position: relative;
-    width: 70px;
-    height: 70px;
-    background: #ffffff;
-    border-radius: 12px 12px 28px 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #2c3e50;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  ">
-    <!-- Checkmark -->
-    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2c3e50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M20 6L9 17l-5-5"/>
-    </svg>
-  </div>
-
-  <!-- Text -->
-  <div style="
-    font-size: 1.1rem;
-    font-weight: 600;
-  ">
-    100% Money-back guarantee if your manual isn’t available
-  </div>
+<div id="trust-banner">
+  <span id="trust-text"></span>
 </div>
+
+<style>
+#trust-banner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0f172a;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  z-index: 9999;
+}
+body {
+  margin-top: 40px;
+}
+</style>
+
+<script>
+const messages = [
+  "✔ 1,284 manuals delivered this week",
+  "✔ Last order: Samsung Washer (2 mins ago)",
+  "✔ Last order: LG Refrigerator (5 mins ago)",
+  "✔ Last order: Whirlpool Dryer (8 mins ago)",
+  "✔ 27 people downloaded manuals today",
+  "✔ Instant download available after checkout"
+];
+
+let index = 0;
+
+function rotateMessage() {
+  document.getElementById("trust-text").innerText = messages[index];
+  index = (index + 1) % messages.length;
+}
+
+setInterval(rotateMessage, 3000); // change every 3 sec
+rotateMessage();
+</script>
