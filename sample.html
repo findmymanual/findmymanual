@@ -1,41 +1,19 @@
-<div id="trust-banner">
-  <span id="trust-text"></span>
-</div>
-
 <style>
-#trust-banner {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #0f172a;
-  color: #fff;
+.email-notice {
+  margin-top: 12px;
+  font-size: 13.5px;
+  color: #2e2e2e;
+  background: #f0f7ff;
+  border: 1px solid #cfe3ff;
+  padding: 12px;
+  border-radius: 8px;
   text-align: center;
-  padding: 10px;
-  font-size: 14px;
-  z-index: 9999;
-}
-body {
-  margin-top: 40px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
 }
 </style>
 
-<script>
-const messages = [
-  "✔ 1,284 manuals delivered this week",
-  "✔ Last order: Samsung Washer (2 mins ago)",
-  "✔ Last order: LG Refrigerator (5 mins ago)",
-  "✔ Last order: Whirlpool Dryer (8 mins ago)",
-  "✔ 27 people downloaded manuals today",
-  "✔ Instant download available after checkout"
-];
-
-let index = 0;
-
-function rotateMessage() {
-  document.getElementById("trust-text").innerText = messages[index];
-  index = (index + 1) % messages.length;
-}
-
-setInterval(rotateMessage, 3000); // change every 3 sec
-rotateMessage();
-</script>
+<div class="email-notice">
+  📩 Your user manual will be sent to your email after submission.<br>
+  Please check your inbox and allow a few minutes for delivery.
+</div>
