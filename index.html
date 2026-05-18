@@ -337,10 +337,7 @@
     Never waste time searching for lost booklets – access your complete manual instantly, with all setup instructions, troubleshooting tips, and safety guidelines ready whenever and wherever you need them. Say goodbye to frustration and enjoy full control of your device with ease and confidence.
   </p>
 
-  <p style="font-size:2rem; color:#555; margin-bottom:30px;">
-    <strong>Just click the brand name below and choose your PDF manual</strong>
-  </p>
-
+  
 </section>
 
 <!-- SCRIPT FIXED -->
@@ -358,313 +355,437 @@ function redirectToCheckout(event) {
 </body>
 </html>
 <br><br>
-<!-- Container -->
-<div style="display: flex; flex-wrap: wrap; justify-content: center; max-width: 1200px; margin: auto;">
 
-  <!-- Tile -->
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; max-width: 1200px; margin: auto;">
+<div style="text-align:center;">
+  <p style="font-size:2rem; color:#555; margin-bottom:30px;">
+      <strong>Browse Categories</strong>
+  </p>
+</div>
 
-  <!-- LG -->
-  <div style="width: 32%; max-width: 180px; margin: 6px; border: 2px solid #555; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
+<meta name="description" content="Search and download free user manuals, repair guides, and troubleshooting instructions for appliances, electronics, RVs, and more.">
+
+  <style>
+   body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  background: #f5f5f5;
+  color: #222;
+}
+
+    header {
+      background: #111;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      color: #ccc;
+    }
+
+    .section-title {
+      margin-top: 40px;
+      font-size: 30px;
+      border-left: 5px solid #007bff;
+      padding-left: 10px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(140px, 1fr));
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  text-align: center;
+  font-size: 15px;
+}
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
+
+
+<body>
+
+
+<div class="container">
+
+  <!-- APPLIANCES -->
+  <div class="section-title"><code>Appliance Manuals</code></div>
+
+  <div class="grid">
+    <!-- LG -->
+  <div style="width: 50%; max-width: 100px; margin: 6px; border: 2px solid #555; border-radius: 10px; background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;">
     <a href="LgDL.html" style="text-decoration: none; color: inherit; display: block;">
       <div style="position: relative; width: 100%; padding-top: 100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="LG.jpg" alt="Speaker" style="position: absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+        <img src="LG.jpg" alt="LG" style="position: absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>LG</code></div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>LG Manuals</code></div>
     </a>
   </div>
 
-  <!-- Bosch -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <!-- Ninja -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="NinjaDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="Ninja.jpg" alt="Ninja" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Ninja Manuals</code></div>
+    </a>
+  </div>
+
+    <!-- Samsung -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="SamsungDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="Samsung.jpg" alt="Samsung" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Samsung Manuals</code></div>
+    </a>
+  </div>
+
+
+    <!-- Bosch -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
     <a href="BoschDL.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Bosch.png" alt="Headphones" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+        <img src="Bosch.png" alt="Bosch" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Bosch</code></div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Bosch Manuals</code></div>
+    </a>
+  </div>
+
+
+    <!-- Whirlpool -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="WhirlpoolDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="Whirlpool.jpg" alt="Whirlpool" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Whirlpool Manuals</code></div>
+    </a>
+  </div>
+
+
+    <!-- GE -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="GEDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="GE.jpg" alt="GE" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>GE Manuals</code></div>
+    </a>
+  </div>
+
+
+    <!-- Haier -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="HaierDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="Haier.png" alt="Haier" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Haier Manuals</code></div>
+    </a>
+  </div>
+
+
+    <!-- Maytag -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="MaytagDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="Maytag.png" alt="Maytag" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Maytag Manuals</code></div>
+    </a>
+  </div>
+
+
+    <!-- Frigidaire -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="FrigidaireDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="Frigidaire.png" alt="Frigidaire" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Frigidaire Manuals</code></div>
+    </a>
+  </div>
+
+
+ <!-- KitchenAid -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="KitchenaidDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="Kitchenaid.png" alt="KitchenAid" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>KitchenAid Manuals</code></div>
     </a>
   </div>
 
   <!-- Electrolux -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
     <a href="ElectroluxDL.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Electrolux.png" alt="Smartphone" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+        <img src="Electrolux.png" alt="Electrolux" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Electrolux</code></div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Electrolux Manuals</code></div>
     </a>
   </div>
 
-  <!-- Westinghouse -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+   <!-- Westinghouse -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
     <a href="WestinghouseDL.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Westinghouse.jpg" alt="Camera" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+        <img src="Westinghouse.jpg" alt="Westinghouse" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Westinghouse</code></div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Westinghouse Manuals</code></div>
     </a>
   </div>
 
-  <!-- Brother -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="BrotherDL.html" style="text-decoration:none; color:inherit; display:block;">
+  <!-- Sub-Zero -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="Sub-ZeroDL.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Brother.png" alt="Car" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+        <img src="Sub-Zero.png" alt="Sub-Zero" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Brother</code></div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Sub-Zero Manuals</code></div>
     </a>
   </div>
 
-  <!-- Janome -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="JanomeDL.html" style="text-decoration:none; color:inherit; display:block;">
+  <!-- Kenmore -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="KenmoreDL.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Janome.webp" alt="Truck" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+        <img src="Kenmore.png" alt="Kenmore" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Janome</code></div>
-    </a>
-  </div>
-
-  <!-- Singer -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="SingerDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Singer.png" alt="Motorbike" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Singer</code></div>
-    </a>
-  </div>
-
-  <!-- Sony -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="SonyDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Sony.jpg" alt="Crane" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Sony</code></div>
-    </a>
-  </div>
-
-  <!-- Samsung -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="SamsungDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Samsung.jpg" alt="Refrigerator" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Samsung</code></div>
-    </a>
-  </div>
-
-  <!-- Whirlpool -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="WhirlpoolDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Whirlpool.jpg" alt="Washer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Whirlpool</code></div>
-    </a>
-  </div>
-
-  <!-- Panasonic -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="PanasonicDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Panasonic.jpg" alt="Microwave" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Panasonic</code></div>
-    </a>
-  </div>
-
-  <!-- Hitachi -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="HitachiDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Hitachi.jpg" alt="Vacuum" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Hitachi</code></div>
-    </a>
-  </div>
-
-  <!-- Sharp -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="SharpDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Sharp.jpg" alt="Sewing Machine" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Sharp</code></div>
-    </a>
-  </div>
-
-  <!-- GE -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="GEDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="GE.jpg" alt="Lawn Mower" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>GE</code></div>
-    </a>
-  </div>
-
-  <!-- Kirby -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="KirbyDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Kirby.jpg" alt="Electric Fireplace" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Kirby</code></div>
-    </a>
-  </div>
-
-  <!-- Ninja -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="NinjaDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Ninja.jpg" alt="Air Conditioner" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Ninja</code></div>
-    </a>
-  </div>
-
-  <!-- shark -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="SharkDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="shark.png" alt="Printer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Shark</code></div>
-    </a>
-  </div>
-
-  <!-- Haier -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="HaierDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Haier.png" alt="Printer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Haier</code></div>
-    </a>
-  </div>
-
-  <!-- Canon -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="CanonDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Canon.jpg" alt="Printer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Canon</code></div>
-    </a>
-  </div>
-
-  <!-- Philips -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="PhilipsDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Philips.png" alt="Printer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Philips</code></div>
-    </a>
-  </div>
-
-  <!-- KitchenAid -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="KitchenaidDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Kitchenaid.png" alt="Printer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>KitchenAid</code></div>
-    </a>
-  </div>
-
-  <!-- HP -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="HpDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="HP.png" alt="Printer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>HP</code></div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Kenmore Manuals</code></div>
     </a>
   </div>
 
   <!-- Midea -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
     <a href="MideaDL.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Midea.jpg" alt="Printer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+        <img src="Midea.jpg" alt="Midea" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Midea</code></div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Midea Manuals</code></div>
     </a>
   </div>
 
-  <!-- Daikin -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="DaikinDL.html" style="text-decoration:none; color:inherit; display:block;">
+
+</div>
+
+  <!-- ELECTRONICS -->
+  <div class="section-title"><code>Electronics Manuals</code></div>
+
+  <div class="grid">
+
+    <!-- Hitachi -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="HitachiDL.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Daikin.png" alt="Printer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+        <img src="Hitachi.jpg" alt="Hitachi" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Daikin</code></div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Hitachi Manuals</code></div>
     </a>
   </div>
 
-  <!-- Frigidaire -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="FrigidaireDL.html" style="text-decoration:none; color:inherit; display:block;">
+<!-- Sharp -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="SharpDL.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Frigidaire.png" alt="Printer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+        <img src="Sharp.jpg" alt="Sharp" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Frigidaire</code></div>
-    </a>
-  </div>
-
-  <!-- Maytag -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="MaytagDL.html" style="text-decoration:none; color:inherit; display:block;">
-      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Maytag.png" alt="Printer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
-      </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Maytag</code></div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Sharp Manuals</code></div>
     </a>
   </div>
 
   <!-- Toshiba -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
     <a href="ToshibaDL.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Toshiba.png" alt="Printer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+        <img src="Toshiba.png" alt="Toshiba" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Toshiba</code></div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Toshiba Manuals</code></div>
     </a>
   </div>
+
+<!-- Sony -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="SonyDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="Sony.jpg" alt="Sony" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Sony Manuals</code></div>
+    </a>
+  </div>
+
+<!-- Canon -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="CanonDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="Canon.jpg" alt="Canon" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Canon Manuals</code></div>
+    </a>
+  </div>
+
 
 <!-- Nikon -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
     <a href="NikonDL.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Nikon.jpg" alt="Printer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+        <img src="Nikon.jpg" alt="Nikon" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Nikon</code></div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Nikon Manuals</code></div>
     </a>
   </div>
 
-<!-- Sub-Zero -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="Sub-ZeroDL.html" style="text-decoration:none; color:inherit; display:block;">
+
+<!-- Panasonic -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="PanasonicDL.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Sub-Zero.png" alt="Printer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+        <img src="Panasonic.jpg" alt="Panasonic" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Sub-Zero</code></div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Panasonic Manuals</code></div>
     </a>
   </div>
 
-<!-- Kenmore -->
-  <div style="width:32%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
-    <a href="KenmoreDL.html" style="text-decoration:none; color:inherit; display:block;">
+
+<!-- Philips -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="PhilipsDL.html" style="text-decoration:none; color:inherit; display:block;">
       <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <img src="Kenmore.png" alt="Printer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+        <img src="Philips.png" alt="Philips" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
       </div>
-      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Kenmore</code></div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Philips Manuals</code></div>
     </a>
   </div>
 
-</div></div>
+
+<!-- HP -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="HpDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="HP.png" alt="HP" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>HP Manuals</code></div>
+    </a>
+  </div>
+
+
+<!-- Brother -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="BrotherDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="Brother.png" alt="Brother" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Brother Manuals</code></div>
+    </a>
+  </div>
+
+
+
+</div>
+
+<!-- Sewing Machines -->
+  <div class="section-title"><code>Sewing Machine Manuals</code></div>
+
+  <div class="grid">
+
+    <!-- Janome -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="JanomeDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="Janome.webp" alt="Janome" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Janome Manuals</code></div>
+    </a>
+  </div>
+
+  <!-- Singer -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="SingerDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="Singer.png" alt="Singer" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Singer Manuals</code></div>
+    </a>
+  </div>
+
+  </div>
+
+  <!-- Vacuum Cleaners -->
+  <div class="section-title"><code>Vacuum Cleaners Manuals</code></div>
+
+  <div class="grid">
+
+     <!-- Kirby -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="KirbyDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="Kirby.jpg" alt="Kirby" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Kirby Manuals</code></div>
+    </a>
+  </div>
+
+  <!-- shark -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="SharkDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="shark.png" alt="Shark" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Shark Manuals</code></div>
+    </a>
+  </div>
+</div>
+
+<!-- HVAC / Air Conditioning -->
+  <div class="section-title"><code>HVAC / Air Conditioning Manuals</code></div>
+
+  <div class="grid">
+
+<!-- Daikin -->
+  <div style="width:50%; max-width:180px; margin:6px; border:2px solid #555; border-radius:10px; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); overflow:hidden;">
+    <a href="DaikinDL.html" style="text-decoration:none; color:inherit; display:block;">
+      <div style="position:relative; width:100%; padding-top:100%;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="Daikin.png" alt="Daikin" style="position:absolute; top:50%; left:50%; width:80%; height:80%; transform:translate(-50%,-50%); object-fit:contain;">
+      </div>
+      <div style="padding:6px; font-size:1rem; color:#333; text-align:center"><code>Daikin Manuals</code></div>
+    </a>
+  </div>
+</div>
 
 <style>
   .brand-wrapper {
@@ -743,7 +864,7 @@ function redirectToCheckout(event) {
       grid-template-columns: 1fr;
     }
   }
-</style><br>
+</style></div><br><br>
 
 <section style="text-align:center;">
   <p style="font-size:1.2rem; color:#555; margin-bottom:30px;">
