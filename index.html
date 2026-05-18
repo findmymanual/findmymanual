@@ -405,9 +405,27 @@ function redirectToCheckout(event) {
 
     .grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(140px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 6px;
   margin-top: 20px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .card {
