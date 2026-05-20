@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frigidaire Error Code Library</title>
+
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    margin-top: 8px;
+    color: #d6ecff;
+  }
+
+  .section-title {
+    margin-top: 40px;
+    font-size: 22px;
+    border-left: 5px solid #e60012;
+    padding-left: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e6e81;
+  }
+
+  .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Frigidaire Error Code Library</h1>
+  <div class="subtitle">Complete Frigidaire Appliance Error Reference</div>
+</header>
+
+<div class="container">
+
+<!-- ================= REFRIGERATOR ================= -->
+<div class="section-title">Refrigerator Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">SY CE</div><div class="desc">Communication error between control boards</div></div>
+  <div class="card"><div class="code">SY CF</div><div class="desc">Condenser fan failure</div></div>
+  <div class="card"><div class="code">SY EF</div><div class="desc">Evaporator fan failure</div></div>
+  <div class="card"><div class="code">SY FF</div><div class="desc">Freezer sensor fault</div></div>
+  <div class="card"><div class="code">SY CF1</div><div class="desc">Compressor fan issue</div></div>
+  <div class="card"><div class="code">OP</div><div class="desc">Door open alert</div></div>
+  <div class="card"><div class="code">SH</div><div class="desc">Shorted humidity sensor</div></div>
+  <div class="card"><div class="code">5Y EF</div><div class="desc">Evaporator fan circuit error</div></div>
+  <div class="card"><div class="code">4Y CF</div><div class="desc">Condenser fan circuit fault</div></div>
+  <div class="card"><div class="code">SY CE1</div><div class="desc">Main control communication failure</div></div>
+
+</div>
+
+<!-- ================= WASHING MACHINE ================= -->
+<div class="section-title">Washing Machine Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E11</div><div class="desc">Water fill timeout</div></div>
+  <div class="card"><div class="code">E12</div><div class="desc">Drain timeout</div></div>
+  <div class="card"><div class="code">E13</div><div class="desc">Pressure sensor fault</div></div>
+  <div class="card"><div class="code">E21</div><div class="desc">Motor not running</div></div>
+  <div class="card"><div class="code">E22</div><div class="desc">Motor triac failure</div></div>
+  <div class="card"><div class="code">E23</div><div class="desc">Door lock failure</div></div>
+  <div class="card"><div class="code">E24</div><div class="desc">Door unlock failure</div></div>
+  <div class="card"><div class="code">E31</div><div class="desc">Temperature sensor error</div></div>
+  <div class="card"><div class="code">E32</div><div class="desc">Heating element fault</div></div>
+  <div class="card"><div class="code">E41</div><div class="desc">Communication error</div></div>
+  <div class="card"><div class="code">E43</div><div class="desc">Control board failure</div></div>
+  <div class="card"><div class="code">E52</div><div class="desc">Overspeed detected</div></div>
+
+</div>
+
+<!-- ================= DISHWASHER ================= -->
+<div class="section-title">Dishwasher Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">i10</div><div class="desc">Water fill issue</div></div>
+  <div class="card"><div class="code">i20</div><div class="desc">Drain blockage</div></div>
+  <div class="card"><div class="code">i30</div><div class="desc">Leak detected (float switch)</div></div>
+  <div class="card"><div class="code">i40</div><div class="desc">Pressure sensor fault</div></div>
+  <div class="card"><div class="code">i50</div><div class="desc">Wash motor failure</div></div>
+  <div class="card"><div class="code">i60</div><div class="desc">Heating issue</div></div>
+  <div class="card"><div class="code">iC0</div><div class="desc">Control board error</div></div>
+
+</div>
+
+<!-- ================= OVEN ================= -->
+<div class="section-title">Oven / Range Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">F10</div><div class="desc">Temperature runaway detected</div></div>
+  <div class="card"><div class="code">F11</div><div class="desc">Shorted keypad</div></div>
+  <div class="card"><div class="code">F13</div><div class="desc">Control board failure</div></div>
+  <div class="card"><div class="code">F14</div><div class="desc">Oven sensor error</div></div>
+  <div class="card"><div class="code">F15</div><div class="desc">Door lock failure</div></div>
+  <div class="card"><div class="code">F30</div><div class="desc">Communication error</div></div>
+  <div class="card"><div class="code">F90</div><div class="desc">Door lock motor issue</div></div>
+
+</div>
+
+<!-- ================= MICROWAVE ================= -->
+<div class="section-title">Microwave Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">F1</div><div class="desc">Touch pad error</div></div>
+  <div class="card"><div class="code">F2</div><div class="desc">Overheat condition</div></div>
+  <div class="card"><div class="code">F3</div><div class="desc">Sensor failure</div></div>
+  <div class="card"><div class="code">F4</div><div class="desc">Door switch issue</div></div>
+  <div class="card"><div class="code">F5</div><div class="desc">Relay failure</div></div>
+  <div class="card"><div class="code">F6</div><div class="desc">Magnetron fault</div></div>
+
+</div>
+
+<!-- ================= DRYER ================= -->
+<div class="section-title">Dryer Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E64</div><div class="desc">Heating element failure</div></div>
+  <div class="card"><div class="code">E65</div><div class="desc">Thermistor fault</div></div>
+  <div class="card"><div class="code">E66</div><div class="desc">Overheating detected</div></div>
+  <div class="card"><div class="code">E68</div><div class="desc">Control board failure</div></div>
+  <div class="card"><div class="code">E71</div><div class="desc">Motor relay fault</div></div>
+  <div class="card"><div class="code">E72</div><div class="desc">Door switch error</div></div>
+
+</div>
+
+<!-- ================= SYSTEM ================= -->
+<div class="section-title">System Messages</div>
+<div class="grid">
+
+  <div class="card"><div class="code">PF</div><div class="desc">Power failure detected</div></div>
+  <div class="card"><div class="code">LOC</div><div class="desc">Control lock active</div></div>
+  <div class="card"><div class="code">HOT</div><div class="desc">Overheat warning</div></div>
+  <div class="card"><div class="code">DOOR</div><div class="desc">Door not closed</div></div>
+  <div class="card"><div class="code">ERR</div><div class="desc">General system error</div></div>
+  <div class="card"><div class="code">RESET</div><div class="desc">System restart required</div></div>
+  <div class="card"><div class="code">COOL</div><div class="desc">Cooling cycle active</div></div>
+
+</div>
+
+</div>
+
+</body>
+</html>

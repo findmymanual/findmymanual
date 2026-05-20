@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canon Error Code Library</title>
+
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    margin-top: 8px;
+    color: #ffe1e1;
+  }
+
+  .section-title {
+    margin-top: 40px;
+    font-size: 22px;
+    border-left: 5px solid #d71920;
+    padding-left: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e6e81;
+  }
+
+  .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Canon Error Code Library</h1>
+  <div class="subtitle">Complete Canon Device Error Reference</div>
+</header>
+
+<div class="container">
+
+<!-- ================= PRINTER ================= -->
+<div class="section-title">Printer Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E02</div><div class="desc">Paper not loaded</div></div>
+  <div class="card"><div class="code">E03</div><div class="desc">Paper jam detected</div></div>
+  <div class="card"><div class="code">E04</div><div class="desc">Ink cartridge not detected</div></div>
+  <div class="card"><div class="code">E05</div><div class="desc">Ink cartridge error</div></div>
+  <div class="card"><div class="code">E07</div><div class="desc">Waste ink absorber full</div></div>
+  <div class="card"><div class="code">E08</div><div class="desc">Ink system error</div></div>
+  <div class="card"><div class="code">E13</div><div class="desc">Ink level unknown</div></div>
+  <div class="card"><div class="code">E14</div><div class="desc">Cartridge communication failure</div></div>
+  <div class="card"><div class="code">E15</div><div class="desc">Cartridge not recognized</div></div>
+  <div class="card"><div class="code">E16</div><div class="desc">Ink low warning</div></div>
+
+</div>
+
+<!-- ================= CAMERA ================= -->
+<div class="section-title">Camera Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">Err 01</div><div class="desc">Lens communication failure</div></div>
+  <div class="card"><div class="code">Err 02</div><div class="desc">Memory card issue</div></div>
+  <div class="card"><div class="code">Err 05</div><div class="desc">Flash system error</div></div>
+  <div class="card"><div class="code">Err 06</div><div class="desc">Sensor malfunction</div></div>
+  <div class="card"><div class="code">Err 10</div><div class="desc">File system error</div></div>
+  <div class="card"><div class="code">Err 20</div><div class="desc">Mechanical shutter failure</div></div>
+  <div class="card"><div class="code">Err 30</div><div class="desc">Internal camera fault</div></div>
+  <div class="card"><div class="code">Err 40</div><div class="desc">Power system error</div></div>
+
+</div>
+
+<!-- ================= SCANNER ================= -->
+<div class="section-title">Scanner Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E201</div><div class="desc">Scanner lamp failure</div></div>
+  <div class="card"><div class="code">E202</div><div class="desc">Communication error</div></div>
+  <div class="card"><div class="code">E203</div><div class="desc">Scan head position error</div></div>
+  <div class="card"><div class="code">E204</div><div class="desc">Driver failure</div></div>
+
+</div>
+
+<!-- ================= PROJECTOR ================= -->
+<div class="section-title">Projector Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E001</div><div class="desc">Lamp failure</div></div>
+  <div class="card"><div class="code">E002</div><div class="desc">Overheating detected</div></div>
+  <div class="card"><div class="code">E003</div><div class="desc">Fan error</div></div>
+  <div class="card"><div class="code">E004</div><div class="desc">Power supply fault</div></div>
+  <div class="card"><div class="code">E005</div><div class="desc">Color wheel error</div></div>
+
+</div>
+
+<!-- ================= SYSTEM ================= -->
+<div class="section-title">System Messages</div>
+<div class="grid">
+
+  <div class="card"><div class="code">BUSY</div><div class="desc">Device processing task</div></div>
+  <div class="card"><div class="code">READY</div><div class="desc">Device ready for use</div></div>
+  <div class="card"><div class="code">ERROR</div><div class="desc">General system error</div></div>
+  <div class="card"><div class="code">RESET</div><div class="desc">Restart required</div></div>
+  <div class="card"><div class="code">NO INK</div><div class="desc">Ink cartridge empty</div></div>
+  <div class="card"><div class="code">NO PAPER</div><div class="desc">Paper tray empty</div></div>
+
+</div>
+
+</div>
+
+</body>
+</html>

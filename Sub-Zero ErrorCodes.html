@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sub-Zero Error Code Library</title>
+
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    margin-top: 8px;
+    color: #cfe3ff;
+  }
+
+  .section-title {
+    margin-top: 40px;
+    font-size: 22px;
+    border-left: 5px solid #e60012;
+    padding-left: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e6e81;
+  }
+
+  .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Sub-Zero Error Code Library</h1>
+  <div class="subtitle">Complete Sub-Zero Appliance Error Reference</div>
+</header>
+
+<div class="container">
+
+<!-- ================= REFRIGERATOR ================= -->
+<div class="section-title">Refrigerator / Freezer Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">EC40</div><div class="desc">Compressor not running</div></div>
+  <div class="card"><div class="code">EC50</div><div class="desc">Condenser fan failure</div></div>
+  <div class="card"><div class="code">EC51</div><div class="desc">Evaporator fan error</div></div>
+  <div class="card"><div class="code">EC52</div><div class="desc">Defrost system failure</div></div>
+  <div class="card"><div class="code">EC53</div><div class="desc">Temperature sensor fault</div></div>
+  <div class="card"><div class="code">EC54</div><div class="desc">Door switch error</div></div>
+  <div class="card"><div class="code">EC55</div><div class="desc">Communication failure (main board)</div></div>
+  <div class="card"><div class="code">EC56</div><div class="desc">High temperature alarm</div></div>
+  <div class="card"><div class="code">EC57</div><div class="desc">Low voltage detected</div></div>
+  <div class="card"><div class="code">EC58</div><div class="desc">Ice maker system fault</div></div>
+
+</div>
+
+<!-- ================= ICE MAKER ================= -->
+<div class="section-title">Ice Maker Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">EC10</div><div class="desc">Ice maker motor jam</div></div>
+  <div class="card"><div class="code">EC11</div><div class="desc">Ice tray not detected</div></div>
+  <div class="card"><div class="code">EC12</div><div class="desc">Water fill error</div></div>
+  <div class="card"><div class="code">EC13</div><div class="desc">Harvest cycle failure</div></div>
+  <div class="card"><div class="code">EC14</div><div class="desc">Sensor calibration fault</div></div>
+  <div class="card"><div class="code">EC15</div><div class="desc">Ice bin full sensor error</div></div>
+
+</div>
+
+<!-- ================= CONTROL / SYSTEM ================= -->
+<div class="section-title">System Messages</div>
+<div class="grid">
+
+  <div class="card"><div class="code">PF</div><div class="desc">Power failure detected</div></div>
+  <div class="card"><div class="code">PO</div><div class="desc">Power on reset</div></div>
+  <div class="card"><div class="code">dO</div><div class="desc">Door open warning</div></div>
+  <div class="card"><div class="code">CL</div><div class="desc">Control lock active</div></div>
+  <div class="card"><div class="code">SH</div><div class="desc">Service mode active</div></div>
+  <div class="card"><div class="code">rS</div><div class="desc">Reset required</div></div>
+  <div class="card"><div class="code">AL</div><div class="desc">High temperature alarm</div></div>
+
+</div>
+
+</div>
+
+</body>
+</html>

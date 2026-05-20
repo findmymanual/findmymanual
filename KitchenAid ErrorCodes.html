@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KitchenAid Error Code Library</title>
+
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    margin-top: 8px;
+    color: #ffe5e5;
+  }
+
+  .section-title {
+    margin-top: 40px;
+    font-size: 22px;
+    border-left: 5px solid #b20000;
+    padding-left: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e6e81;
+  }
+
+  .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>KitchenAid Error Code Library</h1>
+  <div class="subtitle">Complete KitchenAid Appliance Error Reference</div>
+</header>
+
+<div class="container">
+
+<!-- ================= DISHWASHER ================= -->
+<div class="section-title">Dishwasher Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">F1E1</div><div class="desc">Control board failure</div></div>
+  <div class="card"><div class="code">F1E2</div><div class="desc">EEPROM error</div></div>
+  <div class="card"><div class="code">F2E1</div><div class="desc">Stuck button detected</div></div>
+  <div class="card"><div class="code">F2E2</div><div class="desc">User interface fault</div></div>
+  <div class="card"><div class="code">F3E1</div><div class="desc">Thermistor open circuit</div></div>
+  <div class="card"><div class="code">F3E2</div><div class="desc">Thermistor short circuit</div></div>
+  <div class="card"><div class="code">F4E1</div><div class="desc">Heating element failure</div></div>
+  <div class="card"><div class="code">F6E1</div><div class="desc">Water inlet issue</div></div>
+  <div class="card"><div class="code">F6E2</div><div class="desc">Low water pressure</div></div>
+  <div class="card"><div class="code">F7E1</div><div class="desc">Wash motor failure</div></div>
+  <div class="card"><div class="code">F8E1</div><div class="desc">Drain pump issue</div></div>
+  <div class="card"><div class="code">F9E1</div><div class="desc">Slow drain detected</div></div>
+
+</div>
+
+<!-- ================= REFRIGERATOR ================= -->
+<div class="section-title">Refrigerator Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">PO</div><div class="desc">Power outage detected</div></div>
+  <div class="card"><div class="code">Er</div><div class="desc">General system error</div></div>
+  <div class="card"><div class="code">CF</div><div class="desc">Condenser fan failure</div></div>
+  <div class="card"><div class="code">dH</div><div class="desc">Defrost heater issue</div></div>
+  <div class="card"><div class="code">rF</div><div class="desc">Refrigerator fan error</div></div>
+  <div class="card"><div class="code">rS</div><div class="desc">Refrigerator sensor fault</div></div>
+  <div class="card"><div class="code">FS</div><div class="desc">Freezer sensor fault</div></div>
+  <div class="card"><div class="code">OP</div><div class="desc">Door open alert</div></div>
+
+</div>
+
+<!-- ================= OVEN / RANGE ================= -->
+<div class="section-title">Oven / Range Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">F1E0</div><div class="desc">Electronic control failure</div></div>
+  <div class="card"><div class="code">F2E0</div><div class="desc">Over-temperature condition</div></div>
+  <div class="card"><div class="code">F3E0</div><div class="desc">Oven sensor open</div></div>
+  <div class="card"><div class="code">F3E1</div><div class="desc">Oven sensor shorted</div></div>
+  <div class="card"><div class="code">F5E1</div><div class="desc">Door lock failure</div></div>
+  <div class="card"><div class="code">F6E0</div><div class="desc">Communication error</div></div>
+  <div class="card"><div class="code">F9E0</div><div class="desc">Latch motor fault</div></div>
+
+</div>
+
+<!-- ================= MICROWAVE ================= -->
+<div class="section-title">Microwave Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">F1</div><div class="desc">Touch panel shorted</div></div>
+  <div class="card"><div class="code">F2</div><div class="desc">Overheating detected</div></div>
+  <div class="card"><div class="code">F3</div><div class="desc">Humidity sensor failure</div></div>
+  <div class="card"><div class="code">F4</div><div class="desc">Door switch issue</div></div>
+  <div class="card"><div class="code">F5</div><div class="desc">Relay failure</div></div>
+
+</div>
+
+<!-- ================= DRYER ================= -->
+<div class="section-title">Dryer Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">AF</div><div class="desc">Restricted airflow detected</div></div>
+  <div class="card"><div class="code">F01</div><div class="desc">Main control failure</div></div>
+  <div class="card"><div class="code">F02</div><div class="desc">Keypad stuck</div></div>
+  <div class="card"><div class="code">F22</div><div class="desc">Exhaust thermistor fault</div></div>
+  <div class="card"><div class="code">F28</div><div class="desc">Moisture sensor issue</div></div>
+  <div class="card"><div class="code">F70</div><div class="desc">Communication error</div></div>
+
+</div>
+
+<!-- ================= SYSTEM ================= -->
+<div class="section-title">System Messages</div>
+<div class="grid">
+
+  <div class="card"><div class="code">LOC</div><div class="desc">Control lock active</div></div>
+  <div class="card"><div class="code">HOT</div><div class="desc">High temperature warning</div></div>
+  <div class="card"><div class="code">PF</div><div class="desc">Power failure detected</div></div>
+  <div class="card"><div class="code">ERR</div><div class="desc">General system error</div></div>
+  <div class="card"><div class="code">RESET</div><div class="desc">System restart required</div></div>
+  <div class="card"><div class="code">COOL</div><div class="desc">Cooling cycle active</div></div>
+
+</div>
+
+</div>
+
+</body>
+</html>

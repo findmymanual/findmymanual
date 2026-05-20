@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HP System Messages Guide</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:20px;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.section-title{
+    margin-top:40px;
+    font-size:20px;
+    font-weight:bold;
+    border-left:5px solid #e60012;
+    padding-left:10px;
+    color:#444;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    border:1px solid #4e6e81;
+    border-radius:8px;
+    padding:20px;
+    background:#fafafa;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+    font-size:26px;
+    font-weight:bold;
+    color:#4e6e81;
+    margin-bottom:10px;
+}
+
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
+}
+
+.steps{
+    padding-left:18px;
+    line-height:1.6;
+}
+
+.note{
+    margin-top:30px;
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:15px;
+    border-radius:6px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>HP System Messages</h1>
+
+<p class="subtitle">
+<strong>Meaning & Quick Troubleshooting Guide</strong>
+</p>
+
+<!-- ================= STATUS ================= -->
+<div class="section-title">Status Messages</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="code">READY</div>
+<div class="title">Device Ready</div>
+<ul class="steps">
+<li>Printer/scanner is ready for operation.</li>
+<li>No action required.</li>
+<li>Begin print or scan job normally.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">BUSY</div>
+<div class="title">Processing Task</div>
+<ul class="steps">
+<li>Wait for current job to complete.</li>
+<li>Avoid sending multiple jobs at once.</li>
+<li>Check queue if device is unresponsive.</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ================= ERROR ================= -->
+<div class="section-title">Error Messages</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="code">ERROR</div>
+<div class="title">General System Error</div>
+<ul class="steps">
+<li>Restart the device.</li>
+<li>Check for paper jams or ink issues.</li>
+<li>Verify all connections are secure.</li>
+<li>Update drivers if problem persists.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">RESET</div>
+<div class="title">Restart Required</div>
+<ul class="steps">
+<li>Power off device completely.</li>
+<li>Wait 30–60 seconds before turning on.</li>
+<li>Check if error clears after reboot.</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ================= SUPPLIES ================= -->
+<div class="section-title">Supply Messages</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="code">LOW INK</div>
+<div class="title">Ink Level Low</div>
+<ul class="steps">
+<li>Check ink cartridge levels.</li>
+<li>Prepare replacement cartridges.</li>
+<li>Continue printing if quality is acceptable.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">NO PAPER</div>
+<div class="title">Paper Tray Empty</div>
+<ul class="steps">
+<li>Load paper into input tray.</li>
+<li>Adjust paper guides properly.</li>
+<li>Ensure correct paper size settings.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Important:</strong> Repeated system errors may indicate hardware or firmware issues requiring further inspection.
+</div>
+
+</div>
+
+</body>
+</html>

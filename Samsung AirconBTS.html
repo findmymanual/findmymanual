@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samsung Air Conditioner Troubleshooting Guide</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:20px;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.section{
+    margin-top:40px;
+}
+
+.section h2{
+    border-left:5px solid #e60012;
+    padding-left:10px;
+    font-size:20px;
+    color:#444;
+    margin-bottom:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.card{
+    border:1px solid #4e6e81;
+    border-radius:8px;
+    padding:20px;
+    background:#fafafa;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+    font-size:24px;
+    font-weight:bold;
+    color:#e60012;
+    margin-bottom:8px;
+}
+
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
+}
+
+.steps{
+    padding-left:18px;
+    line-height:1.6;
+}
+
+.note{
+    margin-top:30px;
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:15px;
+    border-radius:6px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Samsung Air Conditioner Troubleshooting Guide</h1>
+<p class="subtitle"><strong>Error Codes & Repair Instructions</strong></p>
+
+<!-- ================= COMMUNICATION & PCB ================= -->
+<div class="section">
+<h2>Communication & PCB Errors</h2>
+<div class="grid">
+
+<div class="card">
+<div class="code">E1</div>
+<div class="title">Indoor/Outdoor Communication Error</div>
+<ul class="steps">
+<li>Turn OFF power for 5–10 minutes.</li>
+<li>Check communication wiring between units.</li>
+<li>Inspect PCB connectors.</li>
+<li>Restart system.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">E101</div>
+<div class="title">Indoor PCB Error</div>
+<ul class="steps">
+<li>Reset power supply.</li>
+<li>Inspect indoor control board.</li>
+<li>Check for burnt components.</li>
+<li>Replace PCB if needed.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">E237-1</div>
+<div class="title">Outdoor PCB Communication Failure</div>
+<ul class="steps">
+<li>Check outdoor PCB wiring.</li>
+<li>Inspect signal cable.</li>
+<li>Restart both units.</li>
+<li>Replace PCB if necessary.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- ================= FAN MOTOR ================= -->
+<div class="section">
+<h2>Fan Motor Errors</h2>
+<div class="grid">
+
+<div class="card">
+<div class="code">E154</div>
+<div class="title">Fan Motor Error</div>
+<ul class="steps">
+<li>Check fan blade for blockage.</li>
+<li>Inspect motor wiring.</li>
+<li>Clean dust buildup.</li>
+<li>Replace motor if faulty.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">E201</div>
+<div class="title">Indoor Fan Motor Error</div>
+<ul class="steps">
+<li>Check indoor blower motor.</li>
+<li>Inspect capacitor.</li>
+<li>Clean air filter.</li>
+<li>Replace motor if needed.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">E202</div>
+<div class="title">Outdoor Fan Motor Error</div>
+<ul class="steps">
+<li>Check outdoor fan rotation.</li>
+<li>Inspect wiring connection.</li>
+<li>Remove debris.</li>
+<li>Replace motor if abnormal.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">C404</div>
+<div class="title">Outdoor Fan Error</div>
+<ul class="steps">
+<li>Inspect fan blades.</li>
+<li>Check motor capacitor.</li>
+<li>Clean condenser area.</li>
+<li>Replace fan motor if needed.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- ================= SENSOR ERRORS ================= -->
+<div class="section">
+<h2>Sensor & Temperature Errors</h2>
+<div class="grid">
+
+<div class="card">
+<div class="code">C101</div>
+<div class="title">Temperature Sensor Error</div>
+<ul class="steps">
+<li>Check indoor thermistor.</li>
+<li>Inspect wiring connection.</li>
+<li>Test sensor resistance.</li>
+<li>Replace sensor if faulty.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">E128</div>
+<div class="title">Indoor Temperature Sensor Failure</div>
+<ul class="steps">
+<li>Inspect sensor cable.</li>
+<li>Clean evaporator area.</li>
+<li>Check PCB connection.</li>
+<li>Replace sensor if needed.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">C105</div>
+<div class="title">Indoor Coil Sensor Abnormality</div>
+<ul class="steps">
+<li>Check coil sensor wiring.</li>
+<li>Inspect evaporator coil.</li>
+<li>Clean dust buildup.</li>
+<li>Replace sensor if faulty.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">C417</div>
+<div class="title">Outdoor Temperature Sensor Error</div>
+<ul class="steps">
+<li>Inspect outdoor sensor wiring.</li>
+<li>Check sensor placement.</li>
+<li>Clean outdoor unit.</li>
+<li>Replace sensor if needed.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- ================= COMPRESSOR ================= -->
+<div class="section">
+<h2>Compressor & Refrigeration Errors</h2>
+<div class="grid">
+
+<div class="card">
+<div class="code">E203</div>
+<div class="title">Compressor Failure</div>
+<ul class="steps">
+<li>Check compressor wiring.</li>
+<li>Inspect capacitor and relay.</li>
+<li>Verify power supply.</li>
+<li>Replace compressor if needed.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">E251</div>
+<div class="title">Compressor Overheating</div>
+<ul class="steps">
+<li>Turn OFF system.</li>
+<li>Check airflow around outdoor unit.</li>
+<li>Clean condenser coil.</li>
+<li>Call technician if repeated.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">E440</div>
+<div class="title">Compressor Overload</div>
+<ul class="steps">
+<li>Check refrigerant level.</li>
+<li>Inspect condenser coil.</li>
+<li>Ensure proper ventilation.</li>
+<li>Restart system.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">E422</div>
+<div class="title">Low Refrigerant Detected</div>
+<ul class="steps">
+<li>Check for refrigerant leaks.</li>
+<li>Inspect piping system.</li>
+<li>Do not run unit continuously.</li>
+<li>Call HVAC technician.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">E320</div>
+<div class="title">Refrigerant Leak Detected</div>
+<ul class="steps">
+<li>Turn OFF unit immediately.</li>
+<li>Check oil residue on pipes.</li>
+<li>Inspect coil for damage.</li>
+<li>Schedule repair service.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">E441</div>
+<div class="title">High Pressure Protection</div>
+<ul class="steps">
+<li>Clean condenser coil.</li>
+<li>Check airflow blockage.</li>
+<li>Ensure outdoor ventilation.</li>
+<li>Restart after cooling.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- ================= SYSTEM ================= -->
+<div class="section">
+<h2>System Errors</h2>
+<div class="grid">
+
+<div class="card">
+<div class="code">E162</div>
+<div class="title">EEPROM Error</div>
+<ul class="steps">
+<li>Reset power supply.</li>
+<li>Inspect control board.</li>
+<li>Check firmware corruption.</li>
+<li>Replace PCB if needed.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">E237</div>
+<div class="title">Outdoor Communication Issue</div>
+<ul class="steps">
+<li>Check communication cable.</li>
+<li>Inspect PCB connectors.</li>
+<li>Restart system.</li>
+<li>Replace board if needed.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">E237-1</div>
+<div class="title">Outdoor Communication Failure</div>
+<ul class="steps">
+<li>Inspect wiring harness.</li>
+<li>Check PCB signal line.</li>
+<li>Reset system.</li>
+<li>Replace PCB if needed.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div class="note">
+<strong>Important:</strong> If the error persists after troubleshooting, disconnect power immediately and contact a qualified HVAC technician.
+</div>
+
+</div>
+
+</body>
+</html>

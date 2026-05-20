@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikon Error Code Library</title>
+
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 { margin: 0; font-size: 28px; }
+
+  .subtitle { margin-top: 8px; color: #d0d0ff; }
+
+  .section-title {
+    margin-top: 40px;
+    font-size: 22px;
+    border-left: 5px solid #e60012;
+    padding-left: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e6e81;
+  }
+
+  .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Nikon Error Code Library</h1>
+  <div class="subtitle">Complete Nikon Camera Error Reference</div>
+</header>
+
+<div class="container">
+
+<!-- ================= DSLR / MIRRORLESS ================= -->
+<div class="section-title">Camera Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">CHA / CHR</div><div class="desc">Memory card read/write error</div></div>
+  <div class="card"><div class="code">FEE</div><div class="desc">Lens aperture ring not locked</div></div>
+  <div class="card"><div class="code">ERR</div><div class="desc">General camera malfunction</div></div>
+  <div class="card"><div class="code">E</div><div class="desc">Internal system error</div></div>
+  <div class="card"><div class="code">F--</div><div class="desc">Lens communication failure</div></div>
+  <div class="card"><div class="code">For</div><div class="desc">Memory card formatting required</div></div>
+  <div class="card"><div class="code">FULL</div><div class="desc">Memory card full</div></div>
+  <div class="card"><div class="code">No Card</div><div class="desc">Memory card not detected</div></div>
+
+</div>
+
+<!-- ================= AUTOFOCUS / LENS ================= -->
+<div class="section-title">Lens / Autofocus Errors</div>
+<div class="grid">
+
+  <div class="card"><div class="code">AF</div><div class="desc">Autofocus failure</div></div>
+  <div class="card"><div class="code">AF-S</div><div class="desc">Focus lock failure</div></div>
+  <div class="card"><div class="code">AF-C</div><div class="desc">Continuous focus error</div></div>
+  <div class="card"><div class="code">ERR LENS</div><div class="desc">Lens communication issue</div></div>
+  <div class="card"><div class="code">ERR ZOOM</div><div class="desc">Zoom mechanism jam</div></div>
+
+</div>
+
+<!-- ================= BATTERY / POWER ================= -->
+<div class="section-title">Power / Battery Messages</div>
+<div class="grid">
+
+  <div class="card"><div class="code">BATTERY EMPTY</div><div class="desc">Battery fully discharged</div></div>
+  <div class="card"><div class="code">LOW BATTERY</div><div class="desc">Battery level critical</div></div>
+  <div class="card"><div class="code">CHARGE</div><div class="desc">Battery charging required</div></div>
+  <div class="card"><div class="code">POWER ERROR</div><div class="desc">Power system fault</div></div>
+
+</div>
+
+<!-- ================= FLASH ================= -->
+<div class="section-title">Flash Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">FLSH ERR</div><div class="desc">Flash unit malfunction</div></div>
+  <div class="card"><div class="code">TTL ERR</div><div class="desc">Flash exposure error</div></div>
+  <div class="card"><div class="code">HOT SHOE</div><div class="desc">Flash connection issue</div></div>
+
+</div>
+
+<!-- ================= SYSTEM MESSAGES ================= -->
+<div class="section-title">System Messages</div>
+<div class="grid">
+
+  <div class="card"><div class="code">BUSY</div><div class="desc">Camera processing data</div></div>
+  <div class="card"><div class="code">LOCK</div><div class="desc">Control lock active</div></div>
+  <div class="card"><div class="code">RESET</div><div class="desc">System restart required</div></div>
+  <div class="card"><div class="code">OVERHEAT</div><div class="desc">Temperature warning</div></div>
+  <div class="card"><div class="code">NO IMG</div><div class="desc">No image available</div></div>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panasonic Error Code Library</title>
+
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    margin-top: 8px;
+    color: #d6e6ff;
+  }
+
+  .section-title {
+    margin-top: 40px;
+    font-size: 22px;
+    border-left: 5px solid #e60012;
+    padding-left: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e6e81;
+  }
+
+  .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Panasonic Error Code Library</h1>
+  <div class="subtitle">Complete Panasonic Appliance Error Reference</div>
+</header>
+
+<div class="container">
+
+<!-- ================= AIR CONDITIONER ================= -->
+<div class="section-title">Air Conditioner Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">H11</div><div class="desc">Indoor/outdoor communication error</div></div>
+  <div class="card"><div class="code">H14</div><div class="desc">Indoor temperature sensor fault</div></div>
+  <div class="card"><div class="code">H15</div><div class="desc">Outdoor temperature sensor fault</div></div>
+  <div class="card"><div class="code">H16</div><div class="desc">Current overload protection</div></div>
+  <div class="card"><div class="code">H19</div><div class="desc">Fan motor lock error</div></div>
+  <div class="card"><div class="code">H23</div><div class="desc">Heat exchanger temperature abnormal</div></div>
+  <div class="card"><div class="code">H27</div><div class="desc">Outdoor pressure abnormal</div></div>
+  <div class="card"><div class="code">H28</div><div class="desc">Refrigerant leakage detected</div></div>
+  <div class="card"><div class="code">H30</div><div class="desc">Compressor overheat protection</div></div>
+  <div class="card"><div class="code">H33</div><div class="desc">Indoor/outdoor miswiring</div></div>
+
+</div>
+
+<!-- ================= WASHING MACHINE ================= -->
+<div class="section-title">Washing Machine Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">U11</div><div class="desc">Drain error</div></div>
+  <div class="card"><div class="code">U12</div><div class="desc">Door open</div></div>
+  <div class="card"><div class="code">U13</div><div class="desc">Unbalanced load</div></div>
+  <div class="card"><div class="code">U14</div><div class="desc">Water supply error</div></div>
+  <div class="card"><div class="code">U18</div><div class="desc">Pump failure</div></div>
+  <div class="card"><div class="code">H01</div><div class="desc">Main control board error</div></div>
+  <div class="card"><div class="code">H04</div><div class="desc">Motor control fault</div></div>
+
+</div>
+
+<!-- ================= MICROWAVE ================= -->
+<div class="section-title">Microwave Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">H97</div><div class="desc">Inverter circuit failure</div></div>
+  <div class="card"><div class="code">H98</div><div class="desc">Magnetron overheating</div></div>
+  <div class="card"><div class="code">H99</div><div class="desc">Power supply fault</div></div>
+  <div class="card"><div class="code">U10</div><div class="desc">Door switch error</div></div>
+
+</div>
+
+<!-- ================= REFRIGERATOR ================= -->
+<div class="section-title">Refrigerator Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">H01</div><div class="desc">Temperature sensor fault</div></div>
+  <div class="card"><div class="code">H02</div><div class="desc">Defrost system error</div></div>
+  <div class="card"><div class="code">H03</div><div class="desc">Fan motor failure</div></div>
+  <div class="card"><div class="code">H04</div><div class="desc">Compressor issue</div></div>
+  <div class="card"><div class="code">H05</div><div class="desc">Door sensor error</div></div>
+  <div class="card"><div class="code">H06</div><div class="desc">Communication failure</div></div>
+
+</div>
+
+<!-- ================= SYSTEM ================= -->
+<div class="section-title">System Messages</div>
+<div class="grid">
+
+  <div class="card"><div class="code">LOCK</div><div class="desc">Child lock active</div></div>
+  <div class="card"><div class="code">HOT</div><div class="desc">Overheat warning</div></div>
+  <div class="card"><div class="code">PF</div><div class="desc">Power failure detected</div></div>
+  <div class="card"><div class="code">ERR</div><div class="desc">General system error</div></div>
+  <div class="card"><div class="code">RESET</div><div class="desc">System restart required</div></div>
+  <div class="card"><div class="code">COOL</div><div class="desc">Cooling cycle active</div></div>
+
+</div>
+
+</div>
+
+</body>
+</html>

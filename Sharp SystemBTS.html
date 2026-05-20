@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharp System Messages Guide</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:20px;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.section-title{
+    margin-top:40px;
+    font-size:20px;
+    font-weight:bold;
+    border-left:5px solid #e60012;
+    padding-left:10px;
+    color:#444;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    border:1px solid #4e6e81;
+    border-radius:8px;
+    padding:20px;
+    background:#fafafa;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+    font-size:26px;
+    font-weight:bold;
+    color:#4e6e81;
+    margin-bottom:10px;
+}
+
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
+}
+
+.steps{
+    padding-left:18px;
+    line-height:1.6;
+}
+
+.note{
+    margin-top:30px;
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:15px;
+    border-radius:6px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Sharp System Messages</h1>
+
+<p class="subtitle">
+<strong>Status Indicators & Meaning Guide</strong>
+</p>
+
+<!-- ================= CONTROL ================= -->
+<div class="section-title">Control & Safety Messages</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="code">LOC</div>
+<div class="title">Child Lock Active</div>
+<ul class="steps">
+<li>Press and hold lock/unlock button for a few seconds.</li>
+<li>Refer to model-specific control panel instructions.</li>
+<li>Perform a power reset if lock does not clear.</li>
+<li>Ensure no buttons are stuck.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">PF</div>
+<div class="title">Power Failure Detected</div>
+<ul class="steps">
+<li>Check household power supply.</li>
+<li>Inspect circuit breaker or fuse box.</li>
+<li>Reset appliance after power stabilizes.</li>
+<li>Ensure stable voltage supply.</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ================= WARNING ================= -->
+<div class="section-title">Warning Messages</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="code">HOT</div>
+<div class="title">Overheat Warning</div>
+<ul class="steps">
+<li>Turn off appliance and allow cooling.</li>
+<li>Check ventilation openings for blockage.</li>
+<li>Ensure fan system is working properly.</li>
+<li>Restart after temperature normalizes.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">ERR</div>
+<div class="title">General System Error</div>
+<ul class="steps">
+<li>Power cycle the appliance.</li>
+<li>Check for visible wiring or control issues.</li>
+<li>Reset system using restart option.</li>
+<li>Call technician if error persists.</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ================= SYSTEM ================= -->
+<div class="section-title">System Status Messages</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="code">RESET</div>
+<div class="title">System Restart Required</div>
+<ul class="steps">
+<li>Disconnect power for a few minutes.</li>
+<li>Reconnect and restart appliance.</li>
+<li>Check if message returns.</li>
+<li>Inspect control board if persistent.</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="code">COOL</div>
+<div class="title">Cooling Cycle Active</div>
+<ul class="steps">
+<li>Allow appliance to complete cooling cycle.</li>
+<li>Do not open doors unnecessarily.</li>
+<li>Ensure airflow is not blocked.</li>
+<li>Monitor temperature stabilization.</li>
+</ul>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Note:</strong> These messages are status indicators and not always faults. Persistent errors may require technician inspection.
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shark Error Code Library</title>
+
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    margin-top: 8px;
+    color: #d9ffff;
+  }
+
+  .section-title {
+    margin-top: 40px;
+    font-size: 22px;
+    border-left: 5px solid #e60012;
+    padding-left: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e6e81;
+  }
+
+  .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Shark Error Code Library</h1>
+  <div class="subtitle">Complete Shark Device Error Reference</div>
+</header>
+
+<div class="container">
+
+<!-- ================= VACUUM SYSTEM ================= -->
+<div class="section-title">Vacuum Cleaner Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E1</div><div class="desc">Brush roll obstruction</div></div>
+  <div class="card"><div class="code">E2</div><div class="desc">Suction blockage detected</div></div>
+  <div class="card"><div class="code">E3</div><div class="desc">Motor overheating</div></div>
+  <div class="card"><div class="code">E4</div><div class="desc">Dust cup not installed</div></div>
+  <div class="card"><div class="code">E5</div><div class="desc">Filter requires cleaning</div></div>
+  <div class="card"><div class="code">E6</div><div class="desc">Battery fault or low charge</div></div>
+  <div class="card"><div class="code">E7</div><div class="desc">Charging dock communication error</div></div>
+  <div class="card"><div class="code">E8</div><div class="desc">Internal system failure</div></div>
+
+</div>
+
+<!-- ================= ROBOT VACUUM ================= -->
+<div class="section-title">Robot Vacuum Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">CLN</div><div class="desc">Cleaning system blocked</div></div>
+  <div class="card"><div class="code">CLIFF</div><div class="desc">Cliff sensor error detected</div></div>
+  <div class="card"><div class="code">WHEEL</div><div class="desc">Wheel jam or obstruction</div></div>
+  <div class="card"><div class="code">BRUSH</div><div class="desc">Brush roller jammed</div></div>
+  <div class="card"><div class="code">BIN</div><div class="desc">Dust bin full or missing</div></div>
+
+</div>
+
+<!-- ================= SYSTEM MESSAGES ================= -->
+<div class="section-title">System Messages</div>
+<div class="grid">
+
+  <div class="card"><div class="code">READY</div><div class="desc">Device ready</div></div>
+  <div class="card"><div class="code">RESET</div><div class="desc">System restart required</div></div>
+  <div class="card"><div class="code">LOCK</div><div class="desc">Safety lock active</div></div>
+  <div class="card"><div class="code">OVERHEAT</div><div class="desc">Thermal protection triggered</div></div>
+  <div class="card"><div class="code">SERVICE</div><div class="desc">Maintenance required</div></div>
+  <div class="card"><div class="code">FILTER</div><div class="desc">Filter cleaning needed</div></div>
+
+</div>
+
+</div>
+
+</body>
+</html>

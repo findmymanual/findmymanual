@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haier Error Code Library</title>
+
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    margin-top: 8px;
+    color: #d8ebff;
+  }
+
+  .section-title {
+    margin-top: 40px;
+    font-size: 22px;
+    border-left: 5px solid #e60012;
+    padding-left: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e6e81;
+  }
+
+  .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Haier Error Code Library</h1>
+  <div class="subtitle">Complete Haier Appliance Error Reference</div>
+</header>
+
+<div class="container">
+
+<!-- ================= REFRIGERATOR ================= -->
+<div class="section-title">Refrigerator Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">F1</div><div class="desc">Freezer sensor fault</div></div>
+  <div class="card"><div class="code">F2</div><div class="desc">Ambient temperature sensor error</div></div>
+  <div class="card"><div class="code">F3</div><div class="desc">Defrost sensor issue</div></div>
+  <div class="card"><div class="code">F4</div><div class="desc">Refrigerator temperature sensor fault</div></div>
+  <div class="card"><div class="code">F5</div><div class="desc">Communication error between boards</div></div>
+  <div class="card"><div class="code">E0</div><div class="desc">Ice maker malfunction</div></div>
+  <div class="card"><div class="code">E1</div><div class="desc">Defrost heater error</div></div>
+  <div class="card"><div class="code">E2</div><div class="desc">Fan motor failure</div></div>
+  <div class="card"><div class="code">E5</div><div class="desc">EEPROM memory error</div></div>
+
+</div>
+
+<!-- ================= WASHING MACHINE ================= -->
+<div class="section-title">Washing Machine Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">ERR1</div><div class="desc">Door lock error</div></div>
+  <div class="card"><div class="code">ERR2</div><div class="desc">Drainage problem</div></div>
+  <div class="card"><div class="code">ERR3</div><div class="desc">Temperature sensor fault</div></div>
+  <div class="card"><div class="code">ERR4</div><div class="desc">Heating error</div></div>
+  <div class="card"><div class="code">ERR5</div><div class="desc">Water overflow detected</div></div>
+  <div class="card"><div class="code">ERR6</div><div class="desc">Motor malfunction</div></div>
+  <div class="card"><div class="code">ERR7</div><div class="desc">Motor drive communication failure</div></div>
+  <div class="card"><div class="code">ERR8</div><div class="desc">Water level protection activated</div></div>
+  <div class="card"><div class="code">ERR9</div><div class="desc">EEPROM communication error</div></div>
+  <div class="card"><div class="code">UNB</div><div class="desc">Unbalanced laundry load</div></div>
+  <div class="card"><div class="code">EUAR</div><div class="desc">Water level sensor error</div></div>
+  <div class="card"><div class="code">NO WATER</div><div class="desc">No water supply detected</div></div>
+
+</div>
+
+<!-- ================= AIR CONDITIONER ================= -->
+<div class="section-title">Air Conditioner Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E1</div><div class="desc">High pressure protection</div></div>
+  <div class="card"><div class="code">E2</div><div class="desc">Indoor anti-freeze protection</div></div>
+  <div class="card"><div class="code">E3</div><div class="desc">Low pressure protection</div></div>
+  <div class="card"><div class="code">E4</div><div class="desc">Compressor discharge temperature high</div></div>
+  <div class="card"><div class="code">E5</div><div class="desc">Overcurrent protection</div></div>
+  <div class="card"><div class="code">E6</div><div class="desc">Communication failure</div></div>
+  <div class="card"><div class="code">E7</div><div class="desc">Mode conflict detected</div></div>
+  <div class="card"><div class="code">E8</div><div class="desc">Indoor fan malfunction</div></div>
+  <div class="card"><div class="code">F1</div><div class="desc">Indoor ambient sensor fault</div></div>
+  <div class="card"><div class="code">F2</div><div class="desc">Evaporator sensor error</div></div>
+  <div class="card"><div class="code">F3</div><div class="desc">Outdoor ambient sensor fault</div></div>
+  <div class="card"><div class="code">F4</div><div class="desc">Condenser sensor issue</div></div>
+
+</div>
+
+<!-- ================= DISHWASHER ================= -->
+<div class="section-title">Dishwasher Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E1</div><div class="desc">Water inlet timeout</div></div>
+  <div class="card"><div class="code">E2</div><div class="desc">Drain timeout</div></div>
+  <div class="card"><div class="code">E3</div><div class="desc">Heating element issue</div></div>
+  <div class="card"><div class="code">E4</div><div class="desc">Overflow protection activated</div></div>
+  <div class="card"><div class="code">E5</div><div class="desc">Water temperature sensor fault</div></div>
+  <div class="card"><div class="code">E6</div><div class="desc">Water turbidity sensor error</div></div>
+  <div class="card"><div class="code">E7</div><div class="desc">Heating circuit malfunction</div></div>
+
+</div>
+
+<!-- ================= TV ================= -->
+<div class="section-title">TV / Smart Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">001</div><div class="desc">Network connection failure</div></div>
+  <div class="card"><div class="code">002</div><div class="desc">Firmware update failed</div></div>
+  <div class="card"><div class="code">003</div><div class="desc">Smart service unavailable</div></div>
+  <div class="card"><div class="code">004</div><div class="desc">HDMI communication issue</div></div>
+  <div class="card"><div class="code">005</div><div class="desc">Internal memory error</div></div>
+  <div class="card"><div class="code">006</div><div class="desc">Wi-Fi module fault</div></div>
+
+</div>
+
+<!-- ================= MICROWAVE ================= -->
+<div class="section-title">Microwave / Oven Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">F1</div><div class="desc">Temperature sensor open</div></div>
+  <div class="card"><div class="code">F2</div><div class="desc">Temperature sensor shorted</div></div>
+  <div class="card"><div class="code">F3</div><div class="desc">Keypad communication error</div></div>
+  <div class="card"><div class="code">F4</div><div class="desc">Door switch fault</div></div>
+  <div class="card"><div class="code">F5</div><div class="desc">Cooling fan malfunction</div></div>
+  <div class="card"><div class="code">SE</div><div class="desc">Control panel shorted</div></div>
+
+</div>
+
+<!-- ================= SYSTEM ================= -->
+<div class="section-title">System Messages</div>
+<div class="grid">
+
+  <div class="card"><div class="code">LOCK</div><div class="desc">Child lock enabled</div></div>
+  <div class="card"><div class="code">HOT</div><div class="desc">High temperature warning</div></div>
+  <div class="card"><div class="code">COOL</div><div class="desc">Cooling cycle active</div></div>
+  <div class="card"><div class="code">PF</div><div class="desc">Power failure detected</div></div>
+  <div class="card"><div class="code">RESET</div><div class="desc">System restart required</div></div>
+  <div class="card"><div class="code">ERR</div><div class="desc">General appliance error</div></div>
+
+</div>
+
+</div>
+
+</body>
+</html>

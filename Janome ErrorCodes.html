@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Janome Error Code Library</title>
+
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    margin-top: 8px;
+    color: #ffd6e8;
+  }
+
+  .section-title {
+    margin-top: 40px;
+    font-size: 22px;
+    border-left: 5px solid #e60012;
+    padding-left: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e6e81;
+  }
+
+  .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Janome Error Code Library</h1>
+  <div class="subtitle">Complete Janome Sewing Machine Error Reference</div>
+</header>
+
+<div class="container">
+
+<!-- ================= SEWING MACHINE ================= -->
+<div class="section-title">Sewing Machine Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E1</div><div class="desc">Thread jam detected</div></div>
+  <div class="card"><div class="code">E2</div><div class="desc">Motor overload</div></div>
+  <div class="card"><div class="code">E3</div><div class="desc">Needle position error</div></div>
+  <div class="card"><div class="code">E4</div><div class="desc">Sensor malfunction</div></div>
+  <div class="card"><div class="code">E5</div><div class="desc">Bobbin system error</div></div>
+  <div class="card"><div class="code">E6</div><div class="desc">Foot pedal communication failure</div></div>
+  <div class="card"><div class="code">E7</div><div class="desc">Thread tension abnormal</div></div>
+  <div class="card"><div class="code">E8</div><div class="desc">Main board error</div></div>
+
+</div>
+
+<!-- ================= EMBROIDERY MACHINES ================= -->
+<div class="section-title">Embroidery Machine Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E9</div><div class="desc">Hoop alignment issue</div></div>
+  <div class="card"><div class="code">E10</div><div class="desc">Design memory error</div></div>
+  <div class="card"><div class="code">E11</div><div class="desc">Thread break detection</div></div>
+  <div class="card"><div class="code">E12</div><div class="desc">X-axis motor failure</div></div>
+  <div class="card"><div class="code">E13</div><div class="desc">Y-axis motor failure</div></div>
+
+</div>
+
+<!-- ================= SYSTEM ================= -->
+<div class="section-title">System Messages</div>
+<div class="grid">
+
+  <div class="card"><div class="code">READY</div><div class="desc">Machine ready for sewing</div></div>
+  <div class="card"><div class="code">STOP</div><div class="desc">Operation halted</div></div>
+  <div class="card"><div class="code">RESET</div><div class="desc">System restart required</div></div>
+  <div class="card"><div class="code">LOCK</div><div class="desc">Safety lock active</div></div>
+  <div class="card"><div class="code">THREAD</div><div class="desc">Threading required</div></div>
+  <div class="card"><div class="code">NO BOBBIN</div><div class="desc">Bobbin not detected</div></div>
+
+</div>
+
+</div>
+
+</body>
+</html>

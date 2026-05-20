@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brother Error Code Library</title>
+
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    margin-top: 8px;
+    color: #cccccc;
+  }
+
+  .section-title {
+    margin-top: 40px;
+    font-size: 22px;
+    border-left: 5px solid #e60012;
+    padding-left: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e6e81;
+  }
+
+  .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Brother Error Code Library</h1>
+  <div class="subtitle">Complete Brother Device Error Reference</div>
+</header>
+
+<div class="container">
+
+<!-- ================= PRINTER ================= -->
+<div class="section-title">Printer Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E50</div><div class="desc">Fuser unit error</div></div>
+  <div class="card"><div class="code">E51</div><div class="desc">Laser unit failure</div></div>
+  <div class="card"><div class="code">E52</div><div class="desc">Main motor error</div></div>
+  <div class="card"><div class="code">E53</div><div class="desc">Paper feed error</div></div>
+  <div class="card"><div class="code">E54</div><div class="desc">Temperature abnormality</div></div>
+  <div class="card"><div class="code">E55</div><div class="desc">Fan motor failure</div></div>
+  <div class="card"><div class="code">E56</div><div class="desc">Sensor malfunction</div></div>
+  <div class="card"><div class="code">E57</div><div class="desc">Firmware error</div></div>
+
+</div>
+
+<!-- ================= INKJET PRINTER ================= -->
+<div class="section-title">Inkjet Printer Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">INK ABSORBER FULL</div><div class="desc">Waste ink pad needs replacement</div></div>
+  <div class="card"><div class="code">PAPER JAM</div><div class="desc">Paper stuck in feed path</div></div>
+  <div class="card"><div class="code">NO INK CARTRIDGE</div><div class="desc">Ink cartridge not detected</div></div>
+  <div class="card"><div class="code">CLEAN HEAD</div><div class="desc">Print head requires cleaning</div></div>
+  <div class="card"><div class="code">LOW INK</div><div class="desc">Ink level low</div></div>
+  <div class="card"><div class="code">CARTRIDGE ERROR</div><div class="desc">Ink cartridge communication failure</div></div>
+
+</div>
+
+<!-- ================= SCANNER ================= -->
+<div class="section-title">Scanner Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E100</div><div class="desc">Scanner motor error</div></div>
+  <div class="card"><div class="code">E101</div><div class="desc">Lamp failure</div></div>
+  <div class="card"><div class="code">E102</div><div class="desc">Communication error</div></div>
+  <div class="card"><div class="code">E103</div><div class="desc">Carriage jam</div></div>
+
+</div>
+
+<!-- ================= SYSTEM ================= -->
+<div class="section-title">System Messages</div>
+<div class="grid">
+
+  <div class="card"><div class="code">READY</div><div class="desc">Device ready</div></div>
+  <div class="card"><div class="code">BUSY</div><div class="desc">Processing task</div></div>
+  <div class="card"><div class="code">ERROR</div><div class="desc">General system error</div></div>
+  <div class="card"><div class="code">RESET</div><div class="desc">Restart required</div></div>
+  <div class="card"><div class="code">DOOR OPEN</div><div class="desc">Cover not closed properly</div></div>
+  <div class="card"><div class="code">NO PAPER</div><div class="desc">Paper tray empty</div></div>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HP Error Code Library</title>
+
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    margin-top: 8px;
+    color: #d9f2ff;
+  }
+
+  .section-title {
+    margin-top: 40px;
+    font-size: 22px;
+    border-left: 5px solid #e60012;
+    padding-left: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e6e81;
+  }
+
+  .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>HP Error Code Library</h1>
+  <div class="subtitle">Complete HP Device Error Reference</div>
+</header>
+
+<div class="container">
+
+<!-- ================= PRINTER ================= -->
+<div class="section-title">Printer Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">0x00000001</div><div class="desc">General printer hardware failure</div></div>
+  <div class="card"><div class="code">0x00000002</div><div class="desc">Paper jam detected</div></div>
+  <div class="card"><div class="code">0x00000003</div><div class="desc">Ink cartridge not recognized</div></div>
+  <div class="card"><div class="code">0x00000004</div><div class="desc">Printhead failure</div></div>
+  <div class="card"><div class="code">0x00000005</div><div class="desc">Ink system error</div></div>
+  <div class="card"><div class="code">0x00000006</div><div class="desc">Waste ink full</div></div>
+  <div class="card"><div class="code">0x00000007</div><div class="desc">Cartridge communication failure</div></div>
+  <div class="card"><div class="code">0x00000008</div><div class="desc">Firmware corruption detected</div></div>
+
+</div>
+
+<!-- ================= LAPTOP / BIOS ================= -->
+<div class="section-title">Laptop / BIOS Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">CPU FAN ERROR</div><div class="desc">CPU cooling fan failure</div></div>
+  <div class="card"><div class="code">BOOT DEVICE NOT FOUND</div><div class="desc">No bootable drive detected</div></div>
+  <div class="card"><div class="code">SMART HARD DISK ERROR</div><div class="desc">Hard drive failure warning</div></div>
+  <div class="card"><div class="code">CMOS CHECKSUM ERROR</div><div class="desc">BIOS settings corrupted</div></div>
+  <div class="card"><div class="code">MEMORY ERROR</div><div class="desc">RAM malfunction detected</div></div>
+  <div class="card"><div class="code">SYSTEM FAN FAILURE</div><div class="desc">Cooling system fault</div></div>
+
+</div>
+
+<!-- ================= SCANNER ================= -->
+<div class="section-title">Scanner Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E100</div><div class="desc">Scanner lamp failure</div></div>
+  <div class="card"><div class="code">E101</div><div class="desc">Carriage jam</div></div>
+  <div class="card"><div class="code">E102</div><div class="desc">Communication error</div></div>
+  <div class="card"><div class="code">E103</div><div class="desc">Sensor calibration failure</div></div>
+
+</div>
+
+<!-- ================= SYSTEM ================= -->
+<div class="section-title">System Messages</div>
+<div class="grid">
+
+  <div class="card"><div class="code">READY</div><div class="desc">Device ready</div></div>
+  <div class="card"><div class="code">BUSY</div><div class="desc">Processing task</div></div>
+  <div class="card"><div class="code">ERROR</div><div class="desc">General system error</div></div>
+  <div class="card"><div class="code">RESET</div><div class="desc">Restart required</div></div>
+  <div class="card"><div class="code">LOW INK</div><div class="desc">Ink level low</div></div>
+  <div class="card"><div class="code">NO PAPER</div><div class="desc">Paper tray empty</div></div>
+
+</div>
+
+</div>
+
+</body>
+</html>

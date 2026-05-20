@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bosch Error Code Library</title>
+
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 { margin: 0; font-size: 28px; }
+
+  .subtitle { margin-top: 8px; color: #ccc; }
+
+  .section-title {
+    margin-top: 40px;
+    font-size: 22px;
+    border-left: 5px solid #e60012;
+    padding-left: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f3b4d;
+  }
+
+  .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Bosch Error Code Library</h1>
+  <div class="subtitle">Complete Bosch Appliance Error Reference</div>
+</header>
+
+<div class="container">
+
+<!-- ================= DISHWASHERS ================= -->
+<div class="section-title">Dishwasher Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E01</div><div class="desc">Heating element fault</div></div>
+  <div class="card"><div class="code">E02</div><div class="desc">Motor relay error</div></div>
+  <div class="card"><div class="code">E03</div><div class="desc">Drain pump failure</div></div>
+  <div class="card"><div class="code">E04</div><div class="desc">Water inlet issue</div></div>
+  <div class="card"><div class="code">E05</div><div class="desc">Flow meter error</div></div>
+  <div class="card"><div class="code">E06</div><div class="desc">Door switch fault</div></div>
+  <div class="card"><div class="code">E07</div><div class="desc">Circulation pump failure</div></div>
+  <div class="card"><div class="code">E08</div><div class="desc">Low water level detected</div></div>
+  <div class="card"><div class="code">E09</div><div class="desc">Heating circuit failure</div></div>
+  <div class="card"><div class="code">E10</div><div class="desc">Drying system error</div></div>
+  <div class="card"><div class="code">E11</div><div class="desc">Temperature sensor (NTC) fault</div></div>
+  <div class="card"><div class="code">E12</div><div class="desc">Heavy scale build-up in heating system</div></div>
+  <div class="card"><div class="code">E13</div><div class="desc">Water temperature too high (hot water supply issue)</div></div>
+  <div class="card"><div class="code">E14</div><div class="desc">Water inlet / flow sensor fault</div></div>
+  <div class="card"><div class="code">E15</div><div class="desc">Water leak detected (AquaStop)</div></div>
+  <div class="card"><div class="code">E16</div><div class="desc">Water inlet valve stuck open</div></div>
+  <div class="card"><div class="code">E17</div><div class="desc">Water flow too strong</div></div>
+  <div class="card"><div class="code">E18</div><div class="desc">Water supply blocked</div></div>
+  <div class="card"><div class="code">E19</div><div class="desc">Internal electrical fault</div></div>
+  <div class="card"><div class="code">E20</div><div class="desc">Pump motor issue</div></div>
+  <div class="card"><div class="code">E21</div><div class="desc">Pump blockage or failure</div></div>
+  <div class="card"><div class="code">E22</div><div class="desc">Filter clogged / blocked drain</div></div>
+  <div class="card"><div class="code">E23</div><div class="desc">Drain pump failure</div></div>
+  <div class="card"><div class="code">E24</div><div class="desc">Drain blockage or kinked hose</div></div>
+  <div class="card"><div class="code">E25</div><div class="desc">Drain pump blocked (debris in impeller)</div></div>
+  <div class="card"><div class="code">E26</div><div class="desc">Pressure sensor failure</div></div>
+  <div class="card"><div class="code">E27</div><div class="desc">Water pressure sensor fault</div></div>
+  <div class="card"><div class="code">E28</div><div class="desc">Turbidity (water quality) sensor error</div></div>
+  <div class="card"><div class="code">E29–E32</div><div class="desc">Water pressure / imbalance / sensor issues</div></div>
+  <div class="card"><div class="code">E36–E38</div><div class="desc">Aqua system blockage or leak detection</div></div>
+  <div class="card"><div class="code">E40–E45</div><div class="desc">Door lock / communication errors</div></div>
+  <div class="card"><div class="code">E50–E52</div><div class="desc">Motor / circulation pump fault</div></div>
+  <div class="card"><div class="code">E90–E99</div><div class="desc">Electronic control board failure range</div></div>
+
+
+
+</div>
+
+<!-- ================= WASHING MACHINES ================= -->
+<div class="section-title">Washing Machine Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">F01</div><div class="desc">Motor triac fault</div></div>
+  <div class="card"><div class="code">F02</div><div class="desc">Water supply issue</div></div>
+  <div class="card"><div class="code">F03</div><div class="desc">Drainage failure</div></div>
+  <div class="card"><div class="code">F04</div><div class="desc">Heating error</div></div>
+  <div class="card"><div class="code">F16</div><div class="desc">Door not locked</div></div>
+  <div class="card"><div class="code">F17</div><div class="desc">Water intake timeout</div></div>
+  <div class="card"><div class="code">F18</div><div class="desc">Drain timeout</div></div>
+  <div class="card"><div class="code">F21</div><div class="desc">Motor failure</div></div>
+  <div class="card"><div class="code">F23</div><div class="desc">Water leakage detected</div></div>
+  <div class="card"><div class="code">F29</div><div class="desc">Flow sensor error</div></div>
+  <div class="card"><div class="code">F31</div><div class="desc">Water level sensor fault</div></div>
+  <div class="card"><div class="code">F34</div><div class="desc">Door lock failure</div></div>
+  <div class="card"><div class="code">F43</div><div class="desc">Motor blocked</div></div>
+  <div class="card"><div class="code">F57</div><div class="desc">Electronic control failure</div></div>
+  <div class="card"><div class="code">E16 / F16</div><div class="desc">Door not closed properly</div></div>
+  <div class="card"><div class="code">E17 / F17</div><div class="desc">Water inlet problem</div></div>
+  <div class="card"><div class="code">E18 / F18</div><div class="desc">Drain blocked or pump issue</div></div>
+  <div class="card"><div class="code">E19 / F19</div><div class="desc">Heating fault</div></div>
+  <div class="card"><div class="code">E20 / F20</div><div class="desc">Unexpected heating error</div></div>
+  <div class="card"><div class="code">E21 / F21</div><div class="desc">Motor fault or drum jam</div></div>
+  <div class="card"><div class="code">E22</div><div class="desc">Water leakage (AquaStop triggered)</div></div>
+  <div class="card"><div class="code">E23</div><div class="desc">Leakage sensor activated</div></div>
+  <div class="card"><div class="code">E24</div><div class="desc">Drain pump blocked</div></div>
+  <div class="card"><div class="code">E25</div><div class="desc">Drain obstruction</div></div>
+  <div class="card"><div class="code">E26</div><div class="desc">Water pressure sensor fault</div></div>
+  <div class="card"><div class="code">E27</div><div class="desc">Door lock system failure</div></div>
+  <div class="card"><div class="code">E28</div><div class="desc">Flow sensor error</div></div>
+  <div class="card"><div class="code">E29–E32</div><div class="desc">Load imbalance / water supply issues</div></div>
+  <div class="card"><div class="code">E36–E38</div><div class="desc">Pressure system fault</div></div>
+  <div class="card"><div class="code">E42 / E43</div><div class="desc">Door unlocking error</div></div>
+  <div class="card"><div class="code">E44</div><div class="desc">Door opened during cycle</div></div>
+  <div class="card"><div class="code">E50–E52</div><div class="desc">Motor / inverter failure</div></div>
+  <div class="card"><div class="code">F43</div><div class="desc">Drum not spinning</div></div>
+
+</div>
+
+<!-- ================= OVENS / COOKERS ================= -->
+<div class="section-title">Oven & Cooker Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E011</div><div class="desc">Temperature sensor error</div></div>
+  <div class="card"><div class="code">E012</div><div class="desc">Heating element failure</div></div>
+  <div class="card"><div class="code">E013</div><div class="desc">Cooling fan error</div></div>
+  <div class="card"><div class="code">E014</div><div class="desc">Door lock issue</div></div>
+  <div class="card"><div class="code">E015</div><div class="desc">Control board failure</div></div>
+  <div class="card"><div class="code">E016</div><div class="desc">Overheating protection</div></div>
+  <div class="card"><div class="code">E017</div><div class="desc">Power supply issue</div></div>
+  <div class="card"><div class="code">E005</div><div class="desc">Overheating protection triggered</div></div>
+  <div class="card"><div class="code">E115</div><div class="desc">Cooling fan error</div></div>
+  <div class="card"><div class="code">E118</div><div class="desc">Door lock failure</div></div>
+  <div class="card"><div class="code">E305</div><div class="desc">Control board communication fault</div></div>
+  <div class="card"><div class="code">E512</div><div class="desc">Heating element failure</div></div>
+  
+
+</div>
+
+<!-- ================= DRYERS ================= -->
+<div class="section-title">Dryer Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E24</div><div class="desc">Drain pump issue</div></div>
+  <div class="card"><div class="code">E25</div><div class="desc">Heating system error</div></div>
+  <div class="card"><div class="code">E26</div><div class="desc">Moisture sensor failure</div></div>
+  <div class="card"><div class="code">E28</div><div class="desc">Airflow blockage</div></div>
+  <div class="card"><div class="code">E29</div><div class="desc">Motor error</div></div>
+  <div class="card"><div class="code">E30</div><div class="desc">Overheating detected</div></div>
+  <div class="card"><div class="code">E02</div><div class="desc">Temperature sensor fault</div></div>
+  <div class="card"><div class="code">E03</div><div class="desc">Airflow blockage</div></div>
+  <div class="card"><div class="code">E04</div><div class="desc">Drum motor fault</div></div>
+  <div class="card"><div class="code">E05</div><div class="desc">Electronic board failure</div></div>
+  <div class="card"><div class="code">E06</div><div class="desc">Condenser blockage</div></div>
+  <div class="card"><div class="code">E07</div><div class="desc">Heat pump system error</div></div>
+
+</div>
+
+<!-- ================= FRIDGES ================= -->
+<div class="section-title">Refrigerator Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E1</div><div class="desc">Defrost sensor fault</div></div>
+  <div class="card"><div class="code">E2</div><div class="desc">Freezer fan error</div></div>
+  <div class="card"><div class="code">E3</div><div class="desc">Compressor issue</div></div>
+  <div class="card"><div class="code">E4</div><div class="desc">Temperature sensor failure</div></div>
+  <div class="card"><div class="code">E5</div><div class="desc">Communication error</div></div>
+  <div class="card"><div class="code">E6</div><div class="desc">Ice maker fault</div></div>
+  <div class="card"><div class="code">E7</div><div class="desc">Fan motor issue</div></div>
+  <div class="card"><div class="code">E1</div><div class="desc">Temperature sensor fault (fridge section)</div></div>
+  <div class="card"><div class="code">ALARM</div><div class="desc">Door left open / temperature warning</div></div>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sony Error Code Library</title>
+
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    margin-top: 8px;
+    color: #cfcfcf;
+  }
+
+  .section-title {
+    margin-top: 40px;
+    font-size: 22px;
+    border-left: 5px solid #e60012;
+    padding-left: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e6e81;
+  }
+
+  .desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Sony Error Code Library</h1>
+  <div class="subtitle">Complete Sony Device Error Reference</div>
+</header>
+
+<div class="container">
+
+<!-- ================= TV / BRAVIA ================= -->
+<div class="section-title">TV / BRAVIA Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">5 Blink</div><div class="desc">T-Con board failure</div></div>
+  <div class="card"><div class="code">6 Blink</div><div class="desc">Backlight inverter error</div></div>
+  <div class="card"><div class="code">7 Blink</div><div class="desc">Power supply fault</div></div>
+  <div class="card"><div class="code">8 Blink</div><div class="desc">Audio amplifier failure</div></div>
+  <div class="card"><div class="code">9 Blink</div><div class="desc">Main board communication error</div></div>
+  <div class="card"><div class="code">10 Blink</div><div class="desc">Panel error</div></div>
+  <div class="card"><div class="code">11 Blink</div><div class="desc">Fan error (high-end models)</div></div>
+  <div class="card"><div class="code">12 Blink</div><div class="desc">Temperature protection triggered</div></div>
+
+</div>
+
+<!-- ================= PLAYSTATION ================= -->
+<div class="section-title">PlayStation Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">CE-34878-0</div><div class="desc">Application crash error</div></div>
+  <div class="card"><div class="code">NW-31201-7</div><div class="desc">Network connection failure</div></div>
+  <div class="card"><div class="code">WS-37397-9</div><div class="desc">PSN service restriction</div></div>
+  <div class="card"><div class="code">SU-30746-0</div><div class="desc">System software update failure</div></div>
+  <div class="card"><div class="code">CE-36329-3</div><div class="desc">System error / crash report</div></div>
+  <div class="card"><div class="code">E-8210604A</div><div class="desc">Payment method error</div></div>
+  <div class="card"><div class="code">NP-102942-8</div><div class="desc">Account sign-in issue</div></div>
+
+</div>
+
+<!-- ================= CAMERA ================= -->
+<div class="section-title">Camera Error Codes</div>
+<div class="grid">
+
+  <div class="card"><div class="code">E:62:10</div><div class="desc">SteadyShot error</div></div>
+  <div class="card"><div class="code">E:61:00</div><div class="desc">Autofocus malfunction</div></div>
+  <div class="card"><div class="code">E:91:01</div><div class="desc">Internal system error</div></div>
+  <div class="card"><div class="code">C:32:60</div><div class="desc">Memory card error</div></div>
+  <div class="card"><div class="code">E:94:00</div><div class="desc">Lens communication failure</div></div>
+  <div class="card"><div class="code">E:92:10</div><div class="desc">Shutter malfunction</div></div>
+
+</div>
+
+<!-- ================= SYSTEM ================= -->
+<div class="section-title">System Messages</div>
+<div class="grid">
+
+  <div class="card"><div class="code">UPDATE REQUIRED</div><div class="desc">Firmware update needed</div></div>
+  <div class="card"><div class="code">OVERHEAT</div><div class="desc">Temperature protection active</div></div>
+  <div class="card"><div class="code">SAFE MODE</div><div class="desc">System booted in safe mode</div></div>
+  <div class="card"><div class="code">RESET</div><div class="desc">System restart required</div></div>
+  <div class="card"><div class="code">NO SIGNAL</div><div class="desc">Input signal not detected</div></div>
+
+</div>
+
+</div>
+
+</body>
+</html>
