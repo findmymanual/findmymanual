@@ -16608,60 +16608,164 @@
                 </svg>Download PDF</a>
         </div>
 
-        <script>
-document.addEventListener("DOMContentLoaded", () => {
+     <script>
+      document.addEventListener("DOMContentLoaded", () => {
 
-    const search = document.getElementById("pdfSearch");
+        const search = document.getElementById("pdfSearch");
 
-    // This selects all your gray boxes
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+        // This selects all your gray boxes
+        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-    search.addEventListener("input", function () {
-        const q = this.value.toLowerCase().trim();
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
 
-        boxes.forEach(box => {
+          boxes.forEach(box => {
             const text = box.textContent.toLowerCase();
 
             // show if matched, hide if not
             if (text.includes(q)) {
-                box.style.display = "";
+              box.style.display = "";
             } else {
-                box.style.display = "none";
+              box.style.display = "none";
             }
+          });
         });
-    });
 
-});
+      });
+    </script>
 
 
-</script>
+</body>
+
+       <script>
+            document.addEventListener("DOMContentLoaded", () => {
+
+                const search = document.getElementById("pdfSearch");
+
+                // This selects all your gray boxes
+                const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+                search.addEventListener("input", function () {
+                    const q = this.value.toLowerCase().trim();
+
+                    boxes.forEach(box => {
+                        const text = box.textContent.toLowerCase();
+
+                        // show if matched, hide if not
+                        if (text.includes(q)) {
+                            box.style.display = "";
+                        } else {
+                            box.style.display = "none";
+                        }
+                    });
+                });
+
+            });
+        </script>
 
 
 </body>
 
 
 
-        <script>
-document.addEventListener("DOMContentLoaded", () => {
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     // Move all PDF boxes into a responsive grid
     const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
     if (boxes.length) {
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-        boxes.forEach(box => grid.appendChild(box));
-        const section = document.querySelector("section");
-        section.appendChild(grid);
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
     }
 
     // PDF button behavior & styling
     document.querySelectorAll('.pdf-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const productId = this.getAttribute('data-product');
-            const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            window.location.href = checkoutUrl;
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
+        });
+    }
+
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
         });
 
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
         const icon = btn.querySelector('svg');
+
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
         btn.style.gap = '8px';
@@ -16673,18 +16777,422 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.style.fontWeight = 'bold';
         btn.style.fontFamily = 'Arial, sans-serif';
         btn.style.transition = 'background 0.3s ease';
-        icon.style.transition = 'transform 0.3s ease';
 
-        btn.addEventListener('mouseover', () => {
-            icon.style.transform = 'translateY(3px)';
-            btn.style.background = '#5f879a';
-        });
-        btn.addEventListener('mouseout', () => {
-            icon.style.transform = 'translateY(0)';
-            btn.style.background = '#4e6e81';
-        });
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
     });
+
 });
 </script>
 
+<div id="pdfGridContainer"></div>
 
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Brother Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Brother troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Brother InkjetBTS.html">Brother Inkjet Troubleshooting Guide</a></h3>
+      <p>Fix printing quality issues, ink cartridge problems, paper jams, connectivity errors, slow printing, and startup or system malfunctions in Brother inkjet printers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Brother PrinterBTS.html">Brother Printer Troubleshooting Guide</a></h3>
+      <p>Resolve paper jams, printing errors, driver issues, toner or ink problems, Wi-Fi/network connectivity failures, and spooler or setup errors in Brother printers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Brother ScannerBTS.html">Brother Scanner Troubleshooting Guide</a></h3>
+      <p>Fix scanning errors, device not detected issues, driver problems, slow scanning, and image quality issues in Brother scanners.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Brother SystemBTS.html"">Brother System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, and system notifications across Brother devices.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<div class="container">
+
+    <h1>Brother FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common Brother printer, scanner, and office device problems and solutions</p>
+
+<!-- GENERAL -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on my Brother device?</div>
+<div class="answer">
+Error codes indicate issues such as paper jams, toner problems, scanner faults, firmware errors, or hardware communication failures.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I restart my Brother printer when it shows an error?</div>
+<div class="answer">
+Yes. Restarting can clear temporary faults, but repeated errors usually require deeper troubleshooting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I contact Brother support?</div>
+<div class="answer">
+Contact support if errors persist, or if there are issues with the mainboard, scanner unit, or print engine.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother device keep going offline?</div>
+<div class="answer">
+This may be caused by network instability, driver issues, or incorrect printer settings.
+</div>
+</div>
+
+</div>
+
+<!-- PRINTER ISSUES -->
+<div class="faq-section">
+<div class="category-title">Printer Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother printer not printing?</div>
+<div class="answer">
+Common causes include paper jams, empty toner, offline mode, or driver issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother printer show “Replace Toner”?</div>
+<div class="answer">
+The toner is low or the sensor incorrectly detects depletion. Reset or replacement may be required.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother printer printing blank pages?</div>
+<div class="answer">
+Empty toner, clogged drum unit, or incorrect cartridge installation can cause blank prints.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is print quality faded or streaky?</div>
+<div class="answer">
+Dirty drum unit, low toner, or incorrect print settings may affect print quality.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my printer keep jamming?</div>
+<div class="answer">
+Dust, worn rollers, or incorrect paper size can cause frequent jams.
+</div>
+</div>
+
+</div>
+
+<!-- SCANNER / MULTIFUNCTION -->
+<div class="faq-section">
+<div class="category-title">Scanner & All-in-One Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner not working?</div>
+<div class="answer">
+Driver issues, USB connection problems, or software conflicts may prevent scanning.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why are scanned images blurry?</div>
+<div class="answer">
+Dirty scanner glass, low resolution settings, or movement during scanning can reduce clarity.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother all-in-one show error messages?</div>
+<div class="answer">
+This may be caused by firmware issues, paper jams, or toner/drum faults.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does scanning stop halfway?</div>
+<div class="answer">
+Cable issues, driver crashes, or memory overload may interrupt scanning.
+</div>
+</div>
+
+</div>
+
+<!-- NETWORK -->
+<div class="faq-section">
+<div class="category-title">WiFi & Connection Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won’t my Brother printer connect to WiFi?</div>
+<div class="answer">
+Incorrect password, weak signal, or router incompatibility may prevent connection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother printer keep disconnecting?</div>
+<div class="answer">
+Network instability or outdated firmware may cause frequent disconnections.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset network settings on Brother printers?</div>
+<div class="answer">
+Most models allow reset via network settings menu or by holding wireless + cancel buttons.
+</div>
+</div>
+
+</div>
+
+<!-- HARDWARE -->
+<div class="faq-section">
+<div class="category-title">Hardware & Power Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother printer not turn on?</div>
+<div class="answer">
+Faulty power cable, blown fuse, or internal power board failure may be the cause.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother device making grinding noise?</div>
+<div class="answer">
+Worn gears, paper debris, or roller damage can cause noise during operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage Brother printers?</div>
+<div class="answer">
+Yes. Surges can damage the mainboard, power supply, and sensors.
+</div>
+</div>
+
+</div>
+
+<!-- ERRORS -->
+<div class="faq-section">
+<div class="category-title">Error Code Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother printer show “Paper Jam” but no paper is stuck?</div>
+<div class="answer">
+Sensor dust or small debris may trigger false jam detection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother printer show “Toner Error”?</div>
+<div class="answer">
+Cartridge not seated properly or chip detection failure may trigger this error.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why do multiple error lights flash?</div>
+<div class="answer">
+This often indicates a general hardware fault or system failure.
+</div>
+</div>
+
+</div>
+
+<!-- EXTRA -->
+<div class="faq-section">
+<div class="category-title">Extra Common Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother printer smell like burning?</div>
+<div class="answer">
+Overheating components or friction inside rollers may cause burning smell.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my printer stop mid-print?</div>
+<div class="answer">
+Driver issues, memory limits, or connection dropouts may interrupt printing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace instead of repair?</div>
+<div class="answer">
+If repair costs are high or the printer is outdated, replacement may be more practical.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Regular cleaning of rollers and updating drivers helps prevent most Brother printer issues.
+</div>
+
+</div>
+
+</body>
+</html>

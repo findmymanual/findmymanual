@@ -5457,62 +5457,54 @@
         <script>
 document.addEventListener("DOMContentLoaded", () => {
 
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
     const search = document.getElementById("pdfSearch");
 
-    // This selects all your gray boxes
     const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-    search.addEventListener("input", function () {
-        const q = this.value.toLowerCase().trim();
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
 
-        boxes.forEach(box => {
-            const text = box.textContent.toLowerCase();
-
-            // show if matched, hide if not
-            if (text.includes(q)) {
-                box.style.display = "";
-            } else {
-                box.style.display = "none";
-            }
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
         });
-    });
-
-});
-
-
-
-</script>
-
-
-
-
-
-
-</body>
-
-
-
-        <script>
-document.addEventListener("DOMContentLoaded", () => {
-    // Move all PDF boxes into a responsive grid
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
-    if (boxes.length) {
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-        boxes.forEach(box => grid.appendChild(box));
-        const section = document.querySelector("section");
-        section.appendChild(grid);
     }
 
-    // PDF button behavior & styling
-    document.querySelectorAll('.pdf-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const productId = this.getAttribute('data-product');
-            const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            window.location.href = checkoutUrl;
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
         });
 
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
         const icon = btn.querySelector('svg');
+
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
         btn.style.gap = '8px';
@@ -5524,16 +5516,393 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.style.fontWeight = 'bold';
         btn.style.fontFamily = 'Arial, sans-serif';
         btn.style.transition = 'background 0.3s ease';
-        icon.style.transition = 'transform 0.3s ease';
 
-        btn.addEventListener('mouseover', () => {
-            icon.style.transform = 'translateY(3px)';
-            btn.style.background = '#5f879a';
-        });
-        btn.addEventListener('mouseout', () => {
-            icon.style.transform = 'translateY(0)';
-            btn.style.background = '#4e6e81';
-        });
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
     });
+
 });
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Bosch Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Bosch troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Bosch DishwasherBTS.html">Bosch Dishwasher Troubleshooting Guide</a></h3>
+      <p>Fix drainage issues, cleaning performance problems, error codes, water inlet or heating failures, and cycle interruptions in Bosch dishwashers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Bosch DryerBTS.html">Bosch Dryer Troubleshooting Guide</a></h3>
+      <p>Solve heating problems, drum not spinning, long drying times, noise issues, sensor faults, and power or control panel errors in Bosch dryers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Bosch OvenBTS.html">Bosch Oven Troubleshooting Guide</a></h3>
+      <p>Fix uneven cooking, heating failures, temperature control issues, fan malfunctions, and display or control panel errors in Bosch ovens.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Bosch RefBTS.html">Bosch Refrigerator Troubleshooting Guide</a></h3>
+      <p>Resolve cooling problems, temperature fluctuations, ice maker issues, water leakage, sensor errors, and compressor or defrost system faults in Bosch refrigerators.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Bosch WashingBTS.html">Bosch Washer Troubleshooting Guide</a></h3>
+      <p>Fix drainage issues, spinning problems, vibration or noise, water filling errors, door lock faults, and cycle interruptions in Bosch washing machines.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bosch FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Bosch FAQ - Troubleshooting & Error Codes</h1>
+<p class="subtitle">Common questions and solutions for Bosch home appliances and system errors</p>
+
+<!-- ================= GENERAL ================= -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting (Bosch Appliances)</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on Bosch appliances?</div>
+<div class="answer">
+Error codes indicate faults in systems such as water supply, heating elements, drainage, sensors, or electronic control boards.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I reset my Bosch appliance when it shows an error?</div>
+<div class="answer">
+Yes. Turning the appliance off for 1–5 minutes can reset temporary faults. If the error returns, further diagnosis is needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a Bosch technician?</div>
+<div class="answer">
+Call a technician if there are persistent error codes, water leaks, heating failure, electrical smell, or repeated shutdowns.
+</div>
+</div>
+
+</div>
+
+<!-- ================= DISHWASHER ================= -->
+<div class="faq-section">
+<div class="category-title">Bosch Dishwasher Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Bosch dishwasher not draining?</div>
+<div class="answer">
+This is usually caused by clogged filters, blocked drain hose, or faulty drain pump.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Bosch dishwasher not cleaning properly?</div>
+<div class="answer">
+Common causes include overloading, blocked spray arms, low water pressure, or detergent issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E15 error mean on Bosch dishwasher?</div>
+<div class="answer">
+E15 usually indicates water leakage in the base tray activating flood protection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Bosch dishwasher making noise?</div>
+<div class="answer">
+Noise may come from a blocked pump, loose items, or worn motor bearings.
+</div>
+</div>
+
+</div>
+
+<!-- ================= WASHING MACHINE ================= -->
+<div class="faq-section">
+<div class="category-title">Bosch Washing Machine Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Bosch washing machine not spinning?</div>
+<div class="answer">
+Causes include unbalanced load, motor issues, belt problems, or lid lock failure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E18 error mean?</div>
+<div class="answer">
+E18 indicates a drainage problem caused by clogged pump or blocked hose.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Bosch washer not filling with water?</div>
+<div class="answer">
+Check water supply, inlet valve, or clogged filters.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Bosch washing machine vibrating heavily?</div>
+<div class="answer">
+Uneven flooring or unbalanced laundry load can cause vibration.
+</div>
+</div>
+
+</div>
+
+<!-- ================= OVEN ================= -->
+<div class="faq-section">
+<div class="category-title">Bosch Oven & Cooker Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Bosch oven not heating?</div>
+<div class="answer">
+This may be due to faulty heating elements, thermostat failure, or control board issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my oven temperature incorrect?</div>
+<div class="answer">
+Sensor calibration issues or defective thermostats can cause incorrect heating levels.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Bosch oven turn off during cooking?</div>
+<div class="answer">
+Overheating protection or power supply instability may trigger shutdown.
+</div>
+</div>
+
+</div>
+
+<!-- ================= REFRIGERATOR ================= -->
+<div class="faq-section">
+<div class="category-title">Bosch Refrigerator Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Bosch refrigerator not cooling?</div>
+<div class="answer">
+Possible causes include dirty condenser coils, fan failure, or thermostat issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is there water inside my Bosch fridge?</div>
+<div class="answer">
+Clogged defrost drain or door seal problems may cause water buildup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Bosch fridge making loud noise?</div>
+<div class="answer">
+Noises may come from compressor vibration or faulty evaporator fan.
+</div>
+</div>
+
+</div>
+
+<!-- ================= POWER & SENSOR ================= -->
+<div class="faq-section">
+<div class="category-title">Power & Sensor Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Bosch appliance keep restarting?</div>
+<div class="answer">
+Power fluctuations or faulty control boards may cause reboot loops.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can sensors cause Bosch error codes?</div>
+<div class="answer">
+Yes. Faulty temperature, water level, or door sensors can trigger system errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Bosch appliance stop mid-cycle?</div>
+<div class="answer">
+This may be due to overheating, water supply interruption, or electronic faults.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Bosch appliances use advanced sensors, so many issues can be resolved with reset + cleaning before repair is needed.
+</div>
+
+</div>
+
+</body>
+</html>

@@ -7546,76 +7546,401 @@
 
 
         <script>
-            document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
-                const search = document.getElementById("pdfSearch");
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
 
-                // This selects all your gray boxes
-                const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-                search.addEventListener("input", function () {
-                    const q = this.value.toLowerCase().trim();
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
 
-                    boxes.forEach(box => {
-                        const text = box.textContent.toLowerCase();
-
-                        // show if matched, hide if not
-                        if (text.includes(q)) {
-                            box.style.display = "";
-                        } else {
-                            box.style.display = "none";
-                        }
-                    });
-                });
-
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
             });
-        </script>
+        });
+    }
 
 
-</body>
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
 
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        // Move all PDF boxes into a responsive grid
-        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
-        if (boxes.length) {
-            const grid = document.createElement("div");
-            grid.className = "pdf-grid";
-            boxes.forEach(box => grid.appendChild(box));
-            const section = document.querySelector("section");
-            section.appendChild(grid);
-        }
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
 
-        // PDF button behavior & styling
-        document.querySelectorAll('.pdf-btn').forEach(btn => {
-            btn.addEventListener('click', function () {
-                const productId = this.getAttribute('data-product');
-                const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-                window.location.href = checkoutUrl;
-            });
+    if (boxes.length && troubleshooting) {
 
-            const icon = btn.querySelector('svg');
-            btn.style.display = 'inline-flex';
-            btn.style.alignItems = 'center';
-            btn.style.gap = '8px';
-            btn.style.padding = '10px 16px';
-            btn.style.background = '#4e6e81';
-            btn.style.color = '#fff';
-            btn.style.borderRadius = '6px';
-            btn.style.textDecoration = 'none';
-            btn.style.fontWeight = 'bold';
-            btn.style.fontFamily = 'Arial, sans-serif';
-            btn.style.transition = 'background 0.3s ease';
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
+        });
+
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
+        const icon = btn.querySelector('svg');
+
+        btn.style.display = 'inline-flex';
+        btn.style.alignItems = 'center';
+        btn.style.gap = '8px';
+        btn.style.padding = '10px 16px';
+        btn.style.background = '#4e6e81';
+        btn.style.color = '#fff';
+        btn.style.borderRadius = '6px';
+        btn.style.textDecoration = 'none';
+        btn.style.fontWeight = 'bold';
+        btn.style.fontFamily = 'Arial, sans-serif';
+        btn.style.transition = 'background 0.3s ease';
+
+        if (icon) {
             icon.style.transition = 'transform 0.3s ease';
 
             btn.addEventListener('mouseover', () => {
                 icon.style.transform = 'translateY(3px)';
                 btn.style.background = '#5f879a';
             });
+
             btn.addEventListener('mouseout', () => {
                 icon.style.transform = 'translateY(0)';
                 btn.style.background = '#4e6e81';
             });
-        });
+        }
     });
+
+});
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Ninja Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Ninja troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Ninja AirFryerBts.html">Ninja Air Fryer Troubleshooting Guide</a></h3>
+      <p>Fix cooking performance issues, overheating, fan problems, sensor errors, and reset or power-cycle your Ninja air fryer safely.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Ninja BlenderBTS.html">Ninja Blender Troubleshooting Guide</a></h3>
+      <p>Solve blending issues, motor not working, blade jams, leaks, unusual noise, and power or speed control problems in Ninja blenders.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Ninja Coffee MakerBTS.html">Ninja Coffee Maker Troubleshooting Guide</a></h3>
+      <p>Fix brewing issues, water flow problems, descaling errors, heating failures, and clogged system issues in Ninja coffee machines.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Ninja GrillBTS.html">Ninja Griller Troubleshooting Guide</a></h3>
+      <p>Resolve heating inconsistencies, smoke issues, plate malfunction, power failure, and temperature control problems in Ninja grills.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Ninja Ice CreamBTS.html">Ninja Ice Cream Maker Troubleshooting Guide</a></h3>
+      <p>Fix freezing problems, inconsistent texture, mixing errors, motor issues, and temperature control problems in Ninja ice cream makers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Ninja Multi-CookerBTS.html">Ninja Multi-Cooker Troubleshooting Guide</a></h3>
+      <p>Solve pressure issues, lid locking problems, cooking cycle errors, overheating, and display or sensor faults in Ninja multi-cookers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Ninja OvenBTS.html">Ninja Oven Troubleshooting Guide</a></h3>
+      <p>Fix heating failures, uneven cooking, fan issues, timer errors, and control panel problems in Ninja ovens.</p>
+    </div>
+
+<div class="trouble-card">
+      <h3><a href="Ninja SystemBTS.html">Ninja System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, and control panel notifications across Ninja appliances.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Ninja VacuumBTS.html">Ninja Vacuum Troubleshooting Guide</a></h3>
+      <p>Fix suction loss, battery charging issues, brush roll jams, clogging, unusual noise, and power problems in Ninja vacuum cleaners.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ninja FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Ninja FAQ - Troubleshooting & Error Codes</h1>
+<p class="subtitle">Common questions and solutions for Ninja kitchen appliances and system errors</p>
+
+<!-- ================= GENERAL ================= -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting (Ninja Appliances)</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on my Ninja appliance?</div>
+<div class="answer">
+Error codes indicate that your Ninja appliance has detected an issue such as overheating, sensor faults, motor blockage, or lid/assembly errors depending on the product.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I reset my Ninja appliance when it stops working?</div>
+<div class="answer">
+Yes. Unplug the device for 1–2 minutes and restart it. Many Ninja appliances reset after power cycling if the issue is temporary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I contact Ninja support or a technician?</div>
+<div class="answer">
+Contact support if the appliance repeatedly stops, shows persistent error codes, smells like burning, or fails to power on after resets.
+</div>
+</div>
+
+</div>
+
+<!-- ================= ERROR CODE ISSUES ================= -->
+<div class="faq-section">
+<div class="category-title">Error Code Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja blender or air fryer show errors?</div>
+<div class="answer">
+This usually happens due to overheating, improper lid placement, food blockage, or motor strain.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I fix Ninja error codes myself?</div>
+<div class="answer">
+Yes, simple issues like cleaning, repositioning parts, or resetting the unit can fix many errors. Hardware issues require service.
+</div>
+</div>
+
+</div>
+
+<!-- ================= MAINTENANCE ================= -->
+<div class="faq-section">
+<div class="category-title">Maintenance Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I clean my Ninja appliance?</div>
+<div class="answer">
+Clean after every use for cooking appliances like air fryers and blenders to prevent buildup and overheating.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance overheat?</div>
+<div class="answer">
+Overheating may occur due to blocked vents, overfilling, long usage cycles, or dirty components.
+</div>
+</div>
+
+</div>
+
+<!-- ================= PERFORMANCE ISSUES ================= -->
+<div class="faq-section">
+<div class="category-title">Performance Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja blender not blending properly?</div>
+<div class="answer">
+It may be due to overload, dull blades, incorrect liquid ratio, or food stuck around the blade system.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja air fryer not cooking evenly?</div>
+<div class="answer">
+Uneven cooking can result from overcrowding, incorrect temperature settings, or not preheating the unit.
+</div>
+</div>
+
+</div>
+
+<!-- ================= POWER & SENSOR ISSUES ================= -->
+<div class="faq-section">
+<div class="category-title">Power & Sensor Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance keep turning off?</div>
+<div class="answer">
+This may be caused by overheating protection, unstable power supply, or safety lock activation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can sensors affect Ninja appliance performance?</div>
+<div class="answer">
+Yes. Sensors control temperature, timing, and safety features. Faulty sensors can stop or limit operation.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> You can duplicate this FAQ structure for other brands like LG, Samsung, Panasonic, or Philips kitchen appliances.
+</div>
+
+</div>
+
+</body>
+</html>

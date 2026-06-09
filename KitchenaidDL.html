@@ -1652,27 +1652,135 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 
+          
           <script>
-document.addEventListener("DOMContentLoaded", () => {
+      document.addEventListener("DOMContentLoaded", () => {
+
+        const search = document.getElementById("pdfSearch");
+
+        // This selects all your gray boxes
+        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
+
+          boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+              box.style.display = "";
+            } else {
+              box.style.display = "none";
+            }
+          });
+        });
+
+      });
+    </script>
+
+
+</body>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     // Move all PDF boxes into a responsive grid
     const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
     if (boxes.length) {
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-        boxes.forEach(box => grid.appendChild(box));
-        const section = document.querySelector("section");
-        section.appendChild(grid);
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
     }
 
     // PDF button behavior & styling
     document.querySelectorAll('.pdf-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const productId = this.getAttribute('data-product');
-            const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            window.location.href = checkoutUrl;
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
+        });
+    }
+
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
         });
 
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
         const icon = btn.querySelector('svg');
+
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
         btn.style.gap = '8px';
@@ -1684,16 +1792,428 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.style.fontWeight = 'bold';
         btn.style.fontFamily = 'Arial, sans-serif';
         btn.style.transition = 'background 0.3s ease';
-        icon.style.transition = 'transform 0.3s ease';
 
-        btn.addEventListener('mouseover', () => {
-            icon.style.transform = 'translateY(3px)';
-            btn.style.background = '#5f879a';
-        });
-        btn.addEventListener('mouseout', () => {
-            icon.style.transform = 'translateY(0)';
-            btn.style.background = '#4e6e81';
-        });
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
     });
+
 });
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Kitchenaid Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Kitchenaid troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="KitchenAid DishwasherBTS.html">Kitchenaid Dishwasher Troubleshooting Guide</a></h3>
+      <p>Fix drainage issues, poor cleaning performance, water not filling, heating failures, cycle interruptions, and error code problems in KitchenAid dishwashers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="KitchenAid DryerBTS.html">Kitchenaid Dryer Troubleshooting Guide</a></h3>
+      <p>Solve drying issues, drum not spinning, overheating, long drying times, noise problems, and sensor or control panel errors in KitchenAid dryers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="KitchenAid MicrowaveBTS.html">Kitchenaid Microwave Troubleshooting Guide</a></h3>
+      <p>Fix heating problems, turntable not spinning, sparking issues, power failures, display errors, and control panel malfunctions in KitchenAid microwaves.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="KitchenAid OvenBTS.html">Kitchenaid Oven Troubleshooting Guide</a></h3>
+      <p>Resolve uneven cooking, heating failures, temperature control issues, fan malfunctions, and display or timer errors in KitchenAid ovens.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="KitchenAid RefBTS.html">Kitchenaid Refrigerator Troubleshooting Guide</a></h3>
+      <p>Fix cooling issues, temperature fluctuations, ice maker problems, water leakage, defrost system faults, and compressor or sensor errors in KitchenAid refrigerators.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="KitchenAid SystemBTS.html">Kitchenaid System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, and control panel notifications across KitchenAid appliances.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>KitchenAid FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common questions and solutions for KitchenAid mixers, ovens, dishwashers, and appliances</p>
+
+<!-- GENERAL -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on KitchenAid appliances?</div>
+<div class="answer">
+Error codes indicate a detected fault in sensors, motors, heating elements, water flow, or control boards.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I reset my KitchenAid appliance when an error appears?</div>
+<div class="answer">
+Yes. Power cycling may clear temporary faults, but repeated errors indicate a deeper issue.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a technician?</div>
+<div class="answer">
+Call a technician for electrical burning smells, motor failure, control board issues, or repeated shutdowns.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my KitchenAid appliance stop mid-cycle?</div>
+<div class="answer">
+This may be caused by overheating protection, door latch issues, power interruption, or sensor failure.
+</div>
+</div>
+
+</div>
+
+<!-- MIXER ISSUES -->
+<div class="faq-section">
+<div class="category-title">Stand Mixer Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my KitchenAid mixer not turning on?</div>
+<div class="answer">
+Power cord issues, internal fuse failure, or motor overload protection may prevent startup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my mixer making a loud noise?</div>
+<div class="answer">
+Worn gears, lack of lubrication, or overloading the bowl can cause noise.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my mixer slowing down?</div>
+<div class="answer">
+Overloaded dough, motor wear, or incorrect speed setting may cause reduced performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my mixer smell like burning?</div>
+<div class="answer">
+This usually indicates motor overheating or excessive load—stop using immediately.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is the mixer head wobbling?</div>
+<div class="answer">
+Loose locking mechanism or worn hinge pins may cause instability.
+</div>
+</div>
+
+</div>
+
+<!-- DISHWASHER -->
+<div class="faq-section">
+<div class="category-title">Dishwasher Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my KitchenAid dishwasher not draining?</div>
+<div class="answer">
+Clogged drain filter, blocked hose, or faulty drain pump are common causes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why are dishes still dirty after a cycle?</div>
+<div class="answer">
+Blocked spray arms, low water pressure, or detergent issues may reduce cleaning performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my dishwasher not starting?</div>
+<div class="answer">
+Door latch failure, control lock, or power supply issues may prevent operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is water leaking from my dishwasher?</div>
+<div class="answer">
+Worn door seal, overloading, or damaged pump seal can cause leaks.
+</div>
+</div>
+
+</div>
+
+<!-- OVEN & COOKING -->
+<div class="faq-section">
+<div class="category-title">Oven & Cooking Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my KitchenAid oven not heating?</div>
+<div class="answer">
+Faulty heating element, igniter failure, or thermostat issues may be responsible.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my oven temperature incorrect?</div>
+<div class="answer">
+Sensor calibration issues or faulty thermostat can cause inaccurate heating.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my oven turn off by itself?</div>
+<div class="answer">
+Overheating protection or electrical control board faults may cause shutdowns.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my oven door not closing properly?</div>
+<div class="answer">
+Damaged hinges or door seal misalignment may prevent proper closure.
+</div>
+</div>
+
+</div>
+
+<!-- ELECTRICAL -->
+<div class="faq-section">
+<div class="category-title">Electrical & Power Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my KitchenAid appliance restart randomly?</div>
+<div class="answer">
+Voltage instability or control board malfunction may cause resets.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does it trip the breaker?</div>
+<div class="answer">
+Short circuits, motor faults, or overloaded electrical circuits may trigger breaker trips.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage KitchenAid appliances?</div>
+<div class="answer">
+Yes. Surges can damage electronic boards, motors, and heating systems.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my control panel not responding?</div>
+<div class="answer">
+Moisture, wiring issues, or PCB failure may cause unresponsive controls.
+</div>
+</div>
+
+</div>
+
+<!-- ADVANCED -->
+<div class="faq-section">
+<div class="category-title">Advanced Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why do multiple error codes appear at once?</div>
+<div class="answer">
+A single system failure (such as PCB or power supply) can trigger multiple related errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I fix KitchenAid errors myself?</div>
+<div class="answer">
+Basic cleaning and resets are safe, but motor, electrical, and control board issues require technicians.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What is the most common KitchenAid issue?</div>
+<div class="answer">
+Mixer gear wear, dishwasher drainage issues, and oven heating failures are most common.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my appliance smell like burning plastic?</div>
+<div class="answer">
+This indicates overheating motor or electrical component failure—stop use immediately.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> KitchenAid appliances perform best with regular cleaning, especially mixers and dishwasher filters.
+</div>
+
+</div>
+
+</body>
+</html>

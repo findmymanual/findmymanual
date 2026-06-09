@@ -9254,48 +9254,642 @@
 
 </body>
 
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        // Move all PDF boxes into a responsive grid
+ <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const search = document.getElementById("pdfSearch");
+
+    // This selects all your gray boxes
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    search.addEventListener("input", function () {
+        const q = this.value.toLowerCase().trim();
+
+        boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+                box.style.display = "";
+            } else {
+                box.style.display = "none";
+            }
+        });
+    });
+
+});
+</script>
+
+
+</body>
+
+                <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const search = document.getElementById("pdfSearch");
+
+    // This selects all your gray boxes
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    search.addEventListener("input", function () {
+        const q = this.value.toLowerCase().trim();
+
+        boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+                box.style.display = "";
+            } else {
+                box.style.display = "none";
+            }
+        });
+    });
+
+});
+</script>
+
+
+</body>
+
+          
+          <script>
+      document.addEventListener("DOMContentLoaded", () => {
+
+        const search = document.getElementById("pdfSearch");
+
+        // This selects all your gray boxes
         const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
-        if (boxes.length) {
-            const grid = document.createElement("div");
-            grid.className = "pdf-grid";
-            boxes.forEach(box => grid.appendChild(box));
-            const section = document.querySelector("section");
-            section.appendChild(grid);
-        }
 
-        // PDF button behavior & styling
-        document.querySelectorAll('.pdf-btn').forEach(btn => {
-            btn.addEventListener('click', function () {
-                const productId = this.getAttribute('data-product');
-                const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-                window.location.href = checkoutUrl;
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
+
+          boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+              box.style.display = "";
+            } else {
+              box.style.display = "none";
+            }
+          });
+        });
+
+      });
+    </script>
+
+
+</body>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Move all PDF boxes into a responsive grid
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    if (boxes.length) {
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
+    }
+
+    // PDF button behavior & styling
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
             });
+        });
+    }
 
-            const icon = btn.querySelector('svg');
-            btn.style.display = 'inline-flex';
-            btn.style.alignItems = 'center';
-            btn.style.gap = '8px';
-            btn.style.padding = '10px 16px';
-            btn.style.background = '#4e6e81';
-            btn.style.color = '#fff';
-            btn.style.borderRadius = '6px';
-            btn.style.textDecoration = 'none';
-            btn.style.fontWeight = 'bold';
-            btn.style.fontFamily = 'Arial, sans-serif';
-            btn.style.transition = 'background 0.3s ease';
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
+        });
+
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
+        const icon = btn.querySelector('svg');
+
+        btn.style.display = 'inline-flex';
+        btn.style.alignItems = 'center';
+        btn.style.gap = '8px';
+        btn.style.padding = '10px 16px';
+        btn.style.background = '#4e6e81';
+        btn.style.color = '#fff';
+        btn.style.borderRadius = '6px';
+        btn.style.textDecoration = 'none';
+        btn.style.fontWeight = 'bold';
+        btn.style.fontFamily = 'Arial, sans-serif';
+        btn.style.transition = 'background 0.3s ease';
+
+        if (icon) {
             icon.style.transition = 'transform 0.3s ease';
 
             btn.addEventListener('mouseover', () => {
                 icon.style.transform = 'translateY(3px)';
                 btn.style.background = '#5f879a';
             });
+
             btn.addEventListener('mouseout', () => {
                 icon.style.transform = 'translateY(0)';
                 btn.style.background = '#4e6e81';
             });
-        });
+        }
     });
+
+});
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Midea Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Midea troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Midea AirconBTS.html">Midea Air Conditioner Troubleshooting Guide</a></h3>
+      <p>Fix cooling issues, weak airflow, water leakage (drainage or condensation problems), sensor errors, and remote or power control malfunctions in Midea air conditioners.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Midea DishwasherBTS.html">Midea Dishwasher Troubleshooting Guide</a></h3>
+      <p>Solve cleaning performance issues, drainage problems, water not filling, heating failures, cycle interruptions, and error code alerts in Midea dishwashers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Midea MicrowaveBTS.html">Midea Microwave Troubleshooting Guide</a></h3>
+      <p>Fix heating problems, turntable not spinning, sparking issues, power failures, display errors, and control panel malfunctions in Midea microwaves.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Midea RefBTS.html">Midea Refrigerator Troubleshooting Guide</a></h3>
+      <p>Resolve cooling issues, temperature fluctuations, ice maker problems, water leakage, defrost system faults, and compressor or sensor errors in Midea refrigerators.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Midea SystemBTS.html">Midea System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, and control panel notifications across Midea appliances.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Midea WasherBTS.html">Midea Washer Troubleshooting Guide</a></h3>
+      <p>Fix drainage issues, spinning problems, vibration or noise, water filling errors, door lock faults, and cycle interruptions in Midea washing machines.</p>
+    </div>
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+ <h1>Midea FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common Midea appliance problems and solutions</p>
+
+<!-- GENERAL TROUBLESHOOTING -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on my Midea appliance?</div>
+<div class="answer">
+Error codes indicate a system-detected fault such as sensor failure, airflow blockage, drainage issues, or electrical communication problems.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I reset my Midea appliance when an error appears?</div>
+<div class="answer">
+Yes. Power cycling can clear temporary glitches. If the error returns, it indicates a deeper hardware issue.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a technician?</div>
+<div class="answer">
+Call a technician if there are repeated error codes, burning smells, compressor failure, or control board issues.
+</div>
+</div>
+</div>
+
+<!-- ERROR CODE ISSUES -->
+<div class="faq-section">
+<div class="category-title">Error Code Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Midea AC show E1, E2, or E3 errors?</div>
+<div class="answer">
+These usually relate to sensor faults, indoor/outdoor communication issues, or temperature detection errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Midea appliance show multiple error codes?</div>
+<div class="answer">
+Multiple errors often indicate a main control board issue or unstable power supply affecting several components.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I fix error codes myself?</div>
+<div class="answer">
+Simple issues like filter cleaning or resetting can be done at home, but electrical or refrigerant problems require a technician.
+</div>
+</div>
+</div>
+
+<!-- AIR CONDITIONER ISSUES -->
+<div class="faq-section">
+<div class="category-title">Air Conditioner Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Midea AC not cooling properly?</div>
+<div class="answer">
+This may be caused by dirty filters, low refrigerant, blocked airflow, or faulty compressor operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Midea AC leak water?</div>
+<div class="answer">
+Clogged drain pipes, frozen coils, or improper installation can cause water leakage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my AC turn ON and OFF repeatedly?</div>
+<div class="answer">
+This may be due to thermostat issues, overheating protection, or unstable voltage supply.
+</div>
+</div>
+</div>
+
+<!-- WASHING MACHINE ISSUES -->
+<div class="faq-section">
+<div class="category-title">Washing Machine Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Midea washer not spinning?</div>
+<div class="answer">
+This may be caused by unbalanced load, lid switch failure, or motor belt issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my washer not draining water?</div>
+<div class="answer">
+Blocked drain pump, clogged hose, or faulty drain motor may prevent proper drainage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my washing machine stop mid-cycle?</div>
+<div class="answer">
+Power interruptions, overheating motor, or control board failure may cause cycle interruption.
+</div>
+</div>
+</div>
+
+<!-- REFRIGERATOR ISSUES -->
+<div class="faq-section">
+<div class="category-title">Refrigerator Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Midea refrigerator not cooling?</div>
+<div class="answer">
+Dirty condenser coils, faulty compressor, or airflow blockage can reduce cooling performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my freezer too warm?</div>
+<div class="answer">
+Defrost system failure, door seal leaks, or blocked vents may cause temperature issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is there water inside my fridge?</div>
+<div class="answer">
+A clogged defrost drain or leaking water line is the most common cause.
+</div>
+</div>
+</div>
+
+<!-- MICROWAVE ISSUES -->
+<div class="faq-section">
+<div class="category-title">Microwave Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Midea microwave not heating?</div>
+<div class="answer">
+Faulty magnetron, door switch issues, or blown fuse may prevent heating.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my microwave spark inside?</div>
+<div class="answer">
+Metal objects, damaged waveguide cover, or internal arcing may cause sparks.
+</div>
+</div>
+</div>
+
+<!-- POWER & ELECTRICAL -->
+<div class="faq-section">
+<div class="category-title">Power & Electrical Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Midea appliance trip the breaker?</div>
+<div class="answer">
+Electrical overload, short circuit, or internal component failure may cause breaker trips.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage Midea appliances?</div>
+<div class="answer">
+Yes. Surges can damage control boards, compressors, and sensors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my appliance randomly shut off?</div>
+<div class="answer">
+Overheating protection or unstable voltage supply may cause shutdowns.
+</div>
+</div>
+</div>
+
+<!-- SENSOR & CONTROL -->
+<div class="faq-section">
+<div class="category-title">Sensor & Control Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Midea appliance show sensor errors?</div>
+<div class="answer">
+Faulty temperature, humidity, or water level sensors can trigger errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my control panel not responding?</div>
+<div class="answer">
+Moisture damage, loose wiring, or control board failure may affect buttons.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can sensors be replaced?</div>
+<div class="answer">
+Yes, most sensors can be replaced by a qualified technician.
+</div>
+</div>
+</div>
+
+<!-- EXTRA -->
+<div class="faq-section">
+<div class="category-title">Extra Common Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Midea appliance smell like burning?</div>
+<div class="answer">
+This may indicate motor overheating, electrical issues, or belt friction problems.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is there vibration during operation?</div>
+<div class="answer">
+Unbalanced load, worn parts, or improper installation may cause vibration.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace instead of repair?</div>
+<div class="answer">
+If repair costs are too high or the unit is over 8–10 years old, replacement may be better.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Regular cleaning and proper maintenance can significantly reduce Midea appliance errors and extend lifespan.
+</div>
+
+</div>
+
+</body>
+</html>

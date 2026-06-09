@@ -3862,29 +3862,164 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 
-
-
-        <script>
+                <script>
 document.addEventListener("DOMContentLoaded", () => {
+
+    const search = document.getElementById("pdfSearch");
+
+    // This selects all your gray boxes
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    search.addEventListener("input", function () {
+        const q = this.value.toLowerCase().trim();
+
+        boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+                box.style.display = "";
+            } else {
+                box.style.display = "none";
+            }
+        });
+    });
+
+});
+</script>
+
+
+</body>
+
+          
+          <script>
+      document.addEventListener("DOMContentLoaded", () => {
+
+        const search = document.getElementById("pdfSearch");
+
+        // This selects all your gray boxes
+        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
+
+          boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+              box.style.display = "";
+            } else {
+              box.style.display = "none";
+            }
+          });
+        });
+
+      });
+    </script>
+
+
+</body>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     // Move all PDF boxes into a responsive grid
     const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
     if (boxes.length) {
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-        boxes.forEach(box => grid.appendChild(box));
-        const section = document.querySelector("section");
-        section.appendChild(grid);
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
     }
 
     // PDF button behavior & styling
     document.querySelectorAll('.pdf-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const productId = this.getAttribute('data-product');
-            const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            window.location.href = checkoutUrl;
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
+        });
+    }
+
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
         });
 
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
         const icon = btn.querySelector('svg');
+
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
         btn.style.gap = '8px';
@@ -3896,16 +4031,409 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.style.fontWeight = 'bold';
         btn.style.fontFamily = 'Arial, sans-serif';
         btn.style.transition = 'background 0.3s ease';
-        icon.style.transition = 'transform 0.3s ease';
 
-        btn.addEventListener('mouseover', () => {
-            icon.style.transform = 'translateY(3px)';
-            btn.style.background = '#5f879a';
-        });
-        btn.addEventListener('mouseout', () => {
-            icon.style.transform = 'translateY(0)';
-            btn.style.background = '#4e6e81';
-        });
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
     });
+
 });
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Sub-Zero Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Sub-Zero troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Sub-Zero Ice MakerBTS.html">Sub-Zero Ice Maker Troubleshooting Guide</a></h3>
+      <p>Fix ice production issues, no ice or low ice output, water supply problems, clogged filters, temperature inconsistencies, and sensor or control faults in Sub-Zero ice makers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Sub-Zero RefBTS.html">Sub-Zero Refrigerator Troubleshooting Guide</a></h3>
+      <p>Solve cooling problems, temperature fluctuations, frost buildup, water leakage, compressor issues, door seal faults, and sensor or control panel errors in Sub-Zero refrigerators.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Sub-Zero SystemBTS.html">Sub-Zero Microwave Troubleshooting Guide</a></h3>
+      <p>Fix heating issues, uneven cooking, power failures, turntable not spinning, display errors, and control panel malfunctions in Sub-Zero microwaves.</p>
+    </div>
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Sub-Zero FAQ - Troubleshooting & Error Codes</h1>
+<p class="subtitle">Premium refrigeration troubleshooting and maintenance guide</p>
+
+<!-- GENERAL -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error indicator mean on a Sub-Zero refrigerator?</div>
+<div class="answer">
+It indicates a system issue such as temperature imbalance, airflow restriction, sensor failure, or compressor performance issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I reset my Sub-Zero unit when an alarm appears?</div>
+<div class="answer">
+Yes, a reset can clear temporary faults. However, repeated alarms indicate a deeper mechanical or electronic issue.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I contact Sub-Zero service support?</div>
+<div class="answer">
+Contact support if cooling stops, the compressor is noisy, temperature fluctuates heavily, or alarms persist after reset.
+</div>
+</div>
+</div>
+
+<!-- TEMPERATURE ISSUES -->
+<div class="faq-section">
+<div class="category-title">Temperature & Cooling Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Sub-Zero fridge not cooling properly?</div>
+<div class="answer">
+Common causes include dirty condenser coils, blocked airflow vents, failing evaporator fan, or compressor issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my freezer too warm?</div>
+<div class="answer">
+This may be caused by defrost system failure, door seal leaks, or restricted airflow between compartments.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my refrigerator temperature fluctuating?</div>
+<div class="answer">
+Temperature swings can result from faulty thermostats, sensor errors, or frequent door opening.
+</div>
+</div>
+</div>
+
+<!-- AIRFLOW & NOISE -->
+<div class="faq-section">
+<div class="category-title">Airflow & Noise Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is there weak airflow inside my Sub-Zero fridge?</div>
+<div class="answer">
+Blocked vents, iced evaporator coils, or failing fans can restrict airflow.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Sub-Zero making loud noises?</div>
+<div class="answer">
+Noises may come from the compressor, evaporator fan, or vibration from uneven installation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Is humming noise normal?</div>
+<div class="answer">
+Yes, a low hum is normal during cooling cycles, but loud or irregular sounds indicate a fault.
+</div>
+</div>
+</div>
+
+<!-- ICE MAKER ISSUES -->
+<div class="faq-section">
+<div class="category-title">Ice Maker Problems</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Sub-Zero ice maker not working?</div>
+<div class="answer">
+It may be caused by water supply issues, frozen water lines, or faulty ice maker module.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is ice tasting or smelling bad?</div>
+<div class="answer">
+Old water filters, contaminated water lines, or dirty ice bins can affect ice quality.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my ice maker overproducing or leaking?</div>
+<div class="answer">
+Faulty water inlet valve or incorrect ice level sensor calibration may cause overflow issues.
+</div>
+</div>
+</div>
+
+<!-- DOOR & SEAL ISSUES -->
+<div class="faq-section">
+<div class="category-title">Door & Seal Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Sub-Zero door not sealing properly?</div>
+<div class="answer">
+Damaged gaskets, misalignment, or dirt buildup can prevent proper sealing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is condensation forming inside the fridge?</div>
+<div class="answer">
+This is usually caused by air leaks or frequent door openings.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my fridge alarm go off when door is closed?</div>
+<div class="answer">
+A faulty door sensor or misaligned magnet switch may trigger false alarms.
+</div>
+</div>
+</div>
+
+<!-- POWER & SYSTEM -->
+<div class="faq-section">
+<div class="category-title">Power & System Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sub-Zero keep restarting?</div>
+<div class="answer">
+This may be due to unstable power supply, control board failure, or voltage fluctuations.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my fridge completely dead?</div>
+<div class="answer">
+Possible causes include blown fuse, tripped breaker, or failed power board.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage Sub-Zero units?</div>
+<div class="answer">
+Yes. Surges can damage control boards, compressors, and sensors.
+</div>
+</div>
+</div>
+
+<!-- MAINTENANCE -->
+<div class="faq-section">
+<div class="category-title">Maintenance Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I clean condenser coils?</div>
+<div class="answer">
+Every 6 months to maintain efficient cooling and prevent compressor strain.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should filters be replaced?</div>
+<div class="answer">
+Typically every 6 months depending on usage and water quality.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What maintenance prevents breakdowns?</div>
+<div class="answer">
+Regular cleaning, checking seals, replacing filters, and ensuring proper ventilation.
+</div>
+</div>
+</div>
+
+<!-- EXTRA -->
+<div class="faq-section">
+<div class="category-title">Extra Common Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sub-Zero smell inside?</div>
+<div class="answer">
+Odors may come from spoiled food, dirty filters, or moisture buildup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is frost building up inside the freezer?</div>
+<div class="answer">
+Caused by door seal leaks or defrost system failure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace instead of repair?</div>
+<div class="answer">
+If compressor fails or repair costs are too high compared to unit age (10–15 years).
+</div>
+</div>
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Sub-Zero appliances are premium systems—most issues are related to airflow, sealed system, or sensors. Regular maintenance is critical.
+</div>
+
+</div>
+
+</body>
+</html>

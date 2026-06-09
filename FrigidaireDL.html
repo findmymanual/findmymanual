@@ -6311,56 +6311,134 @@
 </div>
 
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
+          <script>
+      document.addEventListener("DOMContentLoaded", () => {
 
-    const search = document.getElementById("pdfSearch");
+        const search = document.getElementById("pdfSearch");
 
-    // This selects all your gray boxes
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+        // This selects all your gray boxes
+        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-    search.addEventListener("input", function () {
-        const q = this.value.toLowerCase().trim();
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
 
-        boxes.forEach(box => {
+          boxes.forEach(box => {
             const text = box.textContent.toLowerCase();
 
             // show if matched, hide if not
             if (text.includes(q)) {
-                box.style.display = "";
+              box.style.display = "";
             } else {
-                box.style.display = "none";
+              box.style.display = "none";
             }
+          });
         });
-    });
 
-});
-</script>
+      });
+    </script>
 
 
 </body>
 
+
 <script>
-document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     // Move all PDF boxes into a responsive grid
     const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
     if (boxes.length) {
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-        boxes.forEach(box => grid.appendChild(box));
-        const section = document.querySelector("section");
-        section.appendChild(grid);
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
     }
 
     // PDF button behavior & styling
     document.querySelectorAll('.pdf-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const productId = this.getAttribute('data-product');
-            const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            window.location.href = checkoutUrl;
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
+        });
+    }
+
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
         });
 
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
         const icon = btn.querySelector('svg');
+
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
         btn.style.gap = '8px';
@@ -6372,16 +6450,613 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.style.fontWeight = 'bold';
         btn.style.fontFamily = 'Arial, sans-serif';
         btn.style.transition = 'background 0.3s ease';
-        icon.style.transition = 'transform 0.3s ease';
 
-        btn.addEventListener('mouseover', () => {
-            icon.style.transform = 'translateY(3px)';
-            btn.style.background = '#5f879a';
-        });
-        btn.addEventListener('mouseout', () => {
-            icon.style.transform = 'translateY(0)';
-            btn.style.background = '#4e6e81';
-        });
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
     });
+
 });
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Frigidaire Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Frigidaire troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Frigidaire DishwasherBTS.html">Frigidaire Dishwasher Troubleshooting Guide</a></h3>
+      <p>Fix drainage issues, poor cleaning performance, water not filling, heating failures, cycle interruptions, and error code problems in Frigidaire dishwashers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Frigidaire DryerBTS.html">Frigidaire Dryer Troubleshooting Guide</a></h3>
+      <p>Solve drying issues, drum not spinning, overheating, long drying times, noise problems, and sensor or control panel errors in Frigidaire dryers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Frigidaire MicrowaveBTS.html">Frigidaire Microwave Troubleshooting Guide</a></h3>
+      <p>Fix heating problems, turntable not spinning, sparking issues, power failures, display errors, and control panel malfunctions in Frigidaire microwaves.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Frigidaire OvenBTS.html">Frigidaire Oven Troubleshooting Guide</a></h3>
+      <p>Resolve uneven cooking, heating failures, temperature control issues, fan malfunctions, and display or timer errors in Frigidaire ovens.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Frigidaire RefBTS.html">Frigidaire Refrigerator Troubleshooting Guide</a></h3>
+      <p>Fix cooling issues, temperature fluctuations, ice maker problems, water leakage, defrost system faults, and compressor or sensor errors in Frigidaire refrigerators.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Frigidaire SystemBTS.html">Frigidaire System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, and control panel notifications across Frigidaire appliances.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Frigidaire WasherBTS.html">Frigidaire Washer Troubleshooting Guide</a></h3>
+      <p>Solve drainage issues, spinning problems, vibration or noise, water filling errors, door lock faults, and cycle interruptions in Frigidaire washing machines.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haier FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maytag FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frigidaire FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Frigidaire FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common questions and solutions for Frigidaire refrigerators, washers, dryers, and appliances</p>
+
+<!-- GENERAL -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on Frigidaire appliances?</div>
+<div class="answer">
+Error codes indicate that the system has detected a malfunction in sensors, cooling, water flow, heating, or control boards.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I reset my Frigidaire appliance when an error appears?</div>
+<div class="answer">
+Yes. Turning the unit off for 5–10 minutes can clear temporary faults, but recurring errors require deeper diagnosis.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a technician?</div>
+<div class="answer">
+Call a technician for compressor failure, electrical burning smell, PCB issues, or repeated system shutdowns.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Frigidaire appliance randomly stop working?</div>
+<div class="answer">
+This can be caused by power fluctuations, overheating protection, faulty sensors, or internal wiring issues.
+</div>
+</div>
+
+</div>
+
+<!-- REFRIGERATOR -->
+<div class="faq-section">
+<div class="category-title">Refrigerator Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire refrigerator not cooling?</div>
+<div class="answer">
+Common causes include dirty condenser coils, faulty evaporator fan, or compressor issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my freezer working but fridge warm?</div>
+<div class="answer">
+This usually indicates a blocked air vent or faulty damper control.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my fridge making loud noises?</div>
+<div class="answer">
+Noise may come from the fan motor, ice buildup, or compressor vibration.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is water leaking inside my fridge?</div>
+<div class="answer">
+Clogged defrost drain or damaged door seals can cause water accumulation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my fridge running constantly?</div>
+<div class="answer">
+Dirty coils, warm room temperature, or failing thermostat can cause continuous operation.
+</div>
+</div>
+
+</div>
+
+<!-- WASHER -->
+<div class="faq-section">
+<div class="category-title">Washer Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire washer not spinning?</div>
+<div class="answer">
+Unbalanced load, faulty lid switch, or worn drive belt may be responsible.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my washer not draining?</div>
+<div class="answer">
+Blocked pump filter, kinked hose, or pump failure can stop drainage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my washer stop mid-cycle?</div>
+<div class="answer">
+This may be caused by overheating motor, power interruptions, or control board faults.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E41 or E43 mean?</div>
+<div class="answer">
+These errors often relate to door lock or control system failures.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my washer shaking violently?</div>
+<div class="answer">
+Uneven load distribution or worn shock absorbers are the most common causes.
+</div>
+</div>
+
+</div>
+
+<!-- DRYER -->
+<div class="faq-section">
+<div class="category-title">Dryer Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire dryer not heating?</div>
+<div class="answer">
+Faulty heating element, thermal fuse, or thermostat failure may cause no heat.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my dryer take too long?</div>
+<div class="answer">
+Blocked lint filter, clogged vent, or airflow restriction reduces drying efficiency.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my dryer stop suddenly?</div>
+<div class="answer">
+Overheating protection or faulty door switch can interrupt cycles.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my dryer making loud noise?</div>
+<div class="answer">
+Worn drum bearings, belt issues, or foreign objects inside drum may be responsible.
+</div>
+</div>
+
+</div>
+
+<!-- ELECTRICAL -->
+<div class="faq-section">
+<div class="category-title">Electrical & Power Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my appliance keep restarting?</div>
+<div class="answer">
+Voltage fluctuations or control board malfunction can cause restarts.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does it trip the breaker?</div>
+<div class="answer">
+Short circuits, motor failure, or overloaded circuits are common reasons.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage Frigidaire appliances?</div>
+<div class="answer">
+Yes. Surges can damage PCB boards, sensors, and compressors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my control panel not responding?</div>
+<div class="answer">
+Moisture damage, power failure, or faulty UI board may cause unresponsiveness.
+</div>
+</div>
+
+</div>
+
+<!-- ADVANCED -->
+<div class="faq-section">
+<div class="category-title">Advanced Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why do multiple error codes appear?</div>
+<div class="answer">
+A single root failure like PCB or power supply can trigger multiple system errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I fix Frigidaire error codes myself?</div>
+<div class="answer">
+Basic cleaning and resets are safe, but motor or board issues require professional repair.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What is the most common Frigidaire issue?</div>
+<div class="answer">
+Cooling problems in refrigerators and drainage issues in washers are most common.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my appliance smell like burning?</div>
+<div class="answer">
+This may indicate overheating motor, electrical failure, or belt friction—stop using immediately.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Regular coil cleaning and filter maintenance significantly reduce Frigidaire appliance failures.
+</div>
+
+</div>
+
+</body>
+</html>

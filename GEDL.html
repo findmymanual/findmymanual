@@ -5743,56 +5743,134 @@
                 </svg>Download PDF</a>
         </div>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
 
-    const search = document.getElementById("pdfSearch");
+        const search = document.getElementById("pdfSearch");
 
-    // This selects all your gray boxes
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+        // This selects all your gray boxes
+        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-    search.addEventListener("input", function () {
-        const q = this.value.toLowerCase().trim();
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
 
-        boxes.forEach(box => {
+          boxes.forEach(box => {
             const text = box.textContent.toLowerCase();
 
             // show if matched, hide if not
             if (text.includes(q)) {
-                box.style.display = "";
+              box.style.display = "";
             } else {
-                box.style.display = "none";
+              box.style.display = "none";
             }
+          });
         });
-    });
 
-});
-</script>
+      });
+    </script>
 
 
 </body>
 
+
 <script>
-document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     // Move all PDF boxes into a responsive grid
     const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
     if (boxes.length) {
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-        boxes.forEach(box => grid.appendChild(box));
-        const section = document.querySelector("section");
-        section.appendChild(grid);
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
     }
 
     // PDF button behavior & styling
     document.querySelectorAll('.pdf-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const productId = this.getAttribute('data-product');
-            const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            window.location.href = checkoutUrl;
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
+        });
+    }
+
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
         });
 
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
         const icon = btn.querySelector('svg');
+
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
         btn.style.gap = '8px';
@@ -5804,16 +5882,605 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.style.fontWeight = 'bold';
         btn.style.fontFamily = 'Arial, sans-serif';
         btn.style.transition = 'background 0.3s ease';
-        icon.style.transition = 'transform 0.3s ease';
 
-        btn.addEventListener('mouseover', () => {
-            icon.style.transform = 'translateY(3px)';
-            btn.style.background = '#5f879a';
-        });
-        btn.addEventListener('mouseout', () => {
-            icon.style.transform = 'translateY(0)';
-            btn.style.background = '#4e6e81';
-        });
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
     });
+
 });
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">GE Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step GE troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="GE AirconBTS.html">GE Air Conditioner Troubleshooting Guide</a></h3>
+      <p>Fix cooling issues, weak airflow, water leakage (drainage/condensation problems), sensor errors, and remote or power control malfunctions in GE air conditioners.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="GE DishwasherBTS.html">GE Dishwasher Troubleshooting Guide</a></h3>
+      <p>Solve cleaning performance issues, drainage problems, water not filling, heating failures, cycle interruptions, and error code alerts in GE dishwashers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="GE MicrowaveBTS.html">GE Microwave Troubleshooting Guide</a></h3>
+      <p>Fix heating problems, turntable not spinning, sparking issues, power failures, display errors, and control panel malfunctions in GE microwaves.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="GE OvenBTS.html">GE Oven Troubleshooting Guide</a></h3>
+      <p>Resolve uneven cooking, heating failures, temperature control issues, fan malfunctions, and display or timer errors in GE ovens.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="GE RefBTS.html">GE Refrigerator Troubleshooting Guide</a></h3>
+      <p>Fix cooling problems, temperature fluctuations, ice maker issues, water leakage, defrost system faults, and compressor or sensor errors in GE refrigerators.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="GE SystemBTS.html">GE System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, and control panel notifications across GE appliances.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="GE WashingBTS.html">GE Washer Troubleshooting Guide</a></h3>
+      <p>Fix drainage issues, spinning problems, vibration or noise, water filling errors, door lock faults, and cycle interruptions in GE washing machines.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GE FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whirlpool FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GE FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>GE Frequently Asked Questions</h1>
+<p class="subtitle">Common questions and solutions for GE home appliances and system errors</p>
+
+<!-- ================= GENERAL ================= -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting (GE Appliances)</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on GE appliances?</div>
+<div class="answer">
+GE error codes indicate system faults such as water supply issues, drainage blockage, motor failure, temperature sensor errors, or communication problems between control boards.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I reset my GE appliance when it shows an error?</div>
+<div class="answer">
+Yes. Unplugging the appliance for 1–5 minutes or using the reset function can clear temporary system glitches.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call GE support or a technician?</div>
+<div class="answer">
+Call support if you notice repeated error codes, burning smell, water leaks, failure to start, or electrical issues.
+</div>
+</div>
+
+</div>
+
+<!-- ================= WASHING MACHINE ================= -->
+<div class="faq-section">
+<div class="category-title">GE Washing Machine Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE washer not spinning?</div>
+<div class="answer">
+This may be caused by unbalanced load, lid lock failure, motor issues, or drain pump blockage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does UE or E4 error mean on GE washer?</div>
+<div class="answer">
+UE indicates unbalanced load, while E4 may indicate drainage or water level issues depending on model.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE washer not draining?</div>
+<div class="answer">
+Clogged drain hose, blocked pump filter, or faulty drain pump are common causes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my washing machine vibrating heavily?</div>
+<div class="answer">
+Uneven flooring or improper load distribution can cause excessive vibration.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE washer not filling with water?</div>
+<div class="answer">
+Check water supply valves, inlet hose blockage, or faulty water inlet valve.
+</div>
+</div>
+
+</div>
+
+<!-- ================= DRYER ================= -->
+<div class="faq-section">
+<div class="category-title">GE Dryer Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE dryer not heating?</div>
+<div class="answer">
+Common causes include blown thermal fuse, faulty heating element, or thermostat failure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my dryer taking too long to dry clothes?</div>
+<div class="answer">
+Blocked lint filter, clogged vent, or poor airflow are common causes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my GE dryer stop mid-cycle?</div>
+<div class="answer">
+Overheating protection or power interruption may stop the cycle.
+</div>
+</div>
+
+</div>
+
+<!-- ================= REFRIGERATOR ================= -->
+<div class="faq-section">
+<div class="category-title">GE Refrigerator Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE refrigerator not cooling?</div>
+<div class="answer">
+Possible causes include dirty condenser coils, faulty evaporator fan, thermostat issues, or refrigerant leaks.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE fridge leaking water?</div>
+<div class="answer">
+Blocked defrost drain or damaged door seals can cause water leakage inside the fridge.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE refrigerator making loud noise?</div>
+<div class="answer">
+Noises may come from compressor vibration, fan motor issues, or ice buildup near evaporator.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my freezer not freezing properly?</div>
+<div class="answer">
+This may be due to airflow blockage, faulty thermostat, or refrigerant issues.
+</div>
+</div>
+
+</div>
+
+<!-- ================= DISHWASHER ================= -->
+<div class="faq-section">
+<div class="category-title">GE Dishwasher Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE dishwasher not cleaning dishes properly?</div>
+<div class="answer">
+Clogged spray arms, low water pressure, or incorrect detergent use may reduce cleaning performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my dishwasher not draining?</div>
+<div class="answer">
+Blocked drain hose or pump filter is the most common cause.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my GE dishwasher smell bad?</div>
+<div class="answer">
+Food debris buildup, dirty filter, or stagnant water can cause odor issues.
+</div>
+</div>
+
+</div>
+
+<!-- ================= OVEN ================= -->
+<div class="faq-section">
+<div class="category-title">GE Oven & Stove Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE oven not heating?</div>
+<div class="answer">
+Faulty heating elements, ignition failure, or thermostat issues may be the cause.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my oven temperature incorrect?</div>
+<div class="answer">
+Sensor calibration problems or faulty temperature probes can cause incorrect heating.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my GE oven turn off during cooking?</div>
+<div class="answer">
+Overheating protection or unstable power supply may trigger shutdown.
+</div>
+</div>
+
+</div>
+
+<!-- ================= POWER & SENSOR ================= -->
+<div class="faq-section">
+<div class="category-title">Power & Sensor Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my GE appliance keep restarting?</div>
+<div class="answer">
+This is usually caused by unstable power supply or faulty control board.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can sensors cause GE error codes?</div>
+<div class="answer">
+Yes. Temperature, water level, and door sensors can trigger system errors when malfunctioning.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my GE appliance stop mid-cycle?</div>
+<div class="answer">
+This may be caused by overheating, power interruption, or electronic board failure.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> GE appliances often use smart diagnostics—many errors can be cleared with reset + cleaning before repair is needed.
+</div>
+
+</div>
+
+</body>
+</html>

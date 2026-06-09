@@ -2799,56 +2799,134 @@
 </div>
 
 
-    <script>
-document.addEventListener("DOMContentLoaded", () => {
+          <script>
+      document.addEventListener("DOMContentLoaded", () => {
 
-    const search = document.getElementById("pdfSearch");
+        const search = document.getElementById("pdfSearch");
 
-    // This selects all your gray boxes
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+        // This selects all your gray boxes
+        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-    search.addEventListener("input", function () {
-        const q = this.value.toLowerCase().trim();
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
 
-        boxes.forEach(box => {
+          boxes.forEach(box => {
             const text = box.textContent.toLowerCase();
 
             // show if matched, hide if not
             if (text.includes(q)) {
-                box.style.display = "";
+              box.style.display = "";
             } else {
-                box.style.display = "none";
+              box.style.display = "none";
             }
+          });
         });
-    });
 
-});
-</script>
+      });
+    </script>
 
 
 </body>
 
-       <script>
-document.addEventListener("DOMContentLoaded", () => {
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     // Move all PDF boxes into a responsive grid
     const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
     if (boxes.length) {
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-        boxes.forEach(box => grid.appendChild(box));
-        const section = document.querySelector("section");
-        section.appendChild(grid);
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
     }
 
     // PDF button behavior & styling
     document.querySelectorAll('.pdf-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const productId = this.getAttribute('data-product');
-            const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            window.location.href = checkoutUrl;
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
+        });
+    }
+
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
         });
 
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
         const icon = btn.querySelector('svg');
+
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
         btn.style.gap = '8px';
@@ -2860,16 +2938,491 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.style.fontWeight = 'bold';
         btn.style.fontFamily = 'Arial, sans-serif';
         btn.style.transition = 'background 0.3s ease';
-        icon.style.transition = 'transform 0.3s ease';
 
-        btn.addEventListener('mouseover', () => {
-            icon.style.transform = 'translateY(3px)';
-            btn.style.background = '#5f879a';
-        });
-        btn.addEventListener('mouseout', () => {
-            icon.style.transform = 'translateY(0)';
-            btn.style.background = '#4e6e81';
-        });
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
     });
+
 });
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Maytag Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Maytag troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Maytag DishwasherBTS.html">Maytag Dishwasher Troubleshooting Guide</a></h3>
+      <p>Fix drainage issues, poor cleaning performance, water not filling, heating failures, cycle interruptions, and error code problems in Maytag dishwashers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Maytag DryerBTS.html">Maytag Dryer Troubleshooting Guide</a></h3>
+      <p>Solve drying problems, drum not spinning, overheating, long drying times, noise issues, and sensor or control panel errors in Maytag dryers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Maytag MicrowaveBTS.html">Maytag Microwave Troubleshooting Guide</a></h3>
+      <p>Fix heating issues, turntable not spinning, sparking problems, power failures, display errors, and control panel malfunctions in Maytag microwaves.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Maytag OvenBTS.html">Maytag Oven Troubleshooting Guide</a></h3>
+      <p>Resolve uneven cooking, heating failures, temperature control issues, fan malfunctions, and display or timer errors in Maytag ovens.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Maytag RefBTS.html">Maytag Refrigerator Troubleshooting Guide</a></h3>
+      <p>Fix cooling issues, temperature fluctuations, ice maker problems, water leakage, defrost system faults, and compressor or sensor errors in Maytag refrigerators.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Maytag SystemBTS.html">Maytag System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, and control panel notifications across Maytag appliances.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Maytag WasherBTS.html">Maytag Washer Troubleshooting Guide</a></h3>
+      <p>Solve drainage issues, spinning problems, vibration or noise, water filling errors, door lock faults, and cycle interruptions in Maytag washing machines.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haier FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maytag FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Maytag FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common questions and solutions for Maytag washers, dryers, and appliances</p>
+
+<!-- GENERAL -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on Maytag appliances?</div>
+<div class="answer">
+Error codes indicate a detected fault in the system such as water flow issues, motor failure, sensor problems, or control board errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I reset my Maytag appliance when an error appears?</div>
+<div class="answer">
+Yes. Power cycling can clear temporary glitches, but repeated errors usually indicate a hardware issue.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a technician?</div>
+<div class="answer">
+Call a technician if there are repeated failures, burning smells, motor issues, or control board errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Maytag appliance stop mid-cycle?</div>
+<div class="answer">
+This may be caused by lid switch issues, water supply interruption, overheating, or PCB failure.
+</div>
+</div>
+
+</div>
+
+<!-- WASHER ISSUES -->
+<div class="faq-section">
+<div class="category-title">Washer Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Maytag washer not spinning?</div>
+<div class="answer">
+Unbalanced load, worn drive belt, or motor coupling failure can prevent spinning.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my washer not draining?</div>
+<div class="answer">
+Clogged drain pump, blocked hose, or faulty pump motor may be the cause.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does F8 E1 error mean?</div>
+<div class="answer">
+This indicates a water supply issue—either low water pressure or clogged inlet screens.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my washer shaking violently?</div>
+<div class="answer">
+This is usually due to uneven load distribution or damaged shock absorbers.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my washer not filling with water?</div>
+<div class="answer">
+Blocked inlet valve, kinked hose, or water supply issue may be responsible.
+</div>
+</div>
+
+</div>
+
+<!-- DRYER ISSUES -->
+<div class="faq-section">
+<div class="category-title">Dryer Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Maytag dryer not heating?</div>
+<div class="answer">
+Faulty heating element, thermal fuse, or thermostat failure can stop heating.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my dryer taking too long to dry clothes?</div>
+<div class="answer">
+Blocked lint filter, clogged vent, or airflow restriction is the most common cause.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my dryer stop mid-cycle?</div>
+<div class="answer">
+Overheating protection or faulty door switch may cause shutdowns.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my dryer making loud noise?</div>
+<div class="answer">
+Worn drum rollers, belt issues, or foreign objects inside drum can cause noise.
+</div>
+</div>
+
+</div>
+
+<!-- ELECTRICAL & CONTROL -->
+<div class="faq-section">
+<div class="category-title">Electrical & Control Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Maytag appliance keep restarting?</div>
+<div class="answer">
+Power fluctuations or faulty control board can cause automatic restarts.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my appliance trip the breaker?</div>
+<div class="answer">
+Electrical short, motor failure, or overloaded circuit may be responsible.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage Maytag appliances?</div>
+<div class="answer">
+Yes, surges can damage control boards and internal electronics.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my control panel not responding?</div>
+<div class="answer">
+This may be caused by moisture damage, PCB failure, or power supply issues.
+</div>
+</div>
+
+</div>
+
+<!-- ADVANCED -->
+<div class="faq-section">
+<div class="category-title">Advanced Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why do multiple error codes appear at once?</div>
+<div class="answer">
+A single system failure (like PCB or power supply) can trigger multiple secondary errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I fix Maytag error codes myself?</div>
+<div class="answer">
+Basic cleaning and resets are safe, but motor, sensor, and board issues require technicians.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What is the most common Maytag failure?</div>
+<div class="answer">
+Drainage issues in washers, heating issues in dryers, and control board faults are most common.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my appliance smell like burning?</div>
+<div class="answer">
+This may indicate motor overheating, belt friction, or electrical short circuits—stop use immediately.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Regular cleaning of lint filters and drain systems prevents most Maytag appliance errors.
+</div>
+
+</div>
+
+</body>
+</html>

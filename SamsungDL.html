@@ -8031,53 +8031,54 @@
     <script>
 document.addEventListener("DOMContentLoaded", () => {
 
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
     const search = document.getElementById("pdfSearch");
 
-    // This selects all your gray boxes
     const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-    search.addEventListener("input", function () {
-        const q = this.value.toLowerCase().trim();
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
 
-        boxes.forEach(box => {
-            const text = box.textContent.toLowerCase();
-
-            // show if matched, hide if not
-            if (text.includes(q)) {
-                box.style.display = "";
-            } else {
-                box.style.display = "none";
-            }
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
         });
-    });
-
-});
-</script>
-
-
-</body>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    // Move all PDF boxes into a responsive grid
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
-    if (boxes.length) {
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-        boxes.forEach(box => grid.appendChild(box));
-        const section = document.querySelector("section");
-        section.appendChild(grid);
     }
 
-    // PDF button behavior & styling
-    document.querySelectorAll('.pdf-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const productId = this.getAttribute('data-product');
-            const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            window.location.href = checkoutUrl;
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
         });
 
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
         const icon = btn.querySelector('svg');
+
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
         btn.style.gap = '8px';
@@ -8089,16 +8090,348 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.style.fontWeight = 'bold';
         btn.style.fontFamily = 'Arial, sans-serif';
         btn.style.transition = 'background 0.3s ease';
-        icon.style.transition = 'transform 0.3s ease';
 
-        btn.addEventListener('mouseover', () => {
-            icon.style.transform = 'translateY(3px)';
-            btn.style.background = '#5f879a';
-        });
-        btn.addEventListener('mouseout', () => {
-            icon.style.transform = 'translateY(0)';
-            btn.style.background = '#4e6e81';
-        });
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
     });
+
 });
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Samsung Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Samsung troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Samsung AirconBTS.html">Samsung Air Conditioner Troubleshooting Guide</a></h3>
+      <p>Fix cooling problems, airflow issues, sensor errors (like CH codes), and reset or restore proper operation of Samsung air conditioning units.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Samsung MicrowaveBTS.html">Samsung Microwave Troubleshooting Guide</a></h3>
+      <p>Solve heating issues, error codes, control panel malfunctions, sparking problems, and power or timer failures in Samsung microwave ovens.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Samsung RefBTS.html">Samsung Refrigerator Troubleshooting Guide</a></h3>
+      <p>Fix cooling failures, ice maker issues, temperature fluctuations, water leakage, and sensor or defrost system errors in Samsung refrigerators.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Samsung SystemBTS.html">Samsung System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve common system notifications, error messages, warning codes, and control panel alerts across Samsung appliances such as TVs, refrigerators, washers, and air conditioners.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Samsung TVBTS.html">Samsung Television Troubleshooting Guide</a></h3>
+      <p>Fix display issues, sound problems, WiFi connectivity errors, power failures, and remote/control panel malfunctions in Samsung TVs.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Samsung WashingBTS.html">Samsung Washer Troubleshooting Guide</a></h3>
+      <p>Solve drainage issues, spinning problems, vibration/noise, door lock errors, water filling issues, and cycle interruptions in Samsung washing machines.</p>
+    </div>
+
+    </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samsung FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Samsung FAQ - Troubleshooting & Error Codes</h1>
+<p class="subtitle">Common questions and solutions for Samsung appliances, TVs, and system errors</p>
+
+<!-- ================= GENERAL ================= -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting (Samsung Devices)</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on my Samsung appliance?</div>
+<div class="answer">
+Samsung error codes indicate system faults such as sensor failure, drainage issues, overheating, door lock problems, or communication errors between components.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I reset my Samsung device when an error appears?</div>
+<div class="answer">
+Yes. Power cycling (turning off and unplugging for 1–5 minutes) can clear temporary errors in many Samsung appliances and TVs.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I contact Samsung support or a technician?</div>
+<div class="answer">
+Contact support if the issue involves motherboard failure, compressor problems, burning smell, repeated error codes, or device not powering on.
+</div>
+</div>
+
+</div>
+
+<!-- ================= ERROR CODE ISSUES ================= -->
+<div class="faq-section">
+<div class="category-title">Error Code Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung washing machine show error codes?</div>
+<div class="answer">
+Common causes include drainage blockage, unbalanced load, water supply issues, or faulty sensors (such as 4E, 5E, UE errors).
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I fix Samsung error codes myself?</div>
+<div class="answer">
+Yes. Basic issues like cleaning filters, checking hoses, resetting the machine, or balancing load can be fixed at home. Complex errors require service.
+</div>
+</div>
+
+</div>
+
+<!-- ================= MAINTENANCE ================= -->
+<div class="faq-section">
+<div class="category-title">Maintenance Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I clean Samsung appliance filters?</div>
+<div class="answer">
+Filters should be cleaned every 2–4 weeks depending on usage, especially for washing machines, air conditioners, and dryers.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung device overheat?</div>
+<div class="answer">
+Overheating is usually caused by blocked airflow, dirty filters, heavy load usage, or faulty cooling fans.
+</div>
+</div>
+
+</div>
+
+<!-- ================= COOLING & AIRFLOW ================= -->
+<div class="faq-section">
+<div class="category-title">Cooling & Airflow Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Samsung refrigerator not cooling?</div>
+<div class="answer">
+Possible causes include dirty condenser coils, faulty fan motor, thermostat issues, or refrigerant problems.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is airflow weak in my Samsung air conditioner?</div>
+<div class="answer">
+Weak airflow may be caused by dirty filters, blocked vents, frozen evaporator coils, or low refrigerant levels.
+</div>
+</div>
+
+</div>
+
+<!-- ================= POWER & ELECTRICAL ================= -->
+<div class="faq-section">
+<div class="category-title">Power & Electrical Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung TV keep turning off?</div>
+<div class="answer">
+This can be caused by power supply issues, overheating protection, faulty capacitors, or sleep timer settings.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage Samsung appliances?</div>
+<div class="answer">
+Yes. Power surges can damage circuit boards, sensors, and internal control systems in Samsung devices.
+</div>
+</div>
+
+</div>
+
+<!-- ================= SENSOR & COMMUNICATION ================= -->
+<div class="faq-section">
+<div class="category-title">Sensor & Communication Errors</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung device show communication errors?</div>
+<div class="answer">
+Communication errors occur due to loose wiring, faulty PCB boards, unstable voltage, or disconnected components.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can sensors cause Samsung error codes?</div>
+<div class="answer">
+Yes. Faulty temperature, water, or door sensors can trigger incorrect readings and system shutdowns.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> You can duplicate this FAQ structure for other brands like LG, Panasonic, Sony, and Daikin.
+</div>
+
+</div>
+
+</body>
+</html>

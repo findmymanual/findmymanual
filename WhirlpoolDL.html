@@ -999,3 +999,558 @@
     });
   });
 </script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
+        });
+    }
+
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
+        });
+
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
+        const icon = btn.querySelector('svg');
+
+        btn.style.display = 'inline-flex';
+        btn.style.alignItems = 'center';
+        btn.style.gap = '8px';
+        btn.style.padding = '10px 16px';
+        btn.style.background = '#4e6e81';
+        btn.style.color = '#fff';
+        btn.style.borderRadius = '6px';
+        btn.style.textDecoration = 'none';
+        btn.style.fontWeight = 'bold';
+        btn.style.fontFamily = 'Arial, sans-serif';
+        btn.style.transition = 'background 0.3s ease';
+
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
+    });
+
+});
+</script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Whirlpool Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Whirlpool troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Whirlpool AirconBTS.html">Whirlpool Air Conditioner Troubleshooting Guide</a></h3>
+      <p>Fix cooling problems, airflow issues, water leakage (drainage/condensation), sensor errors, and power or remote control malfunctions in Whirlpool air conditioners.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Whirlpool DishwasherBTS.html">Whirlpool Dishwasher Troubleshooting Guide</a></h3>
+      <p>Solve cleaning performance issues, drainage problems, water not filling, heating failures, cycle interruptions, and error codes in Whirlpool dishwashers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Whirlpool DryerBTS.html">Whirlpool Dryer Troubleshooting Guide</a></h3>
+      <p>Fix drying performance issues, drum not spinning, overheating, noise problems, lint blockages, and sensor or control panel errors in Whirlpool dryers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Whirlpool MicrowaveBTS.html">Whirlpool Microwave Troubleshooting Guide</a></h3>
+      <p>Resolve heating issues, turntable not spinning, power failures, sparking problems, display errors, and control panel malfunctions in Whirlpool microwaves.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Whirlpool OvenBTS.html">Whirlpool Oven Troubleshooting Guide</a></h3>
+      <p>Fix uneven cooking, heating failures, temperature control issues, fan malfunctions, and display or timer errors in Whirlpool ovens.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Whirlpool RefBTS.html">Whirlpool Refrigerator Troubleshooting Guide</a></h3>
+      <p>Solve cooling issues, temperature fluctuations, ice maker problems, water leakage, defrost system faults, and compressor or sensor errors in Whirlpool refrigerators.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Whirlpool WashingBTS.html">Whirlpool Washer Troubleshooting Guide</a></h3>
+      <p>Fix drainage issues, spinning problems, vibration or noise, water filling errors, door lock faults, and cycle interruptions in Whirlpool washing machines.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bosch FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whirlpool FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Whirlpool FAQ - Troubleshooting & Error Codes</h1>
+<p class="subtitle">Common questions and solutions for Whirlpool home appliances and system issues</p>
+
+<!-- ================= GENERAL ================= -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting (Whirlpool Appliances)</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on Whirlpool appliances?</div>
+<div class="answer">
+Error codes indicate problems detected in components such as motors, sensors, water supply, drainage, heating elements, or control boards.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I reset my Whirlpool appliance when it shows an error?</div>
+<div class="answer">
+Yes. Unplugging the appliance for 1–5 minutes can clear temporary system errors. If the error returns, further inspection is needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a Whirlpool technician?</div>
+<div class="answer">
+Call a technician if there are repeated error codes, burning smells, water leaks, electrical issues, or complete failure to operate.
+</div>
+</div>
+
+</div>
+
+<!-- ================= WASHING MACHINE ================= -->
+<div class="faq-section">
+<div class="category-title">Whirlpool Washing Machine Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Whirlpool washing machine not spinning?</div>
+<div class="answer">
+This may be caused by unbalanced load, lid lock issues, motor problems, or drainage blockage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does F21 or SD error mean?</div>
+<div class="answer">
+F21 usually indicates a drainage issue, while SD refers to excessive suds from too much detergent.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Whirlpool washer not draining?</div>
+<div class="answer">
+Clogged drain hose, blocked pump filter, or faulty drain pump are common causes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my washing machine shaking violently?</div>
+<div class="answer">
+Uneven load distribution or unstable floor surface can cause heavy vibration.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Whirlpool washer not filling with water?</div>
+<div class="answer">
+This may be due to blocked inlet valves, low water pressure, or faulty water level sensor.
+</div>
+</div>
+
+</div>
+
+<!-- ================= DRYER ================= -->
+<div class="faq-section">
+<div class="category-title">Whirlpool Dryer Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Whirlpool dryer not heating?</div>
+<div class="answer">
+Common causes include blown thermal fuse, faulty heating element, or thermostat failure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my dryer take too long to dry clothes?</div>
+<div class="answer">
+Clogged lint filter, blocked vent, or overheating sensor issues can reduce drying efficiency.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my dryer stop mid-cycle?</div>
+<div class="answer">
+Overheating protection or electrical interruptions may cause mid-cycle shutdowns.
+</div>
+</div>
+
+</div>
+
+<!-- ================= REFRIGERATOR ================= -->
+<div class="faq-section">
+<div class="category-title">Whirlpool Refrigerator Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Whirlpool refrigerator not cooling?</div>
+<div class="answer">
+Possible causes include dirty condenser coils, faulty evaporator fan, or thermostat issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my fridge leaking water?</div>
+<div class="answer">
+Blocked defrost drain or damaged door seals can cause water leakage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Whirlpool fridge making loud noise?</div>
+<div class="answer">
+Noises may come from compressor vibration, fan motor issues, or ice buildup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my freezer not freezing properly?</div>
+<div class="answer">
+Airflow blockage, low refrigerant, or faulty defrost system may cause freezing issues.
+</div>
+</div>
+
+</div>
+
+<!-- ================= DISHWASHER ================= -->
+<div class="faq-section">
+<div class="category-title">Whirlpool Dishwasher Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Whirlpool dishwasher not cleaning properly?</div>
+<div class="answer">
+Clogged spray arms, low water pressure, or detergent issues may reduce cleaning performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my dishwasher not draining?</div>
+<div class="answer">
+Blocked drain hose or pump filter is usually the cause.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does F2E2 error mean?</div>
+<div class="answer">
+This indicates communication failure between control board and user interface.
+</div>
+</div>
+
+</div>
+
+<!-- ================= POWER & SENSOR ================= -->
+<div class="faq-section">
+<div class="category-title">Power & Sensor Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Whirlpool appliance keep restarting?</div>
+<div class="answer">
+Power instability or faulty control boards can cause repeated restarts.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can sensors cause Whirlpool error codes?</div>
+<div class="answer">
+Yes. Temperature, water level, and door sensors can trigger system errors when faulty.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Whirlpool appliance stop mid-cycle?</div>
+<div class="answer">
+This may be caused by overheating, power interruptions, or internal electronic faults.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Whirlpool appliances often show error codes related to drainage, heating, or motor systems—most issues can be diagnosed with basic checks first.
+</div>
+
+</div>
+
+</body>
+</html>

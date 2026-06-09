@@ -7395,57 +7395,164 @@
         </div>
 
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
+     <script>
+      document.addEventListener("DOMContentLoaded", () => {
 
-    const search = document.getElementById("pdfSearch");
+        const search = document.getElementById("pdfSearch");
 
-    // This selects all your gray boxes
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+        // This selects all your gray boxes
+        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-    search.addEventListener("input", function () {
-        const q = this.value.toLowerCase().trim();
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
 
-        boxes.forEach(box => {
+          boxes.forEach(box => {
             const text = box.textContent.toLowerCase();
 
             // show if matched, hide if not
             if (text.includes(q)) {
-                box.style.display = "";
+              box.style.display = "";
             } else {
-                box.style.display = "none";
+              box.style.display = "none";
             }
+          });
         });
-    });
 
-});
-</script>
+      });
+    </script>
+
+
+</body>
+
+       <script>
+            document.addEventListener("DOMContentLoaded", () => {
+
+                const search = document.getElementById("pdfSearch");
+
+                // This selects all your gray boxes
+                const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+                search.addEventListener("input", function () {
+                    const q = this.value.toLowerCase().trim();
+
+                    boxes.forEach(box => {
+                        const text = box.textContent.toLowerCase();
+
+                        // show if matched, hide if not
+                        if (text.includes(q)) {
+                            box.style.display = "";
+                        } else {
+                            box.style.display = "none";
+                        }
+                    });
+                });
+
+            });
+        </script>
 
 
 </body>
 
 
+
 <script>
-document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     // Move all PDF boxes into a responsive grid
     const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
     if (boxes.length) {
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-        boxes.forEach(box => grid.appendChild(box));
-        const section = document.querySelector("section");
-        section.appendChild(grid);
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
     }
 
     // PDF button behavior & styling
     document.querySelectorAll('.pdf-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const productId = this.getAttribute('data-product');
-            const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            window.location.href = checkoutUrl;
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
+        });
+    }
+
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
         });
 
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
         const icon = btn.querySelector('svg');
+
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
         btn.style.gap = '8px';
@@ -7457,16 +7564,397 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.style.fontWeight = 'bold';
         btn.style.fontFamily = 'Arial, sans-serif';
         btn.style.transition = 'background 0.3s ease';
-        icon.style.transition = 'transform 0.3s ease';
 
-        btn.addEventListener('mouseover', () => {
-            icon.style.transform = 'translateY(3px)';
-            btn.style.background = '#5f879a';
-        });
-        btn.addEventListener('mouseout', () => {
-            icon.style.transform = 'translateY(0)';
-            btn.style.background = '#4e6e81';
-        });
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
     });
+
 });
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Singer Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Singer troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Singer EmbroideryBTS.html">Singer Embroidery Troubleshooting Guide</a></h3>
+      <p>Fix thread breaks, tension issues, needle problems, stitching errors, fabric jamming, and embroidery design or machine setup malfunctions in Singer embroidery machines.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Singer SewingBTS.html">Singer Sewing Machine Troubleshooting Guide</a></h3>
+      <p>Resolve stitching problems, needle breaking, thread bunching, bobbin issues, motor or pedal malfunctions, and machine timing or tension errors in Singer sewing machines.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Singer SystemBTS.html">Singer System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, and system notifications across Singer sewing and embroidery machines.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<div class="container">
+
+    <h1>Singer FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common Singer sewing machine problems and solutions</p>
+
+<!-- GENERAL -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error mean on my Singer sewing machine?</div>
+<div class="answer">
+Error indicators usually point to threading issues, needle problems, motor strain, or internal mechanical faults.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I restart my Singer machine when it stops working?</div>
+<div class="answer">
+Yes. Restarting can clear temporary jams or sensor glitches, but repeated issues indicate a deeper mechanical problem.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a technician?</div>
+<div class="answer">
+Call a technician if the machine jams repeatedly, motor is loud, needle system is stuck, or error persists after reset.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Singer machine suddenly stop?</div>
+<div class="answer">
+This may be due to thread jams, overheating motor, electrical interruption, or bobbin issues.
+</div>
+</div>
+
+</div>
+
+<!-- THREADING & STITCH ISSUES -->
+<div class="faq-section">
+<div class="category-title">Threading & Stitch Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Singer skipping stitches?</div>
+<div class="answer">
+Wrong needle type, dull needle, incorrect threading, or tension imbalance can cause skipped stitches.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my thread keep breaking?</div>
+<div class="answer">
+Poor quality thread, wrong tension, or incorrect needle size can cause breakage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is fabric puckering?</div>
+<div class="answer">
+Incorrect tension settings or improper fabric handling may cause puckering.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is stitch quality uneven?</div>
+<div class="answer">
+Dirty feed dogs, wrong tension, or misthreading can affect stitch quality.
+</div>
+</div>
+
+</div>
+
+<!-- NEEDLE & MECHANICAL -->
+<div class="faq-section">
+<div class="category-title">Needle & Mechanical Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Singer needle keep breaking?</div>
+<div class="answer">
+Using wrong needle size, sewing too fast on thick fabric, or misalignment can cause breakage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is the needle stuck?</div>
+<div class="answer">
+Thread jams, bent needle bar, or internal blockage may prevent movement.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my machine making loud noises?</div>
+<div class="answer">
+Loose parts, dry gears, or thread caught inside the mechanism can cause noise.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is the handwheel hard to turn?</div>
+<div class="answer">
+Thread jam in bobbin area or internal mechanical obstruction may be the cause.
+</div>
+</div>
+
+</div>
+
+<!-- BOBBIN ISSUES -->
+<div class="faq-section">
+<div class="category-title">Bobbin Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my bobbin thread not catching?</div>
+<div class="answer">
+Incorrect bobbin placement, timing issues, or dirty hook area may cause this problem.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my bobbin thread tangle?</div>
+<div class="answer">
+Improper winding or incorrect bobbin insertion can cause tangling.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is bobbin thread showing on top?</div>
+<div class="answer">
+Upper thread tension is too loose or incorrectly threaded.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does bobbin jam happen often?</div>
+<div class="answer">
+Lint buildup, wrong bobbin size, or damaged bobbin case may cause jams.
+</div>
+</div>
+
+</div>
+
+<!-- POWER & ELECTRICAL -->
+<div class="faq-section">
+<div class="category-title">Power & Electrical Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won’t my Singer machine turn on?</div>
+<div class="answer">
+Faulty power cord, foot pedal issues, or internal fuse problems may prevent startup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does the machine stop mid-sewing?</div>
+<div class="answer">
+Overheating, motor overload, or electrical interruption may cause stoppage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage Singer machines?</div>
+<div class="answer">
+Yes. Surges can damage control boards and motors.
+</div>
+</div>
+
+</div>
+
+<!-- EXTRA -->
+<div class="faq-section">
+<div class="category-title">Extra Common Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Singer machine smell like burning?</div>
+<div class="answer">
+Motor strain, dust buildup, or belt friction may cause burning smell.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is fabric not feeding properly?</div>
+<div class="answer">
+Feed dogs may be lowered, dirty, or worn out.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I service my Singer machine?</div>
+<div class="answer">
+Every 6–12 months depending on usage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace instead of repair?</div>
+<div class="answer">
+If repair costs are high or the machine is very old, replacement is better.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Regular cleaning, proper threading, and correct needle use help prevent most Singer sewing machine issues.
+</div>
+
+</div>
+
+</body>
+</html>

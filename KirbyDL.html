@@ -1132,56 +1132,165 @@
         </svg>Download PDF</a>
 </div>
 
-  <script>
-document.addEventListener("DOMContentLoaded", () => {
 
-    const search = document.getElementById("pdfSearch");
+     <script>
+      document.addEventListener("DOMContentLoaded", () => {
 
-    // This selects all your gray boxes
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+        const search = document.getElementById("pdfSearch");
 
-    search.addEventListener("input", function () {
-        const q = this.value.toLowerCase().trim();
+        // This selects all your gray boxes
+        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-        boxes.forEach(box => {
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
+
+          boxes.forEach(box => {
             const text = box.textContent.toLowerCase();
 
             // show if matched, hide if not
             if (text.includes(q)) {
-                box.style.display = "";
+              box.style.display = "";
             } else {
-                box.style.display = "none";
+              box.style.display = "none";
             }
+          });
         });
-    });
 
-});
-</script>
+      });
+    </script>
 
 
 </body>
 
-          <script>
-document.addEventListener("DOMContentLoaded", () => {
+       <script>
+            document.addEventListener("DOMContentLoaded", () => {
+
+                const search = document.getElementById("pdfSearch");
+
+                // This selects all your gray boxes
+                const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+                search.addEventListener("input", function () {
+                    const q = this.value.toLowerCase().trim();
+
+                    boxes.forEach(box => {
+                        const text = box.textContent.toLowerCase();
+
+                        // show if matched, hide if not
+                        if (text.includes(q)) {
+                            box.style.display = "";
+                        } else {
+                            box.style.display = "none";
+                        }
+                    });
+                });
+
+            });
+        </script>
+
+
+</body>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     // Move all PDF boxes into a responsive grid
     const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
     if (boxes.length) {
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-        boxes.forEach(box => grid.appendChild(box));
-        const section = document.querySelector("section");
-        section.appendChild(grid);
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
     }
 
     // PDF button behavior & styling
     document.querySelectorAll('.pdf-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const productId = this.getAttribute('data-product');
-            const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            window.location.href = checkoutUrl;
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
+        });
+    }
+
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
         });
 
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
         const icon = btn.querySelector('svg');
+
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
         btn.style.gap = '8px';
@@ -1193,16 +1302,438 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.style.fontWeight = 'bold';
         btn.style.fontFamily = 'Arial, sans-serif';
         btn.style.transition = 'background 0.3s ease';
-        icon.style.transition = 'transform 0.3s ease';
 
-        btn.addEventListener('mouseover', () => {
-            icon.style.transform = 'translateY(3px)';
-            btn.style.background = '#5f879a';
-        });
-        btn.addEventListener('mouseout', () => {
-            icon.style.transform = 'translateY(0)';
-            btn.style.background = '#4e6e81';
-        });
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
     });
+
 });
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Kirby Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Kirby troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Kirby AttachmentBTS.html">Kirby Attachment Troubleshooting Guide</a></h3>
+      <p>Fix attachment connection issues, poor suction performance, loose fittings, accessory blockages, and compatibility or performance problems with Kirby vacuum attachments.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Kirby SystemBTS.html">Kirby System Messages Troubleshooting Guide</a></h3>
+      <p>Resolve indicator light warnings, motor alerts, overheating notifications, power interruptions, and system status messages in Kirby vacuum systems.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Kirby VacuumBTS.html">Kirby Vacuum Troubleshooting Guide</a></h3>
+      <p>Fix suction loss, clogging, brush roll issues, belt problems, unusual noise, and power or motor failures in Kirby vacuum cleaners.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<div class="container">
+
+    <h1>Kirby FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common Kirby vacuum cleaner problems and solutions</p>
+
+<!-- GENERAL -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum not turning on?</div>
+<div class="answer">
+Check the power cord, outlet, and handle switch. A tripped breaker or faulty switch may also prevent startup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Kirby vacuum smell like burning?</div>
+<div class="answer">
+This is usually caused by a worn belt, clogged brush roll, or motor overheating due to blockage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a technician?</div>
+<div class="answer">
+Call a technician if the motor makes grinding noises, emits smoke, or fails to power on after basic checks.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Kirby lose suction?</div>
+<div class="answer">
+Clogged filters, full bag, blocked hose, or dirty brush roll can reduce suction power.
+</div>
+</div>
+
+</div>
+
+<!-- SUCTION & PERFORMANCE -->
+<div class="faq-section">
+<div class="category-title">Suction & Performance Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby suction weak?</div>
+<div class="answer">
+Weak suction is often caused by a full vacuum bag, clogged hose, or dirty HEPA filter.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my vacuum leave dirt behind?</div>
+<div class="answer">
+This may happen due to worn brush rolls, incorrect height adjustment, or airflow blockage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does suction stop suddenly?</div>
+<div class="answer">
+A blockage in the hose or full dust bag can suddenly restrict airflow.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can filters affect suction?</div>
+<div class="answer">
+Yes. Dirty or clogged filters significantly reduce airflow and cleaning performance.
+</div>
+</div>
+
+</div>
+
+<!-- BRUSH ROLL & BELT -->
+<div class="faq-section">
+<div class="category-title">Brush Roll & Belt Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby brush roll not spinning?</div>
+<div class="answer">
+The belt may be broken, loose, or incorrectly installed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I replace the belt?</div>
+<div class="answer">
+Belts should be replaced every 3–6 months depending on usage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my vacuum make loud belt noise?</div>
+<div class="answer">
+A worn or misaligned belt can cause squealing or rattling sounds.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is the brush not picking up dirt?</div>
+<div class="answer">
+The brush roll may be worn out or blocked with hair and debris.
+</div>
+</div>
+
+</div>
+
+<!-- ELECTRICAL ISSUES -->
+<div class="faq-section">
+<div class="category-title">Power & Electrical Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Kirby keep turning off?</div>
+<div class="answer">
+Overheating, clogged airflow, or faulty wiring may cause automatic shutdown.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my vacuum trip the breaker?</div>
+<div class="answer">
+Electrical overload or motor short circuit can trigger breaker trips.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Kirby spark when turned on?</div>
+<div class="answer">
+Worn motor brushes or internal electrical issues may cause sparking.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage my Kirby?</div>
+<div class="answer">
+Yes. Surges can damage the motor or internal electrical components.
+</div>
+</div>
+
+</div>
+
+<!-- FILTERS & MAINTENANCE -->
+<div class="faq-section">
+<div class="category-title">Filters & Maintenance</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I clean my Kirby vacuum?</div>
+<div class="answer">
+Clean filters and empty the bag every 2–4 weeks depending on usage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my vacuum smell dusty?</div>
+<div class="answer">
+Old dust bags or dirty filters can cause unpleasant odors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I wash Kirby filters?</div>
+<div class="answer">
+Some filters are washable, but HEPA filters usually need replacement.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does dust come back into the air?</div>
+<div class="answer">
+This may indicate a missing or damaged filter or a full dust bag.
+</div>
+</div>
+
+</div>
+
+<!-- ATTACHMENTS & ACCESSORIES -->
+<div class="faq-section">
+<div class="category-title">Attachments & Accessories</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby attachment not working?</div>
+<div class="answer">
+Ensure it is properly locked into place and not clogged with debris.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does the hose keep clogging?</div>
+<div class="answer">
+Large debris, hair, or foreign objects can block airflow inside the hose.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I use non-Kirby attachments?</div>
+<div class="answer">
+Non-compatible attachments may reduce performance or damage the unit.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is suction stronger on one attachment?</div>
+<div class="answer">
+Different attachments are designed for different airflow resistance levels.
+</div>
+</div>
+
+</div>
+
+<!-- EXTRA -->
+<div class="faq-section">
+<div class="category-title">Extra Common Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vibrating heavily?</div>
+<div class="answer">
+Unbalanced brush roll or worn internal parts may cause vibration.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is there a rattling noise?</div>
+<div class="answer">
+Loose screws, debris inside the housing, or damaged fan blades may be the cause.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace my Kirby vacuum?</div>
+<div class="answer">
+If repair costs are high or motor performance is severely reduced after many years of use.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my vacuum overheat quickly?</div>
+<div class="answer">
+Blocked airflow, dirty filters, or continuous long usage can cause overheating.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Regular cleaning of filters, belts, and brush rolls helps extend the life of your Kirby vacuum cleaner.
+</div>
+
+</div>
+
+</body>
+</html>

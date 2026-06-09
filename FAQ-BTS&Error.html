@@ -81,11 +81,7 @@ h1{
 <script>
 function toggleFAQ(el){
     const answer = el.nextElementSibling;
-    if(answer.style.display === "block"){
-        answer.style.display = "none";
-    } else {
-        answer.style.display = "block";
-    }
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
 }
 </script>
 
@@ -100,7 +96,6 @@ function toggleFAQ(el){
 
 <!-- ================= GENERAL ================= -->
 <div class="faq-section">
-
 <div class="category-title">General Troubleshooting</div>
 
 <div class="faq-item">
@@ -126,9 +121,8 @@ Call a technician if the error involves electrical boards, motors, compressors, 
 
 </div>
 
-<!-- ================= ERROR CODES ================= -->
+<!-- ================= ERROR CODE ISSUES ================= -->
 <div class="faq-section">
-
 <div class="category-title">Error Code Issues</div>
 
 <div class="faq-item">
@@ -149,7 +143,6 @@ Some errors like clogged filters, blocked airflow, or loose connections can be f
 
 <!-- ================= MAINTENANCE ================= -->
 <div class="faq-section">
-
 <div class="category-title">Maintenance Questions</div>
 
 <div class="faq-item">
@@ -168,8 +161,89 @@ Overheating is usually caused by blocked airflow, dirty filters, or overuse with
 
 </div>
 
+<!-- ================= COOLING & AIRFLOW ERRORS ================= -->
+<div class="faq-section">
+<div class="category-title">Cooling & Airflow Errors</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my appliance not cooling properly?</div>
+<div class="answer">
+Poor cooling is commonly caused by dirty filters, blocked airflow, low refrigerant, or faulty fans.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is airflow weak from my system?</div>
+<div class="answer">
+Weak airflow may be caused by dirty filters, blocked vents, blower motor problems, or frozen coils.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can dirty filters trigger error codes?</div>
+<div class="answer">
+Yes. Dirty filters can reduce airflow and cause overheating, freezing, or pressure-related errors.
+</div>
+</div>
+
+</div>
+
+<!-- ================= POWER & ELECTRICAL ERRORS ================= -->
+<div class="faq-section">
+<div class="category-title">Power & Electrical Errors</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my device trip the circuit breaker?</div>
+<div class="answer">
+This may happen because of electrical overload, short circuits, damaged wiring, or faulty internal parts.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage appliances?</div>
+<div class="answer">
+Yes. Sudden voltage spikes can damage circuit boards, sensors, compressors, and electronic components.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my appliance keep turning ON and OFF?</div>
+<div class="answer">
+Frequent cycling may be caused by thermostat issues, overheating protection, unstable voltage, or faulty sensors.
+</div>
+</div>
+
+</div>
+
+<!-- ================= SENSOR & COMMUNICATION ERRORS ================= -->
+<div class="faq-section">
+<div class="category-title">Sensor & Communication Errors</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my device show communication errors?</div>
+<div class="answer">
+Communication errors are often caused by wiring issues, loose connectors, power interruptions, or faulty control boards.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can sensors cause error codes?</div>
+<div class="answer">
+Yes. Faulty sensors can send incorrect readings, triggering system errors or shutdowns.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a technician?</div>
+<div class="answer">
+Call a technician for compressor issues, refrigerant leaks, electrical burning smells, or repeated system failures.
+</div>
+</div>
+
+</div>
+
 <div class="note">
-<strong>Tip:</strong> You can duplicate FAQ sections and change category titles for each brand (Samsung, LG, Daikin, etc.).
+<strong>Tip:</strong> You can duplicate FAQ sections and customize categories for different brands like Samsung, LG, Daikin, Panasonic, and Carrier.
 </div>
 
 </div>

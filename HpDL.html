@@ -2417,55 +2417,163 @@
     </div>
 
     <script>
-document.addEventListener("DOMContentLoaded", () => {
+      document.addEventListener("DOMContentLoaded", () => {
 
-    const search = document.getElementById("pdfSearch");
+        const search = document.getElementById("pdfSearch");
 
-    // This selects all your gray boxes
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+        // This selects all your gray boxes
+        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-    search.addEventListener("input", function () {
-        const q = this.value.toLowerCase().trim();
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
 
-        boxes.forEach(box => {
+          boxes.forEach(box => {
             const text = box.textContent.toLowerCase();
 
             // show if matched, hide if not
             if (text.includes(q)) {
-                box.style.display = "";
+              box.style.display = "";
             } else {
-                box.style.display = "none";
+              box.style.display = "none";
             }
+          });
         });
-    });
 
-});
-</script>
+      });
+    </script>
 
 
 </body>
 
-   <script>
-document.addEventListener("DOMContentLoaded", () => {
+       <script>
+            document.addEventListener("DOMContentLoaded", () => {
+
+                const search = document.getElementById("pdfSearch");
+
+                // This selects all your gray boxes
+                const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+                search.addEventListener("input", function () {
+                    const q = this.value.toLowerCase().trim();
+
+                    boxes.forEach(box => {
+                        const text = box.textContent.toLowerCase();
+
+                        // show if matched, hide if not
+                        if (text.includes(q)) {
+                            box.style.display = "";
+                        } else {
+                            box.style.display = "none";
+                        }
+                    });
+                });
+
+            });
+        </script>
+
+
+</body>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     // Move all PDF boxes into a responsive grid
     const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
     if (boxes.length) {
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-        boxes.forEach(box => grid.appendChild(box));
-        const section = document.querySelector("section");
-        section.appendChild(grid);
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
     }
 
     // PDF button behavior & styling
     document.querySelectorAll('.pdf-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const productId = this.getAttribute('data-product');
-            const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            window.location.href = checkoutUrl;
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
+        });
+    }
+
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
         });
 
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
         const icon = btn.querySelector('svg');
+
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
         btn.style.gap = '8px';
@@ -2477,16 +2585,429 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.style.fontWeight = 'bold';
         btn.style.fontFamily = 'Arial, sans-serif';
         btn.style.transition = 'background 0.3s ease';
-        icon.style.transition = 'transform 0.3s ease';
 
-        btn.addEventListener('mouseover', () => {
-            icon.style.transform = 'translateY(3px)';
-            btn.style.background = '#5f879a';
-        });
-        btn.addEventListener('mouseout', () => {
-            icon.style.transform = 'translateY(0)';
-            btn.style.background = '#4e6e81';
-        });
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
     });
+
 });
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">HP Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step HP troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="HP LaptopBTS.html">HP Laptop Troubleshooting Guide</a></h3>
+      <p>Fix startup issues, slow performance, overheating, battery not charging, Wi-Fi or network problems, blue screen errors, and software or system malfunctions in HP laptops.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="HP PrinterBTS.html">HP Printer Troubleshooting Guide</a></h3>
+      <p>Resolve paper jams, printing errors, driver issues, ink or toner problems, connectivity failures, and setup or spooler errors in HP printers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="HP ScannerBTS.html">HP Scanner Troubleshooting Guide</a></h3>
+      <p>Fix scanning errors, device not detected issues, driver problems, slow scanning, and image quality issues in HP scanners.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="HP SystemBTS.html">HP System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, BIOS notifications, and system error prompts in HP devices.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<div class="container">
+
+  <h1>HP FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common HP printer, laptop, and device problems and solutions</p>
+
+<!-- GENERAL -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on my HP device?</div>
+<div class="answer">
+HP error codes indicate hardware or software issues such as printer jams, cartridge failure, driver errors, overheating, or system board faults.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I restart my HP device when it shows an error?</div>
+<div class="answer">
+Yes. Restarting often clears temporary glitches, but repeated errors usually indicate a deeper hardware or software issue.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I contact HP support or a technician?</div>
+<div class="answer">
+Contact support if errors persist after reset, or if there are issues like motherboard failure, ink system faults, or power-related problems.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my HP device freeze or stop responding?</div>
+<div class="answer">
+This may be caused by outdated drivers, memory overload, corrupted software, or overheating.
+</div>
+</div>
+
+</div>
+
+<!-- PRINTER ISSUES -->
+<div class="faq-section">
+<div class="category-title">Printer Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP printer not printing?</div>
+<div class="answer">
+Common causes include empty ink/toner, paper jams, offline mode, or outdated printer drivers.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my HP printer show paper jam but no paper is stuck?</div>
+<div class="answer">
+Dust, small paper debris, or faulty sensors can trigger false jam alerts.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP printer printing blank pages?</div>
+<div class="answer">
+Clogged print heads, empty cartridges, or incorrect installation may cause blank prints.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP printer offline?</div>
+<div class="answer">
+This may be due to network issues, driver problems, or incorrect printer settings.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is print quality poor or faded?</div>
+<div class="answer">
+Low ink, clogged nozzles, or incorrect print settings can reduce quality.
+</div>
+</div>
+
+</div>
+
+<!-- LAPTOP ISSUES -->
+<div class="faq-section">
+<div class="category-title">Laptop Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP laptop running slow?</div>
+<div class="answer">
+Too many startup programs, low RAM, malware, or full storage can slow performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my HP laptop overheat?</div>
+<div class="answer">
+Dust buildup, blocked fans, or heavy usage can cause overheating.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my HP laptop not turn on?</div>
+<div class="answer">
+This may be due to battery failure, power adapter issues, or motherboard faults.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP laptop screen black?</div>
+<div class="answer">
+Loose display cable, GPU issues, or system crash may cause black screen problems.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my laptop battery drain fast?</div>
+<div class="answer">
+High brightness, background apps, or aging battery can reduce battery life.
+</div>
+</div>
+
+</div>
+
+<!-- SCANNER / ALL-IN-ONE -->
+<div class="faq-section">
+<div class="category-title">Scanner & All-in-One Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP scanner not working?</div>
+<div class="answer">
+Driver issues, USB connection problems, or software conflicts may prevent scanning.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why are scanned images blurry?</div>
+<div class="answer">
+Dirty glass, low resolution settings, or movement during scanning can cause blur.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my HP all-in-one show error messages?</div>
+<div class="answer">
+This may be due to firmware issues, paper jams, or ink system errors.
+</div>
+</div>
+
+</div>
+
+<!-- CONNECTION ISSUES -->
+<div class="faq-section">
+<div class="category-title">Connection & Network Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won’t my HP printer connect to WiFi?</div>
+<div class="answer">
+Incorrect password, weak signal, or router incompatibility may cause connection failure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my HP device keep disconnecting from WiFi?</div>
+<div class="answer">
+Network instability or outdated firmware can cause frequent disconnections.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset network settings on HP devices?</div>
+<div class="answer">
+Most HP devices have a network reset option in settings or require holding the wireless button for several seconds.
+</div>
+</div>
+
+</div>
+
+<!-- POWER & HARDWARE -->
+<div class="faq-section">
+<div class="category-title">Power & Hardware Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my HP device turn off randomly?</div>
+<div class="answer">
+Overheating, power supply issues, or faulty internal components may cause shutdowns.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my HP device make loud noises?</div>
+<div class="answer">
+Fan issues, mechanical wear, or internal obstruction can cause noise.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage HP devices?</div>
+<div class="answer">
+Yes. Power surges can damage motherboards, power supplies, and printers.
+</div>
+</div>
+
+</div>
+
+<!-- EXTRA -->
+<div class="faq-section">
+<div class="category-title">Extra Common Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my HP device smell like burning?</div>
+<div class="answer">
+This may indicate overheating components or electrical failure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I update HP drivers?</div>
+<div class="answer">
+Regular updates are recommended every few months to ensure performance and security.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace instead of repair?</div>
+<div class="answer">
+If repair costs are too high or the device is outdated, replacement may be more cost-effective.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Keeping drivers updated and performing regular maintenance helps prevent most HP device issues.
+</div>
+
+</div>
+
+</body>
+</html>

@@ -5097,77 +5097,569 @@
                 </svg>Download PDF</a>
         </div>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
+         <script>
+document.addEventListener("DOMContentLoaded", () => {
 
-                const search = document.getElementById("pdfSearch");
+    const search = document.getElementById("pdfSearch");
 
-                // This selects all your gray boxes
-                const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    // This selects all your gray boxes
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-                search.addEventListener("input", function () {
-                    const q = this.value.toLowerCase().trim();
+    search.addEventListener("input", function () {
+        const q = this.value.toLowerCase().trim();
 
-                    boxes.forEach(box => {
-                        const text = box.textContent.toLowerCase();
+        boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
 
-                        // show if matched, hide if not
-                        if (text.includes(q)) {
-                            box.style.display = "";
-                        } else {
-                            box.style.display = "none";
-                        }
-                    });
-                });
+            // show if matched, hide if not
+            if (text.includes(q)) {
+                box.style.display = "";
+            } else {
+                box.style.display = "none";
+            }
+        });
+    });
 
-            });
-        </script>
+});
+</script>
 
 
 </body>
 
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        // Move all PDF boxes into a responsive grid
+          
+          <script>
+      document.addEventListener("DOMContentLoaded", () => {
+
+        const search = document.getElementById("pdfSearch");
+
+        // This selects all your gray boxes
         const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
-        if (boxes.length) {
-            const grid = document.createElement("div");
-            grid.className = "pdf-grid";
-            boxes.forEach(box => grid.appendChild(box));
-            const section = document.querySelector("section");
-            section.appendChild(grid);
-        }
 
-        // PDF button behavior & styling
-        document.querySelectorAll('.pdf-btn').forEach(btn => {
-            btn.addEventListener('click', function () {
-                const productId = this.getAttribute('data-product');
-                const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-                window.location.href = checkoutUrl;
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
+
+          boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+              box.style.display = "";
+            } else {
+              box.style.display = "none";
+            }
+          });
+        });
+
+      });
+    </script>
+
+
+</body>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Move all PDF boxes into a responsive grid
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    if (boxes.length) {
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
+    }
+
+    // PDF button behavior & styling
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
             });
+        });
+    }
 
-            const icon = btn.querySelector('svg');
-            btn.style.display = 'inline-flex';
-            btn.style.alignItems = 'center';
-            btn.style.gap = '8px';
-            btn.style.padding = '10px 16px';
-            btn.style.background = '#4e6e81';
-            btn.style.color = '#fff';
-            btn.style.borderRadius = '6px';
-            btn.style.textDecoration = 'none';
-            btn.style.fontWeight = 'bold';
-            btn.style.fontFamily = 'Arial, sans-serif';
-            btn.style.transition = 'background 0.3s ease';
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
+        });
+
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
+        const icon = btn.querySelector('svg');
+
+        btn.style.display = 'inline-flex';
+        btn.style.alignItems = 'center';
+        btn.style.gap = '8px';
+        btn.style.padding = '10px 16px';
+        btn.style.background = '#4e6e81';
+        btn.style.color = '#fff';
+        btn.style.borderRadius = '6px';
+        btn.style.textDecoration = 'none';
+        btn.style.fontWeight = 'bold';
+        btn.style.fontFamily = 'Arial, sans-serif';
+        btn.style.transition = 'background 0.3s ease';
+
+        if (icon) {
             icon.style.transition = 'transform 0.3s ease';
 
             btn.addEventListener('mouseover', () => {
                 icon.style.transform = 'translateY(3px)';
                 btn.style.background = '#5f879a';
             });
+
             btn.addEventListener('mouseout', () => {
                 icon.style.transform = 'translateY(0)';
                 btn.style.background = '#4e6e81';
             });
-        });
+        }
     });
+
+});
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Electrolux Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Electrolux troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Electrolux DishwasherBTS.html">Electrolux Dishwasher Troubleshooting Guide</a></h3>
+      <p>Fix drainage issues, poor cleaning performance, water not filling, heating failures, cycle interruptions, and error code problems in Electrolux dishwashers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Electrolux DryerBTS.html">Electrolux Dryer Troubleshooting Guide</a></h3>
+      <p>Solve drying issues, drum not spinning, overheating, long drying times, noise problems, and sensor or control panel errors in Electrolux dryers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Electrolux OvenBTS.html">Electrolux Oven Troubleshooting Guide</a></h3>
+      <p>Fix heating issues, uneven cooking, temperature control problems, fan malfunctions, and display or timer errors in Electrolux ovens.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Electrolux RefBTS.html">Electrolux Refrigerator Troubleshooting Guide</a></h3>
+      <p>Resolve cooling issues, temperature fluctuations, ice maker problems, water leakage, defrost system faults, and compressor or sensor errors in Electrolux refrigerators.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Electrolux SystemBTS.html">Electrolux System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, and control panel notifications across Electrolux appliances.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Electrolux WasherBTS.html">Electrolux Washer Troubleshooting Guide</a></h3>
+      <p>Fix drainage issues, spinning problems, vibration or noise, water filling errors, door lock faults, and cycle interruptions in Electrolux washing machines.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Electrolux FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common questions and solutions for Electrolux appliances</p>
+
+<!-- GENERAL -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on my Electrolux appliance?</div>
+<div class="answer">
+It indicates a detected fault in the system such as sensor failure, drainage issue, heating problem, or communication error between components.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I reset my Electrolux appliance when an error appears?</div>
+<div class="answer">
+Yes. A reset can clear temporary glitches. If the error returns, deeper troubleshooting is required.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a technician?</div>
+<div class="answer">
+Call a technician if there are electrical faults, burning smells, repeated errors, or compressor/motor failure.
+</div>
+</div>
+</div>
+
+<!-- ERROR CODES -->
+<div class="faq-section">
+<div class="category-title">Error Code Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Electrolux washer showing E11 or E21 error?</div>
+<div class="answer">
+These often indicate water inlet or drainage problems caused by clogged filters, blocked hoses, or weak water supply.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does EFO mean on Electrolux appliances?</div>
+<div class="answer">
+EFO usually indicates water leakage detected inside the unit or moisture in the base tray triggering the safety float switch.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my appliance show multiple error codes?</div>
+<div class="answer">
+Multiple errors often point to a main system failure such as control board malfunction or power instability.
+</div>
+</div>
+</div>
+
+<!-- MAINTENANCE -->
+<div class="faq-section">
+<div class="category-title">Maintenance Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I clean Electrolux filters?</div>
+<div class="answer">
+Every 2–4 weeks depending on usage to maintain airflow and efficiency.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Electrolux appliance overheat?</div>
+<div class="answer">
+Usually caused by blocked vents, dirty filters, or excessive continuous usage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I maintain my Electrolux washing machine?</div>
+<div class="answer">
+Clean the drum monthly, check hoses, and run a maintenance cycle with a cleaning solution.
+</div>
+</div>
+</div>
+
+<!-- COOLING & PERFORMANCE -->
+<div class="faq-section">
+<div class="category-title">Cooling & Performance Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Electrolux fridge not cooling?</div>
+<div class="answer">
+Possible causes include dirty condenser coils, faulty thermostat, or blocked airflow vents.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is airflow weak in my Electrolux air conditioner?</div>
+<div class="answer">
+Dirty filters, fan motor issues, or ice buildup on coils may restrict airflow.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my freezer not freezing properly?</div>
+<div class="answer">
+Could be due to compressor issues, refrigerant problems, or faulty temperature sensors.
+</div>
+</div>
+</div>
+
+<!-- POWER & ELECTRICAL -->
+<div class="faq-section">
+<div class="category-title">Power & Electrical Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Electrolux appliance trip the breaker?</div>
+<div class="answer">
+Caused by electrical overload, short circuits, or damaged internal wiring.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage Electrolux appliances?</div>
+<div class="answer">
+Yes. Surges can damage circuit boards, sensors, and compressors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my appliance keep restarting?</div>
+<div class="answer">
+This may be due to unstable power supply or faulty control board.
+</div>
+</div>
+</div>
+
+<!-- SENSOR & COMMUNICATION -->
+<div class="faq-section">
+<div class="category-title">Sensor & Communication Errors</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Electrolux showing communication error?</div>
+<div class="answer">
+Loose wiring, damaged connectors, or control board failure may cause communication issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can sensors fail in Electrolux appliances?</div>
+<div class="answer">
+Yes. Faulty sensors can send incorrect readings and trigger shutdowns or error codes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call support?</div>
+<div class="answer">
+If errors persist after reset or involve electrical or compressor issues.
+</div>
+</div>
+</div>
+
+<!-- EXTRA FAQs -->
+<div class="faq-section">
+<div class="category-title">Extra Common Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Electrolux dryer not heating?</div>
+<div class="answer">
+Possible causes include heating element failure, thermal fuse issues, or blocked vents.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my washer not spinning?</div>
+<div class="answer">
+Could be due to lid switch failure, unbalanced load, or motor issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my dishwasher leave residue?</div>
+<div class="answer">
+Dirty filters, incorrect detergent usage, or clogged spray arms may cause this.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> You can reuse this FAQ layout for other brands like Samsung, LG, Bosch, Whirlpool, and GE by updating only the error codes and appliance behavior.
+</div>
+
+</div>
+
+</body>
+</html>

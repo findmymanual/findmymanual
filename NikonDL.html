@@ -8392,6 +8392,37 @@
 
 </body>
 
+       <script>
+            document.addEventListener("DOMContentLoaded", () => {
+
+                const search = document.getElementById("pdfSearch");
+
+                // This selects all your gray boxes
+                const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+                search.addEventListener("input", function () {
+                    const q = this.value.toLowerCase().trim();
+
+                    boxes.forEach(box => {
+                        const text = box.textContent.toLowerCase();
+
+                        // show if matched, hide if not
+                        if (text.includes(q)) {
+                            box.style.display = "";
+                        } else {
+                            box.style.display = "none";
+                        }
+                    });
+                });
+
+            });
+        </script>
+
+
+</body>
+
+
+
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     // Move all PDF boxes into a responsive grid
@@ -8437,3 +8468,541 @@
     });
   });
 </script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
+        });
+    }
+
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
+        });
+
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
+        const icon = btn.querySelector('svg');
+
+        btn.style.display = 'inline-flex';
+        btn.style.alignItems = 'center';
+        btn.style.gap = '8px';
+        btn.style.padding = '10px 16px';
+        btn.style.background = '#4e6e81';
+        btn.style.color = '#fff';
+        btn.style.borderRadius = '6px';
+        btn.style.textDecoration = 'none';
+        btn.style.fontWeight = 'bold';
+        btn.style.fontFamily = 'Arial, sans-serif';
+        btn.style.transition = 'background 0.3s ease';
+
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
+    });
+
+});
+</script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Nikon Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Nikon troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Nikon CameraBTS.html">Nikon Camera Troubleshooting Guide</a></h3>
+      <p>Fix autofocus issues, blurry images, lens errors, memory card problems, battery or charging failures, and camera settings malfunctions in Nikon cameras.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Nikon FlashBTS.html">Nikon Flash Troubleshooting Guide</a></h3>
+      <p>Resolve flash not firing, inconsistent exposure, overheating, sync issues, battery problems, and connection errors in Nikon flash units.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Nikon LensBTS.html">Nikon Lens Troubleshooting Guide</a></h3>
+      <p>Fix autofocus problems, lens not recognized, zoom or aperture issues, image distortion, and connection or communication errors in Nikon lenses.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Nikon PowerBTS.html">Nikon Power Troubleshooting Guide</a></h3>
+      <p>Resolve battery not charging, sudden shutdowns, power drain issues, charging dock problems, and electrical connection faults in Nikon devices.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Nikon SystemBTS.html">Nikon System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, and system notifications across Nikon devices.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Nikon FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common Nikon camera problems, DSLR/mirrorless issues, and solutions</p>
+
+<!-- GENERAL -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on my Nikon camera?</div>
+<div class="answer">
+Nikon error codes indicate issues such as lens communication failure, shutter malfunction, memory card errors, or internal hardware faults.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I restart my Nikon camera when an error appears?</div>
+<div class="answer">
+Yes. Turning the camera off and removing the battery for a few seconds can clear temporary system glitches.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I send my Nikon camera for repair?</div>
+<div class="answer">
+If errors persist, the shutter stops working, or the camera shows repeated system failures, professional repair is required.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon camera freeze?</div>
+<div class="answer">
+Freezing may be caused by corrupted memory cards, outdated firmware, low battery, or internal processing errors.
+</div>
+</div>
+
+</div>
+
+<!-- ERROR CODE ISSUES -->
+<div class="faq-section">
+<div class="category-title">Error Code Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does Nikon "Err" mean?</div>
+<div class="answer">
+The generic “Err” message usually indicates a mechanical or communication issue between the lens and camera body.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon show “Err” when taking photos?</div>
+<div class="answer">
+It may be due to dirty lens contacts, misaligned lens, or shutter mechanism failure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon show blinking aperture or shutter error?</div>
+<div class="answer">
+This often indicates exposure system failure or incorrect lens communication.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can Nikon error messages be reset?</div>
+<div class="answer">
+Some temporary errors can be cleared by rebooting the camera, but hardware-related errors will return.
+</div>
+</div>
+
+</div>
+
+<!-- CAMERA PERFORMANCE -->
+<div class="faq-section">
+<div class="category-title">Camera Performance Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon camera not turning on?</div>
+<div class="answer">
+Dead battery, faulty charger, or internal power circuit issues may prevent startup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why are my Nikon photos blurry?</div>
+<div class="answer">
+Incorrect focus settings, camera shake, dirty lens, or low shutter speed can cause blur.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is autofocus not working?</div>
+<div class="answer">
+Autofocus may fail due to lens switch being off, low light conditions, or dirty contacts.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon camera slow to respond?</div>
+<div class="answer">
+Slow SD cards, large image files, or outdated firmware can affect performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my shutter not fire?</div>
+<div class="answer">
+The camera may be in playback mode, battery may be low, or shutter mechanism may be faulty.
+</div>
+</div>
+
+</div>
+
+<!-- LENS ISSUES -->
+<div class="faq-section">
+<div class="category-title">Lens Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon lens not focusing?</div>
+<div class="answer">
+Dirty contacts, autofocus switch off, or mechanical lens failure can cause focus issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my lens make clicking noises?</div>
+<div class="answer">
+This may indicate autofocus motor strain or internal gear issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won’t my lens attach properly?</div>
+<div class="answer">
+Misalignment, damaged mount pins, or debris on contacts can prevent proper attachment.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can Nikon lens errors be fixed at home?</div>
+<div class="answer">
+Minor contact cleaning can help, but internal lens repairs should be done by a technician.
+</div>
+</div>
+
+</div>
+
+<!-- MEMORY CARD ISSUES -->
+<div class="faq-section">
+<div class="category-title">Memory Card Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon say “Card Error”?</div>
+<div class="answer">
+The SD card may be corrupted, incompatible, or improperly formatted.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why can't my camera read my SD card?</div>
+<div class="answer">
+Damaged card, wrong file system, or dirty card slot may cause detection failure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why are images not saving?</div>
+<div class="answer">
+Write protection, full storage, or card failure may prevent saving images.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I format my SD card regularly?</div>
+<div class="answer">
+Yes. Formatting in-camera helps maintain performance and reduces file errors.
+</div>
+</div>
+
+</div>
+
+<!-- POWER & BATTERY -->
+<div class="faq-section">
+<div class="category-title">Power & Battery Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon battery drain quickly?</div>
+<div class="answer">
+Cold temperatures, aging battery, or heavy LCD usage can reduce battery life.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won’t my battery charge?</div>
+<div class="answer">
+Faulty charger, damaged battery, or dirty terminals may prevent charging.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my camera shut off suddenly?</div>
+<div class="answer">
+Low battery, overheating, or power board issues may cause shutdowns.
+</div>
+</div>
+
+</div>
+
+<!-- MAINTENANCE -->
+<div class="faq-section">
+<div class="category-title">Maintenance & Care</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I clean my Nikon camera?</div>
+<div class="answer">
+Clean lenses and body regularly, especially after outdoor use.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I prevent dust inside the camera?</div>
+<div class="answer">
+Always change lenses in a clean environment and keep the camera protected when not in use.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I update Nikon firmware?</div>
+<div class="answer">
+Yes. Firmware updates improve performance, fix bugs, and enhance compatibility.
+</div>
+</div>
+
+</div>
+
+<!-- EXTRA -->
+<div class="faq-section">
+<div class="category-title">Extra Common Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon camera overheat?</div>
+<div class="answer">
+Long video recording or heavy continuous shooting can cause overheating.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why do my photos have noise?</div>
+<div class="answer">
+High ISO settings or low-light conditions can create grainy images.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace instead of repair?</div>
+<div class="answer">
+If repair costs are high or the camera is outdated, replacement may be more practical.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon LCD screen not working?</div>
+<div class="answer">
+Loose ribbon cable, display damage, or internal board failure may be the cause.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Keep firmware updated, use genuine Nikon batteries, and handle lenses carefully to avoid most issues.
+</div>
+
+</div>
+
+</body>
+</html>

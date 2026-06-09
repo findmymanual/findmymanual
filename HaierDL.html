@@ -3286,77 +3286,528 @@
         </div>
 
 
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
+       <script>
+      document.addEventListener("DOMContentLoaded", () => {
 
-                const search = document.getElementById("pdfSearch");
+        const search = document.getElementById("pdfSearch");
 
-                // This selects all your gray boxes
-                const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+        // This selects all your gray boxes
+        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-                search.addEventListener("input", function () {
-                    const q = this.value.toLowerCase().trim();
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
 
-                    boxes.forEach(box => {
-                        const text = box.textContent.toLowerCase();
+          boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
 
-                        // show if matched, hide if not
-                        if (text.includes(q)) {
-                            box.style.display = "";
-                        } else {
-                            box.style.display = "none";
-                        }
-                    });
-                });
+            // show if matched, hide if not
+            if (text.includes(q)) {
+              box.style.display = "";
+            } else {
+              box.style.display = "none";
+            }
+          });
+        });
 
-            });
-        </script>
+      });
+    </script>
 
 
 </body>
 
+
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        // Move all PDF boxes into a responsive grid
-        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
-        if (boxes.length) {
-            const grid = document.createElement("div");
-            grid.className = "pdf-grid";
-            boxes.forEach(box => grid.appendChild(box));
-            const section = document.querySelector("section");
-            section.appendChild(grid);
-        }
+  document.addEventListener("DOMContentLoaded", () => {
+    // Move all PDF boxes into a responsive grid
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    if (boxes.length) {
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
+    }
 
-        // PDF button behavior & styling
-        document.querySelectorAll('.pdf-btn').forEach(btn => {
-            btn.addEventListener('click', function () {
-                const productId = this.getAttribute('data-product');
-                const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-                window.location.href = checkoutUrl;
+    // PDF button behavior & styling
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
             });
+        });
+    }
 
-            const icon = btn.querySelector('svg');
-            btn.style.display = 'inline-flex';
-            btn.style.alignItems = 'center';
-            btn.style.gap = '8px';
-            btn.style.padding = '10px 16px';
-            btn.style.background = '#4e6e81';
-            btn.style.color = '#fff';
-            btn.style.borderRadius = '6px';
-            btn.style.textDecoration = 'none';
-            btn.style.fontWeight = 'bold';
-            btn.style.fontFamily = 'Arial, sans-serif';
-            btn.style.transition = 'background 0.3s ease';
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
+        });
+
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
+        const icon = btn.querySelector('svg');
+
+        btn.style.display = 'inline-flex';
+        btn.style.alignItems = 'center';
+        btn.style.gap = '8px';
+        btn.style.padding = '10px 16px';
+        btn.style.background = '#4e6e81';
+        btn.style.color = '#fff';
+        btn.style.borderRadius = '6px';
+        btn.style.textDecoration = 'none';
+        btn.style.fontWeight = 'bold';
+        btn.style.fontFamily = 'Arial, sans-serif';
+        btn.style.transition = 'background 0.3s ease';
+
+        if (icon) {
             icon.style.transition = 'transform 0.3s ease';
 
             btn.addEventListener('mouseover', () => {
                 icon.style.transform = 'translateY(3px)';
                 btn.style.background = '#5f879a';
             });
+
             btn.addEventListener('mouseout', () => {
                 icon.style.transform = 'translateY(0)';
                 btn.style.background = '#4e6e81';
             });
-        });
+        }
     });
+
+});
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Haier Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Haier troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Haier AirconBTS.html">Haier Air Conditioner Troubleshooting Guide</a></h3>
+      <p>Fix cooling issues, weak airflow, water leakage (drainage/condensation problems), sensor errors, and remote or power control malfunctions in Haier air conditioners.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Haier DishwasherBTS.html">Haier Dishwasher Troubleshooting Guide</a></h3>
+      <p>Solve cleaning performance issues, drainage problems, water not filling, heating failures, cycle interruptions, and error code alerts in Haier dishwashers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Haier MicrowaveBTS.html">Haier Microwave Troubleshooting Guide</a></h3>
+      <p>Fix heating problems, turntable not spinning, sparking issues, power failures, display errors, and control panel malfunctions in Haier microwaves.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Haier RefBTS.html">Haier Refrigerator Troubleshooting Guide</a></h3>
+      <p>Resolve cooling issues, temperature fluctuations, ice maker problems, water leakage, defrost system faults, and compressor or sensor errors in Haier refrigerators.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Haier SystemBTS.html">Haier System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, and control panel notifications across Haier appliances.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Haier TVBTS.html">Haier Television Troubleshooting Guide</a></h3>
+      <p>Fix display issues, sound problems, power failures, WiFi connectivity issues, remote control malfunctions, and screen errors in Haier TVs.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Haier WashingBTS.html">Haier Washer Troubleshooting Guide</a></h3>
+      <p>Solve drainage issues, spinning problems, vibration or noise, water filling errors, door lock faults, and cycle interruptions in Haier washing machines.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haier FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Haier Frequently Asked Questions</h1>
+<p class="subtitle">Common questions and solutions for Haier appliances and system errors</p>
+
+<!-- GENERAL -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean in Haier appliances?</div>
+<div class="answer">
+Error codes indicate that the appliance has detected a fault in sensors, motors, water flow, temperature, or communication systems.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I reset my Haier appliance when it shows an error?</div>
+<div class="answer">
+Yes. A restart can clear temporary glitches, but recurring errors indicate a deeper issue that needs troubleshooting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a technician for Haier appliances?</div>
+<div class="answer">
+Call a technician if the issue involves compressor failure, PCB damage, burning smell, or repeated system shutdowns.
+</div>
+</div>
+
+</div>
+
+<!-- WASHING MACHINE -->
+<div class="faq-section">
+<div class="category-title">Washing Machine Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Haier washing machine not draining?</div>
+<div class="answer">
+This is usually caused by clogged filters, blocked drain hose, or faulty drain pump.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my washer not spinning?</div>
+<div class="answer">
+Overloaded drum, unbalanced load, or motor belt issues can prevent spinning.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does UE or UB error mean?</div>
+<div class="answer">
+UE/UB indicates an unbalanced load. Redistribute clothes evenly inside the drum.
+</div>
+</div>
+
+</div>
+
+<!-- AIR CONDITIONER -->
+<div class="faq-section">
+<div class="category-title">Air Conditioner Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Haier AC not cooling properly?</div>
+<div class="answer">
+Dirty filters, low refrigerant, or compressor issues can reduce cooling performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E1 or F1 error mean?</div>
+<div class="answer">
+These errors usually indicate sensor failure or communication issues between indoor and outdoor units.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my AC keep turning off?</div>
+<div class="answer">
+This may be caused by overheating protection, voltage fluctuation, or faulty thermostat.
+</div>
+</div>
+
+</div>
+
+<!-- REFRIGERATOR -->
+<div class="faq-section">
+<div class="category-title">Refrigerator Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Haier refrigerator not cooling?</div>
+<div class="answer">
+Blocked vents, faulty compressor, or thermostat issues may prevent proper cooling.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is there water leaking inside the fridge?</div>
+<div class="answer">
+Clogged defrost drain or door seal issues can cause water buildup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my fridge making loud noise?</div>
+<div class="answer">
+Noise may come from fan motor issues or compressor vibration.
+</div>
+</div>
+
+</div>
+
+<!-- ELECTRICAL & GENERAL -->
+<div class="faq-section">
+<div class="category-title">Power & Electrical Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Haier appliance keep restarting?</div>
+<div class="answer">
+Unstable voltage or faulty PCB can cause automatic restarts.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage Haier appliances?</div>
+<div class="answer">
+Yes, power surges can damage control boards and internal components.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my appliance trip the breaker?</div>
+<div class="answer">
+Electrical short circuits or overloaded circuits are common causes.
+</div>
+</div>
+
+</div>
+
+<!-- ADVANCED FAQ -->
+<div class="faq-section">
+<div class="category-title">Advanced Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Haier appliance show multiple errors at once?</div>
+<div class="answer">
+A single system failure (like PCB or power supply) can trigger multiple error codes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I fix Haier error codes myself?</div>
+<div class="answer">
+Basic issues like cleaning filters or resetting can be done at home, but sensor or board issues require technicians.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What is the most common Haier failure?</div>
+<div class="answer">
+Drainage issues in washers, cooling problems in ACs, and sensor faults are most common.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Haier appliances often require reset + cleaning maintenance before assuming major failure.
+</div>
+
+</div>
+
+</body>
+</html>

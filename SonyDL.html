@@ -23249,57 +23249,134 @@
 
 
         <script>
-document.addEventListener("DOMContentLoaded", () => {
+            document.addEventListener("DOMContentLoaded", () => {
 
-    const search = document.getElementById("pdfSearch");
+                const search = document.getElementById("pdfSearch");
 
-    // This selects all your gray boxes
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+                // This selects all your gray boxes
+                const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-    search.addEventListener("input", function () {
-        const q = this.value.toLowerCase().trim();
+                search.addEventListener("input", function () {
+                    const q = this.value.toLowerCase().trim();
 
-        boxes.forEach(box => {
-            const text = box.textContent.toLowerCase();
+                    boxes.forEach(box => {
+                        const text = box.textContent.toLowerCase();
 
-            // show if matched, hide if not
-            if (text.includes(q)) {
-                box.style.display = "";
-            } else {
-                box.style.display = "none";
-            }
-        });
-    });
+                        // show if matched, hide if not
+                        if (text.includes(q)) {
+                            box.style.display = "";
+                        } else {
+                            box.style.display = "none";
+                        }
+                    });
+                });
 
-});
-</script>
+            });
+        </script>
 
 
 </body>
 
 
 
-        <script>
-document.addEventListener("DOMContentLoaded", () => {
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     // Move all PDF boxes into a responsive grid
     const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
     if (boxes.length) {
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-        boxes.forEach(box => grid.appendChild(box));
-        const section = document.querySelector("section");
-        section.appendChild(grid);
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
     }
 
     // PDF button behavior & styling
     document.querySelectorAll('.pdf-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const productId = this.getAttribute('data-product');
-            const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            window.location.href = checkoutUrl;
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
+        });
+    }
+
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
         });
 
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
         const icon = btn.querySelector('svg');
+
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
         btn.style.gap = '8px';
@@ -23311,16 +23388,487 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.style.fontWeight = 'bold';
         btn.style.fontFamily = 'Arial, sans-serif';
         btn.style.transition = 'background 0.3s ease';
-        icon.style.transition = 'transform 0.3s ease';
 
-        btn.addEventListener('mouseover', () => {
-            icon.style.transform = 'translateY(3px)';
-            btn.style.background = '#5f879a';
-        });
-        btn.addEventListener('mouseout', () => {
-            icon.style.transform = 'translateY(0)';
-            btn.style.background = '#4e6e81';
-        });
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
     });
+
 });
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Sony Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Sony troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Sony CameraBTS.html">Sony Camera Troubleshooting Guide</a></h3>
+      <p>Fix autofocus issues, blurry images, lens errors, memory card problems, battery or charging failures, and camera settings malfunctions in Sony cameras.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Sony PlayStationBTS.html">Sony PlayStation Troubleshooting Guide</a></h3>
+      <p>Resolve startup failures, controller connectivity issues, game crashes, network errors, overheating problems, and system software issues in Sony PlayStation consoles.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Sony SystemBTS.html">Sony System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, and system notifications across Sony devices and appliances.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Sony TVBTS.html">Sony Television Troubleshooting Guide</a></h3>
+      <p>Fix display issues, sound problems, power failures, Wi-Fi connectivity errors, remote control malfunctions, and screen-related issues in Sony televisions.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Sony FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common Sony device problems and solutions</p>
+
+<!-- GENERAL -->
+
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on my Sony device?</div>
+<div class="answer">
+Error codes indicate system-detected issues such as hardware faults, communication failures, overheating, network problems, or software errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I reset my Sony device when an error appears?</div>
+<div class="answer">
+Yes. Restarting the device often clears temporary software glitches and communication problems.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I contact Sony support?</div>
+<div class="answer">
+Contact Sony support if the same error returns repeatedly, the device will not power on, or hardware failure is suspected.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony device restart by itself?</div>
+<div class="answer">
+Automatic restarts may be caused by software bugs, overheating, power issues, or failed firmware updates.
+</div>
+</div>
+
+</div>
+
+<!-- TV ISSUES -->
+
+<div class="faq-section">
+<div class="category-title">Sony TV Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won't my Sony TV turn on?</div>
+<div class="answer">
+Check the power cable, wall outlet, remote batteries, and standby light indicators.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Sony TV showing a black screen?</div>
+<div class="answer">
+A black screen may be caused by HDMI issues, incorrect input selection, software problems, or panel failure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony TV have no sound?</div>
+<div class="answer">
+Check mute settings, audio output settings, connected sound systems, and speaker configuration.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won't my Sony TV connect to Wi-Fi?</div>
+<div class="answer">
+Incorrect network settings, outdated firmware, weak signal strength, or router problems may prevent connection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Sony TV running slowly?</div>
+<div class="answer">
+Limited storage, outdated software, or too many background apps can affect performance.
+</div>
+</div>
+
+</div>
+
+<!-- PLAYSTATION -->
+
+<div class="faq-section">
+<div class="category-title">PlayStation Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won't my PlayStation turn on?</div>
+<div class="answer">
+Power supply problems, overheating protection, or faulty cables may prevent startup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my PlayStation overheating?</div>
+<div class="answer">
+Dust buildup, blocked vents, or poor ventilation commonly cause overheating.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my PlayStation freeze during games?</div>
+<div class="answer">
+Game file corruption, software bugs, storage problems, or overheating may cause freezing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why can't I connect to PlayStation Network?</div>
+<div class="answer">
+Internet issues, account problems, DNS settings, or server outages may prevent access.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why are game downloads slow?</div>
+<div class="answer">
+Network congestion, Wi-Fi interference, or limited internet speed may reduce download performance.
+</div>
+</div>
+
+</div>
+
+<!-- HEADPHONES -->
+
+<div class="faq-section">
+<div class="category-title">Headphones & Earbuds</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won't my Sony headphones connect via Bluetooth?</div>
+<div class="answer">
+Bluetooth may be disabled, the device may not be in pairing mode, or another device may already be connected.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is sound only coming from one earbud?</div>
+<div class="answer">
+Low battery, pairing issues, or debris blocking the speaker may cause one-sided audio.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does Bluetooth keep disconnecting?</div>
+<div class="answer">
+Wireless interference, outdated firmware, or low battery levels may interrupt connections.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is the microphone not working?</div>
+<div class="answer">
+Microphone permissions, Bluetooth profile settings, or software configuration may be incorrect.
+</div>
+</div>
+
+</div>
+
+<!-- CAMERA -->
+
+<div class="faq-section">
+<div class="category-title">Camera Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won't my Sony camera turn on?</div>
+<div class="answer">
+Battery issues, charging faults, or damaged power circuitry may prevent startup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why are my photos blurry?</div>
+<div class="answer">
+Incorrect focus settings, dirty lenses, camera shake, or low lighting may reduce image quality.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my camera show memory card errors?</div>
+<div class="answer">
+The memory card may be corrupted, locked, damaged, or incompatible with the camera.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won't my camera record video?</div>
+<div class="answer">
+Insufficient storage, overheating protection, or unsupported settings may stop recording.
+</div>
+</div>
+
+</div>
+
+<!-- AUDIO SYSTEMS -->
+
+<div class="faq-section">
+<div class="category-title">Audio System & Soundbar Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Sony soundbar not producing sound?</div>
+<div class="answer">
+Incorrect audio settings, HDMI ARC issues, or source device configuration may prevent sound output.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is audio distorted?</div>
+<div class="answer">
+Damaged speakers, excessive volume, or incorrect audio processing settings may cause distortion.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my speaker shut off automatically?</div>
+<div class="answer">
+Auto power-off settings, overheating protection, or power supply issues may trigger shutdown.
+</div>
+</div>
+
+</div>
+
+<!-- POWER -->
+
+<div class="faq-section">
+<div class="category-title">Power & Electrical Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony device keep shutting off?</div>
+<div class="answer">
+Overheating, power supply failure, or firmware instability may cause shutdowns.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage Sony devices?</div>
+<div class="answer">
+Yes. Power surges can damage circuit boards, processors, storage devices, and power supplies.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my device feel hot during use?</div>
+<div class="answer">
+Some heat is normal, but excessive heat usually indicates poor ventilation or heavy system load.
+</div>
+</div>
+
+</div>
+
+<!-- EXTRA -->
+
+<div class="faq-section">
+<div class="category-title">Extra Common Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Sony device stuck on the startup logo?</div>
+<div class="answer">
+Corrupted firmware, failed updates, or internal hardware faults may prevent booting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my remote control not working?</div>
+<div class="answer">
+Weak batteries, pairing issues, blocked infrared sensors, or damaged buttons may be responsible.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I update Sony firmware regularly?</div>
+<div class="answer">
+Yes. Firmware updates improve security, compatibility, stability, and overall performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace instead of repair?</div>
+<div class="answer">
+Replacement may be more economical when repair costs exceed half the value of the device or replacement parts are unavailable.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Many Sony devices provide LED indicators, diagnostic messages, and error codes that can help identify issues before professional repairs are needed.
+</div>
+
+</div>
+
+</body>
+</html>

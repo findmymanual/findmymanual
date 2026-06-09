@@ -3715,7 +3715,37 @@
         </div>
 
 
-        <script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+
+        const search = document.getElementById("pdfSearch");
+
+        // This selects all your gray boxes
+        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
+
+          boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+              box.style.display = "";
+            } else {
+              box.style.display = "none";
+            }
+          });
+        });
+
+      });
+    </script>
+
+
+</body>
+
+       <script>
             document.addEventListener("DOMContentLoaded", () => {
 
                 const search = document.getElementById("pdfSearch");
@@ -3744,48 +3774,545 @@
 
 </body>
 
+
+
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        // Move all PDF boxes into a responsive grid
-        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
-        if (boxes.length) {
-            const grid = document.createElement("div");
-            grid.className = "pdf-grid";
-            boxes.forEach(box => grid.appendChild(box));
-            const section = document.querySelector("section");
-            section.appendChild(grid);
-        }
+  document.addEventListener("DOMContentLoaded", () => {
+    // Move all PDF boxes into a responsive grid
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    if (boxes.length) {
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
+    }
 
-        // PDF button behavior & styling
-        document.querySelectorAll('.pdf-btn').forEach(btn => {
-            btn.addEventListener('click', function () {
-                const productId = this.getAttribute('data-product');
-                const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-                window.location.href = checkoutUrl;
+    // PDF button behavior & styling
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
             });
+        });
+    }
 
-            const icon = btn.querySelector('svg');
-            btn.style.display = 'inline-flex';
-            btn.style.alignItems = 'center';
-            btn.style.gap = '8px';
-            btn.style.padding = '10px 16px';
-            btn.style.background = '#4e6e81';
-            btn.style.color = '#fff';
-            btn.style.borderRadius = '6px';
-            btn.style.textDecoration = 'none';
-            btn.style.fontWeight = 'bold';
-            btn.style.fontFamily = 'Arial, sans-serif';
-            btn.style.transition = 'background 0.3s ease';
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
+        });
+
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
+        const icon = btn.querySelector('svg');
+
+        btn.style.display = 'inline-flex';
+        btn.style.alignItems = 'center';
+        btn.style.gap = '8px';
+        btn.style.padding = '10px 16px';
+        btn.style.background = '#4e6e81';
+        btn.style.color = '#fff';
+        btn.style.borderRadius = '6px';
+        btn.style.textDecoration = 'none';
+        btn.style.fontWeight = 'bold';
+        btn.style.fontFamily = 'Arial, sans-serif';
+        btn.style.transition = 'background 0.3s ease';
+
+        if (icon) {
             icon.style.transition = 'transform 0.3s ease';
 
             btn.addEventListener('mouseover', () => {
                 icon.style.transform = 'translateY(3px)';
                 btn.style.background = '#5f879a';
             });
+
             btn.addEventListener('mouseout', () => {
                 icon.style.transform = 'translateY(0)';
                 btn.style.background = '#4e6e81';
             });
-        });
+        }
     });
+
+});
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Philips Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Philips troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Philips Air FryerBTS.html">Philips Air Fryer Troubleshooting Guide</a></h3>
+      <p>Fix cooking performance issues, overheating problems, fan malfunctions, uneven results, sensor errors, and power or control issues in Philips air fryers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Philips PersonalBTS.html">Philips Personal Care Troubleshooting Guide</a></h3>
+      <p>Resolve issues with shavers, electric toothbrushes, hair dryers, and grooming devices such as charging failures, motor problems, overheating, and performance inconsistencies.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Philips SystemBTS.html">Philips System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, and system notifications across Philips devices and appliances.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Philips TVBTS.html">Philips Television Troubleshooting Guide</a></h3>
+      <p>Fix display issues, sound problems, power failures, HDMI or connectivity errors, remote control issues, and system glitches in Philips TVs.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Philips VacuumBTS.html">Philips Vacuum Troubleshooting Guide</a></h3>
+      <p>Solve suction loss, battery charging issues, brush roll jams, clogging, unusual noise, and power or performance problems in Philips vacuum cleaners.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<div class="container">
+
+    <h1>Philips FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common Philips device problems and solutions</p>
+
+<!-- GENERAL -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on my Philips device?</div>
+<div class="answer">
+Error codes indicate that the system has detected a malfunction such as sensor failure, power issues, airflow blockage, or internal communication errors between components.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I reset my Philips device when it shows an error?</div>
+<div class="answer">
+Yes. A restart or reset can clear temporary glitches, but repeated errors usually indicate a hardware issue that needs inspection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a technician?</div>
+<div class="answer">
+Call a technician if the device has repeated error codes, burning smell, power failure, or stops working even after reset.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips device keep turning off?</div>
+<div class="answer">
+This may be caused by overheating protection, unstable power supply, faulty power board, or internal sensor failure.
+</div>
+</div>
+
+</div>
+
+<!-- ERROR CODES -->
+<div class="faq-section">
+<div class="category-title">Error Code Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips appliance show multiple error codes?</div>
+<div class="answer">
+Multiple error codes often indicate a main control board issue or unstable power affecting several components at once.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I clear Philips error codes myself?</div>
+<div class="answer">
+You can try unplugging the device for a few minutes, but persistent codes require technical repair.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips device show blinking lights?</div>
+<div class="answer">
+Blinking lights usually indicate system protection mode, sensor failure, or internal communication errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does the device restart repeatedly?</div>
+<div class="answer">
+This may be due to overheating, unstable voltage, or a failing control board.
+</div>
+</div>
+
+</div>
+
+<!-- HOME APPLIANCES -->
+<div class="faq-section">
+<div class="category-title">Home Appliance Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Philips appliance not working properly?</div>
+<div class="answer">
+Common causes include blocked airflow, dirty filters, faulty sensors, or internal electrical issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Philips device making unusual noise?</div>
+<div class="answer">
+Loose components, motor wear, or debris inside the unit may cause noise during operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips device overheat?</div>
+<div class="answer">
+Overheating is usually caused by blocked ventilation, dirty filters, or continuous heavy use.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips device smell like burning?</div>
+<div class="answer">
+This may indicate motor overheating, electrical failure, or dust buildup inside the unit.
+</div>
+</div>
+
+</div>
+
+<!-- COOLING / AIRFLOW -->
+<div class="faq-section">
+<div class="category-title">Cooling & Airflow Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is airflow weak in my Philips device?</div>
+<div class="answer">
+Dirty filters, blocked vents, or weak fan motors can reduce airflow significantly.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Philips air device not cooling or purifying properly?</div>
+<div class="answer">
+Clogged filters, sensor malfunction, or fan failure may reduce performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can dirty filters cause errors?</div>
+<div class="answer">
+Yes. Dirty filters restrict airflow and can trigger overheating or system fault codes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does airflow fluctuate?</div>
+<div class="answer">
+This may be caused by automatic sensor adjustment, airflow obstruction, or unstable fan operation.
+</div>
+</div>
+
+</div>
+
+<!-- POWER -->
+<div class="faq-section">
+<div class="category-title">Power & Electrical Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips device trip the breaker?</div>
+<div class="answer">
+This may happen due to electrical overload, short circuit, or faulty internal wiring.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage Philips devices?</div>
+<div class="answer">
+Yes. Power surges can damage circuit boards, sensors, and power supplies.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my device shut off randomly?</div>
+<div class="answer">
+This may be caused by overheating protection or unstable electricity supply.
+</div>
+</div>
+
+</div>
+
+<!-- SENSORS -->
+<div class="faq-section">
+<div class="category-title">Sensor & Control Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips device show sensor errors?</div>
+<div class="answer">
+Faulty temperature, humidity, or airflow sensors can cause system errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my control panel not responding?</div>
+<div class="answer">
+Moisture damage, loose wiring, or control board failure may cause unresponsive controls.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can sensors be replaced?</div>
+<div class="answer">
+Yes. Most sensors can be replaced by a qualified technician.
+</div>
+</div>
+
+</div>
+
+<!-- EXTRA -->
+<div class="faq-section">
+<div class="category-title">Extra Common Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does vibration occur during operation?</div>
+<div class="answer">
+Unstable placement, worn components, or motor imbalance can cause vibration.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace my Philips device instead of repairing?</div>
+<div class="answer">
+If repair costs are too high or the device is more than 8–10 years old, replacement may be better.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does performance decrease over time?</div>
+<div class="answer">
+Dust buildup, worn parts, and lack of maintenance can reduce efficiency.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How can I prevent most issues?</div>
+<div class="answer">
+Regular cleaning, proper ventilation, and stable power supply help prevent most problems.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Regular maintenance and filter cleaning help extend the life of Philips devices and reduce error occurrences.
+</div>
+
+</div>
+
+</body>
+</html>

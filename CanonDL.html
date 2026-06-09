@@ -1985,60 +1985,136 @@
     </div>
 
     
+
         <script>
-document.addEventListener("DOMContentLoaded", () => {
+            document.addEventListener("DOMContentLoaded", () => {
 
-    const search = document.getElementById("pdfSearch");
+                const search = document.getElementById("pdfSearch");
 
-    // This selects all your gray boxes
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+                // This selects all your gray boxes
+                const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
 
-    search.addEventListener("input", function () {
-        const q = this.value.toLowerCase().trim();
+                search.addEventListener("input", function () {
+                    const q = this.value.toLowerCase().trim();
 
-        boxes.forEach(box => {
-            const text = box.textContent.toLowerCase();
+                    boxes.forEach(box => {
+                        const text = box.textContent.toLowerCase();
 
-            // show if matched, hide if not
-            if (text.includes(q)) {
-                box.style.display = "";
-            } else {
-                box.style.display = "none";
-            }
-        });
-    });
+                        // show if matched, hide if not
+                        if (text.includes(q)) {
+                            box.style.display = "";
+                        } else {
+                            box.style.display = "none";
+                        }
+                    });
+                });
 
-});
-
-
-</script>
+            });
+        </script>
 
 
 </body>
 
 
 
-        <script>
-document.addEventListener("DOMContentLoaded", () => {
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     // Move all PDF boxes into a responsive grid
     const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
     if (boxes.length) {
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-        boxes.forEach(box => grid.appendChild(box));
-        const section = document.querySelector("section");
-        section.appendChild(grid);
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
     }
 
     // PDF button behavior & styling
     document.querySelectorAll('.pdf-btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            const productId = this.getAttribute('data-product');
-            const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-            window.location.href = checkoutUrl;
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
+            });
+        });
+    }
+
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
         });
 
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
         const icon = btn.querySelector('svg');
+
         btn.style.display = 'inline-flex';
         btn.style.alignItems = 'center';
         btn.style.gap = '8px';
@@ -2050,18 +2126,512 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.style.fontWeight = 'bold';
         btn.style.fontFamily = 'Arial, sans-serif';
         btn.style.transition = 'background 0.3s ease';
-        icon.style.transition = 'transform 0.3s ease';
 
-        btn.addEventListener('mouseover', () => {
-            icon.style.transform = 'translateY(3px)';
-            btn.style.background = '#5f879a';
-        });
-        btn.addEventListener('mouseout', () => {
-            icon.style.transform = 'translateY(0)';
-            btn.style.background = '#4e6e81';
-        });
+        if (icon) {
+            icon.style.transition = 'transform 0.3s ease';
+
+            btn.addEventListener('mouseover', () => {
+                icon.style.transform = 'translateY(3px)';
+                btn.style.background = '#5f879a';
+            });
+
+            btn.addEventListener('mouseout', () => {
+                icon.style.transform = 'translateY(0)';
+                btn.style.background = '#4e6e81';
+            });
+        }
     });
+
 });
 </script>
 
+<div id="pdfGridContainer"></div>
 
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Canon Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Canon troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Canon CameraBTS.html">Canon Camera Troubleshooting Guide</a></h3>
+      <p>Fix autofocus issues, blurry images, lens errors, memory card problems, battery or charging failures, and camera settings malfunctions in Canon cameras.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Canon PrinterBTS.html">Canon Printer Troubleshooting Guide</a></h3>
+      <p>Resolve paper jams, printing errors, connectivity issues, ink or toner problems, driver errors, and startup or system malfunctions in Canon printers.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Canon ProjectorBTS.html">Canon Projector Troubleshooting Guide</a></h3>
+      <p>Fix display issues, no signal errors, overheating problems, image distortion, lamp failures, and connection issues in Canon projectors.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Canon ScannerBTS.html">Canon Scanner Troubleshooting Guide</a></h3>
+      <p>Resolve scanning errors, driver issues, connectivity problems, slow scanning, and image quality issues in Canon scanners.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Canon SystemBTS.html">Canon System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning messages, display alerts, and system notifications across Canon devices.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+<h1>Canon FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common Canon printer, camera, scanner, and imaging device problems and solutions</p>
+
+<!-- GENERAL -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on my Canon device?</div>
+<div class="answer">
+Error codes identify specific problems such as paper jams, ink system failures, communication issues, scanner faults, or hardware malfunctions.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Should I restart my Canon device when an error appears?</div>
+<div class="answer">
+Yes. Restarting the device can clear temporary software glitches and communication problems.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I contact Canon support?</div>
+<div class="answer">
+Contact support if the error persists after troubleshooting, hardware components fail, or the device stops functioning completely.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Canon device freeze or stop responding?</div>
+<div class="answer">
+Firmware issues, memory problems, software conflicts, or communication errors can cause freezing.
+</div>
+</div>
+
+</div>
+
+<!-- PRINTER ERROR CODES -->
+<div class="faq-section">
+<div class="category-title">Printer Error Codes</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does Canon error B200 mean?</div>
+<div class="answer">
+Error B200 usually indicates a print head or ink system failure that may require cleaning, reseating, or replacement.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does Canon error 5100 mean?</div>
+<div class="answer">
+Error 5100 often relates to carriage movement problems, obstructions, or encoder strip contamination.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Canon printer show multiple errors?</div>
+<div class="answer">
+Multiple errors can occur due to firmware issues, power interruptions, or multiple hardware failures.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I clear printer errors?</div>
+<div class="answer">
+Turn off the printer, disconnect power for several minutes, reconnect, and restart. Persistent errors may require repairs.
+</div>
+</div>
+
+</div>
+
+<!-- PRINTER ISSUES -->
+<div class="faq-section">
+<div class="category-title">Printer Problems</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Canon printer not printing?</div>
+<div class="answer">
+Common causes include empty ink cartridges, paper jams, connectivity issues, or print queue problems.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why are my printouts blurry or faded?</div>
+<div class="answer">
+Clogged print heads, low ink levels, incorrect print settings, or poor-quality paper may cause poor print quality.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my printer printing blank pages?</div>
+<div class="answer">
+Empty cartridges, clogged nozzles, or print head issues are common causes of blank pages.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my printer keep jamming paper?</div>
+<div class="answer">
+Dirty rollers, damaged paper, incorrect paper size, or foreign objects inside the printer may cause jams.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Canon printer printing slowly?</div>
+<div class="answer">
+High-quality print settings, wireless connection issues, or large print jobs can slow printing.
+</div>
+</div>
+
+</div>
+
+<!-- SCANNER ISSUES -->
+<div class="faq-section">
+<div class="category-title">Scanner Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Canon scanner not detected?</div>
+<div class="answer">
+USB connection problems, missing drivers, or software conflicts can prevent scanner detection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why are scanned images blurry?</div>
+<div class="answer">
+Dirty scanner glass, incorrect resolution settings, or document movement during scanning may cause blur.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does scanning stop halfway?</div>
+<div class="answer">
+Memory limitations, software issues, or connection interruptions may stop scanning processes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my scanner produce lines on images?</div>
+<div class="answer">
+Dust, dirt, or scratches on the scanner glass can create lines or streaks in scanned documents.
+</div>
+</div>
+
+</div>
+
+<!-- CAMERA ISSUES -->
+<div class="faq-section">
+<div class="category-title">Camera Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won't my Canon camera turn on?</div>
+<div class="answer">
+The battery may be discharged, improperly installed, or the battery contacts may need cleaning.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my camera show an Err 01 message?</div>
+<div class="answer">
+Err 01 often indicates communication problems between the camera body and lens contacts.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why are my photos blurry?</div>
+<div class="answer">
+Incorrect focus settings, camera shake, dirty lenses, or low-light conditions can cause blurry images.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won't my camera focus?</div>
+<div class="answer">
+Low light, lens issues, incorrect autofocus settings, or dirty contacts may prevent focusing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my camera memory card show errors?</div>
+<div class="answer">
+Corrupted files, damaged cards, or incompatible memory cards can trigger card errors.
+</div>
+</div>
+
+</div>
+
+<!-- CONNECTIVITY -->
+<div class="faq-section">
+<div class="category-title">Wi-Fi & Connectivity Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won't my Canon printer connect to Wi-Fi?</div>
+<div class="answer">
+Incorrect network credentials, weak signal strength, or router compatibility issues may prevent connection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why can't my computer find the printer?</div>
+<div class="answer">
+Driver issues, firewall settings, or network communication problems may block detection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does the wireless connection keep disconnecting?</div>
+<div class="answer">
+Weak Wi-Fi signals, interference, or outdated firmware can cause intermittent connections.
+</div>
+</div>
+
+</div>
+
+<!-- POWER & ELECTRICAL -->
+<div class="faq-section">
+<div class="category-title">Power & Electrical Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won't my Canon device power on?</div>
+<div class="answer">
+A faulty power adapter, damaged power cable, blown fuse, or internal hardware fault may prevent startup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage Canon devices?</div>
+<div class="answer">
+Yes. Power surges can damage control boards, power supplies, and communication circuits.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my device suddenly shut down?</div>
+<div class="answer">
+Overheating, unstable voltage, or internal component failures may trigger unexpected shutdowns.
+</div>
+</div>
+
+</div>
+
+<!-- MAINTENANCE -->
+<div class="faq-section">
+<div class="category-title">Maintenance Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I clean my Canon printer?</div>
+<div class="answer">
+Regular cleaning every few months helps prevent print quality issues and extends printer life.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I prevent print head clogs?</div>
+<div class="answer">
+Print regularly and use genuine ink cartridges to reduce the chance of clogged nozzles.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How should I store my Canon camera?</div>
+<div class="answer">
+Store the camera in a cool, dry environment with the lens cap attached and battery removed during long-term storage.
+</div>
+</div>
+
+</div>
+
+<!-- EXTRA -->
+<div class="faq-section">
+<div class="category-title">Extra Common Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Canon device make unusual noises?</div>
+<div class="answer">
+Grinding, clicking, or buzzing noises may indicate motor problems, mechanical obstructions, or worn components.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my printer display low ink even after replacement?</div>
+<div class="answer">
+The cartridge may not be seated correctly, may be incompatible, or the printer may require a reset.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace instead of repair?</div>
+<div class="answer">
+Replacement is often more economical when repair costs exceed half the value of the device or major components fail.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can firmware updates fix Canon issues?</div>
+<div class="answer">
+Yes. Firmware updates can resolve bugs, improve compatibility, and fix known performance issues.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Regular maintenance, genuine Canon consumables, and firmware updates help prevent many common Canon device problems.
+</div>
+
+</div>
+
+</body>
+</html>

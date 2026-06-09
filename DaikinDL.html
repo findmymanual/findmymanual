@@ -4297,7 +4297,37 @@
         </div>
 
         
-        <script>
+ 
+     <script>
+      document.addEventListener("DOMContentLoaded", () => {
+
+        const search = document.getElementById("pdfSearch");
+
+        // This selects all your gray boxes
+        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
+
+          boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+              box.style.display = "";
+            } else {
+              box.style.display = "none";
+            }
+          });
+        });
+
+      });
+    </script>
+
+
+</body>
+
+       <script>
             document.addEventListener("DOMContentLoaded", () => {
 
                 const search = document.getElementById("pdfSearch");
@@ -4326,48 +4356,521 @@
 
 </body>
 
+
+
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        // Move all PDF boxes into a responsive grid
-        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
-        if (boxes.length) {
-            const grid = document.createElement("div");
-            grid.className = "pdf-grid";
-            boxes.forEach(box => grid.appendChild(box));
-            const section = document.querySelector("section");
-            section.appendChild(grid);
-        }
+  document.addEventListener("DOMContentLoaded", () => {
+    // Move all PDF boxes into a responsive grid
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    if (boxes.length) {
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
+    }
 
-        // PDF button behavior & styling
-        document.querySelectorAll('.pdf-btn').forEach(btn => {
-            btn.addEventListener('click', function () {
-                const productId = this.getAttribute('data-product');
-                const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-                window.location.href = checkoutUrl;
+    // PDF button behavior & styling
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================
+       1. SEARCH FUNCTION
+    ========================= */
+    const search = document.getElementById("pdfSearch");
+
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    if (search) {
+        search.addEventListener("input", function () {
+            const q = this.value.toLowerCase().trim();
+
+            boxes.forEach(box => {
+                const text = box.textContent.toLowerCase();
+                box.style.display = text.includes(q) ? "" : "none";
             });
+        });
+    }
 
-            const icon = btn.querySelector('svg');
-            btn.style.display = 'inline-flex';
-            btn.style.alignItems = 'center';
-            btn.style.gap = '8px';
-            btn.style.padding = '10px 16px';
-            btn.style.background = '#4e6e81';
-            btn.style.color = '#fff';
-            btn.style.borderRadius = '6px';
-            btn.style.textDecoration = 'none';
-            btn.style.fontWeight = 'bold';
-            btn.style.fontFamily = 'Arial, sans-serif';
-            btn.style.transition = 'background 0.3s ease';
+
+    /* =========================
+       2. BUILD PDF GRID (FIXED ORDER)
+       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
+    ========================= */
+
+    const troubleshooting = document.querySelector(".lg-troubleshooting");
+
+    if (boxes.length && troubleshooting) {
+
+        const grid = document.createElement("div");
+        grid.className = "pdf-grid";
+
+        boxes.forEach(box => {
+            grid.appendChild(box);
+        });
+
+        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
+        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
+    }
+
+
+    /* =========================
+       3. BUTTON STYLING (PDF BUTTONS)
+    ========================= */
+
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+
+        const icon = btn.querySelector('svg');
+
+        btn.style.display = 'inline-flex';
+        btn.style.alignItems = 'center';
+        btn.style.gap = '8px';
+        btn.style.padding = '10px 16px';
+        btn.style.background = '#4e6e81';
+        btn.style.color = '#fff';
+        btn.style.borderRadius = '6px';
+        btn.style.textDecoration = 'none';
+        btn.style.fontWeight = 'bold';
+        btn.style.fontFamily = 'Arial, sans-serif';
+        btn.style.transition = 'background 0.3s ease';
+
+        if (icon) {
             icon.style.transition = 'transform 0.3s ease';
 
             btn.addEventListener('mouseover', () => {
                 icon.style.transform = 'translateY(3px)';
                 btn.style.background = '#5f879a';
             });
+
             btn.addEventListener('mouseout', () => {
                 icon.style.transform = 'translateY(0)';
                 btn.style.background = '#4e6e81';
             });
-        });
+        }
     });
+
+});
 </script>
+
+<div id="pdfGridContainer"></div>
+
+
+<section class="lg-troubleshooting">
+
+  <h2 style="text-align:center;">Daikin Troubleshooting Guides</h2>
+
+  <p class="subtitle">
+    Find step-by-step Daikin troubleshooting guides for common appliance problems.
+    These guides help you fix errors, understand issues, and learn basic solutions
+    before contacting a technician.
+  </p>
+
+  <div class="troubleshooting-grid">
+
+    <div class="trouble-card">
+      <h3><a href="Daikin AirconBTS.html">Daikin Air Conditioner Troubleshooting Guide</a></h3>
+      <p>Fix cooling issues, weak airflow, refrigerant problems, drainage or water leakage, sensor errors, compressor faults, and remote or control system malfunctions in Daikin air conditioners.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Daikin HeatBTS.html">Daikin Heat Pump Troubleshooting Guide</a></h3>
+      <p>Resolve heating or cooling imbalance, defrost issues, refrigerant leaks, airflow restrictions, error codes, and system performance problems in Daikin heat pumps.</p>
+    </div>
+
+    <div class="trouble-card">
+      <h3><a href="Daikin SystemBTS.html">Daikin System Messages Troubleshooting Guide</a></h3>
+      <p>Understand and resolve error codes, warning lights, system alerts, temperature warnings, and control panel notifications in Daikin HVAC systems.</p>
+    </div>
+
+    
+  </div>
+
+</section>
+
+<style>
+.lg-troubleshooting {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+
+.lg-troubleshooting h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.trouble-card {
+  border: 3px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.trouble-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.trouble-card a {
+  text-decoration: none;
+  color: #0073aa;
+}
+
+.trouble-card a:hover {
+  text-decoration: underline;
+}
+
+.trouble-card p {
+  font-size: 14px;
+  color: #555;
+}
+</style>
+
+
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+
+<div class="container">
+
+    <h1>Daikin FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common Daikin air conditioner problems and solutions</p>
+
+<!-- GENERAL -->
+<div class="faq-section">
+<div class="category-title">General Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Daikin air conditioner not turning on?</div>
+<div class="answer">
+Check the power supply, circuit breaker, remote batteries, and timer settings. A tripped breaker or loose wiring may also prevent startup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Daikin AC keep turning off by itself?</div>
+<div class="answer">
+This may be caused by overheating protection, dirty filters, unstable voltage, or faulty control board.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a technician?</div>
+<div class="answer">
+Call a technician if there are refrigerant leaks, compressor failure, burning smell, or repeated error codes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Daikin AC not responding to remote?</div>
+<div class="answer">
+Check batteries, infrared sensor alignment, and possible obstruction between remote and indoor unit.
+</div>
+</div>
+
+</div>
+
+<!-- ERROR CODE ISSUES -->
+<div class="faq-section">
+<div class="category-title">Error Code Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Daikin AC show U4 or U0 error?</div>
+<div class="answer">
+U4/U0 often indicates communication failure between indoor and outdoor units or power supply issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Daikin display blinking lights?</div>
+<div class="answer">
+Blinking lights usually indicate system protection mode, sensor failure, or abnormal operation detected by the unit.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I reset Daikin error codes myself?</div>
+<div class="answer">
+Yes, you can try power cycling the unit, but persistent errors require professional servicing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Daikin AC show multiple error codes?</div>
+<div class="answer">
+Multiple errors may indicate control board malfunction or unstable electrical supply affecting multiple components.
+</div>
+</div>
+
+</div>
+
+<!-- COOLING ISSUES -->
+<div class="faq-section">
+<div class="category-title">Cooling & Performance Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Daikin AC not cooling properly?</div>
+<div class="answer">
+Dirty filters, low refrigerant, blocked airflow, or compressor issues can reduce cooling performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is airflow weak from my Daikin AC?</div>
+<div class="answer">
+Clogged filters, dirty evaporator coils, or fan motor issues may restrict airflow.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my AC blow warm air?</div>
+<div class="answer">
+Incorrect mode settings, refrigerant leak, or compressor failure may cause warm airflow.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Daikin AC take long to cool?</div>
+<div class="answer">
+Dirty filters or undersized unit for the room can slow cooling performance.
+</div>
+</div>
+
+</div>
+
+<!-- WATER & LEAK ISSUES -->
+<div class="faq-section">
+<div class="category-title">Water & Drainage Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Daikin AC leaking water?</div>
+<div class="answer">
+Clogged drain pipe, dirty filters, or frozen evaporator coil can cause water leakage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is water dripping inside the room?</div>
+<div class="answer">
+Improper installation or blocked drainage system may cause indoor dripping.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my AC freeze up?</div>
+<div class="answer">
+Low refrigerant or poor airflow due to dirty filters can cause icing on coils.
+</div>
+</div>
+
+</div>
+
+<!-- NOISE & ODOR -->
+<div class="faq-section">
+<div class="category-title">Noise & Odor Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Daikin AC noisy?</div>
+<div class="answer">
+Loose fan blades, debris inside unit, or worn motor bearings may cause noise.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my AC smell bad?</div>
+<div class="answer">
+Mold buildup in filters or evaporator coil is a common cause of bad odor.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my AC make clicking sounds?</div>
+<div class="answer">
+Relay switching or expansion/contraction of internal parts may cause clicking noises.
+</div>
+</div>
+
+</div>
+
+<!-- POWER & ELECTRICAL -->
+<div class="faq-section">
+<div class="category-title">Power & Electrical Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Daikin AC trip the breaker?</div>
+<div class="answer">
+Electrical overload, short circuit, or compressor failure may trigger breaker trips.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage Daikin units?</div>
+<div class="answer">
+Yes. Surges can damage PCB boards, sensors, and compressors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my AC randomly shut off?</div>
+<div class="answer">
+Overheating protection or unstable voltage supply can cause shutdowns.
+</div>
+</div>
+
+</div>
+
+<!-- MAINTENANCE -->
+<div class="faq-section">
+<div class="category-title">Maintenance & Prevention</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I clean Daikin filters?</div>
+<div class="answer">
+Every 2–4 weeks depending on usage and environment conditions.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is regular maintenance important?</div>
+<div class="answer">
+It improves efficiency, prevents breakdowns, and extends the lifespan of the unit.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can dirty filters damage the AC?</div>
+<div class="answer">
+Yes. Dirty filters reduce airflow and can cause freezing, overheating, or sensor errors.
+</div>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Tip:</strong> Regular cleaning and proper installation help prevent most Daikin air conditioner issues.
+</div>
+
+</div>
+
+</body>
+</html>
