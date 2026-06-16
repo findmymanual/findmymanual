@@ -3,96 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brother Inkjet Printer Error Codes Guide</title>
+<title>Bosch Refrigerator Error Codes Troubleshooting Guide</title>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f5f5;
+    background:#f5f6f8;
     color:#333;
 }
 
 .container{
-    max-width:1200px;
+    max-width:1100px;
     margin:auto;
     background:#fff;
-    padding:30px;
+    padding:25px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    
 }
 
 h1{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
+    border-radius:8px;
     margin-bottom:10px;
-    background: #1f3b4d;
-    color: white;
-    padding: 25px;
-
+    
 }
 
-.subtitle{
+h2{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
-    margin-bottom:30px;
+    border-radius:8px;
+    margin-bottom:10px;
+    
 }
 
 .section-title{
     margin-top:40px;
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
-    border-left:5px solid #e60012;
+    border-left:5px solid #1f3b4d;
     padding-left:10px;
-    color:#444;
+    
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:20px;
-    margin-top:20px;
-}
-
-.card{
-    border:1px solid #4e6e81;
+.search-box{
+    width:100%;
+    padding:12px;
+    margin:20px 0;
+    border:1px solid #ccc;
     border-radius:8px;
-    padding:20px;
-    background:#fafafa;
-    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.error-card{
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:10px;
+    overflow:hidden;
+}
+
+.error-toggle{
+    width:100%;
+    padding:15px;
+    background:#fff;
+    border:none;
+    text-align:left;
+    cursor:pointer;
+    font-size:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.error-toggle:hover{
+    background:#f3f3f3;
 }
 
 .code{
-    font-size:18px;
     font-weight:bold;
-    color:#4e6e81;
-    margin-bottom:10px;
-    word-break:break-word;
+    color:#1f3b4d;
+    margin-right:10px;
+    min-width:80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-.title{
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:12px;
+.error-content{
+    display:none;
+    padding:15px;
+    background:#fafafa;
+    border-top:1px solid #eee;
+    
 }
 
-.steps{
-    padding-left:18px;
-    line-height:1.6;
+.error-content ul{
+    padding-left:20px;
 }
 
 .note{
-    margin-top:30px;
+    margin-top:25px;
+    padding:15px;
     background:#fff3cd;
     border:1px solid #ffeeba;
-    padding:15px;
-    border-radius:6px;
+    border-radius:8px;
+    
 }
 </style>
 </head>
@@ -101,118 +123,562 @@ h1{
 
 <div class="container">
 
-<h1>Brother Inkjet Printer Error Codes</h1>
+<h1>Brother Inkjet Printer Error Codes & Troubleshooting Guide</h1>
 
-<p class="subtitle">
-<strong>Complete Inkjet Troubleshooting & Maintenance Guide</strong>
-</p>
+<input type="text" class="search-box" placeholder="Search error code (e.g. INK, PAPER JAM, LOW INK...)">
 
-<!-- ================= INK SYSTEM ================= -->
-<div class="section-title">Ink System Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">INK ABSORBER FULL</div>
-<div class="title">Waste Ink Pad Needs Replacement</div>
-<ul class="steps">
+<!-- INK ABSORBER FULL -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">INK ABSORBER FULL</span> Waste Ink Pad Needs Replacement</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Turn off printer and unplug it.</li>
 <li>Do not continue printing to avoid overflow.</li>
 <li>Replace waste ink absorber pad.</li>
 <li>Reset waste ink counter using service tool.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">NO INK CARTRIDGE</div>
-<div class="title">Ink Cartridge Not Detected</div>
-<ul class="steps">
+<!-- NO INK CARTRIDGE -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">NO CARTRIDGE</span> Ink Cartridge Not Detected</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Remove and reinstall ink cartridges.</li>
 <li>Check for protective tape on new cartridges.</li>
 <li>Clean cartridge contacts gently.</li>
 <li>Replace cartridge if not recognized.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= PAPER ================= -->
-<div class="section-title">Paper Handling Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">PAPER JAM</div>
-<div class="title">Paper Stuck in Feed Path</div>
-<ul class="steps">
+<!-- PAPER JAM -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">PAPER JAM</span> Paper Stuck in Feed Path</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Turn off printer before removing paper.</li>
 <li>Gently pull jammed paper out.</li>
 <li>Check rollers for debris or damage.</li>
 <li>Reload paper correctly in tray.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= PRINT HEAD ================= -->
-<div class="section-title">Print Head Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">CLEAN HEAD</div>
-<div class="title">Print Head Requires Cleaning</div>
-<ul class="steps">
+<!-- CLEAN HEAD -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">CLEAN HEAD</span> Print Head Requires Cleaning</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Run built-in print head cleaning cycle.</li>
 <li>Check ink levels before cleaning.</li>
 <li>Print nozzle check pattern.</li>
-<li>Repeat cleaning if output is still weak.</li>
+<li>Repeat cleaning if output is weak.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= INK LEVEL ================= -->
-<div class="section-title">Ink Level Warnings</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">LOW INK</div>
-<div class="title">Ink Level Low</div>
-<ul class="steps">
+<!-- LOW INK -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">LOW INK</span> Ink Level Low</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Check ink status in printer software.</li>
 <li>Prepare replacement cartridges.</li>
 <li>Shake cartridge gently if allowed.</li>
 <li>Replace when print quality drops.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= CARTRIDGE ================= -->
-<div class="section-title">Cartridge Communication Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">CARTRIDGE ERROR</div>
-<div class="title">Ink Cartridge Communication Failure</div>
-<ul class="steps">
+<!-- CARTRIDGE ERROR -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">CARTRIDGE ERROR</span> Ink Cartridge Communication Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Remove and reinstall cartridges.</li>
 <li>Clean chip contacts carefully.</li>
-<li>Ensure proper cartridge model is used.</li>
+<li>Ensure correct cartridge model is used.</li>
 <li>Replace cartridge if error persists.</li>
 </ul>
 </div>
+</div>
 
+<!-- ADDITIONAL CODES -->
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">SCAN ERROR</span> Scanner Malfunction</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart printer and scanner module.</li>
+<li>Check scanner cable connection.</li>
+<li>Clean scanner glass.</li>
+<li>Update printer driver.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">PRINT ERROR</span> Printing Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check printer queue and cancel stuck jobs.</li>
+<li>Restart printer and PC.</li>
+<li>Verify USB/WiFi connection.</li>
+<li>Reinstall printer driver.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">OFFLINE</span> Printer Not Responding</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check power and cable connection.</li>
+<li>Ensure printer is set as default.</li>
+<li>Restart router (for WiFi printers).</li>
+<li>Reconnect printer to network.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">INK SYSTEM ERROR</span> Ink System Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart printer.</li>
+<li>Check ink tubing for blockage.</li>
+<li>Clean print head system.</li>
+<li>Replace print head if needed.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">WIFI ERROR</span> Network Connection Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart router and printer.</li>
+<li>Re-enter WiFi password.</li>
+<li>Move printer closer to router.</li>
+<li>Reset network settings.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">MEMORY FULL</span> Print Job Overflow</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Cancel large print jobs.</li>
+<li>Restart printer.</li>
+<li>Print in smaller batches.</li>
+<li>Update printer firmware.</li>
+</ul>
+</div>
+</div>
+
+<!-- ADDITIONAL ERROR CODES -->
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">PAPER TRAY EMPTY</span> No Paper Detected</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Load paper into the correct tray.</li>
+<li>Adjust paper guides properly.</li>
+<li>Check for stuck sheets inside tray.</li>
+<li>Restart printer after loading paper.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">FEED ERROR</span> Paper Feed Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean paper feed rollers.</li>
+<li>Remove dust or debris from tray.</li>
+<li>Use recommended paper type.</li>
+<li>Reload paper correctly.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">DRYING ERROR</span> Ink Drying Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Allow printed pages to dry properly.</li>
+<li>Reduce high humidity environment.</li>
+<li>Use correct paper type settings.</li>
+<li>Clean print head if smudging occurs.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">INK CARTRIDGE ALIGNMENT</span> Alignment Required</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Run automatic alignment from printer menu.</li>
+<li>Check cartridge installation.</li>
+<li>Ensure cartridges are genuine.</li>
+<li>Repeat alignment if print is misaligned.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">PRINT QUALITY ERROR</span> Poor Print Output</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Run nozzle check test.</li>
+<li>Clean print head.</li>
+<li>Replace low ink cartridges.</li>
+<li>Use high-quality paper settings.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">OVERHEAT WARNING</span> Printer Temperature High</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn off printer and let it cool.</li>
+<li>Ensure proper ventilation.</li>
+<li>Avoid continuous long print jobs.</li>
+<li>Check internal fan operation if available.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">MEMORY ERROR</span> Internal Memory Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart printer.</li>
+<li>Cancel all print jobs.</li>
+<li>Update printer firmware.</li>
+<li>Reset printer settings.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">USB ERROR</span> Connection Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reconnect USB cable.</li>
+<li>Try a different USB port.</li>
+<li>Install correct printer drivers.</li>
+<li>Restart computer and printer.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">PRINT QUEUE ERROR</span> Job Stuck in Queue</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Cancel all pending print jobs.</li>
+<li>Restart print spooler service.</li>
+<li>Restart printer and PC.</li>
+<li>Re-send print job.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">SYSTEM ERROR</span> General Printer Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn printer off and restart.</li>
+<li>Check all cable connections.</li>
+<li>Reset printer settings.</li>
+<li>Contact service center if persistent.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">FIRMWARE ERROR</span> Software Malfunction</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Update printer firmware.</li>
+<li>Restart printer after update.</li>
+<li>Reinstall printer driver.</li>
+<li>Reset to factory settings if needed.</li>
+</ul>
+</div>
+</div>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Brother inkjet printer not printing?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check if the printer is turned on and connected properly.</li>
+<li>Ensure there is paper loaded in the tray.</li>
+<li>Verify ink levels are not empty.</li>
+<li>Restart the printer and computer.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Brother printer showing offline?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check USB or Wi-Fi connection.</li>
+<li>Restart router if using wireless printing.</li>
+<li>Set printer as default device.</li>
+<li>Clear pending print queue.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Brother printer not connecting to Wi-Fi?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Ensure Wi-Fi password is correct.</li>
+<li>Move printer closer to the router.</li>
+<li>Restart both printer and router.</li>
+<li>Re-run wireless setup on printer menu.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why are my printed pages blank?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check ink cartridges for dryness or damage.</li>
+<li>Run print head cleaning utility.</li>
+<li>Ensure cartridges are installed correctly.</li>
+<li>Verify correct paper settings.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Brother printer printing faded pages?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check ink levels and refill if low.</li>
+<li>Clean print heads using maintenance tool.</li>
+<li>Use high-quality paper and correct settings.</li>
+<li>Align print heads if needed.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Brother printer paper jamming?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Remove jammed paper carefully.</li>
+<li>Check for torn paper inside rollers.</li>
+<li>Do not overload paper tray.</li>
+<li>Use correct paper size and type.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Brother printer printing slowly?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reduce print quality settings for speed.</li>
+<li>Check network connection stability.</li>
+<li>Close unnecessary print jobs in queue.</li>
+<li>Restart printer to clear memory.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Brother printer not scanning?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Install or update scanner drivers.</li>
+<li>Check USB or Wi-Fi connection.</li>
+<li>Ensure scanner glass is clean.</li>
+<li>Restart printer and computer.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Brother printer show “Ink Empty”?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Replace empty ink cartridges.</li>
+<li>Reset ink level warning if cartridge is refilled.</li>
+<li>Ensure cartridges are properly installed.</li>
+<li>Use genuine or compatible ink cartridges.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>How do I reset my Brother inkjet printer?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn off the printer and unplug it.</li>
+<li>Wait 5–10 minutes before restarting.</li>
+<li>Reset network settings if needed.</li>
+<li>Reinstall printer drivers if issues persist.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Brother printer not responding?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check power cable and connection.</li>
+<li>Restart printer and computer.</li>
+<li>Clear print queue.</li>
+<li>Reinstall printer driver if necessary.</li>
+</ul>
+</div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> Always use genuine or compatible cartridges recommended by Brother to avoid recurring errors.
+<strong>Important:</strong> Always use genuine or compatible Brother cartridges to prevent recurring errors. Turn off power before servicing internal components.
 </div>
 
 </div>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

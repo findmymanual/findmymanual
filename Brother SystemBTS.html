@@ -3,94 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brother System Messages Guide</title>
+<title>Bosch Refrigerator Error Codes Troubleshooting Guide</title>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f5f5;
+    background:#f5f6f8;
     color:#333;
 }
 
 .container{
-    max-width:1200px;
+    max-width:1100px;
     margin:auto;
     background:#fff;
-    padding:30px;
+    padding:25px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    
 }
 
 h1{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
+    border-radius:8px;
     margin-bottom:10px;
-    background: #1f3b4d;
-    color: white;
-    padding: 25px;
+    
 }
 
-.subtitle{
+h2{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
-    margin-bottom:30px;
+    border-radius:8px;
+    margin-bottom:10px;
+    
 }
 
 .section-title{
     margin-top:40px;
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
-    border-left:5px solid #e60012;
+    border-left:5px solid #1f3b4d;
     padding-left:10px;
-    color:#444;
+    
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-    margin-top:20px;
-}
-
-.card{
-    border:1px solid #4e6e81;
+.search-box{
+    width:100%;
+    padding:12px;
+    margin:20px 0;
+    border:1px solid #ccc;
     border-radius:8px;
-    padding:20px;
-    background:#fafafa;
-    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.error-card{
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:10px;
+    overflow:hidden;
+}
+
+.error-toggle{
+    width:100%;
+    padding:15px;
+    background:#fff;
+    border:none;
+    text-align:left;
+    cursor:pointer;
+    font-size:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.error-toggle:hover{
+    background:#f3f3f3;
 }
 
 .code{
-    font-size:26px;
     font-weight:bold;
-    color:#4e6e81;
-    margin-bottom:10px;
+    color:#1f3b4d;
+    margin-right:10px;
+    min-width:80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-.title{
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:12px;
+.error-content{
+    display:none;
+    padding:15px;
+    background:#fafafa;
+    border-top:1px solid #eee;
+    
 }
 
-.steps{
-    padding-left:18px;
-    line-height:1.6;
+.error-content ul{
+    padding-left:20px;
 }
 
 .note{
-    margin-top:30px;
+    margin-top:25px;
+    padding:15px;
     background:#fff3cd;
     border:1px solid #ffeeba;
-    padding:15px;
-    border-radius:6px;
+    border-radius:8px;
+    
 }
 </style>
 </head>
@@ -99,99 +123,436 @@ h1{
 
 <div class="container">
 
-<h1>Brother System Messages</h1>
+<h1>Brother System Messages & Troubleshooting Guide</h1>
 
-<p class="subtitle">
-<strong>Meaning & Quick Troubleshooting Guide</strong>
-</p>
+<input type="text" class="search-box" placeholder="Search system message (e.g. READY, ERROR, BUSY...)">
 
-<!-- ================= STATUS ================= -->
-<div class="section-title">Status Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">READY</div>
-<div class="title">Device Ready</div>
-<ul class="steps">
+<!-- READY -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">READY</span> Device Ready</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Device is ready for operation.</li>
 <li>No action required.</li>
 <li>Start printing or scanning normally.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">BUSY</div>
-<div class="title">Processing Task</div>
-<ul class="steps">
+<!-- BUSY -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">BUSY</span> Processing Task</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Wait until current job completes.</li>
-<li>Avoid sending multiple print jobs.</li>
+<li>Avoid sending multiple jobs at once.</li>
 <li>Check print queue if stuck.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= ERROR ================= -->
-<div class="section-title">Error Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">ERROR</div>
-<div class="title">General System Error</div>
-<ul class="steps">
+<!-- ERROR -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">ERROR</span> General System Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Restart the device.</li>
 <li>Check for paper jams or cartridge issues.</li>
 <li>Verify cable connections.</li>
 <li>Update drivers if needed.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">RESET</div>
-<div class="title">Restart Required</div>
-<ul class="steps">
+<!-- RESET -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">RESET</span> Restart Required</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Turn device off and unplug power.</li>
 <li>Wait 30–60 seconds.</li>
 <li>Restart device and test again.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= PAPER ================= -->
-<div class="section-title">Paper & Door Alerts</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">DOOR OPEN</div>
-<div class="title">Cover Not Closed Properly</div>
-<ul class="steps">
-<li>Ensure all printer/scanner covers are closed.</li>
-<li>Check for obstructions in cover latch.</li>
+<!-- DOOR OPEN -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">DOOR OPEN</span> Cover Not Closed Properly</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Ensure all covers are fully closed.</li>
+<li>Check for obstructions in latch area.</li>
 <li>Press cover firmly until it locks.</li>
 </ul>
 </div>
-
-<div class="card">
-<div class="code">NO PAPER</div>
-<div class="title">Paper Tray Empty</div>
-<ul class="steps">
-<li>Load paper into input tray.</li>
-<li>Adjust paper guides correctly.</li>
-<li>Confirm paper size settings match tray.</li>
-</ul>
 </div>
 
+<!-- NO PAPER -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">NO PAPER</span> Paper Tray Empty</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Load paper into input tray.</li>
+<li>Adjust paper guides correctly.</li>
+<li>Match paper size settings.</li>
+</ul>
+</div>
+</div>
+
+<!-- JAM DETECTED -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">JAM DETECTED</span> Paper Jam Found</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Remove jammed paper carefully.</li>
+<li>Check rollers for debris.</li>
+<li>Reload paper properly.</li>
+</ul>
+</div>
+</div>
+
+<!-- LOW INK -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">LOW INK</span> Ink Level Low</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check ink status in settings.</li>
+<li>Prepare replacement cartridge.</li>
+<li>Replace when print fades.</li>
+</ul>
+</div>
+</div>
+
+<!-- OFFLINE -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">OFFLINE</span> Device Not Connected</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check USB or WiFi connection.</li>
+<li>Restart printer and router.</li>
+<li>Re-add device in settings.</li>
+</ul>
+</div>
+</div>
+
+<!-- ADDITIONAL SYSTEM CODES -->
+
+<!-- SLEEP -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">SLEEP</span> Power Saving Mode</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Press any button to wake device.</li>
+<li>Adjust sleep timer in settings.</li>
+<li>No error present.</li>
+</ul>
+</div>
+</div>
+
+<!-- PRINTING -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">PRINTING</span> Job in Progress</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Wait until printing completes.</li>
+<li>Avoid sending multiple jobs.</li>
+<li>Check print queue if delayed.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCANNING -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">SCANNING</span> Scan in Progress</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Do not interrupt scanning process.</li>
+<li>Ensure document is loaded properly.</li>
+<li>Wait for completion.</li>
+</ul>
+</div>
+</div>
+
+<!-- CALIBRATING -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">CALIBRATING</span> System Calibration</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Allow device to complete calibration.</li>
+<li>Do not turn off power.</li>
+<li>Ensure no paper is loaded.</li>
+</ul>
+</div>
+</div>
+
+<!-- PAPER LOW -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">PAPER LOW</span> Paper Running Low</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Refill paper tray soon.</li>
+<li>Check paper alignment.</li>
+<li>Avoid overloading tray.</li>
+</ul>
+</div>
+</div>
+
+<!-- MEMORY FULL -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">MEMORY FULL</span> Storage Capacity Reached</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Delete unnecessary print jobs.</li>
+<li>Restart device.</li>
+<li>Reduce print resolution if needed.</li>
+</ul>
+</div>
+</div>
+
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Offline” mean on a Brother device?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The device is not communicating with your computer or network.</li>
+<li>Check USB or Wi-Fi connection.</li>
+<li>Restart the printer or scanner.</li>
+<li>Set the device as default in system settings.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Paper Jam” mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Paper is stuck inside the printer or scanner.</li>
+<li>Remove jammed paper carefully without tearing it.</li>
+<li>Check rollers for leftover debris.</li>
+<li>Reload paper correctly in the tray.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Replace Ink/Toner” message mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The ink or toner level is low or empty.</li>
+<li>Replace the cartridge with a new one.</li>
+<li>Reinstall cartridge properly if recently replaced.</li>
+<li>Reset ink level warning if needed.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Cover Open” message mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>A printer or scanner cover is not fully closed.</li>
+<li>Close all covers firmly until they click.</li>
+<li>Check for obstructions preventing closure.</li>
+<li>Restart the device after closing covers.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “No Paper” message mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The paper tray is empty or not detected.</li>
+<li>Reload paper correctly in the tray.</li>
+<li>Adjust paper guides properly.</li>
+<li>Check sensor for dust or blockage.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Memory Full” message mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The device memory is full and cannot process jobs.</li>
+<li>Cancel pending print or scan jobs.</li>
+<li>Restart the device to clear temporary memory.</li>
+<li>Reduce scan resolution or file size.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Connection Error” mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The device cannot connect to the network or computer.</li>
+<li>Check Wi-Fi or USB cable connection.</li>
+<li>Restart router and device.</li>
+<li>Reconfigure network settings if needed.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Low Ink” or “Low Toner” mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The ink or toner is running low.</li>
+<li>Prepare a replacement cartridge.</li>
+<li>Continue printing until quality fades.</li>
+<li>Replace cartridge when print quality drops.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Print Unable” message mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The printer cannot complete the job due to a fault.</li>
+<li>Restart the printer and clear the queue.</li>
+<li>Check for paper jams or hardware issues.</li>
+<li>Update printer drivers if needed.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Scan Unable” message mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The scanner cannot complete the scan job.</li>
+<li>Check connection between scanner and computer.</li>
+<li>Restart scanning software.</li>
+<li>Ensure drivers are properly installed.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What should I do if Brother system messages keep appearing?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart the device to clear temporary errors.</li>
+<li>Check for firmware or driver updates.</li>
+<li>Inspect hardware for jams or faults.</li>
+<li>Contact support if messages persist.</li>
+</ul>
+</div>
 </div>
 
 <div class="note">
 <strong>Important:</strong> If system messages repeat frequently, it may indicate hardware wear or sensor issues requiring inspection.
 </div>
 
-</div>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

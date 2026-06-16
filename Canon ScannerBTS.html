@@ -3,94 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Canon Scanner Error Codes Guide</title>
+<title>Canon Scanner  Error Codes Troubleshooting Guide</title>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f5f5;
+    background:#f5f6f8;
     color:#333;
 }
 
 .container{
-    max-width:1200px;
+    max-width:1100px;
     margin:auto;
     background:#fff;
-    padding:30px;
+    padding:25px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    
 }
 
 h1{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
+    border-radius:8px;
     margin-bottom:10px;
-    background: #1f3b4d;
-    color: white;
-    padding: 25px;
+    
 }
 
-.subtitle{
+h2{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
-    margin-bottom:30px;
+    border-radius:8px;
+    margin-bottom:10px;
+    
 }
 
 .section-title{
     margin-top:40px;
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
-    border-left:5px solid #e60012;
+    border-left:5px solid #1f3b4d;
     padding-left:10px;
-    color:#444;
+    
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-    margin-top:20px;
-}
-
-.card{
-    border:1px solid #4e6e81;
+.search-box{
+    width:100%;
+    padding:12px;
+    margin:20px 0;
+    border:1px solid #ccc;
     border-radius:8px;
-    padding:20px;
-    background:#fafafa;
-    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.error-card{
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:10px;
+    overflow:hidden;
+}
+
+.error-toggle{
+    width:100%;
+    padding:15px;
+    background:#fff;
+    border:none;
+    text-align:left;
+    cursor:pointer;
+    font-size:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.error-toggle:hover{
+    background:#f3f3f3;
 }
 
 .code{
-    font-size:24px;
     font-weight:bold;
-    color:#4e6e81;
-    margin-bottom:10px;
+    color:#1f3b4d;
+    margin-right:10px;
+    min-width:80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-.title{
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:12px;
+.error-content{
+    display:none;
+    padding:15px;
+    background:#fafafa;
+    border-top:1px solid #eee;
+    
 }
 
-.steps{
-    padding-left:18px;
-    line-height:1.6;
+.error-content ul{
+    padding-left:20px;
 }
 
 .note{
-    margin-top:30px;
+    margin-top:25px;
+    padding:15px;
     background:#fff3cd;
     border:1px solid #ffeeba;
-    padding:15px;
-    border-radius:6px;
+    border-radius:8px;
+    
 }
 </style>
 </head>
@@ -99,89 +123,459 @@ h1{
 
 <div class="container">
 
-<h1>Canon Scanner Error Codes</h1>
+<h1>Canon Scanner Error Codes & Troubleshooting Guide</h1>
 
-<p class="subtitle">
-<strong>Diagnostic & Troubleshooting Guide</strong>
-</p>
-
-<!-- ================= LAMP ================= -->
-<div class="section-title">Scanner Hardware Errors</div>
+<input type="text" class="search-box" placeholder="Search error code...">
 
 <div class="grid">
 
-<div class="card">
-<div class="code">E201</div>
-<div class="title">Scanner Lamp Failure</div>
-<ul class="steps">
+<!-- E201 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E201</span> Scanner Lamp Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Turn scanner off and restart.</li>
 <li>Check scanner lamp connection.</li>
 <li>Inspect power supply to scanner unit.</li>
 <li>Replace lamp assembly if needed.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= COMMUNICATION ================= -->
-<div class="section-title">Communication Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">E202</div>
-<div class="title">Communication Error</div>
-<ul class="steps">
+<!-- E202 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E202</span> Communication Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Reconnect USB or network cable.</li>
 <li>Restart scanner and computer.</li>
 <li>Reinstall scanner driver.</li>
 <li>Try different USB port or cable.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= POSITION ================= -->
-<div class="section-title">Mechanical Position Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">E203</div>
-<div class="title">Scan Head Position Error</div>
-<ul class="steps">
+<!-- E203 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E203</span> Scan Head Position Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Turn scanner off and restart.</li>
 <li>Check for physical obstruction in scan path.</li>
 <li>Ensure scanner carriage moves freely.</li>
 <li>Service scan mechanism if required.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= DRIVER ================= -->
-<div class="section-title">Software Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">E204</div>
-<div class="title">Driver Failure</div>
-<ul class="steps">
+<!-- E204 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E204</span> Driver Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Reinstall scanner driver.</li>
 <li>Update to latest software version.</li>
 <li>Restart computer system.</li>
 <li>Check OS compatibility with scanner.</li>
 </ul>
 </div>
-
 </div>
 
-<div class="note">
-<strong>Note:</strong> Persistent hardware or lamp failures may require authorized Canon service repair.
+<!-- E205 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E205</span> Scanner Motor Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart scanner and retry scan.</li>
+<li>Inspect motor wiring connections.</li>
+<li>Check for carriage movement restrictions.</li>
+<li>Replace motor if faulty.</li>
+</ul>
+</div>
 </div>
 
+<!-- E206 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E206</span> Calibration Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean scanner glass thoroughly.</li>
+<li>Restart calibration process.</li>
+<li>Inspect calibration strip for damage.</li>
+<li>Service scanner if issue persists.</li>
+</ul>
 </div>
+</div>
+
+<!-- E207 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E207</span> CIS Sensor Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Power cycle the scanner.</li>
+<li>Inspect CIS sensor connections.</li>
+<li>Clean optical components carefully.</li>
+<li>Replace sensor assembly if needed.</li>
+</ul>
+</div>
+</div>
+
+<!-- E208 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E208</span> USB Connection Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reconnect USB cable securely.</li>
+<li>Try another USB port.</li>
+<li>Replace damaged USB cable.</li>
+<li>Restart scanner and computer.</li>
+</ul>
+</div>
+</div>
+
+<!-- E209 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E209</span> Network Connection Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Verify network cable or Wi-Fi connection.</li>
+<li>Restart router and scanner.</li>
+<li>Check IP address settings.</li>
+<li>Reconnect scanner to network.</li>
+</ul>
+</div>
+</div>
+
+<!-- E210 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E210</span> Memory Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart scanner.</li>
+<li>Reduce scan resolution.</li>
+<li>Close unnecessary computer programs.</li>
+<li>Update scanner firmware.</li>
+</ul>
+</div>
+</div>
+
+<!-- E211 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E211</span> Document Feed Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Remove jammed paper carefully.</li>
+<li>Inspect ADF rollers.</li>
+<li>Reload documents properly.</li>
+<li>Clean feed rollers.</li>
+</ul>
+</div>
+</div>
+
+<!-- E212 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E212</span> ADF Sensor Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean document feeder sensors.</li>
+<li>Check sensor wiring.</li>
+<li>Remove dust and debris.</li>
+<li>Replace sensor if defective.</li>
+</ul>
+</div>
+</div>
+
+<!-- E213 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E213</span> Optical Unit Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart scanner system.</li>
+<li>Inspect optical components.</li>
+<li>Clean mirrors and lenses carefully.</li>
+<li>Replace optical unit if damaged.</li>
+</ul>
+</div>
+</div>
+
+<!-- E214 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E214</span> Firmware Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart scanner.</li>
+<li>Update firmware to latest version.</li>
+<li>Reset scanner settings.</li>
+<li>Reinstall firmware if necessary.</li>
+</ul>
+</div>
+</div>
+
+<!-- E215 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E215</span> Internal Hardware Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn scanner off and unplug power.</li>
+<li>Wait several minutes before restarting.</li>
+<li>Inspect internal connections.</li>
+<li>Contact Canon service if error remains.</li>
+</ul>
+</div>
+</div>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Canon scanner not working?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check if the scanner is powered on properly.</li>
+<li>Verify the USB or network connection.</li>
+<li>Restart the scanner and computer.</li>
+<li>Install or update the scanner drivers.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Canon scanner not detected by my computer?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check the USB cable connection.</li>
+<li>Try a different USB port on the computer.</li>
+<li>Reinstall the scanner drivers.</li>
+<li>Restart both the scanner and computer.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Canon scanner scanning blank pages?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Make sure the document is placed correctly.</li>
+<li>Check that the scanner lid is fully closed.</li>
+<li>Clean the scanner glass surface.</li>
+<li>Verify the scan settings are configured properly.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why are my scanned images blurry?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean the scanner glass with a soft cloth.</li>
+<li>Increase scan resolution settings.</li>
+<li>Ensure the document is flat on the glass.</li>
+<li>Check for dirt on the document itself.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Canon scanner scanning slowly?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reduce scan resolution if possible.</li>
+<li>Close unnecessary applications on the computer.</li>
+<li>Use a direct USB connection instead of a hub.</li>
+<li>Restart the scanner to clear memory.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Canon scanner not connecting to Wi-Fi?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Verify the Wi-Fi password is correct.</li>
+<li>Restart the router and scanner.</li>
+<li>Move the scanner closer to the router.</li>
+<li>Run the wireless setup process again.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Canon scanner keep disconnecting?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check for a weak Wi-Fi signal.</li>
+<li>Update scanner firmware and drivers.</li>
+<li>Inspect USB cable for damage.</li>
+<li>Use a wired connection if possible.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Canon scanner not saving scanned files?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check the destination folder settings.</li>
+<li>Ensure there is enough storage space.</li>
+<li>Verify file permissions on the computer.</li>
+<li>Restart the scanning software.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Canon scanner show an error message?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart the scanner and computer.</li>
+<li>Check connections and power supply.</li>
+<li>Update scanner drivers and software.</li>
+<li>Refer to the specific error code guide.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>How do I reset my Canon scanner?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn off the scanner and unplug it.</li>
+<li>Wait 5–10 minutes before reconnecting power.</li>
+<li>Restart the scanner and computer.</li>
+<li>Reconfigure settings if necessary.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Canon scanner not responding?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check all cable connections.</li>
+<li>Restart the scanner and computer.</li>
+<li>Close and reopen the scanning software.</li>
+<li>Reinstall scanner drivers if needed.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is the automatic document feeder (ADF) not working?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Remove any jammed documents.</li>
+<li>Clean the ADF rollers.</li>
+<li>Ensure documents are loaded correctly.</li>
+<li>Check for worn or damaged feed rollers.</li>
+</ul>
+</div>
+</div>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

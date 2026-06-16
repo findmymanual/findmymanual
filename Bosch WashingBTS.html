@@ -3,94 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bosch Washing Machine Error Codes Troubleshooting Guide</title>
+<title>Bosch Refrigerator Error Codes Troubleshooting Guide</title>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f5f5;
+    background:#f5f6f8;
     color:#333;
 }
 
 .container{
-    max-width:1200px;
+    max-width:1100px;
     margin:auto;
     background:#fff;
-    padding:30px;
+    padding:25px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    
 }
 
 h1{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
+    border-radius:8px;
     margin-bottom:10px;
-    background: #1f3b4d;
-    color: white;
-    padding: 25px;
+    
 }
 
-.subtitle{
+h2{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
-    margin-bottom:30px;
+    border-radius:8px;
+    margin-bottom:10px;
+    
 }
 
 .section-title{
     margin-top:40px;
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
-    border-left:5px solid #4e6e81;
+    border-left:5px solid #1f3b4d;
     padding-left:10px;
-    color:#444;
+    
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-    margin-top:20px;
-}
-
-.card{
-    border:1px solid #4e6e81;
+.search-box{
+    width:100%;
+    padding:12px;
+    margin:20px 0;
+    border:1px solid #ccc;
     border-radius:8px;
-    padding:20px;
-    background:#fafafa;
-    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.error-card{
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:10px;
+    overflow:hidden;
+}
+
+.error-toggle{
+    width:100%;
+    padding:15px;
+    background:#fff;
+    border:none;
+    text-align:left;
+    cursor:pointer;
+    font-size:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.error-toggle:hover{
+    background:#f3f3f3;
 }
 
 .code{
-    font-size:26px;
     font-weight:bold;
-    color:#4e6e81;
-    margin-bottom:10px;
+    color:#1f3b4d;
+    margin-right:10px;
+    min-width:80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-.title{
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:12px;
+.error-content{
+    display:none;
+    padding:15px;
+    background:#fafafa;
+    border-top:1px solid #eee;
+    
 }
 
-.steps{
-    padding-left:18px;
-    line-height:1.6;
+.error-content ul{
+    padding-left:20px;
 }
 
 .note{
-    margin-top:30px;
+    margin-top:25px;
+    padding:15px;
     background:#fff3cd;
     border:1px solid #ffeeba;
-    padding:15px;
-    border-radius:6px;
+    border-radius:8px;
+    
 }
 </style>
 </head>
@@ -99,259 +123,466 @@ h1{
 
 <div class="container">
 
-<h1>Bosch Washing Machine Error Codes</h1>
-<p class="subtitle"><strong>Complete Troubleshooting & Repair Guide</strong></p>
+<h1>Bosch Washing Machine Error Codes & Troubleshooting Guide</h1>
 
-<!-- ================= WATER SUPPLY ================= -->
-<div class="section-title">Water Supply & Inlet Errors</div>
-<div class="grid">
+<input type="text" class="search-box" placeholder="Search error code (e.g. F02, E18, F21...)">
 
-<div class="card">
-<div class="code">F02 / E17</div>
-<div class="title">Water Supply Issue</div>
-<ul class="steps">
+<!-- WATER SUPPLY -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F02 / E17</span> Water Supply Issue</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Check water tap is fully open.</li>
 <li>Inspect inlet hose for blockage.</li>
 <li>Clean inlet filter screen.</li>
 <li>Verify household water pressure.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">F17</div>
-<div class="title">Water Intake Timeout</div>
-<ul class="steps">
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F17</span> Water Intake Timeout</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Check inlet valve operation.</li>
-<li>Ensure water supply is stable.</li>
+<li>Ensure stable water supply.</li>
 <li>Inspect hose for kinks.</li>
 <li>Clean inlet filter.</li>
 </ul>
 </div>
-
-<div class="card">
-<div class="code">F29 / E28</div>
-<div class="title">Flow Sensor Error</div>
-<ul class="steps">
-<li>Inspect water flow sensor.</li>
-<li>Check wiring connections.</li>
-<li>Clean inlet system.</li>
-<li>Replace sensor if faulty.</li>
-</ul>
 </div>
 
-</div>
-
-<!-- ================= DRAIN ================= -->
-<div class="section-title">Drainage System Errors</div>
-<div class="grid">
-
-<div class="card">
-<div class="code">F03 / E18</div>
-<div class="title">Drainage Failure / Blocked Pump</div>
-<ul class="steps">
+<!-- DRAIN -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F03 / E18</span> Drainage Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Check drain hose for blockage.</li>
 <li>Clean pump filter.</li>
 <li>Inspect drain pump impeller.</li>
 <li>Remove debris from system.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">F18</div>
-<div class="title">Drain Timeout</div>
-<ul class="steps">
-<li>Check drain hose installation.</li>
-<li>Inspect pump motor.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F18</span> Drain Timeout</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect drain hose routing.</li>
+<li>Check pump motor.</li>
 <li>Clean lint and debris.</li>
-<li>Restart washing cycle.</li>
+<li>Restart cycle.</li>
 </ul>
 </div>
-
-<div class="card">
-<div class="code">E24 / E25</div>
-<div class="title">Drain Blockage / Obstruction</div>
-<ul class="steps">
-<li>Inspect drain pump area.</li>
-<li>Remove foreign objects.</li>
-<li>Clean filter housing.</li>
-<li>Check hose routing.</li>
-</ul>
 </div>
 
-</div>
-
-<!-- ================= DOOR LOCK ================= -->
-<div class="section-title">Door Lock Errors</div>
-<div class="grid">
-
-<div class="card">
-<div class="code">F16 / E16</div>
-<div class="title">Door Not Locked</div>
-<ul class="steps">
+<!-- DOOR -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F16 / E16</span> Door Not Locked</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Close door firmly.</li>
-<li>Inspect door latch mechanism.</li>
+<li>Inspect latch mechanism.</li>
 <li>Check wiring to lock system.</li>
 <li>Replace door lock if faulty.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">F34 / E27</div>
-<div class="title">Door Lock Failure</div>
-<ul class="steps">
-<li>Check door latch alignment.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F34 / E27</span> Door Lock Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check latch alignment.</li>
 <li>Inspect locking motor.</li>
-<li>Reset washing machine.</li>
-<li>Replace lock system if needed.</li>
+<li>Reset machine.</li>
+<li>Replace lock system.</li>
 </ul>
 </div>
-
-<div class="card">
-<div class="code">E42 / E43</div>
-<div class="title">Door Unlocking Error</div>
-<ul class="steps">
-<li>Wait for cycle to finish.</li>
-<li>Turn power off for reset.</li>
-<li>Check lock actuator.</li>
-<li>Call technician if stuck.</li>
-</ul>
 </div>
 
-</div>
-
-<!-- ================= MOTOR ================= -->
-<div class="section-title">Motor & Drum Errors</div>
-<div class="grid">
-
-<div class="card">
-<div class="code">F01</div>
-<div class="title">Motor Triac Fault</div>
-<ul class="steps">
-<li>Reset machine power.</li>
-<li>Inspect motor wiring.</li>
-<li>Check control board triac.</li>
-<li>Replace PCB if needed.</li>
-</ul>
-</div>
-
-<div class="card">
-<div class="code">F21 / E21</div>
-<div class="title">Motor Failure / Drum Jam</div>
-<ul class="steps">
+<!-- MOTOR -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F21 / E21</span> Motor Failure / Drum Jam</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Check drum for blockage.</li>
 <li>Inspect motor brushes.</li>
-<li>Reset washing machine.</li>
-<li>Replace motor if required.</li>
-</ul>
-</div>
-
-<div class="card">
-<div class="code">F43 / E50–E52</div>
-<div class="title">Motor / Inverter Failure</div>
-<ul class="steps">
-<li>Check inverter board.</li>
-<li>Inspect motor connections.</li>
-<li>Ensure proper voltage supply.</li>
-<li>Call technician for repair.</li>
-</ul>
-</div>
-
-<div class="card">
-<div class="code">F43 (Drum Not Spinning)</div>
-<div class="title">Drum Rotation Failure</div>
-<ul class="steps">
-<li>Check belt condition.</li>
-<li>Inspect motor coupling.</li>
 <li>Remove load imbalance.</li>
-<li>Test motor operation.</li>
+<li>Replace motor if needed.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= WATER LEAK ================= -->
-<div class="section-title">Leak & Pressure Errors</div>
-<div class="grid">
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F01</span> Motor Triac Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reset power.</li>
+<li>Inspect motor wiring.</li>
+<li>Check PCB triac.</li>
+<li>Replace control board.</li>
+</ul>
+</div>
+</div>
 
-<div class="card">
-<div class="code">F23 / E22</div>
-<div class="title">Water Leakage Detected</div>
-<ul class="steps">
+<!-- LEAK -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F23 / E22</span> Water Leakage Detected</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Inspect hoses and seals.</li>
 <li>Check detergent usage.</li>
 <li>Look for water under machine.</li>
-<li>Dry and reset system.</li>
+<li>Dry and restart system.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">E23</div>
-<div class="title">Leak Sensor Activated</div>
-<ul class="steps">
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E23</span> Leak Sensor Activated</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Check base tray for water.</li>
 <li>Inspect internal seals.</li>
 <li>Dry sensor area.</li>
 <li>Restart machine.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">E26</div>
-<div class="title">Water Pressure Sensor Fault</div>
-<ul class="steps">
+<!-- PRESSURE -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E26</span> Water Pressure Sensor Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Check pressure switch hose.</li>
-<li>Inspect wiring connection.</li>
+<li>Inspect wiring.</li>
 <li>Clean pressure chamber.</li>
 <li>Replace sensor if needed.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= SYSTEM ================= -->
-<div class="section-title">System & Electronic Errors</div>
-<div class="grid">
-
-<div class="card">
-<div class="code">F57</div>
-<div class="title">Electronic Control Failure</div>
-<ul class="steps">
-<li>Reset machine power.</li>
+<!-- ELECTRONICS -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F57</span> Electronic Control Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reset power.</li>
 <li>Check PCB connections.</li>
-<li>Inspect for moisture damage.</li>
-<li>Replace control board if needed.</li>
+<li>Inspect moisture damage.</li>
+<li>Replace control board.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">E29–E32</div>
-<div class="title">Load / System Imbalance</div>
-<ul class="steps">
-<li>Redistribute laundry evenly.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F29 / E28</span> Flow Sensor Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect flow sensor.</li>
+<li>Check wiring connections.</li>
+<li>Clean inlet system.</li>
+<li>Replace sensor if faulty.</li>
+</ul>
+</div>
+</div>
+
+<!-- IMBALANCE -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E29–E32</span> Load Imbalance</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Redistribute laundry.</li>
 <li>Reduce load size.</li>
 <li>Check drum suspension.</li>
 <li>Restart cycle.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">E36–E38</div>
-<div class="title">Pressure System Fault</div>
-<ul class="steps">
-<li>Check pressure sensor tubing.</li>
-<li>Inspect water level system.</li>
+<!-- PRESSURE SYSTEM -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E36–E38</span> Pressure System Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check pressure tubing.</li>
 <li>Clean air chamber.</li>
+<li>Inspect sensor system.</li>
 <li>Replace sensor if needed.</li>
 </ul>
 </div>
-
 </div>
 
-<div class="note">
-<strong>Important:</strong> Always disconnect power before servicing. If errors persist after troubleshooting, contact a qualified appliance technician.
+<!-- OTHER -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E28</span> Low Voltage Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check power supply.</li>
+<li>Avoid extension cords.</li>
+<li>Inspect outlet stability.</li>
+<li>Use voltage stabilizer.</li>
+</ul>
+</div>
 </div>
 
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E90</span> Control Board Communication Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reset power supply for 10 minutes.</li>
+<li>Check internal wiring.</li>
+<li>Inspect PCB board.</li>
+<li>Replace control board if needed.</li>
+</ul>
 </div>
+</div>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch washing machine not starting?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check if the door is fully closed and locked.</li>
+<li>Ensure power supply is connected properly.</li>
+<li>Disable child lock if activated.</li>
+<li>Check if a delayed start is selected.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch washing machine not spinning?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check for unbalanced load inside the drum.</li>
+<li>Ensure drain system is not clogged.</li>
+<li>Inspect drive belt or motor issues.</li>
+<li>Redistribute clothes evenly.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch washing machine not draining?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean the drain filter regularly.</li>
+<li>Check drain hose for blockages or bends.</li>
+<li>Inspect pump for debris or damage.</li>
+<li>Ensure sink connection is not clogged.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch washing machine leaking water?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check inlet hose connections for looseness.</li>
+<li>Inspect door seal for damage or dirt.</li>
+<li>Avoid overloading detergent.</li>
+<li>Check drain hose for cracks or leakage.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch washing machine making loud noise?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check for foreign objects in drum.</li>
+<li>Ensure machine is level on the floor.</li>
+<li>Inspect bearings or shock absorbers.</li>
+<li>Avoid washing heavy items alone.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch washing machine door not opening?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Wait for cycle to fully finish.</li>
+<li>Check if water is still inside drum.</li>
+<li>Try resetting the machine.</li>
+<li>Inspect door lock mechanism.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Bosch washing machine stop mid-cycle?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check power supply interruptions.</li>
+<li>Inspect water inlet or drainage issues.</li>
+<li>Look for overload or imbalance problems.</li>
+<li>Reset the machine and restart cycle.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch washing machine not filling with water?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Ensure water tap is fully open.</li>
+<li>Clean inlet filter screens.</li>
+<li>Check inlet hose for kinks or blockage.</li>
+<li>Inspect water pressure at supply line.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Bosch washing machine smell bad?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean detergent drawer regularly.</li>
+<li>Run a drum cleaning cycle.</li>
+<li>Leave door open after wash cycles.</li>
+<li>Remove trapped lint or residue buildup.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>How do I reset my Bosch washing machine?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn off the machine and unplug it.</li>
+<li>Wait 5–10 minutes before restarting.</li>
+<li>Select a new cycle and start again.</li>
+<li>Check if error clears after reset.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Bosch washing machine show error codes?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check water supply and drainage systems.</li>
+<li>Inspect filters and hoses for blockages.</li>
+<li>Ensure load is balanced and not overloaded.</li>
+<li>Contact technician if error persists.</li>
+</ul>
+</div>
+</div>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

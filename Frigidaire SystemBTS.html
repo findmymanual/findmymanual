@@ -3,94 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frigidaire System Messages Troubleshooting Guide</title>
+<title>Frigidaire System Messages Codes Troubleshooting Guide</title>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f5f5;
+    background:#f5f6f8;
     color:#333;
 }
 
 .container{
-    max-width:1200px;
+    max-width:1100px;
     margin:auto;
     background:#fff;
-    padding:30px;
+    padding:25px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    
 }
 
 h1{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
+    border-radius:8px;
     margin-bottom:10px;
-    background: #1f3b4d;
-    color: white;
-    padding: 25px;
+    
 }
 
-.subtitle{
+h2{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
-    margin-bottom:30px;
+    border-radius:8px;
+    margin-bottom:10px;
+    
 }
 
 .section-title{
     margin-top:40px;
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
-    border-left:5px solid #e60012;
+    border-left:5px solid #1f3b4d;
     padding-left:10px;
-    color:#444;
+    
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-    margin-top:20px;
-}
-
-.card{
-    border:1px solid #4e6e81;
+.search-box{
+    width:100%;
+    padding:12px;
+    margin:20px 0;
+    border:1px solid #ccc;
     border-radius:8px;
-    padding:20px;
-    background:#fafafa;
-    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.error-card{
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:10px;
+    overflow:hidden;
+}
+
+.error-toggle{
+    width:100%;
+    padding:15px;
+    background:#fff;
+    border:none;
+    text-align:left;
+    cursor:pointer;
+    font-size:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.error-toggle:hover{
+    background:#f3f3f3;
 }
 
 .code{
-    font-size:26px;
     font-weight:bold;
-    color:#4e6e81;
-    margin-bottom:10px;
+    color:#1f3b4d;
+    margin-right:10px;
+    min-width:80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-.title{
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:12px;
+.error-content{
+    display:none;
+    padding:15px;
+    background:#fafafa;
+    border-top:1px solid #eee;
+    
 }
 
-.steps{
-    padding-left:18px;
-    line-height:1.6;
+.error-content ul{
+    padding-left:20px;
 }
 
 .note{
-    margin-top:30px;
+    margin-top:25px;
+    padding:15px;
     background:#fff3cd;
     border:1px solid #ffeeba;
-    padding:15px;
-    border-radius:6px;
+    border-radius:8px;
+    
 }
 </style>
 </head>
@@ -99,120 +123,420 @@ h1{
 
 <div class="container">
 
-<h1>Frigidaire System Messages</h1>
+<h1>Frigidaire System Messages Codes & Troubleshooting Guide</h1>
 
-<p class="subtitle">
-<strong>Complete Troubleshooting & Meaning Guide</strong>
-</p>
-
-<!-- ================= POWER ================= -->
-<div class="section-title">Power & Startup Messages</div>
+<input type="text" class="search-box" placeholder="Search error code...">
 
 <div class="grid">
 
-<div class="card">
-<div class="code">PF</div>
-<div class="title">Power Failure Detected</div>
-<ul class="steps">
-<li>Check household power supply.</li>
-<li>Reset circuit breaker if tripped.</li>
-<li>Wait 1–2 minutes before restarting unit.</li>
-<li>Reprogram settings if needed.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">PF</span> Power Failure Detected</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check household power supply and circuit breaker.</li>
+<li>Reset breaker if tripped or unstable.</li>
+<li>Wait 1–2 minutes before restarting appliance.</li>
+<li>Reprogram settings if required after restart.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">RESET</div>
-<div class="title">System Restart Required</div>
-<ul class="steps">
-<li>Turn off power for 5–10 minutes.</li>
-<li>Restart appliance after reset.</li>
-<li>Check for recurring error messages.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">RESET</span> System Restart Required</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn off appliance power for 5–10 minutes.</li>
+<li>Restart system after full reset cycle.</li>
+<li>Check if error message reappears.</li>
 <li>Inspect control board if issue persists.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= CONTROL ================= -->
-<div class="section-title">Control & Lock Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">LOC</div>
-<div class="title">Control Lock Active</div>
-<ul class="steps">
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">LOC</span> Control Lock Active</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Press and hold lock button for 3–5 seconds.</li>
-<li>Refer to model-specific unlock method.</li>
-<li>Ensure no stuck buttons on panel.</li>
-<li>Reset power if lock remains active.</li>
+<li>Follow model-specific unlock instructions.</li>
+<li>Check for stuck or unresponsive buttons.</li>
+<li>Reset power if lock cannot be cleared.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= SAFETY ================= -->
-<div class="section-title">Safety & Temperature Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">HOT</div>
-<div class="title">Overheat Warning</div>
-<ul class="steps">
-<li>Allow appliance to cool down completely.</li>
-<li>Check ventilation openings for blockage.</li>
-<li>Clean filters or airflow passages.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">HOT</span> Overheat Warning</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Allow appliance to cool completely before reuse.</li>
+<li>Check ventilation openings for blockage or dust.</li>
+<li>Clean filters and airflow passages thoroughly.</li>
 <li>Do not restart until temperature normalizes.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= DOOR ================= -->
-<div class="section-title">Door & Operation Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">DOOR</div>
-<div class="title">Door Not Closed</div>
-<ul class="steps">
-<li>Ensure door is fully closed and latched.</li>
-<li>Inspect door switch or sensor.</li>
-<li>Check for obstruction in door seal.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">DOOR</span> Door Not Closed</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Ensure door is fully closed and properly latched.</li>
+<li>Inspect door switch or sensor functionality.</li>
+<li>Check for obstruction in door seal area.</li>
 <li>Realign or repair door latch if needed.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= SYSTEM ================= -->
-<div class="section-title">System Error Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">ERR</div>
-<div class="title">General System Error</div>
-<ul class="steps">
-<li>Reset appliance power supply.</li>
-<li>Check for multiple error codes.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">ERR</span> General System Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Perform full power reset of appliance.</li>
+<li>Check for multiple active error codes.</li>
 <li>Inspect control board connections.</li>
-<li>Contact technician if error persists.</li>
+<li>Contact technician if issue persists.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">COOL</div>
-<div class="title">Cooling Cycle Active</div>
-<ul class="steps">
-<li>Wait for cooling cycle to complete.</li>
-<li>Do not open doors during operation.</li>
-<li>Ensure proper ventilation around unit.</li>
-<li>System will resume normal mode automatically.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">COOL</span> Cooling Cycle Active</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Allow cooling cycle to complete normally.</li>
+<li>Avoid opening doors during operation.</li>
+<li>Ensure proper airflow around unit.</li>
+<li>System will return to normal mode automatically.</li>
 </ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F1</span> Control Panel Communication Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reset appliance power for 5 minutes.</li>
+<li>Inspect ribbon cable connections.</li>
+<li>Check control board for moisture damage.</li>
+<li>Replace UI board if communication fails.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F2</span> Temperature Sensor Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check sensor resistance with multimeter.</li>
+<li>Inspect wiring for corrosion or breaks.</li>
+<li>Verify proper sensor placement.</li>
+<li>Replace sensor if readings are incorrect.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F3</span> Fan Motor Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect fan blades for obstruction.</li>
+<li>Check motor wiring connections.</li>
+<li>Test fan operation manually.</li>
+<li>Replace fan motor if not running.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F4</span> Door Switch Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect door switch alignment.</li>
+<li>Test continuity of door switch system.</li>
+<li>Check wiring harness for damage.</li>
+<li>Replace door switch if defective.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F5</span> Power Supply Instability</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check household voltage stability.</li>
+<li>Inspect power cord and outlet condition.</li>
+<li>Avoid using extension cords.</li>
+<li>Contact electrician if voltage fluctuates.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F6</span> Control Board Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reset appliance power completely.</li>
+<li>Inspect PCB for burn marks or corrosion.</li>
+<li>Check all wiring connections.</li>
+<li>Replace control board if failure persists.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F7</span> Overheat Protection Triggered</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Allow appliance to cool fully.</li>
+<li>Check airflow and ventilation system.</li>
+<li>Clean internal filters or vents.</li>
+<li>Inspect thermostat and safety sensors.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F8</span> Moisture Detection Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect for water or condensation inside unit.</li>
+<li>Dry affected components thoroughly.</li>
+<li>Check moisture sensor wiring.</li>
+<li>Replace sensor if malfunction continues.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F9</span> System Memory Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reset appliance by unplugging for 5–10 minutes.</li>
+<li>Inspect control board connections.</li>
+<li>Check for firmware or configuration issues.</li>
+<li>Replace PCB if memory fault persists.</li>
+</ul>
+</div>
+</div>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “SY EF” mean on a Frigidaire refrigerator?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>It indicates an evaporator fan failure.</li>
+<li>Check if the fan is blocked by ice or debris.</li>
+<li>Inspect wiring connections to the fan motor.</li>
+<li>Replace the fan motor if it is not running.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “SY CE” mean on a Frigidaire appliance?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>It indicates a communication error between control boards.</li>
+<li>Restart the appliance to reset the system.</li>
+<li>Check wiring harness connections.</li>
+<li>Replace control board if error persists.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “SY CF” mean on a Frigidaire refrigerator?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>It indicates a condenser fan failure.</li>
+<li>Clean dust and debris around the fan area.</li>
+<li>Check if the fan blade is obstructed.</li>
+<li>Replace condenser fan motor if faulty.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “SY EF” mean on a Frigidaire oven?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>It indicates an electronic control or sensor issue.</li>
+<li>Restart the oven to clear temporary faults.</li>
+<li>Check wiring and sensor connections.</li>
+<li>Contact technician if the error continues.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “SY HS” mean on a Frigidaire dryer?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>It indicates overheating or high temperature condition.</li>
+<li>Clean lint filter and exhaust vent.</li>
+<li>Ensure proper airflow around the dryer.</li>
+<li>Allow the unit to cool before restarting.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “SY CE” mean on a Frigidaire washer?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>It indicates a communication failure between components.</li>
+<li>Turn off the washer and restart after a few minutes.</li>
+<li>Check wiring connections inside the unit.</li>
+<li>Replace control board if needed.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “SY FL” mean on a Frigidaire dishwasher?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>It indicates a fill or water supply issue.</li>
+<li>Check that the water supply valve is open.</li>
+<li>Clean inlet filter and hose.</li>
+<li>Ensure proper water pressure is available.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “SY LE” mean on a Frigidaire appliance?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>It indicates a leak or water detection error.</li>
+<li>Check hoses and internal components for leaks.</li>
+<li>Inspect drain system and seals.</li>
+<li>Dry base tray and restart unit.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “SY DE” mean on a Frigidaire dishwasher?</span>
+</button>
+<div class="error-content">
+<ul>
+<li>It indicates a drain error or blockage.</li>
+<li>Clean filter and drain pump area.</li>
+<li>Check drain hose for clogs or bends.</li>
+<li>Restart dishwasher after clearing obstruction.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “SY PF” mean on a Frigidaire dryer?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>It indicates a power failure or voltage drop.</li>
+<li>Check electrical outlet and breaker.</li>
+<li>Ensure stable power supply.</li>
+<li>Reset dryer after power is restored.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What should I do if Frigidaire system messages keep appearing?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart the appliance to clear temporary faults.</li>
+<li>Check power, water, and airflow systems.</li>
+<li>Clean filters and remove blockages.</li>
+<li>Contact Frigidaire support if errors persist.</li>
+</ul>
+</div>
 </div>
 
 </div>
@@ -222,6 +546,30 @@ h1{
 </div>
 
 </div>
+
+</body>
+</html>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

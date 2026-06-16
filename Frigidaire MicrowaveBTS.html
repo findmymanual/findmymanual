@@ -3,94 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frigidaire Microwave Error Codes Troubleshooting Guide</title>
+<title>Frigidaire Microwave Codes Troubleshooting Guide</title>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f5f5;
+    background:#f5f6f8;
     color:#333;
 }
 
 .container{
-    max-width:1200px;
+    max-width:1100px;
     margin:auto;
     background:#fff;
-    padding:30px;
+    padding:25px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    
 }
 
 h1{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
+    border-radius:8px;
     margin-bottom:10px;
-    background: #1f3b4d;
-    color: white;
-    padding: 25px;
+    
 }
 
-.subtitle{
+h2{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
-    margin-bottom:30px;
+    border-radius:8px;
+    margin-bottom:10px;
+    
 }
 
 .section-title{
     margin-top:40px;
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
-    border-left:5px solid #e60012;
+    border-left:5px solid #1f3b4d;
     padding-left:10px;
-    color:#444;
+    
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-    margin-top:20px;
-}
-
-.card{
-    border:1px solid #4e6e81;
+.search-box{
+    width:100%;
+    padding:12px;
+    margin:20px 0;
+    border:1px solid #ccc;
     border-radius:8px;
-    padding:20px;
-    background:#fafafa;
-    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.error-card{
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:10px;
+    overflow:hidden;
+}
+
+.error-toggle{
+    width:100%;
+    padding:15px;
+    background:#fff;
+    border:none;
+    text-align:left;
+    cursor:pointer;
+    font-size:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.error-toggle:hover{
+    background:#f3f3f3;
 }
 
 .code{
-    font-size:26px;
     font-weight:bold;
-    color:#4e6e81;
-    margin-bottom:10px;
+    color:#1f3b4d;
+    margin-right:10px;
+    min-width:80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-.title{
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:12px;
+.error-content{
+    display:none;
+    padding:15px;
+    background:#fafafa;
+    border-top:1px solid #eee;
+    
 }
 
-.steps{
-    padding-left:18px;
-    line-height:1.6;
+.error-content ul{
+    padding-left:20px;
 }
 
 .note{
-    margin-top:30px;
+    margin-top:25px;
+    padding:15px;
     background:#fff3cd;
     border:1px solid #ffeeba;
-    padding:15px;
-    border-radius:6px;
+    border-radius:8px;
+    
 }
 </style>
 </head>
@@ -99,102 +123,436 @@ h1{
 
 <div class="container">
 
-<h1>Frigidaire Microwave Error Codes</h1>
+<h1>Frigidaire Microwave Error Codes & Troubleshooting Guide</h1>
 
-<p class="subtitle">
-<strong>Complete Troubleshooting & Repair Guide</strong>
-</p>
-
-<!-- ================= CONTROL ================= -->
-<div class="section-title">Control Panel Errors</div>
+<input type="text" class="search-box" placeholder="Search error code...">
 
 <div class="grid">
 
-<div class="card">
-<div class="code">F1</div>
-<div class="title">Touch Pad Error</div>
-<ul class="steps">
-<li>Disconnect power for 5 minutes.</li>
-<li>Clean control panel from moisture or grease.</li>
-<li>Check ribbon cable connection.</li>
-<li>Replace touch pad if faulty.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F1</span> Touch Pad Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Disconnect power for 5 minutes to reset system.</li>
+<li>Clean control panel from moisture, grease, or debris.</li>
+<li>Check ribbon cable connection to control board.</li>
+<li>Replace touch pad if buttons remain unresponsive.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= TEMPERATURE ================= -->
-<div class="section-title">Temperature & Sensor Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">F2</div>
-<div class="title">Overheat Condition</div>
-<ul class="steps">
-<li>Allow microwave to cool completely.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F2</span> Overheat Condition</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Allow microwave to cool completely before reuse.</li>
 <li>Check ventilation openings for blockage.</li>
 <li>Inspect thermal sensor or thermostat.</li>
-<li>Replace thermal cutoff if needed.</li>
+<li>Replace thermal cutoff if overheating persists.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">F3</div>
-<div class="title">Sensor Failure</div>
-<ul class="steps">
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F3</span> Sensor Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Inspect sensor wiring connections.</li>
-<li>Test sensor resistance.</li>
-<li>Check for moisture damage.</li>
-<li>Replace sensor if defective.</li>
+<li>Test sensor resistance with a multimeter.</li>
+<li>Check for moisture or corrosion damage.</li>
+<li>Replace sensor if readings are abnormal.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= DOOR ================= -->
-<div class="section-title">Door & Safety System Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">F4</div>
-<div class="title">Door Switch Issue</div>
-<ul class="steps">
-<li>Check door alignment and latch.</li>
-<li>Inspect door switches for damage.</li>
-<li>Test continuity of door interlock system.</li>
-<li>Replace door switch assembly if needed.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F4</span> Door Switch Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check door alignment and latch mechanism.</li>
+<li>Inspect door interlock switches.</li>
+<li>Test continuity of door switch system.</li>
+<li>Replace door switch assembly if faulty.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= POWER ================= -->
-<div class="section-title">Power & Cooking System Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">F5</div>
-<div class="title">Relay Failure</div>
-<ul class="steps">
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F5</span> Relay Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Reset microwave power supply.</li>
-<li>Inspect control board relay circuit.</li>
+<li>Inspect relay circuit on control board.</li>
 <li>Check wiring to high-voltage components.</li>
-<li>Replace control board if relay is faulty.</li>
+<li>Replace control board if relay is defective.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">F6</div>
-<div class="title">Magnetron Fault</div>
-<ul class="steps">
-<li>Do not operate unit if fault persists.</li>
-<li>Check high-voltage diode and capacitor.</li>
-<li>Inspect magnetron connections.</li>
-<li>Replace magnetron if confirmed faulty.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F6</span> Magnetron Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Do not operate microwave if fault persists.</li>
+<li>Inspect high-voltage diode and capacitor.</li>
+<li>Check magnetron connections and mounting.</li>
+<li>Replace magnetron if confirmed defective.</li>
 </ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F7</span> High Voltage Transformer Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check transformer wiring connections.</li>
+<li>Inspect for burn marks or overheating.</li>
+<li>Test continuity of high-voltage transformer.</li>
+<li>Replace transformer if faulty.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F8</span> Humidity Sensor Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect humidity sensor wiring.</li>
+<li>Check for grease or steam contamination.</li>
+<li>Test sensor response accuracy.</li>
+<li>Replace sensor if readings are incorrect.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F9</span> Inverter Board Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reset microwave power supply.</li>
+<li>Inspect inverter board for damage or burns.</li>
+<li>Check wiring connections to magnetron.</li>
+<li>Replace inverter board if faulty.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F10</span> Cooling Fan Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check cooling fan for obstruction.</li>
+<li>Inspect fan motor wiring connections.</li>
+<li>Test fan motor operation.</li>
+<li>Replace cooling fan if not running.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F11</span> Control Board Communication Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reset microwave by unplugging for 5–10 minutes.</li>
+<li>Check ribbon cable and wiring harness.</li>
+<li>Inspect control board for corrosion or damage.</li>
+<li>Replace main PCB if communication fails.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F12</span> Keypad Short Circuit</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Disconnect power immediately.</li>
+<li>Inspect keypad for moisture or damage.</li>
+<li>Check ribbon cable connection.</li>
+<li>Replace touch panel if shorted.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F13</span> EEPROM Memory Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reset microwave power supply.</li>
+<li>Inspect control board connections.</li>
+<li>Check PCB for damage or corrosion.</li>
+<li>Replace control board if memory failure persists.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F14</span> Door Open During Operation</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Ensure door is fully closed and latched.</li>
+<li>Inspect door switch system.</li>
+<li>Check for obstruction in door latch.</li>
+<li>Replace door switch if faulty.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F15</span> Power Supply Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check household power outlet stability.</li>
+<li>Inspect power cord for damage.</li>
+<li>Test voltage supply to microwave.</li>
+<li>Contact electrician if voltage is unstable.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">PF</span> Power Failure Recovery</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check household power supply and breaker.</li>
+<li>Reset microwave by unplugging for 5 minutes.</li>
+<li>Verify outlet is functioning correctly.</li>
+<li>Restart cooking cycle after reset.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">HOT</span> Overheat Warning</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Allow microwave to cool completely.</li>
+<li>Check ventilation and airflow paths.</li>
+<li>Clean grease and dust buildup.</li>
+<li>Do not restart until temperature normalizes.</li>
+</ul>
+</div>
+</div>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire microwave not turning on?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check if the microwave is properly plugged in.</li>
+<li>Ensure the circuit breaker has not tripped.</li>
+<li>Verify the door is fully closed and latched.</li>
+<li>Inspect the power outlet for proper voltage.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire microwave not heating food?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check if the correct power level is selected.</li>
+<li>Ensure the door switch is working properly.</li>
+<li>Inspect the magnetron if heating fails completely.</li>
+<li>Reset the microwave by unplugging for a few minutes.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire microwave sparking inside?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Remove any metal objects or foil inside.</li>
+<li>Check for damaged waveguide cover.</li>
+<li>Clean food splatters inside the cavity.</li>
+<li>Stop use immediately if sparking continues.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire microwave making loud noise?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check if turntable is properly seated.</li>
+<li>Inspect fan and motor for obstruction.</li>
+<li>Ensure no foreign objects are inside.</li>
+<li>Call technician if grinding noise persists.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire microwave display not working?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check power supply and outlet connection.</li>
+<li>Reset the microwave by unplugging it.</li>
+<li>Inspect control board for faults.</li>
+<li>Replace display panel if necessary.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Frigidaire microwave stop mid-cycle?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check for overheating or blocked ventilation.</li>
+<li>Ensure door switch is functioning properly.</li>
+<li>Inspect power supply stability.</li>
+<li>Allow microwave to cool before restarting.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire microwave door not closing properly?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check for food or debris blocking the latch.</li>
+<li>Inspect door hinges for damage.</li>
+<li>Ensure door hooks align properly.</li>
+<li>Replace door latch if worn out.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire microwave keypad not working?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean control panel surface gently.</li>
+<li>Check if child lock is enabled.</li>
+<li>Reset microwave by unplugging it.</li>
+<li>Replace membrane keypad if faulty.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Frigidaire microwave smell bad?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean interior with mild soap or vinegar solution.</li>
+<li>Remove food spills immediately after use.</li>
+<li>Run microwave with water and lemon to deodorize.</li>
+<li>Check for hidden food residue in vents.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>How do I reset my Frigidaire microwave?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Unplug the microwave from the power source.</li>
+<li>Wait 5–10 minutes before plugging it back in.</li>
+<li>Reset the clock and settings after restart.</li>
+<li>Test operation with a short heating cycle.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire microwave not spinning?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check if the turntable is properly aligned.</li>
+<li>Clean debris from roller ring area.</li>
+<li>Inspect turntable motor for faults.</li>
+<li>Ensure glass tray is not cracked or stuck.</li>
+</ul>
+</div>
 </div>
 
 </div>
@@ -204,6 +562,30 @@ h1{
 </div>
 
 </div>
+
+</body>
+</html>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

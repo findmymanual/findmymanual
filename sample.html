@@ -1,96 +1,896 @@
-<section class="lg-troubleshooting">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <h2>LG Troubleshooting Guides</h2>
+<title>Bosch Dishwasher Error Codes & Troubleshooting Guide</title>
 
-  <p>
-    Find step-by-step LG troubleshooting guides for common appliance problems.
-    These guides help you fix errors, understand issues, and learn basic solutions
-    before contacting a technician.
-  </p>
-
-  <div class="troubleshooting-grid">
-
-    <div class="trouble-card">
-      <h3><a href="LG AirconBTS.html">LG Air Conditioner Troubleshooting Guide</a></h3>
-      <p>Fix CH error codes, cooling issues, sensor problems, and reset LG air conditioners safely.</p>
-    </div>
-
-    <div class="trouble-card">
-      <h3><a href="LG DishwasherBTS.html">LG Dishwasher Troubleshooting Guide</a></h3>
-      <p>Solve drainage issues, cleaning errors, and washing cycle problems in LG dishwashers.</p>
-    </div>
-
-    <div class="trouble-card">
-      <h3><a href="LG DryerBTS.html">LG Dryer Troubleshooting Guide</a></h3>
-      <p>Fix heating problems, drum issues, and sensor errors in LG dryers.</p>
-    </div>
-
-    <div class="trouble-card">
-      <h3><a href="LG MicrowaveBTS.html">LG Microwave Troubleshooting Guide</a></h3>
-      <p>Resolve heating issues, power problems, and control panel errors in LG microwaves.</p>
-    </div>
-
-    <div class="trouble-card">
-      <h3><a href="LG RefBTS.html">LG Refrigerator Troubleshooting Guide</a></h3>
-      <p>Fix cooling problems, ice maker issues, and temperature errors in LG refrigerators.</p>
-    </div>
-
-    <div class="trouble-card">
-      <h3><a href="LG TVBTS.html">LG Television Troubleshooting Guide</a></h3>
-      <p>Solve screen issues, sound problems, WiFi errors, and power failures in LG TVs.</p>
-    </div>
-
-    <div class="trouble-card">
-      <h3><a href="LG WashingBTS.html">LG Washing Machine Troubleshooting Guide</a></h3>
-      <p>Fix OE, LE, UE errors, drainage problems, and spinning issues in LG washers.</p>
-    </div>
-
-  </div>
-
-</section>
+<meta name="description" content="Complete Bosch dishwasher error codes list with troubleshooting steps, causes, and repair solutions.">
 
 <style>
-.lg-troubleshooting {
-  margin-top: 40px;
-  padding: 20px;
-  border-top: 2px solid #eee;
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:20px;
+    background:#f5f6f8;
+    color:#333;
 }
 
-.lg-troubleshooting h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    
 }
 
-.troubleshooting-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  margin-top: 20px;
+h1{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
+    text-align:center;
+    border-radius:8px;
+    margin-bottom:10px;
+    
 }
 
-.trouble-card {
-  border: 3px solid #ddd;
-  padding: 30px;
-  border-radius: 8px;
-  background: #fafafa;
+h2{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
+    text-align:center;
+    border-radius:8px;
+    margin-bottom:10px;
+    
 }
 
-.trouble-card h3 {
-  font-size: 16px;
-  margin-bottom: 8px;
+.section-title{
+    margin-top:40px;
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #1f3b4d;
+    padding-left:10px;
+    
 }
 
-.trouble-card a {
-  text-decoration: none;
-  color: #0073aa;
+.search-box{
+    width:100%;
+    padding:12px;
+    margin:20px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
 }
 
-.trouble-card a:hover {
-  text-decoration: underline;
+.error-card{
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:10px;
+    overflow:hidden;
 }
 
-.trouble-card p {
-  font-size: 14px;
-  color: #555;
+.error-toggle{
+    width:100%;
+    padding:15px;
+    background:#fff;
+    border:none;
+    text-align:left;
+    cursor:pointer;
+    font-size:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.error-toggle:hover{
+    background:#f3f3f3;
+}
+
+.code{
+    font-weight:bold;
+    color:#1f3b4d;
+    margin-right:10px;
+    min-width:80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.error-content{
+    display:none;
+    padding:15px;
+    background:#fafafa;
+    border-top:1px solid #eee;
+    
+}
+
+.error-content ul{
+    padding-left:20px;
+}
+
+.note{
+    margin-top:25px;
+    padding:15px;
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    border-radius:8px;
+    
 }
 </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Bosch Dishwasher Error Codes & Troubleshooting Guide</h1>
+
+<p style="text-align:center; font-size:20px; max-width:650px; margin:10px auto 30px; color:#666;">
+Complete Bosch dishwasher error codes list with causes and step-by-step repair solutions.
+</p>
+
+<input type="text" class="search-box" placeholder="Search error code (e.g. E01, E24, E15...)">
+
+
+
+<!-- E01 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E01</span> Heating Element Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn off power supply.</li>
+<li>Check heating element wiring.</li>
+<li>Inspect for burn marks or damage.</li>
+<li>Replace heating element if necessary.</li>
+</ul>
+</div>
+</div>
+
+<!-- E09 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E09</span> Heating Circuit Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect heating circuit connection.</li>
+<li>Check control board output.</li>
+<li>Test continuity of heater.</li>
+<li>Replace faulty heating module.</li>
+</ul>
+</div>
+</div>
+
+<!-- E11 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E11</span> NTC Temperature Sensor Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check sensor wiring connection.</li>
+<li>Clean sensor area.</li>
+<li>Test resistance of NTC sensor.</li>
+<li>Replace sensor if readings are abnormal.</li>
+</ul>
+</div>
+</div>
+
+<!-- E13 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E13</span> Water Temperature Too High</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check incoming hot water supply.</li>
+<li>Ensure water temperature is below limit.</li>
+<li>Inspect thermostat regulation.</li>
+<li>Reduce water heater temperature.</li>
+</ul>
+</div>
+</div>
+
+<!-- E03 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E03</span> Drain Pump Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check drain hose for blockage.</li>
+<li>Inspect pump impeller.</li>
+<li>Remove debris from filter.</li>
+<li>Replace pump if required.</li>
+</ul>
+</div>
+</div>
+
+<!-- E04 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E04</span> Water Inlet Issue</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check water supply valve.</li>
+<li>Inspect inlet hose for blockage.</li>
+<li>Clean inlet filter screen.</li>
+<li>Ensure proper water pressure.</li>
+</ul>
+</div>
+</div>
+
+<!-- E14 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E14</span> Water Flow Sensor Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect flow meter for blockage.</li>
+<li>Check wiring connections.</li>
+<li>Clean inlet system.</li>
+<li>Replace sensor if needed.</li>
+</ul>
+</div>
+</div>
+
+<!-- E18 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E18</span> Water Supply Blocked</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check water tap fully open.</li>
+<li>Inspect hose for kinks.</li>
+<li>Clean inlet filter.</li>
+<li>Verify water pressure.</li>
+</ul>
+</div>
+</div>
+
+<!-- E24 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E24</span> Drain Blockage or Hose Kinked</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check drain hose routing.</li>
+<li>Remove clogs or debris.</li>
+<li>Clean pump filter.</li>
+<li>Ensure proper installation.</li>
+</ul>
+</div>
+</div>
+
+<!-- E15 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E15</span> Water Leak Detected (AquaStop)</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn off water supply immediately.</li>
+<li>Inspect dishwasher base for water.</li>
+<li>Check hoses and seals.</li>
+<li>Dry and reset system.</li>
+</ul>
+</div>
+</div>
+
+<!-- E16 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E16</span> Inlet Valve Stuck Open</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check inlet valve operation.</li>
+<li>Inspect wiring and solenoid.</li>
+<li>Turn off water supply if leaking.</li>
+<li>Replace valve if faulty.</li>
+</ul>
+</div>
+</div>
+
+<!-- E17 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E17</span> Water Flow Too Strong</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check water pressure regulator.</li>
+<li>Inspect inlet valve condition.</li>
+<li>Reduce household water pressure.</li>
+<li>Restart appliance.</li>
+</ul>
+</div>
+</div>
+
+<!-- E07 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E07</span> Circulation Pump Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check pump wiring connection.</li>
+<li>Inspect impeller for blockage.</li>
+<li>Test motor operation.</li>
+<li>Replace pump if necessary.</li>
+</ul>
+</div>
+</div>
+
+<!-- E20 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E20</span> Pump Motor Issue</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check motor wiring.</li>
+<li>Inspect for jammed impeller.</li>
+<li>Reset dishwasher.</li>
+<li>Replace motor if faulty.</li>
+</ul>
+</div>
+</div>
+
+<!-- E21 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E21</span> Pump Blockage or Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean filter and pump area.</li>
+<li>Remove debris from impeller.</li>
+<li>Check motor function.</li>
+<li>Replace pump if needed.</li>
+</ul>
+</div>
+</div>
+
+<!-- E19 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E19</span> Internal Electrical Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reset dishwasher power.</li>
+<li>Inspect wiring harness.</li>
+<li>Check control board damage.</li>
+<li>Replace PCB if required.</li>
+</ul>
+</div>
+</div>
+
+<!-- E90–E99 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E90–E99</span> Control Board Failure Range</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Perform system reset.</li>
+<li>Check power fluctuations.</li>
+<li>Inspect main PCB connections.</li>
+<li>Replace control module if needed.</li>
+</ul>
+</div>
+</div>
+
+<!-- E02 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E02</span> Main Control Module Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Disconnect power for 5–10 minutes.</li>
+<li>Inspect wiring connections.</li>
+<li>Check PCB damage.</li>
+<li>Replace module if necessary.</li>
+</ul>
+</div>
+</div>
+
+<!-- E05 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E05</span> Water Distribution System Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check spray arm movement.</li>
+<li>Inspect water valve.</li>
+<li>Clean blockages.</li>
+<li>Replace valve if needed.</li>
+</ul>
+</div>
+</div>
+
+<!-- E06 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E06</span> Door Sensor Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Ensure door is fully closed.</li>
+<li>Inspect latch mechanism.</li>
+<li>Check door switch wiring.</li>
+<li>Replace sensor if defective.</li>
+</ul>
+</div>
+</div>
+
+<!-- E08 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E08</span> Low Water Level Detected</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check water supply.</li>
+<li>Inspect inlet valve.</li>
+<li>Clean filters.</li>
+<li>Restart dishwasher.</li>
+</ul>
+</div>
+</div>
+
+<!-- E10 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E10</span> Heating System Malfunction</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect heating element.</li>
+<li>Check temperature sensor.</li>
+<li>Verify PCB output.</li>
+<li>Replace faulty parts.</li>
+</ul>
+</div>
+</div>
+
+<!-- E12 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E12</span> Limescale Build-Up Detected</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Run cleaning cycle.</li>
+<li>Descale dishwasher.</li>
+<li>Add salt.</li>
+<li>Check softener.</li>
+</ul>
+</div>
+</div>
+
+<!-- E22 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E22</span> Filter Blocked</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Remove filter.</li>
+<li>Clean sump area.</li>
+<li>Wash filter.</li>
+<li>Reinstall properly.</li>
+</ul>
+</div>
+</div>
+
+<!-- E23 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E23</span> Drain Pump Electrical Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Disconnect power.</li>
+<li>Inspect wiring.</li>
+<li>Check pump blockage.</li>
+<li>Replace pump if needed.</li>
+</ul>
+</div>
+</div>
+
+<!-- E25 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E25</span> Drain Pump Blocked</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean impeller.</li>
+<li>Remove debris.</li>
+<li>Check hose blockage.</li>
+<li>Restart dishwasher.</li>
+</ul>
+</div>
+</div>
+
+<!-- E27 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E27</span> Low Supply Voltage</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check power supply.</li>
+<li>Inspect outlet voltage.</li>
+<li>Avoid extension cords.</li>
+<li>Call electrician.</li>
+</ul>
+</div>
+</div>
+
+<!-- H01-H24 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">H01-H24</span> Delay Start Active</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>This is not an error.</li>
+<li>Delay start is active.</li>
+<li>Cancel if needed.</li>
+<li>Wait for cycle start.</li>
+</ul>
+</div>
+</div>
+
+<!-- CL -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">CL</span> Child Lock Enabled</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Hold Child Lock button.</li>
+<li>Wait for unlock.</li>
+<li>Check panel instructions.</li>
+<li>Resume operation.</li>
+</ul>
+</div>
+</div>
+
+<!-- CHECK WATER -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">CHECK WATER</span> Water Supply Warning</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Open water tap.</li>
+<li>Check inlet hose.</li>
+<li>Clean filter.</li>
+<li>Verify pressure.</li>
+</ul>
+</div>
+</div>
+
+<!-- REFILL RINSE AID -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">REFILL RINSE AID</span> Rinse Aid Low</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Open dispenser.</li>
+<li>Refill rinse aid.</li>
+<li>Close properly.</li>
+<li>Restart cycle.</li>
+</ul>
+</div>
+</div>
+
+<!-- REFILL SALT -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">REFILL SALT</span> Salt Low</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Open salt reservoir.</li>
+<li>Add dishwasher salt.</li>
+<li>Clean spills.</li>
+<li>Run rinse cycle.</li>
+</ul>
+</div>
+</div>
+
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch dishwasher not starting?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check if the door is fully closed and latched.</li>
+<li>Ensure the dishwasher has power supply.</li>
+<li>Disable child lock if activated.</li>
+<li>Check delayed start settings.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch dishwasher not cleaning dishes properly?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean spray arms for blockages.</li>
+<li>Do not overload racks.</li>
+<li>Use proper detergent and rinse aid.</li>
+<li>Check water pressure is sufficient.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch dishwasher not draining?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean dishwasher filter.</li>
+<li>Check drain hose for clogs or bends.</li>
+<li>Inspect drain pump for debris.</li>
+<li>Ensure sink drain is not blocked.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch dishwasher leaking water?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect door seal for damage.</li>
+<li>Check hose connections for looseness.</li>
+<li>Avoid excessive detergent use.</li>
+<li>Check for cracks in internal components.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why are dishes still wet after cycle?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Refill rinse aid dispenser.</li>
+<li>Use drying or extra dry mode.</li>
+<li>Avoid blocking airflow between dishes.</li>
+<li>Check drying fan function (if applicable).</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Bosch dishwasher make noise?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check for loose spray arms.</li>
+<li>Remove debris from pump area.</li>
+<li>Ensure dishes are not hitting each other.</li>
+<li>Inspect motor or circulation pump.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>How do I reset my Bosch dishwasher?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Hold the Start/Reset button for a few seconds.</li>
+<li>Turn power off for 5–10 minutes.</li>
+<li>Restart the cycle after reset.</li>
+<li>Check if error clears after reboot.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch dishwasher not filling with water?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Ensure water supply tap is open.</li>
+<li>Clean inlet filter screen.</li>
+<li>Check inlet hose for blockage.</li>
+<li>Inspect water inlet valve.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Bosch dishwasher smell bad?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean filter regularly.</li>
+<li>Remove trapped food debris.</li>
+<li>Clean door gasket and seals.</li>
+<li>Run a cleaning cycle with dishwasher cleaner.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>How often should I clean Bosch dishwasher filter?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean at least once a week.</li>
+<li>Clean more often with heavy use.</li>
+<li>Rinse under running water.</li>
+<li>Check sump area for debris.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch dishwasher cycle so long?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Eco mode increases cycle time.</li>
+<li>Heavy soil sensors extend wash duration.</li>
+<li>Low water temperature slows cycle.</li>
+<li>Normal for energy-saving programs.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Can I open Bosch dishwasher mid-cycle?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Yes, but cycle will pause automatically.</li>
+<li>Be careful of hot steam when opening.</li>
+<li>Close door to resume cycle.</li>
+<li>Avoid interrupting wash repeatedly.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why are glasses cloudy after washing?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Use rinse aid regularly.</li>
+<li>Check water hardness settings.</li>
+<li>Avoid excess detergent.</li>
+<li>Clean dishwasher interior periodically.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What if Bosch dishwasher errors keep coming back?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Try resetting the dishwasher.</li>
+<li>Check for recurring blockages or leaks.</li>
+<li>Update maintenance routine.</li>
+<li>Contact technician if issue persists.</li>
+</ul>
+</div>
+</div>
+
+
+<div class="note">
+<strong>Important:</strong> Always disconnect power before performing repairs. Contact a qualified technician if the issue persists.
+</div>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
+
+</body>
+</html>

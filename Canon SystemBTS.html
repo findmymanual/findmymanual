@@ -3,94 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Canon System Messages Guide</title>
+<title>Canon System Messages Error Codes Troubleshooting Guide</title>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f5f5;
+    background:#f5f6f8;
     color:#333;
 }
 
 .container{
-    max-width:1200px;
+    max-width:1100px;
     margin:auto;
     background:#fff;
-    padding:30px;
+    padding:25px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    
 }
 
 h1{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
+    border-radius:8px;
     margin-bottom:10px;
-    background: #1f3b4d;
-    color: white;
-    padding: 25px;
+    
 }
 
-.subtitle{
+h2{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
-    margin-bottom:30px;
+    border-radius:8px;
+    margin-bottom:10px;
+    
 }
 
 .section-title{
     margin-top:40px;
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
-    border-left:5px solid #e60012;
+    border-left:5px solid #1f3b4d;
     padding-left:10px;
-    color:#444;
+    
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-    margin-top:20px;
-}
-
-.card{
-    border:1px solid #4e6e81;
+.search-box{
+    width:100%;
+    padding:12px;
+    margin:20px 0;
+    border:1px solid #ccc;
     border-radius:8px;
-    padding:20px;
-    background:#fafafa;
-    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.error-card{
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:10px;
+    overflow:hidden;
+}
+
+.error-toggle{
+    width:100%;
+    padding:15px;
+    background:#fff;
+    border:none;
+    text-align:left;
+    cursor:pointer;
+    font-size:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.error-toggle:hover{
+    background:#f3f3f3;
 }
 
 .code{
-    font-size:20px;
     font-weight:bold;
-    color:#4e6e81;
-    margin-bottom:10px;
+    color:#1f3b4d;
+    margin-right:10px;
+    min-width:80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-.title{
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:12px;
+.error-content{
+    display:none;
+    padding:15px;
+    background:#fafafa;
+    border-top:1px solid #eee;
+    
 }
 
-.steps{
-    padding-left:18px;
-    line-height:1.6;
+.error-content ul{
+    padding-left:20px;
 }
 
 .note{
-    margin-top:30px;
+    margin-top:25px;
+    padding:15px;
     background:#fff3cd;
     border:1px solid #ffeeba;
-    padding:15px;
-    border-radius:6px;
+    border-radius:8px;
+    
 }
 </style>
 </head>
@@ -99,97 +123,499 @@ h1{
 
 <div class="container">
 
-<h1>Canon System Messages</h1>
+<h1>Canon System Messages Error Codes & Troubleshooting Guide</h1>
 
-<p class="subtitle">
-<strong>Status Indicators & Basic Troubleshooting Guide</strong>
-</p>
-
-<!-- ================= STATUS ================= -->
-<div class="section-title">System Status Messages</div>
+<input type="text" class="search-box" placeholder="Search error code...">
 
 <div class="grid">
 
-<div class="card">
-<div class="code">BUSY</div>
-<div class="title">Device Processing Task</div>
-<ul class="steps">
-<li>Wait for current task to complete.</li>
-<li>Do not power off device.</li>
-<li>Check for queued print/scan jobs.</li>
-<li>Restart only if frozen for long time.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">BUSY</span> Device Processing Task</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Wait for the current operation to finish.</li>
+<li>Do not turn off the device during processing.</li>
+<li>Check for pending print, copy, or scan jobs.</li>
+<li>Restart the device only if it becomes unresponsive.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">READY</div>
-<div class="title">Device Ready for Use</div>
-<ul class="steps">
-<li>No action required.</li>
-<li>Ensure paper and ink are loaded.</li>
-<li>Verify connection to computer or network.</li>
-<li>Begin printing or scanning normally.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">READY</span> Device Ready for Use</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>No action is required.</li>
+<li>Ensure paper is loaded correctly.</li>
+<li>Verify ink or toner levels are sufficient.</li>
+<li>Confirm the device is connected to the computer or network.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= ERROR ================= -->
-<div class="section-title">Error & Warning Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">ERROR</div>
-<div class="title">General System Error</div>
-<ul class="steps">
-<li>Restart device.</li>
-<li>Check for paper or ink issues.</li>
-<li>Inspect display for specific error code.</li>
-<li>Reset system if necessary.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">ERROR</span> General System Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn the device off and back on.</li>
+<li>Check for paper jams or cartridge issues.</li>
+<li>Review the display for additional error information.</li>
+<li>Perform a system reset if the message remains.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">RESET</div>
-<div class="title">Restart Required</div>
-<ul class="steps">
-<li>Power cycle the device.</li>
-<li>Unplug for 1–2 minutes.</li>
-<li>Reconnect and restart.</li>
-<li>Check if issue persists.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">RESET</span> Restart Required</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Power off the device completely.</li>
+<li>Disconnect the power cable for 1–2 minutes.</li>
+<li>Reconnect power and restart the printer.</li>
+<li>Check whether the issue has been resolved.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= SUPPLY ================= -->
-<div class="section-title">Supply Status Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">NO INK</div>
-<div class="title">Ink Cartridge Empty</div>
-<ul class="steps">
-<li>Replace empty ink cartridge.</li>
-<li>Check cartridge installation.</li>
-<li>Ensure correct model compatibility.</li>
-<li>Run print test after replacement.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">NO INK</span> Ink Cartridge Empty</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Replace the empty ink cartridge.</li>
+<li>Verify the cartridge is installed correctly.</li>
+<li>Use genuine or compatible Canon cartridges.</li>
+<li>Run a nozzle check after replacement.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">NO PAPER</div>
-<div class="title">Paper Tray Empty</div>
-<ul class="steps">
-<li>Load paper into tray.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">NO PAPER</span> Paper Tray Empty</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Load paper into the input tray.</li>
+<li>Adjust paper guides to fit the media size.</li>
+<li>Remove any obstructions from the paper path.</li>
+<li>Restart the print job after loading paper.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">PAPER JAM</span> Paper Feed Obstruction</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Open all access covers carefully.</li>
+<li>Remove jammed paper without tearing it.</li>
+<li>Check the rear tray and output area.</li>
+<li>Reload paper and resume printing.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">LOW INK</span> Ink Level Warning</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Prepare a replacement cartridge.</li>
+<li>Continue printing if quality remains acceptable.</li>
+<li>Monitor ink levels regularly.</li>
+<li>Replace the cartridge when printing stops.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">COVER OPEN</span> Access Door Open</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Close all covers securely.</li>
+<li>Check scanner and cartridge access doors.</li>
+<li>Ensure no foreign objects block the cover.</li>
+<li>Restart operation once closed.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">OFFLINE</span> Communication Lost</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Verify USB or network connection.</li>
+<li>Check Wi-Fi signal strength.</li>
+<li>Restart the printer and computer.</li>
+<li>Set the printer as the default device if necessary.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">MEMORY FULL</span> Insufficient Memory</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Cancel unnecessary print jobs.</li>
+<li>Reduce scan resolution if scanning.</li>
+<li>Print large documents in smaller batches.</li>
+<li>Restart the device to clear temporary memory.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">SCAN ERROR</span> Scanner Operation Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart the scanner or printer.</li>
+<li>Check scanner lock switch position if equipped.</li>
+<li>Verify scanner cable connections.</li>
+<li>Update scanner drivers and software.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">PRINT HEAD ERROR</span> Print Head Problem</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reseat the print head assembly.</li>
+<li>Clean print head contacts carefully.</li>
+<li>Run a print head cleaning cycle.</li>
+<li>Replace the print head if the error persists.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">WIFI ERROR</span> Wireless Connection Issue</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart the router and printer.</li>
+<li>Reconnect the printer to Wi-Fi.</li>
+<li>Verify network credentials.</li>
+<li>Move the printer closer to the router if needed.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">SERVICE MODE</span> Maintenance State Active</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Exit service mode if maintenance is complete.</li>
+<li>Restart the device normally.</li>
+<li>Avoid changing service settings unnecessarily.</li>
+<li>Consult service documentation if unsure.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">MAINTENANCE REQUIRED</span> Service Attention Needed</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Perform recommended maintenance tasks.</li>
+<li>Check waste ink absorber status.</li>
+<li>Clean paper feed rollers if necessary.</li>
+<li>Contact Canon support if the message remains.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">CARTRIDGE ERROR</span> Cartridge Recognition Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Remove and reinstall the cartridge.</li>
+<li>Clean electrical contacts gently.</li>
+<li>Verify cartridge compatibility.</li>
+<li>Replace the cartridge if defective.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">NETWORK BUSY</span> Network Processing Delay</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Wait for network tasks to complete.</li>
+<li>Reduce simultaneous print requests.</li>
+<li>Check network stability.</li>
+<li>Restart network equipment if necessary.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">FIRMWARE UPDATE</span> Software Update Available</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Do not interrupt the update process.</li>
+<li>Ensure stable power during installation.</li>
+<li>Follow on-screen instructions carefully.</li>
+<li>Restart the device after the update completes.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">USB ERROR</span> USB Communication Problem</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reconnect the USB cable securely.</li>
+<li>Try a different USB port.</li>
+<li>Replace damaged cables if necessary.</li>
+<li>Reinstall printer drivers on the computer.</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Paper Jam” mean on a Canon device?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Paper is stuck inside the printer or scanner.</li>
+<li>Remove jammed paper carefully without tearing it.</li>
+<li>Check rollers for remaining debris.</li>
+<li>Reload paper correctly in the tray.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “No Paper” message mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The paper tray is empty or not detected.</li>
+<li>Load paper correctly into the tray.</li>
 <li>Adjust paper guides properly.</li>
-<li>Check for paper feed obstruction.</li>
-<li>Restart print job.</li>
+<li>Check for dust or sensor blockage.</li>
 </ul>
 </div>
+</div>
 
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Low Ink” or “Ink Empty” mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Ink cartridges are low or completely empty.</li>
+<li>Replace or refill ink cartridges.</li>
+<li>Reinstall cartridges properly.</li>
+<li>Reset ink level warning if applicable.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Cover Open” mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>A printer or scanner cover is not fully closed.</li>
+<li>Close all covers firmly until they click.</li>
+<li>Check for obstructions inside the device.</li>
+<li>Restart the device after closing covers.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Offline” mean on a Canon printer?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The printer is not communicating with the computer.</li>
+<li>Check USB or Wi-Fi connection.</li>
+<li>Restart printer and router if needed.</li>
+<li>Set printer as default device.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Print Unable” message mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The printer cannot complete the print job.</li>
+<li>Check for paper jams or hardware issues.</li>
+<li>Restart the printer and clear print queue.</li>
+<li>Update printer drivers if needed.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Scan Error” mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The scanner failed to complete the task.</li>
+<li>Check connections and restart device.</li>
+<li>Ensure drivers are installed properly.</li>
+<li>Try a different scanning application.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Memory Full” mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The device memory is overloaded with tasks.</li>
+<li>Cancel pending print or scan jobs.</li>
+<li>Restart the device to clear memory.</li>
+<li>Reduce scan resolution or file size.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Connection Error” mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The device cannot connect to network or computer.</li>
+<li>Check Wi-Fi or USB connection.</li>
+<li>Restart router and device.</li>
+<li>Reconfigure network settings if needed.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Ink Absorber Full” mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>The waste ink absorber is full and needs service.</li>
+<li>Stop using the printer to avoid damage.</li>
+<li>Contact Canon service center for replacement.</li>
+<li>Reset may be required by technician.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What does “Error Code” on Canon devices mean?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>A specific hardware or system issue has been detected.</li>
+<li>Refer to the model’s error code guide.</li>
+<li>Restart the device to clear temporary faults.</li>
+<li>Contact support if the code persists.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What should I do if Canon system messages keep appearing?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart the device to clear temporary errors.</li>
+<li>Check for firmware or driver updates.</li>
+<li>Inspect for paper jams or hardware issues.</li>
+<li>Contact Canon support if messages persist.</li>
+</ul>
+</div>
 </div>
 
 <div class="note">
@@ -197,6 +623,30 @@ h1{
 </div>
 
 </div>
+
+</body>
+</html>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

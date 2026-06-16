@@ -28,7 +28,7 @@
   "dateModified": "2026-05-25",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://findmymanual.live/boschdl"
+    "@id": "https://findmymanual.live/Boschdl"
   }
 }
 </script>
@@ -61,6 +61,37 @@
         }
     </style></head>
 
+    <style>
+        /* PDF Grid Layout */
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* 4 per row on desktop */
+            gap: 20px;
+            justify-items: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 1024px) {
+            .pdf-grid {
+                grid-template-columns: repeat(3, 1fr);
+                /* 3 per row on tablet */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .pdf-grid {
+                grid-template-columns: repeat(3, 1fr);
+                /* 3 per row on mobile */
+            }
+        }
+
+        .pdf-grid div[style*='background:#f5f5f5'] {
+            width: 100%;
+            max-width: 250px;
+        }
+    </style>
+</head>
 <body>
 
     <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17308900859'); </script>
@@ -82,8 +113,6 @@
     <h2 style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
         Available Bosch PDF Manuals
     </h2>
-
-   
 
         <input 
     type="text" 
@@ -5457,6 +5486,85 @@
         <script>
 document.addEventListener("DOMContentLoaded", () => {
 
+    const search = document.getElementById("pdfSearch");
+
+    // This selects all your gray boxes
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    search.addEventListener("input", function () {
+        const q = this.value.toLowerCase().trim();
+
+        boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+                box.style.display = "";
+            } else {
+                box.style.display = "none";
+            }
+        });
+    });
+
+});
+
+
+
+</script>
+
+</body>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Move all PDF boxes into a responsive grid
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    if (boxes.length) {
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
+    }
+
+    // PDF button behavior & styling
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+
     /* =========================
        1. SEARCH FUNCTION
     ========================= */
@@ -5552,30 +5660,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <div class="trouble-card">
       <h3><a href="Bosch DishwasherBTS.html">Bosch Dishwasher Troubleshooting Guide</a></h3>
-      <p>Fix drainage issues, cleaning performance problems, error codes, water inlet or heating failures, and cycle interruptions in Bosch dishwashers.</p>
+      <p>Fix drainage issues, poor cleaning performance, water not filling, heating failures, cycle interruptions, and error code problems in Bosch dishwashers.</p>
     </div>
 
     <div class="trouble-card">
       <h3><a href="Bosch DryerBTS.html">Bosch Dryer Troubleshooting Guide</a></h3>
-      <p>Solve heating problems, drum not spinning, long drying times, noise issues, sensor faults, and power or control panel errors in Bosch dryers.</p>
+      <p>Solve drying issues, drum not spinning, overheating, long drying times, noise problems, and sensor or control panel errors in Bosch dryers.</p>
     </div>
 
     <div class="trouble-card">
       <h3><a href="Bosch OvenBTS.html">Bosch Oven Troubleshooting Guide</a></h3>
-      <p>Fix uneven cooking, heating failures, temperature control issues, fan malfunctions, and display or control panel errors in Bosch ovens.</p>
+      <p>Fix heating problems, uneven cooking, ignition issues, display errors, temperature sensor faults, and control panel malfunctions in Bosch ovens and ranges.</p>
     </div>
 
     <div class="trouble-card">
       <h3><a href="Bosch RefBTS.html">Bosch Refrigerator Troubleshooting Guide</a></h3>
-      <p>Resolve cooling problems, temperature fluctuations, ice maker issues, water leakage, sensor errors, and compressor or defrost system faults in Bosch refrigerators.</p>
+      <p>Resolve cooling issues, temperature fluctuations, ice maker problems, water leakage, defrost system faults, and compressor or sensor errors in Bosch refrigerators.</p>
     </div>
 
     <div class="trouble-card">
       <h3><a href="Bosch WashingBTS.html">Bosch Washer Troubleshooting Guide</a></h3>
-      <p>Fix drainage issues, spinning problems, vibration or noise, water filling errors, door lock faults, and cycle interruptions in Bosch washing machines.</p>
+      <p>Fix draining problems, spin cycle failures, water filling issues, excessive vibration, detergent dispensing faults, and error code problems in Bosch washers.</p>
     </div>
 
-    
   </div>
 
 </section>
@@ -5626,12 +5733,7 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 </style>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bosch FAQ - Troubleshooting & Error Codes</title>
+
 
 <style>
 body{
@@ -5719,188 +5821,210 @@ function toggleFAQ(el){
 
 <div class="container">
 
-<h1>Bosch FAQ - Troubleshooting & Error Codes</h1>
-<p class="subtitle">Common questions and solutions for Bosch home appliances and system errors</p>
+    <h1>Bosch FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common questions and solutions for Bosch appliances</p>
 
-<!-- ================= GENERAL ================= -->
+<!-- GENERAL -->
+
 <div class="faq-section">
-<div class="category-title">General Troubleshooting (Bosch Appliances)</div>
+<div class="category-title">General Troubleshooting</div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">What does an error code mean on Bosch appliances?</div>
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on my Bosch appliance?</div>
 <div class="answer">
-Error codes indicate faults in systems such as water supply, heating elements, drainage, sensors, or electronic control boards.
+An error code indicates a specific system fault such as a sensor issue, drainage problem, heating failure, communication error, or electrical malfunction.
 </div>
 </div>
 
 <div class="faq-item">
 <div class="question" onclick="toggleFAQ(this)">Should I reset my Bosch appliance when it shows an error?</div>
 <div class="answer">
-Yes. Turning the appliance off for 1–5 minutes can reset temporary faults. If the error returns, further diagnosis is needed.
+Yes. Resetting can clear temporary software glitches, but recurring error codes usually indicate a component or system problem that requires troubleshooting.
 </div>
 </div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">When should I call a Bosch technician?</div>
+<div class="question" onclick="toggleFAQ(this)">When should I contact Bosch service?</div>
 <div class="answer">
-Call a technician if there are persistent error codes, water leaks, heating failure, electrical smell, or repeated shutdowns.
+Contact Bosch service if the appliance repeatedly displays error codes, stops operating, emits burning smells, leaks water, or experiences electrical issues.
+</div>
 </div>
 </div>
 
-</div>
+<!-- ERROR CODES -->
 
-<!-- ================= DISHWASHER ================= -->
 <div class="faq-section">
-<div class="category-title">Bosch Dishwasher Issues</div>
+<div class="category-title">Error Code Issues</div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why is my Bosch dishwasher not draining?</div>
+<div class="question" onclick="toggleFAQ(this)">Why is my Bosch appliance displaying an error code?</div>
 <div class="answer">
-This is usually caused by clogged filters, blocked drain hose, or faulty drain pump.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why is my Bosch dishwasher not cleaning properly?</div>
-<div class="answer">
-Common causes include overloading, blocked spray arms, low water pressure, or detergent issues.
+Error codes appear when the appliance detects a malfunction involving sensors, heating systems, drainage components, motors, or electronic controls.
 </div>
 </div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">What does E15 error mean on Bosch dishwasher?</div>
+<div class="question" onclick="toggleFAQ(this)">Why does my Bosch dishwasher show E15?</div>
 <div class="answer">
-E15 usually indicates water leakage in the base tray activating flood protection.
+E15 commonly indicates water leakage detected in the appliance base, activating the AquaStop protection system.
 </div>
 </div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why is my Bosch dishwasher making noise?</div>
+<div class="question" onclick="toggleFAQ(this)">Why do random error codes appear on my Bosch appliance?</div>
 <div class="answer">
-Noise may come from a blocked pump, loose items, or worn motor bearings.
+Power fluctuations, loose wiring connections, moisture intrusion, or a failing control board may cause intermittent error codes.
+</div>
 </div>
 </div>
 
-</div>
+<!-- MAINTENANCE -->
 
-<!-- ================= WASHING MACHINE ================= -->
 <div class="faq-section">
-<div class="category-title">Bosch Washing Machine Issues</div>
+<div class="category-title">Maintenance Questions</div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why is my Bosch washing machine not spinning?</div>
+<div class="question" onclick="toggleFAQ(this)">How often should Bosch appliance filters be cleaned?</div>
 <div class="answer">
-Causes include unbalanced load, motor issues, belt problems, or lid lock failure.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">What does E18 error mean?</div>
-<div class="answer">
-E18 indicates a drainage problem caused by clogged pump or blocked hose.
+Filters should generally be cleaned every 2–4 weeks, depending on appliance type and frequency of use.
 </div>
 </div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why is my Bosch washer not filling with water?</div>
+<div class="question" onclick="toggleFAQ(this)">Why does my Bosch appliance overheat?</div>
 <div class="answer">
-Check water supply, inlet valve, or clogged filters.
+Overheating can result from blocked ventilation, dirty filters, restricted airflow, faulty thermostats, or cooling fan failures.
 </div>
 </div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why is my Bosch washing machine vibrating heavily?</div>
+<div class="question" onclick="toggleFAQ(this)">How do I maintain my Bosch refrigerator?</div>
 <div class="answer">
-Uneven flooring or unbalanced laundry load can cause vibration.
+Clean condenser coils regularly, inspect door seals, maintain proper airflow around food items, and avoid overloading compartments.
+</div>
 </div>
 </div>
 
-</div>
+<!-- COOLING & PERFORMANCE -->
 
-<!-- ================= OVEN ================= -->
 <div class="faq-section">
-<div class="category-title">Bosch Oven & Cooker Issues</div>
+<div class="category-title">Cooling & Performance Issues</div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why is my Bosch oven not heating?</div>
+<div class="question" onclick="toggleFAQ(this)">Why is my Bosch refrigerator not cooling properly?</div>
 <div class="answer">
-This may be due to faulty heating elements, thermostat failure, or control board issues.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why is my oven temperature incorrect?</div>
-<div class="answer">
-Sensor calibration issues or defective thermostats can cause incorrect heating levels.
+Dirty condenser coils, blocked air vents, faulty fans, temperature sensor issues, or compressor problems can reduce cooling performance.
 </div>
 </div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why does my Bosch oven turn off during cooking?</div>
+<div class="question" onclick="toggleFAQ(this)">Why is my freezer temperature fluctuating?</div>
 <div class="answer">
-Overheating protection or power supply instability may trigger shutdown.
+Temperature fluctuations may be caused by defective sensors, thermostat issues, airflow restrictions, or frost buildup.
 </div>
 </div>
 
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Bosch dishwasher not drying dishes properly?</div>
+<div class="answer">
+Low rinse aid levels, heating element issues, incorrect loading, or condensation drying limitations may affect drying performance.
+</div>
+</div>
 </div>
 
-<!-- ================= REFRIGERATOR ================= -->
+<!-- POWER & ELECTRICAL -->
+
 <div class="faq-section">
-<div class="category-title">Bosch Refrigerator Issues</div>
+<div class="category-title">Power & Electrical Issues</div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why is my Bosch refrigerator not cooling?</div>
+<div class="question" onclick="toggleFAQ(this)">Why does my Bosch appliance trip the circuit breaker?</div>
 <div class="answer">
-Possible causes include dirty condenser coils, fan failure, or thermostat issues.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why is there water inside my Bosch fridge?</div>
-<div class="answer">
-Clogged defrost drain or door seal problems may cause water buildup.
+A short circuit, electrical overload, damaged wiring, or a failing internal component may cause the breaker to trip.
 </div>
 </div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why is my Bosch fridge making loud noise?</div>
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage Bosch appliances?</div>
 <div class="answer">
-Noises may come from compressor vibration or faulty evaporator fan.
+Yes. Power surges can damage control boards, electronic modules, sensors, and compressor systems.
 </div>
 </div>
 
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Bosch appliance randomly shut off?</div>
+<div class="answer">
+Possible causes include overheating protection, unstable power supply, faulty wiring, or a defective control board.
+</div>
+</div>
 </div>
 
-<!-- ================= POWER & SENSOR ================= -->
+<!-- SENSOR & COMMUNICATION -->
+
 <div class="faq-section">
-<div class="category-title">Power & Sensor Issues</div>
+<div class="category-title">Sensor & Communication Errors</div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why does my Bosch appliance keep restarting?</div>
+<div class="question" onclick="toggleFAQ(this)">Why is my Bosch appliance showing a sensor error?</div>
 <div class="answer">
-Power fluctuations or faulty control boards may cause reboot loops.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Can sensors cause Bosch error codes?</div>
-<div class="answer">
-Yes. Faulty temperature, water level, or door sensors can trigger system errors.
+Sensor errors occur when temperature, water level, pressure, or position sensors provide invalid readings to the control system.
 </div>
 </div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why does my Bosch appliance stop mid-cycle?</div>
+<div class="question" onclick="toggleFAQ(this)">Why does my Bosch appliance lose communication with the control panel?</div>
 <div class="answer">
-This may be due to overheating, water supply interruption, or electronic faults.
+Loose wiring, damaged connectors, moisture damage, or a failed electronic control board can interrupt communication.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can Bosch sensors be replaced?</div>
+<div class="answer">
+Yes. Most Bosch sensors can be replaced individually, though proper diagnosis is recommended before replacing parts.
+</div>
+</div>
+</div>
+
+<!-- EXTRA -->
+
+<div class="faq-section">
+<div class="category-title">Extra Common Questions</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Bosch dishwasher not cleaning dishes properly?</div>
+<div class="answer">
+Dirty filters, clogged spray arms, low water pressure, incorrect detergent usage, or hard water buildup may affect cleaning performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is there a strange odor coming from my Bosch appliance?</div>
+<div class="answer">
+Food residue, mold growth, standing water, dirty filters, or overheating components are common causes of unusual odors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Bosch appliance make unusual noises?</div>
+<div class="answer">
+Loose components, worn bearings, pump issues, fan obstructions, or unbalanced loads may create excessive noise.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When is replacement better than repairing a Bosch appliance?</div>
+<div class="answer">
+Replacement may be more cost-effective when repair costs exceed 50% of a new appliance's value or when the unit is more than 10–15 years old.
 </div>
 </div>
 
 </div>
 
 <div class="note">
-<strong>Tip:</strong> Bosch appliances use advanced sensors, so many issues can be resolved with reset + cleaning before repair is needed.
+<strong>Tip:</strong> Always check the specific Bosch model's troubleshooting guide and error code documentation, as error meanings and repair procedures can vary between appliance series.
 </div>
+
 
 </div>
 

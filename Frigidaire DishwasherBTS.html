@@ -3,94 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frigidaire Dishwasher Error Codes Troubleshooting Guide</title>
+<title>Frigidaire Dishwasher Codes Troubleshooting Guide</title>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f5f5;
+    background:#f5f6f8;
     color:#333;
 }
 
 .container{
-    max-width:1200px;
+    max-width:1100px;
     margin:auto;
     background:#fff;
-    padding:30px;
+    padding:25px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    
 }
 
 h1{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
+    border-radius:8px;
     margin-bottom:10px;
-    background: #1f3b4d;
-    color: white;
-    padding: 25px;
+    
 }
 
-.subtitle{
+h2{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
-    margin-bottom:30px;
+    border-radius:8px;
+    margin-bottom:10px;
+    
 }
 
 .section-title{
     margin-top:40px;
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
-    border-left:5px solid #e60012;
+    border-left:5px solid #1f3b4d;
     padding-left:10px;
-    color:#444;
+    
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-    margin-top:20px;
-}
-
-.card{
-    border:1px solid #4e6e81;
+.search-box{
+    width:100%;
+    padding:12px;
+    margin:20px 0;
+    border:1px solid #ccc;
     border-radius:8px;
-    padding:20px;
-    background:#fafafa;
-    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.error-card{
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:10px;
+    overflow:hidden;
+}
+
+.error-toggle{
+    width:100%;
+    padding:15px;
+    background:#fff;
+    border:none;
+    text-align:left;
+    cursor:pointer;
+    font-size:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.error-toggle:hover{
+    background:#f3f3f3;
 }
 
 .code{
-    font-size:26px;
     font-weight:bold;
-    color:#4e6e81;
-    margin-bottom:10px;
+    color:#1f3b4d;
+    margin-right:10px;
+    min-width:80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-.title{
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:12px;
+.error-content{
+    display:none;
+    padding:15px;
+    background:#fafafa;
+    border-top:1px solid #eee;
+    
 }
 
-.steps{
-    padding-left:18px;
-    line-height:1.6;
+.error-content ul{
+    padding-left:20px;
 }
 
 .note{
-    margin-top:30px;
+    margin-top:25px;
+    padding:15px;
     background:#fff3cd;
     border:1px solid #ffeeba;
-    padding:15px;
-    border-radius:6px;
+    border-radius:8px;
+    
 }
 </style>
 </head>
@@ -99,120 +123,451 @@ h1{
 
 <div class="container">
 
-<h1>Frigidaire Dishwasher Error Codes</h1>
+<h1>Frigidaire Dishwasher Error Codes & Troubleshooting Guide</h1>
 
-<p class="subtitle">
-<strong>Complete Troubleshooting & Repair Guide</strong>
-</p>
-
-<!-- ================= WATER SYSTEM ================= -->
-<div class="section-title">Water System Errors</div>
+<input type="text" class="search-box" placeholder="Search error code...">
 
 <div class="grid">
 
-<div class="card">
-<div class="code">i10</div>
-<div class="title">Water Fill Issue</div>
-<ul class="steps">
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">i10</span> Water Fill Issue</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Check water supply valve is fully open.</li>
 <li>Inspect inlet hose for kinks or blockage.</li>
 <li>Clean inlet filter screen.</li>
-<li>Verify household water pressure.</li>
+<li>Verify household water pressure is sufficient.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">i20</div>
-<div class="title">Drain Blockage</div>
-<ul class="steps">
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">i20</span> Drain Blockage</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Inspect drain hose for clogs or bends.</li>
-<li>Clean filter and sump area.</li>
-<li>Check drain pump operation.</li>
-<li>Ensure proper drain installation height.</li>
+<li>Clean dishwasher filter and sump area thoroughly.</li>
+<li>Check drain pump operation for obstruction.</li>
+<li>Ensure proper drain installation height and routing.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">i30</div>
-<div class="title">Leak Detected (Float Switch)</div>
-<ul class="steps">
-<li>Check for water leakage under unit.</li>
-<li>Inspect float switch movement.</li>
-<li>Dry base pan and remove standing water.</li>
-<li>Check hoses and seals for cracks.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">i30</span> Leak Detected (Float Switch)</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check for water leakage under the appliance.</li>
+<li>Inspect float switch movement and operation.</li>
+<li>Dry base pan completely and remove standing water.</li>
+<li>Inspect hoses, seals, and connections for cracks.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= SENSOR ================= -->
-<div class="section-title">Sensor Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">i40</div>
-<div class="title">Pressure Sensor Fault</div>
-<ul class="steps">
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">i40</span> Pressure Sensor Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Inspect pressure sensor hose for blockage.</li>
 <li>Check wiring connections to sensor.</li>
-<li>Test sensor response with multimeter.</li>
-<li>Replace pressure sensor if faulty.</li>
+<li>Test sensor response using a multimeter.</li>
+<li>Replace pressure sensor if readings are incorrect.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= MOTOR ================= -->
-<div class="section-title">Motor & Wash System Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">i50</div>
-<div class="title">Wash Motor Failure</div>
-<ul class="steps">
-<li>Check wash pump for obstruction.</li>
-<li>Inspect motor wiring and connectors.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">i50</span> Wash Motor Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check wash pump for blockage or debris.</li>
+<li>Inspect motor wiring and electrical connectors.</li>
 <li>Test motor resistance and operation.</li>
-<li>Replace wash motor if needed.</li>
+<li>Replace wash motor or circulation pump if needed.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= HEATING ================= -->
-<div class="section-title">Heating System Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">i60</div>
-<div class="title">Heating Issue</div>
-<ul class="steps">
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">i60</span> Heating System Issue</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Check heating element continuity.</li>
-<li>Inspect thermostat and wiring.</li>
-<li>Ensure proper water temperature supply.</li>
-<li>Replace heater if faulty.</li>
+<li>Inspect thermostat and wiring connections.</li>
+<li>Verify water temperature supply conditions.</li>
+<li>Replace heater if no continuity is detected.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= CONTROL ================= -->
-<div class="section-title">Control System Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">iC0</div>
-<div class="title">Control Board Error</div>
-<ul class="steps">
-<li>Reset dishwasher by cutting power for 5–10 minutes.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">iC0</span> Control Board Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Disconnect power for 5–10 minutes to reset system.</li>
 <li>Inspect main control board connections.</li>
 <li>Check for moisture or corrosion on PCB.</li>
-<li>Replace control board if issue persists.</li>
+<li>Replace control board if fault persists.</li>
 </ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">iC1</span> Door Switch Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Ensure dishwasher door is fully closed and latched.</li>
+<li>Inspect door switch wiring connections.</li>
+<li>Test door switch continuity.</li>
+<li>Replace door switch if faulty.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">iC2</span> User Interface Communication Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reset power to the dishwasher.</li>
+<li>Check ribbon cable between UI and control board.</li>
+<li>Inspect connectors for corrosion or looseness.</li>
+<li>Replace UI board if communication fails.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">iD0</span> Turbidity Sensor Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean filter and sensor housing.</li>
+<li>Inspect turbidity sensor wiring connections.</li>
+<li>Run cleaning cycle with dishwasher cleaner.</li>
+<li>Replace sensor if readings are abnormal.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">iE0</span> Water Level Detection Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect pressure switch and air trap system.</li>
+<li>Check for clogs in sensor hose.</li>
+<li>Test wiring connections for continuity.</li>
+<li>Replace water level sensor if faulty.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">iE1</span> Temperature Sensor Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect thermistor wiring connections.</li>
+<li>Test sensor resistance values.</li>
+<li>Check for corrosion or moisture damage.</li>
+<li>Replace temperature sensor if defective.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">iE2</span> Heating Relay Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect relay on control board.</li>
+<li>Check for burnt PCB traces or damage.</li>
+<li>Test relay switching operation.</li>
+<li>Replace control board if relay is faulty.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">iE3</span> Motor Communication Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect wiring between motor and PCB.</li>
+<li>Check connectors for looseness or damage.</li>
+<li>Reset dishwasher power system.</li>
+<li>Replace motor or board if communication fails.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">iE4</span> Spray Arm Blockage</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect spray arms for debris or obstruction.</li>
+<li>Clean spray nozzles thoroughly.</li>
+<li>Ensure arms rotate freely.</li>
+<li>Reinstall properly after cleaning.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">iE5</span> Drain Pump Motor Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect drain pump for blockage or damage.</li>
+<li>Check wiring connections.</li>
+<li>Clean pump housing and impeller.</li>
+<li>Replace pump motor if not operating.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">PF</span> Power Failure Recovery</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check household power supply stability.</li>
+<li>Reset dishwasher by turning power off for 5 minutes.</li>
+<li>Verify breaker and outlet condition.</li>
+<li>Restart cycle after power is restored.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">LO</span> Low Water Temperature</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Verify hot water supply temperature.</li>
+<li>Check heating element operation.</li>
+<li>Inspect thermostat function.</li>
+<li>Run cycle again after temperature stabilizes.</li>
+</ul>
+</div>
+</div>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire dishwasher not starting?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check if the door is fully closed and latched.</li>
+<li>Ensure the dishwasher is connected to power.</li>
+<li>Verify that a wash cycle is selected.</li>
+<li>Check if control lock is enabled and disable it.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire dishwasher not cleaning dishes properly?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Load dishes properly without blocking spray arms.</li>
+<li>Clean spray arms and filters regularly.</li>
+<li>Use the correct amount of detergent.</li>
+<li>Ensure water temperature is adequate.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire dishwasher not draining?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean the filter and drain basket.</li>
+<li>Check drain hose for clogs or kinks.</li>
+<li>Inspect sink drain connection for blockage.</li>
+<li>Run a reset cycle and test again.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire dishwasher leaking water?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check door gasket for wear or dirt buildup.</li>
+<li>Ensure dishwasher is level on the floor.</li>
+<li>Inspect hoses and connections for leaks.</li>
+<li>Avoid overusing detergent or rinse aid.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire dishwasher not filling with water?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Ensure water supply valve is fully open.</li>
+<li>Check inlet hose for kinks or blockages.</li>
+<li>Clean inlet filter screen.</li>
+<li>Inspect household water pressure.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire dishwasher making noise?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check for loose dishes or utensils.</li>
+<li>Inspect spray arms for obstruction.</li>
+<li>Ensure dishwasher is properly leveled.</li>
+<li>Check pump or motor if noise continues.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why are dishes still wet after a cycle?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Use rinse aid for better drying results.</li>
+<li>Unload dishes after cooling period.</li>
+<li>Check drying settings or eco mode.</li>
+<li>Ensure proper air circulation inside unit.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Frigidaire dishwasher smell bad?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean filter and drain area regularly.</li>
+<li>Remove leftover food debris from dishes.</li>
+<li>Run a cleaning cycle with dishwasher cleaner.</li>
+<li>Leave door slightly open after use.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire dishwasher showing error codes?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart the dishwasher to clear temporary errors.</li>
+<li>Check water supply and drainage system.</li>
+<li>Clean filters and spray arms.</li>
+<li>Refer to manual for specific error code meaning.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>How do I reset my Frigidaire dishwasher?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn off the dishwasher and unplug it.</li>
+<li>Wait 5–10 minutes before restoring power.</li>
+<li>Press and hold the start/reset button (model dependent).</li>
+<li>Restart a new cycle after reset.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Frigidaire dishwasher not drying dishes?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check rinse aid level and refill if needed.</li>
+<li>Select heated dry option if available.</li>
+<li>Ensure dishes are loaded properly for airflow.</li>
+<li>Inspect heating element if drying fails.</li>
+</ul>
+</div>
 </div>
 
 </div>
@@ -222,6 +577,30 @@ h1{
 </div>
 
 </div>
+
+</body>
+</html>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

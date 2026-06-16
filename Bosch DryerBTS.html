@@ -3,91 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Refrigerator Error Codes Troubleshooting Guide</title>
+
+<title>Bosch Dryer Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Bosch dishwasher error codes list with troubleshooting steps, causes, and repair solutions.">
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f5f5;
+    background:#f5f6f8;
     color:#333;
 }
 
 .container{
-    max-width:1200px;
+    max-width:1100px;
     margin:auto;
     background:#fff;
-    padding:30px;
+    padding:25px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    
 }
 
 h1{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
+    border-radius:8px;
     margin-bottom:10px;
+    
 }
 
-.subtitle{
+h2{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
-    margin-bottom:30px;
+    border-radius:8px;
+    margin-bottom:10px;
+    
 }
 
 .section-title{
     margin-top:40px;
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
-    border-left:5px solid #4e6e81;
+    border-left:5px solid #1f3b4d;
     padding-left:10px;
-    color:#444;
+    
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-    margin-top:20px;
-}
-
-.card{
-    border:1px solid #4e6e81;
+.search-box{
+    width:100%;
+    padding:12px;
+    margin:20px 0;
+    border:1px solid #ccc;
     border-radius:8px;
-    padding:20px;
-    background:#fafafa;
-    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.error-card{
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:10px;
+    overflow:hidden;
+}
+
+.error-toggle{
+    width:100%;
+    padding:15px;
+    background:#fff;
+    border:none;
+    text-align:left;
+    cursor:pointer;
+    font-size:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.error-toggle:hover{
+    background:#f3f3f3;
 }
 
 .code{
-    font-size:26px;
     font-weight:bold;
-    color:#0b5394;
-    margin-bottom:10px;
+    color:#1f3b4d;
+    margin-right:10px;
+    min-width:80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-.title{
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:12px;
+.error-content{
+    display:none;
+    padding:15px;
+    background:#fafafa;
+    border-top:1px solid #eee;
+    
 }
 
-.steps{
-    padding-left:18px;
-    line-height:1.6;
+.error-content ul{
+    padding-left:20px;
 }
 
 .note{
-    margin-top:30px;
+    margin-top:25px;
+    padding:15px;
     background:#fff3cd;
     border:1px solid #ffeeba;
-    padding:15px;
-    border-radius:6px;
+    border-radius:8px;
+    
 }
 </style>
 </head>
@@ -96,149 +126,556 @@ h1{
 
 <div class="container">
 
-<h1>Refrigerator Error Codes</h1>
-<p class="subtitle"><strong>Complete Troubleshooting & Repair Guide</strong></p>
+<h1>Bosch Dryer Error Codes & Troubleshooting Guide</h1>
 
-<!-- ================= TEMPERATURE SENSORS ================= -->
-<div class="section-title">Temperature Sensor Errors</div>
-<div class="grid">
+<p style="text-align:center; font-size:20px; max-width:650px; margin:10px auto 30px; color:#666;">
+Complete Bosch Dryer error codes list with causes and step-by-step repair solutions.
+</p>
 
-<div class="card">
-<div class="code">E1</div>
-<div class="title">Defrost Sensor Fault</div>
-<ul class="steps">
-<li>Check defrost sensor connection.</li>
-<li>Inspect wiring for damage or looseness.</li>
-<li>Test sensor resistance.</li>
+<input type="text" class="search-box" placeholder="Search error code (e.g. E01, E24, E15...)">
+
+<!-- E10 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E10</span> Heating System Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check heating element for damage.</li>
+<li>Inspect thermal fuse condition.</li>
+<li>Test wiring connections.</li>
+<li>Replace heater assembly if faulty.</li>
+</ul>
+</div>
+</div>
+
+<!-- E11 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E11</span> Temperature Sensor Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect thermistor wiring.</li>
+<li>Check sensor resistance.</li>
+<li>Clean sensor area.</li>
 <li>Replace sensor if readings are abnormal.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">E4</div>
-<div class="title">Temperature Sensor Failure</div>
-<ul class="steps">
-<li>Inspect fridge temperature sensor.</li>
+<!-- E12 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E12</span> Moisture Sensor Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean moisture sensor bars.</li>
+<li>Remove lint buildup.</li>
+<li>Check wiring connections.</li>
+<li>Replace sensor if faulty.</li>
+</ul>
+</div>
+</div>
+
+<!-- E13 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E13</span> Drum Motor Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check drum belt condition.</li>
+<li>Inspect motor wiring.</li>
+<li>Test motor rotation.</li>
+<li>Replace motor if needed.</li>
+</ul>
+</div>
+</div>
+
+<!-- E14 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E14</span> Overheating Protection Triggered</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean lint filter.</li>
+<li>Inspect vent hose for blockage.</li>
+<li>Ensure proper airflow.</li>
+<li>Allow dryer to cool before restart.</li>
+</ul>
+</div>
+</div>
+
+<!-- E15 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E15</span> Control Board Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reset dryer power.</li>
+<li>Inspect PCB for burn marks.</li>
 <li>Check wiring harness.</li>
+<li>Replace control board if faulty.</li>
+</ul>
+</div>
+</div>
+
+<!-- E16 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E16</span> Door Switch Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Ensure door is fully closed.</li>
+<li>Inspect door latch.</li>
+<li>Check door switch wiring.</li>
+<li>Replace switch if defective.</li>
+</ul>
+</div>
+</div>
+
+<!-- E17 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E17</span> Power Supply Issue</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check outlet voltage.</li>
+<li>Avoid extension cords.</li>
+<li>Inspect power cable.</li>
+<li>Reset circuit breaker.</li>
+</ul>
+</div>
+</div>
+
+<!-- E18 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E18</span> Condensation System Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check moisture drainage system.</li>
+<li>Inspect water container (if applicable).</li>
+<li>Clean condenser unit.</li>
+<li>Replace sensor if needed.</li>
+</ul>
+</div>
+</div>
+
+<!-- E19 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E19</span> Fan Motor Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check blower fan operation.</li>
+<li>Inspect wiring connections.</li>
+<li>Remove lint blockage.</li>
+<li>Replace fan motor if faulty.</li>
+</ul>
+</div>
+</div>
+
+<!-- E20 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E20</span> Airflow Blockage</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean lint filter.</li>
+<li>Inspect vent hose for blockage.</li>
+<li>Check exhaust outlet.</li>
+<li>Ensure proper airflow path.</li>
+</ul>
+</div>
+</div>
+
+<!-- E21 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E21</span> Motor Overload Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn off dryer and allow motor to cool.</li>
+<li>Check drum load for overloading.</li>
+<li>Inspect motor for obstruction.</li>
+<li>Restart after 20–30 minutes.</li>
+</ul>
+</div>
+</div>
+
+<!-- E22 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E22</span> Lint Filter Blocked</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Remove and clean lint filter.</li>
+<li>Check lint buildup inside housing.</li>
+<li>Ensure filter is properly inserted.</li>
+<li>Restart cycle after cleaning.</li>
+</ul>
+</div>
+</div>
+
+<!-- E23 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E23</span> Drum Rotation Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check drive belt condition.</li>
+<li>Inspect drum roller and support wheels.</li>
+<li>Test motor function.</li>
+<li>Replace belt or motor if needed.</li>
+</ul>
+</div>
+</div>
+
+<!-- E24 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E24</span> Humidity Sensor Communication Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean moisture sensor bars.</li>
+<li>Check wiring connection.</li>
+<li>Restart dryer.</li>
+<li>Replace sensor if faulty.</li>
+</ul>
+</div>
+</div>
+
+<!-- E25 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E25</span> Heating Relay Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect heating relay on PCB.</li>
+<li>Check wiring harness.</li>
+<li>Test continuity of relay circuit.</li>
+<li>Replace control board if needed.</li>
+</ul>
+</div>
+</div>
+
+<!-- E26 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E26</span> Airflow Sensor Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check airflow sensor for lint blockage.</li>
+<li>Inspect wiring connections.</li>
 <li>Clean sensor area.</li>
 <li>Replace sensor if faulty.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">E1 (Fridge Section)</div>
-<div class="title">Fridge Temperature Sensor Fault</div>
-<ul class="steps">
-<li>Check refrigerator compartment sensor.</li>
-<li>Inspect connector pins.</li>
-<li>Verify airflow inside fridge.</li>
-<li>Replace sensor if needed.</li>
+<!-- E27 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E27</span> Temperature Cutoff Triggered</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Allow dryer to cool down.</li>
+<li>Clean lint and vent system.</li>
+<li>Check thermal fuse.</li>
+<li>Restart after cooling period.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= FAN & AIRFLOW ================= -->
-<div class="section-title">Fan & Airflow Errors</div>
-<div class="grid">
-
-<div class="card">
-<div class="code">E2</div>
-<div class="title">Freezer Fan Error</div>
-<ul class="steps">
-<li>Check freezer fan motor.</li>
-<li>Remove ice blockage around fan.</li>
-<li>Inspect wiring connections.</li>
-<li>Replace fan motor if faulty.</li>
+<!-- E28 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E28</span> Condenser Blockage</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean condenser unit.</li>
+<li>Remove lint buildup.</li>
+<li>Check water flow (if condenser type).</li>
+<li>Restart dryer cycle.</li>
 </ul>
 </div>
+</div>
 
-<div class="card">
-<div class="code">E7</div>
-<div class="title">Fan Motor Issue</div>
-<ul class="steps">
-<li>Inspect evaporator fan motor.</li>
-<li>Check for dust or ice buildup.</li>
-<li>Test motor operation.</li>
-<li>Replace motor if needed.</li>
+<!-- E29 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E29</span> Internal Communication Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reset power supply.</li>
+<li>Check wiring harness.</li>
+<li>Inspect PCB connectors.</li>
+<li>Replace control board if needed.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= COMPRESSOR ================= -->
-<div class="section-title">Compressor Errors</div>
-<div class="grid">
-
-<div class="card">
-<div class="code">E3</div>
-<div class="title">Compressor Issue</div>
-<ul class="steps">
-<li>Check compressor relay.</li>
-<li>Inspect wiring connections.</li>
-<li>Ensure stable power supply.</li>
-<li>Call technician if compressor is locked.</li>
+<!-- E30 -->
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">E30</span> System Reset Required</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Unplug dryer for 10 minutes.</li>
+<li>Check for previous error codes.</li>
+<li>Restart cycle.</li>
+<li>Call technician if recurring.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= COMMUNICATION ================= -->
-<div class="section-title">Communication Errors</div>
-<div class="grid">
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
 
-<div class="card">
-<div class="code">E5</div>
-<div class="title">Communication Error</div>
-<ul class="steps">
-<li>Reset refrigerator power.</li>
-<li>Check control board connections.</li>
-<li>Inspect wiring harness.</li>
-<li>Replace PCB if needed.</li>
+<br>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch dryer not starting?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check if the door is fully closed and latched.</li>
+<li>Ensure the dryer is plugged in and has power supply.</li>
+<li>Disable child lock if activated.</li>
+<li>Check the start button or program selection.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= ICE MAKER ================= -->
-<div class="section-title">Ice Maker Errors</div>
-<div class="grid">
-
-<div class="card">
-<div class="code">E6</div>
-<div class="title">Ice Maker Fault</div>
-<ul class="steps">
-<li>Check water supply line.</li>
-<li>Inspect ice maker module.</li>
-<li>Clear ice blockage.</li>
-<li>Reset ice maker system.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch dryer not heating?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check if a heat setting is selected.</li>
+<li>Clean lint filter to ensure proper airflow.</li>
+<li>Inspect heating element for faults.</li>
+<li>Check thermal fuse or thermostat if heat is still missing.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= DOOR ALERT ================= -->
-<div class="section-title">Door & System Alerts</div>
-<div class="grid">
-
-<div class="card">
-<div class="code">ALARM</div>
-<div class="title">Door Left Open / Temperature Warning</div>
-<ul class="steps">
-<li>Ensure door is fully closed.</li>
-<li>Check door gasket seal.</li>
-<li>Reduce frequent door opening.</li>
-<li>Allow unit to stabilize temperature.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch dryer taking too long to dry clothes?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean lint filter before every cycle.</li>
+<li>Check and clean condenser or heat exchanger.</li>
+<li>Ensure dryer vent is not blocked or kinked.</li>
+<li>Avoid overloading the drum.</li>
 </ul>
 </div>
-
 </div>
 
-<div class="note">
-<strong>Important:</strong> Always unplug the refrigerator before performing any repairs. If the issue continues after troubleshooting, contact a qualified technician.
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch dryer showing a lint filter warning?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Remove lint filter and clean thoroughly.</li>
+<li>Check filter housing for debris buildup.</li>
+<li>Reinsert filter properly.</li>
+<li>Reset the dryer after cleaning.</li>
+</ul>
+</div>
 </div>
 
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch dryer making loud noise?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check for loose items inside the drum.</li>
+<li>Inspect drum rollers and bearings for wear.</li>
+<li>Ensure dryer is level on the floor.</li>
+<li>Remove foreign objects stuck inside the drum area.</li>
+</ul>
 </div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Bosch dryer stop mid-cycle?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check for overheating or blocked airflow.</li>
+<li>Ensure door latch is secure.</li>
+<li>Inspect moisture sensor for lint buildup.</li>
+<li>Reset the dryer and try again.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch dryer not spinning?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check drive belt for damage or breakage.</li>
+<li>Ensure door switch is functioning.</li>
+<li>Inspect motor for faults.</li>
+<li>Verify drum is not overloaded or jammed.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch dryer showing water container full?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Empty the water container fully.</li>
+<li>Check condenser drying system for blockage.</li>
+<li>Ensure pump system is working properly.</li>
+<li>Reinsert tank correctly after emptying.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Bosch dryer smell bad?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean lint filter and condenser unit.</li>
+<li>Remove trapped moisture from drum.</li>
+<li>Run a cleaning cycle if available.</li>
+<li>Check for mold buildup inside seals.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>How do I reset my Bosch dryer?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn off the dryer and unplug it for 5–10 minutes.</li>
+<li>Reconnect power and restart the cycle.</li>
+<li>Clear any lint or blockages first.</li>
+<li>Check if error code disappears after reset.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Bosch dryer not drying evenly?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Avoid overloading the drum.</li>
+<li>Separate heavy and light fabrics.</li>
+<li>Clean moisture sensor strips.</li>
+<li>Ensure proper airflow inside the dryer.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>What should I do if Bosch dryer error codes keep appearing?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Reset the dryer and clean all filters.</li>
+<li>Check vent and condenser system.</li>
+<li>Inspect for recurring blockages or overheating.</li>
+<li>Contact Bosch technician if issue continues.</li>
+</ul>
+</div>
+</div>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

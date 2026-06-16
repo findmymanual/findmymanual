@@ -10,87 +10,111 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f5f5;
+    background:#f5f6f8;
     color:#333;
 }
 
 .container{
-    max-width:1200px;
+    max-width:1100px;
     margin:auto;
     background:#fff;
-    padding:30px;
+    padding:25px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    
 }
 
 h1{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
+    border-radius:8px;
     margin-bottom:10px;
-    background: #1f3b4d;
-    color: white;
-    padding: 25px;
+    
 }
 
-.subtitle{
+h2{
+    background:#1f3b4d;
+    color:#fff;
+    padding:20px;
     text-align:center;
-    color:#666;
-    margin-bottom:30px;
+    border-radius:8px;
+    margin-bottom:10px;
+    
 }
 
 .section-title{
     margin-top:40px;
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
-    border-left:5px solid #e60012;
+    border-left:5px solid #1f3b4d;
     padding-left:10px;
-    color:#444;
+    
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-    margin-top:20px;
-}
-
-.card{
-    border:1px solid #4e6e81;
+.search-box{
+    width:100%;
+    padding:12px;
+    margin:20px 0;
+    border:1px solid #ccc;
     border-radius:8px;
-    padding:20px;
-    background:#fafafa;
-    transition:0.3s;
 }
 
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.error-card{
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:10px;
+    overflow:hidden;
+}
+
+.error-toggle{
+    width:100%;
+    padding:15px;
+    background:#fff;
+    border:none;
+    text-align:left;
+    cursor:pointer;
+    font-size:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.error-toggle:hover{
+    background:#f3f3f3;
 }
 
 .code{
-    font-size:26px;
     font-weight:bold;
-    color:#4e6e81;
-    margin-bottom:10px;
+    color:#1f3b4d;
+    margin-right:10px;
+    min-width:80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-.title{
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:12px;
+.error-content{
+    display:none;
+    padding:15px;
+    background:#fafafa;
+    border-top:1px solid #eee;
+    
 }
 
-.steps{
-    padding-left:18px;
-    line-height:1.6;
+.error-content ul{
+    padding-left:20px;
 }
 
 .note{
-    margin-top:30px;
+    margin-top:25px;
+    padding:15px;
     background:#fff3cd;
     border:1px solid #ffeeba;
-    padding:15px;
-    border-radius:6px;
+    border-radius:8px;
+    
 }
 </style>
 </head>
@@ -99,113 +123,451 @@ h1{
 
 <div class="container">
 
-<h1>Electrolux Oven / Range Error Codes</h1>
+<h1>Electrolux Oven / Range Error Codes & Troubleshooting Guide</h1>
 
-<p class="subtitle">
-<strong>Complete Troubleshooting & Repair Guide</strong>
-</p>
-
-<!-- ================= CONTROL BOARD ================= -->
-<div class="section-title">Control System Errors</div>
+<input type="text" class="search-box" placeholder="Search error code...">
 
 <div class="grid">
 
-<div class="card">
-<div class="code">F1</div>
-<div class="title">Control Board Failure</div>
-<ul class="steps">
-<li>Reset power by unplugging unit for 5–10 minutes.</li>
-<li>Inspect control board for burn marks or damage.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F1</span> Electronic Control Board Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Disconnect power for 5–10 minutes.</li>
+<li>Inspect the control board for visible damage.</li>
 <li>Check wiring harness connections.</li>
-<li>Replace main control board if fault persists.</li>
+<li>Replace the main control board if the fault returns.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= TEMPERATURE ================= -->
-<div class="section-title">Temperature Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">F2</div>
-<div class="title">Over-Temperature Condition</div>
-<ul class="steps">
-<li>Turn off oven and allow it to cool.</li>
-<li>Check temperature sensor functionality.</li>
-<li>Inspect relay or heating element stuck ON.</li>
-<li>Replace control board if overheating continues.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F2</span> Over-Temperature Condition</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn off the oven and allow it to cool completely.</li>
+<li>Check oven temperature sensor operation.</li>
+<li>Inspect heating relays for a stuck-closed condition.</li>
+<li>Replace faulty control components if overheating continues.</li>
 </ul>
 </div>
-
-<div class="card">
-<div class="code">F3</div>
-<div class="title">Temperature Sensor Open</div>
-<ul class="steps">
-<li>Check sensor wiring for disconnection.</li>
-<li>Test sensor resistance with multimeter.</li>
-<li>Inspect connector pins for corrosion.</li>
-<li>Replace temperature sensor if open circuit.</li>
-</ul>
 </div>
 
-<div class="card">
-<div class="code">F4</div>
-<div class="title">Temperature Sensor Shorted</div>
-<ul class="steps">
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F3</span> Temperature Sensor Open Circuit</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect sensor wiring for disconnection.</li>
+<li>Test sensor resistance with a multimeter.</li>
+<li>Check connector terminals for corrosion.</li>
+<li>Replace the oven temperature sensor if defective.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F4</span> Temperature Sensor Shorted</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Inspect sensor wiring for damage.</li>
-<li>Test resistance for short circuit.</li>
+<li>Test sensor resistance for a short circuit.</li>
 <li>Check connector harness condition.</li>
-<li>Replace sensor if shorted.</li>
+<li>Replace the temperature sensor if shorted.</li>
 </ul>
 </div>
-
 </div>
 
-<!-- ================= DOOR ================= -->
-<div class="section-title">Door & Safety System Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">F5</div>
-<div class="title">Door Lock Failure</div>
-<ul class="steps">
-<li>Check door latch alignment.</li>
-<li>Inspect lock motor and wiring.</li>
-<li>Ensure door closes fully.</li>
-<li>Replace door lock assembly if needed.</li>
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F5</span> Door Lock Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect door latch alignment.</li>
+<li>Check lock motor and switch operation.</li>
+<li>Ensure door closes completely.</li>
+<li>Replace door lock assembly if faulty.</li>
 </ul>
 </div>
-
-<div class="card">
-<div class="code">F9</div>
-<div class="title">Latch Motor Issue</div>
-<ul class="steps">
-<li>Inspect latch motor for obstruction.</li>
-<li>Check wiring harness connections.</li>
-<li>Test motor operation.</li>
-<li>Replace latch motor if faulty.</li>
-</ul>
 </div>
 
-</div>
-
-<!-- ================= COMMUNICATION ================= -->
-<div class="section-title">Communication Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">F6</div>
-<div class="title">Communication Fault</div>
-<ul class="steps">
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F6</span> Communication Fault</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
 <li>Reset appliance power.</li>
-<li>Inspect wiring between control modules.</li>
-<li>Check for loose or corroded connectors.</li>
-<li>Replace main PCB if communication fails.</li>
+<li>Inspect wiring between electronic modules.</li>
+<li>Check connectors for looseness or corrosion.</li>
+<li>Replace control board if communication cannot be restored.</li>
 </ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F7</span> Keypad Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect keypad for stuck or damaged buttons.</li>
+<li>Disconnect power and restart the appliance.</li>
+<li>Check ribbon cable connections.</li>
+<li>Replace keypad assembly if necessary.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F8</span> Cooling Fan Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect cooling fan for obstruction.</li>
+<li>Check fan motor wiring connections.</li>
+<li>Test fan motor operation.</li>
+<li>Replace cooling fan if defective.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F9</span> Latch Motor Issue</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect latch motor for obstruction.</li>
+<li>Check motor wiring connections.</li>
+<li>Test latch motor operation.</li>
+<li>Replace motor if faulty.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F10</span> Runaway Temperature Detected</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn off the appliance immediately.</li>
+<li>Check temperature sensor accuracy.</li>
+<li>Inspect relay contacts for sticking.</li>
+<li>Replace control board if overheating persists.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F11</span> Touch Panel Communication Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect touch panel cable connections.</li>
+<li>Check for moisture behind the display.</li>
+<li>Restart the appliance.</li>
+<li>Replace interface board if required.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F13</span> EEPROM Memory Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Disconnect power and restart the oven.</li>
+<li>Check control board connections.</li>
+<li>Inspect PCB for signs of damage.</li>
+<li>Replace electronic control if memory failure continues.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F14</span> Configuration Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Verify appliance programming settings.</li>
+<li>Check software configuration data.</li>
+<li>Reset the control system.</li>
+<li>Reprogram or replace control board if necessary.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F20</span> Heating Element Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Test heating element continuity.</li>
+<li>Inspect wiring for damage or burns.</li>
+<li>Check terminal connections.</li>
+<li>Replace heating element if open.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F30</span> Probe Sensor Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Disconnect and reconnect the temperature probe.</li>
+<li>Inspect probe wiring and connector.</li>
+<li>Test probe resistance values.</li>
+<li>Replace probe if faulty.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F31</span> Meat Probe Short Circuit</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect probe for damage.</li>
+<li>Check connector for moisture.</li>
+<li>Test resistance for a short circuit.</li>
+<li>Replace the temperature probe if necessary.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F90</span> Door Lock System Failure</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Inspect door lock assembly.</li>
+<li>Check latch motor and switches.</li>
+<li>Verify wiring harness integrity.</li>
+<li>Replace lock components if defective.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span><span class="code">F95</span> Power Supply Error</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check incoming voltage supply.</li>
+<li>Inspect power cord and terminal block.</li>
+<li>Verify circuit breaker operation.</li>
+<li>Contact a qualified electrician if voltage issues persist.</li>
+</ul>
+</div>
+</div>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Electrolux oven not heating?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check that the oven is receiving power.</li>
+<li>Verify the correct cooking mode is selected.</li>
+<li>Inspect the heating element for damage.</li>
+<li>Allow sufficient preheating time.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Electrolux oven not reaching the set temperature?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check if the door is closing properly.</li>
+<li>Calibrate the oven temperature settings.</li>
+<li>Inspect the temperature sensor.</li>
+<li>Avoid opening the door frequently during cooking.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Electrolux oven displaying an error code?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Restart the oven to clear temporary faults.</li>
+<li>Check the temperature sensor connection.</li>
+<li>Inspect wiring and power supply.</li>
+<li>Refer to the error code guide for details.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Electrolux oven not turning on?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check the circuit breaker and power outlet.</li>
+<li>Ensure the control lock is disabled.</li>
+<li>Verify the timer is not preventing operation.</li>
+<li>Inspect the power cord for damage.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Electrolux oven cook food unevenly?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Allow the oven to fully preheat.</li>
+<li>Use the correct rack position.</li>
+<li>Check that the convection fan is operating.</li>
+<li>Avoid overcrowding the oven cavity.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Electrolux range burner not igniting?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Ensure gas supply is turned on.</li>
+<li>Clean the burner ports and igniter.</li>
+<li>Dry any moisture around the burner.</li>
+<li>Check for food debris blocking ignition.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Electrolux oven door not closing properly?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Check door hinges for damage.</li>
+<li>Inspect the door gasket for wear.</li>
+<li>Remove any obstructions around the door.</li>
+<li>Ensure oven racks are positioned correctly.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is my Electrolux oven making unusual noises?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Fan noise may be normal during operation.</li>
+<li>Check for loose racks or cookware.</li>
+<li>Inspect the cooling fan for obstructions.</li>
+<li>Contact service if grinding noises occur.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why does my Electrolux oven smoke during use?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Clean grease and food residue from the cavity.</li>
+<li>Remove spills before cooking.</li>
+<li>Some smoke may occur during first-time use.</li>
+<li>Avoid excessive oil on food items.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>How do I reset my Electrolux oven?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Turn off power at the breaker or unplug the unit.</li>
+<li>Wait 5–10 minutes before restoring power.</li>
+<li>Reset the clock and settings if required.</li>
+<li>Test oven operation after restart.</li>
+</ul>
+</div>
+</div>
+
+<div class="error-card">
+<button class="error-toggle">
+<span>Why is the self-cleaning function not working?</span>
+<span>▼</span>
+</button>
+<div class="error-content">
+<ul>
+<li>Ensure the oven door is fully closed.</li>
+<li>Remove excessive food debris before cleaning.</li>
+<li>Check if the oven temperature is too high.</li>
+<li>Refer to the user manual for model-specific requirements.</li>
+</ul>
+</div>
 </div>
 
 </div>
@@ -215,6 +577,30 @@ h1{
 </div>
 
 </div>
+
+</body>
+</html>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

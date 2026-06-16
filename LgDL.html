@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LG User Manual</title>
 
-
+<head>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -28,7 +28,7 @@
   "dateModified": "2026-05-25",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://findmymanual.live/lgdl"
+    "@id": "https://findmymanual.live/LGdl"
   }
 }
 </script>
@@ -88,6 +88,7 @@
             max-width: 250px;
         }
     </style>
+</head>
 <body>
 
   <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17308900859'); </script>
@@ -6595,8 +6596,114 @@
         </svg>Download PDF</a>
     </div>
 
-    
+     <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const search = document.getElementById("pdfSearch");
+
+    // This selects all your gray boxes
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+    search.addEventListener("input", function () {
+        const q = this.value.toLowerCase().trim();
+
+        boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+                box.style.display = "";
+            } else {
+                box.style.display = "none";
+            }
+        });
+    });
+
+});
+</script>
+
+
+</body>
+
+          
+          <script>
+      document.addEventListener("DOMContentLoaded", () => {
+
+        const search = document.getElementById("pdfSearch");
+
+        // This selects all your gray boxes
+        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+
+        search.addEventListener("input", function () {
+          const q = this.value.toLowerCase().trim();
+
+          boxes.forEach(box => {
+            const text = box.textContent.toLowerCase();
+
+            // show if matched, hide if not
+            if (text.includes(q)) {
+              box.style.display = "";
+            } else {
+              box.style.display = "none";
+            }
+          });
+        });
+
+      });
+    </script>
+
+
+</body>
+
+
 <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Move all PDF boxes into a responsive grid
+    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    if (boxes.length) {
+      const grid = document.createElement("div");
+      grid.className = "pdf-grid";
+      boxes.forEach(box => grid.appendChild(box));
+      const section = document.querySelector("section");
+      section.appendChild(grid);
+    }
+
+    // PDF button behavior & styling
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
+      const icon = btn.querySelector('svg');
+      btn.style.display = 'inline-flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '8px';
+      btn.style.padding = '10px 16px';
+      btn.style.background = '#4e6e81';
+      btn.style.color = '#fff';
+      btn.style.borderRadius = '6px';
+      btn.style.textDecoration = 'none';
+      btn.style.fontWeight = 'bold';
+      btn.style.fontFamily = 'Arial, sans-serif';
+      btn.style.transition = 'background 0.3s ease';
+      icon.style.transition = 'transform 0.3s ease';
+
+      btn.addEventListener('mouseover', () => {
+        icon.style.transform = 'translateY(3px)';
+        btn.style.background = '#5f879a';
+      });
+      btn.addEventListener('mouseout', () => {
+        icon.style.transform = 'translateY(0)';
+        btn.style.background = '#4e6e81';
+      });
+    });
+  });
+</script>
+
+
+        <script>
 document.addEventListener("DOMContentLoaded", () => {
 
     /* =========================
@@ -6694,39 +6801,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <div class="trouble-card">
       <h3><a href="LG AirconBTS.html">LG Air Conditioner Troubleshooting Guide</a></h3>
-      <p>Fix CH error codes, cooling issues, sensor problems, and reset LG air conditioners safely.</p>
+      <p>Fix cooling issues, weak airflow, water leakage, unusual noises, sensor malfunctions, and error code problems in LG air conditioners.</p>
     </div>
 
     <div class="trouble-card">
       <h3><a href="LG DishwasherBTS.html">LG Dishwasher Troubleshooting Guide</a></h3>
-      <p>Solve drainage issues, cleaning errors, and washing cycle problems in LG dishwashers.</p>
+      <p>Solve drainage problems, poor cleaning performance, water not filling, heating failures, cycle interruptions, and error code issues in LG dishwashers.</p>
     </div>
 
     <div class="trouble-card">
       <h3><a href="LG DryerBTS.html">LG Dryer Troubleshooting Guide</a></h3>
-      <p>Fix heating problems, drum issues, and sensor errors in LG dryers.</p>
+      <p>Fix drying issues, drum not spinning, overheating, long drying times, noise problems, and sensor or control panel errors in LG dryers.</p>
     </div>
 
     <div class="trouble-card">
       <h3><a href="LG MicrowaveBTS.html">LG Microwave Troubleshooting Guide</a></h3>
-      <p>Resolve heating issues, power problems, and control panel errors in LG microwaves.</p>
+      <p>Resolve heating problems, turntable not spinning, sparking issues, power failures, display errors, and control panel malfunctions in LG microwaves.</p>
     </div>
 
     <div class="trouble-card">
       <h3><a href="LG RefBTS.html">LG Refrigerator Troubleshooting Guide</a></h3>
-      <p>Fix cooling problems, ice maker issues, and temperature errors in LG refrigerators.</p>
+      <p>Fix cooling issues, temperature fluctuations, ice maker problems, water leakage, defrost system faults, and compressor or sensor errors in LG refrigerators.</p>
     </div>
 
     <div class="trouble-card">
       <h3><a href="LG TVBTS.html">LG Television Troubleshooting Guide</a></h3>
-      <p>Solve screen issues, sound problems, WiFi errors, and power failures in LG TVs.</p>
+      <p>Resolve display issues, no picture/no sound, HDMI or signal problems, remote control issues, power failures, and system error messages in LG televisions.</p>
     </div>
 
     <div class="trouble-card">
-      <h3><a href="LG WashingBTS.html">LG Washing Machine Troubleshooting Guide</a></h3>
-      <p>Fix OE, LE, UE errors, drainage problems, and spinning issues in LG washers.</p>
+      <h3><a href="LG WashingBTS.html">LG Washer Troubleshooting Guide</a></h3>
+      <p>Fix draining issues, spin cycle failures, water filling problems, vibration or noise issues, detergent dispensing faults, and error code alerts in LG washers.</p>
     </div>
 
+    
   </div>
 
 </section>
@@ -6778,9 +6886,6 @@ document.addEventListener("DOMContentLoaded", () => {
 </style>
 
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FAQ - Troubleshooting & Error Codes</title>
 
 <style>
 body{
@@ -6868,162 +6973,247 @@ function toggleFAQ(el){
 
 <div class="container">
 
-<h1>FAQ - Troubleshooting & Error Codes</h1>
-<p class="subtitle">Common questions and solutions for appliances, devices, and system errors</p>
+  <h1>LG FAQ - Frequently Asked Questions</h1>
+<p class="subtitle">Common questions and solutions for LG washing machines, refrigerators, air conditioners, ovens, and appliances</p>
 
-<!-- ================= GENERAL ================= -->
+<!-- GENERAL -->
 <div class="faq-section">
 <div class="category-title">General Troubleshooting</div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">What does an error code mean on my appliance?</div>
+<div class="question" onclick="toggleFAQ(this)">What does an error code mean on LG appliances?</div>
 <div class="answer">
-Error codes indicate a specific fault detected by the device. It may relate to sensors, motors, power supply, or communication issues.
+Error codes indicate a detected fault in sensors, motors, drainage, heating elements, airflow systems, or control boards.
 </div>
 </div>
 
 <div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Should I reset the device when an error appears?</div>
+<div class="question" onclick="toggleFAQ(this)">Should I reset my LG appliance when an error appears?</div>
 <div class="answer">
-Yes. In many cases, restarting the device clears temporary faults. If the error returns, further troubleshooting is needed.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">When should I call a technician?</div>
-<div class="answer">
-Call a technician if the error involves electrical boards, motors, compressors, or if the same error keeps returning after resets.
-</div>
-</div>
-
-</div>
-
-<!-- ================= ERROR CODE ISSUES ================= -->
-<div class="faq-section">
-<div class="category-title">Error Code Issues</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why does my device show multiple error codes?</div>
-<div class="answer">
-Multiple codes usually indicate a primary failure affecting other systems, such as power issues or communication failure between components.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Can I fix error codes myself?</div>
-<div class="answer">
-Some errors like clogged filters, blocked airflow, or loose connections can be fixed at home. Electrical or sensor faults usually require professional repair.
-</div>
-</div>
-
-</div>
-
-<!-- ================= MAINTENANCE ================= -->
-<div class="faq-section">
-<div class="category-title">Maintenance Questions</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">How often should I clean filters?</div>
-<div class="answer">
-Filters should typically be cleaned every 2–4 weeks depending on usage and environment.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why does overheating keep happening?</div>
-<div class="answer">
-Overheating is usually caused by blocked airflow, dirty filters, or overuse without cooling intervals.
-</div>
-</div>
-
-</div>
-
-<!-- ================= COOLING & AIRFLOW ERRORS ================= -->
-<div class="faq-section">
-<div class="category-title">Cooling & Airflow Errors</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why is my appliance not cooling properly?</div>
-<div class="answer">
-Poor cooling is commonly caused by dirty filters, blocked airflow, low refrigerant, or faulty fans.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why is airflow weak from my system?</div>
-<div class="answer">
-Weak airflow may be caused by dirty filters, blocked vents, blower motor problems, or frozen coils.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Can dirty filters trigger error codes?</div>
-<div class="answer">
-Yes. Dirty filters can reduce airflow and cause overheating, freezing, or pressure-related errors.
-</div>
-</div>
-
-</div>
-
-<!-- ================= POWER & ELECTRICAL ERRORS ================= -->
-<div class="faq-section">
-<div class="category-title">Power & Electrical Errors</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why does my device trip the circuit breaker?</div>
-<div class="answer">
-This may happen because of electrical overload, short circuits, damaged wiring, or faulty internal parts.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Can power surges damage appliances?</div>
-<div class="answer">
-Yes. Sudden voltage spikes can damage circuit boards, sensors, compressors, and electronic components.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why does my appliance keep turning ON and OFF?</div>
-<div class="answer">
-Frequent cycling may be caused by thermostat issues, overheating protection, unstable voltage, or faulty sensors.
-</div>
-</div>
-
-</div>
-
-<!-- ================= SENSOR & COMMUNICATION ERRORS ================= -->
-<div class="faq-section">
-<div class="category-title">Sensor & Communication Errors</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Why does my device show communication errors?</div>
-<div class="answer">
-Communication errors are often caused by wiring issues, loose connectors, power interruptions, or faulty control boards.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="question" onclick="toggleFAQ(this)">Can sensors cause error codes?</div>
-<div class="answer">
-Yes. Faulty sensors can send incorrect readings, triggering system errors or shutdowns.
+Yes. Power cycling or resetting may clear temporary faults, but repeated errors usually indicate a deeper hardware or system issue.
 </div>
 </div>
 
 <div class="faq-item">
 <div class="question" onclick="toggleFAQ(this)">When should I call a technician?</div>
 <div class="answer">
-Call a technician for compressor issues, refrigerant leaks, electrical burning smells, or repeated system failures.
+Call a technician for burning smells, compressor or motor failure, repeated shutdowns, water leaks, or persistent error codes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my LG appliance stop mid-cycle?</div>
+<div class="answer">
+This may be caused by overheating protection, power interruption, door lock issues, water supply problems, or sensor failure.
+</div>
+</div>
+
+</div>
+
+<!-- WASHING MACHINE -->
+<div class="faq-section">
+<div class="category-title">Washing Machine Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my LG washing machine not starting?</div>
+<div class="answer">
+Door lock issues, power supply problems, control panel faults, or child lock activation may prevent startup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my washing machine making loud noise?</div>
+<div class="answer">
+Unbalanced load, worn bearings, loose drum components, or foreign objects inside the drum may cause noise.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my washing machine not spinning properly?</div>
+<div class="answer">
+Overloaded drum, motor issues, belt problems, or uneven laundry distribution may reduce spin performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my LG washer leaking water?</div>
+<div class="answer">
+Damaged door seal, clogged drain hose, or detergent overuse may cause leaks.
+</div>
+</div>
+
+</div>
+
+<!-- REFRIGERATOR -->
+<div class="faq-section">
+<div class="category-title">Refrigerator Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my LG refrigerator not cooling?</div>
+<div class="answer">
+Dirty condenser coils, faulty compressor, blocked vents, or defrost system failure may reduce cooling performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my LG fridge making noise?</div>
+<div class="answer">
+Fan motor issues, ice buildup, compressor vibration, or loose internal components may cause noise.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is water leaking inside my refrigerator?</div>
+<div class="answer">
+Clogged defrost drain, damaged water line, or improper leveling may cause internal leaks.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my freezer frosting up?</div>
+<div class="answer">
+Door seal issues, frequent door opening, or defrost system failure may cause frost buildup.
+</div>
+</div>
+
+</div>
+
+<!-- AIR CONDITIONER -->
+<div class="faq-section">
+<div class="category-title">Air Conditioner Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my LG air conditioner not cooling?</div>
+<div class="answer">
+Low refrigerant, dirty filters, compressor issues, or airflow blockage may reduce cooling efficiency.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my AC leaking water?</div>
+<div class="answer">
+Clogged drain pipe, improper installation, or frozen evaporator coil may cause leakage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my AC turn off by itself?</div>
+<div class="answer">
+Overheating protection, unstable power supply, or sensor malfunction may trigger shutdowns.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my LG AC making noise?</div>
+<div class="answer">
+Loose fan blades, compressor vibration, or debris in the outdoor unit may cause noise.
+</div>
+</div>
+
+</div>
+
+<!-- DISHWASHER -->
+<div class="faq-section">
+<div class="category-title">Dishwasher Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my LG dishwasher not draining?</div>
+<div class="answer">
+Clogged drain hose, blocked filter, or faulty drain pump may prevent proper drainage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why are dishes still dirty after washing?</div>
+<div class="answer">
+Blocked spray arms, low water pressure, or incorrect detergent usage may reduce cleaning performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my dishwasher not starting?</div>
+<div class="answer">
+Door latch issues, control lock activation, or power supply problems may prevent operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my dishwasher leaking water?</div>
+<div class="answer">
+Damaged door seal, overloading, or pump seal failure may cause leaks.
+</div>
+</div>
+
+</div>
+
+<!-- ELECTRICAL -->
+<div class="faq-section">
+<div class="category-title">Electrical & Power Issues</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my LG appliance restart randomly?</div>
+<div class="answer">
+Voltage instability, PCB failure, or power interruptions may cause random restarts.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my LG appliance trip the breaker?</div>
+<div class="answer">
+Short circuits, motor faults, or overloaded circuits may trigger breaker trips.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can power surges damage LG appliances?</div>
+<div class="answer">
+Yes. Power surges can damage control boards, compressors, motors, and sensors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my control panel not responding?</div>
+<div class="answer">
+Moisture damage, wiring issues, or PCB failure may cause unresponsive controls.
+</div>
+</div>
+
+</div>
+
+<!-- ADVANCED -->
+<div class="faq-section">
+<div class="category-title">Advanced Troubleshooting</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why do multiple error codes appear at once?</div>
+<div class="answer">
+A single system failure such as PCB malfunction or power supply issues can trigger multiple related errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I fix LG errors myself?</div>
+<div class="answer">
+Basic resets and cleaning are safe, but motor, compressor, and electrical repairs require a technician.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What is the most common LG appliance issue?</div>
+<div class="answer">
+Washing machine drainage issues, refrigerator cooling failure, and AC airflow problems are most common.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my appliance smell like burning?</div>
+<div class="answer">
+Overheating motor, electrical failure, or damaged wiring may cause burning smells—stop use immediately.
 </div>
 </div>
 
 </div>
 
 <div class="note">
-<strong>Tip:</strong> You can duplicate FAQ sections and customize categories for different brands like Samsung, LG, Daikin, Panasonic, and Carrier.
+<strong>Tip:</strong> LG appliances perform best with regular maintenance such as filter cleaning, proper loading, and stable power supply.
 </div>
-
-</div>
-
-</body>
-</html>
