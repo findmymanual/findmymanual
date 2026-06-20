@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Janome System Messages Guide</title>
+
+<title>Janome System Messages Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Janome System Messages error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Janome System Messages Error Codes & Troubleshooting Guide",
+  "description": "Complete Janome System Messages error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -92,105 +188,494 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Janome System Messages</h1>
+<h1>Janome System Messages Error Codes</h1>
 
-<p class="subtitle">
-<strong>Meaning & Quick Troubleshooting Guide</strong>
+<p class="subtitle"><strong>Complete Janome System Messages Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Janome System Messages error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
 
-<!-- ================= STATUS ================= -->
-<div class="section-title">Status Messages</div>
-
 <div class="grid">
 
-<div class="card">
-<div class="code">READY</div>
-<div class="title">Machine Ready for Sewing</div>
-<ul class="steps">
-<li>Machine is ready for normal operation.</li>
-<li>No action required.</li>
-<li>Begin sewing as needed.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">READY</div>
+  <div class="title">Machine Ready for Sewing</div>
+  <ul class="steps">
+    <li>Machine is powered on and ready for operation.</li>
+    <li>No action required.</li>
+    <li>Begin sewing normally.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">STOP</div>
-<div class="title">Operation Halted</div>
-<ul class="steps">
-<li>Check if machine was paused manually.</li>
-<li>Inspect fabric or needle for obstruction.</li>
-<li>Restart operation when ready.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">STOP</div>
+  <div class="title">Operation Halted</div>
+  <ul class="steps">
+    <li>Check if machine was paused manually.</li>
+    <li>Inspect fabric for jam or obstruction.</li>
+    <li>Ensure needle is not stuck or bent.</li>
+    <li>Resume operation when safe.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERROR</div>
+  <div class="title">System Error Detected</div>
+  <ul class="steps">
+    <li>Restart the machine to clear temporary faults.</li>
+    <li>Check thread path and needle condition.</li>
+    <li>Remove any fabric obstruction.</li>
+    <li>Inspect internal connections if issue persists.</li>
+  </ul>
 </div>
 
-<!-- ================= SYSTEM ================= -->
-<div class="section-title">System Control Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">RESET</div>
-<div class="title">System Restart Required</div>
-<ul class="steps">
-<li>Turn machine off completely.</li>
-<li>Wait a few seconds before restarting.</li>
-<li>Check if error clears after reboot.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">RESET</div>
+  <div class="title">System Restart Required</div>
+  <ul class="steps">
+    <li>Turn machine off completely.</li>
+    <li>Unplug for 1–2 minutes.</li>
+    <li>Reconnect power and restart.</li>
+    <li>Verify if message clears after reboot.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">LOCK</div>
-<div class="title">Safety Lock Active</div>
-<ul class="steps">
-<li>Deactivate safety lock via control panel.</li>
-<li>Check machine cover and safety switches.</li>
-<li>Ensure all parts are properly closed.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">LOCK</div>
+  <div class="title">Safety Lock Active</div>
+  <ul class="steps">
+    <li>Deactivate safety lock via control panel.</li>
+    <li>Ensure machine cover is fully closed.</li>
+    <li>Check safety switch alignment.</li>
+    <li>Restart machine if lock remains active.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">THREAD</div>
+  <div class="title">Threading Required</div>
+  <ul class="steps">
+    <li>Re-thread upper thread completely.</li>
+    <li>Follow threading guide on machine body.</li>
+    <li>Ensure thread passes all tension points.</li>
+    <li>Check needle insertion and condition.</li>
+  </ul>
 </div>
 
-<!-- ================= THREAD ================= -->
-<div class="section-title">Thread & Bobbin Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">THREAD</div>
-<div class="title">Threading Required</div>
-<ul class="steps">
-<li>Re-thread upper thread correctly.</li>
-<li>Follow threading guide on machine.</li>
-<li>Ensure thread passes through all tension points.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">NO BOBBIN</div>
+  <div class="title">Bobbin Not Detected</div>
+  <ul class="steps">
+    <li>Insert bobbin correctly into the case.</li>
+    <li>Check bobbin winding direction.</li>
+    <li>Clean bobbin sensor area.</li>
+    <li>Restart machine after reinsertion.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">NO BOBBIN</div>
-<div class="title">Bobbin Not Detected</div>
-<ul class="steps">
-<li>Insert bobbin properly into case.</li>
-<li>Check bobbin orientation.</li>
-<li>Clean bobbin sensor area.</li>
-</ul>
+<!-- ================= ADDED JANOME SYSTEM MESSAGES ================= -->
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">THREAD BREAK</div>
+  <div class="title">Thread Break Detected</div>
+  <ul class="steps">
+    <li>Re-thread upper thread completely.</li>
+    <li>Check needle for damage or dullness.</li>
+    <li>Adjust thread tension settings.</li>
+    <li>Clean thread path and guides.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">NEEDLE BREAK</div>
+  <div class="title">Needle Damage Detected</div>
+  <ul class="steps">
+    <li>Replace broken or bent needle immediately.</li>
+    <li>Ensure correct needle type for fabric.</li>
+    <li>Check fabric thickness compatibility.</li>
+    <li>Realign needle position before restart.</li>
+  </ul>
 </div>
 
-<div class="note">
-<strong>Important:</strong> Regular maintenance of thread path and bobbin area helps prevent most operational interruptions.
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">BOBBIN ERROR</div>
+  <div class="title">Bobbin System Fault</div>
+  <ul class="steps">
+    <li>Remove and reinstall bobbin correctly.</li>
+    <li>Check for lint or thread buildup.</li>
+    <li>Ensure bobbin case is seated properly.</li>
+    <li>Replace damaged bobbin if needed.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">MOTOR OVERLOAD</div>
+  <div class="title">Motor Strain Detected</div>
+  <ul class="steps">
+    <li>Turn off machine and let it cool.</li>
+    <li>Remove thick or heavy fabric.</li>
+    <li>Reduce sewing speed settings.</li>
+    <li>Restart with lighter load.</li>
+  </ul>
 </div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">POSITION ERROR</div>
+  <div class="title">Fabric Position Fault</div>
+  <ul class="steps">
+    <li>Reposition fabric under presser foot.</li>
+    <li>Ensure fabric is not misaligned.</li>
+    <li>Check feed dog movement.</li>
+    <li>Restart stitching process.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SENSOR ERROR</div>
+  <div class="title">Sensor Malfunction</div>
+  <ul class="steps">
+    <li>Restart machine to reset sensors.</li>
+    <li>Clean sensor area from dust or lint.</li>
+    <li>Check internal wiring connections.</li>
+    <li>Replace sensor module if needed.</li>
+  </ul>
+</div></div>
 
 </body>
 </html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does READY mean on Janome System Messages?</div>
+<div class="answer">
+The machine is powered on and ready for operation. No action is required. You can begin sewing or embroidery functions normally.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does BUSY mean on Janome System Messages?</div>
+<div class="answer">
+The machine is processing a command or operation. Wait until the current task is completed before starting another function.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does ERROR mean on Janome System Messages?</div>
+<div class="answer">
+A general system fault has been detected. Restart the machine, check for thread jams, inspect the needle, and verify normal operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does RESET mean on Janome System Messages?</div>
+<div class="answer">
+The machine requires a restart. Turn the machine off, wait a few moments, then power it back on to clear temporary faults.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does LOCK mean on Janome System Messages?</div>
+<div class="answer">
+The safety lock feature is active. Check machine covers, close all access panels properly, and disable the lock function if necessary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does THREAD mean on Janome System Messages?</div>
+<div class="answer">
+The machine requires threading or has detected a threading issue. Re-thread the upper thread path and ensure correct thread routing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does NO BOBBIN mean on Janome System Messages?</div>
+<div class="answer">
+The bobbin is missing or not detected. Install the bobbin correctly and ensure it is seated properly in the bobbin case.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does THREAD BREAK mean on Janome System Messages?</div>
+<div class="answer">
+The upper or lower thread has broken during operation. Re-thread the machine, inspect the needle, and adjust thread tension if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does NEEDLE ERROR mean on Janome System Messages?</div>
+<div class="answer">
+The machine has detected a needle-related problem. Replace bent or damaged needles and ensure correct installation before continuing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does BOBBIN ERROR mean on Janome System Messages?</div>
+<div class="answer">
+The bobbin may be incorrectly installed or not feeding thread properly. Reinstall the bobbin and remove any lint or thread tangles.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does MOTOR OVERLOAD mean on Janome System Messages?</div>
+<div class="answer">
+The motor is experiencing excessive resistance. Remove fabric jams, reduce material thickness, allow the machine to cool, and restart.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does POSITION ERROR mean on Janome System Messages?</div>
+<div class="answer">
+A moving component is out of position. Turn the machine off, remove obstructions, and restart to allow automatic repositioning.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SENSOR ERROR mean on Janome System Messages?</div>
+<div class="answer">
+A machine sensor is not responding correctly. Clean sensor areas, inspect connections, and restart the machine.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does MEMORY ERROR mean on Janome System Messages?</div>
+<div class="answer">
+The machine cannot access stored settings or pattern data. Restart the machine and reload saved patterns if necessary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does MEMORY FULL mean on Janome System Messages?</div>
+<div class="answer">
+Internal storage capacity has been reached. Delete unused patterns or transfer files to external storage before saving new data.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does VOLTAGE WARNING mean on Janome System Messages?</div>
+<div class="answer">
+The machine has detected unstable electrical power. Use a surge protector or voltage stabilizer and avoid overloaded outlets.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does MAINTENANCE REQUIRED mean on Janome System Messages?</div>
+<div class="answer">
+Routine service is recommended. Clean lint from the machine, lubricate moving parts as instructed, and inspect wear components.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does LUBRICATION WARNING mean on Janome System Messages?</div>
+<div class="answer">
+The machine requires lubrication. Follow the maintenance guide and apply approved sewing machine oil where recommended.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does FOOT PEDAL ERROR mean on Janome System Messages?</div>
+<div class="answer">
+The foot pedal connection is unstable or not detected. Check the pedal cable, reconnect it securely, and restart the machine.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset Janome System Messages?</div>
+<div class="answer">
+Turn off the machine and unplug it for 1–2 minutes. Restore power, restart the machine, and verify that the message has cleared.
+</div>
+</div>
+
+<div class="note">
+<strong>Important:</strong> If a system message continues to appear after troubleshooting, discontinue use and contact an authorized Janome service technician for diagnosis and repair.
+</div>
+
+
+</body>
+</html>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
+
+</body>
+</html>
+

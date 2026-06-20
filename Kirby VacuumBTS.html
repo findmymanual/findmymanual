@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kirby Vacuum System Error Codes Guide</title>
+
+<title>Kirby Vacuum Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Kirby Vacuum error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Kirby Vacuum Error Codes & Troubleshooting Guide",
+  "description": "Complete Kirby Vacuum error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -49,7 +145,7 @@ h1{
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
     margin-top:20px;
 }
@@ -68,7 +164,7 @@ h1{
 }
 
 .code{
-    font-size:24px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
     margin-bottom:10px;
@@ -92,138 +188,434 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Kirby Vacuum System Error Codes</h1>
+<h1>Kirby Vacuum Error Codes</h1>
 
-<p class="subtitle">
-<strong>Complete Vacuum Troubleshooting & Diagnostic Guide</strong>
+<p class="subtitle"><strong>Complete Kirby Vacuum Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Kirby Vacuum error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
 
-<!-- ================= AIRFLOW ================= -->
-<div class="section-title">Airflow & Suction Errors</div>
-
 <div class="grid">
 
-<div class="card">
-<div class="code">E3</div>
-<div class="title">Suction Blockage in Airflow Path</div>
-<ul class="steps">
-<li>Check hose for clogs or debris.</li>
-<li>Inspect nozzle and intake path.</li>
-<li>Clean filters thoroughly.</li>
-<li>Restart vacuum after clearing blockage.</li>
-</ul>
+<!-- ================= KIRBY VACUUM ERROR CODES ================= -->
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E1</div>
+  <div class="title">Brush Roll Jam or Obstruction</div>
+  <ul class="steps">
+    <li>Turn off vacuum before inspection.</li>
+    <li>Remove hair, thread, or debris from brush roll.</li>
+    <li>Check brush roll rotation freely.</li>
+    <li>Reassemble and restart unit.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E2</div>
+  <div class="title">Motor Overheating Protection Activated</div>
+  <ul class="steps">
+    <li>Turn off vacuum and allow cooling.</li>
+    <li>Clean filters and airflow passages.</li>
+    <li>Avoid continuous heavy-load usage.</li>
+    <li>Restart once motor has cooled.</li>
+  </ul>
 </div>
 
-<!-- ================= MOTOR ================= -->
-<div class="section-title">Motor & Overheating Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">E2</div>
-<div class="title">Motor Overheating Protection Activated</div>
-<ul class="steps">
-<li>Turn off vacuum and allow cooling.</li>
-<li>Clean filters and airflow passages.</li>
-<li>Check for continuous heavy load usage.</li>
-<li>Restart once motor has cooled.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E3</div>
+  <div class="title">Suction Blockage in Airflow Path</div>
+  <ul class="steps">
+    <li>Check hose for clogs or debris.</li>
+    <li>Inspect nozzle and intake path.</li>
+    <li>Clean filters thoroughly.</li>
+    <li>Restart vacuum after clearing blockage.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E8</div>
-<div class="title">Internal Motor Control Error</div>
-<ul class="steps">
-<li>Restart device to reset controller.</li>
-<li>Check wiring connections.</li>
-<li>Inspect motor control board.</li>
-<li>Service unit if error persists.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E4</div>
+  <div class="title">Belt Slip or Broken Belt</div>
+  <ul class="steps">
+    <li>Inspect belt for wear or breakage.</li>
+    <li>Replace belt if damaged.</li>
+    <li>Ensure proper tension alignment.</li>
+    <li>Test brush roll operation.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5</div>
+  <div class="title">Dust Bag Full or Improper Installation</div>
+  <ul class="steps">
+    <li>Replace or empty dust bag.</li>
+    <li>Ensure correct installation position.</li>
+    <li>Check bag chamber for blockage.</li>
+    <li>Reset vacuum after correction.</li>
+  </ul>
 </div>
 
-<!-- ================= BRUSH / BELT ================= -->
-<div class="section-title">Brush Roll & Belt Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">E1</div>
-<div class="title">Brush Roll Jam or Obstruction</div>
-<ul class="steps">
-<li>Turn off vacuum before inspection.</li>
-<li>Remove hair, thread, or debris.</li>
-<li>Check brush roll rotation freely.</li>
-<li>Reassemble and restart unit.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E6</div>
+  <div class="title">Power Switch or Wiring Fault</div>
+  <ul class="steps">
+    <li>Check power cord and plug connection.</li>
+    <li>Inspect internal wiring for damage.</li>
+    <li>Test power switch functionality.</li>
+    <li>Service electrical system if needed.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E4</div>
-<div class="title">Belt Slip or Broken Belt</div>
-<ul class="steps">
-<li>Inspect belt for wear or breakage.</li>
-<li>Replace belt if damaged.</li>
-<li>Ensure proper tension alignment.</li>
-<li>Test brush roll operation.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E7</div>
+  <div class="title">Speed Control Failure</div>
+  <ul class="steps">
+    <li>Adjust speed settings and test operation.</li>
+    <li>Inspect control board connection.</li>
+    <li>Restart vacuum system.</li>
+    <li>Replace control module if faulty.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E8</div>
+  <div class="title">Internal Motor Control Error</div>
+  <ul class="steps">
+    <li>Restart device to reset controller.</li>
+    <li>Check wiring connections.</li>
+    <li>Inspect motor control board.</li>
+    <li>Service unit if error persists.</li>
+  </ul>
 </div>
 
-<!-- ================= DUST SYSTEM ================= -->
-<div class="section-title">Dust System Errors</div>
+<!-- ================= NEW KIRBY ERROR CODES ================= -->
 
-<div class="grid">
-
-<div class="card">
-<div class="code">E5</div>
-<div class="title">Dust Bag Full or Improperly Installed</div>
-<ul class="steps">
-<li>Replace or empty dust bag.</li>
-<li>Ensure correct installation position.</li>
-<li>Check bag chamber for blockage.</li>
-<li>Reset vacuum after correction.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E9</div>
+  <div class="title">Airflow Sensor Malfunction</div>
+  <ul class="steps">
+    <li>Inspect airflow sensor for blockage.</li>
+    <li>Clean sensor area carefully.</li>
+    <li>Check wiring connections.</li>
+    <li>Replace sensor if unresponsive.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E10</div>
+  <div class="title">Attachment Seal Leak Detected</div>
+  <ul class="steps">
+    <li>Check attachment fit and locking system.</li>
+    <li>Inspect hose connection points.</li>
+    <li>Replace worn seals or gaskets.</li>
+    <li>Reattach and test suction.</li>
+  </ul>
 </div>
 
-<!-- ================= ELECTRICAL ================= -->
-<div class="section-title">Electrical & Control Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">E6</div>
-<div class="title">Power Switch or Wiring Fault</div>
-<ul class="steps">
-<li>Check power cord and plug connection.</li>
-<li>Inspect internal wiring for damage.</li>
-<li>Test power switch functionality.</li>
-<li>Service electrical system if needed.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E11</div>
+  <div class="title">Low Suction Pressure Warning</div>
+  <ul class="steps">
+    <li>Clean or replace filter system.</li>
+    <li>Check dust bag fill level.</li>
+    <li>Inspect hose for partial blockage.</li>
+    <li>Restart vacuum after cleaning.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E7</div>
-<div class="title">Speed Control Failure</div>
-<ul class="steps">
-<li>Adjust speed settings and test.</li>
-<li>Inspect control board connection.</li>
-<li>Restart vacuum system.</li>
-<li>Replace control module if faulty.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E12</div>
+  <div class="title">Electrical Overload Protection</div>
+  <ul class="steps">
+    <li>Unplug vacuum and allow cooling.</li>
+    <li>Check for power surge damage.</li>
+    <li>Inspect internal wiring system.</li>
+    <li>Restart after system reset.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E13</div>
+  <div class="title">Brush Motor Communication Error</div>
+  <ul class="steps">
+    <li>Inspect brush motor wiring.</li>
+    <li>Check control board connection.</li>
+    <li>Restart vacuum system.</li>
+    <li>Replace motor controller if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E14</div>
+  <div class="title">Thermal Cut-Off Activated</div>
+  <ul class="steps">
+    <li>Turn off vacuum and allow full cooling.</li>
+    <li>Clean airflow passages and filters.</li>
+    <li>Avoid extended continuous use.</li>
+    <li>Restart after cooldown period.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E15</div>
+  <div class="title">Main Control Board Fault</div>
+  <ul class="steps">
+    <li>Power cycle the vacuum system.</li>
+    <li>Inspect board for visible damage.</li>
+    <li>Check wiring harness connections.</li>
+    <li>Replace control board if necessary.</li>
+  </ul>
+</div></div>
+
+</body>
+</html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<!-- ================= KIRBY VACUUM FAQ ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Kirby vacuum not respond?</div>
+<div class="answer">
+Check power supply, control lock status, and system connection. Ensure the unit is properly plugged in and reset the vacuum system.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum not starting?</div>
+<div class="answer">
+Check power switch and electrical supply. Ensure attachments are correctly installed. Reset the system if the unit remains unresponsive.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum not picking up dirt properly?</div>
+<div class="answer">
+Inspect filter, dust bag, and hose for blockages. Check airflow path and remove any debris from attachments.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum losing suction?</div>
+<div class="answer">
+Check hose connections, filters, and dust container. Ensure there are no obstructions in the airflow system.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum making unusual noises?</div>
+<div class="answer">
+Inspect brush roll, belt, and internal components. Remove any debris or foreign objects inside the system.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Kirby vacuum stop mid-use?</div>
+<div class="answer">
+Check for overheating protection, airflow blockage, or power interruption. Allow the unit to cool before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum brush not spinning?</div>
+<div class="answer">
+Inspect belt condition and brush roll. Check motor drive and replace worn belt if necessary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum hose clogged?</div>
+<div class="answer">
+Remove hose and inspect for debris. Clear blockage using airflow or a cleaning rod.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum attachment not working?</div>
+<div class="answer">
+Check attachment compatibility and connection points. Ensure it is properly locked into the main unit.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum overheating?</div>
+<div class="answer">
+Check airflow system, clean filters, and remove blockages. Allow the vacuum to cool before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum vibrating or shaking?</div>
+<div class="answer">
+Inspect brush roll, belt alignment, and attachments. Remove any obstruction inside the cleaning head.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Kirby vacuum system messages?</div>
+<div class="answer">
+Turn off power for 5–10 minutes, then restart the vacuum system to clear temporary faults and reset system messages.
+</div>
 </div>
 
 </div>
@@ -232,7 +624,26 @@ h1{
 <strong>Important:</strong> Always unplug the vacuum before performing internal inspection or maintenance.
 </div>
 
-</div>
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

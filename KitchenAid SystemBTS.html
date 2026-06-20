@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KitchenAid System Messages Troubleshooting Guide</title>
+
+<title>KitchenAid System Messages Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete KitchenAid System Messages error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "KitchenAid System Messages Error Codes & Troubleshooting Guide",
+  "description": "Complete KitchenAid System Messages error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -92,125 +188,414 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>KitchenAid System Messages</h1>
+<h1>KitchenAid System Messages Error Codes</h1>
 
-<p class="subtitle">
-<strong>Complete Meaning & Troubleshooting Guide</strong>
+<p class="subtitle"><strong>Complete KitchenAid System Messages Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all KitchenAid System Messages error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
 
-<!-- ================= CONTROL LOCK ================= -->
-<div class="section-title">Control & Lock Messages</div>
-
 <div class="grid">
 
-<div class="card">
-<div class="code">LOC</div>
-<div class="title">Control Lock Active</div>
-<ul class="steps">
-<li>Press and hold the lock button for 3–5 seconds.</li>
-<li>Check for stuck or unresponsive touch keys.</li>
-<li>Clean control panel surface.</li>
-<li>Reset power if lock does not clear.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">LOC</div>
+  <div class="title">Control Lock Active</div>
+  <ul class="steps">
+    <li>Press and hold the lock or cancel button for 3–5 seconds.</li>
+    <li>Check for unresponsive or stuck touch controls.</li>
+    <li>Clean control panel surface from moisture or grease.</li>
+    <li>Reset power if lock does not clear.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PF</div>
+  <div class="title">Power Failure Detected</div>
+  <ul class="steps">
+    <li>Check household breaker and power supply.</li>
+    <li>Unplug appliance for 5–10 minutes.</li>
+    <li>Restore power and reprogram settings if needed.</li>
+    <li>Inspect outlet stability if issue repeats.</li>
+  </ul>
 </div>
 
-<!-- ================= TEMPERATURE ================= -->
-<div class="section-title">Temperature Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">HOT</div>
-<div class="title">High Temperature Warning</div>
-<ul class="steps">
-<li>Allow appliance to cool completely.</li>
-<li>Check ventilation and airflow paths.</li>
-<li>Clean filters or internal cooling areas.</li>
-<li>Do not restart until temperature normalizes.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">RESET</div>
+  <div class="title">System Restart Required</div>
+  <ul class="steps">
+    <li>Turn off power for several minutes.</li>
+    <li>Restart appliance after reset cycle.</li>
+    <li>Check if fault clears after reboot.</li>
+    <li>Inspect control board if issue persists.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERR</div>
+  <div class="title">General System Error</div>
+  <ul class="steps">
+    <li>Perform a full power reset.</li>
+    <li>Check wiring harness connections.</li>
+    <li>Inspect for multiple active fault codes.</li>
+    <li>Replace control board if unresolved.</li>
+  </ul>
 </div>
 
-<!-- ================= POWER ================= -->
-<div class="section-title">Power & Startup Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">PF</div>
-<div class="title">Power Failure Detected</div>
-<ul class="steps">
-<li>Check household breaker or power supply.</li>
-<li>Reset appliance by unplugging for 5–10 minutes.</li>
-<li>Reprogram settings after restart.</li>
-<li>Inspect outlet stability if repeated.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">HOT</div>
+  <div class="title">High Temperature Warning</div>
+  <ul class="steps">
+    <li>Allow appliance to cool completely.</li>
+    <li>Check ventilation and airflow paths.</li>
+    <li>Clean cooling vents or filters.</li>
+    <li>Do not restart until temperature normalizes.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">RESET</div>
-<div class="title">System Restart Required</div>
-<ul class="steps">
-<li>Turn off power for several minutes.</li>
-<li>Restart appliance after reset cycle.</li>
-<li>Check for recurring error messages.</li>
-<li>Inspect control board if issue continues.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">COMM</div>
+  <div class="title">Communication Error Between Modules</div>
+  <ul class="steps">
+    <li>Check wiring between control boards.</li>
+    <li>Inspect connectors for looseness or corrosion.</li>
+    <li>Perform full system reset.</li>
+    <li>Replace main control board if failure persists.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">DOOR</div>
+  <div class="title">Door Not Properly Closed</div>
+  <ul class="steps">
+    <li>Check door alignment and latch mechanism.</li>
+    <li>Ensure nothing is blocking full closure.</li>
+    <li>Inspect door switch for faults.</li>
+    <li>Restart appliance after closing properly.</li>
+  </ul>
 </div>
 
-<!-- ================= SYSTEM ERROR ================= -->
-<div class="section-title">System Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">ERR</div>
-<div class="title">General System Error</div>
-<ul class="steps">
-<li>Perform a full power reset.</li>
-<li>Check wiring and connectors.</li>
-<li>Look for multiple active fault codes.</li>
-<li>Replace control board if unresolved.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SENS</div>
+  <div class="title">Sensor Communication Issue</div>
+  <ul class="steps">
+    <li>Inspect sensor wiring connections.</li>
+    <li>Check for corrosion or loose terminals.</li>
+    <li>Reset appliance power system.</li>
+    <li>Replace sensor if readings fail.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">VENT</div>
+  <div class="title">Ventilation Blockage Detected</div>
+  <ul class="steps">
+    <li>Check vents for dust or obstruction.</li>
+    <li>Clean airflow channels thoroughly.</li>
+    <li>Ensure proper clearance around appliance.</li>
+    <li>Restart system after cleaning.</li>
+  </ul>
 </div>
 
-<!-- ================= COOLING ================= -->
-<div class="section-title">Cooling Cycle Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">COOL</div>
-<div class="title">Cooling Cycle Active</div>
-<ul class="steps">
-<li>Wait for cycle to complete normally.</li>
-<li>Do not open appliance doors unnecessarily.</li>
-<li>Ensure proper ventilation around unit.</li>
-<li>System will return to normal operation automatically.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ECO</div>
+  <div class="title">Energy Saving Mode Active</div>
+  <ul class="steps">
+    <li>Normal operation in reduced power mode.</li>
+    <li>No action required.</li>
+    <li>Adjust settings if full power is needed.</li>
+    <li>System returns to normal when required.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F21 / E21</div>
+  <div class="title">Motor Failure / Drum Jam</div>
+  <ul class="steps">
+    <li>Check drum for blockage.</li>
+    <li>Inspect motor brushes.</li>
+    <li>Remove load imbalance.</li>
+    <li>Replace motor if needed.</li>
+  </ul>
+</div></div>
+
+</body>
+</html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<!-- ================= KITCHENAID OVEN FAQ ================= -->
+
+<!-- ================= KITCHENAID REFRIGERATOR FAQ ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my KitchenAid system not respond?</div>
+<div class="answer">
+Check power supply, control lock status, and system connection. Ensure the appliance is properly plugged in and perform a system reset.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my KitchenAid system not starting?</div>
+<div class="answer">
+Check door switches, control settings, and power supply. Ensure the unit is properly closed and reset the system if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my KitchenAid system freezing or becoming unresponsive?</div>
+<div class="answer">
+Check control board performance and electrical stability. Perform a power reset and inspect for faulty wiring or moisture in controls.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my KitchenAid system showing incorrect readings?</div>
+<div class="answer">
+Inspect sensors, thermistors, and wiring connections. Reset the system and ensure components are properly calibrated.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my KitchenAid system making unusual noises?</div>
+<div class="answer">
+Check internal motors, fans, and moving components. Remove any obstruction and ensure parts are securely mounted.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my KitchenAid system stop mid-cycle?</div>
+<div class="answer">
+Check for overheating protection, power interruptions, or sensor faults. Allow the system to cool before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my KitchenAid system running continuously?</div>
+<div class="answer">
+Check control board logic, stuck relays, and sensor feedback. Reset system and inspect for faulty components.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my KitchenAid system showing an error code?</div>
+<div class="answer">
+Note the error code displayed. Reset the appliance and inspect sensors, wiring, and control board if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my KitchenAid system display not working?</div>
+<div class="answer">
+Check power connection, display module, and control board. Restart system and inspect wiring harness.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my KitchenAid system overheating?</div>
+<div class="answer">
+Check ventilation, airflow paths, and cooling components. Clean internal areas and allow system to cool before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my KitchenAid system not performing properly?</div>
+<div class="answer">
+Check calibration settings, sensor accuracy, and load conditions. Reset system and inspect for worn components.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my KitchenAid system messages?</div>
+<div class="answer">
+Turn off power for 5–10 minutes, then restore power to clear temporary faults and reset system messages.
+</div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> If system messages persist repeatedly, disconnect power and contact a certified KitchenAid technician.
+<strong>Important:</strong> If KitchenAid system messages persist after troubleshooting, disconnect power and contact a certified KitchenAid technician.
 </div>
 
-</div>
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

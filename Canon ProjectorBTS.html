@@ -3,460 +3,700 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Canon Projector Error Codes Troubleshooting Guide</title>
+
+<title>Canon Projector Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Canon Projector error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Canon Projector Error Codes & Troubleshooting Guide",
+  "description": "Complete Canon Projector error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f6f8;
+    background:#f5f5f5;
     color:#333;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     background:#fff;
-    padding:25px;
+    padding:30px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 h1{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
     text-align:center;
-    border-radius:8px;
+    color:#666;
     margin-bottom:10px;
-    
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
 }
 
-h2{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
+.subtitle{
     text-align:center;
-    border-radius:8px;
-    margin-bottom:10px;
-    
+    color:#666;
+    margin-bottom:30px;
 }
 
 .section-title{
     margin-top:40px;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
-    border-left:5px solid #1f3b4d;
+    border-left:5px solid #e60012;
     padding-left:10px;
-    
+    color:#444;
 }
 
-.search-box{
-    width:100%;
-    padding:12px;
-    margin:20px 0;
-    border:1px solid #ccc;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    border:1px solid #4e6e81;
     border-radius:8px;
+    padding:20px;
+    background:#fafafa;
+    transition:0.3s;
 }
 
-.error-card{
-    border:1px solid #ddd;
-    border-radius:8px;
-    margin-bottom:10px;
-    overflow:hidden;
-}
-
-.error-toggle{
-    width:100%;
-    padding:15px;
-    background:#fff;
-    border:none;
-    text-align:left;
-    cursor:pointer;
-    font-size:16px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-.error-toggle:hover{
-    background:#f3f3f3;
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .code{
+    font-size:26px;
     font-weight:bold;
-    color:#1f3b4d;
-    margin-right:10px;
-    min-width:80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    color:#4e6e81;
+    margin-bottom:10px;
 }
 
-.error-content{
-    display:none;
-    padding:15px;
-    background:#fafafa;
-    border-top:1px solid #eee;
-    
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
-.error-content ul{
-    padding-left:20px;
+.steps{
+    padding-left:18px;
+    line-height:1.6;
 }
 
 .note{
-    margin-top:25px;
-    padding:15px;
+    margin-top:30px;
     background:#fff3cd;
     border:1px solid #ffeeba;
+    padding:15px;
+    border-radius:6px;
+}
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
     border-radius:8px;
-    
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
+</style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
 }
 </style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Canon Projector Error Codes & Troubleshooting Guide</h1>
+<h1>Canon Projector Error Codes</h1>
 
-<input type="text" class="search-box" placeholder="Search error code...">
+<p class="subtitle"><strong>Complete Canon Projector Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Canon Projector error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">READY</span> System Ready</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Projector is operating normally.</li>
-<li>No action required.</li>
-<li>Ready for display input.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">READY</div>
+  <div class="title">Canon Projector System Ready</div>
+  <ul class="steps">
+    <li>Projector is operating normally.</li>
+    <li>No action required.</li>
+    <li>Ready for display input.</li>
+    <li>Ensure input source is connected properly.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E001</span> Lamp Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check lamp life timer status.</li>
-<li>Reinstall or reseat projector lamp.</li>
-<li>Inspect lamp cover safety switch.</li>
-<li>Replace lamp if end-of-life.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E001</div>
+  <div class="title">Lamp Failure</div>
+  <ul class="steps">
+    <li>Check lamp life timer status.</li>
+    <li>Reinstall or reseat projector lamp.</li>
+    <li>Inspect lamp cover safety switch.</li>
+    <li>Replace lamp if end-of-life.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E002</span> Overheating Detected</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off projector and allow cooling.</li>
-<li>Clean air filters and vents.</li>
-<li>Ensure proper ventilation space.</li>
-<li>Check internal cooling fan operation.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E002</div>
+  <div class="title">Overheating Detected</div>
+  <ul class="steps">
+    <li>Turn off projector and allow cooling.</li>
+    <li>Clean air filters and vents.</li>
+    <li>Ensure proper ventilation space.</li>
+    <li>Check internal cooling fan operation.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E003</span> Fan Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect cooling fans for dust blockage.</li>
-<li>Check fan motor operation.</li>
-<li>Ensure stable power supply.</li>
-<li>Replace fan if not spinning correctly.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E003</div>
+  <div class="title">Fan Error</div>
+  <ul class="steps">
+    <li>Inspect cooling fans for dust blockage.</li>
+    <li>Check fan motor operation.</li>
+    <li>Ensure stable power supply.</li>
+    <li>Replace fan if not spinning correctly.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E004</span> Power Supply Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check AC power source stability.</li>
-<li>Inspect internal power board.</li>
-<li>Look for burnt components.</li>
-<li>Replace power supply unit if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E004</div>
+  <div class="title">Power Supply Fault</div>
+  <ul class="steps">
+    <li>Check AC power source stability.</li>
+    <li>Inspect internal power board.</li>
+    <li>Look for burnt components.</li>
+    <li>Replace power supply unit if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E005</span> Color Wheel Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check color wheel motor operation.</li>
-<li>Inspect for dust or obstruction.</li>
-<li>Restart projector system.</li>
-<li>Replace color wheel assembly if faulty.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E005</div>
+  <div class="title">Color Wheel Error</div>
+  <ul class="steps">
+    <li>Check color wheel motor operation.</li>
+    <li>Inspect for dust or obstruction.</li>
+    <li>Restart projector system.</li>
+    <li>Replace color wheel assembly if faulty.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E006</span> Thermal Sensor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect internal temperature sensor.</li>
-<li>Check wiring connections.</li>
-<li>Clean dust around sensor area.</li>
-<li>Replace sensor if readings are abnormal.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E006</div>
+  <div class="title">Thermal Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect internal temperature sensor.</li>
+    <li>Check wiring connections.</li>
+    <li>Clean dust around sensor area.</li>
+    <li>Replace sensor if readings are abnormal.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E007</span> Lamp Ignition Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check lamp connection seating.</li>
-<li>Inspect ballast unit.</li>
-<li>Allow projector to cool before retry.</li>
-<li>Replace lamp or ballast if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E007</div>
+  <div class="title">Lamp Ignition Failure</div>
+  <ul class="steps">
+    <li>Check lamp connection seating.</li>
+    <li>Inspect ballast unit.</li>
+    <li>Allow projector to cool before retry.</li>
+    <li>Replace lamp or ballast if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E008</span> Airflow Blocked</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean air intake filters.</li>
-<li>Remove dust from vents.</li>
-<li>Ensure projector has space around it.</li>
-<li>Check fan operation.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E008</div>
+  <div class="title">Airflow Blocked</div>
+  <ul class="steps">
+    <li>Clean air intake filters.</li>
+    <li>Remove dust from vents.</li>
+    <li>Ensure projector has space around it.</li>
+    <li>Check fan operation.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E009</span> Power On Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check power cable connection.</li>
-<li>Try a different power outlet.</li>
-<li>Inspect internal fuse.</li>
-<li>Replace power board if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E009</div>
+  <div class="title">Power On Failure</div>
+  <ul class="steps">
+    <li>Check power cable connection.</li>
+    <li>Try a different power outlet.</li>
+    <li>Inspect internal fuse.</li>
+    <li>Replace power board if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E010</span> Main Board Communication Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart projector system.</li>
-<li>Check internal ribbon cables.</li>
-<li>Update firmware if available.</li>
-<li>Replace main PCB if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E010</div>
+  <div class="title">Main Board Communication Error</div>
+  <ul class="steps">
+    <li>Restart projector system.</li>
+    <li>Check internal ribbon cables.</li>
+    <li>Update firmware if available.</li>
+    <li>Replace main PCB if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E011</span> HDMI Signal Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check HDMI cable connection.</li>
-<li>Try another input device.</li>
-<li>Restart projector and source device.</li>
-<li>Inspect HDMI port damage.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E011</div>
+  <div class="title">HDMI Signal Failure</div>
+  <ul class="steps">
+    <li>Check HDMI cable connection.</li>
+    <li>Try another input device.</li>
+    <li>Restart projector and source device.</li>
+    <li>Inspect HDMI port damage.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E012</span> Optical Engine Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect lens assembly.</li>
-<li>Check for dust inside optical block.</li>
-<li>Restart projector system.</li>
-<li>Service optical engine if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E012</div>
+  <div class="title">Optical Engine Fault</div>
+  <ul class="steps">
+    <li>Inspect lens assembly.</li>
+    <li>Check for dust inside optical block.</li>
+    <li>Restart projector system.</li>
+    <li>Service optical engine if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E013</span> Internal Fan Speed Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check fan rotation speed.</li>
-<li>Remove dust buildup.</li>
-<li>Inspect fan wiring.</li>
-<li>Replace cooling fan if faulty.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E013</div>
+  <div class="title">Internal Fan Speed Error</div>
+  <ul class="steps">
+    <li>Check fan rotation speed.</li>
+    <li>Remove dust buildup.</li>
+    <li>Inspect fan wiring.</li>
+    <li>Replace cooling fan if faulty.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E014</span> Lamp Cover Open</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure lamp cover is fully closed.</li>
-<li>Check safety switch alignment.</li>
-<li>Secure lamp compartment properly.</li>
-<li>Restart projector after closing.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E014</div>
+  <div class="title">Lamp Cover Open</div>
+  <ul class="steps">
+    <li>Ensure lamp cover is fully closed.</li>
+    <li>Check safety switch alignment.</li>
+    <li>Secure lamp compartment properly.</li>
+    <li>Restart projector after closing.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E015</span> System Overload Protection</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off projector immediately.</li>
-<li>Allow full cooling period.</li>
-<li>Check ventilation system.</li>
-<li>Inspect internal power circuit.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E015</div>
+  <div class="title">System Overload Protection</div>
+  <ul class="steps">
+    <li>Turn off projector immediately.</li>
+    <li>Allow full cooling period.</li>
+    <li>Check ventilation system.</li>
+    <li>Inspect internal power circuit.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E016</span> Firmware Corruption</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reset projector settings.</li>
-<li>Reinstall firmware update.</li>
-<li>Use official Canon update tool.</li>
-<li>Service main board if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E016</div>
+  <div class="title">Firmware Corruption</div>
+  <ul class="steps">
+    <li>Reset projector settings.</li>
+    <li>Reinstall firmware update.</li>
+    <li>Use official Canon update tool.</li>
+    <li>Service main board if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E017</span> Projection Image Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check input source signal.</li>
-<li>Restart projector and device.</li>
-<li>Test different HDMI/VGA input.</li>
-<li>Inspect optical block.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E017</div>
+  <div class="title">Projection Image Failure</div>
+  <ul class="steps">
+    <li>Check input source signal.</li>
+    <li>Restart projector and device.</li>
+    <li>Test different HDMI/VGA input.</li>
+    <li>Inspect optical block.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E018</span> Color Balance Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reset image settings.</li>
-<li>Check color wheel assembly.</li>
-<li>Update firmware.</li>
-<li>Service optical system if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E018</div>
+  <div class="title">Color Balance Error</div>
+  <ul class="steps">
+    <li>Reset image settings.</li>
+    <li>Check color wheel assembly.</li>
+    <li>Update firmware.</li>
+    <li>Service optical system if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E019</span> Voltage Instability</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check power source stability.</li>
-<li>Avoid using extension cords.</li>
-<li>Use voltage stabilizer.</li>
-<li>Inspect internal PSU.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E019</div>
+  <div class="title">Voltage Instability</div>
+  <ul class="steps">
+    <li>Check power source stability.</li>
+    <li>Avoid using extension cords.</li>
+    <li>Use voltage stabilizer.</li>
+    <li>Inspect internal PSU.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E020</span> General System Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart projector.</li>
-<li>Disconnect power for 5 minutes.</li>
-<li>Check internal cables.</li>
-<li>Contact service center if persistent.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E020</div>
+  <div class="title">General System Failure</div>
+  <ul class="steps">
+    <li>Restart projector.</li>
+    <li>Disconnect power for 5 minutes.</li>
+    <li>Check internal cables.</li>
+    <li>Contact service center if persistent.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E999</span> Critical System Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Immediate shutdown required.</li>
-<li>Disconnect power supply.</li>
-<li>Inspect for hardware damage.</li>
-<li>Send for professional repair.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E999</div>
+  <div class="title">Critical System Error</div>
+  <ul class="steps">
+    <li>Immediate shutdown required.</li>
+    <li>Disconnect power supply.</li>
+    <li>Inspect for hardware damage.</li>
+    <li>Send for professional repair.</li>
+  </ul>
 </div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PRJ01</div>
+  <div class="title">Canon Projector Not Turning On</div>
+  <ul class="steps">
+    <li>Check power cable connection.</li>
+    <li>Ensure outlet is working properly.</li>
+    <li>Verify lamp cover is fully closed.</li>
+    <li>Try a different power source.</li>
+  </ul>
 </div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PRJ02</div>
+  <div class="title">No Signal Display Issue</div>
+  <ul class="steps">
+    <li>Check HDMI or VGA cable connection.</li>
+    <li>Select correct input source.</li>
+    <li>Restart projector and device.</li>
+    <li>Try a different cable or port.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PRJ03</div>
+  <div class="title">Blurry Image Problem</div>
+  <ul class="steps">
+    <li>Adjust focus ring.</li>
+    <li>Set correct projection distance.</li>
+    <li>Clean lens surface.</li>
+    <li>Check input resolution.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PRJ04</div>
+  <div class="title">Overheating Issue</div>
+  <ul class="steps">
+    <li>Clear ventilation vents.</li>
+    <li>Clean air filters.</li>
+    <li>Allow cooling time.</li>
+    <li>Avoid enclosed placement.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PRJ05</div>
+  <div class="title">Dim Image Output</div>
+  <ul class="steps">
+    <li>Check lamp life status.</li>
+    <li>Increase brightness settings.</li>
+    <li>Clean lens.</li>
+    <li>Reduce ambient lighting.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PRJ06</div>
+  <div class="title">Projector Keeps Shutting Down</div>
+  <ul class="steps">
+    <li>Check overheating conditions.</li>
+    <li>Clean filters and vents.</li>
+    <li>Ensure stable power supply.</li>
+    <li>Reset projector system.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PRJ07</div>
+  <div class="title">Remote Not Working</div>
+  <ul class="steps">
+    <li>Replace remote batteries.</li>
+    <li>Check IR sensor alignment.</li>
+    <li>Remove obstacles between remote and projector.</li>
+    <li>Test manual buttons on device.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PRJ08</div>
+  <div class="title">No Sound Output</div>
+  <ul class="steps">
+    <li>Check volume settings.</li>
+    <li>Verify HDMI/audio cable supports audio.</li>
+    <li>Select correct audio output source.</li>
+    <li>Test external speakers.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PRJ09</div>
+  <div class="title">Image Distortion Issue</div>
+  <ul class="steps">
+    <li>Adjust keystone correction.</li>
+    <li>Align projector to screen properly.</li>
+    <li>Check resolution compatibility.</li>
+    <li>Reposition projector for best alignment.</li>
+  </ul>
+</div></div>
+
+</body>
+</html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
 
 <!-- FAQ SECTION -->
 <div class="faq">
@@ -464,200 +704,164 @@ h2{
 
 <br>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon projector not turning on?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check if the power cable is securely connected.</li>
-<li>Ensure the power outlet is working.</li>
-<li>Inspect the projector lamp cover is properly closed.</li>
-<li>Try a different power source if needed.</li>
-</ul>
+
+<div class="faq-container">
+
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ01 Canon Projector Not Ready mean?</div>
+<div class="answer">
+Check power connection, ensure projector is turned on, verify HDMI/VGA input source, and restart the projector.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon projector showing no signal?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check HDMI or VGA cable connections.</li>
-<li>Ensure the correct input source is selected.</li>
-<li>Restart both projector and connected device.</li>
-<li>Try a different cable or port.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ02 No Signal Display Detected mean?</div>
+<div class="answer">
+Check HDMI or VGA cable connection, select correct input source, restart projector and device, and try another cable or port.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon projector image blurry?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Adjust the focus ring on the lens.</li>
-<li>Ensure projector is at proper distance from screen.</li>
-<li>Clean the lens gently with a soft cloth.</li>
-<li>Check resolution settings on input device.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ03 Blurry Projection Output mean?</div>
+<div class="answer">
+Adjust focus ring, set correct projection distance, clean lens surface, and check input resolution.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon projector overheating?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure ventilation vents are not blocked.</li>
-<li>Clean dust from air filters.</li>
-<li>Allow projector to cool down before reuse.</li>
-<li>Avoid placing projector in enclosed spaces.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ04 Overheating Warning mean?</div>
+<div class="answer">
+Clear ventilation vents, clean air filters, allow cooling time, and avoid enclosed placement.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon projector fan so loud?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for dust buildup in vents and filters.</li>
-<li>Ensure projector is in a well-ventilated area.</li>
-<li>Use Eco mode if available.</li>
-<li>Clean internal cooling system if necessary.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ05 Dim Image Output mean?</div>
+<div class="answer">
+Check lamp life status, increase brightness settings, clean lens, and reduce ambient lighting.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon projector showing a dim image?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check lamp life and replace if needed.</li>
-<li>Increase brightness settings.</li>
-<li>Clean lens for better clarity.</li>
-<li>Reduce ambient light in the room.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ06 Projector Keeps Shutting Down mean?</div>
+<div class="answer">
+Check overheating conditions, clean filters and vents, ensure stable power supply, and reset projector system.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my Canon projector keep shutting down?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for overheating issues.</li>
-<li>Ensure filters are clean and airflow is not blocked.</li>
-<li>Inspect power supply stability.</li>
-<li>Reset projector and try again.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ07 Remote Control Not Working mean?</div>
+<div class="answer">
+Replace remote batteries, check IR sensor alignment, remove obstacles, and test manual buttons on projector.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon projector remote not working?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Replace remote batteries.</li>
-<li>Ensure no obstacles block IR sensor.</li>
-<li>Check remote sensor on projector.</li>
-<li>Try using buttons on the projector itself.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ08 No Sound Output mean?</div>
+<div class="answer">
+Check volume settings, verify HDMI/audio support, select correct audio output source, and test external speakers.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is there no sound from my Canon projector?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check volume settings on projector and device.</li>
-<li>Ensure audio cable or HDMI supports audio.</li>
-<li>Verify correct audio output source.</li>
-<li>Test with external speakers if needed.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ09 Image Distortion Issue mean?</div>
+<div class="answer">
+Adjust keystone correction, align projector properly, check resolution compatibility, and reposition device.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>How do I reset my Canon projector?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Go to settings menu and select reset option.</li>
-<li>Confirm factory reset if available.</li>
-<li>Turn off and unplug projector for a few minutes.</li>
-<li>Restart and reconfigure settings.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ10 System Reset Required mean?</div>
+<div class="answer">
+Power off projector, wait 30–60 seconds, restart system, and test functionality.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon projector image distorted?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Adjust keystone correction settings.</li>
-<li>Ensure projector is placed directly facing screen.</li>
-<li>Check resolution compatibility with input device.</li>
-<li>Reposition projector for proper alignment.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ11 Connection Failure mean?</div>
+<div class="answer">
+Check HDMI/VGA cable, restart projector and device, try another port, and update firmware if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ12 Image Signal Loss mean?</div>
+<div class="answer">
+Check input source, replace cable if faulty, restart devices, and verify correct input mode.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ13 Fan Noise or Fan Error mean?</div>
+<div class="answer">
+Clean vents, check fan obstruction, ensure airflow, and replace fan if noise continues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ14 Lamp Failure mean?</div>
+<div class="answer">
+Check lamp status, reseat lamp, ensure lamp cover is closed, and replace lamp if end-of-life.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ15 Power Failure mean?</div>
+<div class="answer">
+Check power cable, test outlet, inspect adapter, and replace power supply if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ16 Firmware Error mean?</div>
+<div class="answer">
+Update firmware, reset settings, reinstall system update, and restart projector.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ17 Overload Protection Activated mean?</div>
+<div class="answer">
+Turn off projector, allow cooling, check ventilation, and restart after cooldown.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ18 Optical Engine Fault mean?</div>
+<div class="answer">
+Inspect lens assembly, clean dust inside optics, restart system, and service optical engine if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ19 Network Connection Lost mean?</div>
+<div class="answer">
+Restart router, reconnect Wi-Fi, check network stability, and update network settings.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does PRJ20 General System Failure mean?</div>
+<div class="answer">
+Restart projector, disconnect power for 30–60 seconds, check internal cables, and contact support if needed.
 </div>
 </div>
 
 <div class="note">
-<strong>Note:</strong> Lamp and optical system repairs should be handled carefully due to high heat and delicate components.
+<strong>Important:</strong> Always disconnect power before performing repairs. Contact a qualified technician if the issue persists.
 </div>
-
-</div>
-
-</body>
-</html>
 
 <script>
-document.querySelectorAll('.error-toggle').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-        const content = btn.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    });
-});
-
-const searchInput = document.querySelector('.search-box');
-
-searchInput.addEventListener('keyup', function () {
-    const filter = this.value.toUpperCase();
-    const cards = document.querySelectorAll('.error-card');
-
-    cards.forEach(card => {
-        const text = card.innerText.toUpperCase();
-        card.style.display = text.includes(filter) ? '' : 'none';
-    });
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
 });
 </script>
+
+
 
 </body>
 </html>

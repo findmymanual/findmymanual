@@ -3,579 +3,636 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Electrolux Dryer Error Codes Troubleshooting Guide</title>
+
+<title>Electrolux Dryer Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Electrolux Dryer error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Electrolux Dryer Error Codes & Troubleshooting Guide",
+  "description": "Complete Electrolux Dryer error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f6f8;
+    background:#f5f5f5;
     color:#333;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     background:#fff;
-    padding:25px;
+    padding:30px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 h1{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
     text-align:center;
-    border-radius:8px;
+    color:#666;
     margin-bottom:10px;
-    
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
 }
 
-h2{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
+.subtitle{
     text-align:center;
-    border-radius:8px;
-    margin-bottom:10px;
-    
+    color:#666;
+    margin-bottom:30px;
 }
 
 .section-title{
     margin-top:40px;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
-    border-left:5px solid #1f3b4d;
+    border-left:5px solid #e60012;
     padding-left:10px;
-    
+    color:#444;
 }
 
-.search-box{
-    width:100%;
-    padding:12px;
-    margin:20px 0;
-    border:1px solid #ccc;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    border:1px solid #4e6e81;
     border-radius:8px;
+    padding:20px;
+    background:#fafafa;
+    transition:0.3s;
 }
 
-.error-card{
-    border:1px solid #ddd;
-    border-radius:8px;
-    margin-bottom:10px;
-    overflow:hidden;
-}
-
-.error-toggle{
-    width:100%;
-    padding:15px;
-    background:#fff;
-    border:none;
-    text-align:left;
-    cursor:pointer;
-    font-size:16px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-.error-toggle:hover{
-    background:#f3f3f3;
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .code{
+    font-size:26px;
     font-weight:bold;
-    color:#1f3b4d;
-    margin-right:10px;
-    min-width:80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    color:#4e6e81;
+    margin-bottom:10px;
 }
 
-.error-content{
-    display:none;
-    padding:15px;
-    background:#fafafa;
-    border-top:1px solid #eee;
-    
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
-.error-content ul{
-    padding-left:20px;
+.steps{
+    padding-left:18px;
+    line-height:1.6;
 }
 
 .note{
-    margin-top:25px;
-    padding:15px;
+    margin-top:30px;
     background:#fff3cd;
     border:1px solid #ffeeba;
+    padding:15px;
+    border-radius:6px;
+}
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
     border-radius:8px;
-    
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
+</style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
 }
 </style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Electrolux Dryer Error Codes & Troubleshooting Guide</h1>
+<h1>Electrolux Dryer Error Codes</h1>
 
-<input type="text" class="search-box" placeholder="Search error code...">
+<p class="subtitle"><strong>Complete Electrolux Dryer Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Electrolux Dryer error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E64</span> Heating Element Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check heating element continuity using a multimeter.</li>
-<li>Inspect wiring connections for burns or loose terminals.</li>
-<li>Ensure proper airflow through the dryer.</li>
-<li>Replace the heating element if defective.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E64</div>
+  <div class="title">Heating Element Fault</div>
+  <ul class="steps">
+    <li>Check heating element continuity using a multimeter.</li>
+    <li>Inspect wiring connections for burns or loose terminals.</li>
+    <li>Ensure proper airflow through the dryer.</li>
+    <li>Replace the heating element if defective.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E65</span> Thermistor Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect thermistor wiring connections.</li>
-<li>Test resistance values at room temperature.</li>
-<li>Check for moisture or corrosion damage.</li>
-<li>Replace thermistor if readings are outside specifications.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E65</div>
+  <div class="title">Thermistor Error</div>
+  <ul class="steps">
+    <li>Inspect thermistor wiring connections.</li>
+    <li>Test resistance values at room temperature.</li>
+    <li>Check for moisture or corrosion damage.</li>
+    <li>Replace thermistor if readings are outside specifications.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E66</span> Overheating Detected</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean lint filter and exhaust vent system.</li>
-<li>Inspect airflow restrictions throughout the ductwork.</li>
-<li>Allow dryer to cool before restarting.</li>
-<li>Check thermal fuse and high-limit thermostat.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E66</div>
+  <div class="title">Overheating Detected</div>
+  <ul class="steps">
+    <li>Clean lint filter and exhaust vent system.</li>
+    <li>Inspect airflow restrictions throughout ductwork.</li>
+    <li>Allow dryer to cool before restarting.</li>
+    <li>Check thermal fuse and high-limit thermostat.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E68</span> Control Board Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Disconnect power for 5–10 minutes.</li>
-<li>Inspect control board for damaged components.</li>
-<li>Check wiring harness connections.</li>
-<li>Replace the electronic control board if necessary.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E68</div>
+  <div class="title">Control Board Failure</div>
+  <ul class="steps">
+    <li>Disconnect power for 5–10 minutes.</li>
+    <li>Inspect control board for damaged components.</li>
+    <li>Check wiring harness connections.</li>
+    <li>Replace electronic control board if necessary.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E71</span> Motor Relay Fault</span>
-<span>▼</span>
-</button>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect motor relay on the control board.</li>
-<li>Check motor wiring connections.</li>
-<li>Test relay switching operation.</li>
-<li>Replace control board if relay is defective.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E71</div>
+  <div class="title">Motor Relay Fault</div>
+  <ul class="steps">
+    <li>Inspect motor relay on the control board.</li>
+    <li>Check motor wiring connections.</li>
+    <li>Test relay switching operation.</li>
+    <li>Replace control board if relay is defective.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E72</span> Door Switch Issue</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check door latch alignment.</li>
-<li>Inspect door switch wiring.</li>
-<li>Test switch continuity.</li>
-<li>Replace door switch if faulty.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E72</div>
+  <div class="title">Door Switch Issue</div>
+  <ul class="steps">
+    <li>Check door latch alignment.</li>
+    <li>Inspect door switch wiring.</li>
+    <li>Test switch continuity.</li>
+    <li>Replace door switch if faulty.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E73</span> Temperature Sensor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect temperature sensor connections.</li>
-<li>Check sensor resistance values.</li>
-<li>Verify wiring harness condition.</li>
-<li>Replace sensor if defective.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E73</div>
+  <div class="title">Temperature Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect temperature sensor connections.</li>
+    <li>Check sensor resistance values.</li>
+    <li>Verify wiring harness condition.</li>
+    <li>Replace sensor if defective.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E74</span> Temperature Sensor Mismatch</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Verify all temperature sensors are connected correctly.</li>
-<li>Confirm correct sensor type is installed.</li>
-<li>Inspect harness wiring for damage.</li>
-<li>Replace sensor or control board if mismatch continues.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E74</div>
+  <div class="title">Temperature Sensor Mismatch</div>
+  <ul class="steps">
+    <li>Verify all temperature sensors are connected correctly.</li>
+    <li>Confirm correct sensor type is installed.</li>
+    <li>Inspect harness wiring for damage.</li>
+    <li>Replace sensor or control board if mismatch continues.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E82</span> User Interface Communication Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reset dryer power supply.</li>
-<li>Inspect display panel wiring connections.</li>
-<li>Check communication cable between boards.</li>
-<li>Replace interface board if necessary.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E82</div>
+  <div class="title">User Interface Communication Error</div>
+  <ul class="steps">
+    <li>Reset dryer power supply.</li>
+    <li>Inspect display panel wiring connections.</li>
+    <li>Check communication cable between boards.</li>
+    <li>Replace interface board if necessary.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E91</span> Main Board Communication Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check communication wiring harness.</li>
-<li>Inspect connectors for corrosion.</li>
-<li>Restart appliance and retest.</li>
-<li>Replace affected control board if fault remains.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E91</div>
+  <div class="title">Main Board Communication Failure</div>
+  <ul class="steps">
+    <li>Check communication wiring harness.</li>
+    <li>Inspect connectors for corrosion.</li>
+    <li>Restart appliance and retest.</li>
+    <li>Replace control board if fault remains.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E92</span> Configuration Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Verify appliance configuration settings.</li>
-<li>Check software programming data.</li>
-<li>Reset control board if available.</li>
-<li>Reprogram or replace board if required.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E92</div>
+  <div class="title">Configuration Error</div>
+  <ul class="steps">
+    <li>Verify appliance configuration settings.</li>
+    <li>Check software programming data.</li>
+    <li>Reset control board if available.</li>
+    <li>Reprogram or replace board if required.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E93</span> EEPROM Memory Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Disconnect power and restart appliance.</li>
-<li>Check control board connections.</li>
-<li>Inspect PCB for damage.</li>
-<li>Replace control board if memory failure persists.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E93</div>
+  <div class="title">EEPROM Memory Error</div>
+  <ul class="steps">
+    <li>Disconnect power and restart appliance.</li>
+    <li>Check control board connections.</li>
+    <li>Inspect PCB for damage.</li>
+    <li>Replace control board if memory failure persists.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E5A</span> Motor Control Overheating</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Allow dryer to cool down completely.</li>
-<li>Check ventilation and airflow.</li>
-<li>Inspect motor control board.</li>
-<li>Replace motor control module if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5A</div>
+  <div class="title">Motor Control Overheating</div>
+  <ul class="steps">
+    <li>Allow dryer to cool down completely.</li>
+    <li>Check ventilation and airflow.</li>
+    <li>Inspect motor control board.</li>
+    <li>Replace motor control module if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E5B</span> Supply Voltage Too Low</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Verify incoming voltage at outlet.</li>
-<li>Inspect power cord and connections.</li>
-<li>Avoid using extension cords.</li>
-<li>Contact an electrician if voltage remains unstable.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5B</div>
+  <div class="title">Supply Voltage Too Low</div>
+  <ul class="steps">
+    <li>Verify incoming voltage at outlet.</li>
+    <li>Inspect power cord and connections.</li>
+    <li>Avoid using extension cords.</li>
+    <li>Contact an electrician if voltage remains unstable.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E5C</span> Supply Voltage Too High</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Measure supply voltage levels.</li>
-<li>Inspect electrical installation.</li>
-<li>Disconnect appliance until voltage normalizes.</li>
-<li>Contact a qualified electrician if necessary.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5C</div>
+  <div class="title">Supply Voltage Too High</div>
+  <ul class="steps">
+    <li>Measure supply voltage levels.</li>
+    <li>Inspect electrical installation.</li>
+    <li>Disconnect appliance until voltage normalizes.</li>
+    <li>Contact a qualified electrician if necessary.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E41</span> Door Not Closed</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Close the dryer door securely.</li>
-<li>Inspect door latch mechanism.</li>
-<li>Check for clothing blocking closure.</li>
-<li>Replace latch assembly if damaged.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E41</div>
+  <div class="title">Door Not Closed</div>
+  <ul class="steps">
+    <li>Close the dryer door securely.</li>
+    <li>Inspect door latch mechanism.</li>
+    <li>Check for clothing blocking closure.</li>
+    <li>Replace latch assembly if damaged.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E51</span> Motor Triac Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect motor control circuitry.</li>
-<li>Check motor wiring connections.</li>
-<li>Test motor operation.</li>
-<li>Replace motor control board if required.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E51</div>
+  <div class="title">Motor Triac Fault</div>
+  <ul class="steps">
+    <li>Inspect motor control circuitry.</li>
+    <li>Check motor wiring connections.</li>
+    <li>Test motor operation.</li>
+    <li>Replace motor control board if required.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E52</span> No Motor Signal Detected</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check motor tachometer connections.</li>
-<li>Inspect drive motor wiring.</li>
-<li>Test motor operation manually.</li>
-<li>Replace motor if signal remains absent.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E52</div>
+  <div class="title">No Motor Signal Detected</div>
+  <ul class="steps">
+    <li>Check motor tachometer connections.</li>
+    <li>Inspect drive motor wiring.</li>
+    <li>Test motor operation manually.</li>
+    <li>Replace motor if signal remains absent.</li>
+  </ul>
 </div>
 
-<!-- FAQ SECTION -->
-<div class="faq">
-<h2>Frequently Asked Questions</h2>
-
-<br>
-
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dryer not starting?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check that the dryer is plugged in securely.</li>
-<li>Verify the circuit breaker has not tripped.</li>
-<li>Ensure the door is fully closed.</li>
-<li>Confirm a drying cycle has been selected.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E10</div>
+  <div class="title">Water Supply / Sensor Issue</div>
+  <ul class="steps">
+    <li>Check inlet water system (if steam function is used).</li>
+    <li>Inspect sensor connections for damage.</li>
+    <li>Restart the dryer to reset system.</li>
+    <li>Replace faulty sensor if error persists.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dryer not heating?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean the lint filter and exhaust vent.</li>
-<li>Check household power supply.</li>
-<li>Inspect heating element or heat pump system.</li>
-<li>Avoid overloading the dryer.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E20</div>
+  <div class="title">Drain System Fault</div>
+  <ul class="steps">
+    <li>Check drain hose for blockage or kinks.</li>
+    <li>Clean lint and water collection system.</li>
+    <li>Inspect pump (condensing models).</li>
+    <li>Reset unit after cleaning.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why are my clothes still damp after drying?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean the lint filter before each cycle.</li>
-<li>Check for blocked exhaust vents.</li>
-<li>Separate heavy and light fabrics.</li>
-<li>Select a longer drying program.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E30</div>
+  <div class="title">Door Lock Error</div>
+  <ul class="steps">
+    <li>Ensure door is fully closed.</li>
+    <li>Inspect door latch mechanism.</li>
+    <li>Check door switch wiring.</li>
+    <li>Replace latch if defective.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dryer making loud noises?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for objects trapped inside the drum.</li>
-<li>Ensure the dryer is level on the floor.</li>
-<li>Inspect drum rollers and bearings.</li>
-<li>Remove loose items from clothing pockets.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E40</div>
+  <div class="title">Door Open / Safety Lock Active</div>
+  <ul class="steps">
+    <li>Close dryer door securely.</li>
+    <li>Remove clothing blocking the seal.</li>
+    <li>Inspect door sensor alignment.</li>
+    <li>Reset dryer and retry cycle.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my Electrolux dryer stop mid-cycle?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for overheating due to blocked airflow.</li>
-<li>Clean lint filter and vent system.</li>
-<li>Inspect power supply stability.</li>
-<li>Allow the dryer to cool before restarting.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E50</div>
+  <div class="title">Motor / Drum Rotation Failure</div>
+  <ul class="steps">
+    <li>Check drum for obstruction or overload.</li>
+    <li>Inspect drive belt condition.</li>
+    <li>Test motor operation.</li>
+    <li>Replace motor if failure continues.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dryer displaying error codes?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart the dryer to clear temporary faults.</li>
-<li>Check filters and airflow restrictions.</li>
-<li>Inspect sensors and wiring connections.</li>
-<li>Refer to the error code guide for details.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E60</div>
+  <div class="title">Heating System Fault</div>
+  <ul class="steps">
+    <li>Check heating element continuity.</li>
+    <li>Inspect thermal fuse and thermostat.</li>
+    <li>Clean lint filter and airflow system.</li>
+    <li>Replace heater if defective.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dryer taking too long to dry clothes?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean the lint screen thoroughly.</li>
-<li>Check exhaust vent for blockages.</li>
-<li>Avoid overloading the drum.</li>
-<li>Use the appropriate drying cycle.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E61</div>
+  <div class="title">Temperature Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect thermistor wiring connections.</li>
+    <li>Test resistance readings.</li>
+    <li>Check for moisture or corrosion.</li>
+    <li>Replace sensor if readings are abnormal.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my Electrolux dryer have a burning smell?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off the dryer immediately if smell is strong.</li>
-<li>Clean lint buildup from filter and vents.</li>
-<li>Check for foreign objects inside the drum.</li>
-<li>Inspect wiring and components if odor persists.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E70</div>
+  <div class="title">Overheating Protection Activated</div>
+  <ul class="steps">
+    <li>Clean lint filter and exhaust vents.</li>
+    <li>Ensure proper airflow around dryer.</li>
+    <li>Allow unit to cool before restarting.</li>
+    <li>Check thermal fuse condition.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dryer door not closing properly?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for clothing caught in the door.</li>
-<li>Inspect door latch for damage.</li>
-<li>Clean lint from the door seal area.</li>
-<li>Replace faulty latch components if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E80</div>
+  <div class="title">Control Board Communication Error</div>
+  <ul class="steps">
+    <li>Disconnect power for 5–10 minutes.</li>
+    <li>Check wiring harness connections.</li>
+    <li>Inspect control board for damage.</li>
+    <li>Replace PCB if error persists.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>How do I reset my Electrolux dryer?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off the dryer and unplug it.</li>
-<li>Wait 5–10 minutes before reconnecting power.</li>
-<li>Restart the dryer and select a new cycle.</li>
-<li>Check if the error or issue has cleared.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dryer not spinning?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure the door is completely closed.</li>
-<li>Check for overloaded laundry.</li>
-<li>Inspect the drive belt for damage.</li>
-<li>Contact service if the motor is not running.</li>
-</ul>
-</div>
-</div>
-
-
-</div>
-
-<div class="note">
-<strong>Important:</strong> If error codes persist after troubleshooting, disconnect power and contact a certified Electrolux technician.
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E90</div>
+  <div class="title">Configuration / EEPROM Error</div>
+  <ul class="steps">
+    <li>Restart the dryer system.</li>
+    <li>Check control board settings.</li>
+    <li>Inspect PCB memory module.</li>
+    <li>Replace board if configuration fails.</li>
+  </ul>
 </div>
 
 </div>
@@ -583,27 +640,183 @@ h2{
 </body>
 </html>
 
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
 
 <script>
-document.querySelectorAll('.error-toggle').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-        const content = btn.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    });
-});
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
 
-const searchInput = document.querySelector('.search-box');
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
 
-searchInput.addEventListener('keyup', function () {
-    const filter = this.value.toUpperCase();
-    const cards = document.querySelectorAll('.error-card');
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
 
-    cards.forEach(card => {
-        const text = card.innerText.toUpperCase();
-        card.style.display = text.includes(filter) ? '' : 'none';
-    });
+<br>
+
+
+<div class="faq-container">
+
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E10 Water Inlet / Filling Issue mean?</div>
+<div class="answer">
+Check that the water supply valve is fully open, inspect inlet hose for blockages or kinks, clean inlet filter screen, and ensure proper household water pressure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E20 Drainage Problem mean?</div>
+<div class="answer">
+Check drain hose for clogs or kinks, clean lint and debris from drain system, inspect pump for obstruction, and ensure proper installation of drain line.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E24 Leak Detected / Water Protection Active mean?</div>
+<div class="answer">
+Turn off water supply immediately, check hoses, seals, and connections for leaks, inspect base tray for water accumulation, and dry unit before resetting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E30 Door Open / Door Lock Issue mean?</div>
+<div class="answer">
+Ensure door is fully closed and latched, check door switch and latch alignment, remove any obstruction blocking closure, and replace door lock if faulty.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E40 Door Lock Failure mean?</div>
+<div class="answer">
+Inspect door lock mechanism, check wiring connections, test door switch operation, and replace lock assembly if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E50 Motor / Drive System Fault mean?</div>
+<div class="answer">
+Check drum for blockage or overload, inspect motor wiring and connections, test motor operation, and replace motor if defective.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E51 Motor Control Fault mean?</div>
+<div class="answer">
+Inspect control board connections, check motor triac or relay, test wiring harness for damage, and replace control board if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E52 Motor Signal Loss mean?</div>
+<div class="answer">
+Check motor tachometer connections, inspect wiring harness, test motor feedback signal, and replace motor if signal is missing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E56 Heating System Failure mean?</div>
+<div class="answer">
+Check heating element continuity, inspect thermostat and wiring, test control board output, and replace heating element if faulty.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E60 Overheating / Temperature Issue mean?</div>
+<div class="answer">
+Clean lint filter and exhaust system, ensure proper airflow through vents, allow unit to cool before restart, and check thermal fuse and sensors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E61 Temperature Sensor Fault mean?</div>
+<div class="answer">
+Inspect thermistor wiring, test resistance values, check for moisture or corrosion, and replace sensor if readings are incorrect.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E63 Drying Performance Issue mean?</div>
+<div class="answer">
+Clean lint filter thoroughly, check exhaust vent for blockage, avoid overloading drum, and select proper drying program.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E66 Airflow Restriction mean?</div>
+<div class="answer">
+Clean lint trap and duct system, check for blocked vents, ensure proper installation clearance, and inspect fan system.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E68 Control Board Fault mean?</div>
+<div class="answer">
+Restart power supply, inspect PCB for damage or moisture, check wiring connections, and replace control board if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E70 Communication Error mean?</div>
+<div class="answer">
+Check wiring between control modules, inspect connectors for looseness, restart dryer system, and replace board if communication fails.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E90 Configuration / Software Error mean?</div>
+<div class="answer">
+Reset dryer power supply, check system configuration settings, inspect control board programming, and reprogram or replace board if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E91 Memory / EEPROM Fault mean?</div>
+<div class="answer">
+Disconnect power and restart unit, check control board connections, inspect PCB for damage, and replace control board if memory fails.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E93 System Error / Internal Fault mean?</div>
+<div class="answer">
+Restart dryer system, check wiring harness connections, inspect control board condition, and replace board if issue persists.
+</div>
+</div>
+
+<div class="note">
+<strong>Important:</strong> Always disconnect power before performing repairs. Contact a qualified technician if the issue persists.
+</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
 });
 </script>
+
+
 
 </body>
 </html>

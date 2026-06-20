@@ -3,596 +3,701 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GE Air Conditioner Error Codes Troubleshooting Guide</title>
+
+<title>GE Air Conditioner Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete GE Air Conditioner error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "GE Air Conditioner Error Codes & Troubleshooting Guide",
+  "description": "Complete GE Air Conditioner error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f6f8;
+    background:#f5f5f5;
     color:#333;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     background:#fff;
-    padding:25px;
+    padding:30px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 h1{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
     text-align:center;
-    border-radius:8px;
+    color:#666;
     margin-bottom:10px;
-    
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
 }
 
-h2{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
+.subtitle{
     text-align:center;
-    border-radius:8px;
-    margin-bottom:10px;
-    
+    color:#666;
+    margin-bottom:30px;
 }
 
 .section-title{
     margin-top:40px;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
-    border-left:5px solid #1f3b4d;
+    border-left:5px solid #e60012;
     padding-left:10px;
-    
+    color:#444;
 }
 
-.search-box{
-    width:100%;
-    padding:12px;
-    margin:20px 0;
-    border:1px solid #ccc;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    border:1px solid #4e6e81;
     border-radius:8px;
+    padding:20px;
+    background:#fafafa;
+    transition:0.3s;
 }
 
-.error-card{
-    border:1px solid #ddd;
-    border-radius:8px;
-    margin-bottom:10px;
-    overflow:hidden;
-}
-
-.error-toggle{
-    width:100%;
-    padding:15px;
-    background:#fff;
-    border:none;
-    text-align:left;
-    cursor:pointer;
-    font-size:16px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-.error-toggle:hover{
-    background:#f3f3f3;
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .code{
+    font-size:26px;
     font-weight:bold;
-    color:#1f3b4d;
-    margin-right:10px;
-    min-width:80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    color:#4e6e81;
+    margin-bottom:10px;
 }
 
-.error-content{
-    display:none;
-    padding:15px;
-    background:#fafafa;
-    border-top:1px solid #eee;
-    
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
-.error-content ul{
-    padding-left:20px;
+.steps{
+    padding-left:18px;
+    line-height:1.6;
 }
 
 .note{
-    margin-top:25px;
-    padding:15px;
+    margin-top:30px;
     background:#fff3cd;
     border:1px solid #ffeeba;
+    padding:15px;
+    border-radius:6px;
+}
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
     border-radius:8px;
-    
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
+</style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
 }
 </style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>GE Air Conditioner Error Codes & Troubleshooting Guide</h1>
+<h1>GE Air Conditioner Error Codes</h1>
 
-<input type="text" class="search-box" placeholder="Search error code...">
+<p class="subtitle"><strong>Complete GE Air Conditioner Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all GE Air Conditioner error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E0</span> EEPROM Parameter Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Disconnect power for 10 minutes to reset system.</li>
-<li>Inspect control board connections for looseness.</li>
-<li>Check for firmware or memory corruption.</li>
-<li>Replace PCB if error persists.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E0</div>
+  <div class="title">EEPROM Parameter Error</div>
+  <ul class="steps">
+    <li>Disconnect power for 10 minutes.</li>
+    <li>Inspect control board connections.</li>
+    <li>Check for firmware or memory corruption.</li>
+    <li>Replace PCB if error persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E1</div>
+  <div class="title">Room Temperature Sensor Failure</div>
+  <ul class="steps">
+    <li>Inspect room temperature sensor wiring.</li>
+    <li>Clean dust around the sensor.</li>
+    <li>Test thermistor resistance values.</li>
+    <li>Replace sensor if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E2</div>
+  <div class="title">Indoor Coil Sensor Error</div>
+  <ul class="steps">
+    <li>Check evaporator coil sensor wiring.</li>
+    <li>Inspect for frost or ice buildup.</li>
+    <li>Test sensor continuity.</li>
+    <li>Replace sensor if defective.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E3</div>
+  <div class="title">Outdoor Unit Communication Failure</div>
+  <ul class="steps">
+    <li>Inspect indoor-to-outdoor communication wiring.</li>
+    <li>Check connectors for corrosion.</li>
+    <li>Reset system power.</li>
+    <li>Replace communication PCB if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E4</div>
+  <div class="title">Compressor Overload Protection</div>
+  <ul class="steps">
+    <li>Turn off the air conditioner.</li>
+    <li>Inspect refrigerant pressure levels.</li>
+    <li>Check compressor wiring.</li>
+    <li>Allow the system to cool before restarting.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">P1</div>
+  <div class="title">Voltage Protection Activated</div>
+  <ul class="steps">
+    <li>Check incoming voltage stability.</li>
+    <li>Inspect breaker and outlet condition.</li>
+    <li>Use a voltage stabilizer if needed.</li>
+    <li>Restart unit after voltage normalizes.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">P2</div>
+  <div class="title">Compressor Temperature Protection</div>
+  <ul class="steps">
+    <li>Inspect condenser coil for dirt.</li>
+    <li>Ensure outdoor airflow is unrestricted.</li>
+    <li>Check refrigerant system performance.</li>
+    <li>Allow unit to cool before restarting.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5</div>
+  <div class="title">Fan Motor Malfunction</div>
+  <ul class="steps">
+    <li>Inspect fan blades for obstruction.</li>
+    <li>Check motor wiring connections.</li>
+    <li>Test fan motor capacitor.</li>
+    <li>Replace fan motor if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E6</div>
+  <div class="title">Compressor Start Failure</div>
+  <ul class="steps">
+    <li>Check power supply stability.</li>
+    <li>Inspect compressor wiring and capacitor.</li>
+    <li>Verify refrigerant conditions.</li>
+    <li>Replace relay if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E7</div>
+  <div class="title">Defrost Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect defrost sensor wiring.</li>
+    <li>Check sensor resistance values.</li>
+    <li>Look for ice buildup around coils.</li>
+    <li>Replace sensor if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E8</div>
+  <div class="title">Indoor Fan Speed Error</div>
+  <ul class="steps">
+    <li>Check indoor fan motor operation.</li>
+    <li>Inspect speed sensor wiring.</li>
+    <li>Clean fan assembly.</li>
+    <li>Replace motor if speed is unstable.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E9</div>
+  <div class="title">Expansion Valve Fault</div>
+  <ul class="steps">
+    <li>Inspect expansion valve wiring.</li>
+    <li>Check refrigerant flow.</li>
+    <li>Reset unit power.</li>
+    <li>Replace valve if necessary.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">H1</div>
+  <div class="title">Frost Protection Mode</div>
+  <ul class="steps">
+    <li>Allow automatic defrost to complete.</li>
+    <li>Clean air filters.</li>
+    <li>Inspect coil temperature sensor.</li>
+    <li>Restart after frost clears.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">H2</div>
+  <div class="title">High Pressure Protection</div>
+  <ul class="steps">
+    <li>Inspect condenser coil for blockage.</li>
+    <li>Check outdoor fan operation.</li>
+    <li>Verify refrigerant charge.</li>
+    <li>Allow pressure to normalize.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">H3</div>
+  <div class="title">Overload Protection</div>
+  <ul class="steps">
+    <li>Turn off unit and allow cooling.</li>
+    <li>Inspect compressor load conditions.</li>
+    <li>Check power supply stability.</li>
+    <li>Restart after reset.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">U4</div>
+  <div class="title">Communication Failure</div>
+  <ul class="steps">
+    <li>Inspect indoor and outdoor wiring harness.</li>
+    <li>Check connectors for corrosion.</li>
+    <li>Reset system power.</li>
+    <li>Replace communication board if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E10</div>
+  <div class="title">EEPROM Data Corruption</div>
+  <ul class="steps">
+    <li>Power cycle unit for 10–15 minutes.</li>
+    <li>Check control board for moisture damage.</li>
+    <li>Inspect firmware integrity.</li>
+    <li>Replace PCB if error persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E11</div>
+  <div class="title">Indoor Ambient Sensor Fault</div>
+  <ul class="steps">
+    <li>Check room sensor wiring.</li>
+    <li>Clean dust around sensor housing.</li>
+    <li>Test thermistor resistance.</li>
+    <li>Replace sensor if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E12</div>
+  <div class="title">Outdoor Ambient Sensor Error</div>
+  <ul class="steps">
+    <li>Inspect outdoor sensor wiring.</li>
+    <li>Check for corrosion or water intrusion.</li>
+    <li>Test resistance values.</li>
+    <li>Replace sensor if defective.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E13</div>
+  <div class="title">Coil Temperature Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect coil sensor placement.</li>
+    <li>Check wiring harness condition.</li>
+    <li>Test sensor continuity.</li>
+    <li>Replace sensor if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E14</div>
+  <div class="title">Compressor Current Overload</div>
+  <ul class="steps">
+    <li>Turn off unit immediately.</li>
+    <li>Check compressor condition.</li>
+    <li>Inspect refrigerant pressure.</li>
+    <li>Replace relay or capacitor if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E15</div>
+  <div class="title">Low Refrigerant Detection</div>
+  <ul class="steps">
+    <li>Check for refrigerant leaks.</li>
+    <li>Inspect system pressure readings.</li>
+    <li>Look for oil residue around piping.</li>
+    <li>Repair leaks and recharge refrigerant.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E16</div>
+  <div class="title">High Discharge Temperature</div>
+  <ul class="steps">
+    <li>Inspect condenser coil cleanliness.</li>
+    <li>Check outdoor fan operation.</li>
+    <li>Verify airflow is unobstructed.</li>
+    <li>Allow system to cool before restart.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E17</div>
+  <div class="title">Outdoor Fan Failure</div>
+  <ul class="steps">
+    <li>Inspect fan blades for obstruction.</li>
+    <li>Check motor wiring.</li>
+    <li>Test capacitor and motor operation.</li>
+    <li>Replace fan motor if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E18</div>
+  <div class="title">Indoor Fan Failure</div>
+  <ul class="steps">
+    <li>Check blower fan for blockage.</li>
+    <li>Inspect motor wiring harness.</li>
+    <li>Test fan speed operation.</li>
+    <li>Replace motor if defective.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E19</div>
+  <div class="title">Condensate Overflow</div>
+  <ul class="steps">
+    <li>Check drain pan for clogs.</li>
+    <li>Inspect drain hose for blockage.</li>
+    <li>Clean condensate line thoroughly.</li>
+    <li>Ensure proper drainage slope.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E20</div>
+  <div class="title">High Pressure Switch Trip</div>
+  <ul class="steps">
+    <li>Clean condenser coil.</li>
+    <li>Check for refrigerant overcharge.</li>
+    <li>Ensure outdoor airflow is unrestricted.</li>
+    <li>Reset system after pressure normalizes.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E21</div>
+  <div class="title">Low Pressure Switch Trip</div>
+  <ul class="steps">
+    <li>Check for refrigerant leaks.</li>
+    <li>Inspect suction line for blockage.</li>
+    <li>Test system pressure.</li>
+    <li>Recharge refrigerant after repair.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E22</div>
+  <div class="title">Inverter Module Failure</div>
+  <ul class="steps">
+    <li>Reset power supply completely.</li>
+    <li>Inspect inverter board for damage.</li>
+    <li>Check compressor wiring.</li>
+    <li>Replace inverter PCB if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E23</div>
+  <div class="title">Phase Loss Error</div>
+  <ul class="steps">
+    <li>Check electrical supply stability.</li>
+    <li>Inspect wiring connections.</li>
+    <li>Verify correct voltage phases.</li>
+    <li>Contact an electrician if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E24</div>
+  <div class="title">Sensor Calibration Error</div>
+  <ul class="steps">
+    <li>Reset unit to factory settings.</li>
+    <li>Check sensor mounting position.</li>
+    <li>Inspect calibration data.</li>
+    <li>Replace sensor or PCB if required.</li>
+  </ul>
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E1</span> Room Temperature Sensor Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect room temperature sensor wiring.</li>
-<li>Clean dust buildup around sensor area.</li>
-<li>Test thermistor resistance values with multimeter.</li>
-<li>Replace sensor if readings are abnormal.</li>
-</ul>
-</div>
-</div>
+</body>
+</html>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E2</span> Indoor Coil Sensor Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check evaporator coil sensor wiring connections.</li>
-<li>Inspect coil for frost or ice buildup.</li>
-<li>Test sensor continuity.</li>
-<li>Replace sensor if faulty.</li>
-</ul>
-</div>
-</div>
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E3</span> Outdoor Unit Communication Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect indoor-to-outdoor communication wiring.</li>
-<li>Check cable connectors for corrosion or looseness.</li>
-<li>Reset system power completely.</li>
-<li>Replace communication PCB if issue persists.</li>
-</ul>
-</div>
-</div>
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E4</span> Compressor Overload Protection</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn OFF the air conditioner immediately.</li>
-<li>Inspect refrigerant pressure levels.</li>
-<li>Check compressor wiring connections.</li>
-<li>Allow system to cool before restarting.</li>
-</ul>
-</div>
-</div>
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">P1</span> Voltage Protection Activated</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check incoming voltage stability from power source.</li>
-<li>Inspect circuit breaker and electrical outlet.</li>
-<li>Use voltage stabilizer if fluctuations occur.</li>
-<li>Restart unit after voltage stabilizes.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">P2</span> Compressor Temperature Protection</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect condenser coil for dirt or blockage.</li>
-<li>Ensure outdoor airflow is unrestricted.</li>
-<li>Check refrigerant system performance.</li>
-<li>Allow unit to cool before restarting.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E5</span> Fan Motor Malfunction</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect fan blades for obstruction or damage.</li>
-<li>Check motor wiring connections.</li>
-<li>Test fan motor capacitor if applicable.</li>
-<li>Replace fan motor if it fails to operate.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E6</span> Compressor Start Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check power supply stability.</li>
-<li>Inspect compressor wiring and capacitor.</li>
-<li>Verify refrigerant pressure conditions.</li>
-<li>Replace compressor relay if needed.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E7</span> Defrost Sensor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect defrost sensor wiring connections.</li>
-<li>Check sensor resistance values.</li>
-<li>Look for ice buildup around coil.</li>
-<li>Replace sensor if readings are incorrect.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E8</span> Indoor Fan Speed Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check indoor fan motor operation.</li>
-<li>Inspect speed sensor wiring.</li>
-<li>Clean fan assembly from dust buildup.</li>
-<li>Replace motor if speed is unstable.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E9</span> Expansion Valve Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect electronic expansion valve wiring.</li>
-<li>Check refrigerant flow system.</li>
-<li>Reset unit power cycle.</li>
-<li>Replace valve if malfunction persists.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">H1</span> Frost Protection Mode</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Allow unit to defrost automatically.</li>
-<li>Check airflow and filter cleanliness.</li>
-<li>Inspect coil temperature sensor.</li>
-<li>Restart after frost clears.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">H2</span> High Pressure Protection</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect condenser coil for blockage or dirt.</li>
-<li>Check outdoor fan operation.</li>
-<li>Verify refrigerant levels.</li>
-<li>Allow system to stabilize before restart.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">H3</span> Overload Protection</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off unit and allow cooling.</li>
-<li>Inspect compressor load conditions.</li>
-<li>Check electrical supply stability.</li>
-<li>Restart after system resets.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">U4</span> Communication Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect indoor and outdoor wiring harness.</li>
-<li>Check connectors for corrosion or looseness.</li>
-<li>Reset system power cycle.</li>
-<li>Replace communication board if needed.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E10</span> EEPROM Data Corruption</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Power cycle unit for 10–15 minutes.</li>
-<li>Check control board for moisture damage.</li>
-<li>Inspect firmware integrity (if service tool available).</li>
-<li>Replace main PCB if memory error persists.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E11</span> Indoor Ambient Sensor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check room sensor wiring connection.</li>
-<li>Clean dust around sensor housing.</li>
-<li>Test thermistor resistance.</li>
-<li>Replace sensor if readings are unstable.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E12</span> Outdoor Ambient Sensor Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect outdoor sensor wiring and connectors.</li>
-<li>Check for corrosion or water intrusion.</li>
-<li>Test resistance using multimeter.</li>
-<li>Replace sensor if out of range.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E13</span> Coil Temperature Sensor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect evaporator coil sensor placement.</li>
-<li>Check wiring harness for damage.</li>
-<li>Test sensor continuity.</li>
-<li>Replace sensor if defective.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E14</span> Compressor Current Overload</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off unit immediately.</li>
-<li>Check compressor for mechanical binding.</li>
-<li>Inspect refrigerant pressure levels.</li>
-<li>Replace compressor relay or capacitor if needed.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E15</span> Low Refrigerant Detection</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for refrigerant leaks in system.</li>
-<li>Inspect pressure readings using gauges.</li>
-<li>Look for oil residue near piping.</li>
-<li>Recharge refrigerant after leak repair.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E16</span> High Discharge Temperature</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect condenser coil cleanliness.</li>
-<li>Check outdoor fan operation.</li>
-<li>Verify airflow is not blocked.</li>
-<li>Allow system to cool before restart.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E17</span> Outdoor Fan Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect fan blades for obstruction.</li>
-<li>Check motor wiring connections.</li>
-<li>Test capacitor and motor function.</li>
-<li>Replace fan motor if not running.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E18</span> Indoor Fan Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check blower fan for dust or blockage.</li>
-<li>Inspect motor wiring harness.</li>
-<li>Test fan speed operation.</li>
-<li>Replace motor if faulty.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E19</span> Condensate Overflow</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check drain pan for clogging.</li>
-<li>Inspect drain hose for blockage.</li>
-<li>Clean condensate line thoroughly.</li>
-<li>Ensure proper slope for drainage.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E20</span> High Pressure Switch Trip</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check condenser coil for dirt buildup.</li>
-<li>Inspect refrigerant overcharge condition.</li>
-<li>Ensure outdoor airflow is unrestricted.</li>
-<li>Reset system after pressure normalizes.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E21</span> Low Pressure Switch Trip</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for refrigerant leaks.</li>
-<li>Inspect suction line for frost or blockage.</li>
-<li>Test system pressure with gauges.</li>
-<li>Recharge refrigerant after repair.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E22</span> Inverter Module Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reset power supply completely.</li>
-<li>Inspect inverter board for burn marks.</li>
-<li>Check compressor wiring connections.</li>
-<li>Replace inverter PCB if faulty.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E23</span> Phase Loss Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check electrical supply stability.</li>
-<li>Inspect wiring for loose connection.</li>
-<li>Verify correct voltage phases.</li>
-<li>Contact electrician if issue persists.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E24</span> Sensor Calibration Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reset unit to factory settings if possible.</li>
-<li>Check sensor mounting position.</li>
-<li>Inspect control board calibration data.</li>
-<li>Replace sensor or PCB if needed.</li>
-</ul>
-</div>
-</div>
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
 
 <!-- FAQ SECTION -->
 <div class="faq">
@@ -600,155 +705,79 @@ h2{
 
 <br>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my GE air conditioner not cooling?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check if the temperature is set correctly and in cooling mode.</li>
-<li>Clean or replace dirty air filters.</li>
-<li>Ensure doors and windows are closed in the room.</li>
-<li>Inspect refrigerant level if cooling is still weak.</li>
-</ul>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE air conditioner not cooling?</div>
+<div class="answer">
+Check that the thermostat is set correctly and cooling mode is selected. Clean or replace dirty air filters, ensure doors and windows are closed, and inspect refrigerant levels if cooling remains weak.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my GE AC not turning on?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check power supply and circuit breaker.</li>
-<li>Replace remote control batteries if needed.</li>
-<li>Ensure the plug is properly connected.</li>
-<li>Try resetting the unit by unplugging it for a few minutes.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE AC not turning on?</div>
+<div class="answer">
+Check the power supply and circuit breaker. Ensure the power cord is securely connected, replace remote control batteries if needed, and try resetting the unit by unplugging it for several minutes.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my GE air conditioner leaking water?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check if the drain line is clogged.</li>
-<li>Clean dirty air filters to improve airflow.</li>
-<li>Ensure the unit is properly leveled.</li>
-<li>Inspect for ice buildup on evaporator coils.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE air conditioner leaking water?</div>
+<div class="answer">
+Inspect the drain line for clogs, clean dirty air filters, ensure the unit is properly leveled, and check for ice buildup on the evaporator coil.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my GE AC making loud noises?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for loose panels or parts.</li>
-<li>Clean fan blades and remove debris.</li>
-<li>Ensure nothing is blocking the outdoor unit.</li>
-<li>Inspect motor or compressor if noise continues.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE AC making loud noises?</div>
+<div class="answer">
+Check for loose panels or components, clean fan blades and remove debris, ensure the outdoor unit is unobstructed, and inspect the motor or compressor if noise persists.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my GE AC smell bad?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean air filters and indoor coils.</li>
-<li>Remove mold or moisture buildup.</li>
-<li>Run fan-only mode to dry the unit.</li>
-<li>Check and clean the drain pan.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my GE AC smell bad?</div>
+<div class="answer">
+Clean the air filter and evaporator coil, remove any mold or moisture buildup, clean the drain pan, and run fan-only mode to help dry the system.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my GE AC blowing warm air?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure cooling mode is selected.</li>
-<li>Clean or replace clogged filters.</li>
-<li>Check refrigerant levels.</li>
-<li>Inspect outdoor unit for proper operation.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE AC blowing warm air?</div>
+<div class="answer">
+Verify that cooling mode is selected, clean clogged filters, inspect the outdoor unit for proper operation, and check refrigerant levels if cooling performance is poor.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my GE AC remote not working?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Replace remote batteries.</li>
-<li>Check if there is an obstruction to the sensor.</li>
-<li>Ensure the remote is compatible with the unit.</li>
-<li>Try resetting the AC system.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE AC remote not working?</div>
+<div class="answer">
+Replace the remote batteries, ensure there are no obstructions blocking the sensor, verify compatibility with the unit, and restart the air conditioner if necessary.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my GE AC turn off by itself?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check timer or sleep mode settings.</li>
-<li>Inspect power supply stability.</li>
-<li>Clean filters to prevent overheating.</li>
-<li>Look for error codes on display.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my GE AC turn off by itself?</div>
+<div class="answer">
+Check timer or sleep mode settings, inspect the power supply for interruptions, clean air filters to prevent overheating, and look for any active error codes on the display.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my GE AC not responding to controls?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart the air conditioner.</li>
-<li>Check remote sensor and batteries.</li>
-<li>Inspect control panel for faults.</li>
-<li>Ensure no electrical issues in the system.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE AC not responding to controls?</div>
+<div class="answer">
+Restart the air conditioner, check remote control batteries, inspect the control panel for faults, and verify that the appliance is receiving stable power.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>How do I reset my GE air conditioner?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off the unit and unplug it.</li>
-<li>Wait 5–10 minutes before restoring power.</li>
-<li>Press the reset button if available.</li>
-<li>Restart and reconfigure settings.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my GE air conditioner?</div>
+<div class="answer">
+Turn off the unit and unplug it from the power source. Wait 5–10 minutes, restore power, press the reset button if available, and reconfigure settings as needed.
 </div>
 </div>
+
 
 </div>
 

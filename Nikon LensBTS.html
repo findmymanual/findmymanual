@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nikon Lens / Autofocus Error Codes Guide</title>
+
+<title>Nikon Lens / Autofocus Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Nikon Lens / Autofocus error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Nikon Lens / Autofocus Error Codes & Troubleshooting Guide",
+  "description": "Complete Nikon Lens / Autofocus error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -68,7 +164,7 @@ h1{
 }
 
 .code{
-    font-size:22px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
     margin-bottom:10px;
@@ -92,107 +188,472 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Nikon Lens / Autofocus Errors</h1>
+<h1>Nikon Lens / Autofocus Error Codes</h1>
 
-<p class="subtitle">
-<strong>Lens & Focus System Troubleshooting Guide</strong>
+<p class="subtitle"><strong>Complete Nikon Lens / Autofocus Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Nikon Lens / Autofocus error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
 
-<!-- ================= AUTOFOCUS ================= -->
-<div class="section-title">Autofocus System Errors</div>
-
 <div class="grid">
 
-<div class="card">
-<div class="code">AF</div>
-<div class="title">Autofocus Failure</div>
-<ul class="steps">
-<li>Switch to manual focus and test lens response.</li>
-<li>Clean lens contacts carefully.</li>
-<li>Check for obstruction in focus mechanism.</li>
-<li>Try another lens to isolate issue.</li>
-</ul>
+            <div class="card" onclick="toggleCard(this)">
+  <div class="code">AF</div>
+  <div class="title">Autofocus Failure</div>
+  <ul class="steps">
+    <li>Switch to manual focus to test lens response.</li>
+    <li>Clean lens and camera contacts.</li>
+    <li>Check for physical obstruction in focus mechanism.</li>
+    <li>Test with another lens to isolate the issue.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">AF-S</div>
-<div class="title">Focus Lock Failure</div>
-<ul class="steps">
-<li>Ensure proper focus point selection.</li>
-<li>Check lighting conditions for focusing.</li>
-<li>Reset autofocus settings.</li>
-<li>Test focus in single-point AF mode.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">AF-S</div>
+  <div class="title">Single Autofocus Lock Failure</div>
+  <ul class="steps">
+    <li>Ensure correct focus point selection.</li>
+    <li>Improve lighting conditions for accurate focus detection.</li>
+    <li>Reset autofocus settings to default.</li>
+    <li>Test in single-point AF mode.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">AF-C</div>
+  <div class="title">Continuous Autofocus Instability</div>
+  <ul class="steps">
+    <li>Switch temporarily to AF-S mode.</li>
+    <li>Check subject tracking settings.</li>
+    <li>Update camera firmware.</li>
+    <li>Test with another compatible lens.</li>
+  </ul>
 </div>
 
-<!-- ================= CONTINUOUS AF ================= -->
-<div class="section-title">Continuous Focus Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">AF-C</div>
-<div class="title">Continuous Focus Error</div>
-<ul class="steps">
-<li>Switch to single AF mode and test.</li>
-<li>Check subject tracking settings.</li>
-<li>Update camera firmware if available.</li>
-<li>Test with different lens if possible.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">AF-ON</div>
+  <div class="title">Back Button Focus Failure</div>
+  <ul class="steps">
+    <li>Check AF-ON button assignment in settings.</li>
+    <li>Reset custom button configuration.</li>
+    <li>Test button responsiveness for physical issues.</li>
+    <li>Reassign autofocus function if required.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">AF LOCK</div>
+  <div class="title">Focus Lock Not Engaging</div>
+  <ul class="steps">
+    <li>Check if AF-L button is enabled.</li>
+    <li>Ensure correct exposure/focus mode is selected.</li>
+    <li>Reset autofocus configuration.</li>
+    <li>Test in AF-S mode for stability.</li>
+  </ul>
 </div>
 
-<!-- ================= COMMUNICATION ================= -->
-<div class="section-title">Lens Communication Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">ERR LENS</div>
-<div class="title">Lens Communication Issue</div>
-<ul class="steps">
-<li>Remove and reattach lens securely.</li>
-<li>Clean lens electrical contacts.</li>
-<li>Try another compatible lens.</li>
-<li>Inspect lens mount for damage or dust.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">MF LOCK</div>
+  <div class="title">Manual Focus Lock Issue</div>
+  <ul class="steps">
+    <li>Ensure lens is not stuck in MF mode.</li>
+    <li>Toggle AF/MF switch on lens body.</li>
+    <li>Inspect focus ring for stiffness or damage.</li>
+    <li>Test autofocus switching response.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERR FOCUS</div>
+  <div class="title">Focus System Error</div>
+  <ul class="steps">
+    <li>Restart camera and lens system.</li>
+    <li>Clean lens contacts.</li>
+    <li>Remove battery and memory card, then reboot.</li>
+    <li>Test with another lens if possible.</li>
+  </ul>
 </div>
 
-<!-- ================= ZOOM ================= -->
-<div class="section-title">Mechanical Lens Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">ERR ZOOM</div>
-<div class="title">Zoom Mechanism Jam</div>
-<ul class="steps">
-<li>Gently extend and retract zoom ring.</li>
-<li>Check for sand or debris in barrel.</li>
-<li>Avoid forcing zoom movement.</li>
-<li>Service lens if mechanical jam persists.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FOCUS HUNT</div>
+  <div class="title">Lens Hunting / Searching Focus</div>
+  <ul class="steps">
+    <li>Improve lighting conditions.</li>
+    <li>Reduce subject movement.</li>
+    <li>Switch to single-point AF mode.</li>
+    <li>Check lens motor performance.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERR LENS</div>
+  <div class="title">Lens Communication Failure</div>
+  <ul class="steps">
+    <li>Remove and reattach lens securely.</li>
+    <li>Clean electrical contacts carefully.</li>
+    <li>Try another compatible Nikon lens.</li>
+    <li>Inspect mount for dust or damage.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">CPU ERR</div>
+  <div class="title">CPU Lens Communication Fault</div>
+  <ul class="steps">
+    <li>Clean lens and body electronic contacts.</li>
+    <li>Reattach lens firmly to mount.</li>
+    <li>Test with another CPU lens.</li>
+    <li>Inspect mount pins for damage or corrosion.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERR ZOOM</div>
+  <div class="title">Zoom Mechanism Jam</div>
+  <ul class="steps">
+    <li>Gently rotate zoom ring back and forth.</li>
+    <li>Check for dust, sand, or debris.</li>
+    <li>Avoid forcing lens movement.</li>
+    <li>Service lens if jam persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">VR ERR</div>
+  <div class="title">Vibration Reduction Error</div>
+  <ul class="steps">
+    <li>Turn VR off and back on.</li>
+    <li>Check stabilization switch on lens.</li>
+    <li>Test with VR disabled.</li>
+    <li>Inspect for internal stabilization failure.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">BACK FOCUS</div>
+  <div class="title">Focus Behind Subject</div>
+  <ul class="steps">
+    <li>Recalibrate autofocus fine-tune settings.</li>
+    <li>Test different focus points.</li>
+    <li>Try smaller aperture for better depth accuracy.</li>
+    <li>Service lens if calibration fails.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FRONT FOCUS</div>
+  <div class="title">Focus in Front of Subject</div>
+  <ul class="steps">
+    <li>Adjust AF fine-tune settings.</li>
+    <li>Test at different apertures.</li>
+    <li>Recalibrate lens-body pairing.</li>
+    <li>Inspect lens alignment for optical issues.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">HUNT STOP</div>
+  <div class="title">Autofocus Cycling / Failure to Lock</div>
+  <ul class="steps">
+    <li>Improve lighting and contrast.</li>
+    <li>Switch to single-point AF mode.</li>
+    <li>Reduce subject movement.</li>
+    <li>Check lens motor performance.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FOCUS ERR</div>
+  <div class="title">General Autofocus System Error</div>
+  <ul class="steps">
+    <li>Restart camera system.</li>
+    <li>Reset autofocus settings.</li>
+    <li>Clean lens contacts.</li>
+    <li>Test with another lens.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">LENS JAM</div>
+  <div class="title">Focus Motor / Internal Lens Jam</div>
+  <ul class="steps">
+    <li>Turn off camera immediately.</li>
+    <li>Do not force focus or zoom ring.</li>
+    <li>Check for impact or debris.</li>
+    <li>Send lens for professional servicing.</li>
+  </ul>
+</div></div>
+
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon lens not focusing properly?</div>
+<div class="answer">
+Check that the lens is set to autofocus (AF) mode. Clean the lens and camera contacts carefully. Ensure there is enough light and the subject has clear contrast. If the issue continues, test with another compatible lens to isolate the problem.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon autofocus hunting or constantly searching?</div>
+<div class="answer">
+Autofocus hunting is usually caused by low light, low-contrast subjects, or incorrect AF mode. Switch to single-point AF, improve lighting, and ensure the subject is not moving too erratically.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon lens not respond to autofocus?</div>
+<div class="answer">
+Make sure AF is enabled on both the camera and lens. Check for dirty or damaged contacts. Restart the camera and reattach the lens securely. Try another lens to confirm if the issue is body or lens related.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon autofocus slow or inaccurate?</div>
+<div class="answer">
+Slow or inaccurate focus may be caused by low light, incorrect AF mode selection, or a worn lens motor. Clean contacts, update firmware, and test in better lighting conditions.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon lens make unusual focusing noises?</div>
+<div class="answer">
+Clicking or grinding sounds may indicate a struggling focus motor or internal mechanical resistance. Stop using the lens if noise becomes severe and have it inspected for internal damage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon lens stuck and not zooming or focusing?</div>
+<div class="answer">
+This may be caused by internal mechanical jam, dust, or impact damage. Do not force the lens. Gently rotate the zoom/focus ring and check for obstructions. Service may be required.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon autofocus fail in low light?</div>
+<div class="answer">
+Autofocus performance drops in low light conditions. Use AF assist light, switch to manual focus, or increase ambient lighting to improve focusing accuracy.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon lens show AF error or communication failure?</div>
+<div class="answer">
+This usually indicates poor lens-to-body communication. Clean the electronic contacts, reattach the lens, and test with another compatible lens if available.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon autofocus switching between subjects?</div>
+<div class="answer">
+This may happen due to AF-C mode sensitivity or complex scenes. Switch to AF-S mode or single-point focus to stabilize focus behavior.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon lens not sharp even after focusing?</div>
+<div class="answer">
+Soft images may result from incorrect focus point selection, lens misalignment, or optical issues. Recalibrate focus settings and test at different apertures.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset Nikon lens autofocus settings?</div>
+<div class="answer">
+Turn off the camera, detach the lens, wait a few seconds, then reattach it. Reset camera AF settings to default and test autofocus again.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why do Nikon lens autofocus problems keep coming back?</div>
+<div class="answer">
+Recurring autofocus issues may indicate worn focus motors, internal lens damage, dirty contacts, or firmware compatibility problems requiring service.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I send my Nikon lens for repair?</div>
+<div class="answer">
+Contact a technician if autofocus completely fails, the lens makes grinding noises, focus is inconsistent across all modes, or physical damage is suspected.
+</div>
 </div>
 
 <div class="note">
-<strong>Note:</strong> Autofocus and lens communication errors are often caused by dirty contacts or mechanical obstruction.
+<strong>Important:</strong> If your Nikon lens continues to malfunction after troubleshooting, stop using it immediately. Persistent autofocus or mechanical issues may indicate motor failure, internal misalignment, electronic contact damage, or optical system faults. Continued use may worsen the damage. Have the lens inspected by an authorized Nikon service center.
 </div>
 
-</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 

@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sharp System Messages Guide</title>
+
+<title>Sharp System Messages Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Sharp System Messages error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Sharp System Messages Error Codes & Troubleshooting Guide",
+  "description": "Complete Sharp System Messages error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -92,111 +188,426 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Sharp System Messages</h1>
+<h1>Sharp System Messages Error Codes</h1>
 
-<p class="subtitle">
-<strong>Status Indicators & Meaning Guide</strong>
+<p class="subtitle"><strong>Complete Sharp System Messages Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Sharp System Messages error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
-
-<!-- ================= CONTROL ================= -->
-<div class="section-title">Control & Safety Messages</div>
 
 <div class="grid">
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">LOC</div>
 <div class="title">Child Lock Active</div>
 <ul class="steps">
-<li>Press and hold lock/unlock button for a few seconds.</li>
-<li>Refer to model-specific control panel instructions.</li>
-<li>Perform a power reset if lock does not clear.</li>
-<li>Ensure no buttons are stuck.</li>
+<li>Press and hold the lock/unlock button for a few seconds.</li>
+<li>Refer to the control panel instructions for your model.</li>
+<li>Perform a power reset if the lock does not clear.</li>
+<li>Check if any buttons are stuck or jammed.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">PF</div>
 <div class="title">Power Failure Detected</div>
 <ul class="steps">
 <li>Check household power supply.</li>
 <li>Inspect circuit breaker or fuse box.</li>
-<li>Reset appliance after power stabilizes.</li>
+<li>Wait until power stabilizes before restarting.</li>
 <li>Ensure stable voltage supply.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= WARNING ================= -->
-<div class="section-title">Warning Messages</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">HOT</div>
 <div class="title">Overheat Warning</div>
 <ul class="steps">
-<li>Turn off appliance and allow cooling.</li>
+<li>Turn off the appliance and allow it to cool completely.</li>
 <li>Check ventilation openings for blockage.</li>
-<li>Ensure fan system is working properly.</li>
-<li>Restart after temperature normalizes.</li>
+<li>Ensure fan system is operating correctly.</li>
+<li>Restart only after temperature normalizes.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">ERR</div>
 <div class="title">General System Error</div>
 <ul class="steps">
 <li>Power cycle the appliance.</li>
-<li>Check for visible wiring or control issues.</li>
-<li>Reset system using restart option.</li>
-<li>Call technician if error persists.</li>
+<li>Check wiring and control panel connections.</li>
+<li>Reset system using power restart.</li>
+<li>Contact service technician if issue persists.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= SYSTEM ================= -->
-<div class="section-title">System Status Messages</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">RESET</div>
 <div class="title">System Restart Required</div>
 <ul class="steps">
-<li>Disconnect power for a few minutes.</li>
-<li>Reconnect and restart appliance.</li>
-<li>Check if message returns.</li>
-<li>Inspect control board if persistent.</li>
+<li>Disconnect power for 5–10 minutes.</li>
+<li>Reconnect and restart the appliance.</li>
+<li>Verify if the message clears.</li>
+<li>Inspect control board if error continues.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">COOL</div>
 <div class="title">Cooling Cycle Active</div>
 <ul class="steps">
 <li>Allow appliance to complete cooling cycle.</li>
-<li>Do not open doors unnecessarily.</li>
+<li>Avoid frequent door opening.</li>
 <li>Ensure airflow is not blocked.</li>
-<li>Monitor temperature stabilization.</li>
+<li>Wait for temperature stabilization.</li>
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E1</div>
+<div class="title">Sensor Communication Fault</div>
+<ul class="steps">
+<li>Inspect sensor wiring connections.</li>
+<li>Check for loose or damaged connectors.</li>
+<li>Restart system after power reset.</li>
+<li>Replace sensor if issue persists.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E2</div>
+<div class="title">Airflow Blockage Detected</div>
+<ul class="steps">
+<li>Check and clean air vents.</li>
+<li>Ensure filters are not clogged.</li>
+<li>Remove any obstructions near airflow path.</li>
+<li>Restart appliance after cleaning.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E3</div>
+<div class="title">Motor Overload Protection</div>
+<ul class="steps">
+<li>Turn off appliance and allow cooling.</li>
+<li>Check for mechanical obstruction.</li>
+<li>Reduce continuous usage time.</li>
+<li>Restart after cooldown period.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E4</div>
+<div class="title">Fan System Error</div>
+<ul class="steps">
+<li>Inspect fan blades for blockage.</li>
+<li>Check fan motor wiring.</li>
+<li>Ensure fan rotates freely.</li>
+<li>Replace fan motor if faulty.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E5</div>
+<div class="title">Temperature Detection Fault</div>
+<ul class="steps">
+<li>Allow unit to stabilize temperature.</li>
+<li>Check environmental conditions.</li>
+<li>Ensure proper airflow and ventilation.</li>
+<li>Restart after 10–15 minutes.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E6</div>
+<div class="title">Control Board Communication Error</div>
+<ul class="steps">
+<li>Power cycle the system.</li>
+<li>Inspect wiring harness connections.</li>
+<li>Check for moisture or corrosion on PCB.</li>
+<li>Replace control board if needed.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E7</div>
+<div class="title">Power Supply Instability</div>
+<ul class="steps">
+<li>Check voltage stability.</li>
+<li>Avoid using extension cords.</li>
+<li>Inspect power cable condition.</li>
+<li>Reset appliance after stabilizing power.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E8</div>
+<div class="title">Memory / EEPROM Error</div>
+<ul class="steps">
+<li>Disconnect power and restart system.</li>
+<li>Check control board for damage.</li>
+<li>Inspect memory chip connections.</li>
+<li>Replace PCB if error persists.</li>
+</ul>
+</div></div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sharp System show ERR or system error messages?</div>
+<div class="answer">
+ERR messages usually indicate sensor faults, airflow restrictions, overheating protection, compressor or motor communication errors, or control board issues. Turn off the unit, unplug it for a few minutes, then restart. Check ventilation, door seals, and power stability.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sharp System stop working during operation?</div>
+<div class="answer">
+This is often caused by thermal protection, motor overload, blocked airflow, or internal system faults. Allow the unit to cool, clear any obstructions, and restart after a few minutes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sharp System not turn on?</div>
+<div class="answer">
+Check the power outlet, breaker, power cord, and internal fuse if applicable. Ensure all components are properly installed and the system has stable voltage supply before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sharp System lose performance or cooling/operation strength?</div>
+<div class="answer">
+Reduced performance is commonly caused by clogged filters, restricted airflow, dirty coils, weak fans, or refrigerant or mechanical issues depending on the model. Clean all filters and ensure proper ventilation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sharp System make unusual noises?</div>
+<div class="answer">
+Unusual noises may come from fan motors, compressors, loose internal components, or debris inside the unit. Turn off the system and inspect for obstructions before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sharp System leak water or moisture?</div>
+<div class="answer">
+Water leakage is usually caused by blocked drainage, frozen evaporator coils, clogged filters, or improper installation. Clean drainage paths and ensure the unit is level.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sharp System produce bad odor during operation?</div>
+<div class="answer">
+Odors are typically caused by mold buildup, dirty filters, stagnant moisture, or debris inside airflow channels. Clean filters and interior components regularly.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sharp System keep shutting off randomly?</div>
+<div class="answer">
+Random shutdowns may be caused by overheating protection, unstable power supply, sensor faults, or internal control board issues. Ensure stable voltage and clean airflow pathways.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Sharp System messages?</div>
+<div class="answer">
+Turn off the system and disconnect power for 5–10 minutes. Reconnect power and restart the unit to clear temporary errors and reset internal controls.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sharp System show overheating warnings?</div>
+<div class="answer">
+Overheating warnings occur when airflow is blocked, filters are clogged, or the system is running under heavy load. Clean filters and allow the unit to cool completely before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I service my Sharp System?</div>
+<div class="answer">
+Service is recommended if errors persist, performance remains weak after cleaning, overheating continues, unusual noises occur, or the system frequently shuts down.
+</div>
 </div>
 
 <div class="note">
-<strong>Note:</strong> These messages are status indicators and not always faults. Persistent errors may require technician inspection.
+<strong>Important:</strong> Sharp System messages are safety features designed to protect internal components such as sensors, motors, compressors, fans, and control boards. If problems continue after troubleshooting, stop using the appliance and contact an authorized Sharp service center.
 </div>
 
-</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 
+
+

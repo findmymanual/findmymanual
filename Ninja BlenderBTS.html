@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ninja Blender Error Codes Troubleshooting Guide</title>
+
+<title>Ninja Blender Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Ninja Blender error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Ninja Blender Error Codes & Troubleshooting Guide",
+  "description": "Complete Ninja Blender error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -23,7 +119,6 @@ body{
     box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-
 h1{
     text-align:center;
     color:#666;
@@ -31,32 +126,28 @@ h1{
     background: #1f3b4d;
     color: white;
     padding: 25px;
-
 }
 
 .subtitle{
     text-align:center;
     color:#666;
     margin-bottom:30px;
-    
 }
 
-.section{
+.section-title{
     margin-top:40px;
-}
-
-.section h2{
+    font-size:20px;
+    font-weight:bold;
     border-left:5px solid #e60012;
     padding-left:10px;
-    font-size:20px;
     color:#444;
-    margin-bottom:20px;
 }
 
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
+    margin-top:20px;
 }
 
 .card{
@@ -73,10 +164,10 @@ h1{
 }
 
 .code{
-    font-size:24px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
-    margin-bottom:8px;
+    margin-bottom:10px;
 }
 
 .title{
@@ -97,174 +188,501 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Ninja Blender Error Codes Troubleshooting Guide</h1>
-<p class="subtitle"><strong>Complete Diagnostic & Repair Instructions</strong></p>
+<h1>Ninja Blender Error Codes</h1>
 
-<!-- ================= MOTOR & MECHANICAL ================= -->
-<div class="section">
-<h2>Motor & Mechanical Errors</h2>
+<p class="subtitle"><strong>Complete Ninja Blender Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Ninja Blender error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
+
 <div class="grid">
 
-<div class="card">
-<div class="code">E1</div>
-<div class="title">Motor Overload</div>
-<ul class="steps">
-<li>Turn off and unplug blender immediately.</li>
-<li>Remove contents and reduce load.</li>
-<li>Let motor cool for 15–20 minutes.</li>
-<li>Avoid blending thick ingredients continuously.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E1</div>
+  <div class="title">Motor Overload</div>
+  <ul class="steps">
+    <li>Turn off and unplug blender immediately.</li>
+    <li>Remove ingredients and reduce load size.</li>
+    <li>Let motor cool for 15–20 minutes.</li>
+    <li>Avoid blending very thick mixtures continuously.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E2</div>
-<div class="title">Blade Obstruction Detected</div>
-<ul class="steps">
-<li>Unplug unit before inspection.</li>
-<li>Remove stuck food or debris.</li>
-<li>Check blade rotation manually.</li>
-<li>Ensure container is properly aligned.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E2</div>
+  <div class="title">Blade Obstruction Detected</div>
+  <ul class="steps">
+    <li>Unplug unit before inspection.</li>
+    <li>Remove stuck food or debris from blades.</li>
+    <li>Manually check blade rotation.</li>
+    <li>Ensure pitcher is properly aligned.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E9</div>
-<div class="title">Blade Alignment Issue</div>
-<ul class="steps">
-<li>Remove pitcher and reseat properly.</li>
-<li>Check base coupling alignment.</li>
-<li>Inspect blade assembly.</li>
-<li>Replace worn blade connector if needed.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E3</div>
+  <div class="title">Overheating Protection Activated</div>
+  <ul class="steps">
+    <li>Turn off and unplug immediately.</li>
+    <li>Allow motor to cool completely.</li>
+    <li>Check ventilation openings for blockage.</li>
+    <li>Avoid long continuous blending cycles.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E10</div>
-<div class="title">Excess Vibration Detected</div>
-<ul class="steps">
-<li>Stop operation immediately.</li>
-<li>Balance contents inside pitcher.</li>
-<li>Check for uneven blade wear.</li>
-<li>Place blender on flat surface.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E4</div>
+  <div class="title">Pitcher Not Installed Correctly</div>
+  <ul class="steps">
+    <li>Remove and reinstall pitcher properly.</li>
+    <li>Check locking alignment system.</li>
+    <li>Clean base connectors.</li>
+    <li>Ensure secure lock before operation.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5</div>
+  <div class="title">Communication Fault</div>
+  <ul class="steps">
+    <li>Power cycle the blender.</li>
+    <li>Check internal wiring connections.</li>
+    <li>Inspect control board for moisture.</li>
+    <li>Replace PCB if issue persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E6</div>
+  <div class="title">Power Supply Instability</div>
+  <ul class="steps">
+    <li>Check wall outlet voltage.</li>
+    <li>Avoid using extension cords.</li>
+    <li>Try a different power socket.</li>
+    <li>Inspect power cord for damage.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E7</div>
+  <div class="title">Control Board Failure</div>
+  <ul class="steps">
+    <li>Unplug unit for 10 minutes.</li>
+    <li>Inspect control board for burns.</li>
+    <li>Check for moisture or short circuits.</li>
+    <li>Replace PCB if necessary.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E8</div>
+  <div class="title">Low Motor Efficiency</div>
+  <ul class="steps">
+    <li>Reduce ingredient load.</li>
+    <li>Clean blade assembly and coupling.</li>
+    <li>Check voltage stability.</li>
+    <li>Replace motor if performance drops.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E9</div>
+  <div class="title">Blade Alignment Issue</div>
+  <ul class="steps">
+    <li>Remove pitcher and reseat properly.</li>
+    <li>Check base coupling alignment.</li>
+    <li>Inspect blade assembly.</li>
+    <li>Replace worn connector if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E10</div>
+  <div class="title">Excess Vibration Detected</div>
+  <ul class="steps">
+    <li>Stop blender immediately.</li>
+    <li>Balance contents evenly.</li>
+    <li>Check blade wear or damage.</li>
+    <li>Place blender on flat surface.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E11</div>
+  <div class="title">Sensor Malfunction</div>
+  <ul class="steps">
+    <li>Restart the blender.</li>
+    <li>Check internal sensor wiring.</li>
+    <li>Clean connector points.</li>
+    <li>Replace sensor module if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E12</div>
+  <div class="title">Motor Stall Detected</div>
+  <ul class="steps">
+    <li>Remove heavy ingredients.</li>
+    <li>Let motor cool down.</li>
+    <li>Restart with lighter load.</li>
+    <li>Inspect motor if issue repeats.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERR1</div>
+  <div class="title">Motor Controller Fault</div>
+  <ul class="steps">
+    <li>Reset power supply.</li>
+    <li>Inspect motor controller wiring.</li>
+    <li>Check for overheating damage.</li>
+    <li>Replace controller module if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERR2</div>
+  <div class="title">Sensor Communication Failure</div>
+  <ul class="steps">
+    <li>Check sensor cables.</li>
+    <li>Clean internal connectors.</li>
+    <li>Restart unit.</li>
+    <li>Replace sensor if necessary.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERR3</div>
+  <div class="title">Overcurrent Protection Triggered</div>
+  <ul class="steps">
+    <li>Unplug blender immediately.</li>
+    <li>Reduce ingredient density.</li>
+    <li>Allow cooling period.</li>
+    <li>Test with lighter load.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERR4</div>
+  <div class="title">Safety Lock Engaged</div>
+  <ul class="steps">
+    <li>Ensure pitcher is properly locked.</li>
+    <li>Check lid alignment.</li>
+    <li>Re-seat container firmly.</li>
+    <li>Restart blender.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F21 / E21</div>
+  <div class="title">Motor Failure / Severe Jam</div>
+  <ul class="steps">
+    <li>Check blades for blockage.</li>
+    <li>Inspect motor shaft for damage.</li>
+    <li>Remove all load immediately.</li>
+    <li>Service motor if jam persists.</li>
+  </ul>
 </div>
 
 </div>
-</div>
 
-<!-- ================= HEATING & PROTECTION ================= -->
-<div class="section">
-<h2>Thermal & Protection Errors</h2>
-<div class="grid">
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
 
-<div class="card">
-<div class="code">E3</div>
-<div class="title">Overheating Protection</div>
-<ul class="steps">
-<li>Turn off blender and unplug.</li>
-<li>Allow motor to cool completely.</li>
-<li>Check ventilation openings.</li>
-<li>Avoid long continuous blending cycles.</li>
-</ul>
-</div>
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
 
-<div class="card">
-<div class="code">E8</div>
-<div class="title">Low Motor Efficiency Detected</div>
-<ul class="steps">
-<li>Check for overloading ingredients.</li>
-<li>Clean blade and motor coupling.</li>
-<li>Ensure proper voltage supply.</li>
-<li>Replace motor if performance drops.</li>
-</ul>
-</div>
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
 
-</div>
-</div>
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
 
-<!-- ================= INSTALLATION ERRORS ================= -->
-<div class="section">
-<h2>Installation & Usage Errors</h2>
-<div class="grid">
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
 
-<div class="card">
-<div class="code">E4</div>
-<div class="title">Pitcher Not Installed Correctly</div>
-<ul class="steps">
-<li>Remove pitcher and reinstall properly.</li>
-<li>Check locking mechanism alignment.</li>
-<li>Clean base connectors.</li>
-<li>Ensure secure fit before use.</li>
-</ul>
-</div>
+<br>
 
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Blender not turning on?</div>
+<div class="answer">
+Check if the blender is properly plugged in and the lid is securely locked. Ensure the power outlet is working. Inspect the base connection and try a different outlet. If it still won’t turn on, the motor base may need servicing.
 </div>
 </div>
 
-<!-- ================= ELECTRICAL & COMMUNICATION ================= -->
-<div class="section">
-<h2>Electrical & Communication Errors</h2>
-<div class="grid">
-
-<div class="card">
-<div class="code">E5</div>
-<div class="title">Communication Fault</div>
-<ul class="steps">
-<li>Power cycle the unit.</li>
-<li>Check internal wiring connections.</li>
-<li>Inspect PCB for moisture damage.</li>
-<li>Replace control board if needed.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Blender suddenly stop during use?</div>
+<div class="answer">
+This is usually caused by motor overheating, overload protection, or improper lid alignment. Turn off the blender, unplug it, and allow it to cool for 15–20 minutes before restarting.
+</div>
 </div>
 
-<div class="card">
-<div class="code">E7</div>
-<div class="title">Control Board Issue</div>
-<ul class="steps">
-<li>Disconnect power for 10 minutes.</li>
-<li>Inspect control board for burns.</li>
-<li>Check voltage stability.</li>
-<li>Replace PCB if faulty.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Blender not blending properly?</div>
+<div class="answer">
+The ingredients may be too thick or unevenly loaded. Add liquid, reduce food size, and avoid overfilling the pitcher. Check that blades are not blocked or dull.
+</div>
 </div>
 
-<div class="card">
-<div class="code">ERR1</div>
-<div class="title">Motor Controller Fault</div>
-<ul class="steps">
-<li>Reset power supply.</li>
-<li>Inspect motor controller wiring.</li>
-<li>Check for overheating damage.</li>
-<li>Replace controller module if needed.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Blender smell like burning?</div>
+<div class="answer">
+A burning smell may indicate motor strain or overheating. Stop using immediately, unplug the unit, and allow it to cool. Reduce load size and avoid long continuous blending cycles.
+</div>
 </div>
 
-<div class="card">
-<div class="code">ERR2</div>
-<div class="title">Sensor Communication Failure</div>
-<ul class="steps">
-<li>Check sensor connection cables.</li>
-<li>Clean internal connectors.</li>
-<li>Restart unit.</li>
-<li>Replace sensor module if necessary.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Blender leaking?</div>
+<div class="answer">
+Check if the pitcher is properly locked into the base. Inspect the gasket seal and blade assembly for cracks or misalignment. Replace damaged seals if necessary.
+</div>
 </div>
 
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Blender making loud noises?</div>
+<div class="answer">
+Loud noise may be caused by hard ingredients, misaligned blades, or worn motor bearings. Stop operation and check for obstructions or damage before continuing use.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Blender show ERR1?</div>
+<div class="answer">
+ERR1 usually indicates motor overload. Reduce ingredient load, allow the motor to cool, and restart the blender after a few minutes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Blender show ERR2?</div>
+<div class="answer">
+ERR2 indicates blade obstruction or jam. Unplug the unit, remove the pitcher, and clear any stuck food or debris from the blade assembly.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Blender show ERR3?</div>
+<div class="answer">
+ERR3 is commonly related to overheating protection. Turn off the blender and allow it to cool for at least 20 minutes before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Blender show ERR4?</div>
+<div class="answer">
+ERR4 may indicate improper pitcher installation. Remove and reseat the pitcher correctly until it locks securely into the base.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Blender show ERR5?</div>
+<div class="answer">
+ERR5 can indicate control board or communication failure. Unplug the unit for 10 minutes and restart. If it persists, servicing may be required.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Blender show ERR6?</div>
+<div class="answer">
+ERR6 usually points to power supply instability. Check the outlet, avoid extension cords, and try a different power source.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Blender show ERR7?</div>
+<div class="answer">
+ERR7 indicates sensor or motor feedback failure. Restart the unit and ensure the pitcher is properly aligned. If unresolved, internal inspection is required.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Blender show ERR8?</div>
+<div class="answer">
+ERR8 may be caused by excessive vibration or imbalance. Stop the blender and redistribute ingredients evenly inside the pitcher.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Ninja Blender?</div>
+<div class="answer">
+Turn off and unplug the blender for 10–15 minutes. Reconnect it to power and ensure the pitcher and lid are properly installed before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why do Ninja Blender problems keep coming back?</div>
+<div class="answer">
+Recurring issues may indicate worn motor components, damaged blade assembly, overheating protection activation, or electrical instability requiring service.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace or repair my Ninja Blender?</div>
+<div class="answer">
+Seek repair if the blender repeatedly shuts off, shows persistent error codes, emits burning smells, or fails to start even after troubleshooting.
 </div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> Always unplug the blender before inspection. If electrical or motor errors persist, contact Ninja customer support or a qualified technician.
+<strong>Important:</strong> If your Ninja Blender continues to malfunction after troubleshooting, stop using it immediately. Persistent faults may indicate motor failure, control board damage, overheating protection issues, or electrical system problems. Continued use may worsen the damage or create safety risks. Contact an authorized Ninja service center for proper diagnosis and repair.
 </div>
 
-</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 

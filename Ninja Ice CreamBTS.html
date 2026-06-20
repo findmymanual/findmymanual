@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ninja Ice Cream Maker Error Codes Troubleshooting Guide</title>
+
+<title>Ninja Ice Cream Maker Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Ninja Ice Cream Maker error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Ninja Ice Cream Maker Error Codes & Troubleshooting Guide",
+  "description": "Complete Ninja Ice Cream Maker error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -36,13 +132,22 @@ h1{
     text-align:center;
     color:#666;
     margin-bottom:30px;
-    
+}
+
+.section-title{
+    margin-top:40px;
+    font-size:20px;
+    font-weight:bold;
+    border-left:5px solid #e60012;
+    padding-left:10px;
+    color:#444;
 }
 
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
+    margin-top:20px;
 }
 
 .card{
@@ -83,7 +188,129 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
@@ -91,149 +318,430 @@ h1{
 <div class="container">
 
 <h1>Ninja Ice Cream Maker Error Codes</h1>
-<p class="subtitle"><strong>Troubleshooting & Repair Guide</strong></p>
+
+<p class="subtitle"><strong>Complete Ninja Ice Cream Maker Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Ninja Ice Cream Maker error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
 <!-- E1 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E1</div>
-<div class="title">Lid Not Installed</div>
+<div class="title">Lid Not Locked</div>
 <ul class="steps">
-<li>Ensure lid is properly placed and locked.</li>
-<li>Check alignment of lid sensors.</li>
-<li>Clean sensor area for debris or residue.</li>
-<li>Restart the unit after proper installation.</li>
+<li>Ensure lid is fully closed and locked into position.</li>
+<li>Check lid alignment with safety sensor.</li>
+<li>Clean sensor area from residue or frost.</li>
+<li>Restart unit after securing lid properly.</li>
 </ul>
 </div>
 
 <!-- E2 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E2</div>
 <div class="title">Motor Overload</div>
 <ul class="steps">
-<li>Turn off the machine and let it cool down.</li>
-<li>Do not overfill the mixing container.</li>
-<li>Check for frozen blockages inside bowl.</li>
-<li>Restart after 15–20 minutes.</li>
+<li>Turn off and unplug the unit immediately.</li>
+<li>Reduce frozen ingredients or mix load.</li>
+<li>Allow motor to cool for 15–20 minutes.</li>
+<li>Avoid using overly hard frozen blocks.</li>
 </ul>
 </div>
 
 <!-- E3 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E3</div>
-<div class="title">Pint Issue</div>
+<div class="title">Pint Not Detected</div>
 <ul class="steps">
-<li>Ensure pint is correctly inserted.</li>
-<li>Check for cracks or deformation.</li>
-<li>Clean base and contact points.</li>
-<li>Replace pint if damaged.</li>
+<li>Insert pint container correctly into base.</li>
+<li>Check alignment with locking system.</li>
+<li>Clean contact points and sensor area.</li>
+<li>Replace pint if cracked or deformed.</li>
 </ul>
 </div>
 
 <!-- E4 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E4</div>
-<div class="title">Blade Error</div>
+<div class="title">Blade Assembly Error</div>
 <ul class="steps">
-<li>Remove and inspect blade assembly.</li>
-<li>Check for food blockage or ice buildup.</li>
-<li>Reinstall blade securely.</li>
-<li>Replace blade if worn or damaged.</li>
+<li>Remove blade assembly and inspect for damage.</li>
+<li>Clear frozen ice or ingredient blockage.</li>
+<li>Reinstall blades securely into position.</li>
+<li>Replace blade unit if worn or broken.</li>
 </ul>
 </div>
 
 <!-- E5 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E5</div>
-<div class="title">Temperature Issue</div>
+<div class="title">Temperature Detection Fault</div>
 <ul class="steps">
-<li>Allow unit to reach room temperature.</li>
-<li>Ensure freezer temperature is adequate.</li>
-<li>Check cooling environment.</li>
-<li>Restart machine after cooling period.</li>
+<li>Allow unit to reach proper freezing temperature.</li>
+<li>Check freezer environment stability.</li>
+<li>Ensure pint is pre-frozen correctly.</li>
+<li>Restart after 10–15 minutes.</li>
 </ul>
 </div>
 
 <!-- E6 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E6</div>
 <div class="title">Cooling System Failure</div>
 <ul class="steps">
 <li>Check ventilation around unit.</li>
-<li>Ensure freezer is functioning properly.</li>
-<li>Inspect cooling components for blockage.</li>
+<li>Ensure freezer is operating properly.</li>
+<li>Remove frost buildup around cooling area.</li>
 <li>Contact technician if issue persists.</li>
 </ul>
 </div>
 
 <!-- E7 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E7</div>
 <div class="title">Motor Stall Detected</div>
 <ul class="steps">
 <li>Turn off unit immediately.</li>
-<li>Check for thick or frozen mixture blockage.</li>
-<li>Stir mixture and reduce load.</li>
+<li>Remove thick or frozen blockage.</li>
+<li>Stir or soften mixture slightly.</li>
 <li>Restart after clearing obstruction.</li>
 </ul>
 </div>
 
 <!-- E8 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E8</div>
-<div class="title">Excess Resistance in Mixing Bowl</div>
+<div class="title">Excess Resistance in Bowl</div>
 <ul class="steps">
-<li>Do not overfill bowl.</li>
-<li>Check for frozen chunks or hard ingredients.</li>
+<li>Do not overfill the pint container.</li>
+<li>Break large frozen chunks before processing.</li>
 <li>Ensure blade rotates freely.</li>
-<li>Restart after reducing load.</li>
+<li>Restart with reduced load.</li>
+</ul>
+</div>
+
+<!-- E9 -->
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E9</div>
+<div class="title">Sensor Misalignment</div>
+<ul class="steps">
+<li>Check lid and base sensor alignment.</li>
+<li>Clean all sensor contact points.</li>
+<li>Remove debris or frost buildup.</li>
+<li>Restart unit after adjustment.</li>
+</ul>
+</div>
+
+<!-- E10 -->
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E10</div>
+<div class="title">Power Supply Instability</div>
+<ul class="steps">
+<li>Check wall outlet stability.</li>
+<li>Avoid using extension cords.</li>
+<li>Try a different power source.</li>
+<li>Restart unit after stable connection.</li>
+</ul>
+</div>
+
+<!-- E11 -->
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E11</div>
+<div class="title">Internal Communication Failure</div>
+<ul class="steps">
+<li>Turn off and unplug unit for 10 minutes.</li>
+<li>Inspect internal wiring connections.</li>
+<li>Check for moisture inside base unit.</li>
+<li>Contact service if error persists.</li>
+</ul>
+</div>
+
+<!-- E12 -->
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E12</div>
+<div class="title">Control Board Error</div>
+<ul class="steps">
+<li>Perform full power reset.</li>
+<li>Inspect for burn marks or damage.</li>
+<li>Check connection to motor system.</li>
+<li>Replace control board if needed.</li>
 </ul>
 </div>
 
 <!-- INSTALL PINT -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">INSTALL PINT</div>
-<div class="title">Pint Missing</div>
+<div class="title">Pint Not Installed</div>
 <ul class="steps">
-<li>Insert pint container correctly.</li>
-<li>Check alignment with base lock.</li>
-<li>Ensure no debris blocks sensor.</li>
-<li>Restart unit after installation.</li>
+<li>Insert pint container into base correctly.</li>
+<li>Ensure proper locking alignment.</li>
+<li>Clean sensor detection area.</li>
+<li>Restart machine after installation.</li>
 </ul>
 </div>
 
 <!-- ERR TEMP -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">ERR TEMP</div>
 <div class="title">Temperature Sensor Failure</div>
 <ul class="steps">
-<li>Allow unit to reset and cool down.</li>
-<li>Check sensor wiring connections.</li>
-<li>Clean internal components carefully.</li>
-<li>Replace sensor if error continues.</li>
+<li>Allow unit to cool and reset.</li>
+<li>Check temperature sensor wiring.</li>
+<li>Clean internal sensor area carefully.</li>
+<li>Replace sensor if issue continues.</li>
 </ul>
 </div>
 
 <!-- ERR MOTOR -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">ERR MOTOR</div>
 <div class="title">Motor Control Fault</div>
 <ul class="steps">
-<li>Turn off and unplug unit.</li>
-<li>Check motor for obstruction or jam.</li>
-<li>Inspect wiring and connectors.</li>
+<li>Turn off and unplug unit immediately.</li>
+<li>Check motor for ice or blockage.</li>
+<li>Inspect wiring connections.</li>
 <li>Contact service center if unresolved.</li>
 </ul>
 </div>
 
+<!-- F21 / E21 -->
+<div class="card" onclick="toggleCard(this)">
+<div class="code">F21 / E21</div>
+<div class="title">Severe Motor Jam / System Lock</div>
+<ul class="steps">
+<li>Check for frozen blockage in mixing chamber.</li>
+<li>Allow motor to cool completely.</li>
+<li>Reduce ingredient hardness and load size.</li>
+<li>Restart only after full reset.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F22 / E22</div>
+  <div class="title">Pint Not Detected</div>
+  <ul class="steps">
+    <li>Ensure pint is correctly installed.</li>
+    <li>Check base alignment sensors.</li>
+    <li>Clean contact points.</li>
+    <li>Reinsert pint securely.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F23 / E23</div>
+  <div class="title">Temperature Sensor Fault</div>
+  <ul class="steps">
+    <li>Allow unit to reach room temperature.</li>
+    <li>Check sensor wiring connection.</li>
+    <li>Clean internal sensor area.</li>
+    <li>Replace sensor if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F24 / E24</div>
+  <div class="title">Overload Protection Activated</div>
+  <ul class="steps">
+    <li>Turn off and unplug unit.</li>
+    <li>Reduce frozen mixture hardness.</li>
+    <li>Do not overfill pint container.</li>
+    <li>Restart after cooling period.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F25 / E25</div>
+  <div class="title">Control Board Fault</div>
+  <ul class="steps">
+    <li>Power cycle the unit.</li>
+    <li>Check for moisture or damage.</li>
+    <li>Inspect wiring connections.</li>
+    <li>Replace control board if necessary.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F26 / E26</div>
+  <div class="title">Mixing Resistance Too High</div>
+  <ul class="steps">
+    <li>Break up frozen chunks.</li>
+    <li>Ensure proper freezing time (24h).</li>
+    <li>Do not overfill pint.</li>
+    <li>Restart with softer mixture.</li>
+  </ul>
+</div>
+
+</div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Ice Cream Maker not turning on?</div>
+<div class="answer">
+Check if the unit is properly plugged in and the outlet is working. Ensure the pint is correctly installed and the lid is fully locked. Inspect the power connection and try another outlet. If still unresponsive, internal power components may need servicing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Ice Cream Maker suddenly stop during use?</div>
+<div class="answer">
+This is usually caused by motor overload, frozen mixture blockage, or improper pint installation. Turn off the unit, unplug it, and allow it to rest for 15–20 minutes before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Ice Cream Maker not mixing properly?</div>
+<div class="answer">
+The mixture may be too hard or unevenly frozen. Ensure proper freezing time (24 hours), break large frozen chunks, and avoid overfilling the pint.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Ice Cream Maker smell like burning?</div>
+<div class="answer">
+A burning smell may indicate motor strain or excessive resistance in the mixture. Stop immediately, unplug the unit, and allow it to cool before checking the pint contents.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Ice Cream Maker making loud noises?</div>
+<div class="answer">
+Loud noises may be caused by hard frozen chunks, improper pint alignment, or motor strain. Stop operation and check for obstructions or uneven mixture.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Ice Cream Maker leaking or spilling?</div>
+<div class="answer">
+Check that the pint is properly installed and not cracked. Ensure the lid and base are aligned correctly before starting operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Ice Cream Maker show ERR1?</div>
+<div class="answer">
+ERR1 indicates motor overload. Reduce mixture hardness, ensure proper freezing, and restart after letting the unit cool.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Ice Cream Maker show ERR2?</div>
+<div class="answer">
+ERR2 indicates blade or mixing obstruction. Unplug the unit, remove the pint, and clear any frozen blockage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Ice Cream Maker show ERR3?</div>
+<div class="answer">
+ERR3 indicates temperature imbalance. Ensure the pint was frozen for at least 24 hours and is at the correct freezer temperature.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Ice Cream Maker show ERR4?</div>
+<div class="answer">
+ERR4 refers to pint installation error. Remove and reinstall the pint securely, ensuring proper alignment with the base.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Ice Cream Maker show ERR5?</div>
+<div class="answer">
+ERR5 indicates control or communication failure. Unplug the unit for 10 minutes and restart. If persistent, servicing may be required.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Ice Cream Maker show ERR6?</div>
+<div class="answer">
+ERR6 indicates motor control fault. Check for frozen blockage and ensure the mixture is not too hard.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Ice Cream Maker show ERR7?</div>
+<div class="answer">
+ERR7 refers to sensor communication error. Restart the unit and ensure all components are properly seated.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Ice Cream Maker show ERR8?</div>
+<div class="answer">
+ERR8 indicates excessive resistance. Reduce mixture hardness and avoid overfilled pints.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Ninja Ice Cream Maker?</div>
+<div class="answer">
+Turn off and unplug the unit for 10–15 minutes. Reinstall the pint properly and restart with a fresh mixture if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why do Ninja Ice Cream Maker problems keep coming back?</div>
+<div class="answer">
+Recurring issues may be caused by improper freezing, motor wear, sensor faults, or overfilled or improperly prepared mixtures.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I repair my Ninja Ice Cream Maker?</div>
+<div class="answer">
+Seek repair if the unit repeatedly stops, fails to spin, shows persistent error codes, or makes unusual grinding or burning noises.
+</div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> Always unplug the appliance before inspection. If errors persist after troubleshooting, contact Ninja customer support or an authorized service technician.
+<strong>Important:</strong> If your Ninja Ice Cream Maker continues to malfunction after troubleshooting, stop using it immediately. Persistent faults may indicate motor failure, blade assembly damage, sensor issues, or internal electrical problems. Contact an authorized Ninja service center for proper diagnosis and repair.
 </div>
 
-</div>
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 

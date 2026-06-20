@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Philips Vacuum Cleaner Error Codes Guide</title>
+
+<title>Philips Vacuum Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Philips Vacuum error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Philips Vacuum Error Codes & Troubleshooting Guide",
+  "description": "Complete Philips Vacuum error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -68,7 +164,7 @@ h1{
 }
 
 .code{
-    font-size:24px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
     margin-bottom:10px;
@@ -92,114 +188,409 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Philips Vacuum Cleaner Error Codes</h1>
+<h1>Philips Vacuum Error Codes</h1>
 
-<p class="subtitle">
-<strong>System Diagnostic & Troubleshooting Guide</strong>
+<p class="subtitle"><strong>Complete Philips Vacuum Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Philips Vacuum error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
-
-<!-- ================= BRUSH MOTOR ================= -->
-<div class="section-title">Brush Motor System Errors</div>
 
 <div class="grid">
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E1</div>
 <div class="title">Brush Motor Jam</div>
 <ul class="steps">
-<li>Turn off vacuum immediately.</li>
-<li>Remove hair or debris from brush roller.</li>
-<li>Check belt and roller movement.</li>
-<li>Replace brush motor if still jammed.</li>
+<li>Turn off the vacuum immediately.</li>
+<li>Remove hair, threads, or debris from the brush roller.</li>
+<li>Check belt and roller movement for blockage.</li>
+<li>Replace brush motor if jam persists.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= SUCTION ================= -->
-<div class="section-title">Suction System Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E2</div>
 <div class="title">Suction Blockage</div>
 <ul class="steps">
-<li>Check hose and filter for blockage.</li>
-<li>Clean dust container.</li>
-<li>Inspect air pathways.</li>
-<li>Replace clogged filters if needed.</li>
+<li>Inspect hose, wand, and filters for clogs.</li>
+<li>Empty and clean dust container.</li>
+<li>Check all air pathways for obstruction.</li>
+<li>Replace clogged filters if airflow remains weak.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= BATTERY ================= -->
-<div class="section-title">Power & Battery Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E3</div>
 <div class="title">Battery Fault</div>
 <ul class="steps">
-<li>Fully charge battery.</li>
-<li>Check battery contacts for dirt.</li>
-<li>Try a replacement battery.</li>
-<li>Inspect charging dock connection.</li>
+<li>Fully charge the battery before use.</li>
+<li>Clean battery contacts and connection points.</li>
+<li>Try a replacement battery if available.</li>
+<li>Inspect charging dock for proper contact.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= CHARGING ================= -->
-<div class="section-title">Charging System Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E4</div>
 <div class="title">Charging Error</div>
 <ul class="steps">
-<li>Check charging adapter and cable.</li>
-<li>Ensure docking station connection is secure.</li>
-<li>Test outlet power supply.</li>
-<li>Replace charger if faulty.</li>
+<li>Check charger cable and adapter for damage.</li>
+<li>Ensure docking station is properly aligned.</li>
+<li>Test power outlet with another device.</li>
+<li>Replace charger if no power is detected.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= SENSOR ================= -->
-<div class="section-title">Sensor System Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E5</div>
 <div class="title">Dust Sensor Failure</div>
 <ul class="steps">
-<li>Clean dust sensors carefully.</li>
-<li>Check sensor wiring connection.</li>
-<li>Restart vacuum system.</li>
-<li>Replace sensor module if needed.</li>
+<li>Clean dust sensors using a dry soft cloth.</li>
+<li>Check sensor connection inside unit.</li>
+<li>Restart vacuum after cleaning.</li>
+<li>Replace sensor module if error persists.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E6</div>
+<div class="title">Motor Overload</div>
+<ul class="steps">
+<li>Turn off vacuum immediately.</li>
+<li>Allow motor to cool down for 10–15 minutes.</li>
+<li>Check for blockages in brush or hose.</li>
+<li>Reduce suction load and restart.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E7</div>
+<div class="title">Motor Communication Fault</div>
+<ul class="steps">
+<li>Restart the vacuum system.</li>
+<li>Check internal wiring connections.</li>
+<li>Inspect control board signals.</li>
+<li>Replace motor driver board if needed.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E8</div>
+<div class="title">Airflow Restriction</div>
+<ul class="steps">
+<li>Clean filters and dust container.</li>
+<li>Inspect hose for bends or blockages.</li>
+<li>Check air inlet and outlet vents.</li>
+<li>Replace filters if airflow remains weak.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E9</div>
+<div class="title">Navigation Sensor Error</div>
+<ul class="steps">
+<li>Clean sensor lenses carefully.</li>
+<li>Remove dust or obstruction around sensors.</li>
+<li>Restart vacuum and retest movement.</li>
+<li>Replace sensor module if navigation fails.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E10</div>
+<div class="title">Power Supply Instability</div>
+<ul class="steps">
+<li>Check wall outlet stability.</li>
+<li>Avoid using faulty extension cords.</li>
+<li>Inspect charger and base station.</li>
+<li>Test vacuum on another power source.</li>
 </ul>
 </div>
 
 </div>
 
-<div class="note">
-<strong>Note:</strong> Regular cleaning of filters and rollers helps prevent most vacuum error codes.
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Vacuum show ERR or system error messages?</div>
+<div class="answer">
+ERR usually indicates a temporary system fault such as motor overload, airflow blockage, sensor interruption, or power fluctuation. Turn off the vacuum, remove the battery or unplug it, then restart after a few minutes. Check filters, dust container, and hose for blockages.
+</div>
 </div>
 
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Vacuum stop working during use?</div>
+<div class="answer">
+This is often caused by overheating protection or motor strain due to clogged airflow. Allow the vacuum to cool down, clean filters and brush roller, and restart after ensuring all parts are clear.
 </div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Vacuum not turn on?</div>
+<div class="answer">
+Check battery charge level or power connection. Ensure the dust container and attachments are properly installed, as some models will not start if not fully assembled.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Vacuum lose suction power?</div>
+<div class="answer">
+Loss of suction is usually caused by clogged filters, full dust bin, or blocked hose. Clean all airflow paths and replace filters if necessary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Vacuum make unusual noises?</div>
+<div class="answer">
+Unusual noises may come from trapped debris, worn brush rollers, or loose internal parts. Turn off the device and inspect the brush head and hose for obstructions.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Vacuum smell like burning?</div>
+<div class="answer">
+A burning smell may indicate motor overload, clogged filters, or debris stuck in the brush roller. Stop use immediately, clean the unit, and allow it to cool before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Vacuum brush not spin?</div>
+<div class="answer">
+Hair, threads, or debris may be blocking the brush roller. Remove the brush head, clean it thoroughly, and ensure the belt or motor connection is working properly.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Vacuum battery drain quickly?</div>
+<div class="answer">
+Fast battery drain may be caused by aging battery, frequent high-power use, or incomplete charging cycles. Fully charge the vacuum and replace the battery if performance drops significantly.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Vacuum not charge?</div>
+<div class="answer">
+Check charging cable, adapter, and docking station connection. Clean charging contacts and ensure the vacuum is properly seated on the dock.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Vacuum keep shutting off randomly?</div>
+<div class="answer">
+Random shutdowns may be caused by overheating protection, battery issues, or airflow blockage. Clean filters and allow the unit to cool before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Vacuum show weak performance even after charging?</div>
+<div class="answer">
+This may be due to clogged filters, blocked hose, or worn motor components. Clean all parts and check airflow pathways for restrictions.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Philips Vacuum system messages?</div>
+<div class="answer">
+Turn off the vacuum, remove the battery or unplug it, and wait 5–10 minutes. Restart the device to clear temporary system errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I clean my Philips Vacuum?</div>
+<div class="answer">
+Empty the dust bin after every use and clean filters regularly. Deep clean brush rollers and hoses weekly or depending on usage frequency.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace parts of my Philips Vacuum?</div>
+<div class="answer">
+Replace filters, brush rollers, or batteries when you notice reduced suction, poor cleaning performance, or visible wear and damage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I contact a technician for Philips Vacuum issues?</div>
+<div class="answer">
+Contact support if the vacuum repeatedly overheats, fails to charge, loses power completely, or continues showing system errors after cleaning and resetting.
+</div>
+</div>
+
+<div class="note">
+<strong>Important:</strong> Philips Vacuum system messages are designed to protect the motor and battery from damage. If problems persist after troubleshooting, stop using the vacuum and contact an authorized Philips service center for repair.
+</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 

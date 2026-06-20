@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sony PlayStation Error Codes Guide</title>
+
+<title>Sony PlayStation Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Sony PlayStation error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Sony PlayStation Error Codes & Troubleshooting Guide",
+  "description": "Complete Sony PlayStation error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -26,7 +122,8 @@ body{
 h1{
     text-align:center;
     color:#666;
-    margin-bottom:10px;background: #1f3b4d;
+    margin-bottom:10px;
+    background: #1f3b4d;
     color: white;
     padding: 25px;
 }
@@ -67,7 +164,7 @@ h1{
 }
 
 .code{
-    font-size:18px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
     margin-bottom:10px;
@@ -91,7 +188,129 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
@@ -100,16 +319,15 @@ h1{
 
 <h1>Sony PlayStation Error Codes</h1>
 
-<p class="subtitle">
-<strong>System, Network & Account Troubleshooting Guide</strong>
-</p>
+<p class="subtitle"><strong>Complete Sony PlayStation Guide</strong></p>
 
-<!-- ================= SYSTEM CRASH ================= -->
-<div class="section-title">System & Application Errors</div>
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Sony PlayStation error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">CE-34878-0</div>
 <div class="title">Application Crash Error</div>
 <ul class="steps">
@@ -120,7 +338,7 @@ h1{
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">CE-36329-3</div>
 <div class="title">System Error / Crash Report</div>
 <ul class="steps">
@@ -131,14 +349,29 @@ h1{
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">CE-30005-8</div>
+<div class="title">Application Read/Write Error</div>
+<ul class="steps">
+<li>Restart the console.</li>
+<li>Clean or reinstall the disc game.</li>
+<li>Check internal storage for corruption.</li>
+<li>Reinstall game application if needed.</li>
+</ul>
 </div>
 
-<!-- ================= NETWORK ================= -->
-<div class="section-title">Network Errors</div>
+<div class="card" onclick="toggleCard(this)">
+<div class="code">CE-33126-5</div>
+<div class="title">Save Data Corruption Error</div>
+<ul class="steps">
+<li>Restore backup save data if available.</li>
+<li>Delete corrupted save files.</li>
+<li>Re-sync cloud saves.</li>
+<li>Restart game and try again.</li>
+</ul>
+</div>
 
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">NW-31201-7</div>
 <div class="title">Network Connection Failure</div>
 <ul class="steps">
@@ -149,14 +382,18 @@ h1{
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">NW-31253-4</div>
+<div class="title">DNS / Network Configuration Error</div>
+<ul class="steps">
+<li>Restart router and console.</li>
+<li>Manually set DNS (8.8.8.8 / 8.8.4.4).</li>
+<li>Check ISP connectivity.</li>
+<li>Use wired connection if possible.</li>
+</ul>
 </div>
 
-<!-- ================= PSN ================= -->
-<div class="section-title">PlayStation Network Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">WS-37397-9</div>
 <div class="title">PSN Service Restriction</div>
 <ul class="steps">
@@ -167,7 +404,18 @@ h1{
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
+<div class="code">WS-116332-6</div>
+<div class="title">PlayStation Network Sign-In Error</div>
+<ul class="steps">
+<li>Check internet connection stability.</li>
+<li>Verify PSN account credentials.</li>
+<li>Restart console and router.</li>
+<li>Try signing in again later.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
 <div class="code">NP-102942-8</div>
 <div class="title">Account Sign-In Issue</div>
 <ul class="steps">
@@ -178,14 +426,7 @@ h1{
 </ul>
 </div>
 
-</div>
-
-<!-- ================= UPDATE ================= -->
-<div class="section-title">System Update Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">SU-30746-0</div>
 <div class="title">System Software Update Failure</div>
 <ul class="steps">
@@ -196,14 +437,18 @@ h1{
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">SU-42118-6</div>
+<div class="title">Update Database / System Software Error</div>
+<ul class="steps">
+<li>Restart console in Safe Mode.</li>
+<li>Rebuild database.</li>
+<li>Retry system update.</li>
+<li>Reinstall firmware if required.</li>
+</ul>
 </div>
 
-<!-- ================= PAYMENT ================= -->
-<div class="section-title">Store & Payment Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E-8210604A</div>
 <div class="title">Payment Method Error</div>
 <ul class="steps">
@@ -214,13 +459,162 @@ h1{
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E-82106A86</div>
+<div class="title">PlayStation Store Transaction Error</div>
+<ul class="steps">
+<li>Check PSN store service status.</li>
+<li>Restart console and retry purchase.</li>
+<li>Verify payment details.</li>
+<li>Try later if server is busy.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E5</div>
+<div class="title">System Overheating Protection</div>
+<ul class="steps">
+<li>Turn off console immediately.</li>
+<li>Allow system to cool in a ventilated area.</li>
+<li>Clean dust from vents and fan area.</li>
+<li>Restart after temperature stabilizes.</li>
+</ul>
+</div></div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony PlayStation show ERR or system error messages?</div>
+<div class="answer">
+ERR messages on PlayStation usually indicate system software issues, corrupted data, overheating, hardware faults, network interruptions, or storage errors. Restart the console, power cycle it completely, and check for system updates. If the issue continues, rebuild the database in Safe Mode.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony PlayStation freeze or crash during gameplay?</div>
+<div class="answer">
+This is often caused by overheating, corrupted game data, outdated firmware, or unstable system performance. Turn off the console, let it cool down, update the game and system software, and check storage health.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony PlayStation not turn on?</div>
+<div class="answer">
+Check the power cable, outlet, and HDMI connection. Ensure the power supply is stable and try a different power cord if available. Perform a full power cycle by unplugging the console for a few minutes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony PlayStation not display anything on the screen?</div>
+<div class="answer">
+This may be caused by HDMI cable issues, wrong input selection, or display resolution errors. Reconnect the HDMI cable, try another port, and boot into Safe Mode to reset display settings.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony PlayStation overheat?</div>
+<div class="answer">
+Overheating happens when ventilation is blocked, dust builds up, or the console is placed in a confined space. Clean vents, ensure airflow, and avoid placing the console in enclosed cabinets.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony PlayStation not read discs?</div>
+<div class="answer">
+This can be caused by dirty discs, damaged discs, or a faulty Blu-ray drive. Clean the disc, try another game, and restart the console.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony PlayStation show network errors?</div>
+<div class="answer">
+Network errors may be caused by weak Wi-Fi, router issues, or DNS problems. Restart your router, check internet settings, and try switching to a wired connection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my PlayStation download or update fail?</div>
+<div class="answer">
+This is usually caused by unstable internet, low storage space, or server issues. Free up storage, restart the console, and try downloading again.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my PlayStation controller not connect?</div>
+<div class="answer">
+Controller issues may be caused by Bluetooth interference, low battery, or sync failure. Reset the controller using the reset button and reconnect via USB cable.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my PlayStation account not signing in?</div>
+<div class="answer">
+This may be caused by incorrect login details, server downtime, or account security verification. Reset your password and check PlayStation Network status.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Sony PlayStation system errors?</div>
+<div class="answer">
+Turn off the console completely, unplug it for 5–10 minutes, then restart. If issues persist, boot into Safe Mode and select “Rebuild Database” or “Restore Default Settings.”
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I service my Sony PlayStation?</div>
+<div class="answer">
+Service is recommended if the console repeatedly crashes, overheats frequently, fails to start, or shows persistent system errors even after resets and updates.
+</div>
 </div>
 
 <div class="note">
-<strong>Note:</strong> Some errors are service-related and may require waiting for PSN recovery.
+<strong>Important:</strong> Sony PlayStation system messages are safety and diagnostic features designed to protect hardware such as the CPU, GPU, storage system, power supply, and network components. If problems continue after troubleshooting, contact Sony Support or an authorized service center.
 </div>
 
-</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 
+
+

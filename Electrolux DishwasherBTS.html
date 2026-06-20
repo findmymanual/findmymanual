@@ -3,401 +3,649 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Electrolux Dishwasher Error Codes Troubleshooting Guide</title>
+
+<title>Electrolux Dishwasher Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Electrolux Dishwasher error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Electrolux Dishwasher Error Codes & Troubleshooting Guide",
+  "description": "Complete Electrolux Dishwasher error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f6f8;
+    background:#f5f5f5;
     color:#333;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     background:#fff;
-    padding:25px;
+    padding:30px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 h1{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
     text-align:center;
-    border-radius:8px;
+    color:#666;
     margin-bottom:10px;
-    
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
 }
 
-h2{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
+.subtitle{
     text-align:center;
-    border-radius:8px;
-    margin-bottom:10px;
-    
+    color:#666;
+    margin-bottom:30px;
 }
 
 .section-title{
     margin-top:40px;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
-    border-left:5px solid #1f3b4d;
+    border-left:5px solid #e60012;
     padding-left:10px;
-    
+    color:#444;
 }
 
-.search-box{
-    width:100%;
-    padding:12px;
-    margin:20px 0;
-    border:1px solid #ccc;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    border:1px solid #4e6e81;
     border-radius:8px;
+    padding:20px;
+    background:#fafafa;
+    transition:0.3s;
 }
 
-.error-card{
-    border:1px solid #ddd;
-    border-radius:8px;
-    margin-bottom:10px;
-    overflow:hidden;
-}
-
-.error-toggle{
-    width:100%;
-    padding:15px;
-    background:#fff;
-    border:none;
-    text-align:left;
-    cursor:pointer;
-    font-size:16px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-.error-toggle:hover{
-    background:#f3f3f3;
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .code{
+    font-size:26px;
     font-weight:bold;
-    color:#1f3b4d;
-    margin-right:10px;
-    min-width:80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    color:#4e6e81;
+    margin-bottom:10px;
 }
 
-.error-content{
-    display:none;
-    padding:15px;
-    background:#fafafa;
-    border-top:1px solid #eee;
-    
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
-.error-content ul{
-    padding-left:20px;
+.steps{
+    padding-left:18px;
+    line-height:1.6;
 }
 
 .note{
-    margin-top:25px;
-    padding:15px;
+    margin-top:30px;
     background:#fff3cd;
     border:1px solid #ffeeba;
+    padding:15px;
+    border-radius:6px;
+}
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
     border-radius:8px;
-    
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
+</style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
 }
 </style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Electrolux Dishwasher Error Codes & Troubleshooting Guide</h1>
+<h1>Electrolux Dishwasher Error Codes</h1>
 
-<input type="text" class="search-box" placeholder="Search error code...">
+<p class="subtitle"><strong>Complete Electrolux Dishwasher Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Electrolux Dishwasher error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">i10</span> Water Inlet Problem</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check that the water supply valve is fully open.</li>
-<li>Inspect inlet hose for kinks, bends, or blockages.</li>
-<li>Clean the inlet filter screen to remove debris.</li>
-<li>Verify household water pressure is sufficient.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">i10</div>
+  <div class="title">Water Inlet Problem</div>
+  <ul class="steps">
+    <li>Check that the water supply valve is fully open.</li>
+    <li>Inspect inlet hose for kinks, bends, or blockages.</li>
+    <li>Clean the inlet filter screen to remove debris.</li>
+    <li>Verify household water pressure is sufficient.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">i20</span> Drain Blockage</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect drain hose for clogs or kinks.</li>
-<li>Clean dishwasher filter and sump area thoroughly.</li>
-<li>Check drain pump for debris or obstruction.</li>
-<li>Ensure sink drain connection is not blocked.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">i20</div>
+  <div class="title">Drain Blockage</div>
+  <ul class="steps">
+    <li>Inspect drain hose for clogs or kinks.</li>
+    <li>Clean dishwasher filter and sump area thoroughly.</li>
+    <li>Check drain pump for debris or obstruction.</li>
+    <li>Ensure sink drain connection is not blocked.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">i30</span> Leak Detected</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off water supply immediately.</li>
-<li>Check base pan for water accumulation.</li>
-<li>Inspect hoses, seals, and connections for leaks.</li>
-<li>Dry base tray and reset the unit after inspection.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">i30</div>
+  <div class="title">Leak Detected</div>
+  <ul class="steps">
+    <li>Turn off water supply immediately.</li>
+    <li>Check base pan for water accumulation.</li>
+    <li>Inspect hoses, seals, and connections for leaks.</li>
+    <li>Dry base tray and reset the unit after inspection.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">i40</span> Pressure Sensor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect pressure sensor hose for blockage or damage.</li>
-<li>Check wiring connections for looseness.</li>
-<li>Clean air trap system carefully.</li>
-<li>Replace pressure sensor if faulty readings persist.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">i40</div>
+  <div class="title">Pressure Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect pressure sensor hose for blockage or damage.</li>
+    <li>Check wiring connections for looseness.</li>
+    <li>Clean air trap system carefully.</li>
+    <li>Replace pressure sensor if faulty readings persist.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">i50</span> Wash Motor Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check wash pump for blockages or debris.</li>
-<li>Inspect motor wiring and electrical connections.</li>
-<li>Test motor resistance for abnormalities.</li>
-<li>Replace circulation pump if motor fails.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">i50</div>
+  <div class="title">Wash Motor Failure</div>
+  <ul class="steps">
+    <li>Check wash pump for blockages or debris.</li>
+    <li>Inspect motor wiring and electrical connections.</li>
+    <li>Test motor resistance for abnormalities.</li>
+    <li>Replace circulation pump if motor fails.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">i60</span> Heating System Issue</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check heating element continuity.</li>
-<li>Inspect thermostat and wiring connections.</li>
-<li>Verify control board output signal.</li>
-<li>Replace heating element if defective.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">i60</div>
+  <div class="title">Heating System Issue</div>
+  <ul class="steps">
+    <li>Check heating element continuity.</li>
+    <li>Inspect thermostat and wiring connections.</li>
+    <li>Verify control board output signal.</li>
+    <li>Replace heating element if defective.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">iC0</span> Control Board Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reset power for 5–10 minutes.</li>
-<li>Inspect wiring harness connections.</li>
-<li>Check for moisture or corrosion on PCB.</li>
-<li>Replace main control board if issue persists.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">iC0</div>
+  <div class="title">Control Board Error</div>
+  <ul class="steps">
+    <li>Reset power for 5–10 minutes.</li>
+    <li>Inspect wiring harness connections.</li>
+    <li>Check for moisture or corrosion on PCB.</li>
+    <li>Replace main control board if issue persists.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">30</span> Door Open Detected</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure dishwasher door is fully closed and latched.</li>
-<li>Check door latch alignment and condition.</li>
-<li>Inspect door switch sensor for faults.</li>
-<li>Remove any obstruction preventing closure.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">30</div>
+  <div class="title">Door Open Detected</div>
+  <ul class="steps">
+    <li>Ensure dishwasher door is fully closed and latched.</li>
+    <li>Check door latch alignment and condition.</li>
+    <li>Inspect door switch sensor for faults.</li>
+    <li>Remove any obstruction preventing closure.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">iF0</span> Water Fill Time Exceeded</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check water inlet valve operation.</li>
-<li>Inspect inlet hose for restrictions.</li>
-<li>Clean inlet filter screen thoroughly.</li>
-<li>Ensure adequate household water pressure.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">iF0</div>
+  <div class="title">Water Fill Time Exceeded</div>
+  <ul class="steps">
+    <li>Check water inlet valve operation.</li>
+    <li>Inspect inlet hose for restrictions.</li>
+    <li>Clean inlet filter screen thoroughly.</li>
+    <li>Ensure adequate household water pressure.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">iF1</span> Low Water Flow Detected</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Verify water supply is fully open.</li>
-<li>Check for clogged inlet hose or filter.</li>
-<li>Inspect water inlet valve for failure.</li>
-<li>Confirm stable household pressure supply.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">iF1</div>
+  <div class="title">Low Water Flow Detected</div>
+  <ul class="steps">
+    <li>Verify water supply is fully open.</li>
+    <li>Check for clogged inlet hose or filter.</li>
+    <li>Inspect water inlet valve for failure.</li>
+    <li>Confirm stable household pressure supply.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">iF2</span> Drain Pump Overrun</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check drain hose for improper installation.</li>
-<li>Inspect pump for obstruction or debris.</li>
-<li>Clean filter and sump assembly.</li>
-<li>Reset unit after clearing drainage system.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">iF2</div>
+  <div class="title">Drain Pump Overrun</div>
+  <ul class="steps">
+    <li>Check drain hose for improper installation.</li>
+    <li>Inspect pump for obstruction or debris.</li>
+    <li>Clean filter and sump assembly.</li>
+    <li>Reset unit after clearing drainage system.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">iD0</span> Turbidity Sensor Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean dishwasher filter and sensor area.</li>
-<li>Check sensor wiring connections.</li>
-<li>Run a cleaning cycle with dishwasher cleaner.</li>
-<li>Replace turbidity sensor if readings fail.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">iD0</div>
+  <div class="title">Turbidity Sensor Error</div>
+  <ul class="steps">
+    <li>Clean dishwasher filter and sensor area.</li>
+    <li>Check sensor wiring connections.</li>
+    <li>Run a cleaning cycle with dishwasher cleaner.</li>
+    <li>Replace turbidity sensor if readings fail.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">iE0</span> Water Level Detection Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect pressure switch and hose.</li>
-<li>Check for clogs in air trap system.</li>
-<li>Verify wiring connections to sensor.</li>
-<li>Replace water level sensor if necessary.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">iE0</div>
+  <div class="title">Water Level Detection Fault</div>
+  <ul class="steps">
+    <li>Inspect pressure switch and hose.</li>
+    <li>Check for clogs in air trap system.</li>
+    <li>Verify wiring connections to sensor.</li>
+    <li>Replace water level sensor if necessary.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">iE1</span> Temperature Sensor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check thermistor connection.</li>
-<li>Inspect wiring for damage or corrosion.</li>
-<li>Test sensor resistance values.</li>
-<li>Replace temperature sensor if faulty.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">iE1</div>
+  <div class="title">Temperature Sensor Fault</div>
+  <ul class="steps">
+    <li>Check thermistor connection.</li>
+    <li>Inspect wiring for damage or corrosion.</li>
+    <li>Test sensor resistance values.</li>
+    <li>Replace temperature sensor if faulty.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">iE2</span> Heating Relay Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect control board relay contacts.</li>
-<li>Check wiring to heating element.</li>
-<li>Test relay switching operation.</li>
-<li>Replace control board if relay is defective.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">iE2</div>
+  <div class="title">Heating Relay Failure</div>
+  <ul class="steps">
+    <li>Inspect control board relay contacts.</li>
+    <li>Check wiring to heating element.</li>
+    <li>Test relay switching operation.</li>
+    <li>Replace control board if relay is defective.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">iE3</span> Motor Communication Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect wiring between motor and PCB.</li>
-<li>Check for loose connectors.</li>
-<li>Reset dishwasher control system.</li>
-<li>Replace motor or board if communication fails.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">iE3</div>
+  <div class="title">Motor Communication Error</div>
+  <ul class="steps">
+    <li>Inspect wiring between motor and PCB.</li>
+    <li>Check for loose connectors.</li>
+    <li>Reset dishwasher control system.</li>
+    <li>Replace motor or board if communication fails.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">iE4</span> Spray Arm Blockage</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check spray arms for obstructions.</li>
-<li>Clean nozzles and remove debris.</li>
-<li>Ensure proper rotation of arms.</li>
-<li>Reinstall correctly after cleaning.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">iE4</div>
+  <div class="title">Spray Arm Blockage</div>
+  <ul class="steps">
+    <li>Check spray arms for obstructions.</li>
+    <li>Clean nozzles and remove debris.</li>
+    <li>Ensure proper rotation of arms.</li>
+    <li>Reinstall correctly after cleaning.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">iE5</span> Drain Pump Motor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect drain pump for damage.</li>
-<li>Check electrical wiring connections.</li>
-<li>Clear debris from pump housing.</li>
-<li>Replace pump motor if non-functional.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">iE5</div>
+  <div class="title">Drain Pump Motor Fault</div>
+  <ul class="steps">
+    <li>Inspect drain pump for damage.</li>
+    <li>Check electrical wiring connections.</li>
+    <li>Clear debris from pump housing.</li>
+    <li>Replace pump motor if non-functional.</li>
+  </ul>
 </div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FAQ</div>
+  <div class="title">Why is my Electrolux dishwasher not starting?</div>
+  <ul class="steps">
+    <li>Ensure door is fully closed and latched.</li>
+    <li>Check power connection.</li>
+    <li>Select a wash program.</li>
+    <li>Disable child lock if active.</li>
+  </ul>
 </div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FAQ</div>
+  <div class="title">Why is my dishwasher not cleaning properly?</div>
+  <ul class="steps">
+    <li>Load dishes correctly.</li>
+    <li>Clean spray arms.</li>
+    <li>Use proper detergent amount.</li>
+    <li>Check water temperature and pressure.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FAQ</div>
+  <div class="title">Why is my dishwasher not draining?</div>
+  <ul class="steps">
+    <li>Clean filter and drain area.</li>
+    <li>Check hose for blockage.</li>
+    <li>Inspect sink connection.</li>
+    <li>Reset dishwasher.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FAQ</div>
+  <div class="title">Why is my dishwasher leaking?</div>
+  <ul class="steps">
+    <li>Check door seal condition.</li>
+    <li>Ensure unit is level.</li>
+    <li>Inspect hoses for leaks.</li>
+    <li>Avoid overuse of detergent.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FAQ</div>
+  <div class="title">Why is my dishwasher not filling with water?</div>
+  <ul class="steps">
+    <li>Check water supply valve.</li>
+    <li>Inspect inlet hose.</li>
+    <li>Clean inlet filter.</li>
+    <li>Verify water pressure.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FAQ</div>
+  <div class="title">Why is my dishwasher noisy?</div>
+  <ul class="steps">
+    <li>Check for loose items inside.</li>
+    <li>Inspect spray arms.</li>
+    <li>Ensure leveling.</li>
+    <li>Check motor or pump.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FAQ</div>
+  <div class="title">Why are dishes not drying?</div>
+  <ul class="steps">
+    <li>Add rinse aid.</li>
+    <li>Use heated dry mode.</li>
+    <li>Improve loading layout.</li>
+    <li>Check heating element.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FAQ</div>
+  <div class="title">How to reset dishwasher?</div>
+  <ul class="steps">
+    <li>Turn off power.</li>
+    <li>Wait 5–10 minutes.</li>
+    <li>Restart unit.</li>
+    <li>Run a test cycle.</li>
+  </ul>
+</div>
+
+</div>
+
+
+
+</body>
+</html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
 
 <!-- FAQ SECTION -->
 <div class="faq">
@@ -405,202 +653,164 @@ h2{
 
 <br>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dishwasher not starting?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check if the door is fully closed and latched.</li>
-<li>Ensure the unit is properly connected to power.</li>
-<li>Verify that a wash cycle is selected.</li>
-<li>Check if child lock is enabled and disable it if needed.</li>
-</ul>
+
+<div class="faq-container">
+
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does i10 Water Inlet Problem mean?</div>
+<div class="answer">
+Check that the water supply valve is fully open, inspect inlet hose for blockages, clean inlet filter screen, and ensure proper water pressure.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dishwasher not cleaning dishes properly?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Load dishes properly without blocking spray arms.</li>
-<li>Clean spray arms for clogs or debris.</li>
-<li>Use correct amount of detergent.</li>
-<li>Check water temperature and pressure.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does i20 Wash Performance Issue mean?</div>
+<div class="answer">
+Check spray arms for blockages, clean dishwasher filter, use proper detergent, and ensure water temperature is adequate.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dishwasher not draining?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean the filter and drain area regularly.</li>
-<li>Check drain hose for kinks or blockages.</li>
-<li>Inspect sink connection for clogs.</li>
-<li>Reset the dishwasher and try again.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does iE4 Spray Arm Blockage mean?</div>
+<div class="answer">
+Inspect spray arms for debris, clean nozzles thoroughly, ensure free rotation, and reinstall parts correctly.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dishwasher leaking water?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check door seal for damage or dirt buildup.</li>
-<li>Ensure dishwasher is level on the floor.</li>
-<li>Inspect hoses and connections for leaks.</li>
-<li>Avoid overloading detergent or rinse aid.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does i30 Leak Detected mean?</div>
+<div class="answer">
+Turn off water supply, check hoses and seals for leaks, inspect base tray for water, and dry and reset the unit.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dishwasher not filling with water?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure water supply valve is open.</li>
-<li>Check inlet hose for blockages or kinks.</li>
-<li>Clean inlet filter screen.</li>
-<li>Inspect water pressure from supply line.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does i50 Wash Motor Failure mean?</div>
+<div class="answer">
+Inspect circulation pump for blockage, check wiring connections, test motor operation, and replace pump if faulty.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dishwasher making noise?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for loose dishes or utensils inside.</li>
-<li>Inspect spray arms for obstruction.</li>
-<li>Ensure dishwasher is properly leveled.</li>
-<li>Check pump or motor if noise persists.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does 30 Door Open Detected mean?</div>
+<div class="answer">
+Ensure dishwasher door is fully closed, check latch alignment, inspect door switch, and remove any obstruction.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why are my dishes still wet after a cycle?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Use rinse aid for better drying results.</li>
-<li>Unload dishes after cooling period.</li>
-<li>Check drying settings or eco mode usage.</li>
-<li>Ensure proper ventilation inside dishwasher.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does iC0 Control Board Error mean?</div>
+<div class="answer">
+Restart power for 5–10 minutes, check wiring connections, inspect for moisture damage, and replace control board if needed.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dishwasher showing error codes?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart the dishwasher to clear temporary errors.</li>
-<li>Check water supply and drainage system.</li>
-<li>Clean filters and spray arms.</li>
-<li>Refer to manual for specific error code meaning.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does iF2 Drain Pump Overrun mean?</div>
+<div class="answer">
+Check drain hose for blockage, inspect pump for debris, clean filter system, and reset dishwasher.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my Electrolux dishwasher smell bad?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean filters and drain area regularly.</li>
-<li>Remove leftover food debris from dishes.</li>
-<li>Run a cleaning cycle with dishwasher cleaner.</li>
-<li>Leave door slightly open after use.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does iE3 Motor Communication Error mean?</div>
+<div class="answer">
+Check wiring between motor and PCB, inspect connectors, restart system, and replace motor or board if needed.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>How do I reset my Electrolux dishwasher?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off the dishwasher and unplug it.</li>
-<li>Wait 5–10 minutes before restoring power.</li>
-<li>Press and hold reset or start button (model dependent).</li>
-<li>Restart a new cycle after reset.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does iE0 Water Level Fault mean?</div>
+<div class="answer">
+Inspect pressure sensor and hose, check for clogs, verify wiring, and replace sensor if faulty.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux dishwasher not drying dishes?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check rinse aid level and refill if low.</li>
-<li>Use heated dry option if available.</li>
-<li>Ensure proper loading for airflow circulation.</li>
-<li>Inspect heating element if drying fails.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does iD0 Turbidity Sensor Error mean?</div>
+<div class="answer">
+Clean filter and sensor area, remove buildup, run cleaning cycle, and replace sensor if readings are incorrect.
 </div>
 </div>
 
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does i60 Heating System Issue mean?</div>
+<div class="answer">
+Check heating element, inspect thermostat wiring, test control board output, and replace heating component if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does i40 Pressure Sensor Fault mean?</div>
+<div class="answer">
+Inspect pressure hose, check air trap system, verify wiring connections, and replace sensor if necessary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does iF0 Water Fill Time Exceeded mean?</div>
+<div class="answer">
+Check inlet valve, inspect hose for blockage, clean filter screen, and ensure proper water pressure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does iE1 Temperature Sensor Fault mean?</div>
+<div class="answer">
+Check thermistor connection, inspect wiring, test resistance values, and replace sensor if faulty.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does iE5 Drain Pump Motor Fault mean?</div>
+<div class="answer">
+Inspect drain pump for damage, check wiring, remove debris, and replace pump motor if necessary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does iF1 Low Water Flow mean?</div>
+<div class="answer">
+Ensure water supply is open, check inlet hose for blockage, inspect valve operation, and confirm stable pressure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does iE2 Heating Relay Failure mean?</div>
+<div class="answer">
+Inspect relay contacts on control board, check heating wiring, test relay operation, and replace board if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does i30 Leak Protection System Active mean?</div>
+<div class="answer">
+Check base tray for water, inspect hoses and seals, fix leaks immediately, and reset unit after drying.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does iC0 System Maintenance Required mean?</div>
+<div class="answer">
+Restart dishwasher, clean filters, inspect internal components, and schedule professional maintenance if needed.
+</div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> If error codes persist after troubleshooting, disconnect power and contact a certified Electrolux technician.
+<strong>Important:</strong> Always disconnect power before performing repairs. Contact a qualified technician if the issue persists.
 </div>
-
-</div>
-
-</body>
-</html>
 
 <script>
-document.querySelectorAll('.error-toggle').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-        const content = btn.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    });
-});
-
-const searchInput = document.querySelector('.search-box');
-
-searchInput.addEventListener('keyup', function () {
-    const filter = this.value.toUpperCase();
-    const cards = document.querySelectorAll('.error-card');
-
-    cards.forEach(card => {
-        const text = card.innerText.toUpperCase();
-        card.style.display = text.includes(filter) ? '' : 'none';
-    });
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
 });
 </script>
+
+
 
 </body>
 </html>

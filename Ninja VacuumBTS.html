@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ninja Vacuum Error Codes Troubleshooting Guide</title>
+
+<title>Ninja Vacuum Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Ninja Vacuum error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Ninja Vacuum Error Codes & Troubleshooting Guide",
+  "description": "Complete Ninja Vacuum error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -38,22 +134,20 @@ h1{
     margin-bottom:30px;
 }
 
-.section{
+.section-title{
     margin-top:40px;
-}
-
-.section h2{
+    font-size:20px;
+    font-weight:bold;
     border-left:5px solid #e60012;
     padding-left:10px;
-    font-size:20px;
     color:#444;
-    margin-bottom:20px;
 }
 
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
+    margin-top:20px;
 }
 
 .card{
@@ -70,10 +164,10 @@ h1{
 }
 
 .code{
-    font-size:24px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
-    margin-bottom:8px;
+    margin-bottom:10px;
 }
 
 .title{
@@ -94,196 +188,551 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Ninja Vacuum Error Codes Troubleshooting Guide</h1>
-<p class="subtitle"><strong>Complete Diagnostic & Repair Instructions</strong></p>
+<h1>Ninja Vacuum Error Codes</h1>
 
-<!-- ================= MECHANICAL SYSTEM ================= -->
-<div class="section">
-<h2>Mechanical System Errors</h2>
+<p class="subtitle"><strong>Complete Ninja Vacuum Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Ninja Vacuum error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
+
 <div class="grid">
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E1</div>
 <div class="title">Brush Roll Obstruction</div>
 <ul class="steps">
-<li>Turn off and unplug vacuum.</li>
-<li>Remove hair, dust, or debris from brush roll.</li>
+<li>Turn off and unplug the vacuum.</li>
+<li>Remove hair, string, or debris from the brush roll.</li>
 <li>Check brush rotation manually.</li>
-<li>Reinstall brush properly.</li>
+<li>Reinstall brush roll securely.</li>
 </ul>
 </div>
 
-<div class="card">
-<div class="code">E3</div>
-<div class="title">Suction Blockage</div>
-<ul class="steps">
-<li>Check hose and air pathway.</li>
-<li>Remove any clogs or debris.</li>
-<li>Clean filters thoroughly.</li>
-<li>Restart vacuum after cleaning.</li>
-</ul>
-</div>
-
-<div class="card">
-<div class="code">E8</div>
-<div class="title">Air Pathway Obstruction</div>
-<ul class="steps">
-<li>Inspect all air channels.</li>
-<li>Remove dust buildup.</li>
-<li>Clean filter and dust chamber.</li>
-<li>Ensure proper airflow.</li>
-</ul>
-</div>
-
-<div class="card">
-<div class="code">E10</div>
-<div class="title">Drive Motor Failure</div>
-<ul class="steps">
-<li>Turn off device immediately.</li>
-<li>Check motor wiring connections.</li>
-<li>Inspect for burnt components.</li>
-<li>Replace motor if required.</li>
-</ul>
-</div>
-
-</div>
-</div>
-
-<!-- ================= THERMAL & POWER ================= -->
-<div class="section">
-<h2>Thermal & Power Errors</h2>
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E2</div>
-<div class="title">Motor Overheating</div>
+<div class="title">Motor Overheating Protection</div>
 <ul class="steps">
-<li>Turn off vacuum and let it cool.</li>
+<li>Turn off the vacuum immediately.</li>
+<li>Allow the motor to cool for 30 minutes.</li>
 <li>Clean filters and airflow channels.</li>
-<li>Avoid long continuous use.</li>
-<li>Check motor fan operation.</li>
+<li>Restart after cooling.</li>
 </ul>
 </div>
 
-<div class="card">
-<div class="code">E5</div>
-<div class="title">Battery Issue</div>
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E3</div>
+<div class="title">Suction Path Blocked</div>
 <ul class="steps">
-<li>Charge battery fully.</li>
-<li>Check battery connection terminals.</li>
-<li>Replace battery if it does not hold charge.</li>
-<li>Use original charging dock.</li>
+<li>Inspect hose and air pathways.</li>
+<li>Remove clogs or debris.</li>
+<li>Clean dust cup and filters.</li>
+<li>Restart the vacuum.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E4</div>
+<div class="title">Dust Bin Installation Error</div>
+<ul class="steps">
+<li>Remove and reinstall dust bin.</li>
+<li>Check latch alignment.</li>
+<li>Clean sensor contact points.</li>
+<li>Restart the vacuum.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E5</div>
+<div class="title">Battery Communication Fault</div>
+<ul class="steps">
+<li>Turn off the vacuum.</li>
+<li>Remove and reconnect the battery if removable.</li>
+<li>Inspect battery contacts for dirt.</li>
+<li>Recharge and restart the unit.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E6</div>
-<div class="title">Charging Fault</div>
+<div class="title">Charging System Error</div>
 <ul class="steps">
 <li>Check charging dock connection.</li>
-<li>Clean metal charging contacts.</li>
+<li>Clean charging terminals.</li>
 <li>Inspect power adapter.</li>
-<li>Reset vacuum and retry charging.</li>
+<li>Retry charging after reset.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E7</div>
+<div class="title">Internal Wiring Fault</div>
+<ul class="steps">
+<li>Turn off and unplug the unit.</li>
+<li>Inspect visible wiring connections.</li>
+<li>Check for loose or damaged wires.</li>
+<li>Contact service if fault remains.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E8</div>
+<div class="title">Airflow Restriction Detected</div>
+<ul class="steps">
+<li>Inspect all air passages.</li>
+<li>Clean filters thoroughly.</li>
+<li>Empty dust container.</li>
+<li>Ensure proper airflow before use.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E9</div>
 <div class="title">Battery Overheating</div>
 <ul class="steps">
 <li>Stop charging immediately.</li>
-<li>Let battery cool down.</li>
-<li>Place vacuum in cool environment.</li>
-<li>Replace battery if overheating continues.</li>
+<li>Allow battery to cool naturally.</li>
+<li>Move unit to a cooler area.</li>
+<li>Replace battery if issue repeats.</li>
 </ul>
 </div>
 
-</div>
-</div>
-
-<!-- ================= SYSTEM & HARDWARE ================= -->
-<div class="section">
-<h2>System & Hardware Errors</h2>
-<div class="grid">
-
-<div class="card">
-<div class="code">E4</div>
-<div class="title">Dust Bin Not Installed</div>
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E10</div>
+<div class="title">Drive Motor Failure</div>
 <ul class="steps">
-<li>Install dust bin properly.</li>
-<li>Check latch alignment.</li>
-<li>Clean sensor area.</li>
-<li>Restart vacuum.</li>
+<li>Turn off the vacuum.</li>
+<li>Check motor area for blockage.</li>
+<li>Inspect electrical connections.</li>
+<li>Replace motor if necessary.</li>
 </ul>
 </div>
 
-<div class="card">
-<div class="code">E7</div>
-<div class="title">Internal Wiring Fault</div>
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E11</div>
+<div class="title">Brush Roll Motor Error</div>
 <ul class="steps">
-<li>Turn off and unplug device.</li>
-<li>Inspect internal wiring connections.</li>
-<li>Look for loose or burnt wires.</li>
-<li>Contact technician if needed.</li>
+<li>Clean brush roll assembly.</li>
+<li>Remove tangled debris.</li>
+<li>Inspect motor drive components.</li>
+<li>Replace brush motor if needed.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E12</div>
+<div class="title">Filter Sensor Alert</div>
+<ul class="steps">
+<li>Remove and clean filters.</li>
+<li>Allow filters to dry completely.</li>
+<li>Reinstall properly.</li>
+<li>Reset maintenance indicator.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E13</div>
+<div class="title">Dust Sensor Fault</div>
+<ul class="steps">
+<li>Clean sensor area carefully.</li>
+<li>Remove accumulated dust.</li>
+<li>Restart the vacuum.</li>
+<li>Replace sensor if fault continues.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E14</div>
+<div class="title">Power Supply Instability</div>
+<ul class="steps">
+<li>Inspect charging equipment.</li>
+<li>Use original power adapter.</li>
+<li>Check outlet voltage stability.</li>
+<li>Restart the unit.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
 <div class="code">ERR MOTOR</div>
 <div class="title">Main Motor Failure</div>
 <ul class="steps">
-<li>Reset device power.</li>
-<li>Check motor blockage.</li>
+<li>Power cycle the vacuum.</li>
+<li>Check motor for obstruction.</li>
 <li>Inspect wiring harness.</li>
 <li>Replace motor if faulty.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">ERR CHARGE</div>
 <div class="title">Charging Dock Not Detected</div>
 <ul class="steps">
 <li>Clean docking contacts.</li>
-<li>Ensure vacuum is aligned on dock.</li>
-<li>Check power supply to dock.</li>
-<li>Replace dock if faulty.</li>
+<li>Ensure proper docking alignment.</li>
+<li>Verify power supply operation.</li>
+<li>Replace charging dock if needed.</li>
 </ul>
 </div>
 
-</div>
-</div>
-
-<!-- ================= MAINTENANCE ================= -->
-<div class="section">
-<h2>Maintenance Alerts</h2>
-<div class="grid">
-
-<div class="card">
-<div class="code">FILTER</div>
-<div class="title">Filter Needs Cleaning</div>
+<div class="card" onclick="toggleCard(this)">
+<div class="code">ERR BATTERY</div>
+<div class="title">Battery Failure Detected</div>
 <ul class="steps">
-<li>Remove filter carefully.</li>
-<li>Wash or tap out dust.</li>
-<li>Let filter dry completely.</li>
-<li>Reinstall securely before use.</li>
+<li>Recharge battery fully.</li>
+<li>Inspect battery condition.</li>
+<li>Check battery terminals.</li>
+<li>Replace battery if defective.</li>
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">ERR FAN</div>
+<div class="title">Cooling Fan Malfunction</div>
+<ul class="steps">
+<li>Inspect cooling fan for blockage.</li>
+<li>Remove dust buildup.</li>
+<li>Check fan wiring.</li>
+<li>Replace fan assembly if required.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">FILTER</div>
+<div class="title">Filter Maintenance Required</div>
+<ul class="steps">
+<li>Remove filter assembly.</li>
+<li>Wash or clean filters thoroughly.</li>
+<li>Allow filters to dry completely.</li>
+<li>Reinstall before operation.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">BRUSH</div>
+<div class="title">Brush Roll Maintenance Required</div>
+<ul class="steps">
+<li>Remove brush roll.</li>
+<li>Cut away hair and fibers.</li>
+<li>Clean bearing areas.</li>
+<li>Reinstall securely.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">LOW BATTERY</div>
+<div class="title">Battery Charge Low</div>
+<ul class="steps">
+<li>Return vacuum to charging dock.</li>
+<li>Allow full charging cycle.</li>
+<li>Verify charger operation.</li>
+<li>Resume cleaning after charging.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">DOCK</div>
+<div class="title">Return to Charging Dock</div>
+<ul class="steps">
+<li>Place vacuum on charging station.</li>
+<li>Ensure charging contacts align.</li>
+<li>Check dock power connection.</li>
+<li>Confirm charging indicator appears.</li>
+</ul>
+</div>
+</div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<!-- ================= NINJA FOODI / MULTI-COOKER FAQ GUIDE ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Vacuum not picking up dirt effectively?</div>
+<div class="answer">
+Poor pickup performance is often caused by clogged filters, a full dust bin, blocked air passages, or a dirty brush roll. Clean all filters, empty the dust container, and inspect the vacuum for obstructions.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Vacuum keep losing suction?</div>
+<div class="answer">
+Loss of suction may occur when filters are dirty, the dust bin is full, or debris is blocking the hose or wand. Regular cleaning and maintenance can help restore normal suction.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won't my Ninja Vacuum turn on?</div>
+<div class="answer">
+Check that the battery is charged or the power cord is securely connected. Inspect the outlet, charging dock, and battery contacts. If the vacuum still does not power on, professional servicing may be required.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Vacuum keep shutting off during use?</div>
+<div class="answer">
+The vacuum may automatically shut down to protect the motor from overheating. Allow it to cool, clean the filters, and remove any airflow blockages before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Vacuum making unusual noises?</div>
+<div class="answer">
+Unusual noises can be caused by debris caught in the brush roll, airflow restrictions, or worn internal components. Inspect the vacuum carefully and remove any visible obstructions.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Vacuum smell like burning?</div>
+<div class="answer">
+A burning smell may indicate motor strain, clogged airflow, or debris wrapped around the brush roll. Stop using the vacuum immediately and inspect all components before continuing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is the brush roll not spinning?</div>
+<div class="answer">
+Hair, string, and debris can prevent the brush roll from rotating. Remove any buildup and ensure the brush is properly installed before operating the vacuum again.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Vacuum battery draining quickly?</div>
+<div class="answer">
+Battery runtime may decrease due to battery age, frequent use of maximum power settings, or charging issues. Ensure the battery is fully charged and replace it if performance continues to decline.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won't my Ninja Vacuum charge?</div>
+<div class="answer">
+Check the charging cable, charging dock, and power outlet. Clean the charging contacts and ensure the vacuum is properly seated on the charger.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is dust escaping from my Ninja Vacuum?</div>
+<div class="answer">
+Dust leakage may occur if filters are damaged, installed incorrectly, or overdue for replacement. Inspect and clean all filters and ensure the dust bin is securely attached.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I clean my Ninja Vacuum filters?</div>
+<div class="answer">
+Filter cleaning frequency depends on usage, but most users should clean filters at least once a month. Heavy use may require more frequent maintenance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I empty the dust bin?</div>
+<div class="answer">
+For best performance, empty the dust bin whenever it approaches the maximum fill line. Operating with a full bin can reduce suction and airflow.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I wash Ninja Vacuum filters?</div>
+<div class="answer">
+Many Ninja Vacuum filters are washable. Follow the manufacturer's instructions, rinse thoroughly, and allow the filters to dry completely before reinstalling.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I maintain my Ninja Vacuum?</div>
+<div class="answer">
+Regular maintenance includes emptying the dust bin, cleaning filters, removing debris from the brush roll, inspecting hoses for blockages, and checking battery and charging components.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace parts on my Ninja Vacuum?</div>
+<div class="answer">
+Replace filters, brush rolls, batteries, and other wearable components when they become damaged, worn, or no longer perform effectively.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I contact a repair technician?</div>
+<div class="answer">
+Professional service may be needed if the vacuum repeatedly loses power, fails to charge, produces burning odors, experiences motor issues, or continues to malfunction after routine maintenance.
 </div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> Always disconnect power before maintenance. If motor or battery errors persist, contact Ninja support or authorized service center.
+<strong>Maintenance Tip:</strong> Regular filter cleaning, dust bin emptying, and brush roll maintenance can significantly improve performance and extend the life of your Ninja Vacuum.
 </div>
 
-</div>
+
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 

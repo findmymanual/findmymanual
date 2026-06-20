@@ -3,358 +3,583 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bosch Refrigerator Error Codes Troubleshooting Guide</title>
+
+<title>Brother System Messages Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Brother System Messages error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Brother System Messages Error Codes & Troubleshooting Guide",
+  "description": "Complete Brother System Messages error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f6f8;
+    background:#f5f5f5;
     color:#333;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     background:#fff;
-    padding:25px;
+    padding:30px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 h1{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
     text-align:center;
-    border-radius:8px;
+    color:#666;
     margin-bottom:10px;
-    
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
 }
 
-h2{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
+.subtitle{
     text-align:center;
-    border-radius:8px;
-    margin-bottom:10px;
-    
+    color:#666;
+    margin-bottom:30px;
 }
 
 .section-title{
     margin-top:40px;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
-    border-left:5px solid #1f3b4d;
+    border-left:5px solid #e60012;
     padding-left:10px;
-    
+    color:#444;
 }
 
-.search-box{
-    width:100%;
-    padding:12px;
-    margin:20px 0;
-    border:1px solid #ccc;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    border:1px solid #4e6e81;
     border-radius:8px;
+    padding:20px;
+    background:#fafafa;
+    transition:0.3s;
 }
 
-.error-card{
-    border:1px solid #ddd;
-    border-radius:8px;
-    margin-bottom:10px;
-    overflow:hidden;
-}
-
-.error-toggle{
-    width:100%;
-    padding:15px;
-    background:#fff;
-    border:none;
-    text-align:left;
-    cursor:pointer;
-    font-size:16px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-.error-toggle:hover{
-    background:#f3f3f3;
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .code{
+    font-size:26px;
     font-weight:bold;
-    color:#1f3b4d;
-    margin-right:10px;
-    min-width:80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    color:#4e6e81;
+    margin-bottom:10px;
 }
 
-.error-content{
-    display:none;
-    padding:15px;
-    background:#fafafa;
-    border-top:1px solid #eee;
-    
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
-.error-content ul{
-    padding-left:20px;
+.steps{
+    padding-left:18px;
+    line-height:1.6;
 }
 
 .note{
-    margin-top:25px;
-    padding:15px;
+    margin-top:30px;
     background:#fff3cd;
     border:1px solid #ffeeba;
+    padding:15px;
+    border-radius:6px;
+}
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
     border-radius:8px;
-    
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
+</style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
 }
 </style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Brother System Messages & Troubleshooting Guide</h1>
+<h1>Brother System Messages Error Codes</h1>
 
-<input type="text" class="search-box" placeholder="Search system message (e.g. READY, ERROR, BUSY...)">
+<p class="subtitle"><strong>Complete Brother System Messages Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Brother System Messages error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
+
+<div class="grid">
 
 <!-- READY -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">READY</span> Device Ready</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Device is ready for operation.</li>
-<li>No action required.</li>
-<li>Start printing or scanning normally.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">READY</div>
+  <div class="title">Brother Device Ready</div>
+  <ul class="steps">
+    <li>Device is ready for printing or scanning.</li>
+    <li>No action required.</li>
+    <li>Start your task normally.</li>
+  </ul>
 </div>
 
 <!-- BUSY -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">BUSY</span> Processing Task</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Wait until current job completes.</li>
-<li>Avoid sending multiple jobs at once.</li>
-<li>Check print queue if stuck.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">BUSY</div>
+  <div class="title">Processing Job</div>
+  <ul class="steps">
+    <li>Wait for the current job to finish.</li>
+    <li>Avoid sending multiple commands at once.</li>
+    <li>Check queue if the device is stuck.</li>
+  </ul>
 </div>
 
 <!-- ERROR -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">ERROR</span> General System Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart the device.</li>
-<li>Check for paper jams or cartridge issues.</li>
-<li>Verify cable connections.</li>
-<li>Update drivers if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERROR</div>
+  <div class="title">General System Error</div>
+  <ul class="steps">
+    <li>Restart the Brother device.</li>
+    <li>Check for paper jams or cartridge issues.</li>
+    <li>Verify USB or network connection.</li>
+    <li>Update drivers or firmware if needed.</li>
+  </ul>
 </div>
 
 <!-- RESET -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">RESET</span> Restart Required</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn device off and unplug power.</li>
-<li>Wait 30–60 seconds.</li>
-<li>Restart device and test again.</li>
-</ul>
-</div>
-</div>
-
-<!-- DOOR OPEN -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">DOOR OPEN</span> Cover Not Closed Properly</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure all covers are fully closed.</li>
-<li>Check for obstructions in latch area.</li>
-<li>Press cover firmly until it locks.</li>
-</ul>
-</div>
-</div>
-
-<!-- NO PAPER -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">NO PAPER</span> Paper Tray Empty</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Load paper into input tray.</li>
-<li>Adjust paper guides correctly.</li>
-<li>Match paper size settings.</li>
-</ul>
-</div>
-</div>
-
-<!-- JAM DETECTED -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">JAM DETECTED</span> Paper Jam Found</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Remove jammed paper carefully.</li>
-<li>Check rollers for debris.</li>
-<li>Reload paper properly.</li>
-</ul>
-</div>
-</div>
-
-<!-- LOW INK -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">LOW INK</span> Ink Level Low</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check ink status in settings.</li>
-<li>Prepare replacement cartridge.</li>
-<li>Replace when print fades.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">RESET</div>
+  <div class="title">Restart Required</div>
+  <ul class="steps">
+    <li>Turn off the device.</li>
+    <li>Unplug power for 30–60 seconds.</li>
+    <li>Reconnect and restart.</li>
+  </ul>
 </div>
 
 <!-- OFFLINE -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">OFFLINE</span> Device Not Connected</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check USB or WiFi connection.</li>
-<li>Restart printer and router.</li>
-<li>Re-add device in settings.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">OFFLINE</div>
+  <div class="title">Device Not Connected</div>
+  <ul class="steps">
+    <li>Check USB, Ethernet, or Wi-Fi connection.</li>
+    <li>Restart router and device.</li>
+    <li>Set Brother device as default printer/scanner.</li>
+  </ul>
 </div>
 
-<!-- ADDITIONAL SYSTEM CODES -->
-
-<!-- SLEEP -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">SLEEP</span> Power Saving Mode</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Press any button to wake device.</li>
-<li>Adjust sleep timer in settings.</li>
-<li>No error present.</li>
-</ul>
-</div>
+<!-- NO PAPER -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">NO PAPER</div>
+  <div class="title">Paper Tray Empty</div>
+  <ul class="steps">
+    <li>Load paper into the tray.</li>
+    <li>Adjust paper guides correctly.</li>
+    <li>Ensure paper size matches settings.</li>
+  </ul>
 </div>
 
-<!-- PRINTING -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">PRINTING</span> Job in Progress</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Wait until printing completes.</li>
-<li>Avoid sending multiple jobs.</li>
-<li>Check print queue if delayed.</li>
-</ul>
-</div>
+<!-- PAPER JAM -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PAPER JAM</div>
+  <div class="title">Paper Jam Detected</div>
+  <ul class="steps">
+    <li>Remove jammed paper carefully.</li>
+    <li>Check rollers for debris or torn paper.</li>
+    <li>Reload paper properly.</li>
+    <li>Do not force paper out.</li>
+  </ul>
 </div>
 
-<!-- SCANNING -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">SCANNING</span> Scan in Progress</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Do not interrupt scanning process.</li>
-<li>Ensure document is loaded properly.</li>
-<li>Wait for completion.</li>
-</ul>
-</div>
+<!-- LOW INK -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">LOW INK / TONER</div>
+  <div class="title">Consumable Running Low</div>
+  <ul class="steps">
+    <li>Check ink or toner status.</li>
+    <li>Prepare replacement cartridge.</li>
+    <li>Replace when print quality fades.</li>
+  </ul>
 </div>
 
-<!-- CALIBRATING -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">CALIBRATING</span> System Calibration</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Allow device to complete calibration.</li>
-<li>Do not turn off power.</li>
-<li>Ensure no paper is loaded.</li>
-</ul>
-</div>
-</div>
-
-<!-- PAPER LOW -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">PAPER LOW</span> Paper Running Low</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Refill paper tray soon.</li>
-<li>Check paper alignment.</li>
-<li>Avoid overloading tray.</li>
-</ul>
-</div>
+<!-- COVER OPEN -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">COVER OPEN</div>
+  <div class="title">Cover Not Closed Properly</div>
+  <ul class="steps">
+    <li>Close all printer or scanner covers.</li>
+    <li>Check for obstructions in latch area.</li>
+    <li>Restart device after closing.</li>
+  </ul>
 </div>
 
 <!-- MEMORY FULL -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">MEMORY FULL</span> Storage Capacity Reached</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Delete unnecessary print jobs.</li>
-<li>Restart device.</li>
-<li>Reduce print resolution if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">MEMORY FULL</div>
+  <div class="title">Storage Capacity Reached</div>
+  <ul class="steps">
+    <li>Cancel unnecessary print/scan jobs.</li>
+    <li>Restart the device.</li>
+    <li>Reduce file size or resolution.</li>
+  </ul>
 </div>
 
+<!-- SCANNING -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SCANNING</div>
+  <div class="title">Scan in Progress</div>
+  <ul class="steps">
+    <li>Do not interrupt scanning.</li>
+    <li>Ensure document is properly placed.</li>
+    <li>Wait for completion.</li>
+  </ul>
+</div>
+
+<!-- PRINTING -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PRINTING</div>
+  <div class="title">Print Job in Progress</div>
+  <ul class="steps">
+    <li>Wait until printing completes.</li>
+    <li>Avoid sending multiple jobs.</li>
+    <li>Check queue if delayed.</li>
+  </ul>
+</div>
+
+<!-- SLEEP -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SLEEP</div>
+  <div class="title">Power Saving Mode</div>
+  <ul class="steps">
+    <li>Press any button to wake device.</li>
+    <li>Adjust sleep settings if needed.</li>
+    <li>No error present.</li>
+  </ul>
+</div>
+
+<!-- CALIBRATING -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">CALIBRATING</div>
+  <div class="title">System Calibration</div>
+  <ul class="steps">
+    <li>Allow calibration to complete.</li>
+    <li>Do not turn off the device.</li>
+    <li>Ensure no paper is loaded (scanner models).</li>
+  </ul>
+</div>
+
+<!-- CONNECTION ERROR -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">CONNECTION ERROR</div>
+  <div class="title">Network or USB Failure</div>
+  <ul class="steps">
+    <li>Check USB or Wi-Fi connection.</li>
+    <li>Restart router and device.</li>
+    <li>Re-add device in system settings.</li>
+  </ul>
+</div>
+
+<!-- GENERAL FAQ STYLE ITEMS CONVERTED -->
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PRINT FAIL</div>
+  <div class="title">Brother Printer Not Printing</div>
+  <ul class="steps">
+    <li>Check ink or toner levels.</li>
+    <li>Verify paper is loaded correctly.</li>
+    <li>Restart printer and computer.</li>
+    <li>Clear print queue if stuck.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">BLANK PAGE</div>
+  <div class="title">Printing Blank Pages</div>
+  <ul class="steps">
+    <li>Check ink or toner status.</li>
+    <li>Clean print heads if inkjet.</li>
+    <li>Reinstall cartridges properly.</li>
+    <li>Run test print.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SCANNER FAIL</div>
+  <div class="title">Scanner Not Working</div>
+  <ul class="steps">
+    <li>Check drivers and software.</li>
+    <li>Verify USB or network connection.</li>
+    <li>Restart scanner and PC.</li>
+    <li>Test with scanning app.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">WI-FI FAIL</div>
+  <div class="title">Wireless Connection Issue</div>
+  <ul class="steps">
+    <li>Check Wi-Fi password.</li>
+    <li>Restart router and device.</li>
+    <li>Move closer to router.</li>
+    <li>Reconfigure network settings.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">DRIVER ERROR</div>
+  <div class="title">Driver or Software Issue</div>
+  <ul class="steps">
+    <li>Update Brother drivers.</li>
+    <li>Reinstall printer/scanner software.</li>
+    <li>Restart computer.</li>
+    <li>Check OS compatibility.</li>
+  </ul>
+</div></div>
+
+</body>
+</html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
 
 <!-- FAQ SECTION -->
 <div class="faq">
@@ -363,196 +588,198 @@ h2{
 <br>
 
 
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “Offline” mean on a Brother device?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>The device is not communicating with your computer or network.</li>
-<li>Check USB or Wi-Fi connection.</li>
-<li>Restart the printer or scanner.</li>
-<li>Set the device as default in system settings.</li>
-</ul>
+<div class="faq-container">
+
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN01 Scanner Not Ready mean?</div>
+<div class="answer">
+Check power connection, verify USB or Wi-Fi connection, restart the scanner and computer, and ensure drivers are properly installed.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “Paper Jam” mean?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Paper is stuck inside the printer or scanner.</li>
-<li>Remove jammed paper carefully without tearing it.</li>
-<li>Check rollers for leftover debris.</li>
-<li>Reload paper correctly in the tray.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN02 Blank Scan Detected mean?</div>
+<div class="answer">
+Ensure document is placed correctly, clean scanner glass, close lid properly, and check scan settings.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “Replace Ink/Toner” message mean?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>The ink or toner level is low or empty.</li>
-<li>Replace the cartridge with a new one.</li>
-<li>Reinstall cartridge properly if recently replaced.</li>
-<li>Reset ink level warning if needed.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN03 Device Offline mean?</div>
+<div class="answer">
+Check USB, Ethernet, or Wi-Fi connection, restart scanner and computer, and set device as default scanner.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “Cover Open” message mean?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>A printer or scanner cover is not fully closed.</li>
-<li>Close all covers firmly until they click.</li>
-<li>Check for obstructions preventing closure.</li>
-<li>Restart the device after closing covers.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN04 Wi-Fi Connection Failure mean?</div>
+<div class="answer">
+Verify network credentials, restart router and scanner, move closer to router, and update firmware if needed.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “No Paper” message mean?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>The paper tray is empty or not detected.</li>
-<li>Reload paper correctly in the tray.</li>
-<li>Adjust paper guides properly.</li>
-<li>Check sensor for dust or blockage.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN05 Poor Scan Quality Detected mean?</div>
+<div class="answer">
+Clean scanner glass, increase resolution, align documents properly, and run calibration.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “Memory Full” message mean?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>The device memory is full and cannot process jobs.</li>
-<li>Cancel pending print or scan jobs.</li>
-<li>Restart the device to clear temporary memory.</li>
-<li>Reduce scan resolution or file size.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN06 Scan Image Streak Error mean?</div>
+<div class="answer">
+Clean glass and sensors, remove dust or debris, check for scratches, and recalibrate scanner.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “Connection Error” mean?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>The device cannot connect to the network or computer.</li>
-<li>Check Wi-Fi or USB cable connection.</li>
-<li>Restart router and device.</li>
-<li>Reconfigure network settings if needed.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN07 ADF Paper Jam Detected mean?</div>
+<div class="answer">
+Remove jammed paper, clean rollers, avoid overloading documents, and check feeder path for debris.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “Low Ink” or “Low Toner” mean?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>The ink or toner is running low.</li>
-<li>Prepare a replacement cartridge.</li>
-<li>Continue printing until quality fades.</li>
-<li>Replace cartridge when print quality drops.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN08 Multi-Feed Document Error mean?</div>
+<div class="answer">
+Fan documents before loading, clean ADF rollers, use dry paper, and avoid overloading tray.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “Print Unable” message mean?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>The printer cannot complete the job due to a fault.</li>
-<li>Restart the printer and clear the queue.</li>
-<li>Check for paper jams or hardware issues.</li>
-<li>Update printer drivers if needed.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN09 Mechanical Noise Warning mean?</div>
+<div class="answer">
+Inspect scanner for foreign objects, clean moving parts, check ADF mechanism, and service worn components.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “Scan Unable” message mean?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>The scanner cannot complete the scan job.</li>
-<li>Check connection between scanner and computer.</li>
-<li>Restart scanning software.</li>
-<li>Ensure drivers are properly installed.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN10 Scanner Not Detected mean?</div>
+<div class="answer">
+Check USB connection, reinstall drivers, try different port, and restart system.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>What should I do if Brother system messages keep appearing?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart the device to clear temporary errors.</li>
-<li>Check for firmware or driver updates.</li>
-<li>Inspect hardware for jams or faults.</li>
-<li>Contact support if messages persist.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN11 Blurry Scan Output mean?</div>
+<div class="answer">
+Clean scanner glass, prevent document movement, increase scan resolution, and recalibrate device.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN12 System Scan Error mean?</div>
+<div class="answer">
+Restart scanner, check drivers, remove jams, and update firmware.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN13 PC Connection Failure mean?</div>
+<div class="answer">
+Check USB cable, reinstall drivers, disable firewall blocking, and restart computer.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN14 Slow Scan Performance mean?</div>
+<div class="answer">
+Lower resolution, close background applications, use USB 3.0 port, and restart device.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN15 File Save Error mean?</div>
+<div class="answer">
+Check storage space, verify folder permissions, change save location, and restart software.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN16 Connection Instability mean?</div>
+<div class="answer">
+Replace faulty USB cable, check Wi-Fi stability, update drivers, and ensure stable power supply.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN17 Scan Interrupted mean?</div>
+<div class="answer">
+Check paper feed, restart scanning software, avoid overheating, and update firmware.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN18 General System Failure mean?</div>
+<div class="answer">
+Restart device, inspect internal hardware, reinstall drivers, and contact support if issue persists.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN19 Overheating Alert mean?</div>
+<div class="answer">
+Turn off scanner, allow cooling, improve ventilation, and clean internal dust buildup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN20 Restart Loop Detected mean?</div>
+<div class="answer">
+Check power supply, update firmware, inspect internal board, and replace faulty components if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN21 Power Supply Failure mean?</div>
+<div class="answer">
+Check power cable, test outlet, inspect adapter, and replace PSU if required.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN22 Network Connection Lost mean?</div>
+<div class="answer">
+Check router connection, restart scanner, reconnect Wi-Fi, and update firmware.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN23 System Reset Required mean?</div>
+<div class="answer">
+Power off device, wait 30–60 seconds, restart system, and test scanner.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN24 Memory Overflow Error mean?</div>
+<div class="answer">
+Reduce scan size, clear stored jobs, restart device, and update firmware.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN25 Maintenance Required mean?</div>
+<div class="answer">
+Clean scanner glass, check rollers and ADF, run calibration, and replace worn parts if needed.
 </div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> If system messages repeat frequently, it may indicate hardware wear or sensor issues requiring inspection.
+<strong>Important:</strong> Always disconnect power before performing repairs. Contact a qualified technician if the issue persists.
 </div>
 
-
 <script>
-document.querySelectorAll('.error-toggle').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-        const content = btn.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    });
-});
-
-const searchInput = document.querySelector('.search-box');
-
-searchInput.addEventListener('keyup', function () {
-    const filter = this.value.toUpperCase();
-    const cards = document.querySelectorAll('.error-card');
-
-    cards.forEach(card => {
-        const text = card.innerText.toUpperCase();
-        card.style.display = text.includes(filter) ? '' : 'none';
-    });
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
 });
 </script>
+
+
 
 </body>
 </html>

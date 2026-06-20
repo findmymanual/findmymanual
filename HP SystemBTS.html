@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HP System Messages Guide</title>
+
+<title>HP System Messages Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete HP System Messages error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "HP System Messages Error Codes & Troubleshooting Guide",
+  "description": "Complete HP System Messages error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -92,106 +188,448 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>HP System Messages</h1>
+<h1>HP System Messages Error Codes</h1>
 
-<p class="subtitle">
-<strong>Meaning & Quick Troubleshooting Guide</strong>
+<p class="subtitle"><strong>Complete HP System Messages Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all HP System Messages error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
 
-<!-- ================= STATUS ================= -->
-<div class="section-title">Status Messages</div>
-
 <div class="grid">
 
-<div class="card">
-<div class="code">READY</div>
-<div class="title">Device Ready</div>
-<ul class="steps">
-<li>Printer/scanner is ready for operation.</li>
-<li>No action required.</li>
-<li>Begin print or scan job normally.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">READY</div>
+  <div class="title">Device Ready</div>
+  <ul class="steps">
+    <li>The HP system is ready for operation.</li>
+    <li>No immediate action is required.</li>
+    <li>Proceed with printing or scanning tasks normally.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">BUSY</div>
-<div class="title">Processing Task</div>
-<ul class="steps">
-<li>Wait for current job to complete.</li>
-<li>Avoid sending multiple jobs at once.</li>
-<li>Check queue if device is unresponsive.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">BUSY</div>
+  <div class="title">Processing Task</div>
+  <ul class="steps">
+    <li>Wait for the current job to complete.</li>
+    <li>Avoid sending multiple print or scan commands.</li>
+    <li>Check the print queue if the device is unresponsive.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SLEEP</div>
+  <div class="title">Power Saving Mode Active</div>
+  <ul class="steps">
+    <li>Press any button to wake the device.</li>
+    <li>Ensure the printer/scanner is not set to deep sleep mode.</li>
+    <li>Adjust power settings if frequent sleep occurs.</li>
+  </ul>
 </div>
 
-<!-- ================= ERROR ================= -->
-<div class="section-title">Error Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">ERROR</div>
-<div class="title">General System Error</div>
-<ul class="steps">
-<li>Restart the device.</li>
-<li>Check for paper jams or ink issues.</li>
-<li>Verify all connections are secure.</li>
-<li>Update drivers if problem persists.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">IDLE</div>
+  <div class="title">Idle State</div>
+  <ul class="steps">
+    <li>Device is powered on but not processing tasks.</li>
+    <li>Send a print or scan job to activate operation.</li>
+    <li>Check connection if device remains idle unexpectedly.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">RESET</div>
-<div class="title">Restart Required</div>
-<ul class="steps">
-<li>Power off device completely.</li>
-<li>Wait 30–60 seconds before turning on.</li>
-<li>Check if error clears after reboot.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERROR</div>
+  <div class="title">General System Error</div>
+  <ul class="steps">
+    <li>Restart the HP device.</li>
+    <li>Check for paper jams, ink, or toner issues.</li>
+    <li>Ensure all cables and wireless connections are stable.</li>
+    <li>Update HP drivers or firmware if the issue persists.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">RESET</div>
+  <div class="title">Restart Required</div>
+  <ul class="steps">
+    <li>Power off the device completely.</li>
+    <li>Unplug it for 30–60 seconds.</li>
+    <li>Reconnect power and restart the device.</li>
+    <li>Check if the system message clears.</li>
+  </ul>
 </div>
 
-<!-- ================= SUPPLIES ================= -->
-<div class="section-title">Supply Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">LOW INK</div>
-<div class="title">Ink Level Low</div>
-<ul class="steps">
-<li>Check ink cartridge levels.</li>
-<li>Prepare replacement cartridges.</li>
-<li>Continue printing if quality is acceptable.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">COVER OPEN</div>
+  <div class="title">Access Door Open</div>
+  <ul class="steps">
+    <li>Ensure all printer/scanner covers are fully closed.</li>
+    <li>Check for misaligned trays or cartridges.</li>
+    <li>Remove any obstructions inside the unit.</li>
+    <li>Restart the device after closing all covers.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">NO PAPER</div>
-<div class="title">Paper Tray Empty</div>
-<ul class="steps">
-<li>Load paper into input tray.</li>
-<li>Adjust paper guides properly.</li>
-<li>Ensure correct paper size settings.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PAPER JAM</div>
+  <div class="title">Paper Jam Detected</div>
+  <ul class="steps">
+    <li>Carefully remove jammed paper.</li>
+    <li>Check rollers for dust or debris.</li>
+    <li>Reload paper correctly in the tray.</li>
+    <li>Ensure paper guides are properly aligned.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">LOW INK</div>
+  <div class="title">Ink Level Low</div>
+  <ul class="steps">
+    <li>Check current ink cartridge levels.</li>
+    <li>Prepare replacement cartridges.</li>
+    <li>Continue printing if quality remains acceptable.</li>
+    <li>Replace cartridges when print quality drops.</li>
+  </ul>
 </div>
 
-<div class="note">
-<strong>Important:</strong> Repeated system errors may indicate hardware or firmware issues requiring further inspection.
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">LOW TONER</div>
+  <div class="title">Toner Level Low</div>
+  <ul class="steps">
+    <li>Check toner status in settings panel.</li>
+    <li>Shake cartridge gently if supported.</li>
+    <li>Prepare a replacement toner cartridge.</li>
+    <li>Replace toner when print fades.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">NO PAPER</div>
+  <div class="title">Paper Tray Empty</div>
+  <ul class="steps">
+    <li>Load paper into the input tray.</li>
+    <li>Adjust paper guides properly.</li>
+    <li>Ensure correct paper size settings.</li>
+    <li>Restart the print or scan job.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SUPPLY ERROR</div>
+  <div class="title">Supply Recognition Issue</div>
+  <ul class="steps">
+    <li>Remove and reinstall cartridge or toner.</li>
+    <li>Clean contact points gently.</li>
+    <li>Ensure compatible HP supplies are used.</li>
+    <li>Replace supply if not detected.</li>
+  </ul>
 </div>
 
 </div>
 
 </body>
 </html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does READY mean on Janome Embroidery Machine?</div>
+<div class="answer">
+This indicates the machine is ready for embroidery operation. No action is required. You can begin stitching normally.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does BUSY mean on Janome Embroidery Machine?</div>
+<div class="answer">
+The machine is currently processing a stitch pattern or command. Wait until the operation completes before sending new instructions.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does ERROR mean on Janome Embroidery Machine?</div>
+<div class="answer">
+A general system error has occurred. Restart the machine, check thread path, needle condition, and ensure no fabric jam is present.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does RESET mean on Janome Embroidery Machine?</div>
+<div class="answer">
+A system restart is required. Turn off the machine, unplug for 1–2 minutes, then power it back on to clear temporary faults.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does THREAD BREAK mean on Janome Embroidery Machine?</div>
+<div class="answer">
+The upper thread has broken or slipped. Re-thread the machine completely, check needle condition, and ensure proper tension settings.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does NEEDLE BREAK mean on Janome Embroidery Machine?</div>
+<div class="answer">
+The needle is damaged or broken. Replace the needle, ensure correct size for fabric, and check hoop alignment before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does HOOP ERROR mean on Janome Embroidery Machine?</div>
+<div class="answer">
+The embroidery hoop is not detected or misaligned. Remove and reattach the hoop properly and ensure it is fully locked in place.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does DESIGN MEMORY ERROR mean on Janome Embroidery Machine?</div>
+<div class="answer">
+The machine cannot read or process stored designs. Restart the machine, re-upload the design file, and check USB or storage device integrity.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does MOTOR OVERLOAD mean on Janome Embroidery Machine?</div>
+<div class="answer">
+The motor is under excessive load. Turn off the machine, remove thick fabric, reduce embroidery speed, and allow cooling before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does LUBRICATION WARNING mean on Janome Embroidery Machine?</div>
+<div class="answer">
+The machine requires lubrication. Clean lint buildup, apply recommended oil, and run the machine at low speed after maintenance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does POSITION ERROR mean on Janome Embroidery Machine?</div>
+<div class="answer">
+The embroidery carriage or hoop position is incorrect. Restart the machine, remove obstructions, and recalibrate movement if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does VOLTAGE WARNING mean on Janome Embroidery Machine?</div>
+<div class="answer">
+Unstable power supply detected. Use a voltage regulator, avoid shared outlets, and restart the machine after stabilizing power.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does STITCH QUALITY ERROR mean on Janome Embroidery Machine?</div>
+<div class="answer">
+Stitch output is inconsistent. Check thread tension, needle condition, fabric type, and clean the thread path.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SENSOR ERROR mean on Janome Embroidery Machine?</div>
+<div class="answer">
+A sensor is not responding correctly. Clean sensor areas, check wiring connections, and restart the machine.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does MEMORY FULL mean on Janome Embroidery Machine?</div>
+<div class="answer">
+Internal memory is full. Delete unused designs or transfer files to external storage before continuing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset Janome Embroidery Machine errors?</div>
+<div class="answer">
+Turn off the machine, unplug it for 1–2 minutes, then restart. Recheck thread, hoop, and design settings after reboot.
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
+
+</body>
+</html>
+

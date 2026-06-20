@@ -3,545 +3,647 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bosch Refrigerator Error Codes Troubleshooting Guide</title>
+
+<title>Brother Scanner Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Brother Scanner error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Brother Scanner Error Codes & Troubleshooting Guide",
+  "description": "Complete Brother Scanner error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f6f8;
+    background:#f5f5f5;
     color:#333;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     background:#fff;
-    padding:25px;
+    padding:30px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 h1{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
     text-align:center;
-    border-radius:8px;
+    color:#666;
     margin-bottom:10px;
-    
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
 }
 
-h2{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
+.subtitle{
     text-align:center;
-    border-radius:8px;
-    margin-bottom:10px;
-    
+    color:#666;
+    margin-bottom:30px;
 }
 
 .section-title{
     margin-top:40px;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
-    border-left:5px solid #1f3b4d;
+    border-left:5px solid #e60012;
     padding-left:10px;
-    
+    color:#444;
 }
 
-.search-box{
-    width:100%;
-    padding:12px;
-    margin:20px 0;
-    border:1px solid #ccc;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    border:1px solid #4e6e81;
     border-radius:8px;
+    padding:20px;
+    background:#fafafa;
+    transition:0.3s;
 }
 
-.error-card{
-    border:1px solid #ddd;
-    border-radius:8px;
-    margin-bottom:10px;
-    overflow:hidden;
-}
-
-.error-toggle{
-    width:100%;
-    padding:15px;
-    background:#fff;
-    border:none;
-    text-align:left;
-    cursor:pointer;
-    font-size:16px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-.error-toggle:hover{
-    background:#f3f3f3;
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .code{
+    font-size:26px;
     font-weight:bold;
-    color:#1f3b4d;
-    margin-right:10px;
-    min-width:80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    color:#4e6e81;
+    margin-bottom:10px;
 }
 
-.error-content{
-    display:none;
-    padding:15px;
-    background:#fafafa;
-    border-top:1px solid #eee;
-    
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
-.error-content ul{
-    padding-left:20px;
+.steps{
+    padding-left:18px;
+    line-height:1.6;
 }
 
 .note{
-    margin-top:25px;
-    padding:15px;
+    margin-top:30px;
     background:#fff3cd;
     border:1px solid #ffeeba;
+    padding:15px;
+    border-radius:6px;
+}
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
     border-radius:8px;
-    
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
+</style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
 }
 </style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Brother Scanner Error Codes & Troubleshooting Guide</h1>
+<h1>Brother Scanner Error Codes</h1>
 
-<input type="text" class="search-box" placeholder="Search error code (e.g. E100, E103...)">
+<p class="subtitle"><strong>Complete Brother Scanner Guide</strong></p>
 
-<!-- E100 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E100</span> Scanner Motor Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart the scanner and retry operation.</li>
-<li>Check motor cable connections.</li>
-<li>Inspect for mechanical obstruction.</li>
-<li>Replace scanner motor if faulty.</li>
-</ul>
-</div>
-</div>
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Brother Scanner error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
-<!-- E101 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E101</span> Scanner Lamp Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn scanner off and allow cooling.</li>
-<li>Check lamp connection inside unit.</li>
-<li>Clean optical glass carefully.</li>
-<li>Replace lamp if not functioning.</li>
-</ul>
-</div>
+<div class="grid">
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E100</div>
+  <div class="title">Scanner Motor Error</div>
+  <ul class="steps">
+    <li>Restart the scanner and retry operation.</li>
+    <li>Check motor cable connections.</li>
+    <li>Inspect for mechanical obstruction.</li>
+    <li>Replace scanner motor if faulty.</li>
+  </ul>
 </div>
 
-<!-- E102 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E102</span> Communication Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reconnect USB or network cable.</li>
-<li>Restart scanner and computer.</li>
-<li>Reinstall scanner drivers.</li>
-<li>Try a different USB port or cable.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E101</div>
+  <div class="title">Scanner Lamp Failure</div>
+  <ul class="steps">
+    <li>Turn scanner off and allow cooling.</li>
+    <li>Check lamp connection inside unit.</li>
+    <li>Clean optical glass carefully.</li>
+    <li>Replace lamp if not functioning.</li>
+  </ul>
 </div>
 
-<!-- E103 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E103</span> Carriage Jam</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off scanner before inspection.</li>
-<li>Remove any obstruction inside scanner.</li>
-<li>Ensure carriage moves freely.</li>
-<li>Clean rails and gears if necessary.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E102</div>
+  <div class="title">Communication Error</div>
+  <ul class="steps">
+    <li>Reconnect USB or network cable.</li>
+    <li>Restart scanner and computer.</li>
+    <li>Reinstall scanner drivers.</li>
+    <li>Try a different USB port or cable.</li>
+  </ul>
 </div>
 
-<!-- E104 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E104</span> Scanner Overheating</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off scanner and allow cooling.</li>
-<li>Check ventilation openings.</li>
-<li>Remove dust buildup inside unit.</li>
-<li>Avoid continuous long scanning cycles.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E103</div>
+  <div class="title">Carriage Jam</div>
+  <ul class="steps">
+    <li>Turn off scanner before inspection.</li>
+    <li>Remove any obstruction inside scanner.</li>
+    <li>Ensure carriage moves freely.</li>
+    <li>Clean rails and gears if necessary.</li>
+  </ul>
 </div>
 
-<!-- E105 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E105</span> Sensor Malfunction</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean optical sensors carefully.</li>
-<li>Check wiring harness connections.</li>
-<li>Restart scanner system.</li>
-<li>Replace sensor module if faulty.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E104</div>
+  <div class="title">Scanner Overheating</div>
+  <ul class="steps">
+    <li>Turn off scanner and allow cooling.</li>
+    <li>Check ventilation openings.</li>
+    <li>Remove dust buildup inside unit.</li>
+    <li>Avoid continuous long scanning cycles.</li>
+  </ul>
 </div>
 
-<!-- E106 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E106</span> Paper Feed Error (ADF)</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Remove stuck documents from feeder.</li>
-<li>Clean ADF rollers.</li>
-<li>Check document alignment.</li>
-<li>Replace pickup rollers if worn.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E105</div>
+  <div class="title">Sensor Malfunction</div>
+  <ul class="steps">
+    <li>Clean optical sensors carefully.</li>
+    <li>Check wiring harness connections.</li>
+    <li>Restart scanner system.</li>
+    <li>Replace sensor module if faulty.</li>
+  </ul>
 </div>
 
-<!-- E107 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E107</span> Scanner Calibration Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Run scanner calibration tool.</li>
-<li>Clean scanner glass surface.</li>
-<li>Restart scanner software.</li>
-<li>Reinstall drivers if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E106</div>
+  <div class="title">Paper Feed Error (ADF)</div>
+  <ul class="steps">
+    <li>Remove stuck documents from feeder.</li>
+    <li>Clean ADF rollers.</li>
+    <li>Check document alignment.</li>
+    <li>Replace pickup rollers if worn.</li>
+  </ul>
 </div>
 
-<!-- E108 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E108</span> Lamp Warm-Up Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart scanner and retry.</li>
-<li>Check lamp power supply.</li>
-<li>Inspect inverter board.</li>
-<li>Replace lamp unit if required.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E107</div>
+  <div class="title">Scanner Calibration Failure</div>
+  <ul class="steps">
+    <li>Run scanner calibration tool.</li>
+    <li>Clean scanner glass surface.</li>
+    <li>Restart scanner software.</li>
+    <li>Reinstall drivers if needed.</li>
+  </ul>
 </div>
 
-<!-- E109 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E109</span> Internal Memory Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart scanner device.</li>
-<li>Clear scan queue.</li>
-<li>Update firmware.</li>
-<li>Replace main board if persistent.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E108</div>
+  <div class="title">Lamp Warm-Up Failure</div>
+  <ul class="steps">
+    <li>Restart scanner and retry.</li>
+    <li>Check lamp power supply.</li>
+    <li>Inspect inverter board.</li>
+    <li>Replace lamp unit if required.</li>
+  </ul>
 </div>
 
-<!-- E110 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E110</span> Motor Driver Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check motor driver board.</li>
-<li>Inspect wiring connections.</li>
-<li>Restart scanner system.</li>
-<li>Replace driver board if faulty.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E109</div>
+  <div class="title">Internal Memory Error</div>
+  <ul class="steps">
+    <li>Restart scanner device.</li>
+    <li>Clear scan queue.</li>
+    <li>Update firmware.</li>
+    <li>Replace main board if persistent.</li>
+  </ul>
 </div>
 
-<!-- E111 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E111</span> Power Supply Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check power adapter.</li>
-<li>Ensure stable voltage supply.</li>
-<li>Avoid extension cords.</li>
-<li>Replace PSU if unstable.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E110</div>
+  <div class="title">Motor Driver Fault</div>
+  <ul class="steps">
+    <li>Check motor driver board.</li>
+    <li>Inspect wiring connections.</li>
+    <li>Restart scanner system.</li>
+    <li>Replace driver board if faulty.</li>
+  </ul>
 </div>
 
-<!-- E112 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E112</span> Optical Sensor Dirty</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean scanner glass and mirrors carefully.</li>
-<li>Remove dust from optical path.</li>
-<li>Restart scanner system.</li>
-<li>Replace sensor if issue persists.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E111</div>
+  <div class="title">Power Supply Error</div>
+  <ul class="steps">
+    <li>Check power adapter.</li>
+    <li>Ensure stable voltage supply.</li>
+    <li>Avoid extension cords.</li>
+    <li>Replace PSU if unstable.</li>
+  </ul>
 </div>
 
-<!-- E113 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E113</span> Scanner Initialization Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn scanner off and restart.</li>
-<li>Check internal cable connections.</li>
-<li>Reinstall scanner driver.</li>
-<li>Replace main board if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E112</div>
+  <div class="title">Optical Sensor Dirty</div>
+  <ul class="steps">
+    <li>Clean scanner glass and mirrors carefully.</li>
+    <li>Remove dust from optical path.</li>
+    <li>Restart scanner system.</li>
+    <li>Replace sensor if issue persists.</li>
+  </ul>
 </div>
 
-<!-- E114 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E114</span> Carriage Movement Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Remove obstruction inside scanner.</li>
-<li>Clean carriage rails.</li>
-<li>Check belt tension.</li>
-<li>Replace carriage motor if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E113</div>
+  <div class="title">Scanner Initialization Failure</div>
+  <ul class="steps">
+    <li>Turn scanner off and restart.</li>
+    <li>Check internal cable connections.</li>
+    <li>Reinstall scanner driver.</li>
+    <li>Replace main board if needed.</li>
+  </ul>
 </div>
 
-<!-- E115 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E115</span> Lamp Inverter Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect lamp inverter board.</li>
-<li>Check wiring connections.</li>
-<li>Allow scanner to cool down.</li>
-<li>Replace inverter board if faulty.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E114</div>
+  <div class="title">Carriage Movement Fault</div>
+  <ul class="steps">
+    <li>Remove obstruction inside scanner.</li>
+    <li>Clean carriage rails.</li>
+    <li>Check belt tension.</li>
+    <li>Replace carriage motor if needed.</li>
+  </ul>
 </div>
 
-<!-- E116 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E116</span> ADF Motor Jam</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Remove jammed paper from ADF.</li>
-<li>Clean feed rollers.</li>
-<li>Check motor gears.</li>
-<li>Replace ADF motor if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E115</div>
+  <div class="title">Lamp Inverter Failure</div>
+  <ul class="steps">
+    <li>Inspect lamp inverter board.</li>
+    <li>Check wiring connections.</li>
+    <li>Allow scanner to cool down.</li>
+    <li>Replace inverter board if faulty.</li>
+  </ul>
 </div>
 
-<!-- E117 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E117</span> Firmware Corruption</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reinstall official firmware.</li>
-<li>Restart scanner system.</li>
-<li>Check USB connection stability.</li>
-<li>Replace main board if unresolved.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E116</div>
+  <div class="title">ADF Motor Jam</div>
+  <ul class="steps">
+    <li>Remove jammed paper from ADF.</li>
+    <li>Clean feed rollers.</li>
+    <li>Check motor gears.</li>
+    <li>Replace ADF motor if needed.</li>
+  </ul>
 </div>
 
-<!-- E118 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E118</span> Scan Head Position Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reset scanner and retry.</li>
-<li>Check belt and pulley system.</li>
-<li>Clean guide rails.</li>
-<li>Replace scan head assembly if needed.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E117</div>
+  <div class="title">Firmware Corruption</div>
+  <ul class="steps">
+    <li>Reinstall official firmware.</li>
+    <li>Restart scanner system.</li>
+    <li>Check USB connection stability.</li>
+    <li>Replace main board if unresolved.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E118</div>
+  <div class="title">Scan Head Position Error</div>
+  <ul class="steps">
+    <li>Reset scanner and retry.</li>
+    <li>Check belt and pulley system.</li>
+    <li>Clean guide rails.</li>
+    <li>Replace scan head assembly if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E119</div>
+  <div class="title">Overcurrent in Motor Circuit</div>
+  <ul class="steps">
+    <li>Turn scanner off immediately.</li>
+    <li>Inspect motor wiring for short circuit.</li>
+    <li>Check power supply stability.</li>
+    <li>Replace motor driver board if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E120</div>
+  <div class="title">Temperature Sensor Fault</div>
+  <ul class="steps">
+    <li>Check internal temperature sensor.</li>
+    <li>Inspect wiring connections.</li>
+    <li>Clean sensor area.</li>
+    <li>Replace sensor if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E121</div>
+  <div class="title">USB Interface Failure</div>
+  <ul class="steps">
+    <li>Reconnect USB cable.</li>
+    <li>Try a different USB port.</li>
+    <li>Reinstall scanner drivers.</li>
+    <li>Replace USB interface board if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E122</div>
+  <div class="title">Scan Resolution Error</div>
+  <ul class="steps">
+    <li>Reset scan settings.</li>
+    <li>Update scanner software.</li>
+    <li>Reduce scan resolution.</li>
+    <li>Reinstall drivers if corrupted.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E123</div>
+  <div class="title">Power Surge Detected</div>
+  <ul class="steps">
+    <li>Disconnect power immediately.</li>
+    <li>Check power outlet stability.</li>
+    <li>Use surge protector.</li>
+    <li>Inspect power board if damage suspected.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E124</div>
+  <div class="title">Document Feed Sensor Error</div>
+  <ul class="steps">
+    <li>Clean ADF sensors.</li>
+    <li>Remove dust or paper debris.</li>
+    <li>Check wiring connections.</li>
+    <li>Replace sensor if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E125</div>
+  <div class="title">General System Failure</div>
+  <ul class="steps">
+    <li>Restart scanner system.</li>
+    <li>Reset firmware settings.</li>
+    <li>Check internal connections.</li>
+    <li>Replace main control board if needed.</li>
+  </ul>
 </div>
 </div>
 
-<!-- E119 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E119</span> Overcurrent in Motor Circuit</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn scanner off immediately.</li>
-<li>Inspect motor wiring for short circuit.</li>
-<li>Check power supply stability.</li>
-<li>Replace motor driver board if needed.</li>
-</ul>
-</div>
-</div>
 
-<!-- E120 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E120</span> Temperature Sensor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check internal temperature sensor.</li>
-<li>Inspect wiring connections.</li>
-<li>Clean sensor area.</li>
-<li>Replace sensor if faulty.</li>
-</ul>
-</div>
-</div>
+</body>
+</html>
 
-<!-- E121 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E121</span> USB Interface Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reconnect USB cable.</li>
-<li>Try different USB port.</li>
-<li>Reinstall scanner drivers.</li>
-<li>Replace USB interface board if needed.</li>
-</ul>
-</div>
-</div>
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
 
-<!-- E122 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E122</span> Scan Resolution Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reset scan settings.</li>
-<li>Update scanner software.</li>
-<li>Reduce scan resolution.</li>
-<li>Reinstall drivers if corrupted.</li>
-</ul>
-</div>
-</div>
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
 
-<!-- E123 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E123</span> Power Surge Detected</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Disconnect power immediately.</li>
-<li>Check power outlet stability.</li>
-<li>Use surge protector.</li>
-<li>Inspect power board if damage suspected.</li>
-</ul>
-</div>
-</div>
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
 
-<!-- E124 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E124</span> Document Feed Sensor Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean ADF sensors.</li>
-<li>Remove dust or paper debris.</li>
-<li>Check wiring connections.</li>
-<li>Replace sensor if faulty.</li>
-</ul>
-</div>
-</div>
-
-<!-- E125 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E125</span> General System Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart scanner system.</li>
-<li>Reset firmware settings.</li>
-<li>Check internal connections.</li>
-<li>Replace main control board if needed.</li>
-</ul>
-</div>
-</div>
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
 
 <!-- FAQ SECTION -->
 <div class="faq">
@@ -550,197 +652,226 @@ h2{
 <br>
 
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Brother scanner not working?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check if the scanner is properly powered on.</li>
-<li>Ensure USB or network connection is stable.</li>
-<li>Restart the scanner and computer.</li>
-<li>Install or update scanner drivers.</li>
-</ul>
+<div class="faq-container">
+
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner not working?</div>
+<div class="answer">
+Check power connection, verify USB or Wi-Fi connectivity, restart the scanner and computer, and ensure drivers are properly installed.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Brother scanner not detected by computer?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check USB cable or Wi-Fi connection.</li>
-<li>Reinstall scanner drivers.</li>
-<li>Try a different USB port or cable.</li>
-<li>Restart both scanner and PC.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner producing blank scans?</div>
+<div class="answer">
+Incorrect document placement, dirty scanner glass, lid not fully closed, or scan settings issues may cause blank scan output.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Brother scanner scanning blank pages?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure the document is placed correctly on the glass.</li>
-<li>Check if the lid is fully closed.</li>
-<li>Clean the scanner glass surface.</li>
-<li>Verify scan settings are correct.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner showing offline?</div>
+<div class="answer">
+Check USB, Ethernet, or Wi-Fi connectivity, restart the scanner and computer, and ensure the scanner is selected as the default device.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Brother scanner scanning very slowly?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reduce scan resolution for faster performance.</li>
-<li>Close other running applications.</li>
-<li>Check USB connection speed (use USB 2.0/3.0 port).</li>
-<li>Restart scanner to clear memory issues.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner not connecting to Wi-Fi?</div>
+<div class="answer">
+Incorrect network settings, weak wireless signal, router issues, or outdated firmware may prevent successful Wi-Fi connections.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why are scanned images blurry?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean the scanner glass and document cover.</li>
-<li>Increase scan resolution settings.</li>
-<li>Ensure document is flat and properly aligned.</li>
-<li>Avoid movement during scanning.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner producing poor quality scans?</div>
+<div class="answer">
+Dirty scanner glass, low resolution settings, poor document placement, or calibration issues can reduce scan quality.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Brother scanner not connecting to Wi-Fi?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check Wi-Fi credentials and network availability.</li>
-<li>Restart router and scanner.</li>
-<li>Move scanner closer to the router.</li>
-<li>Reconfigure wireless settings.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why are there lines or streaks on my scanned images?</div>
+<div class="answer">
+Dust on the scanner glass, dirty sensors, scratches on the glass, or calibration issues commonly cause streaks and lines.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my Brother scanner keep disconnecting?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for unstable Wi-Fi signal.</li>
-<li>Update scanner firmware and drivers.</li>
-<li>Avoid network congestion.</li>
-<li>Use USB connection for stable scanning.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner paper jamming in ADF?</div>
+<div class="answer">
+Paper jams may occur due to overloaded document feeder, worn rollers, torn paper, or debris inside the ADF path.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Brother scanner not saving files?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check save destination folder permissions.</li>
-<li>Ensure sufficient storage space.</li>
-<li>Restart scanning software.</li>
-<li>Reinstall scanner application if needed.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner feeding multiple pages at once?</div>
+<div class="answer">
+Dirty or worn ADF rollers, damp paper, or improperly stacked documents can cause multi-page feeding issues.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Brother scanner giving an error message?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart the scanner and computer.</li>
-<li>Check for paper or document jam (ADF models).</li>
-<li>Update drivers and firmware.</li>
-<li>Refer to specific error code in manual.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner making unusual noises?</div>
+<div class="answer">
+Foreign objects, worn gears, ADF roller issues, or mechanical movement problems may create unusual sounds.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>How do I reset my Brother scanner?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off the scanner and unplug power cable.</li>
-<li>Wait 5–10 minutes before restarting.</li>
-<li>Reset network settings if using Wi-Fi.</li>
-<li>Reinstall drivers if issues persist.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner not scanning?</div>
+<div class="answer">
+Driver issues, connection failures, software conflicts, or hardware faults may prevent scanning functions.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Brother scanner not responding?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check power connection and cables.</li>
-<li>Restart scanner and PC.</li>
-<li>Close and reopen scanning software.</li>
-<li>Reinstall drivers if necessary.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother scanner produce blurry scans?</div>
+<div class="answer">
+Dirty glass, incorrect resolution settings, document movement during scanning, or calibration issues can cause blurry output.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother scanner show an error message?</div>
+<div class="answer">
+System errors may be caused by paper jams, driver issues, firmware faults, or internal hardware problems.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner not detected by my computer?</div>
+<div class="answer">
+USB cable issues, missing drivers, network configuration problems, or firewall settings may prevent detection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner scanning slowly?</div>
+<div class="answer">
+High resolution settings, large files, USB limitations, or system performance issues may slow down scanning.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner not saving scanned files?</div>
+<div class="answer">
+Incorrect save location, permission issues, low storage space, or software errors may prevent file saving.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother scanner keep disconnecting?</div>
+<div class="answer">
+Unstable Wi-Fi, faulty USB cables, outdated drivers, or power interruptions can cause disconnections.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother scanner stop during scanning?</div>
+<div class="answer">
+Paper feed issues, communication errors, overheating, or software crashes may interrupt scanning.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner displaying an error code?</div>
+<div class="answer">
+Error codes indicate issues with ADF, sensors, motors, communication, or internal scanner hardware.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner overheating?</div>
+<div class="answer">
+Continuous use, poor ventilation, dust buildup, or internal component stress can cause overheating warnings.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother scanner keep restarting?</div>
+<div class="answer">
+Firmware issues, unstable power supply, or internal electronic faults may cause repeated restarts.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why won't my Brother scanner turn on?</div>
+<div class="answer">
+Check power cable, adapter, outlet, and internal power supply components for faults or damage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner not detected by my computer?</div>
+<div class="answer">
+USB connection issues, missing drivers, network setup errors, or firewall restrictions may prevent detection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother scanner keep losing network connection?</div>
+<div class="answer">
+Weak Wi-Fi signal, router instability, IP conflicts, or outdated firmware can cause intermittent connection loss.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Brother scanner?</div>
+<div class="answer">
+Turn the scanner off, unplug it for several minutes, reconnect power, and restart to clear temporary faults.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I clean my Brother scanner glass?</div>
+<div class="answer">
+Clean the scanner glass whenever scan quality declines or when dust and streaks appear on scanned images.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Brother scanner perform slowly over time?</div>
+<div class="answer">
+Accumulated dust, high-resolution scanning, outdated drivers, or system performance issues may reduce speed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace my Brother scanner?</div>
+<div class="answer">
+Replacement may be necessary when hardware failures persist, repair costs are high, or scan quality significantly declines.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can outdated firmware cause Brother scanner problems?</div>
+<div class="answer">
+Yes. Outdated firmware can cause compatibility issues, scanning errors, connection failures, and performance problems.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Brother scanner displaying memory errors?</div>
+<div class="answer">
+Large scan jobs, insufficient system memory, corrupted files, or firmware issues can trigger memory-related errors.
 </div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> Avoid forcing internal scanner parts as this may damage delicate optical mechanisms.
-</div>
-
+<strong>Important:</strong> Always disconnect power before performing repairs. Contact a qualified technician if the issue persists.
 </div>
 
 <script>
-document.querySelectorAll('.error-toggle').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-        const content = btn.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    });
-});
-
-const searchInput = document.querySelector('.search-box');
-
-searchInput.addEventListener('keyup', function () {
-    const filter = this.value.toUpperCase();
-    const cards = document.querySelectorAll('.error-card');
-
-    cards.forEach(card => {
-        const text = card.innerText.toUpperCase();
-        card.style.display = text.includes(filter) ? '' : 'none';
-    });
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
 });
 </script>
+
+
 
 </body>
 </html>

@@ -3,386 +3,733 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frigidaire Oven / Range Codes Troubleshooting Guide</title>
+
+<title>Frigidaire Oven Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Frigidaire Oven error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Frigidaire Oven Error Codes & Troubleshooting Guide",
+  "description": "Complete Frigidaire Oven error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f6f8;
+    background:#f5f5f5;
     color:#333;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     background:#fff;
-    padding:25px;
+    padding:30px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 h1{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
     text-align:center;
-    border-radius:8px;
+    color:#666;
     margin-bottom:10px;
-    
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
 }
 
-h2{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
+.subtitle{
     text-align:center;
-    border-radius:8px;
-    margin-bottom:10px;
-    
+    color:#666;
+    margin-bottom:30px;
 }
 
 .section-title{
     margin-top:40px;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
-    border-left:5px solid #1f3b4d;
+    border-left:5px solid #e60012;
     padding-left:10px;
-    
+    color:#444;
 }
 
-.search-box{
-    width:100%;
-    padding:12px;
-    margin:20px 0;
-    border:1px solid #ccc;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    border:1px solid #4e6e81;
     border-radius:8px;
+    padding:20px;
+    background:#fafafa;
+    transition:0.3s;
 }
 
-.error-card{
-    border:1px solid #ddd;
-    border-radius:8px;
-    margin-bottom:10px;
-    overflow:hidden;
-}
-
-.error-toggle{
-    width:100%;
-    padding:15px;
-    background:#fff;
-    border:none;
-    text-align:left;
-    cursor:pointer;
-    font-size:16px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-.error-toggle:hover{
-    background:#f3f3f3;
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .code{
+    font-size:26px;
     font-weight:bold;
-    color:#1f3b4d;
-    margin-right:10px;
-    min-width:80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    color:#4e6e81;
+    margin-bottom:10px;
 }
 
-.error-content{
-    display:none;
-    padding:15px;
-    background:#fafafa;
-    border-top:1px solid #eee;
-    
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
-.error-content ul{
-    padding-left:20px;
+.steps{
+    padding-left:18px;
+    line-height:1.6;
 }
 
 .note{
-    margin-top:25px;
-    padding:15px;
+    margin-top:30px;
     background:#fff3cd;
     border:1px solid #ffeeba;
+    padding:15px;
+    border-radius:6px;
+}
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
     border-radius:8px;
-    
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
+</style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
 }
 </style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Frigidaire Oven / Range Error Codes & Troubleshooting Guide</h1>
+<h1>Frigidaire Oven Error Codes</h1>
 
-<input type="text" class="search-box" placeholder="Search error code...">
+<p class="subtitle"><strong>Complete Frigidaire Oven Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Frigidaire Oven error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F10</span> Temperature Runaway Detected</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off oven immediately and allow it to cool completely.</li>
-<li>Check oven temperature sensor resistance with a multimeter.</li>
-<li>Inspect heating relay for stuck ON condition.</li>
-<li>Replace control board or sensor if overheating persists.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F10</div>
+  <div class="title">Temperature Runaway Detected</div>
+  <ul class="steps">
+    <li>Turn off oven immediately and allow it to cool completely.</li>
+    <li>Check oven temperature sensor resistance with a multimeter.</li>
+    <li>Inspect heating relay for stuck ON condition.</li>
+    <li>Replace control board or sensor if overheating persists.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F11</span> Shorted Keypad</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean control panel surface to remove grease or moisture.</li>
-<li>Check for stuck or damaged buttons.</li>
-<li>Disconnect ribbon cable and inspect connectors.</li>
-<li>Replace keypad assembly if fault continues.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F11</div>
+  <div class="title">Shorted Keypad</div>
+  <ul class="steps">
+    <li>Clean control panel surface to remove grease or moisture.</li>
+    <li>Check for stuck or damaged buttons.</li>
+    <li>Disconnect ribbon cable and inspect connectors.</li>
+    <li>Replace keypad assembly if fault continues.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F13</span> Control Board Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reset power by switching breaker OFF for 5 minutes.</li>
-<li>Inspect control board for burn marks or damage.</li>
-<li>Check wiring harness connections.</li>
-<li>Replace main PCB if fault is confirmed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F13</div>
+  <div class="title">Control Board Failure</div>
+  <ul class="steps">
+    <li>Reset power by switching breaker OFF for 5 minutes.</li>
+    <li>Inspect control board for burn marks or damage.</li>
+    <li>Check wiring harness connections.</li>
+    <li>Replace main PCB if fault is confirmed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F14</span> Oven Sensor Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect temperature sensor wiring connections.</li>
-<li>Test sensor resistance using a multimeter.</li>
-<li>Check connector pins for corrosion or looseness.</li>
-<li>Replace temperature sensor if readings are abnormal.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F14</div>
+  <div class="title">Oven Sensor Error</div>
+  <ul class="steps">
+    <li>Inspect temperature sensor wiring connections.</li>
+    <li>Test sensor resistance using a multimeter.</li>
+    <li>Check connector pins for corrosion or looseness.</li>
+    <li>Replace temperature sensor if readings are abnormal.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F15</span> Door Lock Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check door latch alignment and condition.</li>
-<li>Inspect door lock motor wiring connections.</li>
-<li>Ensure oven door closes fully and securely.</li>
-<li>Replace door lock assembly if faulty.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F15</div>
+  <div class="title">Door Lock Failure</div>
+  <ul class="steps">
+    <li>Check door latch alignment and condition.</li>
+    <li>Inspect door lock motor wiring connections.</li>
+    <li>Ensure oven door closes fully and securely.</li>
+    <li>Replace door lock assembly if faulty.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F30</span> Communication Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect wiring between control board and components.</li>
-<li>Check connectors for corrosion or looseness.</li>
-<li>Perform a full power reset of the oven.</li>
-<li>Replace control board if communication fails.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F30</div>
+  <div class="title">Communication Error</div>
+  <ul class="steps">
+    <li>Inspect wiring between control board and components.</li>
+    <li>Check connectors for corrosion or looseness.</li>
+    <li>Perform a full power reset of the oven.</li>
+    <li>Replace control board if communication fails.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F31</span> Relay Stuck Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect heating relay for stuck contacts.</li>
-<li>Check control board for burnt components.</li>
-<li>Test output voltage to heating elements.</li>
-<li>Replace control board if relay is defective.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F31</div>
+  <div class="title">Relay Stuck Error</div>
+  <ul class="steps">
+    <li>Inspect heating relay for stuck contacts.</li>
+    <li>Check control board for burnt components.</li>
+    <li>Test output voltage to heating elements.</li>
+    <li>Replace control board if relay is defective.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F32</span> Temperature Overshoot Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check temperature sensor calibration.</li>
-<li>Inspect heating element for continuous operation.</li>
-<li>Verify relay switching behavior.</li>
-<li>Replace sensor or control board if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F32</div>
+  <div class="title">Temperature Overshoot Error</div>
+  <ul class="steps">
+    <li>Check temperature sensor calibration.</li>
+    <li>Inspect heating element for continuous operation.</li>
+    <li>Verify relay switching behavior.</li>
+    <li>Replace sensor or control board if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F33</span> Cooling Fan Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect cooling fan for obstruction or dust buildup.</li>
-<li>Check fan motor wiring connections.</li>
-<li>Test fan motor operation.</li>
-<li>Replace cooling fan if it does not run.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F33</div>
+  <div class="title">Cooling Fan Failure</div>
+  <ul class="steps">
+    <li>Inspect cooling fan for obstruction or dust buildup.</li>
+    <li>Check fan motor wiring connections.</li>
+    <li>Test fan motor operation.</li>
+    <li>Replace cooling fan if it does not run.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F34</span> High Temperature Sensor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect high-limit sensor wiring.</li>
-<li>Test sensor resistance values.</li>
-<li>Check for overheating damage.</li>
-<li>Replace sensor if readings are incorrect.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F34</div>
+  <div class="title">High Temperature Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect high-limit sensor wiring.</li>
+    <li>Test sensor resistance values.</li>
+    <li>Check for overheating damage.</li>
+    <li>Replace sensor if readings are incorrect.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F35</span> Touch Control Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean touch panel surface thoroughly.</li>
-<li>Check for moisture or grease under keypad.</li>
-<li>Inspect ribbon cable connections.</li>
-<li>Replace touch control board if unresponsive.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F35</div>
+  <div class="title">Touch Control Failure</div>
+  <ul class="steps">
+    <li>Clean touch panel surface thoroughly.</li>
+    <li>Check for moisture or grease under keypad.</li>
+    <li>Inspect ribbon cable connections.</li>
+    <li>Replace touch control board if unresponsive.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F36</span> Power Supply Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check household voltage supply.</li>
-<li>Inspect breaker and outlet condition.</li>
-<li>Verify power cord integrity.</li>
-<li>Contact electrician if voltage is unstable.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F36</div>
+  <div class="title">Power Supply Error</div>
+  <ul class="steps">
+    <li>Check household voltage supply.</li>
+    <li>Inspect breaker and outlet condition.</li>
+    <li>Verify power cord integrity.</li>
+    <li>Contact electrician if voltage is unstable.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F37</span> Probe Sensor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect meat probe connection.</li>
-<li>Check probe wiring for damage.</li>
-<li>Test probe resistance.</li>
-<li>Replace probe if readings are incorrect.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F37</div>
+  <div class="title">Probe Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect meat probe connection.</li>
+    <li>Check probe wiring for damage.</li>
+    <li>Test probe resistance.</li>
+    <li>Replace probe if readings are incorrect.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F38</span> EEPROM Memory Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reset oven power for 5–10 minutes.</li>
-<li>Inspect control board for corrosion.</li>
-<li>Check wiring harness connections.</li>
-<li>Replace control board if memory failure persists.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F38</div>
+  <div class="title">EEPROM Memory Error</div>
+  <ul class="steps">
+    <li>Reset oven power for 5–10 minutes.</li>
+    <li>Inspect control board for corrosion.</li>
+    <li>Check wiring harness connections.</li>
+    <li>Replace control board if memory failure persists.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F39</span> Configuration Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Verify oven configuration settings.</li>
-<li>Reset control system if possible.</li>
-<li>Check programming data integrity.</li>
-<li>Reprogram or replace control board if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F39</div>
+  <div class="title">Configuration Error</div>
+  <ul class="steps">
+    <li>Verify oven configuration settings.</li>
+    <li>Reset control system if possible.</li>
+    <li>Check programming data integrity.</li>
+    <li>Reprogram or replace control board if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F40</span> Power Relay Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect power relay on control board.</li>
-<li>Check wiring to heating elements.</li>
-<li>Test relay switching operation.</li>
-<li>Replace control board if relay is faulty.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F40</div>
+  <div class="title">Power Relay Failure</div>
+  <ul class="steps">
+    <li>Inspect power relay on control board.</li>
+    <li>Check wiring to heating elements.</li>
+    <li>Test relay switching operation.</li>
+    <li>Replace control board if relay is faulty.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">F90</span> Door Lock Motor Issue</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check door lock motor operation.</li>
-<li>Inspect wiring harness for damage.</li>
-<li>Reset oven power supply.</li>
-<li>Replace door lock assembly if needed.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F10</div>
+  <div class="title">Temperature Runaway Detected</div>
+  <ul class="steps">
+    <li>Turn off oven immediately and allow it to cool completely.</li>
+    <li>Check oven temperature sensor resistance with a multimeter.</li>
+    <li>Inspect heating relay for stuck ON condition.</li>
+    <li>Replace control board or sensor if overheating persists.</li>
+  </ul>
 </div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F11</div>
+  <div class="title">Shorted Keypad</div>
+  <ul class="steps">
+    <li>Clean control panel surface from moisture or grease.</li>
+    <li>Check for stuck or damaged buttons.</li>
+    <li>Inspect ribbon cable connection to control board.</li>
+    <li>Replace keypad assembly if unresponsive.</li>
+  </ul>
 </div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F13</div>
+  <div class="title">Control Board Failure</div>
+  <ul class="steps">
+    <li>Reset power by turning breaker OFF for 5 minutes.</li>
+    <li>Inspect control board for burn marks or damage.</li>
+    <li>Check wiring harness connections.</li>
+    <li>Replace main PCB if fault is confirmed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F14</div>
+  <div class="title">Oven Sensor Error</div>
+  <ul class="steps">
+    <li>Inspect temperature sensor wiring connections.</li>
+    <li>Test sensor resistance using a multimeter.</li>
+    <li>Check connector pins for corrosion or looseness.</li>
+    <li>Replace temperature sensor if readings are abnormal.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F15</div>
+  <div class="title">Door Lock Failure</div>
+  <ul class="steps">
+    <li>Check door latch alignment and condition.</li>
+    <li>Inspect door lock motor wiring connections.</li>
+    <li>Ensure oven door closes fully and securely.</li>
+    <li>Replace door lock assembly if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F30</div>
+  <div class="title">Communication Error</div>
+  <ul class="steps">
+    <li>Inspect wiring between control board and components.</li>
+    <li>Check connectors for corrosion or looseness.</li>
+    <li>Perform a full power reset of the oven.</li>
+    <li>Replace control board if communication fails.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F31</div>
+  <div class="title">Relay Stuck Error</div>
+  <ul class="steps">
+    <li>Inspect heating relay for stuck contacts.</li>
+    <li>Check control board for burnt components.</li>
+    <li>Test output voltage to heating elements.</li>
+    <li>Replace control board if relay is defective.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F32</div>
+  <div class="title">Temperature Overshoot Error</div>
+  <ul class="steps">
+    <li>Check temperature sensor calibration.</li>
+    <li>Inspect heating element for continuous operation.</li>
+    <li>Verify relay switching behavior.</li>
+    <li>Replace sensor or control board if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F33</div>
+  <div class="title">Cooling Fan Failure</div>
+  <ul class="steps">
+    <li>Inspect cooling fan for obstruction or dust buildup.</li>
+    <li>Check fan motor wiring connections.</li>
+    <li>Test fan motor operation directly.</li>
+    <li>Replace cooling fan if it does not run.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F34</div>
+  <div class="title">High Temperature Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect high-limit sensor wiring.</li>
+    <li>Test sensor resistance values.</li>
+    <li>Check for overheating damage.</li>
+    <li>Replace sensor if readings are incorrect.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F35</div>
+  <div class="title">Touch Control Failure</div>
+  <ul class="steps">
+    <li>Clean touch panel surface thoroughly.</li>
+    <li>Check for moisture or grease under keypad.</li>
+    <li>Inspect ribbon cable connections.</li>
+    <li>Replace touch control board if unresponsive.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F36</div>
+  <div class="title">Power Supply Error</div>
+  <ul class="steps">
+    <li>Check household voltage supply stability.</li>
+    <li>Inspect breaker and outlet condition.</li>
+    <li>Verify power cord integrity.</li>
+    <li>Contact electrician if voltage is unstable.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F37</div>
+  <div class="title">Probe Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect meat probe connection.</li>
+    <li>Check probe wiring for damage.</li>
+    <li>Test probe resistance.</li>
+    <li>Replace probe if readings are incorrect.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F38</div>
+  <div class="title">EEPROM Memory Error</div>
+  <ul class="steps">
+    <li>Reset oven power for 5–10 minutes.</li>
+    <li>Inspect control board for corrosion.</li>
+    <li>Check wiring harness connections.</li>
+    <li>Replace control board if memory failure persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F39</div>
+  <div class="title">Configuration Error</div>
+  <ul class="steps">
+    <li>Verify oven configuration settings.</li>
+    <li>Reset control system if possible.</li>
+    <li>Check programming data integrity.</li>
+    <li>Reprogram or replace control board if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F40</div>
+  <div class="title">Power Relay Failure</div>
+  <ul class="steps">
+    <li>Inspect power relay on control board.</li>
+    <li>Check wiring to heating elements.</li>
+    <li>Test relay switching operation.</li>
+    <li>Replace control board if relay is faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F90</div>
+  <div class="title">Door Lock Motor Issue</div>
+  <ul class="steps">
+    <li>Check door lock motor operation.</li>
+    <li>Inspect wiring harness for damage.</li>
+    <li>Reset oven power supply.</li>
+    <li>Replace door lock assembly if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F90</div>
+  <div class="title">Door Lock Motor Issue</div>
+  <ul class="steps">
+    <li>Check door lock motor operation.</li>
+    <li>Inspect wiring harness for damage.</li>
+    <li>Reset oven power supply.</li>
+    <li>Replace door lock assembly if needed.</li>
+  </ul>
+</div></div>
+
+</body>
+</html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
 
 <!-- FAQ SECTION -->
 <div class="faq">
@@ -390,171 +737,105 @@ h2{
 
 <br>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire oven not heating?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check if the oven is properly connected to power or gas supply.</li>
-<li>Verify the correct cooking mode is selected.</li>
-<li>Inspect the heating element for visible damage.</li>
-<li>Allow enough time for preheating.</li>
-</ul>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire oven not heating?</div>
+<div class="answer">
+Check if the oven is properly connected to power or gas supply. Verify the correct cooking mode is selected. Inspect the heating element for visible damage. Allow sufficient time for preheating.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire oven not reaching temperature?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check if the door is sealing properly.</li>
-<li>Calibrate oven temperature settings if needed.</li>
-<li>Inspect temperature sensor or thermostat.</li>
-<li>Avoid opening the door frequently while cooking.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire oven not reaching the set temperature?</div>
+<div class="answer">
+Check door seal for proper closure. Avoid frequent door opening during cooking. Inspect temperature sensor or thermostat. Calibrate oven settings if temperature is inaccurate.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire oven not turning on?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check circuit breaker or gas supply.</li>
-<li>Ensure control lock is not enabled.</li>
-<li>Verify timer or delayed start is not active.</li>
-<li>Inspect power cord or ignition system.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire oven not turning on?</div>
+<div class="answer">
+Check circuit breaker or power supply. Ensure control lock is not enabled. Verify timer or delayed start settings. Inspect power cord or ignition system.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire oven showing an error code?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart the oven to clear temporary faults.</li>
-<li>Check temperature sensor connection.</li>
-<li>Inspect wiring and control board.</li>
-<li>Refer to manual for specific error code meaning.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire oven showing an error code?</div>
+<div class="answer">
+Restart the oven to clear temporary faults. Check temperature sensor connection. Inspect wiring and control board. Refer to error code guide for specific meaning.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire oven cooking unevenly?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure oven is fully preheated before cooking.</li>
-<li>Use proper rack position for food type.</li>
-<li>Check if convection fan is working (if applicable).</li>
-<li>Avoid overcrowding the oven interior.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire oven cooking unevenly?</div>
+<div class="answer">
+Preheat oven fully before cooking. Use correct rack position for food type. Ensure convection fan is working (if applicable). Avoid overcrowding inside the oven.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire range burner not igniting?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure gas supply is turned on.</li>
-<li>Clean burner ports and igniter.</li>
-<li>Check for moisture or food debris.</li>
-<li>Try lighting with another burner to test gas flow.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire oven making loud noises?</div>
+<div class="answer">
+Check convection fan and cooling fan for normal operation. Inspect for loose racks or cookware. Ensure nothing is obstructing internal components. Contact technician if grinding noise continues.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my Frigidaire oven make loud noises?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check if convection fan is running normally.</li>
-<li>Inspect for loose racks or cookware.</li>
-<li>Ensure cooling fan is not obstructed.</li>
-<li>Contact technician if grinding noises occur.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Frigidaire oven smell like gas?</div>
+<div class="answer">
+Turn off oven immediately if gas smell is strong. Check gas line connections for leaks. Ensure burner ignites properly. Contact a qualified gas technician immediately.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my Frigidaire oven smell like gas?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off the oven immediately if gas smell is strong.</li>
-<li>Check gas line connections for leaks.</li>
-<li>Ensure burner is igniting properly.</li>
-<li>Contact gas technician or service center immediately.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire oven door not closing properly?</div>
+<div class="answer">
+Check for food debris or obstructions around hinges. Inspect door gasket for wear or damage. Ensure oven racks are positioned correctly. Adjust or replace hinges if needed.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire oven door not closing properly?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for food debris or obstruction in hinges.</li>
-<li>Inspect door gasket for wear or damage.</li>
-<li>Ensure racks are positioned correctly.</li>
-<li>Adjust or replace hinges if necessary.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Frigidaire oven?</div>
+<div class="answer">
+Turn off power at the breaker or unplug the unit. Wait 5–10 minutes before restoring power. Reset clock and settings after restart. Test oven with a short heating cycle.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>How do I reset my Frigidaire oven?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off power at breaker or unplug unit.</li>
-<li>Wait 5–10 minutes before restoring power.</li>
-<li>Reset clock and settings after restart.</li>
-<li>Test oven with a short heating cycle.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire oven self-clean function not working?</div>
+<div class="answer">
+Ensure oven door is fully closed and locked. Remove large food debris before starting cycle. Check if oven is too hot to begin self-clean. Refer to manual for model-specific requirements.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is the self-clean function not working?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure oven door is fully closed and locked.</li>
-<li>Remove large food debris before starting cycle.</li>
-<li>Check if oven is too hot to start cleaning.</li>
-<li>Refer to manual for model-specific requirements.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire oven not preheating properly?</div>
+<div class="answer">
+Check heating element performance. Inspect temperature sensor accuracy. Ensure door is closed tightly. Avoid opening the door during preheat cycle.
 </div>
 </div>
 
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire oven display not working?</div>
+<div class="answer">
+Check power supply and breaker. Reset oven by unplugging for a few minutes. Inspect control board for faults. Replace display panel if necessary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire oven fan not working?</div>
+<div class="answer">
+Check fan motor operation. Inspect wiring connections. Clean fan blades from grease buildup. Replace fan motor if it fails to run.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Frigidaire oven keep shutting off?</div>
+<div class="answer">
+Check overheating protection system. Inspect thermostat and sensors. Ensure stable power supply. Reset oven and test again.
+</div>
 </div>
 
 <div class="note">
@@ -563,29 +844,20 @@ h2{
 
 </div>
 
-</body>
-</html>
+</div>
+
+
 
 <script>
-document.querySelectorAll('.error-toggle').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-        const content = btn.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    });
-});
-
-const searchInput = document.querySelector('.search-box');
-
-searchInput.addEventListener('keyup', function () {
-    const filter = this.value.toUpperCase();
-    const cards = document.querySelectorAll('.error-card');
-
-    cards.forEach(card => {
-        const text = card.innerText.toUpperCase();
-        card.style.display = text.includes(filter) ? '' : 'none';
-    });
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
 });
 </script>
+
+
 
 </body>
 </html>

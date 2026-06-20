@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shark Robot Vacuum Error Codes Guide</title>
+
+<title>Shark Robot Vacuum Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Shark Robot Vacuum error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Shark Robot Vacuum Error Codes & Troubleshooting Guide",
+  "description": "Complete Shark Robot Vacuum error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -30,7 +126,6 @@ h1{
     background: #1f3b4d;
     color: white;
     padding: 25px;
-
 }
 
 .subtitle{
@@ -50,7 +145,7 @@ h1{
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
     margin-top:20px;
 }
@@ -69,7 +164,7 @@ h1{
 }
 
 .code{
-    font-size:24px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
     margin-bottom:10px;
@@ -93,7 +188,129 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
@@ -102,105 +319,425 @@ h1{
 
 <h1>Shark Robot Vacuum Error Codes</h1>
 
-<p class="subtitle">
-<strong>Complete Robot Navigation & System Troubleshooting Guide</strong>
+<p class="subtitle"><strong>Complete Shark Robot Vacuum Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Shark Robot Vacuum error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
 
-<!-- ================= CLEANING SYSTEM ================= -->
-<div class="section-title">Cleaning System Errors</div>
-
 <div class="grid">
 
-<div class="card">
-<div class="code">CLN</div>
-<div class="title">Cleaning System Blocked</div>
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E1</div>
+<div class="title">Main Brush Obstruction</div>
 <ul class="steps">
-<li>Turn off robot vacuum.</li>
-<li>Check suction inlet for debris or blockage.</li>
-<li>Clean filters and dust pathway.</li>
-<li>Restart cleaning cycle.</li>
+<li>Turn off the robot vacuum.</li>
+<li>Remove debris from the brush roller.</li>
+<li>Check for tangled hair or threads.</li>
+<li>Reinstall brush and restart cleaning.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= NAVIGATION ================= -->
-<div class="section-title">Navigation Sensor Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">CLIFF</div>
-<div class="title">Cliff Sensor Error Detected</div>
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E2</div>
+<div class="title">Side Brush Jammed</div>
 <ul class="steps">
-<li>Clean cliff sensors underneath unit.</li>
-<li>Ensure robot is not on reflective surface.</li>
-<li>Move robot to flat floor area.</li>
-<li>Restart mapping cycle.</li>
+<li>Inspect side brush for obstructions.</li>
+<li>Remove hair and debris buildup.</li>
+<li>Ensure brush rotates freely.</li>
+<li>Restart the robot vacuum.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= WHEELS ================= -->
-<div class="section-title">Movement System Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">WHEEL</div>
-<div class="title">Wheel Jam or Obstruction</div>
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E3</div>
+<div class="title">Suction Motor Error</div>
 <ul class="steps">
-<li>Turn off robot before inspection.</li>
-<li>Remove hair, threads, or debris from wheels.</li>
-<li>Ensure wheels spin freely.</li>
+<li>Empty the dust bin.</li>
+<li>Clean filters and air pathways.</li>
+<li>Check for blockages in suction channel.</li>
 <li>Restart unit after cleaning.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= BRUSH ================= -->
-<div class="section-title">Brush System Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">BRUSH</div>
-<div class="title">Brush Roller Jammed</div>
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E4</div>
+<div class="title">Wheel Motor Fault</div>
 <ul class="steps">
-<li>Remove brush roller carefully.</li>
-<li>Clean hair and debris from roller ends.</li>
-<li>Check belt and mounting alignment.</li>
-<li>Reinstall and test operation.</li>
+<li>Inspect wheels for debris.</li>
+<li>Ensure wheels move freely.</li>
+<li>Check wheel motor operation.</li>
+<li>Restart robot after inspection.</li>
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E5</div>
+<div class="title">Navigation System Fault</div>
+<ul class="steps">
+<li>Move robot to an open area.</li>
+<li>Clean navigation sensors.</li>
+<li>Remove obstacles from cleaning path.</li>
+<li>Restart mapping process.</li>
+</ul>
 </div>
 
-<!-- ================= BIN ================= -->
-<div class="section-title">Dust System Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">BIN</div>
-<div class="title">Dust Bin Full or Missing</div>
+<div class="card" onclick="toggleCard(this)">
+<div class="code">CLIFF</div>
+<div class="title">Cliff Sensor Error</div>
 <ul class="steps">
-<li>Empty dust bin completely.</li>
-<li>Reinsert bin securely into place.</li>
-<li>Check bin sensor contacts.</li>
+<li>Clean cliff sensors underneath robot.</li>
+<li>Move unit away from reflective surfaces.</li>
+<li>Place robot on flat flooring.</li>
 <li>Restart cleaning cycle.</li>
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">SENSOR</div>
+<div class="title">Navigation Sensor Blocked</div>
+<ul class="steps">
+<li>Clean front and side sensors.</li>
+<li>Remove dust buildup.</li>
+<li>Check for physical damage.</li>
+<li>Restart robot vacuum.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">MAP</div>
+<div class="title">Mapping Failure</div>
+<ul class="steps">
+<li>Clear obstacles from room.</li>
+<li>Ensure adequate lighting.</li>
+<li>Restart mapping function.</li>
+<li>Reset robot map if necessary.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">LOCATE</div>
+<div class="title">Positioning Error</div>
+<ul class="steps">
+<li>Move robot to charging dock.</li>
+<li>Check sensor cleanliness.</li>
+<li>Restart navigation system.</li>
+<li>Rebuild map if issue continues.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">WHEEL</div>
+<div class="title">Wheel Jam Detected</div>
+<ul class="steps">
+<li>Turn off robot vacuum.</li>
+<li>Remove debris from wheel assembly.</li>
+<li>Check wheel suspension movement.</li>
+<li>Restart unit after cleaning.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">WHEEL-L</div>
+<div class="title">Left Wheel Motor Error</div>
+<ul class="steps">
+<li>Inspect left wheel for blockage.</li>
+<li>Clean wheel housing.</li>
+<li>Check motor movement.</li>
+<li>Service motor if issue persists.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">WHEEL-R</div>
+<div class="title">Right Wheel Motor Error</div>
+<ul class="steps">
+<li>Inspect right wheel for obstruction.</li>
+<li>Clean wheel assembly.</li>
+<li>Verify free wheel movement.</li>
+<li>Replace motor if necessary.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">BRUSH</div>
+<div class="title">Brush Roller Jammed</div>
+<ul class="steps">
+<li>Remove brush roller.</li>
+<li>Cut away tangled hair.</li>
+<li>Clean roller bearings.</li>
+<li>Reinstall and test operation.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">BRUSH-L</div>
+<div class="title">Brush Motor Error</div>
+<ul class="steps">
+<li>Inspect brush motor assembly.</li>
+<li>Check for debris buildup.</li>
+<li>Verify electrical connections.</li>
+<li>Replace motor if faulty.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">SIDE</div>
+<div class="title">Side Brush Failure</div>
+<ul class="steps">
+<li>Inspect side brush movement.</li>
+<li>Remove hair and debris.</li>
+<li>Check mounting screw.</li>
+<li>Replace brush if damaged.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">BIN</div>
+<div class="title">Dust Bin Full or Missing</div>
+<ul class="steps">
+<li>Empty dust container.</li>
+<li>Reinstall dust bin securely.</li>
+<li>Clean sensor contacts.</li>
+<li>Restart cleaning cycle.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">FILTER</div>
+<div class="title">Filter Blocked</div>
+<ul class="steps">
+<li>Remove and clean filters.</li>
+<li>Allow washable filters to dry.</li>
+<li>Replace worn filters.</li>
+<li>Restart robot vacuum.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">CLN</div>
+<div class="title">Cleaning System Blocked</div>
+<ul class="steps">
+<li>Inspect suction pathway.</li>
+<li>Remove debris from air channels.</li>
+<li>Clean filters thoroughly.</li>
+<li>Restart cleaning cycle.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">DOCK</div>
+<div class="title">Docking Station Not Found</div>
+<ul class="steps">
+<li>Ensure dock has power.</li>
+<li>Move dock to open location.</li>
+<li>Clean charging contacts.</li>
+<li>Restart return-to-dock function.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">CHARGE</div>
+<div class="title">Charging Error</div>
+<ul class="steps">
+<li>Inspect charging contacts.</li>
+<li>Clean dock terminals.</li>
+<li>Verify power adapter operation.</li>
+<li>Reconnect charging dock.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">BATTERY</div>
+<div class="title">Battery Fault</div>
+<ul class="steps">
+<li>Fully recharge the battery.</li>
+<li>Inspect battery connection.</li>
+<li>Restart robot vacuum.</li>
+<li>Replace battery if capacity is low.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">LOW BAT</div>
+<div class="title">Battery Critically Low</div>
+<ul class="steps">
+<li>Return robot to charging dock.</li>
+<li>Allow complete recharge.</li>
+<li>Check dock power supply.</li>
+<li>Resume cleaning after charging.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">WIFI</div>
+<div class="title">Wi-Fi Connection Error</div>
+<ul class="steps">
+<li>Check router signal strength.</li>
+<li>Restart router and robot.</li>
+<li>Reconnect through SharkClean app.</li>
+<li>Verify network password.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">APP</div>
+<div class="title">App Communication Error</div>
+<ul class="steps">
+<li>Close and reopen mobile app.</li>
+<li>Check internet connection.</li>
+<li>Reconnect robot to account.</li>
+<li>Update app and firmware.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">UPDATE</div>
+<div class="title">Firmware Update Failed</div>
+<ul class="steps">
+<li>Ensure stable Wi-Fi connection.</li>
+<li>Keep robot on charging dock.</li>
+<li>Retry firmware update.</li>
+<li>Restart robot if update stalls.</li>
+</ul>
+</div>
+
+</div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Robot Vacuum show ERR or system error messages?</div>
+<div class="answer">
+ERR messages usually indicate issues such as blocked sensors, navigation errors, brush roll obstructions, wheel jams, charging problems, or communication faults. Turn off the robot vacuum, clean all sensors and moving parts, then restart the unit.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Robot Vacuum stop during cleaning?</div>
+<div class="answer">
+The robot may stop due to low battery, obstacle detection, overheating protection, full dust bin, or a blocked brush roll. Remove any obstructions, empty the dust bin, and restart the cleaning cycle.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Robot Vacuum not turn on?</div>
+<div class="answer">
+Check that the battery is charged and the charging dock is connected properly. Inspect charging contacts for dirt or corrosion and allow the robot to charge for several hours before attempting to power it on.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Robot Vacuum keep getting stuck?</div>
+<div class="answer">
+The robot may become trapped by cables, rugs, furniture, or clutter. Clear the cleaning area, secure loose wires, and ensure navigation sensors are clean and unobstructed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Robot Vacuum move in circles?</div>
+<div class="answer">
+Circular movement is often caused by dirty navigation sensors, wheel problems, or mapping issues. Clean all sensors and wheels, then restart the robot to rebuild its navigation path.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Robot Vacuum have weak suction?</div>
+<div class="answer">
+Weak suction is commonly caused by a full dust bin, clogged filters, blocked airflow, or debris in the brush assembly. Clean the dust bin, filters, and suction pathway thoroughly.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Robot Vacuum make unusual noises?</div>
+<div class="answer">
+Unusual sounds may result from tangled hair, debris inside the brush roll, wheel obstruction, or worn moving components. Turn off the robot and inspect all rotating parts before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Robot Vacuum brush roll stop spinning?</div>
+<div class="answer">
+Hair, threads, and debris can prevent proper brush rotation. Remove and clean the brush roll, check end caps, and ensure the brush motor area is free from obstruction.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Robot Vacuum not return to the dock?</div>
+<div class="answer">
+This may be caused by blocked sensors, poor dock placement, weak battery charge, or navigation issues. Ensure the dock has adequate clearance and clean the charging contacts.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Robot Vacuum battery drain quickly?</div>
+<div class="answer">
+Rapid battery drain may occur due to aging batteries, excessive cleaning cycles, or charging issues. Fully recharge the battery and replace it if runtime has significantly decreased.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Shark Robot Vacuum?</div>
+<div class="answer">
+Turn the robot vacuum off, wait several minutes, then power it back on. Some models may require pressing and holding specific buttons to perform a factory reset.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I service my Shark Robot Vacuum?</div>
+<div class="answer">
+Service is recommended if the robot repeatedly displays errors, fails to charge, loses navigation capability, experiences motor problems, or continues malfunctioning after cleaning and resetting.
+</div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> Regular cleaning of sensors and brushes helps maintain optimal navigation performance.
+<strong>Important:</strong> Shark Robot Vacuum system messages are designed to protect the battery, motors, navigation sensors, and cleaning system. If problems continue after troubleshooting, discontinue use and contact an authorized Shark service center for assistance.
 </div>
 
-</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 
+
+

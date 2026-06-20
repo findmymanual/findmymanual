@@ -3,562 +3,482 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Electrolux System Messages Codes Troubleshooting Guide</title>
+
+<title>Electrolux System Messages Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Electrolux System Messages error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Electrolux System Messages Error Codes & Troubleshooting Guide",
+  "description": "Complete Electrolux System Messages error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f6f8;
+    background:#f5f5f5;
     color:#333;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     background:#fff;
-    padding:25px;
+    padding:30px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 h1{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
     text-align:center;
-    border-radius:8px;
+    color:#666;
     margin-bottom:10px;
-    
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
 }
 
-h2{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
+.subtitle{
     text-align:center;
-    border-radius:8px;
-    margin-bottom:10px;
-    
+    color:#666;
+    margin-bottom:30px;
 }
 
 .section-title{
     margin-top:40px;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
-    border-left:5px solid #1f3b4d;
+    border-left:5px solid #e60012;
     padding-left:10px;
-    
+    color:#444;
 }
 
-.search-box{
-    width:100%;
-    padding:12px;
-    margin:20px 0;
-    border:1px solid #ccc;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    border:1px solid #4e6e81;
     border-radius:8px;
+    padding:20px;
+    background:#fafafa;
+    transition:0.3s;
 }
 
-.error-card{
-    border:1px solid #ddd;
-    border-radius:8px;
-    margin-bottom:10px;
-    overflow:hidden;
-}
-
-.error-toggle{
-    width:100%;
-    padding:15px;
-    background:#fff;
-    border:none;
-    text-align:left;
-    cursor:pointer;
-    font-size:16px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-.error-toggle:hover{
-    background:#f3f3f3;
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .code{
+    font-size:26px;
     font-weight:bold;
-    color:#1f3b4d;
-    margin-right:10px;
-    min-width:80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    color:#4e6e81;
+    margin-bottom:10px;
 }
 
-.error-content{
-    display:none;
-    padding:15px;
-    background:#fafafa;
-    border-top:1px solid #eee;
-    
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
-.error-content ul{
-    padding-left:20px;
+.steps{
+    padding-left:18px;
+    line-height:1.6;
 }
 
 .note{
-    margin-top:25px;
-    padding:15px;
+    margin-top:30px;
     background:#fff3cd;
     border:1px solid #ffeeba;
+    padding:15px;
+    border-radius:6px;
+}
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
     border-radius:8px;
-    
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
+</style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
 }
 </style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Electrolux System Messages Error Codes & Troubleshooting Guide</h1>
+<h1>Electrolux System Messages Error Codes</h1>
 
-<input type="text" class="search-box" placeholder="Search error code...">
+<p class="subtitle"><strong>Complete Electrolux System Messages Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Electrolux System Messages error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">PF</span> Power Failure Detected</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check household power supply and circuit breaker.</li>
-<li>Reset appliance by unplugging for 5–10 minutes.</li>
-<li>Reprogram settings after power is restored.</li>
-<li>Inspect outlet for unstable or fluctuating voltage.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PF</div>
+  <div class="title">Power Failure Detected</div>
+  <ul class="steps">
+    <li>Check household power supply and circuit breaker.</li>
+    <li>Reset appliance by unplugging for 5–10 minutes.</li>
+    <li>Reprogram settings after power is restored.</li>
+    <li>Inspect outlet for unstable voltage.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">RESET</span> System Restart Required</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off the appliance completely.</li>
-<li>Wait several minutes before restarting.</li>
-<li>Check if the message clears after reboot.</li>
-<li>Inspect control board if the issue persists.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">RESET</div>
+  <div class="title">System Restart Required</div>
+  <ul class="steps">
+    <li>Turn off refrigerator completely.</li>
+    <li>Wait 5–10 minutes before restarting.</li>
+    <li>Check if display clears after reboot.</li>
+    <li>Inspect control board if issue persists.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">LOC</span> Control Lock Active</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Press and hold the lock button for 3–5 seconds.</li>
-<li>Check if the control panel is stuck or unresponsive.</li>
-<li>Clean keypad surface from moisture or dirt.</li>
-<li>Reset power if lock cannot be cleared.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">LOC</div>
+  <div class="title">Control Lock Active</div>
+  <ul class="steps">
+    <li>Press and hold lock button for 3–5 seconds.</li>
+    <li>Clean control panel from moisture or dirt.</li>
+    <li>Check keypad responsiveness.</li>
+    <li>Reset power if lock cannot be cleared.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">HOT</span> Overheat Warning</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Allow appliance to cool completely before use.</li>
-<li>Check ventilation and airflow paths.</li>
-<li>Clean filters or internal cooling components.</li>
-<li>Do not restart until temperature normalizes.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">HOT</div>
+  <div class="title">Overheat Warning</div>
+  <ul class="steps">
+    <li>Ensure proper ventilation around unit.</li>
+    <li>Check condenser coils for dust buildup.</li>
+    <li>Allow appliance to cool down.</li>
+    <li>Do not overload internal compartments.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">DOOR</span> Door Not Closed</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure door is fully closed and properly latched.</li>
-<li>Check for obstruction in door seal area.</li>
-<li>Inspect door switch sensor functionality.</li>
-<li>Replace latch or switch if faulty.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">DOOR</div>
+  <div class="title">Door Not Closed</div>
+  <ul class="steps">
+    <li>Ensure door is fully closed and sealed.</li>
+    <li>Check gasket for damage or debris.</li>
+    <li>Inspect door switch sensor.</li>
+    <li>Remove items blocking door closure.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">ERR</span> General System Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Perform a full power reset of the appliance.</li>
-<li>Check wiring connections and control board.</li>
-<li>Look for additional fault codes on display.</li>
-<li>Replace main control board if unresolved.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERR</div>
+  <div class="title">General System Error</div>
+  <ul class="steps">
+    <li>Restart refrigerator system.</li>
+    <li>Check wiring connections.</li>
+    <li>Inspect control board condition.</li>
+    <li>Replace PCB if error persists.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">COOL</span> Cooling Cycle Active</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Allow the cycle to complete normally.</li>
-<li>Avoid opening the appliance unnecessarily.</li>
-<li>Ensure proper ventilation around the unit.</li>
-<li>System will return to normal operation automatically.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">COOL</div>
+  <div class="title">Cooling Cycle Active</div>
+  <ul class="steps">
+    <li>Allow cycle to complete normally.</li>
+    <li>Do not open doors frequently.</li>
+    <li>Ensure airflow is not blocked.</li>
+    <li>System will stabilize automatically.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">HEAT</span> Heating Cycle Active</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Appliance is currently in heating mode.</li>
-<li>Do not interrupt operation unless necessary.</li>
-<li>Ensure proper airflow and ventilation.</li>
-<li>Cycle will complete automatically.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">DEF</div>
+  <div class="title">Defrost Cycle Active</div>
+  <ul class="steps">
+    <li>Ice is being removed automatically.</li>
+    <li>Do not disconnect power during cycle.</li>
+    <li>Wait for completion before use.</li>
+    <li>Check drain path after defrost.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">DEF</span> Defrost Cycle Active</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ice buildup is being removed automatically.</li>
-<li>Do not disconnect power during defrost.</li>
-<li>Allow cycle to complete fully.</li>
-<li>Normal operation will resume afterward.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FAN</div>
+  <div class="title">Fan Operation Mode</div>
+  <ul class="steps">
+    <li>Check if fan is blocked or frozen.</li>
+    <li>Inspect evaporator fan motor.</li>
+    <li>Verify airflow inside compartments.</li>
+    <li>Replace fan motor if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">FAN</span> Fan Operation Mode</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Unit is circulating air only.</li>
-<li>Check mode settings if cooling/heating expected.</li>
-<li>Ensure fan is not blocked or obstructed.</li>
-<li>Adjust speed settings if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SLEEP</div>
+  <div class="title">Sleep Mode Active</div>
+  <ul class="steps">
+    <li>Appliance is in low power mode.</li>
+    <li>Check timer settings.</li>
+    <li>Disable sleep mode if needed.</li>
+    <li>Press any control to wake system.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">SLEEP</span> Sleep Mode Active</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Appliance is operating in low-power sleep mode.</li>
-<li>Temperature and output may be reduced.</li>
-<li>Disable sleep mode if full performance is needed.</li>
-<li>Check timer settings for automatic activation.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ECO</div>
+  <div class="title">Energy Saving Mode</div>
+  <ul class="steps">
+    <li>System is running in energy-saving mode.</li>
+    <li>Cooling may be slightly reduced.</li>
+    <li>Adjust settings for higher performance.</li>
+    <li>Ensure ambient temperature is stable.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">ECO</span> Energy Saving Mode</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>System is running in energy-efficient mode.</li>
-<li>Performance may be reduced to save power.</li>
-<li>Adjust settings if higher output is required.</li>
-<li>Ensure room conditions match ECO settings.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FILTER</div>
+  <div class="title">Filter Maintenance Required</div>
+  <ul class="steps">
+    <li>Clean air filter thoroughly.</li>
+    <li>Remove dust and debris buildup.</li>
+    <li>Dry filter before reinstalling.</li>
+    <li>Reset filter indicator after cleaning.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">FILTER</span> Filter Maintenance Required</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Remove and clean the air or dust filter.</li>
-<li>Wash and dry filter before reinstalling.</li>
-<li>Check for airflow obstruction.</li>
-<li>Reset filter indicator after cleaning.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">WIFI</div>
+  <div class="title">Wi-Fi Connection Active</div>
+  <ul class="steps">
+    <li>Check router connection stability.</li>
+    <li>Reconnect device to network.</li>
+    <li>Reset network settings if needed.</li>
+    <li>Verify correct password entry.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">WIFI</span> Network Connection Active</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check router and internet connection stability.</li>
-<li>Reconnect device via mobile app if needed.</li>
-<li>Reset network settings if connection fails.</li>
-<li>Ensure correct Wi-Fi credentials are used.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">TIMER</span> Timer Function Enabled</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Appliance is scheduled for automatic operation.</li>
-<li>Check timer settings on control panel.</li>
-<li>Cancel or adjust schedule if needed.</li>
-<li>Ensure correct time settings are configured.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">STBY</span> Standby Mode</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Appliance is powered but not actively running.</li>
-<li>Press start or select mode to resume operation.</li>
-<li>Check timer or delay settings.</li>
-<li>Ensure control panel is responsive.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">SERVICE</span> Maintenance Reminder</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Appliance requires routine maintenance check.</li>
-<li>Inspect internal components for wear or buildup.</li>
-<li>Clean filters and vents thoroughly.</li>
-<li>Contact service center if reminder persists.</li>
-</ul>
-</div>
-</div>
-
-<!-- FAQ SECTION -->
-<div class="faq">
-<h2>Frequently Asked Questions</h2>
-
-<br>
-
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “i10” mean on an Electrolux dishwasher?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>It indicates a water inlet problem.</li>
-<li>Check that the water supply tap is open.</li>
-<li>Clean inlet hose and filter screen.</li>
-<li>Ensure adequate water pressure.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “i20” mean on an Electrolux dishwasher?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>It indicates a drainage issue.</li>
-<li>Check drain hose for blockages or kinks.</li>
-<li>Clean filters and sump area.</li>
-<li>Inspect sink drain connection.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “i30” mean on an Electrolux dishwasher?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>It indicates a water leak detection.</li>
-<li>Turn off water supply immediately.</li>
-<li>Check base tray for water accumulation.</li>
-<li>Inspect hoses and internal connections.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “i50” mean on an Electrolux dishwasher?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>It indicates a circulation pump or motor fault.</li>
-<li>Restart the dishwasher to clear temporary errors.</li>
-<li>Check for blockages in the pump area.</li>
-<li>Contact technician if issue persists.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “iF0” mean on an Electrolux dishwasher?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>It indicates water level detection issues.</li>
-<li>Check water inlet pressure and flow.</li>
-<li>Clean filters and inlet valve.</li>
-<li>Restart appliance after inspection.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “E10” mean on an Electrolux washing machine?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>It indicates a water supply issue.</li>
-<li>Check that the water tap is fully open.</li>
-<li>Clean inlet filters and hoses.</li>
-<li>Ensure adequate water pressure.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “E20” mean on an Electrolux washing machine?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>It indicates a draining problem.</li>
-<li>Clean drain pump filter.</li>
-<li>Check drain hose for blockages.</li>
-<li>Ensure proper installation of drain system.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “E40” mean on an Electrolux washing machine?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>It indicates a door lock issue.</li>
-<li>Ensure door is fully closed.</li>
-<li>Check door latch and lock mechanism.</li>
-<li>Restart machine to reset system.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “EHO” mean on an Electrolux oven?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>It indicates a power or communication fault.</li>
-<li>Reset the oven by turning power off and on.</li>
-<li>Check wiring and electrical connection.</li>
-<li>Contact service if error persists.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span>What does “E60” mean on an Electrolux dryer?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>It indicates a heating system fault.</li>
-<li>Clean lint filter and vents.</li>
-<li>Check heating element and thermostat.</li>
-<li>Call technician if issue continues.</li>
-</ul>
-</div>
-</div>
-
-<div class="error-card">
-<button class="error-toggle">
-<span>What should I do if Electrolux system messages keep appearing?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart the appliance to clear temporary errors.</li>
-<li>Check water, power, and airflow systems.</li>
-<li>Clean filters and remove blockages.</li>
-<li>Contact Electrolux support for persistent issues.</li>
-</ul>
-</div>
-</div>
-
-</div>
-
-<div class="note">
-<strong>Important:</strong> If system messages persist repeatedly, disconnect power and contact a certified Electrolux technician.
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SERVICE</div>
+  <div class="title">Maintenance Reminder</div>
+  <ul class="steps">
+    <li>Schedule routine maintenance check.</li>
+    <li>Clean condenser coils and filters.</li>
+    <li>Inspect internal components.</li>
+    <li>Contact technician if warning persists.</li>
+  </ul>
 </div>
 
 </div>
@@ -566,26 +486,183 @@ h2{
 </body>
 </html>
 
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
 <script>
-document.querySelectorAll('.error-toggle').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-        const content = btn.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    });
-});
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
 
-const searchInput = document.querySelector('.search-box');
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
 
-searchInput.addEventListener('keyup', function () {
-    const filter = this.value.toUpperCase();
-    const cards = document.querySelectorAll('.error-card');
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
 
-    cards.forEach(card => {
-        const text = card.innerText.toUpperCase();
-        card.style.display = text.includes(filter) ? '' : 'none';
-    });
+<br>
+
+
+<div class="faq-container">
+
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E10 Water Supply / Inlet Issue mean?</div>
+<div class="answer">
+Check water supply valve is open, inspect inlet hose for blockage or kinks, clean filter screen, and ensure proper water pressure for ice maker or dispenser system.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E20 Cooling Performance Failure mean?</div>
+<div class="answer">
+Check evaporator fan operation, clean condenser coils, inspect airflow inside compartments, and ensure correct temperature settings.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E24 Overheating Protection Activated mean?</div>
+<div class="answer">
+Ensure proper ventilation around refrigerator, clean condenser coils, check compressor operation, and allow unit to stabilize temperature.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E30 Door Open / Door Switch Issue mean?</div>
+<div class="answer">
+Ensure refrigerator door is fully closed, check door gasket seal, inspect door switch operation, and remove any obstruction preventing closure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E40 Door Seal or Lock Failure mean?</div>
+<div class="answer">
+Inspect door gasket for damage, check alignment of door hinges, test door switch, and replace seal or latch if necessary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E50 Fan Motor / Air Circulation Fault mean?</div>
+<div class="answer">
+Check evaporator or condenser fan for blockage, inspect wiring connections, test fan motor operation, and replace fan if defective.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E51 Relay / Control Circuit Fault mean?</div>
+<div class="answer">
+Inspect control board relay system, check wiring harness, test switching operation, and replace PCB if faulty.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E52 Fan or Compressor Signal Loss mean?</div>
+<div class="answer">
+Check wiring connections to compressor or fan motor, inspect feedback signal circuit, and replace motor or control board if signal is missing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E56 Cooling System Failure mean?</div>
+<div class="answer">
+Inspect compressor operation, check condenser coils for dust buildup, verify fan performance, and allow technician inspection if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E60 Temperature Control Fault mean?</div>
+<div class="answer">
+Check temperature sensors, inspect airflow inside fridge, ensure doors are sealing properly, and allow system to stabilize.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E61 Temperature Sensor Fault mean?</div>
+<div class="answer">
+Inspect thermistor wiring, test resistance values, check connectors for corrosion, and replace sensor if readings are incorrect.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E63 Cooling Performance Issue mean?</div>
+<div class="answer">
+Clean condenser coils, ensure proper airflow, avoid overloading fridge, and check evaporator fan operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E66 Airflow Restriction mean?</div>
+<div class="answer">
+Remove food blocking air vents, clean internal ducts, check fan operation, and ensure proper spacing around refrigerator.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E68 Control Board Failure mean?</div>
+<div class="answer">
+Restart refrigerator power, inspect PCB for moisture or damage, check wiring connections, and replace control board if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E70 Communication Error mean?</div>
+<div class="answer">
+Check wiring between main control board and display module, inspect connectors, restart system, and replace board if communication fails.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E90 Configuration Error mean?</div>
+<div class="answer">
+Reset refrigerator power, verify system settings, check control board programming, and reprogram or replace PCB if necessary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E91 Memory / EEPROM Fault mean?</div>
+<div class="answer">
+Disconnect power and restart unit, inspect control board connections, check for PCB damage, and replace board if memory error persists.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E93 System Internal Fault mean?</div>
+<div class="answer">
+Restart refrigerator system, inspect wiring harness, check control board condition, and replace PCB if issue continues.
+</div>
+</div>
+
+<div class="note">
+<strong>Important:</strong> Always disconnect power before attempting repairs. If the issue continues, contact a qualified Electrolux service technician.
+</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
 });
 </script>
+
+
 
 </body>
 </html>

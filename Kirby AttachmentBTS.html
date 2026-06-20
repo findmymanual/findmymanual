@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kirby Attachment System Errors Guide</title>
+
+<title>Kirby Attachment Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Kirby Attachment error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Kirby Attachment Error Codes & Troubleshooting Guide",
+  "description": "Complete Kirby Attachment error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -49,7 +145,7 @@ h1{
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
     margin-top:20px;
 }
@@ -92,78 +188,403 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Kirby Attachment System Errors</h1>
+<h1>Kirby Attachment Error Codes</h1>
 
-<p class="subtitle">
-<strong>Accessory & Hose Troubleshooting Guide</strong>
+<p class="subtitle"><strong>Complete Kirby Attachment Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Kirby Attachment error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
 
-<!-- ================= ATTACHMENT LOCK ================= -->
-<div class="section-title">Attachment Lock Errors</div>
-
 <div class="grid">
 
-<div class="card">
-<div class="code">ATT 1</div>
-<div class="title">Attachment Not Locked Properly</div>
-<ul class="steps">
-<li>Remove attachment and reattach firmly.</li>
-<li>Ensure locking mechanism clicks into place.</li>
-<li>Check for debris blocking connection point.</li>
-<li>Test attachment stability before use.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ATT 1</div>
+  <div class="title">Accessory Not Recognized</div>
+  <ul class="steps">
+    <li>Remove and reattach accessory properly.</li>
+    <li>Check compatibility with Kirby model.</li>
+    <li>Inspect connection port for debris.</li>
+    <li>Restart vacuum system.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ATT 2</div>
+  <div class="title">Accessory Airflow Mismatch Detected</div>
+  <ul class="steps">
+    <li>Verify correct attachment for model type.</li>
+    <li>Check airflow selector settings.</li>
+    <li>Ensure hose is fully connected.</li>
+    <li>Restart vacuum system after adjustment.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ATT 3</div>
+  <div class="title">Hose Blockage Detected</div>
+  <ul class="steps">
+    <li>Disconnect hose from unit.</li>
+    <li>Inspect for debris or clogs.</li>
+    <li>Clear blockage using flexible rod or airflow.</li>
+    <li>Reconnect and test suction.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ATT 4</div>
+  <div class="title">Brush Roll Jam</div>
+  <ul class="steps">
+    <li>Turn off and unplug unit.</li>
+    <li>Remove brush roll and clean debris.</li>
+    <li>Check belt tension and alignment.</li>
+    <li>Replace belt if worn or broken.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ATT 5</div>
+  <div class="title">Suction Loss Detected</div>
+  <ul class="steps">
+    <li>Check hose for leaks or cracks.</li>
+    <li>Inspect filter for blockage.</li>
+    <li>Empty dust container.</li>
+    <li>Ensure all attachments are sealed properly.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ATT 6</div>
+  <div class="title">Filter Clog Warning</div>
+  <ul class="steps">
+    <li>Remove and clean HEPA filter.</li>
+    <li>Check pre-filter for dust buildup.</li>
+    <li>Replace filter if heavily soiled.</li>
+    <li>Restart system after cleaning.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ATT 7</div>
+  <div class="title">Attachment Seal Failure</div>
+  <ul class="steps">
+    <li>Check hose connection points.</li>
+    <li>Ensure no air leaks in fittings.</li>
+    <li>Replace worn rubber seals.</li>
+    <li>Reconnect attachment securely.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ATT 8</div>
+  <div class="title">Overload Protection Triggered</div>
+  <ul class="steps">
+    <li>Turn off vacuum immediately.</li>
+    <li>Remove blockage from hose or nozzle.</li>
+    <li>Allow motor to cool down.</li>
+    <li>Restart after 10–15 minutes.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ATT 9</div>
+  <div class="title">Electrical Contact Failure</div>
+  <ul class="steps">
+    <li>Inspect attachment contact pins.</li>
+    <li>Clean corrosion or dust buildup.</li>
+    <li>Check wiring inside handle assembly.</li>
+    <li>Replace damaged connectors if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ATT 10</div>
+  <div class="title">Hose Airflow Restriction</div>
+  <ul class="steps">
+    <li>Detach hose and inspect interior blockage.</li>
+    <li>Flush debris using compressed air.</li>
+    <li>Check for bent or crushed hose sections.</li>
+    <li>Reconnect and test suction strength.</li>
+  </ul>
 </div>
 
 </div>
 
-<!-- ================= AIRFLOW MISMATCH ================= -->
-<div class="section-title">Airflow Compatibility Errors</div>
+</body>
+</html>
 
-<div class="grid">
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
 
-<div class="card">
-<div class="code">ATT 2</div>
-<div class="title">Accessory Airflow Mismatch Detected</div>
-<ul class="steps">
-<li>Verify correct attachment for model type.</li>
-<li>Check airflow selector settings.</li>
-<li>Ensure hose is fully connected.</li>
-<li>Restart vacuum system after adjustment.</li>
-</ul>
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Kirby vacuum not respond?</div>
+<div class="answer">
+Check power supply, control lock status, and attachment connection. Try resetting the vacuum system.
+</div>
 </div>
 
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum not starting?</div>
+<div class="answer">
+Ensure the power switch is on and attachments are properly connected. Check electrical supply and reset the unit.
+</div>
 </div>
 
-<!-- ================= HOSE BLOCKAGE ================= -->
-<div class="section-title">Hose System Errors</div>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum not picking up dirt properly?</div>
+<div class="answer">
+Inspect hose, filter, and dust bag. Check for clogs or airflow restriction in attachments.
+</div>
+</div>
 
-<div class="grid">
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum losing suction?</div>
+<div class="answer">
+Check hose connections, filter condition, and dust container. Ensure no blockage inside attachments.
+</div>
+</div>
 
-<div class="card">
-<div class="code">ATT 3</div>
-<div class="title">Hose Blockage Detected</div>
-<ul class="steps">
-<li>Disconnect hose from unit.</li>
-<li>Inspect for debris or clogs.</li>
-<li>Clear blockage using flexible rod or air flow.</li>
-<li>Reconnect and test suction.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum making unusual noises?</div>
+<div class="answer">
+Inspect brush roll, belt, and internal components. Remove any debris stuck inside attachments.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Kirby vacuum stop mid-use?</div>
+<div class="answer">
+Check for overheating protection, airflow blockage, or power interruption. Allow unit to cool before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum brush not spinning?</div>
+<div class="answer">
+Inspect brush roll, belt condition, and motor drive. Replace worn belt if necessary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum hose clogged?</div>
+<div class="answer">
+Remove hose and inspect for debris. Clear blockage using airflow or cleaning rod.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum attachment not working?</div>
+<div class="answer">
+Check attachment compatibility and connection points. Ensure proper locking into the main unit.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum overheating?</div>
+<div class="answer">
+Check airflow system, clean filters, and ensure hose is not blocked. Allow unit to cool before reuse.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum vibrating or shaking?</div>
+<div class="answer">
+Inspect brush roll, belt alignment, and attachments. Remove any obstruction inside the cleaning head.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Kirby vacuum system messages?</div>
+<div class="answer">
+Turn off power for 5–10 minutes, then restart the vacuum to clear temporary system faults.
+</div>
 </div>
 
 </div>
 
 <div class="note">
-<strong>Important:</strong> Always ensure attachments are compatible with your Kirby model to prevent airflow and performance issues.
+<strong>Important:</strong> If Kirby attachment system messages persist after troubleshooting, disconnect power and contact a certified technician.
 </div>
 
-</div>
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

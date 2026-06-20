@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kirby System Messages Guide</title>
+
+<title>Kirby System Messages Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Kirby System Messages error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Kirby System Messages Error Codes & Troubleshooting Guide",
+  "description": "Complete Kirby System Messages error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -19,7 +115,7 @@ body{
     margin:auto;
     background:#fff;
     padding:30px;
-    border-radius:8px;
+    border-radius:10px;
     box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
@@ -92,113 +188,454 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Kirby System Messages</h1>
+<h1>Kirby System Messages Error Codes</h1>
 
-<p class="subtitle">
-<strong>Status & Maintenance Alerts Guide</strong>
+<p class="subtitle"><strong>Complete Kirby System Messages Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Kirby System Messages error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
 
-<!-- ================= STATUS ================= -->
-<div class="section-title">Status Messages</div>
-
 <div class="grid">
 
-<div class="card">
-<div class="code">READY</div>
-<div class="title">System Ready for Operation</div>
-<ul class="steps">
-<li>Device is functioning normally.</li>
-<li>No action required.</li>
-<li>Begin vacuum operation as needed.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">READY</div>
+  <div class="title">System Ready for Operation</div>
+  <ul class="steps">
+    <li>Device is functioning normally.</li>
+    <li>No action required.</li>
+    <li>Begin vacuum operation as needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">STBY</div>
+  <div class="title">Standby Mode Active</div>
+  <ul class="steps">
+    <li>System is powered but not running.</li>
+    <li>Press power button to resume operation.</li>
+    <li>Check control settings if unresponsive.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">RESET</div>
+  <div class="title">Restart Required After Fault</div>
+  <ul class="steps">
+    <li>Turn off and unplug the vacuum.</li>
+    <li>Wait 30–60 seconds before restarting.</li>
+    <li>Check if fault clears after reset.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">LOCK</div>
+  <div class="title">Safety Lock Engaged</div>
+  <ul class="steps">
+    <li>Check safety latch and seals.</li>
+    <li>Ensure all parts are properly assembled.</li>
+    <li>Deactivate lock if procedure allows.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERR</div>
+  <div class="title">General System Error</div>
+  <ul class="steps">
+    <li>Power cycle the unit.</li>
+    <li>Inspect attachments and connections.</li>
+    <li>Check for obstruction in airflow path.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">OVERHEAT</div>
+  <div class="title">Thermal Protection Activated</div>
+  <ul class="steps">
+    <li>Turn off and allow unit to cool.</li>
+    <li>Clean filters and airflow passages.</li>
+    <li>Avoid extended continuous use.</li>
+    <li>Restart after cooling period.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">HOT</div>
+  <div class="title">High Temperature Warning</div>
+  <ul class="steps">
+    <li>Stop operation immediately.</li>
+    <li>Check airflow and suction blockage.</li>
+    <li>Allow motor to cool before restarting.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SERVICE</div>
+  <div class="title">Maintenance Required</div>
+  <ul class="steps">
+    <li>Inspect belts, filters, and brush system.</li>
+    <li>Schedule professional servicing if needed.</li>
+    <li>Check for worn or damaged parts.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FILTER</div>
+  <div class="title">Filter Cleaning Needed</div>
+  <ul class="steps">
+    <li>Remove and clean filter thoroughly.</li>
+    <li>Replace filter if damaged or clogged.</li>
+    <li>Ensure proper airflow after cleaning.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">BELT</div>
+  <div class="title">Belt Wear Detected</div>
+  <ul class="steps">
+    <li>Inspect drive belt condition.</li>
+    <li>Replace if cracked or loose.</li>
+    <li>Ensure proper tension after replacement.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">BRUSH</div>
+  <div class="title">Brush Roll Maintenance Needed</div>
+  <ul class="steps">
+    <li>Remove hair and debris from brush roll.</li>
+    <li>Check brush rotation manually.</li>
+    <li>Replace brush roll if worn out.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">AIR</div>
+  <div class="title">Airflow Restriction Detected</div>
+  <ul class="steps">
+    <li>Check hose and attachments for blockage.</li>
+    <li>Clean filters and dust container.</li>
+    <li>Ensure full suction path clearance.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">CLG</div>
+  <div class="title">Clog Detected in System</div>
+  <ul class="steps">
+    <li>Disconnect hose and inspect for blockage.</li>
+    <li>Clear debris from airflow path.</li>
+    <li>Reassemble and test suction.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PWR</div>
+  <div class="title">Power Supply Issue</div>
+  <ul class="steps">
+    <li>Check outlet and power cord.</li>
+    <li>Inspect fuse or breaker.</li>
+    <li>Try a different power source.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SENS</div>
+  <div class="title">Sensor Fault Detected</div>
+  <ul class="steps">
+    <li>Inspect internal sensor connections.</li>
+    <li>Clean sensor area.</li>
+    <li>Replace sensor if unresponsive.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">MTR</div>
+  <div class="title">Motor Performance Issue</div>
+  <ul class="steps">
+    <li>Check motor for obstruction.</li>
+    <li>Inspect wiring connections.</li>
+    <li>Replace motor if performance drops.</li>
+  </ul>
 </div>
 
 </div>
 
-<!-- ================= SYSTEM CONTROL ================= -->
-<div class="section-title">System Control Messages</div>
+</body>
+</html>
 
-<div class="grid">
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
 
-<div class="card">
-<div class="code">RESET</div>
-<div class="title">Restart Required After Fault</div>
-<ul class="steps">
-<li>Turn off and unplug the vacuum.</li>
-<li>Wait 30–60 seconds before restarting.</li>
-<li>Check if fault clears after reset.</li>
-</ul>
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Kirby vacuum not respond?</div>
+<div class="answer">
+Check power supply, control lock status, and system connection. Ensure the unit is properly plugged in and reset the vacuum system.
+</div>
 </div>
 
-<div class="card">
-<div class="code">LOCK</div>
-<div class="title">Safety Lock Engaged</div>
-<ul class="steps">
-<li>Check safety latch and seals.</li>
-<li>Ensure all parts are properly assembled.</li>
-<li>Deactivate lock if procedure allows.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum not starting?</div>
+<div class="answer">
+Check power switch and electrical supply. Ensure attachments are correctly installed. Reset the system if the unit remains unresponsive.
+</div>
 </div>
 
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum not picking up dirt properly?</div>
+<div class="answer">
+Inspect filter, dust bag, and hose for blockages. Check airflow path and remove any debris from attachments.
+</div>
 </div>
 
-<!-- ================= THERMAL ================= -->
-<div class="section-title">Thermal Protection Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">OVERHEAT</div>
-<div class="title">Thermal Protection Activated</div>
-<ul class="steps">
-<li>Turn off and allow unit to cool.</li>
-<li>Clean filters and airflow passages.</li>
-<li>Avoid extended continuous use.</li>
-<li>Restart after cooling period.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum losing suction?</div>
+<div class="answer">
+Check hose connections, filters, and dust container. Ensure there are no obstructions in the airflow system.
+</div>
 </div>
 
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum making unusual noises?</div>
+<div class="answer">
+Inspect brush roll, belt, and internal components. Remove any debris or foreign objects inside the system.
+</div>
 </div>
 
-<!-- ================= MAINTENANCE ================= -->
-<div class="section-title">Maintenance Alerts</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">SERVICE</div>
-<div class="title">Maintenance Required</div>
-<ul class="steps">
-<li>Inspect belts, filters, and brush system.</li>
-<li>Schedule professional servicing if needed.</li>
-<li>Check for worn or damaged parts.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Kirby vacuum stop mid-use?</div>
+<div class="answer">
+Check for overheating protection, airflow blockage, or power interruption. Allow the unit to cool before restarting.
+</div>
 </div>
 
-<div class="card">
-<div class="code">FILTER</div>
-<div class="title">Filter Cleaning Needed</div>
-<ul class="steps">
-<li>Remove and clean filter thoroughly.</li>
-<li>Replace filter if damaged or clogged.</li>
-<li>Ensure proper airflow after cleaning.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum brush not spinning?</div>
+<div class="answer">
+Inspect belt condition and brush roll. Check motor drive and replace worn belt if necessary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum hose clogged?</div>
+<div class="answer">
+Remove hose and inspect for debris. Clear blockage using airflow or a cleaning rod.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum attachment not working?</div>
+<div class="answer">
+Check attachment compatibility and connection points. Ensure it is properly locked into the main unit.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum overheating?</div>
+<div class="answer">
+Check airflow system, clean filters, and remove blockages. Allow the vacuum to cool before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Kirby vacuum vibrating or shaking?</div>
+<div class="answer">
+Inspect brush roll, belt alignment, and attachments. Remove any obstruction inside the cleaning head.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Kirby system messages?</div>
+<div class="answer">
+Turn off power for 5–10 minutes, then restart the vacuum system to clear temporary faults and reset system messages.
+</div>
 </div>
 
 </div>
 
 <div class="note">
-<strong>Important:</strong> Regular filter cleaning and maintenance helps prevent overheating and performance loss.
+<strong>Important:</strong> If Kirby system messages persist after troubleshooting, disconnect power and contact a certified technician.
 </div>
 
-</div>
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

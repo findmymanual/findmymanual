@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Philips Air Fryer / Small Appliance Error Codes Guide</title>
+
+<title>Philips Air Fryer / Small Appliance Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Philips Air Fryer / Small Appliance error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Philips Air Fryer / Small Appliance Error Codes & Troubleshooting Guide",
+  "description": "Complete Philips Air Fryer / Small Appliance error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -30,7 +126,6 @@ h1{
     background: #1f3b4d;
     color: white;
     padding: 25px;
-
 }
 
 .subtitle{
@@ -69,7 +164,7 @@ h1{
 }
 
 .code{
-    font-size:24px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
     margin-bottom:10px;
@@ -93,7 +188,129 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
@@ -102,123 +319,294 @@ h1{
 
 <h1>Philips Air Fryer / Small Appliance Error Codes</h1>
 
-<p class="subtitle">
-<strong>System Diagnostic & Troubleshooting Guide</strong>
-</p>
+<p class="subtitle"><strong>Complete Philips Air Fryer / Small Appliance Guide</strong></p>
 
-<!-- ================= SENSOR ================= -->
-<div class="section-title">Temperature & Sensor Errors</div>
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Philips Air Fryer / Small Appliance error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E1</div>
 <div class="title">Temperature Sensor Fault</div>
 <ul class="steps">
-<li>Check temperature probe connection.</li>
-<li>Clean internal heating chamber.</li>
-<li>Restart device.</li>
-<li>Replace sensor if faulty.</li>
+<li>Check temperature probe or sensor connection.</li>
+<li>Clean internal heating chamber and surrounding area.</li>
+<li>Restart the air fryer after cooling.</li>
+<li>Replace sensor if readings remain incorrect.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= OVERHEAT ================= -->
-<div class="section-title">Safety Protection Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E2</div>
-<div class="title">Overheat Protection</div>
+<div class="title">Overheat Protection Activated</div>
 <ul class="steps">
-<li>Turn off and allow cooling.</li>
-<li>Ensure vents are not blocked.</li>
-<li>Clean internal airflow channels.</li>
-<li>Avoid continuous high-temperature use.</li>
+<li>Turn off and unplug the appliance immediately.</li>
+<li>Allow unit to cool completely before restarting.</li>
+<li>Ensure air vents are not blocked.</li>
+<li>Clean grease or dust from airflow channels.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= FAN ================= -->
-<div class="section-title">Airflow System Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E3</div>
 <div class="title">Fan Motor Error</div>
 <ul class="steps">
-<li>Check fan for obstruction.</li>
-<li>Inspect motor wiring.</li>
-<li>Clean dust buildup inside unit.</li>
-<li>Replace fan motor if not spinning.</li>
+<li>Check fan blades for obstruction or debris.</li>
+<li>Inspect motor wiring and connector.</li>
+<li>Clean internal dust buildup.</li>
+<li>Replace fan motor if it does not spin.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= HEATING ================= -->
-<div class="section-title">Heating System Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E4</div>
 <div class="title">Heating Element Failure</div>
 <ul class="steps">
-<li>Inspect heating coil for damage.</li>
-<li>Check electrical connections.</li>
-<li>Test continuity of element.</li>
+<li>Inspect heating coil for visible damage.</li>
+<li>Check electrical wiring connections.</li>
+<li>Test continuity of heating element.</li>
 <li>Replace heating component if needed.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= CONTROL ================= -->
-<div class="section-title">Control System Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E5</div>
-<div class="title">Control Board Issue</div>
+<div class="title">Temperature Detection Fault</div>
 <ul class="steps">
-<li>Restart device.</li>
-<li>Check internal wiring connections.</li>
-<li>Inspect PCB for burn marks.</li>
-<li>Replace control board if faulty.</li>
+<li>Allow unit to stabilize internal temperature.</li>
+<li>Check sensor placement and wiring.</li>
+<li>Ensure proper airflow during operation.</li>
+<li>Restart after 10–15 minutes.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= POWER ================= -->
-<div class="section-title">Power System Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E6</div>
 <div class="title">Power Supply Instability</div>
 <ul class="steps">
 <li>Check wall outlet stability.</li>
-<li>Avoid using extension cords.</li>
-<li>Inspect power cable for damage.</li>
-<li>Test device on another outlet.</li>
+<li>Avoid using extension cords or power strips.</li>
+<li>Inspect power cord for damage.</li>
+<li>Try a different outlet.</li>
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E7</div>
+<div class="title">Door / Basket Not Properly Installed</div>
+<ul class="steps">
+<li>Ensure basket is fully inserted.</li>
+<li>Check latch alignment.</li>
+<li>Remove food obstruction around door seal.</li>
+<li>Restart appliance after securing basket.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E8</div>
+<div class="title">Communication Error (Control System)</div>
+<ul class="steps">
+<li>Turn off and restart the appliance.</li>
+<li>Check internal wiring connections.</li>
+<li>Inspect control board for damage.</li>
+<li>Replace PCB if error persists.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E9</div>
+<div class="title">Airflow Blockage Detected</div>
+<ul class="steps">
+<li>Check air inlet and outlet vents.</li>
+<li>Remove grease or dust buildup.</li>
+<li>Ensure appliance has enough clearance space.</li>
+<li>Restart after cleaning airflow paths.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E10</div>
+<div class="title">Sensor Calibration Error</div>
+<ul class="steps">
+<li>Unplug appliance for 5–10 minutes.</li>
+<li>Allow system reset and recalibration.</li>
+<li>Ensure stable room temperature.</li>
+<li>Replace sensor if calibration fails repeatedly.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E11</div>
+<div class="title">Internal Overload Protection</div>
+<ul class="steps">
+<li>Reduce cooking load or batch size.</li>
+<li>Allow appliance to cool down.</li>
+<li>Avoid continuous long cooking cycles.</li>
+<li>Restart after cooling period.</li>
+</ul>
+</div></div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Air Fryer show ERR or system error messages?</div>
+<div class="answer">
+System errors usually indicate temporary issues such as power fluctuations, overheating protection, or internal sensor faults. Turn off the air fryer, unplug it for a few minutes, then restart. Ensure proper ventilation and avoid overloading.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Air Fryer stop working mid-cycle?</div>
+<div class="answer">
+This is often caused by overheating protection, poor airflow, or unstable power supply. Let the appliance cool down, clean vents, and restart the cooking cycle.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Philips Air Fryer not heating properly?</div>
+<div class="answer">
+Check that the temperature and time settings are correct. Make sure the basket is fully inserted and the heating element is not blocked by grease or food residue.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Air Fryer not turn on?</div>
+<div class="answer">
+Check the power outlet, plug connection, and circuit breaker. Ensure the basket is properly inserted, as many models will not power on if not secured.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Air Fryer produce smoke?</div>
+<div class="answer">
+Smoke is usually caused by excess oil or food residue inside the basket or heating chamber. Clean the unit thoroughly before reuse and avoid over-oiling food.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Air Fryer smell bad during use?</div>
+<div class="answer">
+A burning or bad smell may come from leftover grease or dust on heating elements. Clean all removable parts and run a short empty cycle to remove residue.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is food cooking unevenly in my Philips Air Fryer?</div>
+<div class="answer">
+Uneven cooking can be caused by overcrowding the basket or improper food placement. Shake or rearrange food halfway through cooking for better results.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Philips Air Fryer making loud fan noises?</div>
+<div class="answer">
+The fan may be blocked by grease or debris. Clean the internal airflow areas and ensure the appliance is placed on a stable, flat surface.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Air Fryer keep shutting off automatically?</div>
+<div class="answer">
+Automatic shutdown may occur due to overheating protection or basket misalignment. Allow the unit to cool and ensure proper basket installation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Philips Air Fryer basket not fitting properly?</div>
+<div class="answer">
+Check for food debris or obstruction inside the housing. Ensure the basket is aligned correctly before pushing it back in.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Philips Air Fryer display not working?</div>
+<div class="answer">
+Check the power connection and outlet. If the display is unresponsive, unplug the unit for a few minutes and restart it.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Philips Air Fryer?</div>
+<div class="answer">
+Unplug the appliance for 5–10 minutes, then plug it back in and restart. This helps clear temporary system glitches.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How often should I clean my Philips Air Fryer?</div>
+<div class="answer">
+Clean the basket and tray after every use. Deep clean the heating area and fan regularly to maintain performance and prevent odors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I wash Philips Air Fryer parts in water?</div>
+<div class="answer">
+Yes, removable parts like the basket and tray are usually washable. Always dry them completely before reassembling.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Philips Air Fryer take longer to cook food?</div>
+<div class="answer">
+This may be caused by low temperature settings, overcrowding, or dirty heating components. Clean the unit and avoid overloading for better performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I service my Philips Air Fryer?</div>
+<div class="answer">
+Service is recommended if the appliance repeatedly shuts down, does not heat, produces burning smells, or shows persistent performance issues.
+</div>
 </div>
 
 <div class="note">
-<strong>Note:</strong> Always unplug the appliance before inspecting internal components.
+<strong>Important:</strong> If your Philips Air Fryer continues to malfunction after troubleshooting, stop using it immediately. Persistent issues may indicate heating element failure, fan motor problems, or internal electrical faults. Contact an authorized service center for repair.
 </div>
 
-</div>
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 

@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Janome Sewing Machine Error Codes Guide</title>
+
+<title>Janome Sewing Machine Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Janome Sewing Machine error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Janome Sewing Machine Error Codes & Troubleshooting Guide",
+  "description": "Complete Janome Sewing Machine error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -49,7 +145,7 @@ h1{
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
     margin-top:20px;
 }
@@ -68,7 +164,7 @@ h1{
 }
 
 .code{
-    font-size:24px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
     margin-bottom:10px;
@@ -92,7 +188,129 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
@@ -101,159 +319,547 @@ h1{
 
 <h1>Janome Sewing Machine Error Codes</h1>
 
-<p class="subtitle">
-<strong>Complete Troubleshooting & Diagnostic Guide</strong>
+<p class="subtitle"><strong>Complete Janome Sewing Machine Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Janome Sewing Machine error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
 
-<!-- ================= THREAD ================= -->
-<div class="section-title">Thread System Errors</div>
-
 <div class="grid">
 
-<div class="card">
-<div class="code">E1</div>
-<div class="title">Thread Jam Detected</div>
-<ul class="steps">
-<li>Turn off the machine immediately.</li>
-<li>Remove tangled thread from bobbin area.</li>
-<li>Clean feed dogs and needle plate.</li>
-<li>Re-thread machine properly before restart.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E1</div>
+  <div class="title">Thread Jam Detected</div>
+  <ul class="steps">
+    <li>Turn off the machine immediately</li>
+    <li>Remove tangled thread from bobbin area</li>
+    <li>Clean Feed Dogs and Needle Plate</li>
+    <li>Re-thread machine properly before restart</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E2</div>
+  <div class="title">Motor Overload</div>
+  <ul class="steps">
+    <li>Turn off machine and allow it to cool down</li>
+    <li>Remove thick fabric or obstruction</li>
+    <li>Check needle condition and alignment</li>
+    <li>Restart with lighter fabric load</li>
+  </ul>
 </div>
 
-<!-- ================= MOTOR ================= -->
-<div class="section-title">Motor & Power Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">E2</div>
-<div class="title">Motor Overload</div>
-<ul class="steps">
-<li>Turn off machine and let it cool down.</li>
-<li>Remove thick fabric or obstruction.</li>
-<li>Check needle condition and alignment.</li>
-<li>Restart with lighter fabric load.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E3</div>
+  <div class="title">Needle Position Error</div>
+  <ul class="steps">
+    <li>Ensure needle is correctly installed</li>
+    <li>Replace bent or damaged needle</li>
+    <li>Check Handwheel alignment</li>
+    <li>Restart machine after adjustment</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E4</div>
+  <div class="title">Sensor Malfunction</div>
+  <ul class="steps">
+    <li>Restart machine to reset sensors</li>
+    <li>Check internal wiring connections</li>
+    <li>Clean dust from sensor area</li>
+    <li>Replace Sensor Module if needed</li>
+  </ul>
 </div>
 
-<!-- ================= NEEDLE ================= -->
-<div class="section-title">Needle & Position Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">E3</div>
-<div class="title">Needle Position Error</div>
-<ul class="steps">
-<li>Ensure needle is correctly installed.</li>
-<li>Replace bent or damaged needle.</li>
-<li>Check handwheel alignment.</li>
-<li>Restart machine after adjustment.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5</div>
+  <div class="title">Bobbin System Error</div>
+  <ul class="steps">
+    <li>Remove bobbin and reinstall correctly</li>
+    <li>Check for thread tangles or lint buildup</li>
+    <li>Ensure Bobbin Case is properly seated</li>
+    <li>Replace damaged bobbin components</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E6</div>
+  <div class="title">Foot Pedal Communication Failure</div>
+  <ul class="steps">
+    <li>Check pedal cable connection</li>
+    <li>Inspect for wire damage or looseness</li>
+    <li>Try another compatible Foot Pedal</li>
+    <li>Restart machine after reconnecting</li>
+  </ul>
 </div>
 
-<!-- ================= SENSOR ================= -->
-<div class="section-title">Sensor Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">E4</div>
-<div class="title">Sensor Malfunction</div>
-<ul class="steps">
-<li>Restart machine to reset sensors.</li>
-<li>Check wiring connections internally.</li>
-<li>Clean dust from sensor area.</li>
-<li>Replace sensor module if needed.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E7</div>
+  <div class="title">Thread Tension Abnormal</div>
+  <ul class="steps">
+    <li>Re-thread upper and lower thread paths</li>
+    <li>Adjust tension dial settings</li>
+    <li>Use recommended thread type</li>
+    <li>Clean tension discs</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E8</div>
+  <div class="title">Main Board Error</div>
+  <ul class="steps">
+    <li>Restart machine and check if error clears</li>
+    <li>Inspect internal wiring connections</li>
+    <li>Look for signs of electrical damage</li>
+    <li>Service Main Control Board if needed</li>
+  </ul>
 </div>
 
-<!-- ================= BOBBIN ================= -->
-<div class="section-title">Bobbin System Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">E5</div>
-<div class="title">Bobbin System Error</div>
-<ul class="steps">
-<li>Remove bobbin and reinstall correctly.</li>
-<li>Check for thread tangles or lint buildup.</li>
-<li>Ensure bobbin case is properly seated.</li>
-<li>Replace damaged bobbin components.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E9</div>
+  <div class="title">Hoop Alignment Error</div>
+  <ul class="steps">
+    <li>Remove and reattach Embroidery Hoop correctly</li>
+    <li>Ensure Hoop is fully locked into place</li>
+    <li>Check fabric tension inside Hoop</li>
+    <li>Restart Embroidery Operation</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E10</div>
+  <div class="title">Design Read Error</div>
+  <ul class="steps">
+    <li>Reinsert USB or storage device</li>
+    <li>Check file format compatibility</li>
+    <li>Re-upload Embroidery Design</li>
+    <li>Delete corrupted files from memory</li>
+  </ul>
 </div>
 
-<!-- ================= PEDAL ================= -->
-<div class="section-title">Control & Communication Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">E6</div>
-<div class="title">Foot Pedal Communication Failure</div>
-<ul class="steps">
-<li>Check pedal cable connection.</li>
-<li>Inspect for wire damage or looseness.</li>
-<li>Try another compatible foot pedal.</li>
-<li>Restart machine after reconnecting.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E11</div>
+  <div class="title">Thread Break Detection</div>
+  <ul class="steps">
+    <li>Re-thread upper thread completely</li>
+    <li>Check needle sharpness and condition</li>
+    <li>Adjust thread tension settings</li>
+    <li>Clean thread path and sensors</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E12</div>
+  <div class="title">X-Axis Movement Error</div>
+  <ul class="steps">
+    <li>Restart machine and test movement</li>
+    <li>Check belt or rail obstruction</li>
+    <li>Inspect motor wiring connections</li>
+    <li>Service motor if movement is stuck</li>
+  </ul>
 </div>
 
-<!-- ================= THREAD TENSION ================= -->
-<div class="section-title">Thread Quality Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">E7</div>
-<div class="title">Thread Tension Abnormal</div>
-<ul class="steps">
-<li>Re-thread upper and lower thread paths.</li>
-<li>Adjust tension dial settings.</li>
-<li>Use recommended thread type.</li>
-<li>Clean tension discs.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E13</div>
+  <div class="title">Y-Axis Movement Error</div>
+  <ul class="steps">
+    <li>Check hoop rail for blockage</li>
+    <li>Inspect motor cable connections</li>
+    <li>Ensure smooth carriage movement</li>
+    <li>Replace Motor if faulty</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E1</div>
+  <div class="title">Thread Jam Detected</div>
+  <ul class="steps">
+    <li>Turn off the machine immediately</li>
+    <li>Remove tangled thread from bobbin area</li>
+    <li>Clean Feed Dogs and Needle Plate</li>
+    <li>Re-thread machine properly before restart</li>
+  </ul>
 </div>
 
-<!-- ================= MAIN BOARD ================= -->
-<div class="section-title">System Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">E8</div>
-<div class="title">Main Board Error</div>
-<ul class="steps">
-<li>Restart machine and check if error clears.</li>
-<li>Inspect internal wiring connections.</li>
-<li>Look for signs of electrical damage.</li>
-<li>Service main control board if needed.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E2</div>
+  <div class="title">Motor Overload</div>
+  <ul class="steps">
+    <li>Turn off machine and allow it to cool down</li>
+    <li>Remove thick fabric or obstruction</li>
+    <li>Check needle condition and alignment</li>
+    <li>Restart with lighter fabric load</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E3</div>
+  <div class="title">Needle Position Error</div>
+  <ul class="steps">
+    <li>Ensure needle is correctly installed</li>
+    <li>Replace bent or damaged needle</li>
+    <li>Check Handwheel alignment</li>
+    <li>Restart machine after adjustment</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E4</div>
+  <div class="title">Sensor Malfunction</div>
+  <ul class="steps">
+    <li>Restart machine to reset sensors</li>
+    <li>Check internal wiring connections</li>
+    <li>Clean dust from sensor area</li>
+    <li>Replace Sensor Module if needed</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5</div>
+  <div class="title">Bobbin System Error</div>
+  <ul class="steps">
+    <li>Remove bobbin and reinstall correctly</li>
+    <li>Check for thread tangles or lint buildup</li>
+    <li>Ensure Bobbin Case is properly seated</li>
+    <li>Replace damaged bobbin components</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E6</div>
+  <div class="title">Foot Pedal Communication Failure</div>
+  <ul class="steps">
+    <li>Check pedal cable connection</li>
+    <li>Inspect for wire damage or looseness</li>
+    <li>Try another compatible Foot Pedal</li>
+    <li>Restart machine after reconnecting</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E7</div>
+  <div class="title">Thread Tension Abnormal</div>
+  <ul class="steps">
+    <li>Re-thread upper and lower thread paths</li>
+    <li>Adjust tension dial settings</li>
+    <li>Use recommended thread type</li>
+    <li>Clean tension discs</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E8</div>
+  <div class="title">Main Board Error</div>
+  <ul class="steps">
+    <li>Restart machine and check if error clears</li>
+    <li>Inspect internal wiring connections</li>
+    <li>Look for signs of electrical damage</li>
+    <li>Service Main Control Board if needed</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E9</div>
+  <div class="title">Hoop Alignment Error</div>
+  <ul class="steps">
+    <li>Remove and reattach Embroidery Hoop correctly</li>
+    <li>Ensure Hoop is fully locked into place</li>
+    <li>Check fabric tension inside Hoop</li>
+    <li>Restart Embroidery Operation</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E10</div>
+  <div class="title">Design Read Error</div>
+  <ul class="steps">
+    <li>Reinsert USB or storage device</li>
+    <li>Check file format compatibility</li>
+    <li>Re-upload Embroidery Design</li>
+    <li>Delete corrupted files from memory</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E11</div>
+  <div class="title">Thread Break Detection</div>
+  <ul class="steps">
+    <li>Re-thread upper thread completely</li>
+    <li>Check needle sharpness and condition</li>
+    <li>Adjust thread tension settings</li>
+    <li>Clean thread path and sensors</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E12</div>
+  <div class="title">X-Axis Movement Error</div>
+  <ul class="steps">
+    <li>Restart machine and test movement</li>
+    <li>Check belt or rail obstruction</li>
+    <li>Inspect motor wiring connections</li>
+    <li>Service motor if movement is stuck</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E13</div>
+  <div class="title">Y-Axis Movement Error</div>
+  <ul class="steps">
+    <li>Check hoop rail for blockage</li>
+    <li>Inspect motor cable connections</li>
+    <li>Ensure smooth carriage movement</li>
+    <li>Replace Motor if faulty</li>
+  </ul>
+</div>
+
+<!-- ================= ADDED NEW CODES ================= -->
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">CH1</div>
+  <div class="title">Thread Sensor Error</div>
+  <ul class="steps">
+    <li>Check thread path for obstruction</li>
+    <li>Clean thread sensor area</li>
+    <li>Re-thread machine correctly</li>
+    <li>Restart embroidery operation</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">CH2</div>
+  <div class="title">Upper Thread Detection Failure</div>
+  <ul class="steps">
+    <li>Reinstall upper thread correctly</li>
+    <li>Check tension discs</li>
+    <li>Inspect needle eye for blockage</li>
+    <li>Replace thread if damaged</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">CH3</div>
+  <div class="title">Hoop Not Detected</div>
+  <ul class="steps">
+    <li>Remove and reattach embroidery hoop</li>
+    <li>Ensure correct hoop size is used</li>
+    <li>Check hoop sensor alignment</li>
+    <li>Restart machine system</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">CH4</div>
+  <div class="title">Motor Position Calibration Error</div>
+  <ul class="steps">
+    <li>Restart machine for recalibration</li>
+    <li>Check X/Y axis movement path</li>
+    <li>Remove any fabric obstruction</li>
+    <li>Service motor encoder if needed</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">CH5</div>
+  <div class="title">Overheating Protection Activated</div>
+  <ul class="steps">
+    <li>Turn off machine immediately</li>
+    <li>Allow machine to cool down</li>
+    <li>Clean ventilation area</li>
+    <li>Avoid long continuous stitching cycles</li>
+  </ul>
+</div></div>
+
+</body>
+</html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does READY mean on Janome Sewing Machine?</div>
+<div class="answer">
+The machine is powered on and ready for sewing operation. No action is required. You can begin stitching normally.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does BUSY mean on Janome Sewing Machine?</div>
+<div class="answer">
+The machine is currently processing a stitch or command. Wait until the operation is complete before starting a new function.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does ERROR mean on Janome Sewing Machine?</div>
+<div class="answer">
+A system fault has occurred. Restart the machine, check thread path, needle condition, and remove any fabric jam.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does RESET mean on Janome Sewing Machine?</div>
+<div class="answer">
+The system requires a restart. Turn off the machine, unplug it for 1–2 minutes, then power it back on to clear temporary errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does THREAD BREAK mean on Janome Sewing Machine?</div>
+<div class="answer">
+The upper thread has broken or slipped. Re-thread the machine completely, check needle condition, and adjust tension properly.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does NEEDLE BREAK mean on Janome Sewing Machine?</div>
+<div class="answer">
+The needle is bent or broken. Replace it with the correct size, check fabric thickness, and ensure proper alignment before sewing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does HOOP/FRAME ERROR mean on Janome Sewing Machine?</div>
+<div class="answer">
+The fabric frame or hoop is misaligned or not detected. Reinstall and secure it properly before restarting the machine.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does MEMORY ERROR mean on Janome Sewing Machine?</div>
+<div class="answer">
+The machine cannot read stored data or settings. Restart the machine and reload the program or design data.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does MOTOR OVERLOAD mean on Janome Sewing Machine?</div>
+<div class="answer">
+The motor is under excessive strain. Turn off the machine, remove heavy fabric, reduce speed, and allow it to cool down.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does LUBRICATION WARNING mean on Janome Sewing Machine?</div>
+<div class="answer">
+The machine needs lubrication. Clean lint buildup, apply sewing machine oil, and run at low speed after maintenance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does POSITION ERROR mean on Janome Sewing Machine?</div>
+<div class="answer">
+The sewing position is misaligned. Restart the machine, clear obstructions, and ensure smooth fabric movement.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does VOLTAGE WARNING mean on Janome Sewing Machine?</div>
+<div class="answer">
+Unstable power supply detected. Use a stabilizer and avoid shared outlets before restarting the machine.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does STITCH QUALITY ERROR mean on Janome Sewing Machine?</div>
+<div class="answer">
+Stitch quality is inconsistent. Check thread tension, needle condition, fabric type, and clean the thread path.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SENSOR ERROR mean on Janome Sewing Machine?</div>
+<div class="answer">
+A sensor is not responding correctly. Clean sensor areas, check internal wiring, and restart the machine.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does MEMORY FULL mean on Janome Sewing Machine?</div>
+<div class="answer">
+Internal memory is full. Delete unused patterns or transfer files to external storage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does BOBBIN ERROR mean on Janome Sewing Machine?</div>
+<div class="answer">
+The bobbin is not installed correctly or thread is not feeding properly. Reinsert bobbin and check winding tension.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does THREAD TENSION ERROR mean on Janome Sewing Machine?</div>
+<div class="answer">
+Thread tension is unbalanced. Re-thread the machine, adjust settings, and ensure correct thread type is used.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset Janome Sewing Machine errors?</div>
+<div class="answer">
+Turn off the machine, unplug it for 1–2 minutes, then restart. Recheck thread setup, needle condition, and fabric alignment before sewing again.
+</div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> For electronic or internal board issues, professional servicing is recommended to avoid further damage.
-</div>
-
+<strong>Important:</strong> Motor and axis system repairs require careful calibration and may need professional servicing to maintain embroidery accuracy.
 </div>
 
 </body>
 </html>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
+
+</body>
+</html>
+

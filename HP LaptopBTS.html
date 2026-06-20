@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HP Laptop & BIOS Error Codes Troubleshooting Guide</title>
+
+<title>HP Laptop Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete HP Laptop error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "HP Laptop Error Codes & Troubleshooting Guide",
+  "description": "Complete HP Laptop error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -49,7 +145,7 @@ h1{
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
     margin-top:20px;
 }
@@ -68,11 +164,10 @@ h1{
 }
 
 .code{
-    font-size:22px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
     margin-bottom:10px;
-    word-break:break-word;
 }
 
 .title{
@@ -93,118 +188,539 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>HP Laptop / BIOS Error Codes</h1>
+<h1>HP Laptop Error Codes</h1>
 
-<p class="subtitle">
-<strong>Complete Startup & Hardware Troubleshooting Guide</strong>
+<p class="subtitle"><strong>Complete HP Laptop Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all HP Laptop error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
 
-<!-- ================= COOLING ================= -->
-<div class="section-title">Cooling System Errors</div>
-
 <div class="grid">
 
-<div class="card">
-<div class="code">CPU FAN ERROR</div>
-<div class="title">CPU Cooling Fan Failure</div>
-<ul class="steps">
-<li>Turn off laptop immediately.</li>
-<li>Inspect cooling fan for dust buildup.</li>
-<li>Ensure fan spins freely without obstruction.</li>
-<li>Replace CPU fan if not functioning properly.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">CPU Fan Error / cpu fan error</div>
+  <div class="title">CPU Cooling Fan Failure</div>
+  <ul class="steps">
+    <li>Turn off laptop immediately to prevent overheating.</li>
+    <li>Clean dust buildup from the cooling fan and vents.</li>
+    <li>Check if the fan spins freely without obstruction.</li>
+    <li>Replace the CPU fan if it is not functioning properly.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">SYSTEM FAN FAILURE</div>
-<div class="title">Cooling System Fault</div>
-<ul class="steps">
-<li>Clean laptop air vents thoroughly.</li>
-<li>Check internal fan cable connections.</li>
-<li>Run HP hardware diagnostics.</li>
-<li>Replace defective cooling fan assembly.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">System Fan Failure / system fan failure</div>
+  <div class="title">System Cooling Fault</div>
+  <ul class="steps">
+    <li>Clean all air vents and internal cooling paths.</li>
+    <li>Check fan cable connections on the motherboard.</li>
+    <li>Run built-in hardware diagnostics tool.</li>
+    <li>Replace system fan assembly if failure persists.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">GPU Fan Error / gpu fan error</div>
+  <div class="title">Graphics Cooling Failure</div>
+  <ul class="steps">
+    <li>Ensure GPU fan is not blocked by dust or debris.</li>
+    <li>Check temperature levels in BIOS or monitoring tools.</li>
+    <li>Inspect fan power connector.</li>
+    <li>Replace GPU cooling fan if it stops spinning.</li>
+  </ul>
 </div>
 
-<!-- ================= STORAGE ================= -->
-<div class="section-title">Storage & Boot Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">BOOT DEVICE NOT FOUND</div>
-<div class="title">No Bootable Drive Detected</div>
-<ul class="steps">
-<li>Check BIOS boot order settings.</li>
-<li>Ensure SSD or HDD is properly connected.</li>
-<li>Run drive diagnostics in BIOS.</li>
-<li>Reinstall operating system if necessary.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Thermal Shutdown / thermal shutdown</div>
+  <div class="title">Overheating Protection Activated</div>
+  <ul class="steps">
+    <li>Turn off the laptop and allow it to cool completely.</li>
+    <li>Clean internal cooling system and vents.</li>
+    <li>Replace thermal paste if overheating continues.</li>
+    <li>Ensure proper airflow during usage.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">SMART HARD DISK ERROR</div>
-<div class="title">Hard Drive Failure Warning</div>
-<ul class="steps">
-<li>Back up important files immediately.</li>
-<li>Run SMART diagnostics on the drive.</li>
-<li>Check drive health using HP tools.</li>
-<li>Replace failing hard drive or SSD.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Boot Device Not Found / boot device not found</div>
+  <div class="title">No Bootable Drive Detected</div>
+  <ul class="steps">
+    <li>Check BIOS boot order settings.</li>
+    <li>Ensure SSD or HDD is properly connected.</li>
+    <li>Run built-in storage diagnostics.</li>
+    <li>Reinstall operating system if drive is not detected.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Smart Hard Disk Error / smart hard disk error</div>
+  <div class="title">Storage Failure Warning</div>
+  <ul class="steps">
+    <li>Immediately back up important files.</li>
+    <li>Run SMART diagnostic check on the drive.</li>
+    <li>Check disk health using system utilities.</li>
+    <li>Replace failing HDD or SSD as soon as possible.</li>
+  </ul>
 </div>
 
-<!-- ================= BIOS ================= -->
-<div class="section-title">BIOS & Firmware Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">CMOS CHECKSUM ERROR</div>
-<div class="title">BIOS Settings Corrupted</div>
-<ul class="steps">
-<li>Load BIOS default settings.</li>
-<li>Replace CMOS battery if depleted.</li>
-<li>Update BIOS firmware carefully.</li>
-<li>Save settings and restart laptop.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Cmos Checksum Error / cmos checksum error</div>
+  <div class="title">BIOS Configuration Error</div>
+  <ul class="steps">
+    <li>Load BIOS default settings.</li>
+    <li>Replace CMOS battery if required.</li>
+    <li>Update BIOS firmware carefully.</li>
+    <li>Save settings and restart system.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Bios Corruption / bios corruption</div>
+  <div class="title">Firmware Integrity Failure</div>
+  <ul class="steps">
+    <li>Attempt BIOS recovery mode.</li>
+    <li>Reflash BIOS using official tools.</li>
+    <li>Ensure stable power during update.</li>
+    <li>Replace motherboard if BIOS cannot recover.</li>
+  </ul>
 </div>
 
-<!-- ================= MEMORY ================= -->
-<div class="section-title">Memory Errors</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Memory Error / memory error</div>
+  <div class="title">RAM Malfunction Detected</div>
+  <ul class="steps">
+    <li>Reseat RAM modules properly.</li>
+    <li>Run memory diagnostics test.</li>
+    <li>Clean RAM contacts carefully.</li>
+    <li>Replace faulty memory module if needed.</li>
+  </ul>
+</div>
 
-<div class="grid">
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Memory Controller Error / memory controller error</div>
+  <div class="title">System Memory Communication Fault</div>
+  <ul class="steps">
+    <li>Restart the laptop and check stability.</li>
+    <li>Test RAM slots individually.</li>
+    <li>Update BIOS firmware.</li>
+    <li>Service motherboard if issue persists.</li>
+  </ul>
+</div>
 
-<div class="card">
-<div class="code">MEMORY ERROR</div>
-<div class="title">RAM Malfunction Detected</div>
-<ul class="steps">
-<li>Turn off laptop and reseat RAM modules.</li>
-<li>Test memory using HP diagnostics.</li>
-<li>Clean RAM contacts gently.</li>
-<li>Replace faulty memory module if needed.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Overheating Warning / overheating warning</div>
+  <div class="title">System Thermal Alert</div>
+  <ul class="steps">
+    <li>Close heavy applications to reduce CPU load.</li>
+    <li>Clean internal fans and air vents.</li>
+    <li>Ensure laptop is placed on a hard, flat surface.</li>
+    <li>Replace thermal paste if overheating continues.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Battery Not Charging / battery not charging</div>
+  <div class="title">Power Charging Failure</div>
+  <ul class="steps">
+    <li>Check charger and power adapter connection.</li>
+    <li>Try a different wall outlet.</li>
+    <li>Inspect charging port for dust or damage.</li>
+    <li>Replace battery or charger if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Battery Health Critical / battery health critical</div>
+  <div class="title">Battery Wear Warning</div>
+  <ul class="steps">
+    <li>Run HP battery health diagnostics.</li>
+    <li>Avoid full discharge cycles frequently.</li>
+    <li>Update system BIOS and power drivers.</li>
+    <li>Replace battery if capacity is severely reduced.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">No Bootable Device / no bootable device</div>
+  <div class="title">Operating System Not Found</div>
+  <ul class="steps">
+    <li>Check BIOS boot priority settings.</li>
+    <li>Ensure SSD/HDD is detected in BIOS.</li>
+    <li>Run startup repair or recovery mode.</li>
+    <li>Reinstall operating system if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Operating System Not Found / operating system not found</div>
+  <div class="title">Boot Failure Error</div>
+  <ul class="steps">
+    <li>Verify storage drive is connected properly.</li>
+    <li>Check BIOS settings for boot device.</li>
+    <li>Run system recovery tools.</li>
+    <li>Reinstall OS if system files are missing.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Keyboard Not Responding / keyboard not responding</div>
+  <div class="title">Input Device Failure</div>
+  <ul class="steps">
+    <li>Restart the laptop and test keyboard again.</li>
+    <li>Check for stuck or damaged keys.</li>
+    <li>Update keyboard drivers.</li>
+    <li>Replace keyboard if hardware failure is confirmed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Touchpad Not Working / touchpad not working</div>
+  <div class="title">Pointer Device Error</div>
+  <ul class="steps">
+    <li>Enable touchpad using function keys.</li>
+    <li>Update touchpad drivers in system settings.</li>
+    <li>Check BIOS settings for touchpad status.</li>
+    <li>Replace touchpad module if defective.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Display Failure / display failure</div>
+  <div class="title">Screen Output Error</div>
+  <ul class="steps">
+    <li>Check brightness settings and external display output.</li>
+    <li>Inspect display cable connection.</li>
+    <li>Test with external monitor.</li>
+    <li>Replace LCD panel if no display appears.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">WiFi Not Working / wifi not working</div>
+  <div class="title">Wireless Connection Failure</div>
+  <ul class="steps">
+    <li>Restart router and laptop.</li>
+    <li>Enable WiFi adapter in settings.</li>
+    <li>Reinstall wireless drivers.</li>
+    <li>Replace WiFi card if hardware failure occurs.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">Audio Not Working / audio not working</div>
+  <div class="title">Sound System Failure</div>
+  <ul class="steps">
+    <li>Check volume and mute settings.</li>
+    <li>Update audio drivers.</li>
+    <li>Test with external headphones.</li>
+    <li>Replace speakers if hardware is faulty.</li>
+  </ul>
+</div></div>
+
+</body>
+</html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP laptop not turning on?</div>
+<div class="answer">
+Check if the charger is properly connected and the power outlet is working. Perform a hard reset by holding the power button for 15 seconds, then reconnect the charger and try again.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP laptop running very slow?</div>
+<div class="answer">
+Close unnecessary background programs, check for malware, and free up storage space. Updating Windows and drivers can also improve performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my HP laptop keep freezing?</div>
+<div class="answer">
+Too many running applications or insufficient RAM may cause freezing. Restart the laptop, update system software, and check for overheating issues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP laptop battery not charging?</div>
+<div class="answer">
+Check the power adapter and charging port for damage. Try a different charger or outlet. Update battery drivers or replace the battery if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP laptop overheating?</div>
+<div class="answer">
+Ensure vents are not blocked and clean dust from fans. Use the laptop on a flat surface and avoid heavy workloads for long periods.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP laptop keyboard not working?</div>
+<div class="answer">
+Restart the laptop and check keyboard settings. Update keyboard drivers or test with an external keyboard to confirm hardware failure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP laptop touchpad not working?</div>
+<div class="answer">
+Enable the touchpad in settings or using function keys. Update drivers and check BIOS settings if the issue continues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP laptop not connecting to WiFi?</div>
+<div class="answer">
+Restart the router and laptop. Enable WiFi adapter, update wireless drivers, and forget and reconnect to the network.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP laptop screen blank or black?</div>
+<div class="answer">
+Check brightness settings and external display connections. Perform a hard reset and test with an external monitor if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP laptop making loud fan noise?</div>
+<div class="answer">
+Heavy CPU usage or dust buildup can cause fan noise. Close heavy apps and clean internal cooling vents if possible.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP laptop not detecting storage drive?</div>
+<div class="answer">
+Check BIOS settings to ensure the drive is detected. Run diagnostics and reseat or replace the SSD/HDD if necessary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my HP laptop keep restarting?</div>
+<div class="answer">
+This may be caused by overheating, driver issues, or system corruption. Update Windows, check hardware, and perform system repair if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP laptop sound not working?</div>
+<div class="answer">
+Check volume settings and audio output device. Update sound drivers and test with headphones to isolate the issue.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my HP laptop camera not working?</div>
+<div class="answer">
+Check camera permissions in settings. Update drivers and ensure no other app is blocking camera access.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my HP laptop?</div>
+<div class="answer">
+Go to Settings > Recovery and choose Reset this PC, or perform a hard reset by shutting down and restarting after 10–15 seconds.
+</div>
 </div>
 
 </div>
 
 <div class="note">
-<strong>Important:</strong> BIOS updates and internal hardware repairs should only be performed carefully to avoid permanent system damage.
+<strong>Important:</strong> If the error code continues after troubleshooting,
+disconnect power immediately and contact a certified GE technician.
 </div>
 
 </div>
 
 </body>
 </html>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
+
+</body>
+</html>
+

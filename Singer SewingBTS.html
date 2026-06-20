@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Singer Sewing Machine Error Codes Guide</title>
+
+<title>Singer Sewing Machine Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Singer Sewing Machine error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Singer Sewing Machine Error Codes & Troubleshooting Guide",
+  "description": "Complete Singer Sewing Machine error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -49,7 +145,7 @@ h1{
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
     margin-top:20px;
 }
@@ -68,7 +164,7 @@ h1{
 }
 
 .code{
-    font-size:24px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
     margin-bottom:10px;
@@ -92,7 +188,129 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
@@ -101,70 +319,60 @@ h1{
 
 <h1>Singer Sewing Machine Error Codes</h1>
 
-<p class="subtitle">
-<strong>Complete Troubleshooting & Diagnostic Guide</strong>
-</p>
+<p class="subtitle"><strong>Complete Singer Sewing Machine Guide</strong></p>
 
-<!-- ================= THREAD ================= -->
-<div class="section-title">Thread System Errors</div>
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Singer Sewing Machine error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
-<div class="card">
+
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E1</div>
 <div class="title">Thread Jam Detected</div>
 <ul class="steps">
 <li>Turn off machine immediately.</li>
 <li>Remove tangled thread from bobbin and needle area.</li>
-<li>Clean feed dogs and plate.</li>
+<li>Clean feed dogs and needle plate.</li>
 <li>Re-thread machine carefully before restarting.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= MOTOR ================= -->
-<div class="section-title">Motor & Power Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E2</div>
 <div class="title">Motor Overload</div>
 <ul class="steps">
 <li>Turn off machine and allow cooling time.</li>
-<li>Remove thick fabric or obstruction.</li>
+<li>Remove thick fabric or sewing obstruction.</li>
 <li>Check needle condition and alignment.</li>
 <li>Restart with lighter sewing load.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= NEEDLE ================= -->
-<div class="section-title">Needle Position Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E3</div>
 <div class="title">Needle Position Error</div>
 <ul class="steps">
 <li>Ensure needle is properly installed.</li>
 <li>Replace bent or damaged needle.</li>
-<li>Check handwheel movement.</li>
+<li>Check handwheel movement for blockage.</li>
 <li>Restart machine after adjustment.</li>
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E9</div>
+<div class="title">Needle Break Detection</div>
+<ul class="steps">
+<li>Check for broken needle fragments.</li>
+<li>Replace needle with correct type and size.</li>
+<li>Inspect fabric thickness compatibility.</li>
+<li>Restart sewing operation carefully.</li>
+</ul>
 </div>
 
-<!-- ================= BOBBIN ================= -->
-<div class="section-title">Bobbin System Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E4</div>
 <div class="title">Bobbin Issue</div>
 <ul class="steps">
@@ -175,32 +383,40 @@ h1{
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E10</div>
+<div class="title">Bobbin Thread Sensor Fault</div>
+<ul class="steps">
+<li>Clean bobbin area and sensor path.</li>
+<li>Reinsert bobbin correctly.</li>
+<li>Check for lint blocking sensor.</li>
+<li>Replace sensor if error continues.</li>
+</ul>
 </div>
 
-<!-- ================= THREAD TENSION ================= -->
-<div class="section-title">Thread Quality Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E5</div>
 <div class="title">Thread Tension Fault</div>
 <ul class="steps">
 <li>Re-thread upper and lower thread paths.</li>
 <li>Adjust tension dial settings.</li>
-<li>Clean tension discs.</li>
+<li>Clean tension discs from dust or lint.</li>
 <li>Use recommended thread type.</li>
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E11</div>
+<div class="title">Thread Break Detected</div>
+<ul class="steps">
+<li>Re-thread entire machine properly.</li>
+<li>Check needle eye for burrs or damage.</li>
+<li>Inspect thread quality and thickness.</li>
+<li>Reduce sewing speed if needed.</li>
+</ul>
 </div>
 
-<!-- ================= SENSOR ================= -->
-<div class="section-title">Sensor Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E6</div>
 <div class="title">Sensor Malfunction</div>
 <ul class="steps">
@@ -211,14 +427,18 @@ h1{
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E12</div>
+<div class="title">Speed Sensor Error</div>
+<ul class="steps">
+<li>Restart machine and test operation.</li>
+<li>Inspect encoder wheel for debris.</li>
+<li>Check wiring to control board.</li>
+<li>Replace sensor if malfunction persists.</li>
+</ul>
 </div>
 
-<!-- ================= PEDAL ================= -->
-<div class="section-title">Control & Communication Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E7</div>
 <div class="title">Foot Pedal Communication Error</div>
 <ul class="steps">
@@ -229,14 +449,18 @@ h1{
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E13</div>
+<div class="title">Control Panel Communication Fault</div>
+<ul class="steps">
+<li>Restart machine and reset system.</li>
+<li>Check ribbon cable connections.</li>
+<li>Inspect buttons for sticking or damage.</li>
+<li>Replace control panel if needed.</li>
+</ul>
 </div>
 
-<!-- ================= MAIN BOARD ================= -->
-<div class="section-title">System Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E8</div>
 <div class="title">Main Board Failure</div>
 <ul class="steps">
@@ -247,13 +471,158 @@ h1{
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E14</div>
+<div class="title">Memory / Firmware Error</div>
+<ul class="steps">
+<li>Turn machine off and restart system.</li>
+<li>Reset machine settings to default.</li>
+<li>Update firmware if supported.</li>
+<li>Replace control board if error continues.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E5</div>
+<div class="title">Temperature Detection Fault</div>
+<ul class="steps">
+<li>Allow unit to stabilize operating environment.</li>
+<li>Check room temperature conditions.</li>
+<li>Ensure machine is not overloaded with fabric.</li>
+<li>Restart after 10–15 minutes.</li>
+</ul>
+</div>
+</div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<!-- ================= SINGER SEWING MACHINE SYSTEM FAQ ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Singer Sewing Machine show ERR or system error messages?</div>
+<div class="answer">
+ERR messages usually indicate thread jams, needle position errors, motor overload, bobbin issues, sensor faults, or control board communication problems. Turn off the machine, unplug it for a few minutes, then restart. Check threading, needle condition, and bobbin setup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Singer Sewing Machine stop stitching during operation?</div>
+<div class="answer">
+This is often caused by thread breakage, fabric resistance, bobbin problems, motor overload protection, or incorrect tension settings. Re-thread the machine, check bobbin alignment, and ensure fabric is not too thick for the selected stitch.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Singer Sewing Machine not turn on?</div>
+<div class="answer">
+Check power outlet, power cord, and foot pedal connection. Ensure the power switch is fully engaged and no safety lock is active. Try a full reset by unplugging the machine for a few minutes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Singer Sewing Machine break thread frequently?</div>
+<div class="answer">
+Thread breaks are usually caused by incorrect threading, low-quality thread, wrong tension settings, or a dull/bent needle. Re-thread the machine carefully and replace the needle if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Singer Sewing Machine produce uneven stitches?</div>
+<div class="answer">
+Uneven stitching may result from incorrect tension, dirty tension discs, improper fabric feeding, or incorrect needle type. Clean the machine and adjust tension settings properly.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Singer Sewing Machine make unusual noises?</div>
+<div class="answer">
+Unusual noises may come from dry internal parts, lint buildup, loose components, or thread jams. Turn off the machine and clean the bobbin area and feed dogs before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Singer Sewing Machine skip stitches?</div>
+<div class="answer">
+Skipped stitches are usually caused by a dull needle, incorrect needle installation, wrong needle type for fabric, or timing issues. Replace the needle and ensure proper installation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Singer Sewing Machine jam frequently?</div>
+<div class="answer">
+Frequent jams are caused by incorrect threading, lint buildup, poor quality thread, or bobbin misalignment. Clean the machine and re-thread both upper and lower threads.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Singer Sewing Machine fabric not feed properly?</div>
+<div class="answer">
+Fabric feeding issues may be caused by lowered feed dogs, incorrect presser foot, or lint blockage. Check feed dog settings and clean the throat plate area.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Singer Sewing Machine system messages?</div>
+<div class="answer">
+Turn off the machine and unplug it for 5–10 minutes. Plug it back in and restart to clear temporary system errors and reset internal controls.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I service my Singer Sewing Machine?</div>
+<div class="answer">
+Service is recommended if the machine continues to jam, motor performance weakens, stitching remains inconsistent, or error messages persist after troubleshooting.
+</div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> For electronic board issues, professional servicing is recommended to prevent further damage.
+<strong>Important:</strong> Singer Sewing Machine system messages are safety features designed to protect internal components such as the motor, needle system, bobbin area, sensors, and control board. If issues continue after troubleshooting, stop using the machine and contact an authorized Singer service center.
 </div>
 
-</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 
+
+

@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samsung Washing Machine Troubleshooting Guide</title>
+
+<title>Samsung Washer Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Samsung Washer error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Samsung Washer Error Codes & Troubleshooting Guide",
+  "description": "Complete Samsung Washer error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -27,6 +123,9 @@ h1{
     text-align:center;
     color:#666;
     margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
 }
 
 .subtitle{
@@ -35,22 +134,20 @@ h1{
     margin-bottom:30px;
 }
 
-.section{
+.section-title{
     margin-top:40px;
-}
-
-.section h2{
+    font-size:20px;
+    font-weight:bold;
     border-left:5px solid #e60012;
     padding-left:10px;
-    font-size:20px;
     color:#444;
-    margin-bottom:20px;
 }
 
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
+    margin-top:20px;
 }
 
 .card{
@@ -67,10 +164,10 @@ h1{
 }
 
 .code{
-    font-size:24px;
+    font-size:26px;
     font-weight:bold;
-    color:#e60012;
-    margin-bottom:8px;
+    color:#4e6e81;
+    margin-bottom:10px;
 }
 
 .title{
@@ -91,22 +188,146 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Samsung Washing Machine Troubleshooting Guide</h1>
-<p class="subtitle"><strong>Error Codes & Repair Instructions</strong></p>
+<h1>Samsung Washer Error Codes</h1>
 
-<!-- ================= WATER SUPPLY & DRAIN ================= -->
-<div class="section">
-<h2>Water Supply & Drainage Issues</h2>
+<p class="subtitle"><strong>Complete Samsung Washer Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Samsung Washer error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
+
 <div class="grid">
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">4E / 4C</div>
 <div class="title">Water Supply Problem</div>
 <ul class="steps">
@@ -117,29 +338,7 @@ h1{
 </ul>
 </div>
 
-<div class="card">
-<div class="code">5E / 5C</div>
-<div class="title">Drainage Issue</div>
-<ul class="steps">
-<li>Clean drain filter.</li>
-<li>Check drain hose for clogging.</li>
-<li>Inspect pump operation.</li>
-<li>Reset machine.</li>
-</ul>
-</div>
-
-<div class="card">
-<div class="code">1E</div>
-<div class="title">Water Level Sensor Error</div>
-<ul class="steps">
-<li>Check pressure sensor hose.</li>
-<li>Inspect wiring connection.</li>
-<li>Clean air trap.</li>
-<li>Replace sensor if faulty.</li>
-</ul>
-</div>
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">4E2</div>
 <div class="title">Water Inlet Valve Error</div>
 <ul class="steps">
@@ -150,15 +349,62 @@ h1{
 </ul>
 </div>
 
-</div>
+<div class="card" onclick="toggleCard(this)">
+<div class="code">4E3</div>
+<div class="title">Water Fill Timeout</div>
+<ul class="steps">
+<li>Check water pressure level.</li>
+<li>Inspect inlet hose kink/blockage.</li>
+<li>Clean inlet screen filter.</li>
+<li>Restart cycle.</li>
+</ul>
 </div>
 
-<!-- ================= MOTOR & DRUM ================= -->
-<div class="section">
-<h2>Motor & Drum Issues</h2>
-<div class="grid">
+<div class="card" onclick="toggleCard(this)">
+<div class="code">4C1</div>
+<div class="title">Cold Water Supply Error</div>
+<ul class="steps">
+<li>Check cold water tap.</li>
+<li>Inspect hose connection.</li>
+<li>Ensure no freezing or blockage.</li>
+<li>Reset washer.</li>
+</ul>
+</div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
+<div class="code">5E / 5C</div>
+<div class="title">Drainage Issue</div>
+<ul class="steps">
+<li>Clean drain filter.</li>
+<li>Check drain hose for clogging.</li>
+<li>Inspect pump operation.</li>
+<li>Reset machine.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">5E2</div>
+<div class="title">Drain Pump Abnormality</div>
+<ul class="steps">
+<li>Inspect drain pump motor.</li>
+<li>Check wiring connection.</li>
+<li>Remove debris from pump.</li>
+<li>Replace pump if needed.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">5C1</div>
+<div class="title">Drain Timeout Error</div>
+<ul class="steps">
+<li>Clean drain hose thoroughly.</li>
+<li>Check pump for blockage.</li>
+<li>Ensure proper installation height.</li>
+<li>Restart cycle.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
 <div class="code">3E</div>
 <div class="title">Motor Error</div>
 <ul class="steps">
@@ -169,7 +415,7 @@ h1{
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">3C</div>
 <div class="title">Motor Overload Detected</div>
 <ul class="steps">
@@ -180,7 +426,7 @@ h1{
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">3E2</div>
 <div class="title">Motor Hall Sensor Failure</div>
 <ul class="steps">
@@ -191,7 +437,18 @@ h1{
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
+<div class="code">3E3</div>
+<div class="title">Motor Stuck / No Rotation</div>
+<ul class="steps">
+<li>Check drum for obstruction.</li>
+<li>Inspect motor shaft.</li>
+<li>Reduce load size.</li>
+<li>Replace motor if required.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
 <div class="code">UE / UB</div>
 <div class="title">Unbalanced Load</div>
 <ul class="steps">
@@ -202,45 +459,7 @@ h1{
 </ul>
 </div>
 
-</div>
-</div>
-
-<!-- ================= DRAIN & LEAK ================= -->
-<div class="section">
-<h2>Drain & Leak Issues</h2>
-<div class="grid">
-
-<div class="card">
-<div class="code">LE / LC</div>
-<div class="title">Water Leak Detected</div>
-<ul class="steps">
-<li>Check hose connections.</li>
-<li>Inspect door seal.</li>
-<li>Look for cracks in tub.</li>
-<li>Dry and restart unit.</li>
-</ul>
-</div>
-
-<div class="card">
-<div class="code">5E2</div>
-<div class="title">Drain Motor Abnormality</div>
-<ul class="steps">
-<li>Clean drain pump filter.</li>
-<li>Inspect drain motor wiring.</li>
-<li>Check for blockages.</li>
-<li>Replace pump if needed.</li>
-</ul>
-</div>
-
-</div>
-</div>
-
-<!-- ================= DOOR & CONTROL ================= -->
-<div class="section">
-<h2>Door & Control Issues</h2>
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">dE / DC</div>
 <div class="title">Door Issue</div>
 <ul class="steps">
@@ -251,18 +470,7 @@ h1{
 </ul>
 </div>
 
-<div class="card">
-<div class="code">bE</div>
-<div class="title">Button Stuck Error</div>
-<ul class="steps">
-<li>Clean control panel.</li>
-<li>Check stuck buttons.</li>
-<li>Reset machine.</li>
-<li>Replace panel if needed.</li>
-</ul>
-</div>
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">dC1</div>
 <div class="title">Door Lock Failure</div>
 <ul class="steps">
@@ -273,15 +481,29 @@ h1{
 </ul>
 </div>
 
-</div>
+<div class="card" onclick="toggleCard(this)">
+<div class="code">bE</div>
+<div class="title">Button Stuck Error</div>
+<ul class="steps">
+<li>Clean control panel.</li>
+<li>Check stuck buttons.</li>
+<li>Disconnect power briefly.</li>
+<li>Replace panel if needed.</li>
+</ul>
 </div>
 
-<!-- ================= SENSOR & HEATING ================= -->
-<div class="section">
-<h2>Sensor & Heating Issues</h2>
-<div class="grid">
+<div class="card" onclick="toggleCard(this)">
+<div class="code">dS</div>
+<div class="title">Door Sensor Error</div>
+<ul class="steps">
+<li>Inspect door sensor alignment.</li>
+<li>Check wiring connection.</li>
+<li>Clean latch area.</li>
+<li>Replace sensor if faulty.</li>
+</ul>
+</div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">tE</div>
 <div class="title">Temperature Sensor Failure</div>
 <ul class="steps">
@@ -292,7 +514,7 @@ h1{
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">HE / 6E</div>
 <div class="title">Heating Error / Relay Fault</div>
 <ul class="steps">
@@ -303,7 +525,7 @@ h1{
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">HC2</div>
 <div class="title">Heating Sensor Issue</div>
 <ul class="steps">
@@ -314,15 +536,18 @@ h1{
 </ul>
 </div>
 
-</div>
+<div class="card" onclick="toggleCard(this)">
+<div class="code">tC</div>
+<div class="title">Temperature Control Error</div>
+<ul class="steps">
+<li>Check temperature sensor.</li>
+<li>Inspect control board.</li>
+<li>Restart machine.</li>
+<li>Replace sensor if required.</li>
+</ul>
 </div>
 
-<!-- ================= POWER & SYSTEM ================= -->
-<div class="section">
-<h2>Power & System Errors</h2>
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">9E1</div>
 <div class="title">Power Supply Issue</div>
 <ul class="steps">
@@ -333,7 +558,7 @@ h1{
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">9E2</div>
 <div class="title">Low Voltage Detected</div>
 <ul class="steps">
@@ -344,7 +569,7 @@ h1{
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">EE</div>
 <div class="title">EEPROM Data Error</div>
 <ul class="steps">
@@ -355,29 +580,7 @@ h1{
 </ul>
 </div>
 
-<div class="card">
-<div class="code">AC / AE</div>
-<div class="title">Communication Error</div>
-<ul class="steps">
-<li>Check wiring between boards.</li>
-<li>Reset system.</li>
-<li>Inspect connectors.</li>
-<li>Replace PCB if needed.</li>
-</ul>
-</div>
-
-<div class="card">
-<div class="code">AC6</div>
-<div class="title">Inverter Communication Error</div>
-<ul class="steps">
-<li>Check inverter wiring.</li>
-<li>Inspect control board.</li>
-<li>Reset machine.</li>
-<li>Service required if persistent.</li>
-</ul>
-</div>
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">2E</div>
 <div class="title">Internal System Error</div>
 <ul class="steps">
@@ -388,14 +591,196 @@ h1{
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">AC / AE</div>
+<div class="title">Communication Error</div>
+<ul class="steps">
+<li>Check wiring between boards.</li>
+<li>Reset system.</li>
+<li>Inspect connectors.</li>
+<li>Replace PCB if needed.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">AC6</div>
+<div class="title">Inverter Communication Error</div>
+<ul class="steps">
+<li>Check inverter wiring.</li>
+<li>Inspect control board.</li>
+<li>Reset machine.</li>
+<li>Service required if persistent.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E5</div>
+<div class="title">Temperature Detection Fault</div>
+<ul class="steps">
+<li>Allow unit to reach proper freezing temperature.</li>
+<li>Check freezer environment stability.</li>
+<li>Ensure pint is pre-frozen correctly.</li>
+<li>Restart after 10–15 minutes.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">OF</div>
+<div class="title">Demo Mode Active</div>
+<ul class="steps">
+<li>Exit demo mode via control panel.</li>
+<li>Hold start + temp buttons.</li>
+<li>Restart machine.</li>
+<li>Reset settings if needed.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">999</div>
+<div class="title">Unknown System Fault</div>
+<ul class="steps">
+<li>Power reset washer.</li>
+<li>Disconnect all power.</li>
+<li>Check wiring connections.</li>
+<li>Call technician if persistent.</li>
+</ul>
+</div>
+
+</div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Washer show ERR or system error messages?</div>
+<div class="answer">
+ERR usually indicates a system fault such as water supply issues, drainage failure, sensor malfunction, motor error, or communication issues between control boards. Turn off the washer, unplug it or switch off the breaker for a few minutes, then restart. Check water inlet, drain hose, and power stability.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Washer stop mid-cycle?</div>
+<div class="answer">
+This is often caused by unbalanced load detection, overheating protection, drainage problems, or power interruption. Pause the cycle, redistribute laundry evenly, check water flow, and restart after a short break.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Washer not turn on?</div>
+<div class="answer">
+Check the power outlet, breaker, fuse, and power cord connection. Ensure the door is fully closed, as the safety lock prevents operation if not engaged. Perform a power reset if unresponsive.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Washer not spin properly?</div>
+<div class="answer">
+This may be caused by unbalanced load, motor issues, or drum obstruction. Redistribute clothes evenly, reduce load size, and check for foreign objects inside the drum.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Washer make unusual noises?</div>
+<div class="answer">
+Noise may come from foreign objects inside the drum, worn bearings, loose parts, or pump obstruction. Stop the cycle and inspect the drum and filter before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Washer leak water?</div>
+<div class="answer">
+Leaks are often caused by loose hose connections, damaged door seals, clogged detergent drawer, or pump issues. Check all hoses and clean the detergent compartment.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Washer not drain water?</div>
+<div class="answer">
+This is usually due to clogged drain filter, blocked hose, or pump failure. Clean the drain filter, check the hose for blockages, and restart the cycle.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Washer not fill with water?</div>
+<div class="answer">
+Check water taps, inlet hoses, and filters. Low water pressure or blocked inlet screens can prevent proper filling.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Washer display unbalanced load warning?</div>
+<div class="answer">
+This happens when clothes are unevenly distributed. Pause the cycle, rearrange laundry evenly, and restart the wash program.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Samsung Washer system messages?</div>
+<div class="answer">
+Turn off the washer, unplug it or switch off the breaker for 5–10 minutes, then restart. This clears temporary system errors and resets control functions.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Washer vibrate excessively?</div>
+<div class="answer">
+Excessive vibration is usually caused by uneven flooring, unbalanced load, or shipping bolts not removed. Level the washer and redistribute clothes properly.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I service my Samsung Washer?</div>
+<div class="answer">
+Service is recommended if the washer repeatedly stops mid-cycle, shows persistent error codes, fails to drain or spin, or has mechanical or motor-related issues.
 </div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> If the issue continues after troubleshooting, disconnect power and contact Samsung service center or qualified technician.
+<strong>Important:</strong> Samsung Washer system messages are safety features designed to protect internal components such as the motor, pump, sensors, and control board. If issues persist after troubleshooting, stop using the appliance and contact an authorized Samsung service center for repair.
 </div>
 
-</div>
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 
+
+

@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ninja Air Fryer Error Codes Troubleshooting Guide</title>
+
+<title>Ninja Air Fryer Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Ninja Air Fryer error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Ninja Air Fryer Error Codes & Troubleshooting Guide",
+  "description": "Complete Ninja Air Fryer error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -27,6 +123,9 @@ h1{
     text-align:center;
     color:#666;
     margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
 }
 
 .subtitle{
@@ -35,22 +134,20 @@ h1{
     margin-bottom:30px;
 }
 
-.section{
+.section-title{
     margin-top:40px;
-}
-
-.section h2{
+    font-size:20px;
+    font-weight:bold;
     border-left:5px solid #e60012;
     padding-left:10px;
-    font-size:20px;
     color:#444;
-    margin-bottom:20px;
 }
 
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
+    margin-top:20px;
 }
 
 .card{
@@ -67,10 +164,10 @@ h1{
 }
 
 .code{
-    font-size:24px;
+    font-size:26px;
     font-weight:bold;
-    color:#e60012;
-    margin-bottom:8px;
+    color:#4e6e81;
+    margin-bottom:10px;
 }
 
 .title{
@@ -91,172 +188,528 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Ninja Air Fryer Error Codes Troubleshooting Guide</h1>
-<p class="subtitle"><strong>Complete Repair & Diagnostic Instructions</strong></p>
+<h1>Ninja Air Fryer Error Codes</h1>
 
-<!-- ================= ERROR CODES ================= -->
-<div class="section">
-<h2>Air Fryer Error Codes</h2>
+<p class="subtitle"><strong>Complete Ninja Air Fryer Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Ninja Air Fryer error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
+
 <div class="grid">
 
-<div class="card">
-<div class="code">E1</div>
-<div class="title">Temperature Sensor Error</div>
-<ul class="steps">
-<li>Turn OFF and unplug the unit.</li>
-<li>Let it cool for 10–15 minutes.</li>
-<li>Check sensor connection inside heating chamber.</li>
-<li>Replace temperature sensor if faulty.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E1</div>
+  <div class="title">Temperature Sensor Error</div>
+  <ul class="steps">
+    <li>Turn OFF and unplug the air fryer.</li>
+    <li>Allow unit to cool for 10–15 minutes.</li>
+    <li>Check internal temperature sensor connection.</li>
+    <li>Replace sensor if readings are incorrect.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E2</div>
-<div class="title">Unit Overheating</div>
-<ul class="steps">
-<li>Stop operation immediately.</li>
-<li>Ensure proper ventilation around unit.</li>
-<li>Clean air vents and fan area.</li>
-<li>Allow cooling before restarting.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E2</div>
+  <div class="title">Overheating Protection Activated</div>
+  <ul class="steps">
+    <li>Stop operation immediately.</li>
+    <li>Clear airflow vents and surrounding space.</li>
+    <li>Allow full cooling before restart.</li>
+    <li>Avoid overloading the basket.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E3</div>
-<div class="title">Heating Element Malfunction</div>
-<ul class="steps">
-<li>Inspect heating coil for damage.</li>
-<li>Check electrical continuity.</li>
-<li>Reset power supply.</li>
-<li>Replace heating element if needed.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E3</div>
+  <div class="title">Heating Element Malfunction</div>
+  <ul class="steps">
+    <li>Check heating coil for visible damage.</li>
+    <li>Inspect electrical connections.</li>
+    <li>Restart unit after reset.</li>
+    <li>Replace heating element if necessary.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E4</div>
-<div class="title">Internal Circuit Issue</div>
-<ul class="steps">
-<li>Turn OFF power immediately.</li>
-<li>Inspect wiring inside control board area.</li>
-<li>Look for burnt components.</li>
-<li>Replace control board if required.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E4</div>
+  <div class="title">Internal Circuit / PCB Error</div>
+  <ul class="steps">
+    <li>Unplug unit immediately.</li>
+    <li>Check for moisture or burnt components.</li>
+    <li>Reset power after 10 minutes.</li>
+    <li>Replace control board if fault persists.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E5</div>
-<div class="title">Fan Motor Error</div>
-<ul class="steps">
-<li>Check fan blade obstruction.</li>
-<li>Clean dust buildup.</li>
-<li>Test fan motor operation.</li>
-<li>Replace motor if faulty.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5</div>
+  <div class="title">Fan Motor Failure</div>
+  <ul class="steps">
+    <li>Check fan blade for obstruction.</li>
+    <li>Clean dust and grease buildup.</li>
+    <li>Test fan rotation manually (power off).</li>
+    <li>Replace fan motor if not spinning.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E6</div>
-<div class="title">Power Supply Problem</div>
-<ul class="steps">
-<li>Check wall outlet voltage.</li>
-<li>Try different power socket.</li>
-<li>Inspect power cord damage.</li>
-<li>Replace power supply board if needed.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E6</div>
+  <div class="title">Power Supply Issue</div>
+  <ul class="steps">
+    <li>Try a different wall outlet.</li>
+    <li>Avoid extension cords.</li>
+    <li>Inspect power cable for damage.</li>
+    <li>Replace power board if needed.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E7</div>
-<div class="title">Control Board Communication Error</div>
-<ul class="steps">
-<li>Reset the unit by unplugging for 10 minutes.</li>
-<li>Inspect wiring between PCB components.</li>
-<li>Check for moisture damage.</li>
-<li>Replace control board if necessary.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E7</div>
+  <div class="title">Control Communication Error</div>
+  <ul class="steps">
+    <li>Unplug unit for 10 minutes.</li>
+    <li>Check wiring between PCB and display.</li>
+    <li>Restart system.</li>
+    <li>Replace control board if recurring.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E8</div>
-<div class="title">Sensor Calibration Failure</div>
-<ul class="steps">
-<li>Reset device to factory settings.</li>
-<li>Clean internal sensors.</li>
-<li>Check wiring connections.</li>
-<li>Replace sensor if calibration fails.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E8</div>
+  <div class="title">Sensor Calibration Failure</div>
+  <ul class="steps">
+    <li>Reset unit to factory settings.</li>
+    <li>Clean internal sensors carefully.</li>
+    <li>Check wiring harness.</li>
+    <li>Replace sensor if calibration fails.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E9</div>
-<div class="title">Power Fluctuation Detected</div>
-<ul class="steps">
-<li>Use stable power source.</li>
-<li>Avoid extension cords.</li>
-<li>Check household voltage stability.</li>
-<li>Restart device after stabilization.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E9</div>
+  <div class="title">Voltage Fluctuation Detected</div>
+  <ul class="steps">
+    <li>Use stable power source.</li>
+    <li>Avoid shared high-load sockets.</li>
+    <li>Check household voltage stability.</li>
+    <li>Restart after power stabilizes.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E10</div>
-<div class="title">Internal Overheating Warning</div>
-<ul class="steps">
-<li>Stop cooking immediately.</li>
-<li>Allow unit to cool completely.</li>
-<li>Clean vents and airflow channels.</li>
-<li>Do not overload cooking basket.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E10</div>
+  <div class="title">Airflow Blockage</div>
+  <ul class="steps">
+    <li>Clean air intake and exhaust vents.</li>
+    <li>Remove grease or dust buildup.</li>
+    <li>Ensure 10–15 cm clearance around unit.</li>
+    <li>Restart after cleaning.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E11</div>
-<div class="title">Airflow Blockage Detected</div>
-<ul class="steps">
-<li>Check air intake and exhaust vents.</li>
-<li>Remove grease or dust buildup.</li>
-<li>Ensure proper spacing around unit.</li>
-<li>Restart after cleaning.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E11</div>
+  <div class="title">Basket Detection Error</div>
+  <ul class="steps">
+    <li>Reinsert cooking basket properly.</li>
+    <li>Check safety switch alignment.</li>
+    <li>Clean basket sensor area.</li>
+    <li>Test without load.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">E12</div>
-<div class="title">Control Board Reset Required</div>
-<ul class="steps">
-<li>Unplug unit for 10–15 minutes.</li>
-<li>Press reset (if available).</li>
-<li>Check firmware or internal settings.</li>
-<li>Replace PCB if issue persists.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E12</div>
+  <div class="title">Control Reset Required</div>
+  <ul class="steps">
+    <li>Unplug unit for 10–15 minutes.</li>
+    <li>Press reset button if available.</li>
+    <li>Restore default settings.</li>
+    <li>Replace PCB if issue continues.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">SHUT OFF</div>
-<div class="title">Overheat Protection Activated</div>
-<ul class="steps">
-<li>Turn OFF and unplug immediately.</li>
-<li>Let unit cool for at least 30 minutes.</li>
-<li>Clean vents and internal fan area.</li>
-<li>Do not restart until fully cooled.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E13</div>
+  <div class="title">Timer System Error</div>
+  <ul class="steps">
+    <li>Reset cooking timer.</li>
+    <li>Power cycle the unit.</li>
+    <li>Check control panel response.</li>
+    <li>Replace display module if needed.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E14</div>
+  <div class="title">Display / Panel Error</div>
+  <ul class="steps">
+    <li>Clean touch panel surface.</li>
+    <li>Check for moisture or grease.</li>
+    <li>Restart unit.</li>
+    <li>Replace control panel if unresponsive.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E15</div>
+  <div class="title">Moisture or Steam Sensor Alert</div>
+  <ul class="steps">
+    <li>Turn off and dry internal chamber.</li>
+    <li>Avoid excess liquid inside basket.</li>
+    <li>Clean sensor area.</li>
+    <li>Restart after full drying.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E16</div>
+  <div class="title">Smoke or Burn Detection</div>
+  <ul class="steps">
+    <li>Stop cooking immediately.</li>
+    <li>Check for burnt food or oil residue.</li>
+    <li>Clean heating chamber thoroughly.</li>
+    <li>Ensure proper cooking temperature settings.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E17</div>
+  <div class="title">Heating Coil Efficiency Error</div>
+  <ul class="steps">
+    <li>Inspect heating element performance.</li>
+    <li>Check for uneven heating.</li>
+    <li>Reset unit and retest.</li>
+    <li>Replace coil if weak or damaged.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E18</div>
+  <div class="title">Thermal Fuse Triggered</div>
+  <ul class="steps">
+    <li>Unplug and allow full cooling.</li>
+    <li>Check internal temperature safety fuse.</li>
+    <li>Inspect for overheating cause.</li>
+    <li>Replace fuse if blown.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E19</div>
+  <div class="title">Touch Panel Malfunction</div>
+  <ul class="steps">
+    <li>Clean control surface.</li>
+    <li>Remove moisture or oil buildup.</li>
+    <li>Restart system.</li>
+    <li>Replace touch panel if unresponsive.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E20</div>
+  <div class="title">System Firmware Error</div>
+  <ul class="steps">
+    <li>Power cycle the unit.</li>
+    <li>Reset system settings.</li>
+    <li>Check for firmware update (if supported).</li>
+    <li>Replace control board if persistent.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SHUT OFF</div>
+  <div class="title">Emergency Overheat Shutdown</div>
+  <ul class="steps">
+    <li>Turn OFF and unplug immediately.</li>
+    <li>Allow at least 30 minutes cooling time.</li>
+    <li>Clean vents and internal fan area.</li>
+    <li>Do not restart until fully cooled.</li>
+  </ul>
+</div></div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Air Fryer not turning on?</div>
+<div class="answer">
+Check the power outlet and ensure the plug is securely connected. Inspect the power cord for damage. Try a different socket and reset the unit by unplugging it for 5–10 minutes before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Air Fryer not heating?</div>
+<div class="answer">
+Ensure the correct cooking mode and temperature are selected. Check for overheating protection activation. Clean internal heating elements and vents, then restart the unit.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Air Fryer smoking during use?</div>
+<div class="answer">
+Smoke is usually caused by excess oil or food residue inside the basket. Clean the cooking chamber thoroughly and avoid overfilling or using excessive oil.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Air Fryer not cooking food evenly?</div>
+<div class="answer">
+Uneven cooking may result from overcrowding the basket or improper food placement. Shake or rotate food halfway through cooking for better results.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Air Fryer stop mid-cycle?</div>
+<div class="answer">
+This may be caused by overheating protection, power interruptions, or a loose basket connection. Allow the unit to cool and ensure the basket is properly inserted.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Air Fryer making loud fan noises?</div>
+<div class="answer">
+Loud fan noise may come from food debris, loose components, or blocked airflow. Clean the fan area and ensure nothing is obstructing internal airflow.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Air Fryer displaying a SHUT OFF message?</div>
+<div class="answer">
+The unit has activated overheat protection. Turn it off immediately, unplug it, and allow it to cool completely before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Air Fryer show an E1 error?</div>
+<div class="answer">
+An E1 error typically indicates a temperature sensor issue. Turn off the unit, let it cool, and check sensor connections. Service may be required if it persists.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Air Fryer show an E2 overheating error?</div>
+<div class="answer">
+E2 means the unit is overheating. Stop using it immediately, clean air vents, ensure proper ventilation, and allow the unit to cool before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Air Fryer show an E3 heating error?</div>
+<div class="answer">
+This indicates a heating element malfunction. Inspect for blockages, reset the unit, and contact service if the heating system does not recover.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Air Fryer show an E4 internal error?</div>
+<div class="answer">
+E4 suggests a control board or internal circuit issue. Power cycle the unit and inspect for moisture or electrical faults. Technician service may be required.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Air Fryer show an E5 fan error?</div>
+<div class="answer">
+E5 indicates a fan malfunction or blockage. Clean the fan area, check for debris, and ensure the fan spins freely before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Air Fryer show an E6 power error?</div>
+<div class="answer">
+E6 points to unstable power supply or voltage issues. Try a different outlet and avoid using extension cords or overloaded circuits.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why do Ninja Air Fryer problems keep coming back?</div>
+<div class="answer">
+Recurring issues may indicate overheating, faulty sensors, airflow blockage, or control board failure that requires professional inspection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a technician for my Ninja Air Fryer?</div>
+<div class="answer">
+Contact a technician if the unit repeatedly shuts off, shows persistent error codes, fails to heat, or emits unusual burning smells after cleaning.
 </div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> If error continues after troubleshooting, contact Ninja customer support or a qualified appliance technician.
+<strong>Important:</strong> If your Ninja Air Fryer continues to malfunction after troubleshooting, disconnect it from power immediately. Persistent faults may indicate heating element failure, sensor damage, airflow obstruction, or control board issues. Continued use may cause further damage or safety risks. Have the unit inspected by an authorized service technician.
 </div>
 
-</div>
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 

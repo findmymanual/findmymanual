@@ -3,416 +3,1007 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frigidaire Washer Error Codes Troubleshooting Guide</title>
+
+<title>Frigidaire Washer Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Frigidaire Washer error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Frigidaire Washer Error Codes & Troubleshooting Guide",
+  "description": "Complete Frigidaire Washer error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f6f8;
+    background:#f5f5f5;
     color:#333;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     background:#fff;
-    padding:25px;
+    padding:30px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 h1{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
     text-align:center;
-    border-radius:8px;
+    color:#666;
     margin-bottom:10px;
-    
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
 }
 
-h2{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
+.subtitle{
     text-align:center;
-    border-radius:8px;
-    margin-bottom:10px;
-    
+    color:#666;
+    margin-bottom:30px;
 }
 
 .section-title{
     margin-top:40px;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
-    border-left:5px solid #1f3b4d;
+    border-left:5px solid #e60012;
     padding-left:10px;
-    
+    color:#444;
 }
 
-.search-box{
-    width:100%;
-    padding:12px;
-    margin:20px 0;
-    border:1px solid #ccc;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    border:1px solid #4e6e81;
     border-radius:8px;
+    padding:20px;
+    background:#fafafa;
+    transition:0.3s;
 }
 
-.error-card{
-    border:1px solid #ddd;
-    border-radius:8px;
-    margin-bottom:10px;
-    overflow:hidden;
-}
-
-.error-toggle{
-    width:100%;
-    padding:15px;
-    background:#fff;
-    border:none;
-    text-align:left;
-    cursor:pointer;
-    font-size:16px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-.error-toggle:hover{
-    background:#f3f3f3;
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .code{
+    font-size:26px;
     font-weight:bold;
-    color:#1f3b4d;
-    margin-right:10px;
-    min-width:80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    color:#4e6e81;
+    margin-bottom:10px;
 }
 
-.error-content{
-    display:none;
-    padding:15px;
-    background:#fafafa;
-    border-top:1px solid #eee;
-    
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
-.error-content ul{
-    padding-left:20px;
+.steps{
+    padding-left:18px;
+    line-height:1.6;
 }
 
 .note{
-    margin-top:25px;
-    padding:15px;
+    margin-top:30px;
     background:#fff3cd;
     border:1px solid #ffeeba;
+    padding:15px;
+    border-radius:6px;
+}
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
     border-radius:8px;
-    
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
+</style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
 }
 </style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Frigidaire Washer Error Codes & Troubleshooting Guide</h1>
+<h1>Frigidaire Washer Error Codes</h1>
 
-<input type="text" class="search-box" placeholder="Search error code...">
+<p class="subtitle"><strong>Complete Frigidaire Washer Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Frigidaire Washer error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E11</span> Water Fill Timeout</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check water supply valves are fully open.</li>
-<li>Inspect inlet hose for blockage or kinks.</li>
-<li>Clean inlet filter screens.</li>
-<li>Verify household water pressure is adequate.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E11</div>
+  <div class="title">Water Fill Timeout</div>
+  <ul class="steps">
+    <li>Check water supply valves are fully open.</li>
+    <li>Inspect inlet hose for blockage or kinks.</li>
+    <li>Clean inlet filter screens.</li>
+    <li>Verify household water pressure is adequate.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E12</span> Drain Timeout</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect drain hose for clogs or bends.</li>
-<li>Clean drain pump filter thoroughly.</li>
-<li>Check drain pump operation.</li>
-<li>Ensure correct drain height installation.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E12</div>
+  <div class="title">Drain Timeout</div>
+  <ul class="steps">
+    <li>Inspect drain hose for clogs or bends.</li>
+    <li>Clean drain pump filter thoroughly.</li>
+    <li>Check drain pump operation.</li>
+    <li>Ensure correct drain height installation.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E13</span> Pressure Sensor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check pressure sensor hose for blockage.</li>
-<li>Inspect wiring connections to sensor.</li>
-<li>Test sensor resistance using a multimeter.</li>
-<li>Replace pressure sensor if readings are abnormal.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E53</div>
+  <div class="title">Motor Control Board Fault</div>
+  <ul class="steps">
+    <li>Inspect motor control board for damage or burn marks.</li>
+    <li>Check wiring connections to the motor module.</li>
+    <li>Reset washer power supply.</li>
+    <li>Replace control board if fault persists.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E21</span> Motor Not Running</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check drum for mechanical obstruction.</li>
-<li>Inspect motor wiring connections.</li>
-<li>Test motor capacitor (if applicable).</li>
-<li>Replace motor if no response is detected.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E54</div>
+  <div class="title">Motor Relay Stuck Closed</div>
+  <ul class="steps">
+    <li>Inspect relay contacts on control board.</li>
+    <li>Check for burnt or welded relay terminals.</li>
+    <li>Power cycle the washer to reset control system.</li>
+    <li>Replace control board if relay remains stuck.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E22</span> Motor Triac Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect control board for burnt components.</li>
-<li>Check motor triac circuit integrity.</li>
-<li>Reset washer power supply.</li>
-<li>Replace control board if triac is faulty.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E55</div>
+  <div class="title">Motor Overheating Detected</div>
+  <ul class="steps">
+    <li>Allow motor to cool before restarting.</li>
+    <li>Check for overload or excessive laundry load.</li>
+    <li>Inspect motor ventilation and wiring.</li>
+    <li>Replace motor if overheating continues.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E23</span> Door Lock Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check door latch alignment and condition.</li>
-<li>Inspect door lock wiring harness.</li>
-<li>Ensure door closes and latches properly.</li>
-<li>Replace door lock assembly if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E56</div>
+  <div class="title">Motor Current Too High</div>
+  <ul class="steps">
+    <li>Check for drum blockage or heavy load.</li>
+    <li>Inspect motor wiring and resistance.</li>
+    <li>Test control board output to motor.</li>
+    <li>Replace motor if abnormal current persists.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E24</span> Door Unlock Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Wait 1–2 minutes after cycle completion.</li>
-<li>Reset power supply to the washer.</li>
-<li>Inspect door lock mechanism for jamming.</li>
-<li>Replace lock motor if stuck or defective.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E57</div>
+  <div class="title">Excessive Motor Current</div>
+  <ul class="steps">
+    <li>Inspect drum for mechanical resistance.</li>
+    <li>Check motor bearings for wear.</li>
+    <li>Verify load balance in drum.</li>
+    <li>Replace motor if current remains high.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E31</span> Temperature Sensor Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect temperature sensor wiring connections.</li>
-<li>Test sensor resistance values.</li>
-<li>Check for corrosion or loose terminals.</li>
-<li>Replace sensor if readings are incorrect.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E58</div>
+  <div class="title">Motor Current Below Expected Range</div>
+  <ul class="steps">
+    <li>Check motor wiring connections.</li>
+    <li>Inspect control board output signals.</li>
+    <li>Test motor windings for continuity.</li>
+    <li>Replace motor if underperformance continues.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E32</span> Heating Element Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check heating element continuity with multimeter.</li>
-<li>Inspect wiring harness for burns or damage.</li>
-<li>Test heating relay operation.</li>
-<li>Replace heater if no continuity is detected.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E59</div>
+  <div class="title">No Tachometer Signal</div>
+  <ul class="steps">
+    <li>Inspect tachometer sensor wiring.</li>
+    <li>Check motor rotation sensor alignment.</li>
+    <li>Test sensor output signal.</li>
+    <li>Replace tachometer sensor if faulty.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E41</span> Communication Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reset washer power for 5–10 minutes.</li>
-<li>Inspect wiring between control board and components.</li>
-<li>Check for moisture or corrosion on PCB.</li>
-<li>Replace control board if communication fails.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5A</div>
+  <div class="title">Heat Sink Overtemperature</div>
+  <ul class="steps">
+    <li>Allow control board to cool down.</li>
+    <li>Check ventilation around control board.</li>
+    <li>Inspect for dust buildup inside unit.</li>
+    <li>Replace control board if overheating persists.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E43</span> Control Board Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect main control board for damage or burn marks.</li>
-<li>Check power supply stability.</li>
-<li>Reset appliance system completely.</li>
-<li>Replace control board if fault persists.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5B</div>
+  <div class="title">Motor Control Board Communication Error</div>
+  <ul class="steps">
+    <li>Check wiring between motor and control board.</li>
+    <li>Inspect connectors for corrosion or looseness.</li>
+    <li>Reset washer power cycle.</li>
+    <li>Replace control board if communication fails.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E44</span> Water Level Sensor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect pressure switch hose for blockage.</li>
-<li>Check wiring connections to sensor.</li>
-<li>Test sensor response using multimeter.</li>
-<li>Replace water level sensor if faulty.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5C</div>
+  <div class="title">High Voltage Detected</div>
+  <ul class="steps">
+    <li>Check household power supply stability.</li>
+    <li>Inspect outlet and breaker condition.</li>
+    <li>Use voltage regulator if needed.</li>
+    <li>Disconnect appliance if voltage is unstable.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E45</span> Overfill Condition</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off water supply immediately.</li>
-<li>Inspect inlet valve for sticking open.</li>
-<li>Check pressure switch operation.</li>
-<li>Replace inlet valve if necessary.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5D</div>
+  <div class="title">Control Board Configuration Error</div>
+  <ul class="steps">
+    <li>Reset appliance power completely.</li>
+    <li>Check firmware or configuration settings.</li>
+    <li>Inspect control board memory integrity.</li>
+    <li>Replace PCB if configuration fails.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E46</span> Spin System Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check load balance inside drum.</li>
-<li>Inspect motor and tachometer sensor.</li>
-<li>Ensure no mechanical obstruction.</li>
-<li>Replace motor control module if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5E</div>
+  <div class="title">User Interface Communication Failure</div>
+  <ul class="steps">
+    <li>Inspect UI panel wiring connections.</li>
+    <li>Check ribbon cable for damage or looseness.</li>
+    <li>Reset washer system power.</li>
+    <li>Replace UI board if communication fails.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E47</span> Speed Sensor Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect motor speed sensor wiring.</li>
-<li>Test tachometer output signal.</li>
-<li>Check connectors for looseness or corrosion.</li>
-<li>Replace sensor if signal is unstable.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E5F</div>
+  <div class="title">Main Control Board Error</div>
+  <ul class="steps">
+    <li>Inspect main PCB for burn marks or damage.</li>
+    <li>Check power supply stability.</li>
+    <li>Reset washer system.</li>
+    <li>Replace control board if fault persists.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E48</span> Motor Relay Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect relay on control board.</li>
-<li>Check for burnt PCB traces.</li>
-<li>Test relay switching function.</li>
-<li>Replace control board if relay fails.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E61</div>
+  <div class="title">Water Heating Timeout</div>
+  <ul class="steps">
+    <li>Check heating element operation.</li>
+    <li>Inspect temperature sensor readings.</li>
+    <li>Verify water supply temperature.</li>
+    <li>Replace heater if heating is slow or absent.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E49</span> Drum Position Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check drum alignment and movement.</li>
-<li>Inspect motor belt or coupling.</li>
-<li>Reset washer system power.</li>
-<li>Replace motor sensor if position detection fails.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E62</div>
+  <div class="title">Water Temperature Too High</div>
+  <ul class="steps">
+    <li>Check thermostat and sensor calibration.</li>
+    <li>Inspect heating element for stuck relay.</li>
+    <li>Allow water to cool before restart.</li>
+    <li>Replace temperature sensor if faulty.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E50</span> General Motor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect motor wiring connections.</li>
-<li>Test motor resistance and operation.</li>
-<li>Check control board output signals.</li>
-<li>Replace motor if no response is detected.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E64</div>
+  <div class="title">Heating Circuit Failure</div>
+  <ul class="steps">
+    <li>Inspect heating element wiring.</li>
+    <li>Test heater continuity with multimeter.</li>
+    <li>Check relay on control board.</li>
+    <li>Replace heating component if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E52</span> Overspeed Detected</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Stop washer immediately.</li>
-<li>Check tachometer sensor operation.</li>
-<li>Inspect control board calibration.</li>
-<li>Replace motor control board if needed.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E66</div>
+  <div class="title">Heating Element Relay Fault</div>
+  <ul class="steps">
+    <li>Inspect relay contacts on control board.</li>
+    <li>Check for burnt PCB traces.</li>
+    <li>Reset washer system power.</li>
+    <li>Replace control board if relay fails.</li>
+  </ul>
 </div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E67</div>
+  <div class="title">Control Board Configuration Error</div>
+  <ul class="steps">
+    <li>Reset washer system.</li>
+    <li>Check firmware configuration.</li>
+    <li>Inspect PCB memory integrity.</li>
+    <li>Replace control board if needed.</li>
+  </ul>
 </div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E68</div>
+  <div class="title">Ground Fault Detected</div>
+  <ul class="steps">
+    <li>Disconnect power immediately.</li>
+    <li>Inspect wiring for insulation damage.</li>
+    <li>Check motor and heater for leakage.</li>
+    <li>Call technician for electrical inspection.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E69</div>
+  <div class="title">Heating Element Open Circuit</div>
+  <ul class="steps">
+    <li>Test heating element continuity.</li>
+    <li>Inspect wiring connections.</li>
+    <li>Check relay operation.</li>
+    <li>Replace heater if open circuit is confirmed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E71</div>
+  <div class="title">Water Temperature Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect sensor wiring connections.</li>
+    <li>Test thermistor resistance values.</li>
+    <li>Check for corrosion or damage.</li>
+    <li>Replace sensor if readings are unstable.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E72</div>
+  <div class="title">Temperature Sensor Out of Range</div>
+  <ul class="steps">
+    <li>Check sensor placement.</li>
+    <li>Inspect wiring harness.</li>
+    <li>Test sensor resistance.</li>
+    <li>Replace sensor if readings are incorrect.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E73</div>
+  <div class="title">Water Temperature Sensor Calibration Error</div>
+  <ul class="steps">
+    <li>Reset washer system.</li>
+    <li>Check sensor calibration data.</li>
+    <li>Inspect control board memory.</li>
+    <li>Replace sensor or PCB if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E74</div>
+  <div class="title">Temperature Sensor Position Error</div>
+  <ul class="steps">
+    <li>Check sensor placement inside drum.</li>
+    <li>Inspect wiring harness routing.</li>
+    <li>Test sensor output signal.</li>
+    <li>Reinstall or replace sensor if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E82</div>
+  <div class="title">Program Selector Switch Fault</div>
+  <ul class="steps">
+    <li>Inspect selector switch mechanism.</li>
+    <li>Check wiring connections.</li>
+    <li>Clean contacts if dirty or stuck.</li>
+    <li>Replace switch if unresponsive.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E83</div>
+  <div class="title">Control Knob Communication Error</div>
+  <ul class="steps">
+    <li>Inspect control knob wiring.</li>
+    <li>Check UI board connections.</li>
+    <li>Reset system power.</li>
+    <li>Replace control panel if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E91</div>
+  <div class="title">User Interface Board Communication Failure</div>
+  <ul class="steps">
+    <li>Check ribbon cable connections.</li>
+    <li>Inspect UI board for damage.</li>
+    <li>Reset washer system.</li>
+    <li>Replace UI board if communication fails.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E92</div>
+  <div class="title">Control Board Configuration Mismatch</div>
+  <ul class="steps">
+    <li>Check firmware version compatibility.</li>
+    <li>Reset system configuration.</li>
+    <li>Inspect PCB memory.</li>
+    <li>Replace control board if mismatch persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E93</div>
+  <div class="title">Software Configuration Error</div>
+  <ul class="steps">
+    <li>Reset washer power cycle.</li>
+    <li>Check firmware settings.</li>
+    <li>Reinitialize system configuration.</li>
+    <li>Replace PCB if error continues.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E94</div>
+  <div class="title">Cycle Configuration Error</div>
+  <ul class="steps">
+    <li>Reset selected wash program.</li>
+    <li>Check control board memory.</li>
+    <li>Re-select cycle settings.</li>
+    <li>Replace control board if fault persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E95</div>
+  <div class="title">Communication Fault Between Boards</div>
+  <ul class="steps">
+    <li>Inspect wiring harness between modules.</li>
+    <li>Check connectors for corrosion or looseness.</li>
+    <li>Reset washer system power.</li>
+    <li>Replace control board if communication fails.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E96</div>
+  <div class="title">Power Supply Configuration Error</div>
+  <ul class="steps">
+    <li>Check household voltage stability.</li>
+    <li>Inspect power cord and outlet.</li>
+    <li>Reset washer system.</li>
+    <li>Replace control board if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E97</div>
+  <div class="title">Program Selector Configuration Error</div>
+  <ul class="steps">
+    <li>Inspect program selector switch.</li>
+    <li>Reset system configuration.</li>
+    <li>Check control board memory.</li>
+    <li>Replace selector or PCB if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E98</div>
+  <div class="title">Control Board Communication Fault</div>
+  <ul class="steps">
+    <li>Check wiring between UI and main PCB.</li>
+    <li>Inspect connectors for damage.</li>
+    <li>Reset system power.</li>
+    <li>Replace control board if communication fails.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E99</div>
+  <div class="title">User Interface Error</div>
+  <ul class="steps">
+    <li>Inspect UI panel wiring.</li>
+    <li>Check control board connection.</li>
+    <li>Reset system power cycle.</li>
+    <li>Replace UI board if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">EF1</div>
+  <div class="title">Drain Filter Blocked</div>
+  <ul class="steps">
+    <li>Clean drain pump filter.</li>
+    <li>Check drain hose for blockage.</li>
+    <li>Remove debris from pump area.</li>
+    <li>Restart washer after cleaning.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">EF2</div>
+  <div class="title">Excessive Detergent Detected</div>
+  <ul class="steps">
+    <li>Reduce detergent usage.</li>
+    <li>Run rinse cycle to clear foam.</li>
+    <li>Check detergent dispenser.</li>
+    <li>Avoid non-HE detergent use.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">EF3</div>
+  <div class="title">Water Leak Detected</div>
+  <ul class="steps">
+    <li>Inspect hoses and connections.</li>
+    <li>Check door seal for damage.</li>
+    <li>Look for water under washer.</li>
+    <li>Call technician if leak persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">EF4</div>
+  <div class="title">Water Supply Problem</div>
+  <ul class="steps">
+    <li>Check inlet valve and hoses.</li>
+    <li>Ensure water pressure is adequate.</li>
+    <li>Clean inlet filters.</li>
+    <li>Reset washer system.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">EF5</div>
+  <div class="title">Load Imbalance Detected</div>
+  <ul class="steps">
+    <li>Redistribute laundry evenly.</li>
+    <li>Avoid washing single heavy items.</li>
+    <li>Check suspension system.</li>
+    <li>Restart spin cycle after balancing load.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E13</div>
+  <div class="title">Pressure Sensor Fault</div>
+  <ul class="steps">
+    <li>Check pressure sensor hose for blockage.</li>
+    <li>Inspect wiring connections to sensor.</li>
+    <li>Test sensor resistance using a multimeter.</li>
+    <li>Replace pressure sensor if readings are abnormal.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E21</div>
+  <div class="title">Motor Not Running</div>
+  <ul class="steps">
+    <li>Check drum for mechanical obstruction.</li>
+    <li>Inspect motor wiring connections.</li>
+    <li>Test motor capacitor if applicable.</li>
+    <li>Replace motor if no response is detected.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E22</div>
+  <div class="title">Motor Triac Failure</div>
+  <ul class="steps">
+    <li>Inspect control board for burnt components.</li>
+    <li>Check motor triac circuit integrity.</li>
+    <li>Reset washer power supply.</li>
+    <li>Replace control board if triac is faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E23</div>
+  <div class="title">Door Lock Failure</div>
+  <ul class="steps">
+    <li>Check door latch alignment and condition.</li>
+    <li>Inspect door lock wiring harness.</li>
+    <li>Ensure door closes and latches properly.</li>
+    <li>Replace door lock assembly if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E24</div>
+  <div class="title">Door Unlock Failure</div>
+  <ul class="steps">
+    <li>Wait 1–2 minutes after cycle completion.</li>
+    <li>Reset power supply to the washer.</li>
+    <li>Inspect door lock mechanism for jamming.</li>
+    <li>Replace lock motor if stuck or defective.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E31</div>
+  <div class="title">Temperature Sensor Error</div>
+  <ul class="steps">
+    <li>Inspect temperature sensor wiring connections.</li>
+    <li>Test sensor resistance values.</li>
+    <li>Check for corrosion or loose terminals.</li>
+    <li>Replace sensor if readings are incorrect.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E32</div>
+  <div class="title">Heating Element Fault</div>
+  <ul class="steps">
+    <li>Check heating element continuity with a multimeter.</li>
+    <li>Inspect wiring harness for burns or damage.</li>
+    <li>Test heating relay operation.</li>
+    <li>Replace heater if no continuity is detected.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E41</div>
+  <div class="title">Communication Error</div>
+  <ul class="steps">
+    <li>Reset washer power for 5–10 minutes.</li>
+    <li>Inspect wiring between control board and components.</li>
+    <li>Check for moisture or corrosion on the PCB.</li>
+    <li>Replace control board if communication fails.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E43</div>
+  <div class="title">Control Board Failure</div>
+  <ul class="steps">
+    <li>Inspect main control board for damage or burn marks.</li>
+    <li>Check power supply stability.</li>
+    <li>Reset appliance system completely.</li>
+    <li>Replace control board if fault persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E44</div>
+  <div class="title">Water Level Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect pressure switch hose for blockage.</li>
+    <li>Check wiring connections to sensor.</li>
+    <li>Test sensor response using a multimeter.</li>
+    <li>Replace water level sensor if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E45</div>
+  <div class="title">Overfill Condition</div>
+  <ul class="steps">
+    <li>Turn off water supply immediately.</li>
+    <li>Inspect inlet valve for sticking open.</li>
+    <li>Check pressure switch operation.</li>
+    <li>Replace inlet valve if necessary.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E46</div>
+  <div class="title">Spin System Fault</div>
+  <ul class="steps">
+    <li>Check load balance inside drum.</li>
+    <li>Inspect motor and tachometer sensor.</li>
+    <li>Ensure no mechanical obstruction exists.</li>
+    <li>Replace motor control module if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E47</div>
+  <div class="title">Speed Sensor Error</div>
+  <ul class="steps">
+    <li>Inspect motor speed sensor wiring.</li>
+    <li>Test tachometer output signal.</li>
+    <li>Check connectors for looseness or corrosion.</li>
+    <li>Replace sensor if signal is unstable.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E48</div>
+  <div class="title">Motor Relay Fault</div>
+  <ul class="steps">
+    <li>Inspect relay on the control board.</li>
+    <li>Check for burnt PCB traces.</li>
+    <li>Test relay switching function.</li>
+    <li>Replace control board if relay fails.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E49</div>
+  <div class="title">Drum Position Error</div>
+  <ul class="steps">
+    <li>Check drum alignment and movement.</li>
+    <li>Inspect motor belt or coupling.</li>
+    <li>Reset washer system power.</li>
+    <li>Replace motor sensor if position detection fails.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E50</div>
+  <div class="title">General Motor Fault</div>
+  <ul class="steps">
+    <li>Inspect motor wiring connections.</li>
+    <li>Test motor resistance and operation.</li>
+    <li>Check control board output signals.</li>
+    <li>Replace motor if no response is detected.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E52</div>
+  <div class="title">Overspeed Detected</div>
+  <ul class="steps">
+    <li>Stop washer immediately.</li>
+    <li>Check tachometer sensor operation.</li>
+    <li>Inspect control board calibration.</li>
+    <li>Replace motor control board if needed.</li>
+  </ul>
+</div></div>
+</body>
+</html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
 
 <!-- FAQ SECTION -->
 <div class="faq">
@@ -420,170 +1011,88 @@ h2{
 
 <br>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire washer not starting?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure the washer is plugged in properly.</li>
-<li>Check if the door is fully closed and locked.</li>
-<li>Verify that a wash cycle has been selected.</li>
-<li>Check if child lock is enabled and disable it.</li>
-</ul>
+
+<div class="faq-container">
+
+
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire washer not starting?</div>
+<div class="answer">
+Ensure the washer is plugged in properly. Check if the door is fully closed and locked. Verify that a wash cycle has been selected. Check if child lock is enabled and disable it.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire washer not filling with water?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Make sure the water supply valve is fully open.</li>
-<li>Clean inlet filters and check for blockages.</li>
-<li>Inspect hoses for kinks or damage.</li>
-<li>Check household water pressure.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire washer not filling with water?</div>
+<div class="answer">
+Make sure the water supply valve is fully open. Clean inlet filters and check for blockages. Inspect hoses for kinks or damage. Check household water pressure.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire washer not spinning?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Redistribute laundry evenly in the drum.</li>
-<li>Avoid overloading or underloading the washer.</li>
-<li>Check for drain issues preventing spin cycle.</li>
-<li>Inspect drive belt or motor if problem persists.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire washer not spinning?</div>
+<div class="answer">
+Redistribute laundry evenly in the drum. Avoid overloading or underloading the washer. Check for drain issues preventing the spin cycle. Inspect the drive belt or motor if the problem persists.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire washer not draining?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean the drain pump filter regularly.</li>
-<li>Check drain hose for clogs or bends.</li>
-<li>Ensure the drain system is not blocked.</li>
-<li>Restart the washer after clearing obstruction.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire washer not draining?</div>
+<div class="answer">
+Clean the drain pump filter regularly. Check the drain hose for clogs or bends. Ensure the drain system is not blocked. Restart the washer after clearing any obstruction.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire washer leaking water?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect inlet and drain hoses for leaks.</li>
-<li>Check door seal for damage or dirt buildup.</li>
-<li>Avoid using too much detergent.</li>
-<li>Ensure the washer is level on the floor.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire washer leaking water?</div>
+<div class="answer">
+Inspect inlet and drain hoses for leaks. Check the door seal for damage or dirt buildup. Avoid using too much detergent. Ensure the washer is level on the floor.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire washer making loud noise?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for foreign objects inside the drum.</li>
-<li>Ensure the washer is properly leveled.</li>
-<li>Inspect suspension system or bearings.</li>
-<li>Avoid washing heavy items alone.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire washer making loud noise?</div>
+<div class="answer">
+Check for foreign objects inside the drum. Ensure the washer is properly leveled. Inspect the suspension system or bearings. Avoid washing heavy items alone.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my Frigidaire washer stop mid-cycle?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for power interruptions or unstable supply.</li>
-<li>Inspect water supply and drainage issues.</li>
-<li>Ensure load is balanced and not overloaded.</li>
-<li>Restart cycle after resetting the washer.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Frigidaire washer stop mid-cycle?</div>
+<div class="answer">
+Check for power interruptions or an unstable power supply. Inspect water supply and drainage issues. Ensure the load is balanced and not overloaded. Restart the cycle after resetting the washer.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire washer not unlocking?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Wait for cycle to fully complete before opening.</li>
-<li>Check if water is still inside the drum.</li>
-<li>Try unplugging and restarting the washer.</li>
-<li>Inspect door lock mechanism for faults.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire washer not unlocking?</div>
+<div class="answer">
+Wait for the cycle to fully complete before opening the door. Check if water is still inside the drum. Try unplugging and restarting the washer. Inspect the door lock mechanism for faults.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my Frigidaire washer smell bad?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean detergent drawer and drum regularly.</li>
-<li>Run a tub cleaning cycle.</li>
-<li>Leave door open after each wash.</li>
-<li>Remove lint and residue buildup.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Frigidaire washer smell bad?</div>
+<div class="answer">
+Clean the detergent drawer and drum regularly. Run a tub cleaning cycle. Leave the door open after each wash. Remove lint and residue buildup.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>How do I reset my Frigidaire washer?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off and unplug the washer for 5–10 minutes.</li>
-<li>Reconnect power and restart the machine.</li>
-<li>Select a new cycle after reset.</li>
-<li>Check if the issue has been resolved.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Frigidaire washer?</div>
+<div class="answer">
+Turn off and unplug the washer for 5–10 minutes. Reconnect power and restart the machine. Select a new cycle after the reset. Check if the issue has been resolved.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Frigidaire washer displaying error codes?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check water supply and drainage systems.</li>
-<li>Inspect hoses and filters for blockages.</li>
-<li>Ensure load is balanced properly.</li>
-<li>Refer to manual or technician if error persists.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Frigidaire washer displaying error codes?</div>
+<div class="answer">
+Check the water supply and drainage systems. Inspect hoses and filters for blockages. Ensure the load is balanced properly. Refer to the user manual or contact a technician if the error persists.
 </div>
 </div>
+
 
 </div>
 

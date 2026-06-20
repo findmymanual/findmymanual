@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ninja Oven Error Codes Troubleshooting Guide</title>
+
+<title>Ninja Oven Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Ninja Oven error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Ninja Oven Error Codes & Troubleshooting Guide",
+  "description": "Complete Ninja Oven error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -38,10 +134,20 @@ h1{
     margin-bottom:30px;
 }
 
+.section-title{
+    margin-top:40px;
+    font-size:20px;
+    font-weight:bold;
+    border-left:5px solid #e60012;
+    padding-left:10px;
+    color:#444;
+}
+
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
+    margin-top:20px;
 }
 
 .card{
@@ -82,7 +188,129 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
@@ -90,12 +318,16 @@ h1{
 <div class="container">
 
 <h1>Ninja Oven Error Codes</h1>
-<p class="subtitle"><strong>Troubleshooting & Repair Guide</strong></p>
+
+<p class="subtitle"><strong>Complete Ninja Oven Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Ninja Oven error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
-
-<!-- E1 -->
-<div class="card">
+    
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E1</div>
 <div class="title">Temperature Sensor Error</div>
 <ul class="steps">
@@ -107,32 +339,29 @@ h1{
 </ul>
 </div>
 
-<!-- E2 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E2</div>
 <div class="title">Heating Element Issue</div>
 <ul class="steps">
 <li>Disconnect power immediately.</li>
 <li>Inspect heating element for visible damage.</li>
-<li>Check electrical connections.</li>
+<li>Check wiring and terminal connections.</li>
 <li>Replace heating element if faulty.</li>
 </ul>
 </div>
 
-<!-- E3 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E3</div>
-<div class="title">Cooling Fan Issue</div>
+<div class="title">Cooling Fan Malfunction</div>
 <ul class="steps">
-<li>Check fan for obstruction or dust buildup.</li>
+<li>Check fan for dust or obstruction.</li>
 <li>Ensure fan spins freely.</li>
-<li>Clean internal airflow paths.</li>
-<li>Replace fan motor if necessary.</li>
+<li>Clean internal airflow channels.</li>
+<li>Replace fan motor if needed.</li>
 </ul>
 </div>
 
-<!-- E4 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E4</div>
 <div class="title">Door Sensor Error</div>
 <ul class="steps">
@@ -143,97 +372,425 @@ h1{
 </ul>
 </div>
 
-<!-- E5 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E5</div>
-<div class="title">System Failure</div>
+<div class="title">Temperature Detection Fault</div>
 <ul class="steps">
-<li>Power cycle the oven.</li>
-<li>Check for electrical fluctuations.</li>
-<li>Inspect main control board.</li>
-<li>Contact service center if error continues.</li>
+<li>Allow unit to stabilize at proper operating temperature.</li>
+<li>Check internal thermal sensor environment.</li>
+<li>Ensure no grease or blockage near probe.</li>
+<li>Restart after 10–15 minutes cooling period.</li>
 </ul>
 </div>
 
-<!-- E6 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E6</div>
 <div class="title">Heating Relay Failure</div>
 <ul class="steps">
 <li>Turn off and unplug unit.</li>
-<li>Inspect relay connections on PCB.</li>
-<li>Check for burn marks or damage.</li>
-<li>Replace relay or board if needed.</li>
+<li>Inspect relay connections on control board.</li>
+<li>Check for burn marks or loose wiring.</li>
+<li>Replace relay or PCB if needed.</li>
 </ul>
 </div>
 
-<!-- E7 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E7</div>
-<div class="title">Internal Fan Circulation Error</div>
+<div class="title">Internal Airflow Circulation Error</div>
 <ul class="steps">
-<li>Inspect internal fan for blockage.</li>
-<li>Clean grease buildup inside oven.</li>
-<li>Check fan wiring connection.</li>
-<li>Replace fan if not functioning.</li>
+<li>Inspect internal fan system.</li>
+<li>Remove grease buildup inside oven.</li>
+<li>Check airflow channels for blockage.</li>
+<li>Replace fan if not operating correctly.</li>
 </ul>
 </div>
 
-<!-- E8 -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E8</div>
 <div class="title">Power Regulation Fault</div>
 <ul class="steps">
-<li>Check power supply stability.</li>
+<li>Check power outlet stability.</li>
+<li>Avoid extension cords or overload sockets.</li>
 <li>Inspect internal power board.</li>
-<li>Avoid using extension cords.</li>
-<li>Contact technician if issue persists.</li>
+<li>Contact technician if issue continues.</li>
 </ul>
 </div>
 
-<!-- HOT -->
-<div class="card">
+<!-- ================= SYSTEM WARNINGS ================= -->
+
+<div class="card" onclick="toggleCard(this)">
 <div class="code">HOT</div>
 <div class="title">Overheat Warning</div>
 <ul class="steps">
 <li>Turn off oven immediately.</li>
-<li>Allow full cooling period.</li>
-<li>Check ventilation around oven.</li>
-<li>Ensure no blockage inside chamber.</li>
+<li>Allow full cooling cycle.</li>
+<li>Check ventilation openings.</li>
+<li>Remove grease or airflow blockage.</li>
 </ul>
 </div>
 
-<!-- ERR HEAT -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">ERR HEAT</div>
 <div class="title">Heating System Failure</div>
 <ul class="steps">
-<li>Inspect heating components.</li>
-<li>Check wiring and relays.</li>
-<li>Restart after cooling.</li>
+<li>Inspect heating element and wiring.</li>
+<li>Check control relay operation.</li>
+<li>Allow unit to cool before restart.</li>
 <li>Replace heating system if needed.</li>
 </ul>
 </div>
 
-<!-- ERR FAN -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">ERR FAN</div>
 <div class="title">Cooling Fan Failure</div>
 <ul class="steps">
-<li>Check fan for obstruction.</li>
-<li>Clean dust and grease buildup.</li>
-<li>Test fan motor operation.</li>
-<li>Replace fan if not working.</li>
+<li>Check fan for blockage or dust.</li>
+<li>Clean grease buildup around motor.</li>
+<li>Test fan rotation.</li>
+<li>Replace fan motor if needed.</li>
 </ul>
 </div>
 
+<!-- ================= ADVANCED SYSTEM ERRORS ================= -->
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">ERR9</div>
+<div class="title">Control Board Communication Failure</div>
+<ul class="steps">
+<li>Power cycle the oven.</li>
+<li>Inspect PCB connectors.</li>
+<li>Check for moisture or corrosion.</li>
+<li>Replace control board if needed.</li>
+</ul>
 </div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">ERR10</div>
+<div class="title">Overcurrent Protection Triggered</div>
+<ul class="steps">
+<li>Unplug oven immediately.</li>
+<li>Check for short circuit or overload.</li>
+<li>Allow cooling before restart.</li>
+<li>Inspect internal wiring system.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">ERR11</div>
+<div class="title">Thermal Cutoff Activated</div>
+<ul class="steps">
+<li>Allow oven to cool completely.</li>
+<li>Check ventilation and airflow paths.</li>
+<li>Remove internal grease buildup.</li>
+<li>Restart after cooling period.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">ERR12</div>
+<div class="title">Sensor Communication Failure</div>
+<ul class="steps">
+<li>Inspect all temperature sensor wiring.</li>
+<li>Clean internal connectors.</li>
+<li>Restart system.</li>
+<li>Replace sensor module if needed.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">ERR13</div>
+<div class="title">Voltage Instability Detected</div>
+<ul class="steps">
+<li>Use stable power outlet only.</li>
+<li>Avoid extension cords.</li>
+<li>Check household voltage fluctuations.</li>
+<li>Restart after power stabilizes.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">ERR14</div>
+<div class="title">Moisture Detected Inside Unit</div>
+<ul class="steps">
+<li>Unplug oven immediately.</li>
+<li>Dry internal components fully.</li>
+<li>Check for leaks or condensation.</li>
+<li>Restart only when completely dry.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">ERR15</div>
+<div class="title">System Initialization Failure</div>
+<ul class="steps">
+<li>Perform full power reset.</li>
+<li>Check control board boot sequence.</li>
+<li>Inspect firmware integrity.</li>
+<li>Replace PCB if necessary.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">ERR16</div>
+<div class="title">Airflow Sensor Blockage</div>
+<ul class="steps">
+<li>Check airflow channels for obstruction.</li>
+<li>Clean dust and grease buildup.</li>
+<li>Inspect internal fan sensors.</li>
+<li>Reset unit after cleaning.</li>
+</ul>
+</div>
+
+<!-- ================= ADDITIONAL EXPANDED CODES ================= -->
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">ERR17</div>
+<div class="title">Heating Calibration Error</div>
+<ul class="steps">
+<li>Allow oven to fully cool.</li>
+<li>Reset calibration system.</li>
+<li>Check temperature probe accuracy.</li>
+<li>Replace sensor if unstable.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">ERR18</div>
+<div class="title">Internal Memory Fault</div>
+<ul class="steps">
+<li>Power reset the oven.</li>
+<li>Perform factory reset if available.</li>
+<li>Check firmware corruption.</li>
+<li>Replace control board if needed.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">ERR19</div>
+<div class="title">Safety Interlock Failure</div>
+<ul class="steps">
+<li>Ensure door is fully closed.</li>
+<li>Clean door sensor area.</li>
+<li>Check locking mechanism alignment.</li>
+<li>Replace interlock switch if needed.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">ERR20</div>
+<div class="title">System Sync Failure</div>
+<ul class="steps">
+<li>Power cycle device.</li>
+<li>Inspect internal module connections.</li>
+<li>Reset system software.</li>
+<li>Replace control board if needed.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">F21 / E21</div>
+<div class="title">Motor / Fan Assembly Failure</div>
+<ul class="steps">
+<li>Check motor/fan for blockage.</li>
+<li>Inspect mechanical assembly.</li>
+<li>Remove obstruction or debris.</li>
+<li>Replace motor if needed.</li>
+</ul>
+</div></div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<!-- ================= NINJA FOODI / MULTI-COOKER FAQ GUIDE ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Oven not turning on?</div>
+<div class="answer">
+Check if the oven is properly plugged into a working outlet. Ensure the door is fully closed and locked, and the rack is correctly installed. Inspect the power cord and try a different outlet. If still unresponsive, the control board or internal fuse may need servicing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Oven suddenly stop during cooking?</div>
+<div class="answer">
+This is usually caused by overheating protection, door misalignment, or blocked airflow. Turn off the oven, unplug it, and allow it to cool for 15–20 minutes. Check vents, internal fan, and ensure the door is fully sealed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Oven not cooking food properly?</div>
+<div class="answer">
+Incorrect temperature settings, dirty heating elements, or poor airflow can affect cooking performance. Clean the oven interior, check temperature settings, and ensure proper rack placement.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Oven smell like burning?</div>
+<div class="answer">
+A burning smell may come from grease buildup, food residue, or dust on heating elements. Stop using immediately, unplug the oven, and clean the interior thoroughly before reuse.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Oven making loud fan noises?</div>
+<div class="answer">
+The fan may be obstructed by grease or debris. Clean internal airflow channels and ensure nothing is blocking the fan blades.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Ninja Oven cooking unevenly?</div>
+<div class="answer">
+Uneven cooking is often caused by blocked airflow, incorrect rack placement, or dirty heating elements. Reposition food and clean the oven interior.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Oven leak heat or steam?</div>
+<div class="answer">
+Check that the door seal is intact and properly aligned. Clean the gasket area and ensure the door closes tightly during operation.
+</div>
+</div>
+
+<!-- ================= ERROR CODES ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Oven show E1?</div>
+<div class="answer">
+E1 indicates temperature sensor error. Inspect sensor wiring, clean surrounding area, and restart the oven after cooling.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Oven show E2?</div>
+<div class="answer">
+E2 indicates overheating protection activation. Turn off the oven, allow it to cool completely, and check ventilation and airflow.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Oven show E3?</div>
+<div class="answer">
+E3 refers to heating element failure or instability. Inspect heating components and ensure stable power supply before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Oven show E4?</div>
+<div class="answer">
+E4 indicates door sensor or door switch fault. Ensure the door is fully closed and clean the sensor contact area.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Oven show E5?</div>
+<div class="answer">
+E5 indicates temperature detection fault. Allow the oven to stabilize, check internal sensors, and restart after cooling.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Oven show E6?</div>
+<div class="answer">
+E6 indicates heating relay failure. Inspect internal relay connections and replace the relay or control board if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Oven show E7?</div>
+<div class="answer">
+E7 refers to internal airflow circulation error. Clean fan system and remove grease or dust blocking airflow.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Oven show E8?</div>
+<div class="answer">
+E8 indicates power regulation fault. Check outlet stability, avoid extension cords, and inspect internal power board.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Oven show ERR HEAT?</div>
+<div class="answer">
+ERR HEAT indicates heating system failure. Inspect heating elements, wiring, and allow cooling before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja Oven show ERR FAN?</div>
+<div class="answer">
+ERR FAN indicates cooling fan failure. Clean fan blades, remove debris, and test motor operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Ninja Oven?</div>
+<div class="answer">
+Turn off and unplug the oven for 10–15 minutes. Reconnect power, ensure the door is properly closed, and restart the unit.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why do Ninja Oven problems keep coming back?</div>
+<div class="answer">
+Recurring issues may be caused by grease buildup, faulty sensors, overheating cycles, or internal electrical wear over time.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I repair my Ninja Oven?</div>
+<div class="answer">
+Seek repair if the oven repeatedly fails to heat, shuts down during use, shows persistent error codes, or has visible electrical or fan issues.
+</div>
+</div>
+
+<!-- ================= NOTE ================= -->
 
 <div class="note">
-<strong>Important:</strong> Always disconnect power before servicing. If errors persist, contact Ninja support or a certified technician.
+<strong>Important:</strong> If your Ninja Oven continues to malfunction after troubleshooting, stop using it immediately. Persistent faults may indicate heating element failure, sensor damage, fan system issues, or control board malfunction. Contact an authorized Ninja service center for proper diagnosis and repair.
 </div>
 
-</div>
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 

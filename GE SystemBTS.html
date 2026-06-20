@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GE System Messages Troubleshooting Guide</title>
+
+<title>GE System Messages  Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete GE System Messages  error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "GE System Messages Error Codes & Troubleshooting Guide",
+  "description": "Complete GE System Messages error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -92,119 +188,621 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>GE System Messages</h1>
+<h1>GE System Messages Error Codes</h1>
 
-<p class="subtitle">
-<strong>Complete Troubleshooting & Repair Guide</strong>
+<p class="subtitle"><strong>Complete GE System Messages Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all GE System Messages error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
 
-<!-- ================= CONTROL LOCK ================= -->
-<div class="section-title">Control Lock Messages</div>
-
 <div class="grid">
 
-<div class="card">
-<div class="code">LOCK</div>
-<div class="title">Control Lock Enabled</div>
-<ul class="steps">
-<li>Press and hold the lock button for 3–5 seconds.</li>
-<li>Refer to owner’s manual for unlock instructions.</li>
-<li>Disconnect power briefly if controls remain locked.</li>
-<li>Inspect control panel for stuck buttons.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">LOCK</div>
+  <div class="title">Control Lock Enabled</div>
+  <ul class="steps">
+    <li>Press and hold the lock button for 3–5 seconds.</li>
+    <li>Check if child lock feature is activated in settings.</li>
+    <li>Power cycle the appliance if controls remain unresponsive.</li>
+    <li>Inspect keypad for stuck or damaged buttons.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">HOT</div>
+  <div class="title">High Temperature Warning</div>
+  <ul class="steps">
+    <li>Allow appliance to cool completely before use.</li>
+    <li>Check ventilation openings for blockage or dust buildup.</li>
+    <li>Inspect cooling fan operation and airflow.</li>
+    <li>Avoid restarting until temperature returns to normal.</li>
+  </ul>
 </div>
 
-<!-- ================= TEMPERATURE ================= -->
-<div class="section-title">Temperature Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">HOT</div>
-<div class="title">High Temperature Warning</div>
-<ul class="steps">
-<li>Allow appliance to cool completely.</li>
-<li>Check ventilation openings for blockage.</li>
-<li>Inspect cooling fan operation.</li>
-<li>Avoid restarting until temperature normalizes.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">COOL</div>
+  <div class="title">Cooling Cycle Active</div>
+  <ul class="steps">
+    <li>Wait until the cooling cycle completes.</li>
+    <li>Do not disconnect power during operation.</li>
+    <li>Ensure proper airflow around the unit.</li>
+    <li>Restart only after the cycle finishes.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">COOL</div>
-<div class="title">Cooling Cycle Active</div>
-<ul class="steps">
-<li>Wait for cooling cycle to finish.</li>
-<li>Do not disconnect power during cooling.</li>
-<li>Ensure proper airflow around appliance.</li>
-<li>Restart appliance only after cycle completes.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">RESET</div>
+  <div class="title">System Restart Required</div>
+  <ul class="steps">
+    <li>Turn the appliance OFF completely.</li>
+    <li>Disconnect power for 5–10 minutes.</li>
+    <li>Reconnect and power back on.</li>
+    <li>Check if error reappears after restart.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERR</div>
+  <div class="title">General Appliance Error</div>
+  <ul class="steps">
+    <li>Perform a full power reset of the unit.</li>
+    <li>Check for additional displayed error codes.</li>
+    <li>Inspect wiring and control connections.</li>
+    <li>Contact service technician if issue continues.</li>
+  </ul>
 </div>
 
-<!-- ================= SYSTEM ================= -->
-<div class="section-title">System Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">RESET</div>
-<div class="title">System Restart Required</div>
-<ul class="steps">
-<li>Turn appliance OFF completely.</li>
-<li>Disconnect power for 5 minutes.</li>
-<li>Reconnect and restart appliance.</li>
-<li>Check for recurring error codes.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">PF</div>
+  <div class="title">Power Interruption Detected</div>
+  <ul class="steps">
+    <li>Check household circuit breaker and outlet.</li>
+    <li>Verify stable voltage supply.</li>
+    <li>Reset appliance after power is restored.</li>
+    <li>Use a surge protector to prevent future issues.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">ERR</div>
-<div class="title">General Appliance Error</div>
-<ul class="steps">
-<li>Restart appliance power cycle.</li>
-<li>Inspect for additional displayed codes.</li>
-<li>Check wiring and connections.</li>
-<li>Contact technician if issue persists.</li>
-</ul>
+<!-- ================= ADDED ADDITIONAL CODES ================= -->
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F1</div>
+  <div class="title">Control Board Communication Error</div>
+  <ul class="steps">
+    <li>Power cycle the appliance for 10 minutes.</li>
+    <li>Check wiring harness connections.</li>
+    <li>Inspect control board for moisture or burns.</li>
+    <li>Replace PCB if communication fails.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F2</div>
+  <div class="title">Temperature Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect thermistor wiring connections.</li>
+    <li>Test sensor resistance with a multimeter.</li>
+    <li>Check for corrosion or loose terminals.</li>
+    <li>Replace sensor if readings are abnormal.</li>
+  </ul>
 </div>
 
-<!-- ================= POWER ================= -->
-<div class="section-title">Power Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">PF</div>
-<div class="title">Power Interruption Detected</div>
-<ul class="steps">
-<li>Check household power supply stability.</li>
-<li>Inspect breaker and outlet condition.</li>
-<li>Reset appliance after outage.</li>
-<li>Use surge protection if outages are frequent.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F3</div>
+  <div class="title">Fan Motor Failure</div>
+  <ul class="steps">
+    <li>Check fan blades for obstruction.</li>
+    <li>Inspect motor wiring and connectors.</li>
+    <li>Test fan rotation manually.</li>
+    <li>Replace fan motor if not operating.</li>
+  </ul>
 </div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F4</div>
+  <div class="title">Heating Element Fault</div>
+  <ul class="steps">
+    <li>Check heating element continuity.</li>
+    <li>Inspect wiring for burns or damage.</li>
+    <li>Test power output from control board.</li>
+    <li>Replace heating element if defective.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F5</div>
+  <div class="title">Door Switch Fault</div>
+  <ul class="steps">
+    <li>Ensure door closes and locks properly.</li>
+    <li>Inspect door switch alignment.</li>
+    <li>Check wiring connections to switch.</li>
+    <li>Replace door switch if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F6</div>
+  <div class="title">Relay / Power Control Failure</div>
+  <ul class="steps">
+    <li>Inspect control board relays.</li>
+    <li>Check for burnt PCB components.</li>
+    <li>Reset appliance power supply.</li>
+    <li>Replace control board if relay is stuck.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F7</div>
+  <div class="title">Sensor Calibration Error</div>
+  <ul class="steps">
+    <li>Restart appliance to recalibrate sensors.</li>
+    <li>Inspect sensor placement and alignment.</li>
+    <li>Check for firmware or board issues.</li>
+    <li>Replace sensor if calibration fails.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F8</div>
+  <div class="title">Overheat Protection Activated</div>
+  <ul class="steps">
+    <li>Turn off appliance immediately and let it cool.</li>
+    <li>Check ventilation openings for blockage.</li>
+    <li>Inspect cooling fan operation.</li>
+    <li>Clean dust buildup around internal components.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F9</div>
+  <div class="title">Memory / EEPROM Error</div>
+  <ul class="steps">
+    <li>Power cycle the appliance for 10 minutes.</li>
+    <li>Check control board for moisture damage.</li>
+    <li>Inspect EEPROM chip connections.</li>
+    <li>Replace control board if error persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F10</div>
+  <div class="title">Voltage Supply Issue</div>
+  <ul class="steps">
+    <li>Check household voltage stability.</li>
+    <li>Inspect outlet and breaker condition.</li>
+    <li>Avoid using extension cords.</li>
+    <li>Use a voltage stabilizer if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F11</div>
+  <div class="title">Low Power Input Detected</div>
+  <ul class="steps">
+    <li>Check if other appliances are affecting the circuit.</li>
+    <li>Test appliance on a different outlet.</li>
+    <li>Inspect power cord for damage.</li>
+    <li>Contact electrician if voltage is unstable.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F12</div>
+  <div class="title">High Current Draw / Overload</div>
+  <ul class="steps">
+    <li>Disconnect appliance immediately.</li>
+    <li>Inspect motor or compressor for overload.</li>
+    <li>Check wiring for short circuits.</li>
+    <li>Replace faulty components if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F13</div>
+  <div class="title">Internal Wiring Fault</div>
+  <ul class="steps">
+    <li>Inspect internal wiring harness connections.</li>
+    <li>Look for burnt or loose wires.</li>
+    <li>Check for rodent or physical damage.</li>
+    <li>Repair or replace wiring as needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F14</div>
+  <div class="title">Control Panel Not Responding</div>
+  <ul class="steps">
+    <li>Clean keypad surface and remove moisture.</li>
+    <li>Check ribbon cable connection.</li>
+    <li>Perform a full power reset.</li>
+    <li>Replace UI board if unresponsive.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F15</div>
+  <div class="title">Water Leakage Detected</div>
+  <ul class="steps">
+    <li>Check internal base for water buildup.</li>
+    <li>Inspect hoses and seals for leaks.</li>
+    <li>Dry affected area completely.</li>
+    <li>Replace damaged seals or components.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F16</div>
+  <div class="title">Motor Speed Sensor Error</div>
+  <ul class="steps">
+    <li>Inspect tachometer or speed sensor.</li>
+    <li>Check wiring connections to motor.</li>
+    <li>Test sensor signal output.</li>
+    <li>Replace sensor if readings are unstable.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F17</div>
+  <div class="title">Inverter Module Failure</div>
+  <ul class="steps">
+    <li>Check inverter board for burn marks.</li>
+    <li>Inspect cooling system around module.</li>
+    <li>Test power input/output signals.</li>
+    <li>Replace inverter module if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F18</div>
+  <div class="title">Drainage / Pump Failure</div>
+  <ul class="steps">
+    <li>Check pump for blockage or debris.</li>
+    <li>Inspect drain hose for kinks.</li>
+    <li>Test pump motor operation.</li>
+    <li>Replace pump if not working.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F19</div>
+  <div class="title">Pressure Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect pressure sensor tubing.</li>
+    <li>Check wiring connections.</li>
+    <li>Test sensor response with multimeter.</li>
+    <li>Replace sensor if readings are incorrect.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F20</div>
+  <div class="title">System Communication Failure</div>
+  <ul class="steps">
+    <li>Reset appliance power completely.</li>
+    <li>Inspect communication cables.</li>
+    <li>Check for PCB corrosion or damage.</li>
+    <li>Replace main control board if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F21 / E21</div>
+  <div class="title">Motor Failure / Drive System Jam</div>
+  <ul class="steps">
+    <li>Check motor for obstruction or overload.</li>
+    <li>Inspect wiring and connectors.</li>
+    <li>Test motor resistance and operation.</li>
+    <li>Replace motor if no response is detected.</li>
+  </ul>
+</div></div>
+
+</body>
+</html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+
+<div class="faq-container">
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does “ER” mean on GE System Messages?</div>
+<div class="answer">
+This indicates a general system error. Power cycle the refrigerator for 5–10 minutes, check control board connections, and inspect for moisture or wiring faults. Replace the main PCB if the issue continues.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does “88” mean on GE System Messages?</div>
+<div class="answer">
+This is a communication error between control boards. Inspect wiring harness connections, ensure plugs are secure, and reset the appliance to restore communication.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does “PF” mean on GE System Messages?</div>
+<div class="answer">
+PF means power failure detected. Check household power supply, inspect circuit breaker and outlet, then reset the refrigerator after power is restored.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does “dE” mean on GE System Messages?</div>
+<div class="answer">
+This indicates a defrost system error. Check the defrost heater, sensor, and control board. If ice buildup is present, manually defrost the unit before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does “CI” mean on GE System Messages?</div>
+<div class="answer">
+CI refers to an ice maker system fault. Check water supply line, ensure freezer temperature is cold enough, and inspect the ice maker module for proper operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does “HRS” mean on GE System Messages?</div>
+<div class="answer">
+HRS indicates high refrigerator temperature. Check door seals, condenser coils, and airflow. Ensure the compressor and fans are running properly.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does “T1” mean on GE System Messages?</div>
+<div class="answer">
+T1 is a freezer thermistor fault. Inspect sensor wiring, test resistance values, and replace the thermistor if readings are incorrect.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does “T2” mean on GE System Messages?</div>
+<div class="answer">
+T2 indicates a fresh food thermistor fault. Check wiring connections, sensor placement, and replace the sensor if it is not reading correctly.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does “FF” mean on GE System Messages?</div>
+<div class="answer">
+FF indicates a fresh food temperature sensor error. Inspect wiring, check for frost buildup, and test sensor resistance for proper operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does “LOCK” mean on GE System Messages?</div>
+<div class="answer">
+LOCK means control lock is enabled. Press and hold the lock button for 3–5 seconds to unlock or power cycle the unit if controls remain frozen.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does “HOT” mean on GE System Messages?</div>
+<div class="answer">
+HOT indicates high temperature inside the refrigerator. Check ventilation, allow cooling time, and ensure fans and compressor are operating normally.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does “COOL” mean on GE System Messages?</div>
+<div class="answer">
+COOL means the cooling cycle is active. Do not disconnect power and allow the system to complete its cooling process before checking performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does “RESET” mean on GE System Messages?</div>
+<div class="answer">
+RESET means the system requires a restart. Turn off the appliance, disconnect power for 5–10 minutes, then restore power and restart operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does “ERR” mean on GE System Messages?</div>
+<div class="answer">
+ERR indicates a general system fault. Perform a full reset, check wiring connections, and review for additional error codes on the display.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does flashing “PF” mean on GE System Messages?</div>
+<div class="answer">
+A flashing PF means unstable or repeated power interruptions. Check outlet stability, breaker condition, and use surge protection if needed.
+</div>
+</div>
+
 
 </div>
 
 <div class="note">
-<strong>Important:</strong> If the message continues after troubleshooting,
+<strong>Important:</strong> If the error code continues after troubleshooting,
 disconnect power immediately and contact a certified GE technician.
 </div>
 
 </div>
+
+</body>
+</html>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

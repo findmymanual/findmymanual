@@ -3,371 +3,661 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Canon Scanner  Error Codes Troubleshooting Guide</title>
+
+<title>Canon Scanner Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Canon Scanner error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Canon Scanner Error Codes & Troubleshooting Guide",
+  "description": "Complete Canon Scanner error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f6f8;
+    background:#f5f5f5;
     color:#333;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     background:#fff;
-    padding:25px;
+    padding:30px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 h1{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
     text-align:center;
-    border-radius:8px;
+    color:#666;
     margin-bottom:10px;
-    
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
 }
 
-h2{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
+.subtitle{
     text-align:center;
-    border-radius:8px;
-    margin-bottom:10px;
-    
+    color:#666;
+    margin-bottom:30px;
 }
 
 .section-title{
     margin-top:40px;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
-    border-left:5px solid #1f3b4d;
+    border-left:5px solid #e60012;
     padding-left:10px;
-    
+    color:#444;
 }
 
-.search-box{
-    width:100%;
-    padding:12px;
-    margin:20px 0;
-    border:1px solid #ccc;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    border:1px solid #4e6e81;
     border-radius:8px;
+    padding:20px;
+    background:#fafafa;
+    transition:0.3s;
 }
 
-.error-card{
-    border:1px solid #ddd;
-    border-radius:8px;
-    margin-bottom:10px;
-    overflow:hidden;
-}
-
-.error-toggle{
-    width:100%;
-    padding:15px;
-    background:#fff;
-    border:none;
-    text-align:left;
-    cursor:pointer;
-    font-size:16px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-.error-toggle:hover{
-    background:#f3f3f3;
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .code{
+    font-size:26px;
     font-weight:bold;
-    color:#1f3b4d;
-    margin-right:10px;
-    min-width:80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    color:#4e6e81;
+    margin-bottom:10px;
 }
 
-.error-content{
-    display:none;
-    padding:15px;
-    background:#fafafa;
-    border-top:1px solid #eee;
-    
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
-.error-content ul{
-    padding-left:20px;
+.steps{
+    padding-left:18px;
+    line-height:1.6;
 }
 
 .note{
-    margin-top:25px;
-    padding:15px;
+    margin-top:30px;
     background:#fff3cd;
     border:1px solid #ffeeba;
+    padding:15px;
+    border-radius:6px;
+}
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
     border-radius:8px;
-    
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
+</style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
 }
 </style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Canon Scanner Error Codes & Troubleshooting Guide</h1>
+<h1>Canon Scanner Error Codes</h1>
 
-<input type="text" class="search-box" placeholder="Search error code...">
+<p class="subtitle"><strong>Complete Canon Scanner Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Canon Scanner error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
 <!-- E201 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E201</span> Scanner Lamp Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn scanner off and restart.</li>
-<li>Check scanner lamp connection.</li>
-<li>Inspect power supply to scanner unit.</li>
-<li>Replace lamp assembly if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E201</div>
+  <div class="title">Scanner Lamp Failure</div>
+  <ul class="steps">
+    <li>Turn scanner off and restart.</li>
+    <li>Check scanner lamp connection.</li>
+    <li>Inspect power supply to scanner unit.</li>
+    <li>Replace lamp assembly if needed.</li>
+  </ul>
 </div>
 
 <!-- E202 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E202</span> Communication Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reconnect USB or network cable.</li>
-<li>Restart scanner and computer.</li>
-<li>Reinstall scanner driver.</li>
-<li>Try different USB port or cable.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E202</div>
+  <div class="title">Communication Error</div>
+  <ul class="steps">
+    <li>Reconnect USB or network cable.</li>
+    <li>Restart scanner and computer.</li>
+    <li>Reinstall scanner driver.</li>
+    <li>Try different USB port or cable.</li>
+  </ul>
 </div>
 
 <!-- E203 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E203</span> Scan Head Position Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn scanner off and restart.</li>
-<li>Check for physical obstruction in scan path.</li>
-<li>Ensure scanner carriage moves freely.</li>
-<li>Service scan mechanism if required.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E203</div>
+  <div class="title">Scan Head Position Error</div>
+  <ul class="steps">
+    <li>Turn scanner off and restart.</li>
+    <li>Check for physical obstruction in scan path.</li>
+    <li>Ensure scanner carriage moves freely.</li>
+    <li>Service scan mechanism if required.</li>
+  </ul>
 </div>
 
 <!-- E204 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E204</span> Driver Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reinstall scanner driver.</li>
-<li>Update to latest software version.</li>
-<li>Restart computer system.</li>
-<li>Check OS compatibility with scanner.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E204</div>
+  <div class="title">Driver Failure</div>
+  <ul class="steps">
+    <li>Reinstall scanner driver.</li>
+    <li>Update to latest software version.</li>
+    <li>Restart computer system.</li>
+    <li>Check OS compatibility with scanner.</li>
+  </ul>
 </div>
 
 <!-- E205 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E205</span> Scanner Motor Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart scanner and retry scan.</li>
-<li>Inspect motor wiring connections.</li>
-<li>Check for carriage movement restrictions.</li>
-<li>Replace motor if faulty.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E205</div>
+  <div class="title">Scanner Motor Error</div>
+  <ul class="steps">
+    <li>Restart scanner and retry scan.</li>
+    <li>Inspect motor wiring connections.</li>
+    <li>Check for carriage movement restrictions.</li>
+    <li>Replace motor if faulty.</li>
+  </ul>
 </div>
 
 <!-- E206 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E206</span> Calibration Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean scanner glass thoroughly.</li>
-<li>Restart calibration process.</li>
-<li>Inspect calibration strip for damage.</li>
-<li>Service scanner if issue persists.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E206</div>
+  <div class="title">Calibration Error</div>
+  <ul class="steps">
+    <li>Clean scanner glass thoroughly.</li>
+    <li>Restart calibration process.</li>
+    <li>Inspect calibration strip for damage.</li>
+    <li>Service scanner if issue persists.</li>
+  </ul>
 </div>
 
 <!-- E207 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E207</span> CIS Sensor Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Power cycle the scanner.</li>
-<li>Inspect CIS sensor connections.</li>
-<li>Clean optical components carefully.</li>
-<li>Replace sensor assembly if needed.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E207</div>
+  <div class="title">CIS Sensor Failure</div>
+  <ul class="steps">
+    <li>Power cycle the scanner.</li>
+    <li>Inspect CIS sensor connections.</li>
+    <li>Clean optical components carefully.</li>
+    <li>Replace sensor assembly if needed.</li>
+  </ul>
 </div>
 
 <!-- E208 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E208</span> USB Connection Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reconnect USB cable securely.</li>
-<li>Try another USB port.</li>
-<li>Replace damaged USB cable.</li>
-<li>Restart scanner and computer.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E208</div>
+  <div class="title">USB Connection Error</div>
+  <ul class="steps">
+    <li>Reconnect USB cable securely.</li>
+    <li>Try another USB port.</li>
+    <li>Replace damaged USB cable.</li>
+    <li>Restart scanner and computer.</li>
+  </ul>
 </div>
 
 <!-- E209 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E209</span> Network Connection Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Verify network cable or Wi-Fi connection.</li>
-<li>Restart router and scanner.</li>
-<li>Check IP address settings.</li>
-<li>Reconnect scanner to network.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E209</div>
+  <div class="title">Network Connection Error</div>
+  <ul class="steps">
+    <li>Verify network cable or Wi-Fi connection.</li>
+    <li>Restart router and scanner.</li>
+    <li>Check IP address settings.</li>
+    <li>Reconnect scanner to network.</li>
+  </ul>
 </div>
 
 <!-- E210 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E210</span> Memory Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart scanner.</li>
-<li>Reduce scan resolution.</li>
-<li>Close unnecessary computer programs.</li>
-<li>Update scanner firmware.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E210</div>
+  <div class="title">Memory Error</div>
+  <ul class="steps">
+    <li>Restart scanner.</li>
+    <li>Reduce scan resolution.</li>
+    <li>Close unnecessary computer programs.</li>
+    <li>Update scanner firmware.</li>
+  </ul>
 </div>
 
 <!-- E211 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E211</span> Document Feed Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Remove jammed paper carefully.</li>
-<li>Inspect ADF rollers.</li>
-<li>Reload documents properly.</li>
-<li>Clean feed rollers.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E211</div>
+  <div class="title">Document Feed Error</div>
+  <ul class="steps">
+    <li>Remove jammed paper carefully.</li>
+    <li>Inspect ADF rollers.</li>
+    <li>Reload documents properly.</li>
+    <li>Clean feed rollers.</li>
+  </ul>
 </div>
 
 <!-- E212 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E212</span> ADF Sensor Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean document feeder sensors.</li>
-<li>Check sensor wiring.</li>
-<li>Remove dust and debris.</li>
-<li>Replace sensor if defective.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E212</div>
+  <div class="title">ADF Sensor Error</div>
+  <ul class="steps">
+    <li>Clean document feeder sensors.</li>
+    <li>Check sensor wiring.</li>
+    <li>Remove dust and debris.</li>
+    <li>Replace sensor if defective.</li>
+  </ul>
 </div>
 
 <!-- E213 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E213</span> Optical Unit Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart scanner system.</li>
-<li>Inspect optical components.</li>
-<li>Clean mirrors and lenses carefully.</li>
-<li>Replace optical unit if damaged.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E213</div>
+  <div class="title">Optical Unit Error</div>
+  <ul class="steps">
+    <li>Restart scanner system.</li>
+    <li>Inspect optical components.</li>
+    <li>Clean mirrors and lenses carefully.</li>
+    <li>Replace optical unit if damaged.</li>
+  </ul>
 </div>
 
 <!-- E214 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E214</span> Firmware Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart scanner.</li>
-<li>Update firmware to latest version.</li>
-<li>Reset scanner settings.</li>
-<li>Reinstall firmware if necessary.</li>
-</ul>
-</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E214</div>
+  <div class="title">Firmware Error</div>
+  <ul class="steps">
+    <li>Restart scanner.</li>
+    <li>Update firmware to latest version.</li>
+    <li>Reset scanner settings.</li>
+    <li>Reinstall firmware if necessary.</li>
+  </ul>
 </div>
 
 <!-- E215 -->
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E215</span> Internal Hardware Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn scanner off and unplug power.</li>
-<li>Wait several minutes before restarting.</li>
-<li>Inspect internal connections.</li>
-<li>Contact Canon service if error remains.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E215</div>
+  <div class="title">Internal Hardware Failure</div>
+  <ul class="steps">
+    <li>Turn scanner off and unplug power.</li>
+    <li>Wait several minutes before restarting.</li>
+    <li>Inspect internal connections.</li>
+    <li>Contact Canon service if error remains.</li>
+  </ul>
 </div>
+
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SCN01</div>
+  <div class="title">Canon Scanner Not Working</div>
+  <ul class="steps">
+    <li>Check if the scanner is powered on properly.</li>
+    <li>Verify USB or network connection.</li>
+    <li>Restart scanner and computer.</li>
+    <li>Install or update scanner drivers.</li>
+  </ul>
 </div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SCN02</div>
+  <div class="title">Scanner Not Detected by Computer</div>
+  <ul class="steps">
+    <li>Check USB cable connection.</li>
+    <li>Try another USB port.</li>
+    <li>Reinstall scanner drivers.</li>
+    <li>Restart scanner and computer.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SCN03</div>
+  <div class="title">Scanning Blank Pages</div>
+  <ul class="steps">
+    <li>Place document correctly on glass.</li>
+    <li>Close scanner lid fully.</li>
+    <li>Clean scanner glass.</li>
+    <li>Check scan settings.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SCN04</div>
+  <div class="title">Blurry Scanned Images</div>
+  <ul class="steps">
+    <li>Clean scanner glass.</li>
+    <li>Increase scan resolution.</li>
+    <li>Ensure document is flat.</li>
+    <li>Check for dirt or smudges.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SCN05</div>
+  <div class="title">Slow Scanning Issue</div>
+  <ul class="steps">
+    <li>Reduce scan resolution.</li>
+    <li>Close background applications.</li>
+    <li>Use direct USB connection.</li>
+    <li>Restart scanner.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SCN06</div>
+  <div class="title">Wi-Fi Connection Problem</div>
+  <ul class="steps">
+    <li>Check Wi-Fi password.</li>
+    <li>Restart router and scanner.</li>
+    <li>Move closer to router.</li>
+    <li>Redo wireless setup.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SCN07</div>
+  <div class="title">Scanner Keeps Disconnecting</div>
+  <ul class="steps">
+    <li>Check Wi-Fi signal strength.</li>
+    <li>Update drivers and firmware.</li>
+    <li>Inspect USB cable.</li>
+    <li>Use wired connection if possible.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SCN08</div>
+  <div class="title">Files Not Saving</div>
+  <ul class="steps">
+    <li>Check save location settings.</li>
+    <li>Ensure enough storage space.</li>
+    <li>Verify file permissions.</li>
+    <li>Restart scanning software.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SCN09</div>
+  <div class="title">Scanner Showing Error Message</div>
+  <ul class="steps">
+    <li>Restart scanner and computer.</li>
+    <li>Check connections.</li>
+    <li>Update drivers.</li>
+    <li>Check specific error code guide.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SCN10</div>
+  <div class="title">Scanner Not Responding</div>
+  <ul class="steps">
+    <li>Check all cables.</li>
+    <li>Restart devices.</li>
+    <li>Reopen scanning software.</li>
+    <li>Reinstall drivers if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SCN11</div>
+  <div class="title">ADF Not Working</div>
+  <ul class="steps">
+    <li>Remove jammed documents.</li>
+    <li>Clean ADF rollers.</li>
+    <li>Load documents correctly.</li>
+    <li>Check roller wear or damage.</li>
+  </ul>
+</div></div>
+
+</body>
+</html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
 
 <!-- FAQ SECTION -->
 <div class="faq">
@@ -376,206 +666,163 @@ h2{
 <br>
 
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon scanner not working?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check if the scanner is powered on properly.</li>
-<li>Verify the USB or network connection.</li>
-<li>Restart the scanner and computer.</li>
-<li>Install or update the scanner drivers.</li>
-</ul>
+<div class="faq-container">
+
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN01 Canon Scanner Not Ready mean?</div>
+<div class="answer">
+Check power connection, ensure scanner is turned on, verify USB or network connection, and restart scanner and computer.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon scanner not detected by my computer?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check the USB cable connection.</li>
-<li>Try a different USB port on the computer.</li>
-<li>Reinstall the scanner drivers.</li>
-<li>Restart both the scanner and computer.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN02 Device Not Detected mean?</div>
+<div class="answer">
+Check USB cable connection, try another USB port, reinstall scanner drivers, and restart scanner and computer.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon scanner scanning blank pages?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Make sure the document is placed correctly.</li>
-<li>Check that the scanner lid is fully closed.</li>
-<li>Clean the scanner glass surface.</li>
-<li>Verify the scan settings are configured properly.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN03 Blank Scan Output mean?</div>
+<div class="answer">
+Ensure document is placed correctly, close scanner lid fully, clean scanner glass, and check scan settings.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why are my scanned images blurry?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean the scanner glass with a soft cloth.</li>
-<li>Increase scan resolution settings.</li>
-<li>Ensure the document is flat on the glass.</li>
-<li>Check for dirt on the document itself.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN04 Blurry Scan Output mean?</div>
+<div class="answer">
+Clean scanner glass, increase scan resolution, ensure document is flat, and check for dust or smudges.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon scanner scanning slowly?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reduce scan resolution if possible.</li>
-<li>Close unnecessary applications on the computer.</li>
-<li>Use a direct USB connection instead of a hub.</li>
-<li>Restart the scanner to clear memory.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN05 Slow Scanning mean?</div>
+<div class="answer">
+Reduce scan resolution, close background applications, use direct USB connection, and restart scanner.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon scanner not connecting to Wi-Fi?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Verify the Wi-Fi password is correct.</li>
-<li>Restart the router and scanner.</li>
-<li>Move the scanner closer to the router.</li>
-<li>Run the wireless setup process again.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN06 Wi-Fi Connection Failure mean?</div>
+<div class="answer">
+Verify Wi-Fi password, restart router and scanner, move closer to router, and redo wireless setup.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my Canon scanner keep disconnecting?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for a weak Wi-Fi signal.</li>
-<li>Update scanner firmware and drivers.</li>
-<li>Inspect USB cable for damage.</li>
-<li>Use a wired connection if possible.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN07 Scanner Keeps Disconnecting mean?</div>
+<div class="answer">
+Check signal stability, update drivers and firmware, inspect USB cable, and use wired connection if possible.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon scanner not saving scanned files?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check the destination folder settings.</li>
-<li>Ensure there is enough storage space.</li>
-<li>Verify file permissions on the computer.</li>
-<li>Restart the scanning software.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN08 Files Not Saving mean?</div>
+<div class="answer">
+Check save location settings, ensure enough storage space, verify file permissions, and restart scanning software.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my Canon scanner show an error message?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Restart the scanner and computer.</li>
-<li>Check connections and power supply.</li>
-<li>Update scanner drivers and software.</li>
-<li>Refer to the specific error code guide.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN09 Scanner Error Message mean?</div>
+<div class="answer">
+Restart scanner and computer, check connections, update drivers, and check specific error code guide.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>How do I reset my Canon scanner?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off the scanner and unplug it.</li>
-<li>Wait 5–10 minutes before reconnecting power.</li>
-<li>Restart the scanner and computer.</li>
-<li>Reconfigure settings if necessary.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN10 Scanner Not Responding mean?</div>
+<div class="answer">
+Check all cables, restart devices, reopen scanning software, and reinstall drivers if needed.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Canon scanner not responding?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check all cable connections.</li>
-<li>Restart the scanner and computer.</li>
-<li>Close and reopen the scanning software.</li>
-<li>Reinstall scanner drivers if needed.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN11 ADF Not Working mean?</div>
+<div class="answer">
+Remove jammed documents, clean ADF rollers, load documents correctly, and check roller wear or damage.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is the automatic document feeder (ADF) not working?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Remove any jammed documents.</li>
-<li>Clean the ADF rollers.</li>
-<li>Ensure documents are loaded correctly.</li>
-<li>Check for worn or damaged feed rollers.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN12 System Reset Required mean?</div>
+<div class="answer">
+Power off scanner, wait 30–60 seconds, restart system, and test scanner functionality.
 </div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN13 Communication Failure mean?</div>
+<div class="answer">
+Check USB or network cable, restart scanner and computer, try another port, and update firmware if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN14 Overheating Warning mean?</div>
+<div class="answer">
+Turn off scanner, allow cooling, clean vents, and ensure proper ventilation around device.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN15 Power Failure mean?</div>
+<div class="answer">
+Check power cable, test outlet, inspect adapter, and replace power supply if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN16 Firmware Error mean?</div>
+<div class="answer">
+Update firmware, reset scanner settings, reinstall firmware, and restart device.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN17 Image Quality Issue mean?</div>
+<div class="answer">
+Clean scanner glass, adjust resolution, check lighting, and ensure document is properly aligned.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN18 Network Connection Lost mean?</div>
+<div class="answer">
+Restart router, reconnect Wi-Fi, check network stability, and update network settings.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN19 General System Failure mean?</div>
+<div class="answer">
+Restart scanner, unplug power for 30–60 seconds, check internal cables, and contact support if issue persists.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does SCN20 Maintenance Required mean?</div>
+<div class="answer">
+Clean scanner glass, check rollers, run calibration, and service scanner if needed.
+</div>
+</div></div>
+
+<div class="note">
+<strong>Important:</strong> Always disconnect power before performing repairs. Contact a qualified technician if the issue persists.
 </div>
 
 <script>
-document.querySelectorAll('.error-toggle').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-        const content = btn.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    });
-});
-
-const searchInput = document.querySelector('.search-box');
-
-searchInput.addEventListener('keyup', function () {
-    const filter = this.value.toUpperCase();
-    const cards = document.querySelectorAll('.error-card');
-
-    cards.forEach(card => {
-        const text = card.innerText.toUpperCase();
-        card.style.display = text.includes(filter) ? '' : 'none';
-    });
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
 });
 </script>
+
+
 
 </body>
 </html>

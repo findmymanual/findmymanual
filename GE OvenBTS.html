@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GE Oven & Range Error Codes Troubleshooting Guide</title>
+
+<title>GE Oven Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete GE Oven error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "GE Oven Error Codes & Troubleshooting Guide",
+  "description": "Complete GE Oven error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -92,142 +188,615 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>GE Oven & Range Error Codes</h1>
+<h1>GE Oven Error Codes</h1>
 
-<p class="subtitle">
-<strong>Complete Troubleshooting & Repair Guide</strong>
+<p class="subtitle"><strong>Complete GE Oven Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all GE Oven error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
 
-<!-- ================= CONTROL PANEL ================= -->
-<div class="section-title">Control Panel Errors</div>
-
 <div class="grid">
 
-<div class="card">
-<div class="code">F0</div>
-<div class="title">Function Key Stuck</div>
-<ul class="steps">
-<li>Press each keypad button individually.</li>
-<li>Clean control panel surface.</li>
-<li>Disconnect power for 5 minutes.</li>
-<li>Replace keypad if button remains stuck.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F0</div>
+  <div class="title">Function Key Stuck</div>
+  <ul class="steps">
+    <li>Press each keypad button individually.</li>
+    <li>Clean control panel surface.</li>
+    <li>Disconnect power for 5 minutes.</li>
+    <li>Replace keypad if button remains stuck.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">F1</div>
-<div class="title">Electronic Control Failure</div>
-<ul class="steps">
-<li>Power cycle the oven.</li>
-<li>Inspect control board connections.</li>
-<li>Check for burn marks or damage.</li>
-<li>Replace electronic control board if needed.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F1</div>
+  <div class="title">Electronic Control Failure</div>
+  <ul class="steps">
+    <li>Power cycle the oven.</li>
+    <li>Inspect control board connections.</li>
+    <li>Check for burn marks or damage.</li>
+    <li>Replace electronic control board if needed.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">F5</div>
-<div class="title">Control Board Hardware Issue</div>
-<ul class="steps">
-<li>Disconnect appliance power.</li>
-<li>Inspect PCB for visible damage.</li>
-<li>Check internal wiring harnesses.</li>
-<li>Replace faulty control board.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F2</div>
+  <div class="title">Over-Temperature Condition</div>
+  <ul class="steps">
+    <li>Turn off oven immediately.</li>
+    <li>Allow appliance to cool completely.</li>
+    <li>Check cooling fan operation.</li>
+    <li>Inspect temperature sensor accuracy.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">F7</div>
-<div class="title">Keypad Failure</div>
-<ul class="steps">
-<li>Inspect ribbon cable connection.</li>
-<li>Clean keypad contacts carefully.</li>
-<li>Restart appliance after reset.</li>
-<li>Replace keypad assembly if unresponsive.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F3</div>
+  <div class="title">Temperature Sensor Open</div>
+  <ul class="steps">
+    <li>Inspect oven sensor wiring.</li>
+    <li>Check sensor resistance values.</li>
+    <li>Ensure connector is secure.</li>
+    <li>Replace sensor if circuit is open.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F4</div>
+  <div class="title">Temperature Sensor Shorted</div>
+  <ul class="steps">
+    <li>Disconnect power before inspection.</li>
+    <li>Check for damaged sensor wires.</li>
+    <li>Test sensor for short circuit.</li>
+    <li>Replace defective temperature sensor.</li>
+  </ul>
 </div>
 
-<!-- ================= TEMPERATURE ================= -->
-<div class="section-title">Temperature Sensor Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">F2</div>
-<div class="title">Oven Over-Temperature Condition</div>
-<ul class="steps">
-<li>Turn off oven immediately.</li>
-<li>Allow appliance to cool completely.</li>
-<li>Check cooling fan operation.</li>
-<li>Inspect temperature sensor accuracy.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F5</div>
+  <div class="title">Control Board Hardware Issue</div>
+  <ul class="steps">
+    <li>Disconnect appliance power.</li>
+    <li>Inspect PCB for visible damage.</li>
+    <li>Check internal wiring harnesses.</li>
+    <li>Replace faulty control board.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">F3</div>
-<div class="title">Oven Sensor Open</div>
-<ul class="steps">
-<li>Inspect oven sensor wiring.</li>
-<li>Check sensor resistance values.</li>
-<li>Ensure connector is secure.</li>
-<li>Replace sensor if circuit is open.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F6</div>
+  <div class="title">Power Supply Instability</div>
+  <ul class="steps">
+    <li>Check circuit breaker and outlet condition.</li>
+    <li>Avoid using extension cords.</li>
+    <li>Test oven on stable power source.</li>
+    <li>Contact electrician if voltage fluctuates.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">F4</div>
-<div class="title">Oven Sensor Shorted</div>
-<ul class="steps">
-<li>Disconnect power before inspection.</li>
-<li>Check for damaged sensor wires.</li>
-<li>Test sensor for short circuit.</li>
-<li>Replace defective temperature sensor.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F7</div>
+  <div class="title">Keypad Failure</div>
+  <ul class="steps">
+    <li>Inspect ribbon cable connection.</li>
+    <li>Clean keypad contacts carefully.</li>
+    <li>Restart appliance after reset.</li>
+    <li>Replace keypad assembly if unresponsive.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F8</div>
+  <div class="title">Cooling Fan Failure</div>
+  <ul class="steps">
+    <li>Inspect cooling fan blades for obstruction.</li>
+    <li>Check fan motor wiring.</li>
+    <li>Verify fan spins freely.</li>
+    <li>Replace cooling fan motor if faulty.</li>
+  </ul>
 </div>
 
-<!-- ================= FAN SYSTEM ================= -->
-<div class="section-title">Cooling Fan Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">F8</div>
-<div class="title">Cooling Fan Failure</div>
-<ul class="steps">
-<li>Inspect cooling fan blades for obstruction.</li>
-<li>Check fan motor wiring.</li>
-<li>Verify fan spins freely.</li>
-<li>Replace cooling fan motor if faulty.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F9</div>
+  <div class="title">Door Lock Malfunction</div>
+  <ul class="steps">
+    <li>Inspect door latch assembly.</li>
+    <li>Check lock motor operation.</li>
+    <li>Ensure door alignment is correct.</li>
+    <li>Replace defective door lock mechanism.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F10</div>
+  <div class="title">Relay Control Failure</div>
+  <ul class="steps">
+    <li>Disconnect power immediately.</li>
+    <li>Inspect relay contacts on control board.</li>
+    <li>Check for burnt components.</li>
+    <li>Replace control board if relay is faulty.</li>
+  </ul>
 </div>
 
-<!-- ================= DOOR LOCK ================= -->
-<div class="section-title">Door Lock Errors</div>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F11</div>
+  <div class="title">Heating Element Failure</div>
+  <ul class="steps">
+    <li>Test heating element continuity.</li>
+    <li>Inspect wiring for burns or damage.</li>
+    <li>Check oven power output.</li>
+    <li>Replace heating element if no continuity.</li>
+  </ul>
+</div>
 
-<div class="grid">
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F12</div>
+  <div class="title">Door Switch Fault</div>
+  <ul class="steps">
+    <li>Check door switch alignment.</li>
+    <li>Test switch continuity.</li>
+    <li>Inspect wiring harness connections.</li>
+    <li>Replace door switch if faulty.</li>
+  </ul>
+</div>
 
-<div class="card">
-<div class="code">F9</div>
-<div class="title">Door Lock Malfunction</div>
-<ul class="steps">
-<li>Inspect door latch assembly.</li>
-<li>Check lock motor operation.</li>
-<li>Ensure door alignment is correct.</li>
-<li>Replace defective door lock mechanism.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F13</div>
+  <div class="title">Cooling System Overheat</div>
+  <ul class="steps">
+    <li>Allow oven to cool completely.</li>
+    <li>Check ventilation airflow.</li>
+    <li>Inspect cooling fan operation.</li>
+    <li>Clean blocked vents.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F14</div>
+  <div class="title">Internal Memory Error</div>
+  <ul class="steps">
+    <li>Power cycle oven for 10 minutes.</li>
+    <li>Check control board for moisture damage.</li>
+    <li>Inspect wiring connections.</li>
+    <li>Replace PCB if error persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F15</div>
+  <div class="title">General System Error</div>
+  <ul class="steps">
+    <li>Reset oven power supply.</li>
+    <li>Check all wiring connections.</li>
+    <li>Inspect control board condition.</li>
+    <li>Replace main PCB if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F16</div>
+  <div class="title">Sensor Calibration Error</div>
+  <ul class="steps">
+    <li>Reset oven to factory settings if possible.</li>
+    <li>Inspect sensor mounting position.</li>
+    <li>Check thermistor readings.</li>
+    <li>Replace sensor if calibration fails.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F0</div>
+  <div class="title">Function Key Stuck</div>
+  <ul class="steps">
+    <li>Press each keypad button individually.</li>
+    <li>Clean control panel surface.</li>
+    <li>Disconnect power for 5 minutes.</li>
+    <li>Replace keypad if button remains stuck.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F1</div>
+  <div class="title">Electronic Control Failure</div>
+  <ul class="steps">
+    <li>Power cycle the microwave.</li>
+    <li>Inspect control board connections.</li>
+    <li>Check for burn marks or damage.</li>
+    <li>Replace electronic control board if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F2</div>
+  <div class="title">Over-Temperature Protection</div>
+  <ul class="steps">
+    <li>Turn off microwave immediately.</li>
+    <li>Allow unit to cool completely.</li>
+    <li>Check cooling fan operation.</li>
+    <li>Inspect ventilation openings for blockage.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F3</div>
+  <div class="title">Humidity Sensor Error</div>
+  <ul class="steps">
+    <li>Inspect humidity sensor wiring.</li>
+    <li>Clean sensor area inside cavity.</li>
+    <li>Check connector for corrosion.</li>
+    <li>Replace humidity sensor if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F4</div>
+  <div class="title">Sensor Circuit Open</div>
+  <ul class="steps">
+    <li>Inspect sensor wiring for breaks.</li>
+    <li>Test continuity with multimeter.</li>
+    <li>Reconnect loose harness.</li>
+    <li>Replace sensor if circuit remains open.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F5</div>
+  <div class="title">Door Switch Fault</div>
+  <ul class="steps">
+    <li>Ensure door closes completely.</li>
+    <li>Inspect door latch alignment.</li>
+    <li>Check door switch continuity.</li>
+    <li>Replace door switch if defective.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F6</div>
+  <div class="title">Relay Board Failure</div>
+  <ul class="steps">
+    <li>Disconnect power before inspection.</li>
+    <li>Inspect control board relays.</li>
+    <li>Check for burned components.</li>
+    <li>Replace main control board if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F7</div>
+  <div class="title">Keypad Communication Error</div>
+  <ul class="steps">
+    <li>Inspect ribbon cable connection.</li>
+    <li>Clean keypad contacts carefully.</li>
+    <li>Restart microwave after reset.</li>
+    <li>Replace keypad assembly if unresponsive.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F8</div>
+  <div class="title">Cooling Fan Failure</div>
+  <ul class="steps">
+    <li>Check fan blades for obstruction.</li>
+    <li>Inspect motor wiring connections.</li>
+    <li>Verify fan spins freely.</li>
+    <li>Replace fan motor if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F9</div>
+  <div class="title">Door Lock Error</div>
+  <ul class="steps">
+    <li>Inspect door latch assembly.</li>
+    <li>Check lock mechanism alignment.</li>
+    <li>Ensure door closes properly.</li>
+    <li>Replace door lock switch if faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F10</div>
+  <div class="title">High Voltage Transformer Fault</div>
+  <ul class="steps">
+    <li>Disconnect power immediately.</li>
+    <li>Inspect high-voltage transformer.</li>
+    <li>Check diode and capacitor condition.</li>
+    <li>Replace HV components if failed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F11</div>
+  <div class="title">Magnetron Failure</div>
+  <ul class="steps">
+    <li>Check for heating function loss.</li>
+    <li>Inspect magnetron wiring.</li>
+    <li>Test high-voltage system.</li>
+    <li>Replace magnetron if defective.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F12</div>
+  <div class="title">Power Supply Error</div>
+  <ul class="steps">
+    <li>Check outlet and breaker.</li>
+    <li>Inspect internal fuse.</li>
+    <li>Test power input voltage.</li>
+    <li>Replace power board if needed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F13</div>
+  <div class="title">Internal Memory Fault</div>
+  <ul class="steps">
+    <li>Power cycle microwave for 10 minutes.</li>
+    <li>Check control board for moisture.</li>
+    <li>Inspect firmware corruption.</li>
+    <li>Replace main PCB if issue persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F14</div>
+  <div class="title">Turntable Motor Failure</div>
+  <ul class="steps">
+    <li>Check turntable alignment.</li>
+    <li>Inspect motor connection.</li>
+    <li>Remove debris under tray.</li>
+    <li>Replace motor if not rotating.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">F15</div>
+  <div class="title">Inverter Board Fault</div>
+  <ul class="steps">
+    <li>Disconnect power supply.</li>
+    <li>Inspect inverter PCB for damage.</li>
+    <li>Check wiring to magnetron.</li>
+    <li>Replace inverter board if faulty.</li>
+  </ul>
+</div></div>
+
+</body>
+</html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+
+<div class="faq-container">
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE oven not heating properly?</div>
+<div class="answer">
+Check if the oven is set to the correct baking mode and temperature. Inspect the heating elements for damage, ensure the door is fully closed, and verify stable power supply.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE oven not turning on?</div>
+<div class="answer">
+Check the circuit breaker and power outlet. Ensure the oven is properly plugged in, verify the control panel is responsive, and inspect the internal fuse if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE oven temperature inaccurate?</div>
+<div class="answer">
+Recalibrate the oven settings if available. Inspect the temperature sensor for faults, ensure proper door sealing, and avoid frequent door opening during cooking.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my GE oven shut off during cooking?</div>
+<div class="answer">
+Check for overheating due to blocked vents or faulty cooling fan. Ensure stable power supply and inspect thermostat or safety cutoff system.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE oven door not closing properly?</div>
+<div class="answer">
+Inspect door hinges and gasket for damage. Remove any obstructions, ensure proper alignment, and replace door seal if worn out.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE oven making loud noises?</div>
+<div class="answer">
+Check the convection fan for obstruction or damage. Inspect internal components for loose parts and ensure racks are properly positioned.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE oven display not working?</div>
+<div class="answer">
+Check power supply and reset the unit. Inspect control board connections and ribbon cables. If the display remains blank, the control panel may need replacement.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE oven not responding to controls?</div>
+<div class="answer">
+Restart the oven by turning off power for a few minutes. Check for control lock activation, inspect keypad for faults, and ensure stable electrical supply.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my GE oven producing smoke?</div>
+<div class="answer">
+Clean any grease or food residue inside the oven. Avoid excess oil use and ensure no packaging or foreign objects are inside during operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my GE oven?</div>
+<div class="answer">
+Turn off the oven and unplug or switch off the breaker for 5–10 minutes. Restore power, reset the clock, and test with a short heating cycle.
+</div>
 </div>
 
 </div>
@@ -238,6 +807,30 @@ disconnect power immediately and contact a certified GE technician.
 </div>
 
 </div>
+
+</body>
+</html>
+
+<script>
+document.querySelectorAll('.error-toggle').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+const searchInput = document.querySelector('.search-box');
+
+searchInput.addEventListener('keyup', function () {
+    const filter = this.value.toUpperCase();
+    const cards = document.querySelectorAll('.error-card');
+
+    cards.forEach(card => {
+        const text = card.innerText.toUpperCase();
+        card.style.display = text.includes(filter) ? '' : 'none';
+    });
+});
+</script>
 
 </body>
 </html>

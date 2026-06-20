@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nikon Power / Battery Messages Guide</title>
+
+<title>Nikon Power / Battery Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Nikon Power / Battery error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Nikon Power / Battery Error Codes & Troubleshooting Guide",
+  "description": "Complete Nikon Power / Battery error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -68,7 +164,7 @@ h1{
 }
 
 .code{
-    font-size:22px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
     margin-bottom:10px;
@@ -92,89 +188,419 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Nikon Power / Battery Messages</h1>
+<h1>Nikon Power / Battery Error Codes</h1>
 
-<p class="subtitle">
-<strong>Power System Status & Troubleshooting Guide</strong>
+<p class="subtitle"><strong>Complete Nikon Power / Battery Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Nikon Power / Battery error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
 
-<!-- ================= BATTERY ================= -->
-<div class="section-title">Battery Status Messages</div>
-
 <div class="grid">
 
-<div class="card">
-<div class="code">BATTERY EMPTY</div>
-<div class="title">Battery Fully Discharged</div>
-<ul class="steps">
-<li>Recharge or replace battery immediately.</li>
-<li>Check battery contacts for dirt or corrosion.</li>
-<li>Use original Nikon battery if possible.</li>
-<li>Verify charger is working properly.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">BATTERY EMPTY</div>
+  <div class="title">Battery Fully Discharged</div>
+  <ul class="steps">
+    <li>Recharge or replace battery immediately.</li>
+    <li>Check battery contacts for dirt or corrosion.</li>
+    <li>Use original Nikon battery if possible.</li>
+    <li>Verify charger is working properly.</li>
+  </ul>
 </div>
 
-<div class="card">
-<div class="code">LOW BATTERY</div>
-<div class="title">Battery Level Critical</div>
-<ul class="steps">
-<li>Stop shooting and recharge battery.</li>
-<li>Turn off non-essential features (LCD, Wi-Fi).</li>
-<li>Carry spare charged battery.</li>
-<li>Avoid deep discharge regularly.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">LOW BATTERY</div>
+  <div class="title">Battery Level Critical</div>
+  <ul class="steps">
+    <li>Stop shooting and recharge battery.</li>
+    <li>Turn off power-heavy features (LCD, Wi-Fi, GPS).</li>
+    <li>Carry a fully charged spare battery.</li>
+    <li>Avoid frequent deep discharge cycles.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">BATTERY WARN</div>
+  <div class="title">Battery Performance Warning</div>
+  <ul class="steps">
+    <li>Check if battery is aging or swollen.</li>
+    <li>Test with a different Nikon-compatible battery.</li>
+    <li>Clean battery terminals carefully.</li>
+    <li>Replace battery if runtime is significantly reduced.</li>
+  </ul>
 </div>
 
-<!-- ================= CHARGING ================= -->
-<div class="section-title">Charging System Messages</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">CHARGE</div>
-<div class="title">Battery Charging Required</div>
-<ul class="steps">
-<li>Connect battery to compatible charger.</li>
-<li>Ensure proper alignment in charger slot.</li>
-<li>Check charger LED indicator.</li>
-<li>Replace battery if it fails to charge.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">CHARGE</div>
+  <div class="title">Battery Charging Required</div>
+  <ul class="steps">
+    <li>Connect battery to compatible Nikon charger.</li>
+    <li>Ensure correct battery alignment in charger slot.</li>
+    <li>Check charger indicator light status.</li>
+    <li>Replace battery if it fails to hold charge.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">CHARGE ERR</div>
+  <div class="title">Charging System Error</div>
+  <ul class="steps">
+    <li>Try a different charger or USB power source.</li>
+    <li>Inspect charger cable and adapter.</li>
+    <li>Clean battery charging contacts.</li>
+    <li>Test with another compatible battery.</li>
+  </ul>
 </div>
 
-<!-- ================= POWER ERROR ================= -->
-<div class="section-title">Power System Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">POWER ERROR</div>
-<div class="title">Power System Fault</div>
-<ul class="steps">
-<li>Remove and reinsert battery.</li>
-<li>Check battery compatibility.</li>
-<li>Inspect camera power contacts.</li>
-<li>Reset camera or update firmware.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">POWER ERROR</div>
+  <div class="title">Power System Fault</div>
+  <ul class="steps">
+    <li>Remove and reinsert battery securely.</li>
+    <li>Check battery compatibility with Nikon model.</li>
+    <li>Inspect camera battery compartment contacts.</li>
+    <li>Reset camera or update firmware.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">POWER FAIL</div>
+  <div class="title">Unexpected Power Shutdown</div>
+  <ul class="steps">
+    <li>Replace battery with a fully charged one.</li>
+    <li>Avoid using unstable or third-party batteries.</li>
+    <li>Check for overheating conditions.</li>
+    <li>Inspect internal power circuit if recurring.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">BATTERY LOCK</div>
+  <div class="title">Battery Not Detected / Locked</div>
+  <ul class="steps">
+    <li>Remove and reinstall battery properly.</li>
+    <li>Ensure battery latch is fully engaged.</li>
+    <li>Clean battery contacts gently.</li>
+    <li>Try a different battery if issue persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ERR POWER</div>
+  <div class="title">Internal Power Circuit Error</div>
+  <ul class="steps">
+    <li>Power cycle the camera (remove battery for 5–10 min).</li>
+    <li>Check for firmware updates.</li>
+    <li>Inspect battery compartment for damage.</li>
+    <li>Service camera if error persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">VOLT ERR</div>
+  <div class="title">Voltage Instability Detected</div>
+  <ul class="steps">
+    <li>Use only recommended Nikon battery types.</li>
+    <li>Avoid low-quality third-party batteries.</li>
+    <li>Check for overheating battery conditions.</li>
+    <li>Replace battery if voltage is unstable.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">AUTO OFF</div>
+  <div class="title">Auto Power Shutdown Activated</div>
+  <ul class="steps">
+    <li>Check auto-off timer settings.</li>
+    <li>Replace low or unstable battery.</li>
+    <li>Avoid prolonged idle operation.</li>
+    <li>Disable power-saving mode if needed.</li>
+  </ul>
+</div></div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon camera not turning on?</div>
+<div class="answer">
+Check if the battery is properly inserted and fully charged. Clean the battery contacts carefully. Try a different compatible Nikon battery. If the issue continues, inspect the power circuit or battery compartment for damage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon camera suddenly turn off?</div>
+<div class="answer">
+This is usually caused by a weak or aging battery, unstable power connection, or overheating. Replace the battery, avoid extreme temperatures, and ensure proper power contact inside the battery chamber.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon battery draining so fast?</div>
+<div class="answer">
+Fast battery drain may be caused by continuous LCD use, Wi-Fi/Bluetooth activation, cold temperatures, or an old battery. Turn off unused features and test with a fresh battery.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon camera show a low battery warning too quickly?</div>
+<div class="answer">
+The battery may be degraded or not fully compatible. Charge the battery completely, clean the contacts, and test with an original Nikon battery if possible.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon battery not charging?</div>
+<div class="answer">
+Check the charger, cable, and power outlet. Ensure the battery is correctly seated in the charger. Try another charger or battery to isolate the issue.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon charger light blink or show an error?</div>
+<div class="answer">
+A blinking charger light usually indicates a faulty battery, poor contact, or incompatible charger. Clean battery terminals and test with a different battery.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon battery not detected?</div>
+<div class="answer">
+Remove and reinsert the battery properly. Check for dirt or corrosion on contacts. Ensure the battery is Nikon-compatible and not physically damaged.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon camera shut down during shooting?</div>
+<div class="answer">
+This may happen due to power instability, overheating battery, or poor contact. Replace the battery and ensure it is securely locked in place.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon battery charge but not last long?</div>
+<div class="answer">
+The battery is likely worn out or aging. Recharge cycles reduce capacity over time. Replace with a new original Nikon battery for best performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon camera show power error messages?</div>
+<div class="answer">
+Power errors may indicate battery incompatibility, dirty contacts, or internal power circuit issues. Restart the camera and test with a different battery.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon battery overheating?</div>
+<div class="answer">
+Overheating may occur during heavy shooting, charging issues, or defective batteries. Stop using the battery immediately and allow it to cool before testing again.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset Nikon power and battery issues?</div>
+<div class="answer">
+Turn off the camera, remove the battery for 5–10 minutes, then reinsert it. This helps reset temporary power system faults.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why do Nikon power problems keep coming back?</div>
+<div class="answer">
+Recurring issues may indicate a failing battery, damaged battery contacts, or internal power board problems that require servicing.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I replace my Nikon battery?</div>
+<div class="answer">
+Replace the battery if it drains unusually fast, fails to charge, overheats, or no longer holds a charge for normal shooting duration.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I bring my Nikon camera for repair?</div>
+<div class="answer">
+Seek professional service if the camera does not power on even with a new battery, shuts down repeatedly, or shows persistent power-related errors.
+</div>
 </div>
 
 <div class="note">
-<strong>Note:</strong> Persistent power errors may indicate battery or internal power circuit failure.
+<strong>Important:</strong> If Nikon power or battery issues continue after troubleshooting, stop using the camera. Persistent faults may indicate internal power circuit failure, damaged battery terminals, or motherboard issues. Continued use may worsen the damage. Contact an authorized Nikon service center for proper diagnosis and repair.
 </div>
 
-</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 

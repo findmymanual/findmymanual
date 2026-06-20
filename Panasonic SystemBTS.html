@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Panasonic System Messages Guide</title>
+
+<title>Panasonic System Messages Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Panasonic System Messages error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Panasonic System Messages Error Codes & Troubleshooting Guide",
+  "description": "Complete Panasonic System Messages error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -68,7 +164,7 @@ h1{
 }
 
 .code{
-    font-size:20px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
     margin-bottom:10px;
@@ -92,118 +188,442 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Panasonic System Messages</h1>
+<h1>Panasonic System Messages Error Codes</h1>
 
-<p class="subtitle">
-<strong>Status Indicators & Basic Troubleshooting Guide</strong>
+<p class="subtitle"><strong>Complete Panasonic System Messages Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Panasonic System Messages error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
-
-<!-- ================= STATUS ================= -->
-<div class="section-title">System Status Messages</div>
 
 <div class="grid">
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">LOCK</div>
 <div class="title">Child Lock Active</div>
 <ul class="steps">
-<li>Press and hold lock button to disable.</li>
+<li>Press and hold the lock button to disable.</li>
 <li>Check control panel settings.</li>
-<li>Restart device if unresponsive.</li>
-<li>Refer to user manual for model-specific unlock method.</li>
+<li>Restart the appliance if controls remain unresponsive.</li>
+<li>Refer to the user manual for model-specific instructions.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">HOT</div>
 <div class="title">Overheat Warning</div>
 <ul class="steps">
-<li>Turn off device and allow cooling.</li>
-<li>Ensure proper ventilation.</li>
-<li>Clean air vents or filters.</li>
-<li>Avoid continuous heavy usage.</li>
+<li>Turn off the appliance and allow it to cool down.</li>
+<li>Ensure proper ventilation around the unit.</li>
+<li>Clean air vents or filters if clogged.</li>
+<li>Avoid prolonged heavy usage.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= POWER ================= -->
-<div class="section-title">Power System Messages</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">PF</div>
 <div class="title">Power Failure Detected</div>
 <ul class="steps">
-<li>Check recent power outage.</li>
-<li>Reset device clock/settings.</li>
-<li>Restart appliance.</li>
-<li>Ensure stable power supply.</li>
+<li>Check if a recent power outage occurred.</li>
+<li>Reset time and settings if needed.</li>
+<li>Restart the appliance.</li>
+<li>Ensure a stable power supply.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= ERROR ================= -->
-<div class="section-title">Error & System Messages</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">ERR</div>
 <div class="title">General System Error</div>
 <ul class="steps">
-<li>Restart device.</li>
-<li>Check for specific error codes.</li>
-<li>Inspect power and connections.</li>
-<li>Reset system settings if needed.</li>
+<li>Restart the appliance.</li>
+<li>Check for any visible error indicators.</li>
+<li>Inspect power connection and wiring.</li>
+<li>Perform a system reset if required.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">RESET</div>
 <div class="title">System Restart Required</div>
 <ul class="steps">
-<li>Power cycle the device.</li>
-<li>Unplug for 1–2 minutes.</li>
-<li>Reconnect and restart.</li>
-<li>Check if issue persists.</li>
+<li>Turn off the appliance.</li>
+<li>Unplug or switch off power for 1–2 minutes.</li>
+<li>Reconnect power supply.</li>
+<li>Restart and test operation.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= COOLING ================= -->
-<div class="section-title">Cooling System Messages</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">COOL</div>
 <div class="title">Cooling Cycle Active</div>
 <ul class="steps">
-<li>Normal operation in progress.</li>
-<li>Do not interrupt cooling cycle.</li>
-<li>Ensure airflow is not blocked.</li>
-<li>Wait until cycle completes.</li>
+<li>Allow cooling cycle to complete.</li>
+<li>Do not disconnect power during operation.</li>
+<li>Ensure ventilation is not blocked.</li>
+<li>Wait until system returns to standby mode.</li>
 </ul>
 </div>
 
+<!-- ================= ADDITIONAL PANASONIC SYSTEM MESSAGES ================= -->
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E1</div>
+<div class="title">Sensor Communication Fault</div>
+<ul class="steps">
+<li>Check sensor wiring connections.</li>
+<li>Inspect for loose or damaged terminals.</li>
+<li>Restart the appliance after inspection.</li>
+<li>Replace sensor if issue persists.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E2</div>
+<div class="title">Overheat Protection Activated</div>
+<ul class="steps">
+<li>Turn off the unit immediately.</li>
+<li>Allow sufficient cooling time.</li>
+<li>Clean vents and airflow paths.</li>
+<li>Restart after temperature stabilizes.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E3</div>
+<div class="title">Motor or Fan Error</div>
+<ul class="steps">
+<li>Check for blocked fan blades.</li>
+<li>Remove dust and debris buildup.</li>
+<li>Inspect motor wiring connections.</li>
+<li>Replace motor if failure continues.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E4</div>
+<div class="title">Door or Safety Switch Error</div>
+<ul class="steps">
+<li>Ensure door is fully closed.</li>
+<li>Inspect latch and alignment.</li>
+<li>Clean contact points.</li>
+<li>Replace switch if defective.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E5</div>
+<div class="title">Temperature Detection Fault</div>
+<ul class="steps">
+<li>Allow unit to stabilize temperature conditions.</li>
+<li>Check environmental temperature stability.</li>
+<li>Ensure proper load or food placement.</li>
+<li>Restart after 10–15 minutes.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E6</div>
+<div class="title">Power Supply Instability</div>
+<ul class="steps">
+<li>Check outlet voltage stability.</li>
+<li>Avoid using extension cords.</li>
+<li>Inspect power cable condition.</li>
+<li>Restart after stable power is restored.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E7</div>
+<div class="title">Internal Communication Error</div>
+<ul class="steps">
+<li>Restart the appliance.</li>
+<li>Inspect internal wiring connections.</li>
+<li>Check control board connectors.</li>
+<li>Replace PCB if necessary.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E8</div>
+<div class="title">Overload Protection Triggered</div>
+<ul class="steps">
+<li>Reduce load or usage intensity.</li>
+<li>Allow system to cool down.</li>
+<li>Check for blocked airflow.</li>
+<li>Restart after reset period.</li>
+</ul>
+</div>
+</div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<!-- ================= NINJA FOODI / MULTI-COOKER FAQ GUIDE ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Panasonic appliance show ERR or system error messages?</div>
+<div class="answer">
+System errors usually indicate temporary faults such as power fluctuations, sensor issues, or internal communication problems. Turn off the appliance, unplug it for a few minutes, then restart. If the issue continues, check for overheating or blocked airflow.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Panasonic appliance display LOCK or control lock?</div>
+<div class="answer">
+The LOCK message means the child lock or control lock is enabled. Press and hold the lock button for a few seconds to disable it. If unresponsive, restart the unit and try again using the control panel instructions.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Panasonic appliance show HOT or overheat warning?</div>
+<div class="answer">
+HOT indicates the internal temperature is too high. Turn off the appliance immediately and allow it to cool. Make sure vents and airflow paths are clean and not blocked before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Panasonic appliance show PF (power failure)?</div>
+<div class="answer">
+PF appears after a power outage or voltage drop. Check your outlet and circuit breaker, then reset the appliance clock or settings after power is restored.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Panasonic appliance show RESET or require restart?</div>
+<div class="answer">
+RESET means the system needs a reboot. Turn off the appliance, unplug it for 5–10 minutes, then plug it back in and restart to clear temporary faults.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Panasonic appliance show COOL or cooling cycle active?</div>
+<div class="answer">
+COOL indicates the appliance is in a normal cooling or stabilization phase. Do not interrupt the cycle and ensure proper ventilation while it completes operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Panasonic appliance keep turning on and off?</div>
+<div class="answer">
+Frequent cycling may be caused by unstable power supply, dirty filters, overheating protection, or sensor issues. Clean the appliance and ensure stable electrical connection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Panasonic appliance making unusual noises?</div>
+<div class="answer">
+Unusual sounds can come from fans, motors, or loose internal components. Check for dust buildup, ensure the appliance is stable, and clean airflow areas.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Panasonic appliance have weak performance or reduced output?</div>
+<div class="answer">
+Reduced performance is often caused by blocked filters, dirty components, or airflow restrictions. Regular cleaning and proper maintenance usually restores normal operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Panasonic appliance stop working suddenly?</div>
+<div class="answer">
+Sudden shutdowns may be caused by overheating protection, power interruptions, or internal system faults. Allow the unit to cool and restart after checking power stability.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Panasonic appliance show CHECK or warning messages?</div>
+<div class="answer">
+CHECK messages indicate a component needs attention, such as filters, doors, or internal sensors. Inspect all removable parts and ensure proper installation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset a Panasonic appliance system message?</div>
+<div class="answer">
+Unplug the appliance or switch off the breaker for 5–10 minutes, then restore power. This clears temporary system errors and resets internal controls.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a technician for Panasonic system messages?</div>
+<div class="answer">
+Call a technician if error messages repeat frequently, the appliance fails to reset, or there are signs of overheating, electrical issues, or internal component failure.
+</div>
 </div>
 
 <div class="note">
-<strong>Note:</strong> System messages are usually status indicators and not actual hardware faults unless persistent.
+<strong>Important:</strong> Panasonic system messages are designed to protect the appliance and user. If problems persist after troubleshooting, stop using the unit and contact an authorized Panasonic service center for proper diagnosis and repair.
 </div>
 
-</div>
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 

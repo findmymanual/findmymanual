@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shark Vacuum Cleaner Error Codes Guide</title>
+
+<title>Shark Vacuum Cleaner Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Shark Vacuum Cleaner error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Shark Vacuum Cleaner Error Codes & Troubleshooting Guide",
+  "description": "Complete Shark Vacuum Cleaner error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -30,7 +126,6 @@ h1{
     background: #1f3b4d;
     color: white;
     padding: 25px;
-
 }
 
 .subtitle{
@@ -50,7 +145,7 @@ h1{
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
     margin-top:20px;
 }
@@ -69,7 +164,7 @@ h1{
 }
 
 .code{
-    font-size:24px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
     margin-bottom:10px;
@@ -93,7 +188,129 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
@@ -102,159 +319,368 @@ h1{
 
 <h1>Shark Vacuum Cleaner Error Codes</h1>
 
-<p class="subtitle">
-<strong>Complete Troubleshooting & Diagnostic Guide</strong>
-</p>
+<p class="subtitle"><strong>Complete Shark Vacuum Cleaner Guide</strong></p>
 
-<!-- ================= BRUSH ================= -->
-<div class="section-title">Brush Roll Errors</div>
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Shark Vacuum Cleaner error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E1</div>
-<div class="title">Brush Roll Obstruction</div>
+<div class="title">Brush Roll Obstruction Detected</div>
 <ul class="steps">
 <li>Turn off vacuum before inspection.</li>
-<li>Remove hair, threads, or debris from brush roll.</li>
-<li>Ensure brush spins freely by hand.</li>
-<li>Restart unit after cleaning.</li>
+<li>Remove hair, threads, and debris from brush roll.</li>
+<li>Check brush end caps for blockage.</li>
+<li>Restart vacuum after cleaning.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= SUCTION ================= -->
-<div class="section-title">Suction & Airflow Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E2</div>
-<div class="title">Suction Blockage Detected</div>
+<div class="title">Airflow Restriction Detected</div>
 <ul class="steps">
-<li>Check hose and wand for clogs.</li>
-<li>Clean filters and air pathways.</li>
-<li>Empty dust container.</li>
+<li>Inspect hose and wand for clogs.</li>
+<li>Empty dust cup completely.</li>
+<li>Clean filters thoroughly.</li>
 <li>Restart vacuum after clearing blockage.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= MOTOR ================= -->
-<div class="section-title">Motor & Thermal Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E3</div>
-<div class="title">Motor Overheating</div>
+<div class="title">Motor Overheating Protection</div>
 <ul class="steps">
-<li>Turn off vacuum and allow cooling.</li>
-<li>Clean filters to improve airflow.</li>
-<li>Avoid extended continuous use.</li>
-<li>Restart after cooldown period.</li>
+<li>Turn off vacuum immediately.</li>
+<li>Allow unit to cool for 30–60 minutes.</li>
+<li>Clean filters and airflow channels.</li>
+<li>Restart after cooling.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= DUST SYSTEM ================= -->
-<div class="section-title">Dust System Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E4</div>
-<div class="title">Dust Cup Not Installed</div>
+<div class="title">Dust Cup Installation Error</div>
 <ul class="steps">
-<li>Ensure dust cup is properly attached.</li>
-<li>Check locking mechanism.</li>
-<li>Remove and reinstall securely.</li>
-<li>Restart vacuum operation.</li>
+<li>Remove dust cup completely.</li>
+<li>Check locking tabs and alignment.</li>
+<li>Reinstall securely.</li>
+<li>Restart vacuum.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= FILTER ================= -->
-<div class="section-title">Filter Maintenance</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E5</div>
-<div class="title">Filter Requires Cleaning</div>
+<div class="title">Filter Maintenance Required</div>
 <ul class="steps">
-<li>Remove and clean filter thoroughly.</li>
-<li>Allow filter to dry completely.</li>
-<li>Replace if worn or damaged.</li>
+<li>Remove and wash filters.</li>
+<li>Allow filters to dry fully.</li>
+<li>Inspect for damage or wear.</li>
 <li>Reinstall before use.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= POWER ================= -->
-<div class="section-title">Power & Battery Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E6</div>
 <div class="title">Battery Fault or Low Charge</div>
 <ul class="steps">
-<li>Charge vacuum fully before use.</li>
-<li>Check battery connection points.</li>
-<li>Replace battery if it no longer holds charge.</li>
-<li>Use approved charger only.</li>
+<li>Charge vacuum fully.</li>
+<li>Inspect charging contacts.</li>
+<li>Verify charger operation.</li>
+<li>Replace battery if necessary.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= DOCK ================= -->
-<div class="section-title">Charging System Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E7</div>
-<div class="title">Charging Dock Communication Error</div>
+<div class="title">Charging System Error</div>
 <ul class="steps">
-<li>Check docking station power supply.</li>
-<li>Ensure vacuum is properly aligned.</li>
+<li>Check charger and power outlet.</li>
 <li>Clean charging contacts.</li>
-<li>Restart both dock and vacuum.</li>
+<li>Reconnect charging dock.</li>
+<li>Restart charging process.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= SYSTEM ================= -->
-<div class="section-title">System Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E8</div>
-<div class="title">Internal System Failure</div>
+<div class="title">Internal System Fault</div>
 <ul class="steps">
-<li>Restart vacuum system.</li>
-<li>Check for firmware updates if applicable.</li>
-<li>Inspect internal wiring if accessible.</li>
-<li>Contact service center if error persists.</li>
+<li>Power cycle the vacuum.</li>
+<li>Check for loose connections.</li>
+<li>Inspect for visible damage.</li>
+<li>Service unit if error returns.</li>
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E9</div>
+<div class="title">Brush Motor Failure</div>
+<ul class="steps">
+<li>Clean brush assembly thoroughly.</li>
+<li>Inspect motor wiring.</li>
+<li>Check for seized bearings.</li>
+<li>Replace motor if needed.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E10</div>
+<div class="title">Suction Motor Failure</div>
+<ul class="steps">
+<li>Turn off vacuum immediately.</li>
+<li>Inspect airflow path for blockage.</li>
+<li>Check motor operation.</li>
+<li>Replace motor if faulty.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E11</div>
+<div class="title">Dust Sensor Fault</div>
+<ul class="steps">
+<li>Clean dust sensor area.</li>
+<li>Inspect wiring connections.</li>
+<li>Restart vacuum.</li>
+<li>Replace sensor if necessary.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E12</div>
+<div class="title">Handle Communication Error</div>
+<ul class="steps">
+<li>Reconnect handle assembly.</li>
+<li>Inspect connector pins.</li>
+<li>Power cycle vacuum.</li>
+<li>Replace wiring if damaged.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E13</div>
+<div class="title">Power Supply Fault</div>
+<ul class="steps">
+<li>Check wall outlet voltage.</li>
+<li>Inspect power cord condition.</li>
+<li>Avoid extension cords.</li>
+<li>Replace damaged components.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E14</div>
+<div class="title">Filter Sensor Error</div>
+<ul class="steps">
+<li>Remove and reinstall filter.</li>
+<li>Clean sensor contacts.</li>
+<li>Reset maintenance indicator.</li>
+<li>Replace sensor if faulty.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E15</div>
+<div class="title">Roller Speed Detection Fault</div>
+<ul class="steps">
+<li>Check brush roller movement.</li>
+<li>Remove tangled debris.</li>
+<li>Inspect speed sensor.</li>
+<li>Replace sensor if needed.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E16</div>
+<div class="title">Thermal Sensor Failure</div>
+<ul class="steps">
+<li>Allow vacuum to cool completely.</li>
+<li>Inspect temperature sensor wiring.</li>
+<li>Restart vacuum.</li>
+<li>Replace sensor if defective.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E17</div>
+<div class="title">Cyclone Assembly Blocked</div>
+<ul class="steps">
+<li>Disassemble cyclone chamber.</li>
+<li>Remove accumulated debris.</li>
+<li>Wash removable components.</li>
+<li>Reassemble and test.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E18</div>
+<div class="title">Air Duct Obstruction</div>
+<ul class="steps">
+<li>Inspect internal air channels.</li>
+<li>Remove blockages carefully.</li>
+<li>Clean hose and wand.</li>
+<li>Restart vacuum.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E19</div>
+<div class="title">Control Board Communication Error</div>
+<ul class="steps">
+<li>Power cycle the unit.</li>
+<li>Inspect wiring harness connections.</li>
+<li>Check for moisture damage.</li>
+<li>Replace PCB if necessary.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E20</div>
+<div class="title">System Startup Failure</div>
+<ul class="steps">
+<li>Turn vacuum off and on.</li>
+<li>Check battery charge level.</li>
+<li>Inspect internal connections.</li>
+<li>Service unit if error persists.</li>
+</ul>
+</div></div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Vacuum Cleaner show ERR or system error messages?</div>
+<div class="answer">
+ERR messages usually indicate blocked airflow, clogged filters, brush roll obstruction, sensor issues, overheating protection, or internal system faults. Turn off the vacuum, unplug or remove battery if applicable, clean filters and brushes, then restart after a few minutes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Vacuum Cleaner stop working during operation?</div>
+<div class="answer">
+This is often caused by overheating protection, full dust container, motor overload, or blockage in the airflow path. Turn off the unit, clear debris from filters and brush roll, allow it to cool, and restart.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Vacuum Cleaner not turn on?</div>
+<div class="answer">
+Check power supply, battery charge, charging dock connection, and power button response. Ensure all parts are properly installed and the vacuum is fully charged before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Vacuum Cleaner lose suction power?</div>
+<div class="answer">
+Weak suction is usually caused by clogged filters, blocked hose or air channels, full dust cup, or dirty brush roll. Clean all airflow components and empty the dust container.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Vacuum Cleaner make unusual noises?</div>
+<div class="answer">
+Unusual noises may come from tangled hair, debris in the brush roll, blocked wheels, or internal motor strain. Turn off the vacuum and inspect all moving parts before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Vacuum Cleaner brush roll stop spinning?</div>
+<div class="answer">
+This usually happens due to hair or debris wrapped around the brush, belt issues, or motor blockage. Remove and clean the brush roll, then reinstall properly.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Vacuum Cleaner overheat?</div>
+<div class="answer">
+Overheating occurs when filters are clogged, airflow is restricted, or the vacuum is used for long periods without breaks. Turn off the device and allow it to cool completely before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Vacuum Cleaner keep shutting off randomly?</div>
+<div class="answer">
+Random shutdowns are usually caused by overheating protection, battery issues, or internal electrical faults. Check battery health and ensure airflow paths are clean.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Vacuum Cleaner not charge properly?</div>
+<div class="answer">
+Charging issues may be caused by dirty contacts, faulty charger, or misalignment with the dock. Clean charging points and ensure proper docking connection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Shark Vacuum Cleaner system messages?</div>
+<div class="answer">
+Turn off the vacuum, disconnect power or remove battery, wait 5–10 minutes, then restart. This clears temporary system errors and resets internal controls.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Shark Vacuum Cleaner smell bad while running?</div>
+<div class="answer">
+Bad odors are usually caused by dirty filters, trapped debris, or overheating motor components. Clean filters, empty dust cup, and inspect brush roll for buildup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I service my Shark Vacuum Cleaner?</div>
+<div class="answer">
+Service is recommended if suction remains weak after cleaning, overheating continues, unusual noises persist, or the vacuum repeatedly shows error messages.
+</div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> Always disconnect power before performing internal inspection or maintenance.
+<strong>Important:</strong> Shark Vacuum Cleaner system messages are safety features designed to protect the motor, filters, sensors, battery, and airflow system. If problems continue after troubleshooting, stop using the unit and contact an authorized Shark service center.
 </div>
 
-</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 
+
+

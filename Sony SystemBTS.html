@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sony System Messages Guide</title>
+
+<title>Sony System Messages Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Sony System Messages error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Sony System Messages Error Codes & Troubleshooting Guide",
+  "description": "Complete Sony System Messages error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -68,7 +164,7 @@ h1{
 }
 
 .code{
-    font-size:18px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
     margin-bottom:10px;
@@ -92,25 +188,146 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Sony System Messages</h1>
+<h1>Sony System Messages Error Codes</h1>
 
-<p class="subtitle">
-<strong>Status Indicators & Basic Troubleshooting Guide</strong>
+<p class="subtitle"><strong>Complete Sony System Messages Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Sony System Messages error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
-
-<!-- ================= UPDATE ================= -->
-<div class="section-title">System Update Messages</div>
 
 <div class="grid">
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">UPDATE REQUIRED</div>
 <div class="title">Firmware Update Needed</div>
 <ul class="steps">
@@ -121,78 +338,263 @@ h1{
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">INSTALL ERROR</div>
+<div class="title">System Installation Failed</div>
+<ul class="steps">
+<li>Restart the device and retry installation.</li>
+<li>Check available storage space.</li>
+<li>Ensure update file is not corrupted.</li>
+<li>Re-download system update if needed.</li>
+</ul>
 </div>
 
-<!-- ================= TEMPERATURE ================= -->
-<div class="section-title">Temperature Protection</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">OVERHEAT</div>
 <div class="title">Temperature Protection Active</div>
 <ul class="steps">
 <li>Turn off device immediately.</li>
 <li>Allow cooling in a ventilated area.</li>
 <li>Remove dust from vents or fans.</li>
-<li>Restart only after cooling.</li>
+<li>Restart only after cooling completely.</li>
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">THERMAL WARN</div>
+<div class="title">High Temperature Warning</div>
+<ul class="steps">
+<li>Stop intensive usage or gaming/recording.</li>
+<li>Move device to a cooler environment.</li>
+<li>Ensure proper airflow around system.</li>
+<li>Restart after temperature stabilizes.</li>
+</ul>
 </div>
 
-<!-- ================= BOOT ================= -->
-<div class="section-title">Boot & Recovery Modes</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">SAFE MODE</div>
 <div class="title">System Booted in Safe Mode</div>
 <ul class="steps">
-<li>Use safe mode menu options.</li>
-<li>Rebuild database if prompted.</li>
-<li>Check for system corruption.</li>
-<li>Restart normally after repair.</li>
+<li>Use safe mode menu options carefully.</li>
+<li>Rebuild database if system is slow or corrupted.</li>
+<li>Check for system software issues.</li>
+<li>Restart normally after repairs.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">RESET</div>
 <div class="title">System Restart Required</div>
 <ul class="steps">
-<li>Power cycle the device.</li>
+<li>Power cycle the device completely.</li>
 <li>Hold reset button if available.</li>
 <li>Check if issue persists after reboot.</li>
-<li>Restore default settings if needed.</li>
+<li>Restore default settings if necessary.</li>
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">BOOT LOOP</div>
+<div class="title">System Restart Loop Detected</div>
+<ul class="steps">
+<li>Disconnect power for a full reset.</li>
+<li>Boot into Safe Mode.</li>
+<li>Rebuild system database.</li>
+<li>Reinstall system software if needed.</li>
+</ul>
 </div>
 
-<!-- ================= SIGNAL ================= -->
-<div class="section-title">Input / Display Messages</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">NO SIGNAL</div>
 <div class="title">Input Signal Not Detected</div>
 <ul class="steps">
 <li>Check HDMI or input cable connection.</li>
 <li>Switch to correct input source.</li>
-<li>Test with another device or cable.</li>
-<li>Restart both TV and source device.</li>
+<li>Test with another cable or device.</li>
+<li>Restart both display and source device.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">DISPLAY ERROR</div>
+<div class="title">Screen Output Failure</div>
+<ul class="steps">
+<li>Check HDMI port or display cable.</li>
+<li>Try another screen or TV if available.</li>
+<li>Reset display settings in system menu.</li>
+<li>Update graphics/system software.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E:5</div>
+<div class="title">System Sensor Fault</div>
+<ul class="steps">
+<li>Restart device and clear temporary cache.</li>
+<li>Check for dust or obstruction in sensor area.</li>
+<li>Update system firmware.</li>
+<li>Service hardware if error persists.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E:62</div>
+<div class="title">Internal Hardware Communication Error</div>
+<ul class="steps">
+<li>Power cycle the system.</li>
+<li>Remove external accessories and retry.</li>
+<li>Check for firmware updates.</li>
+<li>Contact service center if unresolved.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E:91</div>
+<div class="title">System Software Corruption</div>
+<ul class="steps">
+<li>Boot into recovery mode.</li>
+<li>Reinstall system software.</li>
+<li>Check storage integrity.</li>
+<li>Restore factory settings if needed.</li>
 </ul>
 </div>
 
 </div>
 
-<div class="note">
-<strong>Note:</strong> Some system messages are informational and not hardware faults. Persistent issues may require technical support.
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony System show ERR or system error messages?</div>
+<div class="answer">
+ERR messages on Sony System usually indicate software corruption, overheating protection, storage issues, hardware faults, network interruptions, or system database errors. Restart the system, perform a full power cycle, and check for system updates. If the issue continues, boot into Safe Mode and rebuild the database.
+</div>
 </div>
 
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony System freeze or crash during use?</div>
+<div class="answer">
+This is often caused by overheating, corrupted system files, outdated firmware, or overloaded system memory. Turn off the system, allow it to cool, update software, and check storage health for errors.
 </div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony System not turn on?</div>
+<div class="answer">
+Check the power cable, outlet, power adapter, and HDMI or display connection. Ensure stable power supply and try a different cable if available. Perform a full reset by unplugging the system for several minutes.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony System not display anything on screen?</div>
+<div class="answer">
+This may be caused by HDMI issues, incorrect input source, or display configuration errors. Reconnect HDMI, try another port, and boot into Safe Mode to reset display settings.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony System overheat?</div>
+<div class="answer">
+Overheating is usually caused by blocked ventilation, dust buildup, or poor airflow placement. Clean vents, ensure proper airflow, and keep the system in a well-ventilated area.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony System not read discs or media?</div>
+<div class="answer">
+This can be caused by dirty or damaged discs, lens issues, or drive malfunction. Clean the disc, try another disc, and restart the system.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony System show network errors?</div>
+<div class="answer">
+Network issues may be caused by unstable Wi-Fi, router problems, or DNS configuration errors. Restart your router, check internet settings, and try a wired connection.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony System download or update fail?</div>
+<div class="answer">
+Update failures are usually caused by unstable internet, low storage space, or server interruptions. Free up storage, restart the system, and try again.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony System controller not connect?</div>
+<div class="answer">
+Controller connection issues may be caused by Bluetooth interference, low battery, or sync failure. Reset the controller and reconnect using a USB cable.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Sony System fail to sign in?</div>
+<div class="answer">
+Sign-in issues may be caused by incorrect credentials, server downtime, or account verification problems. Reset your password and check system network status.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Sony System messages?</div>
+<div class="answer">
+Turn off the system completely, unplug it for 5–10 minutes, then restart. If issues persist, boot into Safe Mode and select options like “Rebuild Database” or “Restore Default Settings.”
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I service my Sony System?</div>
+<div class="answer">
+Service is recommended if the system repeatedly crashes, overheats, fails to boot, or continues showing persistent error messages after troubleshooting.
+</div>
+</div>
+
+<div class="note">
+<strong>Important:</strong> Sony System messages are built-in diagnostic and safety features designed to protect internal components such as the processor, GPU, storage system, power supply, and network modules. If issues continue after troubleshooting, contact Sony Support or an authorized service center.
+</div>
+
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 
+
+

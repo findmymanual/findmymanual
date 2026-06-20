@@ -1,198 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nikon System Messages Guide</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin:0;
-    padding:20px;
-    background:#f5f5f5;
-    color:#333;
-}
+    <title>Nikon System Messages Error Codes & Troubleshooting Guide</title>
 
-.container{
-    max-width:1200px;
-    margin:auto;
-    background:#fff;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
+    <meta name="description"
+        content="Complete Nikon System Messages error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
 
-h1{
-    text-align:center;
-    color:#666;
-    margin-bottom:10px;
-    background: #1f3b4d;
-    color: white;
-    padding: 25px;
+    <!-- ✅ ARTICLE SCHEMA (FIXED) -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Nikon System Messages Error Codes & Troubleshooting Guide",
+  "description": "Complete Nikon System Messages error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
 }
+</script>
 
-.subtitle{
-    text-align:center;
-    color:#666;
-    margin-bottom:30px;
+    <!-- ✅ FAQ SCHEMA -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
 }
+</script>
 
-.section-title{
-    margin-top:40px;
-    font-size:20px;
-    font-weight:bold;
-    border-left:5px solid #e60012;
-    padding-left:10px;
-    color:#444;
-}
+    <script>
+        function toggleCard(card) {
+            card.classList.toggle("active");
+        }
+    </script>
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-    margin-top:20px;
-}
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+        }
 
-.card{
-    border:1px solid #4e6e81;
-    border-radius:8px;
-    padding:20px;
-    background:#fafafa;
-    transition:0.3s;
-}
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
+        h1 {
+            text-align: center;
+            color: #666;
+            margin-bottom: 10px;
+            background: #1f3b4d;
+            color: white;
+            padding: 25px;
+        }
 
-.code{
-    font-size:20px;
-    font-weight:bold;
-    color:#4e6e81;
-    margin-bottom:10px;
-}
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
 
-.title{
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:12px;
-}
+        .section-title {
+            margin-top: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            border-left: 5px solid #e60012;
+            padding-left: 10px;
+            color: #444;
+        }
 
-.steps{
-    padding-left:18px;
-    line-height:1.6;
-}
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
 
-.note{
-    margin-top:30px;
-    background:#fff3cd;
-    border:1px solid #ffeeba;
-    padding:15px;
-    border-radius:6px;
-}
-</style>
+        .card {
+            border: 1px solid #4e6e81;
+            border-radius: 8px;
+            padding: 20px;
+            background: #fafafa;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .code {
+            font-size: 26px;
+            font-weight: bold;
+            color: #4e6e81;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .steps {
+            padding-left: 18px;
+            line-height: 1.6;
+        }
+
+        .note {
+            margin-top: 30px;
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .faq {
+            margin-top: 40px;
+        }
+
+        .faq h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #666;
+            margin-bottom: 10px;
+            background: #1f3b4d;
+            color: white;
+            padding: 25px;
+
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .hidden-content {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .card.active .hidden-content {
+            display: block;
+        }
+    </style>
+
+    <style>
+        .card {
+            border: 1px solid #4e6e81;
+            border-radius: 8px;
+            padding: 20px;
+            background: #fafafa;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .code {
+            font-size: 26px;
+            font-weight: bold;
+            color: #4e6e81;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .steps {
+            padding-left: 18px;
+            line-height: 1.6;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .card.active .steps {
+            display: block;
+        }
+    </style>
+
+    <style>
+        /* 4 COLUMN LAYOUT */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        /* RESPONSIVE (important for mobile) */
+        @media (max-width: 1200px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* SMALLER TEXT */
+        .card {
+            padding: 12px;
+            font-size: 13px;
+        }
+
+        .code {
+            font-size: 18px;
+        }
+
+        .title {
+            font-size: 14px;
+            margin-top: 6px;
+        }
+
+        .steps {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    </style>
+
 </head>
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-<h1>Nikon System Messages</h1>
+        <h1>Nikon System Messages Error Codes</h1>
 
-<p class="subtitle">
-<strong>Status Indicators & Troubleshooting Guide</strong>
-</p>
+        <p class="subtitle"><strong>Complete Nikon System Messages Guide</strong></p>
 
-<!-- ================= STATUS ================= -->
-<div class="section-title">System Status Messages</div>
+        <p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+            This guide explains all Nikon System Messages error codes (CH series) with simple troubleshooting steps to help you
+            identify and fix common issues safely before calling a technician.
+        </p>
 
-<div class="grid">
+        <div class="grid">
 
-<div class="card">
-<div class="code">BUSY</div>
-<div class="title">Camera Processing Data</div>
-<ul class="steps">
-<li>Wait for current operation to finish.</li>
-<li>Do not power off camera.</li>
-<li>Check for buffering (saving images).</li>
-<li>Ensure memory card speed is sufficient.</li>
-</ul>
-</div>
+            <div class="card" onclick="toggleCard(this)">
+                <div class="code">BUSY</div>
+                <div class="title">Camera Processing Data</div>
+                <ul class="steps">
+                    <li>Wait for the current operation to complete.</li>
+                    <li>Do not turn off the camera during saving or processing.</li>
+                    <li>Check if images are still buffering to the memory card.</li>
+                    <li>Use a high-speed memory card for better performance.</li>
+                </ul>
+            </div>
 
-<div class="card">
-<div class="code">LOCK</div>
-<div class="title">Control Lock Active</div>
-<ul class="steps">
-<li>Check if control lock switch is enabled.</li>
-<li>Disable lock in settings menu.</li>
-<li>Try holding lock button for a few seconds.</li>
-<li>Restart camera if unresponsive.</li>
-</ul>
-</div>
+            <div class="card" onclick="toggleCard(this)">
+                <div class="code">LOCK</div>
+                <div class="title">Control Lock Active</div>
+                <ul class="steps">
+                    <li>Check if the lock switch or function lock is enabled.</li>
+                    <li>Disable control lock in the camera menu.</li>
+                    <li>Hold the assigned lock button for a few seconds.</li>
+                    <li>Restart the camera if controls remain unresponsive.</li>
+                </ul>
+            </div>
 
-</div>
+            <div class="card" onclick="toggleCard(this)">
+                <div class="code">WAIT</div>
+                <div class="title">System Processing Delay</div>
+                <ul class="steps">
+                    <li>Allow the camera to finish internal processing.</li>
+                    <li>Avoid pressing buttons repeatedly.</li>
+                    <li>Check if memory card write speed is sufficient.</li>
+                    <li>Reduce burst shooting if delay persists.</li>
+                </ul>
+            </div>
 
-<!-- ================= SYSTEM ================= -->
-<div class="section-title">System Control Messages</div>
+            <div class="card" onclick="toggleCard(this)">
+                <div class="code">ERR</div>
+                <div class="title">General System Error</div>
+                <ul class="steps">
+                    <li>Turn the camera off and remove the battery.</li>
+                    <li>Wait 1–2 minutes before restarting.</li>
+                    <li>Check lens and memory card connections.</li>
+                    <li>Update firmware if the error repeats.</li>
+                </ul>
+            </div>
 
-<div class="grid">
+                <div class="card" onclick="toggleCard(this)">
+                    <div class="code">RESET</div>
+                    <div class="title">System Restart Required</div>
+                    <ul class="steps">
+                        <li>Power off the camera completely.</li>
+                        <li>Remove battery for 1–2 minutes.</li>
+                        <li>Reinsert battery and restart camera.</li>
+                        <li>Restore default settings if issue persists.</li>
+                    </ul>
+                </div>
 
-<div class="card">
-<div class="code">RESET</div>
-<div class="title">System Restart Required</div>
-<ul class="steps">
-<li>Power cycle the camera.</li>
-<li>Remove battery for 1–2 minutes.</li>
-<li>Reinsert battery and restart.</li>
-<li>Restore default settings if needed.</li>
-</ul>
-</div>
+                <div class="card" onclick="toggleCard(this)">
+                    <div class="code">SET ERROR</div>
+                    <div class="title">Settings Configuration Error</div>
+                    <ul class="steps">
+                        <li>Reset shooting settings to default.</li>
+                        <li>Check custom function settings.</li>
+                        <li>Remove recently changed configurations.</li>
+                        <li>Update firmware if available.</li>
+                    </ul>
+                </div>
 
-</div>
+                <div class="card" onclick="toggleCard(this)">
+                    <div class="code">OVERHEAT</div>
+                    <div class="title">Temperature Warning</div>
+                    <ul class="steps">
+                        <li>Turn off the camera immediately.</li>
+                        <li>Allow the device to cool in a shaded area.</li>
+                        <li>Avoid long video recording or burst shooting.</li>
+                        <li>Ensure proper airflow around the camera body.</li>
+                    </ul>
+                </div>
 
-<!-- ================= WARNING ================= -->
-<div class="section-title">Warning Messages</div>
+                <div class="card" onclick="toggleCard(this)">
+                    <div class="code">LOW TEMP</div>
+                    <div class="title">Low Temperature Warning</div>
+                    <ul class="steps">
+                        <li>Warm the camera gradually before use.</li>
+                        <li>Use insulated battery packs in cold environments.</li>
+                        <li>Avoid sudden temperature changes.</li>
+                        <li>Keep spare batteries warm for better performance.</li>
+                    </ul>
+                </div>
 
-<div class="grid">
+                <div class="card" onclick="toggleCard(this)">
+                    <div class="code">NO IMG</div>
+                    <div class="title">No Image Available</div>
+                    <ul class="steps">
+                        <li>Insert a memory card containing images.</li>
+                        <li>Check if files were deleted or moved.</li>
+                        <li>Try another SD card.</li>
+                        <li>Verify playback mode settings.</li>
+                    </ul>
+                </div>
 
-<div class="card">
-<div class="code">OVERHEAT</div>
-<div class="title">Temperature Warning</div>
-<ul class="steps">
-<li>Turn off camera immediately.</li>
-<li>Allow device to cool in shaded area.</li>
-<li>Avoid continuous video or burst shooting.</li>
-<li>Clean ventilation areas if applicable.</li>
-</ul>
-</div>
+                <div class="card" onclick="toggleCard(this)">
+                    <div class="code">CARD ERR</div>
+                    <div class="title">Memory Card Error</div>
+                    <ul class="steps">
+                        <li>Remove and reinsert the SD card.</li>
+                        <li>Format the card in-camera.</li>
+                        <li>Try a different compatible memory card.</li>
+                        <li>Check for physical damage or lock switch.</li>
+                    </ul>
+                </div>
 
-</div>
+                <div class="card" onclick="toggleCard(this)">
+                    <div class="code">FULL</div>
+                    <div class="title">Memory Card Full</div>
+                    <ul class="steps">
+                        <li>Delete unnecessary images or videos.</li>
+                        <li>Transfer files to a computer or storage device.</li>
+                        <li>Use a higher-capacity SD card.</li>
+                        <li>Format card after backup.</li>
+                    </ul>
+                </div>
 
-<!-- ================= DISPLAY ================= -->
-<div class="section-title">Display Messages</div>
+            </div>
 
-<div class="grid">
+<style>
+            .answer {
+                display: none;
+                margin-top: 8px;
+            }
 
-<div class="card">
-<div class="code">NO IMG</div>
-<div class="title">No Image Available</div>
-<ul class="steps">
-<li>Insert memory card with photos.</li>
-<li>Check if images were deleted or moved.</li>
-<li>Try another memory card.</li>
-<li>Verify playback mode settings.</li>
-</ul>
-</div>
+            .question {
+                cursor: pointer;
+                font-weight: bold;
+                padding: 10px;
+                background: #f2f2f2;
+                margin-top: 5px;
+            }
+        </style>
 
-</div>
+        <script>
+            function toggleFAQ(el) {
+                const answer = el.nextElementSibling;
 
-<div class="note">
-<strong>Note:</strong> Most Nikon system messages are informational and related to camera operation status rather than hardware failure.
-</div>
+                if (answer.style.display === "block") {
+                    answer.style.display = "none";
+                } else {
+                    answer.style.display = "block";
+                }
+            }
+        </script>
 
-</div>
+        <!-- FAQ SECTION -->
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <br>
+
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why does my Nikon camera show a BUSY message?</div>
+                <div class="answer"> Check if the camera is currently saving images or processing data. Wait for the
+                    operation to complete and avoid turning off the camera. Ensure your memory card has sufficient write
+                    speed for continuous shooting. </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why is my Nikon camera showing a LOCK message?</div>
+                <div class="answer"> The LOCK message indicates that the control lock is active. Check the lock switch
+                    or settings menu and disable the lock feature. Restart the camera if controls remain unresponsive.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why does my Nikon camera show RESET required?</div>
+                <div class="answer"> The system may require a restart due to a temporary fault. Turn off the camera,
+                    remove the battery for a few minutes, then reinsert it and restart the device. </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why is my Nikon camera showing an OVERHEAT warning?
+                </div>
+                <div class="answer"> The camera temperature is too high. Turn it off immediately and allow it to cool in
+                    a shaded area. Avoid long continuous video recording or burst shooting. </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why does my Nikon camera display NO IMAGE?</div>
+                <div class="answer"> No images are available for playback. Insert a memory card with photos or check if
+                    files were deleted or moved. Verify playback settings. </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why is my Nikon camera showing CARD ERROR?</div>
+                <div class="answer"> The memory card may be damaged, incompatible, or improperly inserted. Remove and
+                    reinsert the card, then format it in-camera if necessary. </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why does my Nikon camera show LOW BATTERY warning?</div>
+                <div class="answer"> The battery level is critically low. Replace or recharge the battery immediately.
+                    Turn off power-heavy features like Wi-Fi and LCD brightness to conserve power. </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why is my Nikon camera not responding (HANG/LOCKED)?
+                </div>
+                <div class="answer"> The system may be frozen due to processing overload or firmware issues. Remove the
+                    battery, wait a few minutes, and restart the camera. </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why does my Nikon camera show ERR SYSTEM message?</div>
+                <div class="answer"> A general system error indicates a temporary malfunction. Restart the camera,
+                    remove external accessories, and reset settings if needed. </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why is my Nikon camera not saving images?</div>
+                <div class="answer"> This may be caused by a full or corrupted memory card. Check storage space, format
+                    the card, and ensure write protection is disabled. </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why does my Nikon camera show BATTERY ERROR?</div>
+                <div class="answer"> The battery may be incompatible or not properly seated. Clean battery contacts and
+                    test with an original Nikon battery if possible. </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why does my Nikon camera display FILE ERROR?</div>
+                <div class="answer"> Image files may be corrupted or unsupported. Format the memory card after backup
+                    and ensure proper file handling. </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why is my Nikon camera showing SENSOR ERROR?</div>
+                <div class="answer"> The image sensor may have detected a malfunction. Power cycle the camera and avoid
+                    impact or dust exposure. Service may be required if persistent. </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why does my Nikon camera show CONNECTION ERROR?</div>
+                <div class="answer"> External accessory communication may have failed. Remove connected devices, clean
+                    ports, and reconnect properly. </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">Why do Nikon system messages keep appearing repeatedly?
+                </div>
+                <div class="answer"> Recurring system messages may indicate firmware issues, memory card faults,
+                    overheating, or internal hardware problems requiring diagnosis. </div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleFAQ(this)">When should I bring my Nikon camera for repair?</div>
+                <div class="answer"> Seek professional service if system messages persist after reset, the camera fails
+                    to operate normally, or hardware-related errors continue. </div>
+            </div>
+            <div class="note"> <strong>Important:</strong> If Nikon system messages continue after troubleshooting, stop
+                using the camera. Persistent errors may indicate internal hardware failure, memory system damage, sensor
+                malfunction, or motherboard issues. Continued use may worsen the condition. Contact an authorized Nikon
+                service center for proper diagnosis and repair. </div>
+
+
+            <script>
+                document.querySelectorAll(".faq-question").forEach(button => {
+                    button.addEventListener("click", () => {
+                        const answer = button.nextElementSibling;
+                        answer.style.display = answer.style.display === "block" ? "none" : "block";
+                    });
+                });
+            </script>
+
+
 
 </body>
+
 </html>

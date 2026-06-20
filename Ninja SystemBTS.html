@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ninja System Messages Troubleshooting Guide</title>
+
+<title>Ninja System Messages Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Ninja System Messages error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Ninja System Messages Error Codes & Troubleshooting Guide",
+  "description": "Complete Ninja System Messages error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -38,10 +134,20 @@ h1{
     margin-bottom:30px;
 }
 
+.section-title{
+    margin-top:40px;
+    font-size:20px;
+    font-weight:bold;
+    border-left:5px solid #e60012;
+    padding-left:10px;
+    color:#444;
+}
+
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
+    margin-top:20px;
 }
 
 .card{
@@ -82,143 +188,536 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Ninja System Messages Troubleshooting Guide</h1>
-<p class="subtitle"><strong>Status Alerts & System Diagnostics</strong></p>
+<h1>Ninja System Messages Error Codes</h1>
+
+<p class="subtitle"><strong>Complete Ninja System Messages Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Ninja System Messages error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
-<!-- ERR -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">ERR</div>
 <div class="title">General System Error</div>
 <ul class="steps">
 <li>Turn off and unplug the device.</li>
 <li>Wait 5–10 minutes before restarting.</li>
-<li>Check for unusual sounds or overheating.</li>
-<li>If error persists, perform full reset.</li>
+<li>Check for overheating or unusual operation.</li>
+<li>Perform a full reset if needed.</li>
 </ul>
 </div>
 
-<!-- SAFE MODE -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">SAFE MODE</div>
 <div class="title">Protection Mode Active</div>
 <ul class="steps">
-<li>Allow device to cool down completely.</li>
-<li>Check for blockages or overload.</li>
-<li>Restart device after cooling period.</li>
-<li>Avoid heavy continuous usage.</li>
+<li>Allow the unit to cool completely.</li>
+<li>Check for blocked airflow or overload.</li>
+<li>Remove any obstruction.</li>
+<li>Restart after cooling.</li>
 </ul>
 </div>
 
-<!-- OVERHEAT -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">OVERHEAT</div>
 <div class="title">Temperature Too High</div>
 <ul class="steps">
-<li>Turn off immediately.</li>
-<li>Unplug and allow cooling.</li>
-<li>Ensure proper ventilation.</li>
-<li>Clean internal airflow areas.</li>
+<li>Turn off the appliance immediately.</li>
+<li>Allow a full cooling cycle.</li>
+<li>Ensure ventilation openings are clear.</li>
+<li>Clean internal airflow passages.</li>
 </ul>
 </div>
 
-<!-- POWER FAIL -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">POWER FAIL</div>
 <div class="title">Power Interruption</div>
 <ul class="steps">
-<li>Check power outlet stability.</li>
+<li>Verify outlet is supplying power.</li>
 <li>Inspect power cord for damage.</li>
-<li>Reset circuit breaker if needed.</li>
-<li>Restart device after stable power returns.</li>
+<li>Reset breaker if necessary.</li>
+<li>Restart after stable power returns.</li>
 </ul>
 </div>
 
-<!-- LOCK -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">LOCK</div>
-<div class="title">Control Lock Active</div>
+<div class="title">Control Lock Enabled</div>
 <ul class="steps">
-<li>Hold lock/unlock button for 3–5 seconds.</li>
-<li>Refer to manual for unlock method.</li>
-<li>Ensure child lock is disabled.</li>
-<li>Restart if controls remain frozen.</li>
+<li>Press and hold the Lock button.</li>
+<li>Disable Child Lock mode.</li>
+<li>Refer to the owner's manual.</li>
+<li>Restart if controls remain locked.</li>
 </ul>
 </div>
 
-<!-- READY -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">READY</div>
-<div class="title">Unit Ready for Operation</div>
+<div class="title">Unit Ready For Use</div>
 <ul class="steps">
-<li>No action required.</li>
-<li>Device is functioning normally.</li>
-<li>Proceed with intended use.</li>
+<li>No corrective action required.</li>
+<li>System has completed startup checks.</li>
+<li>Select desired cooking mode.</li>
+<li>Begin operation normally.</li>
 </ul>
 </div>
 
-<!-- COOL DOWN -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">COOL DOWN</div>
-<div class="title">Cooling Cycle Active</div>
+<div class="title">Cooling Cycle In Progress</div>
 <ul class="steps">
-<li>Allow cooling process to finish.</li>
-<li>Do not unplug during cycle.</li>
-<li>Ensure ventilation is not blocked.</li>
+<li>Allow cycle to finish naturally.</li>
+<li>Do not disconnect power.</li>
+<li>Keep vents unobstructed.</li>
+<li>Wait until display clears.</li>
 </ul>
 </div>
 
-<!-- RESET REQUIRED -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">RESET REQUIRED</div>
-<div class="title">System Needs Restart</div>
+<div class="title">System Restart Needed</div>
 <ul class="steps">
-<li>Turn off device.</li>
+<li>Turn off the appliance.</li>
 <li>Unplug for 5–10 minutes.</li>
-<li>Plug back in and restart.</li>
-<li>Check if error clears.</li>
+<li>Reconnect power and restart.</li>
+<li>Confirm message has cleared.</li>
 </ul>
 </div>
 
-<!-- SERVICE MODE -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">SERVICE MODE</div>
-<div class="title">Technician Diagnostic Mode Active</div>
+<div class="title">Diagnostic Mode Active</div>
 <ul class="steps">
-<li>Exit service mode using reset sequence.</li>
-<li>Refer to user manual instructions.</li>
-<li>Do not operate normally in this mode.</li>
-<li>Contact technician if unsure.</li>
+<li>Exit service mode using the proper sequence.</li>
+<li>Refer to the user manual.</li>
+<li>Avoid normal operation in this mode.</li>
+<li>Contact support if unsure.</li>
 </ul>
 </div>
 
-<!-- PROTECT ACTIVE -->
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">PROTECT ACTIVE</div>
-<div class="title">Safety Protection System Engaged</div>
+<div class="title">Safety Protection Engaged</div>
 <ul class="steps">
-<li>Turn off device immediately.</li>
-<li>Allow cooling and reset system.</li>
-<li>Check for overload or blockage.</li>
-<li>If recurring, contact service center.</li>
+<li>Turn off the unit immediately.</li>
+<li>Check for overheating or overload.</li>
+<li>Allow system to cool completely.</li>
+<li>Restart after correcting the issue.</li>
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">CHECK FAN</div>
+<div class="title">Fan Inspection Required</div>
+<ul class="steps">
+<li>Inspect fan for obstructions.</li>
+<li>Clean dust and grease buildup.</li>
+<li>Verify fan spins freely.</li>
+<li>Replace fan motor if necessary.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">CHECK SENSOR</div>
+<div class="title">Sensor Reading Fault</div>
+<ul class="steps">
+<li>Power cycle the appliance.</li>
+<li>Inspect sensor connections.</li>
+<li>Clean sensor surfaces.</li>
+<li>Replace sensor if fault remains.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">VENT BLOCKED</div>
+<div class="title">Airflow Restriction Detected</div>
+<ul class="steps">
+<li>Inspect ventilation openings.</li>
+<li>Remove debris and obstructions.</li>
+<li>Clean intake and exhaust vents.</li>
+<li>Restart after airflow is restored.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">LOW VOLTAGE</div>
+<div class="title">Input Voltage Too Low</div>
+<ul class="steps">
+<li>Verify outlet voltage.</li>
+<li>Avoid extension cords.</li>
+<li>Use a dedicated power outlet.</li>
+<li>Restart when voltage stabilizes.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">HIGH VOLTAGE</div>
+<div class="title">Input Voltage Too High</div>
+<ul class="steps">
+<li>Disconnect appliance immediately.</li>
+<li>Check household power supply.</li>
+<li>Wait for voltage to normalize.</li>
+<li>Reconnect and test operation.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">UPDATE</div>
+<div class="title">System Update Required</div>
+<ul class="steps">
+<li>Complete any available updates.</li>
+<li>Keep power connected during update.</li>
+<li>Restart once update finishes.</li>
+<li>Verify normal operation afterward.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">MEMORY ERROR</div>
+<div class="title">System Memory Fault</div>
+<ul class="steps">
+<li>Perform a complete power reset.</li>
+<li>Restore factory settings if available.</li>
+<li>Check control board connections.</li>
+<li>Replace board if issue persists.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">COMM ERROR</div>
+<div class="title">Communication Failure</div>
+<ul class="steps">
+<li>Restart the appliance.</li>
+<li>Inspect internal wiring connections.</li>
+<li>Check for moisture or corrosion.</li>
+<li>Service control board if required.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">SYSTEM BUSY</div>
+<div class="title">Operation In Progress</div>
+<ul class="steps">
+<li>Wait for the current task to finish.</li>
+<li>Avoid pressing multiple buttons.</li>
+<li>Allow the system to respond.</li>
+<li>Restart only if frozen.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">SELF TEST</div>
+<div class="title">Internal Diagnostics Running</div>
+<ul class="steps">
+<li>Allow the test cycle to complete.</li>
+<li>Do not disconnect power.</li>
+<li>Monitor for displayed faults.</li>
+<li>Restart after testing finishes.</li>
+</ul>
+</div>
+
+</div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<!-- ================= NINJA FOODI / MULTI-COOKER FAQ GUIDE ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance show ERR?</div>
+<div class="answer">
+ERR indicates a general system fault. Turn off and unplug the appliance for 5–10 minutes, then restart it. Check for overheating, unusual noises, or installation issues before resuming operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance display SAFE MODE?</div>
+<div class="answer">
+SAFE MODE means the appliance has activated its protection system. Allow the unit to cool completely, check for blockages or overload conditions, and restart after cooling.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance display OVERHEAT?</div>
+<div class="answer">
+OVERHEAT indicates the internal temperature has exceeded safe operating limits. Turn off the appliance immediately, unplug it, and allow it to cool before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance show POWER FAIL?</div>
+<div class="answer">
+POWER FAIL appears after a power interruption or voltage fluctuation. Check the outlet, power cord, and circuit breaker. Once stable power is restored, restart the appliance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance display LOCK?</div>
+<div class="answer">
+LOCK indicates the control lock or child safety feature is active. Press and hold the lock button for several seconds to unlock the controls.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance display READY?</div>
+<div class="answer">
+READY is a normal status message indicating the appliance has completed startup checks and is ready for operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance display COOL DOWN?</div>
+<div class="answer">
+COOL DOWN indicates the appliance is actively reducing internal temperature after operation. Allow the cooling cycle to finish before disconnecting power.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance display RESET REQUIRED?</div>
+<div class="answer">
+RESET REQUIRED means the appliance detected a temporary fault. Unplug the unit for 5–10 minutes and restart it after reconnecting power.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance display SERVICE MODE?</div>
+<div class="answer">
+SERVICE MODE is a diagnostic function typically used by technicians. Exit the mode according to the user manual before normal operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance show PROTECT ACTIVE?</div>
+<div class="answer">
+PROTECT ACTIVE means the appliance has detected an unsafe condition such as overheating, overload, or airflow restriction. Allow cooling and inspect the appliance before restarting.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance display FAN RUNNING?</div>
+<div class="answer">
+FAN RUNNING is a normal message indicating the cooling fan is operating to regulate internal temperature. Allow the cycle to complete naturally.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance display CHECK LID?</div>
+<div class="answer">
+CHECK LID indicates the lid is not installed, aligned, or locked correctly. Remove and reinstall the lid, ensuring it locks securely into position.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance display CHECK POT?</div>
+<div class="answer">
+CHECK POT means the cooking pot or container is missing, improperly installed, or not detected by the appliance. Reinsert the pot securely and restart.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance display WAIT?</div>
+<div class="answer">
+WAIT indicates the appliance is processing commands, stabilizing temperature, or preparing for operation. Allow the process to finish before pressing additional buttons.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Ninja appliance keep restarting?</div>
+<div class="answer">
+Repeated restarts may indicate unstable power supply, overheating protection activation, or an internal control board issue. Check power stability and allow the appliance to cool completely.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Ninja appliance?</div>
+<div class="answer">
+Turn off and unplug the appliance for 10–15 minutes. Reconnect power, verify all components are correctly installed, and restart the unit.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I contact Ninja support?</div>
+<div class="answer">
+Contact support if system messages repeatedly appear, the appliance will not reset, shuts down unexpectedly, or shows signs of overheating, electrical faults, or component failure.
+</div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> System messages indicate safety or operational states. If errors repeat frequently, the appliance may require professional inspection.
+<strong>Important:</strong> System messages are designed to protect the appliance and user. If messages continue after troubleshooting, discontinue use and contact an authorized Ninja service center for diagnosis and repair.
 </div>
 
-</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 

@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Westinghouse System Messages Guide</title>
+
+<title>Westinghouse System Messages Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Westinghouse System Messages error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Westinghouse System Messages Error Codes & Troubleshooting Guide",
+  "description": "Complete Westinghouse System Messages error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -92,132 +188,476 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Westinghouse System Messages</h1>
+<h1>Westinghouse System Messages Error Codes</h1>
 
-<p class="subtitle">
-<strong>Meaning & Troubleshooting Guide</strong>
+<p class="subtitle"><strong>Complete Westinghouse System Messages Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Westinghouse System Messages error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
-
-<!-- ================= CONTROL LOCK ================= -->
-<div class="section-title">Control Lock & Safety</div>
 
 <div class="grid">
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">LOC</div>
 <div class="title">Control Lock Active</div>
 <ul class="steps">
 <li>Press and hold the lock button for 3–5 seconds.</li>
-<li>Check if control panel is responding.</li>
-<li>Clean keypad surface for moisture or dirt.</li>
-<li>Reset power if lock does not clear.</li>
+<li>Check if the control panel responds normally.</li>
+<li>Clean keypad surface for moisture, grease, or dirt.</li>
+<li>Perform a power reset if lock does not clear.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= TEMPERATURE ================= -->
-<div class="section-title">Temperature & Safety Warnings</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">HOT</div>
 <div class="title">Overheat Warning</div>
 <ul class="steps">
-<li>Allow appliance to cool completely before use.</li>
-<li>Check ventilation and airflow paths.</li>
-<li>Clean filters or cooling components.</li>
-<li>Avoid continuous high-load operation.</li>
+<li>Allow appliance to cool completely before restarting.</li>
+<li>Check ventilation openings for blockage.</li>
+<li>Clean filters, fans, or cooling components.</li>
+<li>Avoid extended high-load operation.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= POWER ================= -->
-<div class="section-title">Power Messages</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">PF</div>
 <div class="title">Power Failure Detected</div>
 <ul class="steps">
-<li>Check household power supply and breaker.</li>
-<li>Reset appliance by unplugging for 5–10 minutes.</li>
-<li>Reconfigure settings after restart.</li>
-<li>Use voltage stabilizer if fluctuations occur.</li>
+<li>Check household power supply and circuit breaker.</li>
+<li>Unplug appliance for 5–10 minutes to reset.</li>
+<li>Restore settings after power stabilizes.</li>
+<li>Use a voltage stabilizer if fluctuations continue.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= SYSTEM ERROR ================= -->
-<div class="section-title">System Errors</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">ERR</div>
 <div class="title">General System Error</div>
 <ul class="steps">
-<li>Perform a full power reset.</li>
-<li>Check wiring and internal connections.</li>
-<li>Look for additional fault codes.</li>
-<li>Replace control board if error persists.</li>
+<li>Perform a full power reset of the appliance.</li>
+<li>Inspect internal wiring and connections.</li>
+<li>Check for additional error codes on display.</li>
+<li>Replace control board if issue persists.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= RESET ================= -->
-<div class="section-title">System Reset</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">RESET</div>
 <div class="title">System Restart Required</div>
 <ul class="steps">
-<li>Turn off appliance and unplug for several minutes.</li>
-<li>Restart system after reset cycle.</li>
-<li>Check if message reappears.</li>
+<li>Turn off appliance and unplug for 5–10 minutes.</li>
+<li>Reconnect power and restart system.</li>
+<li>Check if error message returns.</li>
 <li>Inspect control board if repeated resets occur.</li>
 </ul>
 </div>
 
-</div>
-
-<!-- ================= COOLING ================= -->
-<div class="section-title">Cooling Cycle</div>
-
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">COOL</div>
 <div class="title">Cooling Cycle Active</div>
 <ul class="steps">
-<li>Allow cycle to complete normally.</li>
-<li>Do not interrupt operation.</li>
-<li>Ensure proper ventilation around unit.</li>
-<li>System will return to normal automatically.</li>
+<li>Allow cooling cycle to complete normally.</li>
+<li>Do not interrupt operation mid-cycle.</li>
+<li>Ensure airflow around appliance is not blocked.</li>
+<li>System will return to normal operation automatically.</li>
 </ul>
 </div>
 
+<!-- ================= ADDITIONAL WESTINGHOUSE SYSTEM CODES ================= -->
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E5</div>
+<div class="title">Temperature Detection Fault</div>
+<ul class="steps">
+<li>Allow unit to reach proper operating temperature.</li>
+<li>Check temperature sensor connection and stability.</li>
+<li>Ensure airflow is not blocked by stored items.</li>
+<li>Restart after 10–15 minutes.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E6</div>
+<div class="title">Sensor Communication Failure</div>
+<ul class="steps">
+<li>Inspect sensor wiring harness for damage or looseness.</li>
+<li>Check connectors for corrosion or moisture.</li>
+<li>Reset appliance power cycle.</li>
+<li>Replace sensor or PCB if fault continues.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E7</div>
+<div class="title">Fan Motor Fault</div>
+<ul class="steps">
+<li>Check fan blades for obstruction or ice buildup.</li>
+<li>Inspect wiring to fan motor.</li>
+<li>Test fan operation directly.</li>
+<li>Replace fan motor if not running properly.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E8</div>
+<div class="title">Heating Element Failure</div>
+<ul class="steps">
+<li>Test heating element continuity with multimeter.</li>
+<li>Inspect wiring for burn marks or looseness.</li>
+<li>Check relay or control output signal.</li>
+<li>Replace heating element if defective.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E9</div>
+<div class="title">Door Switch Fault</div>
+<ul class="steps">
+<li>Ensure door is fully closed and latched.</li>
+<li>Inspect door switch alignment and wiring.</li>
+<li>Test switch continuity.</li>
+<li>Replace door switch if faulty.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E10</div>
+<div class="title">Control Board Communication Error</div>
+<ul class="steps">
+<li>Perform full power reset (unplug 5–10 minutes).</li>
+<li>Check wiring between control modules.</li>
+<li>Inspect connectors for corrosion or looseness.</li>
+<li>Replace main PCB if issue persists.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E11</div>
+<div class="title">Low Voltage / Power Instability</div>
+<ul class="steps">
+<li>Check household voltage supply stability.</li>
+<li>Avoid using extension cords or shared outlets.</li>
+<li>Inspect power plug and socket condition.</li>
+<li>Use voltage regulator if needed.</li>
+</ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E12</div>
+<div class="title">Overload Protection Activated</div>
+<ul class="steps">
+<li>Turn off appliance and allow system to rest.</li>
+<li>Remove excessive load or blockage inside unit.</li>
+<li>Check motor or compressor strain.</li>
+<li>Restart after cooling period.</li>
+</ul>
+</div></div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Westinghouse system display error codes or messages?</div>
+<div class="answer">
+Westinghouse system messages usually indicate faults in temperature sensors, heating or cooling systems, airflow blockage, motor or compressor issues, door switch errors, or control board communication problems. Restart the unit and check the related components if the message persists.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Westinghouse system stop working suddenly?</div>
+<div class="answer">
+Sudden shutdowns may be caused by overheating protection, power supply instability, faulty sensors, blocked airflow, or internal electronic faults. Turn off the appliance, allow it to stabilize, then restart after checking ventilation and power.
+</div>
+</div>
+
+<!-- ================= TEMPERATURE ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Westinghouse system not maintaining correct temperature?</div>
+<div class="answer">
+Temperature issues may be caused by faulty thermistors, blocked airflow, dirty coils, or control board errors. Ensure proper ventilation and inspect sensors for damage or incorrect readings.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Westinghouse system overheating?</div>
+<div class="answer">
+Overheating is commonly caused by restricted airflow, dirty components, failing fans, or malfunctioning temperature sensors. Allow the unit to cool and clean ventilation areas before restarting.
+</div>
+</div>
+
+<!-- ================= DEFROST / AIRFLOW ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is ice or blockage building up in my Westinghouse system?</div>
+<div class="answer">
+Ice or blockage may be caused by defrost system failure, door seal leaks, blocked vents, or sensor issues. Inspect seals, airflow paths, and defrost components.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is airflow weak or inconsistent in my Westinghouse system?</div>
+<div class="answer">
+Weak airflow may result from clogged vents, failing fan motors, dust buildup, or obstruction inside ducts. Clean airflow paths and check fan operation.
+</div>
+</div>
+
+<!-- ================= MOTOR / COMPRESSOR / HEATING ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Westinghouse system making unusual noises?</div>
+<div class="answer">
+Unusual noises may come from fans, compressor operation, loose parts, or vibration issues. Inspect internal components and ensure nothing is obstructing moving parts.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is the compressor or motor not running?</div>
+<div class="answer">
+This may be caused by start relay failure, overload protection activation, wiring issues, or control board faults. Check power supply and restart after a short reset.
+</div>
+</div>
+
+<!-- ================= SENSOR ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Westinghouse system show sensor errors?</div>
+<div class="answer">
+Sensor errors are usually caused by faulty thermistors, disconnected wiring, moisture damage, or control board communication faults. Inspect connections and test sensor resistance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why are readings inaccurate or inconsistent?</div>
+<div class="answer">
+Inconsistent readings may be caused by sensor calibration issues, aging components, or airflow problems affecting temperature detection.
+</div>
+</div>
+
+<!-- ================= DOOR / SAFETY ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Westinghouse system show a door or safety error?</div>
+<div class="answer">
+Door or safety errors occur when the door switch is faulty, misaligned, or not fully engaged. Check door alignment and inspect the latch mechanism.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my system beeping or showing an open-door warning?</div>
+<div class="answer">
+This usually happens when the door is not fully closed, the seal is damaged, or the door switch is not detecting closure properly.
+</div>
+</div>
+
+<!-- ================= POWER ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Westinghouse system keep restarting or losing power?</div>
+<div class="answer">
+Power interruptions may be caused by unstable voltage, loose wiring, faulty outlet, or control board issues. Avoid extension cords and check power stability.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Westinghouse system show a general error message?</div>
+<div class="answer">
+General errors usually indicate temporary system glitches or communication failures between control components. A full reset often resolves the issue.
+</div>
+</div>
+
+<!-- ================= RESET ================= -->
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset Westinghouse system messages?</div>
+<div class="answer">
+Turn off the appliance, unplug it for 5–10 minutes, then reconnect power. This clears temporary faults and resets the control system.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I service my Westinghouse system?</div>
+<div class="answer">
+Service is recommended if error messages persist, cooling or heating fails, unusual noises continue, or the system repeatedly shuts down after resets.
+</div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> If system messages persist frequently, disconnect power and contact a certified Westinghouse technician.
+<strong>Important:</strong> Westinghouse system messages are designed to protect key components such as sensors, motors, compressors, fans, heating elements, airflow systems, door switches, and control boards. If problems continue after troubleshooting, disconnect power and contact a qualified appliance technician.
 </div>
 
-</div>
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 
+
+

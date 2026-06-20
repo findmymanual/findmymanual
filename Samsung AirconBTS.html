@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samsung Air Conditioner Troubleshooting Guide</title>
+
+<title>Samsung Air Conditioner Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Samsung Air Conditioner error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Samsung Air Conditioner Error Codes & Troubleshooting Guide",
+  "description": "Complete Samsung Air Conditioner error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -27,6 +123,9 @@ h1{
     text-align:center;
     color:#666;
     margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
 }
 
 .subtitle{
@@ -35,22 +134,20 @@ h1{
     margin-bottom:30px;
 }
 
-.section{
+.section-title{
     margin-top:40px;
-}
-
-.section h2{
+    font-size:20px;
+    font-weight:bold;
     border-left:5px solid #e60012;
     padding-left:10px;
-    font-size:20px;
     color:#444;
-    margin-bottom:20px;
 }
 
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
+    margin-top:20px;
 }
 
 .card{
@@ -67,10 +164,10 @@ h1{
 }
 
 .code{
-    font-size:24px;
+    font-size:26px;
     font-weight:bold;
-    color:#e60012;
-    margin-bottom:8px;
+    color:#4e6e81;
+    margin-bottom:10px;
 }
 
 .title{
@@ -91,281 +188,534 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Samsung Air Conditioner Troubleshooting Guide</h1>
-<p class="subtitle"><strong>Error Codes & Repair Instructions</strong></p>
+<h1>Samsung Air Conditioner Error Codes</h1>
 
-<!-- ================= COMMUNICATION & PCB ================= -->
-<div class="section">
-<h2>Communication & PCB Errors</h2>
+<p class="subtitle"><strong>Complete Samsung Air Conditioner Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Samsung Air Conditioner error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
+
 <div class="grid">
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E1</div>
 <div class="title">Indoor/Outdoor Communication Error</div>
 <ul class="steps">
 <li>Turn OFF power for 5–10 minutes.</li>
-<li>Check communication wiring between units.</li>
-<li>Inspect PCB connectors.</li>
-<li>Restart system.</li>
+<li>Check communication wiring between indoor and outdoor units.</li>
+<li>Inspect PCB connectors for looseness or corrosion.</li>
+<li>Restart system after reconnection.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E101</div>
 <div class="title">Indoor PCB Error</div>
 <ul class="steps">
 <li>Reset power supply.</li>
-<li>Inspect indoor control board.</li>
-<li>Check for burnt components.</li>
-<li>Replace PCB if needed.</li>
+<li>Inspect indoor control board for damage.</li>
+<li>Check for burnt components or traces.</li>
+<li>Replace PCB if issue persists.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E237-1</div>
 <div class="title">Outdoor PCB Communication Failure</div>
 <ul class="steps">
-<li>Check outdoor PCB wiring.</li>
-<li>Inspect signal cable.</li>
-<li>Restart both units.</li>
-<li>Replace PCB if necessary.</li>
+<li>Check outdoor PCB wiring harness.</li>
+<li>Inspect signal cable integrity.</li>
+<li>Restart both indoor and outdoor units.</li>
+<li>Replace PCB if communication fails.</li>
 </ul>
 </div>
 
-</div>
-</div>
-
-<!-- ================= FAN MOTOR ================= -->
-<div class="section">
-<h2>Fan Motor Errors</h2>
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E154</div>
 <div class="title">Fan Motor Error</div>
 <ul class="steps">
-<li>Check fan blade for blockage.</li>
-<li>Inspect motor wiring.</li>
-<li>Clean dust buildup.</li>
-<li>Replace motor if faulty.</li>
+<li>Check fan blade for obstruction.</li>
+<li>Inspect motor wiring connections.</li>
+<li>Clean dust buildup from fan assembly.</li>
+<li>Replace motor if operation is abnormal.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E201</div>
 <div class="title">Indoor Fan Motor Error</div>
 <ul class="steps">
-<li>Check indoor blower motor.</li>
-<li>Inspect capacitor.</li>
-<li>Clean air filter.</li>
-<li>Replace motor if needed.</li>
+<li>Check blower motor rotation.</li>
+<li>Inspect capacitor condition.</li>
+<li>Clean air filter and indoor unit.</li>
+<li>Replace motor if failure continues.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E202</div>
 <div class="title">Outdoor Fan Motor Error</div>
 <ul class="steps">
 <li>Check outdoor fan rotation.</li>
-<li>Inspect wiring connection.</li>
-<li>Remove debris.</li>
-<li>Replace motor if abnormal.</li>
+<li>Inspect wiring and connector pins.</li>
+<li>Remove debris around fan blades.</li>
+<li>Replace motor if not functioning.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">C404</div>
-<div class="title">Outdoor Fan Error</div>
+<div class="title">Outdoor Fan Abnormal Operation</div>
 <ul class="steps">
-<li>Inspect fan blades.</li>
-<li>Check motor capacitor.</li>
-<li>Clean condenser area.</li>
+<li>Inspect fan blades for damage.</li>
+<li>Check capacitor performance.</li>
+<li>Clean condenser coil area.</li>
 <li>Replace fan motor if needed.</li>
 </ul>
 </div>
 
-</div>
-</div>
-
-<!-- ================= SENSOR ERRORS ================= -->
-<div class="section">
-<h2>Sensor & Temperature Errors</h2>
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">C101</div>
 <div class="title">Temperature Sensor Error</div>
 <ul class="steps">
-<li>Check indoor thermistor.</li>
-<li>Inspect wiring connection.</li>
-<li>Test sensor resistance.</li>
-<li>Replace sensor if faulty.</li>
+<li>Check indoor thermistor connection.</li>
+<li>Inspect wiring harness.</li>
+<li>Test sensor resistance values.</li>
+<li>Replace sensor if readings are abnormal.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E128</div>
 <div class="title">Indoor Temperature Sensor Failure</div>
 <ul class="steps">
-<li>Inspect sensor cable.</li>
-<li>Clean evaporator area.</li>
-<li>Check PCB connection.</li>
-<li>Replace sensor if needed.</li>
+<li>Inspect sensor cable routing.</li>
+<li>Clean evaporator coil area.</li>
+<li>Check PCB connector integrity.</li>
+<li>Replace sensor module if needed.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">C105</div>
 <div class="title">Indoor Coil Sensor Abnormality</div>
 <ul class="steps">
 <li>Check coil sensor wiring.</li>
-<li>Inspect evaporator coil.</li>
-<li>Clean dust buildup.</li>
+<li>Inspect evaporator coil condition.</li>
+<li>Remove dust and ice buildup.</li>
 <li>Replace sensor if faulty.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">C417</div>
 <div class="title">Outdoor Temperature Sensor Error</div>
 <ul class="steps">
-<li>Inspect outdoor sensor wiring.</li>
-<li>Check sensor placement.</li>
-<li>Clean outdoor unit.</li>
-<li>Replace sensor if needed.</li>
+<li>Inspect outdoor sensor connection.</li>
+<li>Check sensor placement position.</li>
+<li>Clean outdoor unit surroundings.</li>
+<li>Replace sensor if readings fail.</li>
 </ul>
 </div>
 
-</div>
-</div>
-
-<!-- ================= COMPRESSOR ================= -->
-<div class="section">
-<h2>Compressor & Refrigeration Errors</h2>
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E203</div>
 <div class="title">Compressor Failure</div>
 <ul class="steps">
-<li>Check compressor wiring.</li>
-<li>Inspect capacitor and relay.</li>
-<li>Verify power supply.</li>
-<li>Replace compressor if needed.</li>
+<li>Check compressor wiring connections.</li>
+<li>Inspect relay and capacitor.</li>
+<li>Verify stable power supply.</li>
+<li>Replace compressor if no operation.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E251</div>
 <div class="title">Compressor Overheating</div>
 <ul class="steps">
-<li>Turn OFF system.</li>
-<li>Check airflow around outdoor unit.</li>
-<li>Clean condenser coil.</li>
-<li>Call technician if repeated.</li>
+<li>Turn OFF system immediately.</li>
+<li>Clean condenser coil and vents.</li>
+<li>Ensure outdoor airflow is not blocked.</li>
+<li>Allow cooling before restart.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E440</div>
 <div class="title">Compressor Overload</div>
 <ul class="steps">
-<li>Check refrigerant level.</li>
-<li>Inspect condenser coil.</li>
-<li>Ensure proper ventilation.</li>
-<li>Restart system.</li>
+<li>Check refrigerant pressure level.</li>
+<li>Inspect condenser coil condition.</li>
+<li>Ensure proper ventilation space.</li>
+<li>Restart system after cooldown.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E422</div>
 <div class="title">Low Refrigerant Detected</div>
 <ul class="steps">
-<li>Check for refrigerant leaks.</li>
-<li>Inspect piping system.</li>
-<li>Do not run unit continuously.</li>
-<li>Call HVAC technician.</li>
+<li>Check system for leaks.</li>
+<li>Inspect copper piping joints.</li>
+<li>Avoid continuous operation.</li>
+<li>Call HVAC technician for recharge.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E320</div>
 <div class="title">Refrigerant Leak Detected</div>
 <ul class="steps">
 <li>Turn OFF unit immediately.</li>
-<li>Check oil residue on pipes.</li>
-<li>Inspect coil for damage.</li>
-<li>Schedule repair service.</li>
+<li>Check oil residue on piping.</li>
+<li>Inspect evaporator and condenser coils.</li>
+<li>Schedule professional repair service.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E441</div>
 <div class="title">High Pressure Protection</div>
 <ul class="steps">
-<li>Clean condenser coil.</li>
-<li>Check airflow blockage.</li>
-<li>Ensure outdoor ventilation.</li>
-<li>Restart after cooling.</li>
+<li>Clean condenser coil thoroughly.</li>
+<li>Remove airflow obstructions.</li>
+<li>Ensure outdoor ventilation is open.</li>
+<li>Restart after system stabilizes.</li>
 </ul>
 </div>
 
-</div>
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E451</div>
+<div class="title">Low Pressure Protection</div>
+<ul class="steps">
+<li>Check refrigerant level.</li>
+<li>Inspect for gas leaks.</li>
+<li>Verify expansion valve operation.</li>
+<li>Call technician if pressure remains low.</li>
+</ul>
 </div>
 
-<!-- ================= SYSTEM ================= -->
-<div class="section">
-<h2>System Errors</h2>
-<div class="grid">
-
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E162</div>
 <div class="title">EEPROM Error</div>
 <ul class="steps">
 <li>Reset power supply.</li>
-<li>Inspect control board.</li>
-<li>Check firmware corruption.</li>
-<li>Replace PCB if needed.</li>
+<li>Inspect main control board.</li>
+<li>Check for firmware corruption.</li>
+<li>Replace PCB if necessary.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E237</div>
 <div class="title">Outdoor Communication Issue</div>
 <ul class="steps">
-<li>Check communication cable.</li>
+<li>Check communication cable integrity.</li>
 <li>Inspect PCB connectors.</li>
-<li>Restart system.</li>
-<li>Replace board if needed.</li>
+<li>Restart system completely.</li>
+<li>Replace board if error persists.</li>
 </ul>
 </div>
 
-<div class="card">
+<div class="card" onclick="toggleCard(this)">
 <div class="code">E237-1</div>
 <div class="title">Outdoor Communication Failure</div>
 <ul class="steps">
-<li>Inspect wiring harness.</li>
-<li>Check PCB signal line.</li>
-<li>Reset system.</li>
-<li>Replace PCB if needed.</li>
+<li>Inspect wiring harness connections.</li>
+<li>Check signal line continuity.</li>
+<li>Reset system power cycle.</li>
+<li>Replace PCB if communication fails.</li>
 </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<div class="code">E556</div>
+<div class="title">System Control Error</div>
+<ul class="steps">
+<li>Power cycle the unit.</li>
+<li>Check main PCB condition.</li>
+<li>Inspect firmware integrity.</li>
+<li>Replace control board if required.</li>
+</ul>
+</div>
+
+</div>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Air Conditioner show ERR or system error messages?</div>
+<div class="answer">
+ERR usually indicates a system fault such as communication failure, sensor issues, power fluctuation, or PCB malfunction. Turn off the unit, switch off the breaker for a few minutes, then restart. Check wiring connections and ensure stable power supply.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Air Conditioner stop working during operation?</div>
+<div class="answer">
+This is often caused by overheating protection, dirty filters, airflow blockage, or compressor protection mode. Turn off the unit, clean filters, ensure proper ventilation, and restart after cooling.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Air Conditioner not turn on?</div>
+<div class="answer">
+Check the circuit breaker, power outlet, and remote batteries. Ensure the indoor unit has power and the breaker is not tripped. If still unresponsive, reset the system.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Air Conditioner blow weak or no cold air?</div>
+<div class="answer">
+Weak cooling is usually caused by dirty filters, low refrigerant, blocked airflow, or incorrect temperature settings. Clean filters and ensure doors/windows are closed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Air Conditioner make unusual noises?</div>
+<div class="answer">
+Noise may come from loose fan blades, debris in the outdoor unit, or compressor vibration. Inspect both indoor and outdoor units and remove obstructions.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Air Conditioner smell bad?</div>
+<div class="answer">
+Bad odors are usually caused by mold buildup in filters or drain pan. Clean filters, wash removable parts, and ensure proper drainage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Air Conditioner leak water?</div>
+<div class="answer">
+Water leakage is often caused by clogged drain pipes, dirty filters, or improper installation. Check drainage hose and clean the unit.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Air Conditioner freeze up?</div>
+<div class="answer">
+Ice buildup may be caused by low refrigerant, restricted airflow, or dirty evaporator coils. Turn off the unit and allow it to thaw before cleaning.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Air Conditioner keep turning on and off?</div>
+<div class="answer">
+This may be caused by thermostat issues, unstable power supply, or compressor protection cycling. Check settings and ensure stable voltage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Air Conditioner outdoor unit not work?</div>
+<div class="answer">
+Check power supply to the outdoor unit, capacitor condition, and wiring connections. Compressor protection may also delay startup.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Samsung Air Conditioner show a blinking light?</div>
+<div class="answer">
+A blinking light indicates a fault code or protection mode. Restart the unit and check filters, sensors, and power supply.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Samsung Air Conditioner?</div>
+<div class="answer">
+Turn off the air conditioner, switch off the breaker for 5–10 minutes, then turn it back on. This clears temporary system errors.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is airflow weak from my Samsung Air Conditioner?</div>
+<div class="answer">
+Weak airflow is usually caused by clogged filters, blocked vents, or fan issues. Clean filters and ensure nothing is obstructing airflow.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I service my Samsung Air Conditioner?</div>
+<div class="answer">
+Service is recommended if cooling performance drops, unusual noises occur, water leaks persist, or error codes appear repeatedly.
 </div>
 </div>
 
 <div class="note">
-<strong>Important:</strong> If the error persists after troubleshooting, disconnect power immediately and contact a qualified HVAC technician.
+<strong>Important:</strong> Samsung Air Conditioner system messages are designed to protect the compressor and internal components. If issues persist after troubleshooting, stop using the unit and contact an authorized Samsung service center for repair.
 </div>
 
-</div>
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
-</html>
+</html> 

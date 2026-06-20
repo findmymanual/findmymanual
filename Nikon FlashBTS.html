@@ -3,7 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nikon Flash Error Codes Guide</title>
+
+<title>Nikon Flash Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Nikon Flash error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Nikon Flash Error Codes & Troubleshooting Guide",
+  "description": "Complete Nikon Flash error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
@@ -30,7 +126,6 @@ h1{
     background: #1f3b4d;
     color: white;
     padding: 25px;
-
 }
 
 .subtitle{
@@ -69,7 +164,7 @@ h1{
 }
 
 .code{
-    font-size:22px;
+    font-size:26px;
     font-weight:bold;
     color:#4e6e81;
     margin-bottom:10px;
@@ -93,7 +188,129 @@ h1{
     padding:15px;
     border-radius:6px;
 }
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
 </style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
+}
+</style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
@@ -102,69 +319,292 @@ h1{
 
 <h1>Nikon Flash Error Codes</h1>
 
-<p class="subtitle">
-<strong>Flash System Diagnostic & Troubleshooting Guide</strong>
+<p class="subtitle"><strong>Complete Nikon Flash Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Nikon Flash error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
 </p>
 
-<!-- ================= FLASH UNIT ================= -->
-<div class="section-title">Flash Unit Errors</div>
-
 <div class="grid">
 
-<div class="card">
-<div class="code">FLSH ERR</div>
-<div class="title">Flash Unit Malfunction</div>
-<ul class="steps">
-<li>Turn camera and flash off and on.</li>
-<li>Reattach external flash securely.</li>
-<li>Check flash battery or power source.</li>
-<li>Test with another flash unit if available.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">FLSH ERR</div>
+  <div class="title">Flash Unit Malfunction</div>
+  <ul class="steps">
+    <li>Turn camera and flash off, then restart both devices.</li>
+    <li>Reattach external flash securely to the hot shoe.</li>
+    <li>Check flash battery or external power pack.</li>
+    <li>Test with another compatible flash unit.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">TTL ERR</div>
+  <div class="title">TTL Exposure Communication Error</div>
+  <ul class="steps">
+    <li>Reset flash exposure compensation settings.</li>
+    <li>Verify TTL mode compatibility with camera model.</li>
+    <li>Clean hot shoe contacts on both camera and flash.</li>
+    <li>Switch to manual flash mode for testing.</li>
+  </ul>
 </div>
 
-<!-- ================= TTL ================= -->
-<div class="section-title">Exposure Control Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">TTL ERR</div>
-<div class="title">Flash Exposure Error</div>
-<ul class="steps">
-<li>Reset flash exposure settings.</li>
-<li>Check TTL mode compatibility.</li>
-<li>Clean hot shoe contacts.</li>
-<li>Test in manual flash mode.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">HOT SHOE</div>
+  <div class="title">Flash Connection Failure</div>
+  <ul class="steps">
+    <li>Remove flash unit and reattach firmly.</li>
+    <li>Clean hot shoe contacts using a dry microfiber cloth.</li>
+    <li>Ensure locking pin is fully engaged.</li>
+    <li>Try another compatible Nikon flash unit.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">OVERHEAT</div>
+  <div class="title">Flash Overheat Protection</div>
+  <ul class="steps">
+    <li>Allow flash to cool down completely.</li>
+    <li>Avoid continuous rapid firing of flash bursts.</li>
+    <li>Lower flash power output settings.</li>
+    <li>Wait for thermal warning to clear before reuse.</li>
+  </ul>
 </div>
 
-<!-- ================= HOT SHOE ================= -->
-<div class="section-title">Connection Errors</div>
-
-<div class="grid">
-
-<div class="card">
-<div class="code">HOT SHOE</div>
-<div class="title">Flash Connection Issue</div>
-<ul class="steps">
-<li>Remove and reattach flash unit.</li>
-<li>Clean hot shoe contacts gently.</li>
-<li>Ensure flash is properly locked in place.</li>
-<li>Try different compatible flash unit.</li>
-</ul>
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">LOW BATT</div>
+  <div class="title">Flash Battery Low</div>
+  <ul class="steps">
+    <li>Replace or recharge flash batteries immediately.</li>
+    <li>Check battery contacts for corrosion or dirt.</li>
+    <li>Use recommended battery type for Nikon flash.</li>
+    <li>Test flash with fresh batteries.</li>
+  </ul>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">ZOOM ERR</div>
+  <div class="title">Flash Zoom Head Error</div>
+  <ul class="steps">
+    <li>Turn flash off and restart unit.</li>
+    <li>Check if zoom head is physically stuck.</li>
+    <li>Clean debris around flash head mechanism.</li>
+    <li>Service flash if zoom motor is faulty.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">COMM ERR</div>
+  <div class="title">Flash Communication Error</div>
+  <ul class="steps">
+    <li>Turn camera and flash off and on again.</li>
+    <li>Clean all electrical contacts on hot shoe.</li>
+    <li>Check firmware compatibility between devices.</li>
+    <li>Test flash on another Nikon camera body.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E999</div>
+  <div class="title">System Flash Error</div>
+  <ul class="steps">
+    <li>Turn off camera and remove battery briefly.</li>
+    <li>Reinstall battery and restart system.</li>
+    <li>Remove flash unit and test camera alone.</li>
+    <li>Update camera firmware if error persists.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">SYNC ERR</div>
+  <div class="title">Flash Sync Failure</div>
+  <ul class="steps">
+    <li>Check shutter speed compatibility with flash sync.</li>
+    <li>Switch to standard sync mode settings.</li>
+    <li>Inspect hot shoe connection stability.</li>
+    <li>Test with slower shutter speed.</li>
+  </ul>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">MISFIRE</div>
+  <div class="title">Flash Misfire Detected</div>
+  <ul class="steps">
+    <li>Replace flash batteries or power source.</li>
+    <li>Check flash capacitor charge status.</li>
+    <li>Ensure proper mounting on camera.</li>
+    <li>Test flash in manual mode.</li>
+  </ul>
+</div></div>
+
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
+
+<!-- FAQ SECTION -->
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon Flash not turning on?</div>
+<div class="answer">
+Check battery installation and charge level. Clean battery contacts and ensure proper polarity. Try fresh batteries or a compatible power pack. If still unresponsive, inspect internal power circuitry.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon Flash not firing during capture?</div>
+<div class="answer">
+Ensure flash is enabled in camera settings. Check hot shoe connection and flash lock position. Verify sync mode is correctly set and test with manual flash mode.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon Flash recycle time take too long?</div>
+<div class="answer">
+Low battery power or overheating may slow recycle time. Replace batteries, allow cooling time, and reduce continuous high-power flash usage.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon Flash overexposing photos?</div>
+<div class="answer">
+Adjust flash compensation settings. Use TTL mode correctly or switch to manual power control. Check subject distance and diffusion settings.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon Flash underexposing images?</div>
+<div class="answer">
+Increase flash power or ISO settings. Ensure flash head is not blocked or bounced incorrectly. Check TTL metering accuracy and lens communication.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon Flash display FLSH ERR?</div>
+<div class="answer">
+Turn flash off and on again. Reattach flash securely to hot shoe. Check for battery issues or try resetting flash settings.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon Flash show TTL ERR?</div>
+<div class="answer">
+Clean hot shoe contacts and ensure TTL compatibility with the camera. Reset flash exposure settings and test in manual mode.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon Flash show HOT SHOE error?</div>
+<div class="answer">
+Remove and reattach flash unit securely. Clean metal contacts gently and ensure proper locking into the camera hot shoe mount.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon Flash not syncing with the camera?</div>
+<div class="answer">
+Check sync mode settings (front/rear curtain). Ensure shutter speed is within flash sync range. Inspect wireless or trigger settings if used.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon Flash overheating?</div>
+<div class="answer">
+Continuous firing may trigger thermal protection. Allow flash to cool down and reduce rapid consecutive flashes to prevent overheating.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon Flash not working in wireless mode?</div>
+<div class="answer">
+Check commander and slave mode settings. Ensure line-of-sight or radio signal connection is stable. Re-pair flash units if necessary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon Flash producing inconsistent brightness?</div>
+<div class="answer">
+Battery power fluctuations or faulty TTL metering may cause inconsistency. Replace batteries and reset flash exposure settings.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why does my Nikon Flash not zoom properly?</div>
+<div class="answer">
+Check flash zoom head settings (auto/manual). Clean internal motor mechanism and reset flash configuration.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why is my Nikon Flash making unusual noises?</div>
+<div class="answer">
+Motor or capacitor charging sounds are normal, but loud or irregular noises may indicate internal component wear or failure.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I reset my Nikon Flash?</div>
+<div class="answer">
+Turn off the flash, remove batteries for 5–10 minutes, then reinstall and power on. Restore factory settings if needed.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Why do Nikon Flash problems keep coming back?</div>
+<div class="answer">
+Recurring issues may indicate failing capacitors, worn battery contacts, hot shoe damage, or firmware issues requiring service.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">When should I call a technician for my Nikon Flash?</div>
+<div class="answer">
+Seek professional service if the flash repeatedly fails to fire, shows persistent error codes, overheats excessively, or does not power on after troubleshooting.
+</div>
 </div>
 
 <div class="note">
-<strong>Note:</strong> Most flash errors are caused by poor contact alignment or incompatible flash settings.
+<strong>Important:</strong> If your Nikon Flash continues to malfunction after troubleshooting, stop using the device. Persistent faults may indicate high-voltage circuit failure, capacitor damage, communication errors, or hot shoe system failure. Continued use may cause further damage or safety risks. Contact an authorized Nikon service center for proper diagnosis and repair.
 </div>
 
-</div>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+
 
 </body>
 </html>

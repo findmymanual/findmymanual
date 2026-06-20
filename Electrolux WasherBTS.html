@@ -3,417 +3,587 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Electrolux Washer Codes Troubleshooting Guide</title>
+
+<title>Electrolux Washer Error Codes & Troubleshooting Guide</title>
+
+<meta name="description" content="Complete Electrolux Washer error codes list with CH troubleshooting steps and FAQ guide. Fix Bosch AC issues quickly and safely.">
+
+<!-- ✅ ARTICLE SCHEMA (FIXED) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Electrolux Washer Error Codes & Troubleshooting Guide",
+  "description": "Complete Electrolux Washer error codes with step-by-step troubleshooting guide for CH series faults.",
+  "author": {
+    "@type": "Organization",
+    "name": "Bosch Error Code Guide",
+    "@id": "https://findmymanual.live/lg-airconbts"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LG Error Code Guide",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://findmymanual.live/logo2.png"
+    }
+  },
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-25",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://findmymanual.live/lg-air-conditioner-error-codes"
+  }
+}
+</script>
+
+<!-- ✅ FAQ SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does LG AC error code CH 01 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CH 01 indicates a communication error between the indoor unit and system, usually caused by wiring issues or connection failure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I fix LG CH 03 error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check drain hose blockage, inspect drain pump, clean drain pan, and restart the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is LG CH 38 dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. CH 38 indicates a refrigerant leak. Turn off immediately and contact a technician."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can LG AC errors reset automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some errors reset after turning off power for 5–10 minutes and restarting the unit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my LG air conditioner keep showing error codes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes include sensor failure, dirty filters, wiring issues, or unstable power supply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a technician for LG AC errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call a technician if there is compressor failure, refrigerant leak, PCB issue, or repeated errors after reset."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+function toggleCard(card) {
+  card.classList.toggle("active");
+}
+</script>
 
 <style>
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin:0;
     padding:20px;
-    background:#f5f6f8;
+    background:#f5f5f5;
     color:#333;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     background:#fff;
-    padding:25px;
+    padding:30px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 h1{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
     text-align:center;
-    border-radius:8px;
+    color:#666;
     margin-bottom:10px;
-    
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
 }
 
-h2{
-    background:#1f3b4d;
-    color:#fff;
-    padding:20px;
+.subtitle{
     text-align:center;
-    border-radius:8px;
-    margin-bottom:10px;
-    
+    color:#666;
+    margin-bottom:30px;
 }
 
 .section-title{
     margin-top:40px;
-    font-size:22px;
+    font-size:20px;
     font-weight:bold;
-    border-left:5px solid #1f3b4d;
+    border-left:5px solid #e60012;
     padding-left:10px;
-    
+    color:#444;
 }
 
-.search-box{
-    width:100%;
-    padding:12px;
-    margin:20px 0;
-    border:1px solid #ccc;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    border:1px solid #4e6e81;
     border-radius:8px;
+    padding:20px;
+    background:#fafafa;
+    transition:0.3s;
 }
 
-.error-card{
-    border:1px solid #ddd;
-    border-radius:8px;
-    margin-bottom:10px;
-    overflow:hidden;
-}
-
-.error-toggle{
-    width:100%;
-    padding:15px;
-    background:#fff;
-    border:none;
-    text-align:left;
-    cursor:pointer;
-    font-size:16px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-.error-toggle:hover{
-    background:#f3f3f3;
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .code{
+    font-size:26px;
     font-weight:bold;
-    color:#1f3b4d;
-    margin-right:10px;
-    min-width:80px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    color:#4e6e81;
+    margin-bottom:10px;
 }
 
-.error-content{
-    display:none;
-    padding:15px;
-    background:#fafafa;
-    border-top:1px solid #eee;
-    
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
-.error-content ul{
-    padding-left:20px;
+.steps{
+    padding-left:18px;
+    line-height:1.6;
 }
 
 .note{
-    margin-top:25px;
-    padding:15px;
+    margin-top:30px;
     background:#fff3cd;
     border:1px solid #ffeeba;
+    padding:15px;
+    border-radius:6px;
+}
+
+.faq{
+    margin-top:40px;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-align:center;
+    color:#666;
+    margin-bottom:10px;
+    background: #1f3b4d;
+    color: white;
+    padding: 25px;
+ 
+}
+
+.faq-item{
+    margin-bottom:15px;
+    padding:15px;
+    background:#fafafa;
+    border:1px solid #ddd;
     border-radius:8px;
-    
+}
+
+.hidden-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.card.active .hidden-content {
+  display: block;
+}
+
+</style>
+
+<style>
+.card{
+  border:1px solid #4e6e81;
+  border-radius:8px;
+  padding:20px;
+  background:#fafafa;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.code{
+  font-size:26px;
+  font-weight:bold;
+  color:#4e6e81;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.steps{
+  padding-left:18px;
+  line-height:1.6;
+  margin-top:10px;
+  display:none;
+}
+
+.card.active .steps{
+  display:block;
 }
 </style>
+
+<style>
+/* 4 COLUMN LAYOUT */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:15px;
+}
+
+/* RESPONSIVE (important for mobile) */
+@media (max-width: 1200px){
+    .grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .grid{
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+
+/* SMALLER TEXT */
+.card{
+    padding:12px;
+    font-size:13px;
+}
+
+.code{
+    font-size:18px;
+}
+
+.title{
+    font-size:14px;
+    margin-top:6px;
+}
+
+.steps{
+    font-size:14px;
+    line-height:1.4;
+}
+</style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Electrolux Washer Error Codes & Troubleshooting Guide</h1>
+<h1>Electrolux Washer Error Codes</h1>
 
-<input type="text" class="search-box" placeholder="Search error code...">
+<p class="subtitle"><strong>Complete Electrolux Washer Guide</strong></p>
+
+<p style="max-width:800px;margin:0 auto 20px;text-align:center;">
+This guide explains all Electrolux Washer error codes (CH series) with simple troubleshooting steps to help you identify and fix common issues safely before calling a technician.
+</p>
 
 <div class="grid">
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E10</span> Water Fill Timeout / Low Water Pressure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check water supply valves are fully open.</li>
-<li>Inspect inlet hose for kinks or blockage.</li>
-<li>Clean inlet filter screen.</li>
-<li>Verify household water pressure is sufficient.</li>
-</ul>
-</div>
+<!-- E10 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E10</div>
+  <div class="title">Water Fill Timeout / Low Water Pressure</div>
+  <ul class="steps">
+    <li>Check water supply valves are fully open.</li>
+    <li>Inspect inlet hose for kinks or blockage.</li>
+    <li>Clean inlet filter screen.</li>
+    <li>Verify household water pressure is sufficient.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E11</span> Water Fill Too Slow</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check inlet hose for clogging or bending.</li>
-<li>Clean water inlet filter thoroughly.</li>
-<li>Ensure stable water pressure supply.</li>
-<li>Replace inlet valve if flow remains weak.</li>
-</ul>
-</div>
+<!-- E11 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E11</div>
+  <div class="title">Water Fill Too Slow</div>
+  <ul class="steps">
+    <li>Check inlet hose for clogging or bending.</li>
+    <li>Clean water inlet filter thoroughly.</li>
+    <li>Ensure stable water pressure supply.</li>
+    <li>Replace inlet valve if flow remains weak.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E12</span> Overflow Detected</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off water supply immediately.</li>
-<li>Inspect pressure switch for malfunction.</li>
-<li>Check inlet valve for sticking open.</li>
-<li>Replace water level sensor if necessary.</li>
-</ul>
-</div>
+<!-- E12 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E12</div>
+  <div class="title">Overflow Detected</div>
+  <ul class="steps">
+    <li>Turn off water supply immediately.</li>
+    <li>Inspect pressure switch for malfunction.</li>
+    <li>Check inlet valve for sticking open.</li>
+    <li>Replace water level sensor if necessary.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E20</span> Drain Problem</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check drain hose for blockage or kink.</li>
-<li>Clean pump filter thoroughly.</li>
-<li>Inspect drain pump for debris or obstruction.</li>
-<li>Ensure proper water flow through drainage system.</li>
-</ul>
-</div>
+<!-- E20 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E20</div>
+  <div class="title">Drain Problem</div>
+  <ul class="steps">
+    <li>Check drain hose for blockage or kink.</li>
+    <li>Clean pump filter thoroughly.</li>
+    <li>Inspect drain pump for debris or obstruction.</li>
+    <li>Ensure proper water flow through drainage system.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E21</span> Drain Timeout</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect drain hose and sink connection.</li>
-<li>Clean pump filter and impeller.</li>
-<li>Check drain pump operation.</li>
-<li>Replace pump if drainage remains slow.</li>
-</ul>
-</div>
+<!-- E21 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E21</div>
+  <div class="title">Drain Timeout</div>
+  <ul class="steps">
+    <li>Inspect drain hose and sink connection.</li>
+    <li>Clean pump filter and impeller.</li>
+    <li>Check drain pump operation.</li>
+    <li>Replace pump if drainage remains slow.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E22</span> Pump Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check drain pump wiring connections.</li>
-<li>Test pump motor resistance.</li>
-<li>Inspect for blockages inside pump housing.</li>
-<li>Replace drain pump if defective.</li>
-</ul>
-</div>
+<!-- E22 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E22</div>
+  <div class="title">Pump Failure</div>
+  <ul class="steps">
+    <li>Check drain pump wiring connections.</li>
+    <li>Test pump motor resistance.</li>
+    <li>Inspect for blockages inside pump housing.</li>
+    <li>Replace drain pump if defective.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E30</span> Door Lock Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check door latch alignment and condition.</li>
-<li>Inspect door lock wiring harness.</li>
-<li>Ensure door is fully closed and secured.</li>
-<li>Replace door lock assembly if needed.</li>
-</ul>
-</div>
+<!-- E30 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E30</div>
+  <div class="title">Door Lock Error</div>
+  <ul class="steps">
+    <li>Check door latch alignment and condition.</li>
+    <li>Inspect door lock wiring harness.</li>
+    <li>Ensure door is fully closed and secured.</li>
+    <li>Replace door lock assembly if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E31</span> Door Open During Cycle</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure door is properly closed.</li>
-<li>Check door switch sensor functionality.</li>
-<li>Inspect latch mechanism for damage.</li>
-<li>Replace door switch if faulty.</li>
-</ul>
-</div>
+<!-- E31 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E31</div>
+  <div class="title">Door Open During Cycle</div>
+  <ul class="steps">
+    <li>Ensure door is properly closed.</li>
+    <li>Check door switch sensor functionality.</li>
+    <li>Inspect latch mechanism for damage.</li>
+    <li>Replace door switch if faulty.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E40</span> Door Lock Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect door lock assembly.</li>
-<li>Check wiring connections for damage.</li>
-<li>Test lock mechanism operation.</li>
-<li>Replace door lock if it fails to engage.</li>
-</ul>
-</div>
+<!-- E40 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E40</div>
+  <div class="title">Door Lock Failure</div>
+  <ul class="steps">
+    <li>Inspect door lock assembly.</li>
+    <li>Check wiring connections for damage.</li>
+    <li>Test lock mechanism operation.</li>
+    <li>Replace door lock if it fails to engage.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E41</span> Door Sensor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check door sensor alignment.</li>
-<li>Inspect wiring for breaks or corrosion.</li>
-<li>Test sensor continuity.</li>
-<li>Replace sensor if readings are incorrect.</li>
-</ul>
-</div>
+<!-- E41 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E41</div>
+  <div class="title">Door Sensor Fault</div>
+  <ul class="steps">
+    <li>Check door sensor alignment.</li>
+    <li>Inspect wiring for breaks or corrosion.</li>
+    <li>Test sensor continuity.</li>
+    <li>Replace sensor if readings are incorrect.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E50</span> Motor Control Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reset washer power supply.</li>
-<li>Inspect motor wiring connections.</li>
-<li>Check control board output signals.</li>
-<li>Replace motor control board if needed.</li>
-</ul>
-</div>
+<!-- E50 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E50</div>
+  <div class="title">Motor Control Error</div>
+  <ul class="steps">
+    <li>Reset washer power supply.</li>
+    <li>Inspect motor wiring connections.</li>
+    <li>Check control board output signals.</li>
+    <li>Replace motor control board if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E51</span> Motor Triac Failure</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect control board for burnt components.</li>
-<li>Test motor resistance and operation.</li>
-<li>Check wiring harness condition.</li>
-<li>Replace control board if triac is faulty.</li>
-</ul>
-</div>
+<!-- E51 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E51</div>
+  <div class="title">Motor Triac Failure</div>
+  <ul class="steps">
+    <li>Inspect control board for burnt components.</li>
+    <li>Test motor resistance and operation.</li>
+    <li>Check wiring harness condition.</li>
+    <li>Replace control board if triac is faulty.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E52</span> Motor Overspeed Detected</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check tachometer sensor connection.</li>
-<li>Inspect motor belt or rotor condition.</li>
-<li>Ensure load is properly balanced.</li>
-<li>Replace motor sensor if readings are unstable.</li>
-</ul>
-</div>
+<!-- E52 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E52</div>
+  <div class="title">Motor Overspeed Detected</div>
+  <ul class="steps">
+    <li>Check tachometer sensor connection.</li>
+    <li>Inspect motor belt or rotor condition.</li>
+    <li>Ensure load is properly balanced.</li>
+    <li>Replace motor sensor if readings are unstable.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E53</span> Motor Speed Sensor Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect speed sensor wiring connections.</li>
-<li>Test tachometer output signal.</li>
-<li>Check for loose or damaged connectors.</li>
-<li>Replace motor sensor if defective.</li>
-</ul>
-</div>
+<!-- E53 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E53</div>
+  <div class="title">Motor Speed Sensor Fault</div>
+  <ul class="steps">
+    <li>Inspect speed sensor wiring connections.</li>
+    <li>Test tachometer output signal.</li>
+    <li>Check for loose or damaged connectors.</li>
+    <li>Replace motor sensor if defective.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E54</span> Motor Relay Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect relay on control board.</li>
-<li>Check for burnt or damaged PCB traces.</li>
-<li>Test relay switching function.</li>
-<li>Replace control board if relay fails.</li>
-</ul>
-</div>
+<!-- E54 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E54</div>
+  <div class="title">Motor Relay Error</div>
+  <ul class="steps">
+    <li>Inspect relay on control board.</li>
+    <li>Check for burnt or damaged PCB traces.</li>
+    <li>Test relay switching function.</li>
+    <li>Replace control board if relay fails.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E60</span> Heating System Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check heating element continuity.</li>
-<li>Inspect thermostat and wiring connections.</li>
-<li>Verify control board output.</li>
-<li>Replace heater if faulty.</li>
-</ul>
-</div>
+<!-- E60 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E60</div>
+  <div class="title">Heating System Error</div>
+  <ul class="steps">
+    <li>Check heating element continuity.</li>
+    <li>Inspect thermostat and wiring connections.</li>
+    <li>Verify control board output.</li>
+    <li>Replace heater if faulty.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E61</span> Temperature Heating Error</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Inspect temperature sensor wiring.</li>
-<li>Test heater operation during cycle.</li>
-<li>Check for scaling on heating element.</li>
-<li>Replace sensor or heater if needed.</li>
-</ul>
-</div>
+<!-- E61 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E61</div>
+  <div class="title">Temperature Heating Error</div>
+  <ul class="steps">
+    <li>Inspect temperature sensor wiring.</li>
+    <li>Test heater operation during cycle.</li>
+    <li>Check for scaling on heating element.</li>
+    <li>Replace sensor or heater if needed.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E62</span> Overheating Protection Triggered</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Allow washer to cool down completely.</li>
-<li>Check water circulation and load balance.</li>
-<li>Inspect heating element for failure.</li>
-<li>Replace thermostat if overheating persists.</li>
-</ul>
-</div>
+<!-- E62 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E62</div>
+  <div class="title">Overheating Protection Triggered</div>
+  <ul class="steps">
+    <li>Allow washer to cool down completely.</li>
+    <li>Check water circulation and load balance.</li>
+    <li>Inspect heating element for failure.</li>
+    <li>Replace thermostat if overheating persists.</li>
+  </ul>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span><span class="code">E90</span> Electronic Control Fault</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Reset power supply for 5–10 minutes.</li>
-<li>Inspect control board connections.</li>
-<li>Check for moisture or corrosion on PCB.</li>
-<li>Replace main control board if error continues.</li>
-</ul>
-</div>
-</div>
-</div>
+<!-- E90 -->
+<div class="card" onclick="toggleCard(this)">
+  <div class="code">E90</div>
+  <div class="title">Electronic Control Fault</div>
+  <ul class="steps">
+    <li>Reset power supply for 5–10 minutes.</li>
+    <li>Inspect control board connections.</li>
+    <li>Check for moisture or corrosion on PCB.</li>
+    <li>Replace main control board if error continues.</li>
+  </ul>
+</div></div>
+
+</body>
+</html>
+
+<style>
+.answer {
+  display: none;
+  margin-top: 8px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-top: 5px;
+}
+</style>
+
+<script>
+function toggleFAQ(el) {
+  const answer = el.nextElementSibling;
+
+  if (answer.style.display === "block") {
+    answer.style.display = "none";
+  } else {
+    answer.style.display = "block";
+  }
+}
+</script>
 
 <!-- FAQ SECTION -->
 <div class="faq">
@@ -421,200 +591,151 @@ h2{
 
 <br>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux washer not starting?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check if the door is fully closed and locked.</li>
-<li>Ensure the power supply is connected properly.</li>
-<li>Verify that a wash program is selected.</li>
-<li>Disable child lock if it is activated.</li>
-</ul>
+
+<div class="faq-container">
+
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E10 Water Supply / Inlet Issue mean?</div>
+<div class="answer">
+Check that the water supply valve is open, inspect the inlet hose for kinks or blockages, clean the filter screen, and ensure adequate water pressure for the ice maker or water dispenser.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux washer not filling with water?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Ensure the water tap is fully open.</li>
-<li>Clean inlet filters and check for blockages.</li>
-<li>Inspect inlet hose for kinks or damage.</li>
-<li>Check household water pressure.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E20 Cooling Performance Failure mean?</div>
+<div class="answer">
+Check evaporator fan operation, clean condenser coils, inspect airflow inside refrigerator compartments, and verify that temperature settings are correct.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux washer not spinning?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Redistribute clothes evenly in the drum.</li>
-<li>Check for unbalanced or overloaded laundry.</li>
-<li>Ensure drain system is not blocked.</li>
-<li>Inspect drive belt or motor issues if persistent.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E24 Overheating Protection Activated mean?</div>
+<div class="answer">
+Ensure proper ventilation around the refrigerator, clean dust from condenser coils, inspect compressor operation, and allow the appliance time to stabilize.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux washer not draining?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean the drain pump filter regularly.</li>
-<li>Check drain hose for blockages or bends.</li>
-<li>Ensure sink or standpipe is not clogged.</li>
-<li>Restart the machine after cleaning.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E30 Door Open / Door Switch Issue mean?</div>
+<div class="answer">
+Make sure the refrigerator door is completely closed, inspect the door gasket for leaks, test the door switch, and remove any items blocking the door.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux washer leaking water?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check inlet and drain hoses for leaks.</li>
-<li>Inspect door seal for damage or dirt.</li>
-<li>Avoid overloading detergent.</li>
-<li>Ensure machine is level on the floor.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E40 Door Seal or Lock Failure mean?</div>
+<div class="answer">
+Inspect the door gasket for wear or damage, check door hinge alignment, test the door switch, and replace faulty seals or latching components if necessary.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux washer making loud noise?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for foreign objects inside the drum.</li>
-<li>Ensure machine is properly leveled.</li>
-<li>Inspect bearings or suspension system.</li>
-<li>Avoid washing heavy items alone.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E50 Fan Motor / Air Circulation Fault mean?</div>
+<div class="answer">
+Inspect evaporator and condenser fans for obstructions, check wiring connections, test fan motor operation, and replace the fan motor if defective.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my Electrolux washer stop mid-cycle?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check for power interruptions.</li>
-<li>Inspect water supply and drainage issues.</li>
-<li>Look for overload or imbalance conditions.</li>
-<li>Restart the cycle after resetting.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E51 Relay / Control Circuit Fault mean?</div>
+<div class="answer">
+Inspect the control board relay system, check the wiring harness for damage, test relay operation, and replace the control board if required.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux washer not unlocking?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Wait for cycle to fully complete.</li>
-<li>Check if water is still inside the drum.</li>
-<li>Try powering off and restarting the unit.</li>
-<li>Inspect door lock mechanism for faults.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E52 Fan or Compressor Signal Loss mean?</div>
+<div class="answer">
+Check wiring connections to the compressor and fan motors, inspect feedback circuits, test communication signals, and replace faulty components if necessary.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why does my Electrolux washer smell bad?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Clean detergent drawer and drum regularly.</li>
-<li>Run a drum cleaning cycle.</li>
-<li>Leave door open after washing.</li>
-<li>Remove trapped lint and residue buildup.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E56 Cooling System Failure mean?</div>
+<div class="answer">
+Inspect compressor operation, clean condenser coils, verify condenser and evaporator fan performance, and arrange professional service if cooling does not improve.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>How do I reset my Electrolux washer?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Turn off and unplug the washer for 5–10 minutes.</li>
-<li>Reconnect power and restart the machine.</li>
-<li>Select a new cycle after reset.</li>
-<li>Check if the issue has cleared.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E60 Temperature Control Fault mean?</div>
+<div class="answer">
+Check temperature sensors, inspect airflow throughout the refrigerator, ensure doors are sealing correctly, and allow time for temperatures to stabilize.
 </div>
 </div>
 
-<div class="error-card">
-<button class="error-toggle">
-<span>Why is my Electrolux washer displaying error codes?</span>
-<span>▼</span>
-</button>
-<div class="error-content">
-<ul>
-<li>Check water supply and drainage systems.</li>
-<li>Inspect filters and hoses for blockages.</li>
-<li>Ensure load is balanced and not overloaded.</li>
-<li>Refer to manual or technician if error persists.</li>
-</ul>
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E61 Temperature Sensor Fault mean?</div>
+<div class="answer">
+Inspect thermistor wiring connections, test resistance values, check connectors for corrosion, and replace the temperature sensor if faulty.
 </div>
 </div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E63 Cooling Performance Issue mean?</div>
+<div class="answer">
+Clean condenser coils, improve airflow around stored items, avoid overloading compartments, and verify evaporator fan operation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E66 Airflow Restriction mean?</div>
+<div class="answer">
+Remove food items blocking air vents, clean internal airflow channels, inspect fan operation, and maintain adequate clearance around the refrigerator.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E68 Control Board Failure mean?</div>
+<div class="answer">
+Restart refrigerator power, inspect the control board for moisture or visible damage, check wiring connections, and replace the PCB if the fault remains.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E70 Communication Error mean?</div>
+<div class="answer">
+Check wiring between the display module and main control board, inspect connectors for damage, restart the appliance, and replace faulty electronics if communication cannot be restored.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E90 Configuration Error mean?</div>
+<div class="answer">
+Reset refrigerator power, verify system settings and configuration data, inspect control board programming, and reprogram or replace the PCB if necessary.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E91 Memory / EEPROM Fault mean?</div>
+<div class="answer">
+Disconnect power and restart the refrigerator, inspect control board connections, check for PCB damage, and replace the control board if memory errors continue.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What does E93 System Internal Fault mean?</div>
+<div class="answer">
+Restart the refrigerator, inspect the wiring harness and electronic components, check the control board condition, and replace the PCB if the fault persists.
+</div>
+</div>
+
 
 <div class="note">
-<strong>Important:</strong> If error codes continue after troubleshooting, disconnect power and contact a certified Electrolux technician.
+<strong>Important:</strong> Always disconnect power before attempting repairs. If the issue continues, contact a qualified Electrolux service technician.
 </div>
-
-</div>
-
-</body>
-</html>
 
 <script>
-document.querySelectorAll('.error-toggle').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-        const content = btn.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    });
-});
-
-const searchInput = document.querySelector('.search-box');
-
-searchInput.addEventListener('keyup', function () {
-    const filter = this.value.toUpperCase();
-    const cards = document.querySelectorAll('.error-card');
-
-    cards.forEach(card => {
-        const text = card.innerText.toUpperCase();
-        card.style.display = text.includes(filter) ? '' : 'none';
-    });
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
 });
 </script>
+
+
 
 </body>
 </html>
