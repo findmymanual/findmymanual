@@ -5527,6 +5527,14 @@ document.addEventListener("DOMContentLoaded", () => {
       section.appendChild(grid);
     }
 
+     // PDF button behavior & styling
+    document.querySelectorAll('.pdf-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product');
+        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
+        window.location.href = checkoutUrl;
+      });
+
     
       const icon = btn.querySelector('svg');
       btn.style.display = 'inline-flex';
