@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Georgia,'Times New Roman',Times,serif;
+    margin:0;
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.7;
+}
+
+/* Container */
+
+.container{
+    max-width:1200px;
+    margin:30px auto;
+    background:#fff;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.10);
+}
+
+/* Header */
+
+header{
+    background:#1f3b4d;
+    color:#fff;
+    text-align:center;
+    padding:30px;
+    border-radius:10px 10px 0 0;
+}
+
+header h1{
+    margin:0;
+    font-size:34px;
+}
+
+header p{
+    margin-top:12px;
+    font-size:18px;
+    color:#f1f1f1;
+}
+
+/* Blue Information Box */
+
+.info{
+    background:#eef5ff;
+    border-left:5px solid #4e6e81;
+    padding:20px;
+    border-radius:6px;
+    margin:30px 0;
+    font-size:17px;
+}
+
+/* Download Button */
+
+.download{
+    display:inline-block;
+    background:#28a745;
+    color:#fff;
+    padding:16px 34px;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+    margin:20px 0;
+}
+
+.download:hover{
+    background:#1d7d33;
+    transform:translateY(-2px);
+}
+
+/* Headings */
+
+h2{
+    background:#1f3b4d;
+    color:#fff;
+    padding:16px 20px;
+    border-radius:6px;
+    margin-top:45px;
+    font-size:24px;
+}
+
+h3{
+    color:#4e6e81;
+    margin-top:25px;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    overflow:hidden;
+    border-radius:8px;
+}
+
+table tr:nth-child(even){
+    background:#fafafa;
+}
+
+table td{
+    padding:14px;
+    border:1px solid #ddd;
+}
+
+/* What's Included */
+
+ul{
+    list-style:none;
+    padding:0;
+    margin-top:20px;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+ul li{
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-left:5px solid #4e6e81;
+    padding:15px;
+    border-radius:8px;
+    transition:.25s;
+}
+
+ul li:hover{
+    transform:translateY(-3px);
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+/* FAQ */
+
+.faq-item{
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:18px;
+    margin-bottom:15px;
+}
+
+.faq-item h3{
+    margin-top:0;
+    color:#4e6e81;
+}
+
+/* Footer */
+
+footer{
+    background:#1f3b4d;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+/* ===========================
+   TRUST BOX
+=========================== */
+
+.trust-box{
+margin:25px 0;
+padding:18px;
+background:#f8fbff;
+border:1px solid #d9e9ff;
+border-radius:12px;
+}
+
+.trust-item{
+display:flex;
+align-items:flex-start;
+gap:14px;
+padding:10px 0;
+}
+
+.trust-item:first-child{
+border-bottom:1px solid #e6eef7;
+padding-bottom:14px;
+margin-bottom:6px;
+}
+
+.trust-icon{
+width:42px;
+height:42px;
+border-radius:50%;
+background:#0057b8;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:20px;
+font-weight:bold;
+flex-shrink:0;
+}
+
+.trust-title{
+font-weight:700;
+font-size:17px;
+color:#222;
+margin-bottom:4px;
+}
+
+.trust-text{
+font-size:15px;
+color:#555;
+line-height:1.5;
+}
+
+.question{
+  cursor:pointer;
+  font-weight:bold;
+  padding:10px;
+  background:#f2f2f2;
+  margin-top:5px;
+}
+
+.answer{
+  display:none;
+  margin-top:8px;
+}
+
+@media(max-width:600px){
+
+.trust-box{
+padding:15px;
+}
+
+.trust-icon{
+width:36px;
+height:36px;
+font-size:17px;
+}
+
+.trust-title{
+font-size:16px;
+}
+
+.trust-text{
+font-size:14px;
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.container{
+    padding:20px;
+}
+
+header h1{
+    font-size:28px;
+}
+
+.download{
+    width:100%;
+    text-align:center;
+}
+
+table td{
+    display:block;
+    width:100%;
+}
+
+}
+
+@media (max-width:900px){
+    ul{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media (max-width:600px){
+    ul{
+        grid-template-columns:1fr;
+    }
+}
+
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+
+    if(answer.style.display==="block"){
+        answer.style.display="none";
+    }else{
+        answer.style.display="block";
+    }
+}
+
+</style>
+
+<title>Electrolux EHI745BD Induction Cooktop User Manual PDF | Find My Manual</title>
+
+<meta name="description"
+content="Download the Electrolux EHI745BD Induction Cooktop User Manual PDF. Includes installation instructions, operating guide, cooking functions, maintenance, troubleshooting, technical specifications, and safety information.">
+
+<meta name="keywords"
+content="Electrolux EHI745BD manual, Electrolux EHI745BD user manual PDF, Electrolux induction cooktop manual, EHI745BD manual, Electrolux induction hob manual, Electrolux cooktop user guide, Electrolux owner manual">
+
+<meta name="robots" content="index,follow">
+
+<link rel="canonical"
+href="https://findmymanual.live/manual/Electrolux-EHI745BD">
+
+<!-- Open Graph -->
+
+<meta property="og:title"
+content="Electrolux EHI745BD Induction Cooktop User Manual PDF">
+
+<meta property="og:description"
+content="Official Electrolux EHI745BD Induction Cooktop User Manual.">
+
+<meta property="og:type"
+content="article">
+
+<meta property="og:url"
+content="https://findmymanual.live/manual/Electrolux-EHI745BD">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Electrolux EHI745BD Induction Cooktop User Manual PDF</h1>
+
+<p>Official Owner's Manual • Installation Guide • Maintenance • Troubleshooting</p>
+
+</header>
+
+<div class="container">
+
+<div class="info">
+
+<strong>Model:</strong> EHI745BD
+
+<br>
+
+<strong>Brand:</strong> Electrolux
+
+<br>
+
+<strong>Category:</strong> Induction Cooktop
+
+</div>
+
+<p>
+The <strong>Electrolux EHI745BD</strong> Induction Cooktop User Manual provides complete installation instructions, operating guidance, cooking functions, maintenance recommendations, troubleshooting steps, and essential safety information.
+</p>
+
+<p>
+Whether you are preparing everyday meals or making full use of your induction cooktop's advanced cooking features, this manual contains the manufacturer's official instructions to help you safely install, operate, and maintain your Electrolux EHI745BD.
+</p>
+
+<p>
+Designed for both first-time and experienced users, the manual explains installation requirements, cookware compatibility, touch controls, cooking zone operation, timer functions, child safety lock, cleaning procedures, troubleshooting, and technical specifications.
+</p>
+
+<div class="trust-box">
+
+<div class="trust-item">
+<div class="trust-icon">🔒</div>
+<div>
+<div class="trust-title">Secure Checkout</div>
+<div class="trust-text">Bank-level encryption. No card details stored.</div>
+</div>
+</div>
+
+<div class="trust-item">
+<div class="trust-icon">✓</div>
+<div>
+<div class="trust-title">14-Day Money-Back Guarantee</div>
+<div class="trust-text">Shop with complete confidence.</div>
+</div>
+</div>
+
+</div>
+
+<a class="download"
+href="https://findmymanual.live/checkout.html?manual=Electrolux%20EHI745BD%20Induction%20Cooktop">
+
+Get Your Manual Now
+
+</a>
+
+<p>
+
+<b>Note:</b>
+
+After completing secure payment, your Electrolux EHI745BD Induction Cooktop User Manual PDF will be available for immediate download and can be viewed on any computer, tablet, or smartphone.
+
+</p>
+
+<h2>Manual Information</h2>
+
+<table>
+
+<tr>
+<td>Brand</td>
+<td>Electrolux</td>
+</tr>
+
+<tr>
+<td>Model</td>
+<td>EHI745BD</td>
+</tr>
+
+<tr>
+<td>Category</td>
+<td>Induction Cooktop</td>
+</tr>
+
+<tr>
+<td>Language</td>
+<td>English</td>
+</tr>
+
+<tr>
+<td>Format</td>
+<td>PDF</td>
+</tr>
+
+<tr>
+<td>Delivery</td>
+<td>Instant after payment</td>
+</tr>
+
+</table>
+
+<h2>What's Included</h2>
+
+<ul>
+
+<li>Important Safety Instructions</li>
+
+<li>Installation Guide</li>
+
+<li>Operating Instructions</li>
+
+<li>Control Panel Overview</li>
+
+<li>Cooking Zone Functions</li>
+
+<li>Power Level Adjustment</li>
+
+<li>Timer & Auto Shut-Off Functions</li>
+
+<li>Child Lock Operation</li>
+
+<li>Cookware Compatibility Guide</li>
+
+<li>Cleaning & Maintenance</li>
+
+<li>Troubleshooting</li>
+
+<li>Technical Specifications</li>
+
+<li>Warranty Information</li>
+
+</ul>
+
+<h2>Common Problems Covered</h2>
+
+<ul>
+
+<li>Cooktop not turning on</li>
+
+<li>Cookware not detected</li>
+
+<li>Error code troubleshooting</li>
+
+<li>Cooking zone not heating</li>
+
+<li>Touch controls not responding</li>
+
+<li>Power level issues</li>
+
+<li>Automatic shut-off activation</li>
+
+<li>Overheating protection</li>
+
+<li>Cleaning procedures</li>
+
+<li>Routine maintenance</li>
+
+</ul>
+
+<h2>Why Download the Electrolux EHI745BD User Manual?</h2>
+
+<p>
+The official Electrolux EHI745BD Induction Cooktop User Manual helps owners correctly install, operate, maintain, and troubleshoot their appliance. It includes detailed instructions for cooking functions, cookware selection, routine maintenance, cleaning, and resolving common operating issues, making it an essential reference for everyday use.
+</p>
+
+<h2>Who Is This Manual For?</h2>
+
+<p>
+
+This manual is ideal for homeowners, home cooks, kitchen installers, appliance technicians, maintenance professionals, and anyone who owns or services an Electrolux EHI745BD Induction Cooktop.
+
+</p>
+
+<div class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<br>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Is this an official Electrolux manual?</div>
+<div class="answer">
+This page provides access to the official user manual for the Electrolux EHI745BD Induction Cooktop.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">How do I receive the PDF?</div>
+<div class="answer">
+After completing payment, your manual will be available for immediate download.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Does the manual include troubleshooting?</div>
+<div class="answer">
+Yes. The manual includes troubleshooting procedures, installation instructions, operating guidance, maintenance recommendations, and safety information.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Does the manual explain how to use the touch controls?</div>
+<div class="answer">
+Yes. The manual provides step-by-step instructions for operating the touch control panel, selecting cooking zones, adjusting power levels, and using timer functions.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Does the manual explain cookware compatibility?</div>
+<div class="answer">
+Yes. It explains which cookware is suitable for induction cooking and how to achieve the best cooking performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can beginners use this manual?</div>
+<div class="answer">
+Absolutely. The manual is written for both first-time users and experienced cooks, with clear instructions for installation, operation, and maintenance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Does the manual cover routine maintenance?</div>
+<div class="answer">
+Yes. It includes recommended cleaning procedures and maintenance tips to help keep your induction cooktop operating efficiently.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Will the manual help solve common cooktop problems?</div>
+<div class="answer">
+Yes. It contains troubleshooting information for issues such as cookware detection, heating problems, touch control issues, error codes, and automatic safety shut-off.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">What file format is the manual?</div>
+<div class="answer">
+The manual is provided as a PDF document that can be viewed on computers, tablets, and smartphones using any standard PDF reader.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Can I print the manual?</div>
+<div class="answer">
+Yes. Once downloaded, you can save the PDF for future reference or print a copy for convenient use while operating your Electrolux EHI745BD Induction Cooktop.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Does the manual include safety information?</div>
+<div class="answer">
+Yes. It contains important safety precautions, installation requirements, operating guidelines, and maintenance recommendations to help ensure safe and reliable operation of your Electrolux EHI745BD Induction Cooktop.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="question" onclick="toggleFAQ(this)">Is the manual available in English?</div>
+<div class="answer">
+Yes. This download includes the English PDF version of the Electrolux EHI745BD Induction Cooktop User Manual.
+</div>
+</div>
+
+</div>
+
+
+<h2>Related Manuals</h2>
+
+<ul>
+
+<li><a href="Electrolux-Ceramic-Cooktop-EHC644BF.html">Electrolux Ceramic Cooktop EHC644BF</a></li>
+
+<li><a href="Electrolux-Cordless-Cleaner-EFP61713A.html">Electrolux Cordless Cleaner EFP61713A</a></li>
+
+<li><a href="Electrolux-Cordless-Cleaner-ZB3324B.html">Electrolux Cordless Cleaner ZB3324B</a></li>
+
+<li><a href="Electrolux-Cordless-Cleaner-ZB3323BO.html">Electrolux Cordless Cleaner ZB3323BO</a></li>
+
+<li><a href="Electrolux-Canopy-Rangehood-ERC925DSD.html">Electrolux Canopy Rangehood ERC925DSD</a></li>
+
+<li><a href="Electrolux-Ceramic-Cooktop-EHC644BE.html">Electrolux Ceramic Cooktop EHC644BE</a></li>
+
+<li><a href="Electrolux-Cordless-Cleaner-ZB3323BO.html">Electrolux Cordless Cleaner ZB3323BO</a></li>
+
+<li><a href="Electrolux-Cordless-Cleaner-EFP61714.html">Electrolux-Cordless-Cleaner-EFP61714</a></li>
+
+<li><a href="Electrolux-Cordless-Cleaner-ZB3320P.html">Electrolux Cordless Cleaner ZB3320P</a></li>
+
+</ul>
+
+</div></div>
+<script>
+
+document.querySelectorAll(".faq-question").forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+const item=button.parentElement;
+
+item.classList.toggle("active");
+
+});
+
+});
+
+</script>
+
+<script>
+
+function toggleFAQ(element) {
+
+    const answer = element.nextElementSibling;
+
+    if (answer.style.display === "block") {
+
+        answer.style.display = "none";
+
+    } else {
+
+        answer.style.display = "block";
+
+    }
+
+}
+
+</script>
+
+
+
+<footer>
+
+© 2026 Find My Manual
+
+</footer>
+
+<!-- Organization -->
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Organization",
+"name":"Find My Manual",
+"url":"https://findmymanual.live"
+}
+</script>
+
+<!-- WebPage -->
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebPage",
+"name":"Bosch KFD96AXEAA Coffee Machine User Manual",
+"url":"https://findmymanual.live/manual/bosch-kfd96axeaa"
+}
+</script>
+
+<!-- Tech Article -->
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"TechArticle",
+"headline":"Bosch KFD96AXEAA Coffee Machine User Manual PDF",
+"description":"Official Bosch KFD96AXEAA Coffee Machine User Manual.",
+"author":{
+"@type":"Organization",
+"name":"Find My Manual"
+}
+}
+</script>
+
+<!-- FAQ -->
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"FAQPage",
+"mainEntity":[
+{
+"@type":"Question",
+"name":"How do I download the manual?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Complete the checkout process and your PDF manual will be available immediately for download."
+}
+},
+{
+"@type":"Question",
+"name":"Is this an official Bosch manual?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"This page provides access to the official Bosch KFD96AXEAA Coffee Machine user manual."
+}
+},
+{
+"@type":"Question",
+"name":"Does the manual include troubleshooting?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Yes. The manual includes troubleshooting, maintenance, operating instructions, and safety information."
+}
+}
+]
+}
+</script>
+
+</body>
+</html>
