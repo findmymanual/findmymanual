@@ -33,69 +33,7 @@
 }
 </script>
 
-    <style>
-        /* PDF Grid Layout */
-        .pdf-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4 per row on desktop */
-            gap: 20px;
-            justify-items: center;
-            padding: 20px 0;
-        }
-
-        @media (max-width: 1024px) {
-            .pdf-grid {
-                grid-template-columns: repeat(3, 1fr); /* 3 per row on tablet */
-            }
-        }
-
-        @media (max-width: 768px) {
-            .pdf-grid {
-                grid-template-columns: repeat(3, 1fr); /* 3 per row on mobile */
-            }
-        }
-
-        .pdf-grid div[style*='background:#f5f5f5'] {
-            width: 100%;
-            max-width: 250px;
-        }
-    </style></head>
-
-
-    <style>
-        /* PDF Grid Layout */
-        .pdf-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            /* 4 per row on desktop */
-            gap: 20px;
-            justify-items: center;
-            padding: 20px 0;
-        }
-
-        @media (max-width: 1024px) {
-            .pdf-grid {
-                grid-template-columns: repeat(3, 1fr);
-                /* 3 per row on tablet */
-            }
-        }
-
-        @media (max-width: 768px) {
-            .pdf-grid {
-                grid-template-columns: repeat(3, 1fr);
-                /* 3 per row on mobile */
-            }
-        }
-
-        .pdf-grid div[style*='background:#f5f5f5'] {
-            width: 100%;
-            max-width: 250px;
-        }
-    </style>
-
-<body>
-
-    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17308900859'); </script>
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17308900859'); </script>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1424202759904253"
      crossorigin="anonymous"></script>
@@ -110,23 +48,637 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-    <section style="max-width: 1200px; margin: 40px auto; padding: 20px;">
-        <h2
-            style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
-            Available Electrolux PDF Manuals
-        </h2>
+<style>
 
-        <input type="text" id="pdfSearch" placeholder="Search model number..." style="
-        width: 100%;
-        max-width: 400px;
-        padding: 12px 16px;
-        margin: 20px auto;
-        display: block;
-        font-size: 1rem;
-        border: 2px solid #4e6e81;
-        border-radius: 8px;
-        outline: none;
-    ">
+body{
+font-family:Arial;
+background:#f5f7fa;
+}
+
+.container{
+
+width:800px;
+max-width:95%;
+margin:80px auto;
+text-align:center;
+
+}
+
+h1{
+
+font-size:48px;
+margin-bottom:10px;
+
+}
+
+.subtitle{
+
+font-size:20px;
+margin-bottom:30px;
+color:#666;
+
+}
+
+.search-wrapper{
+
+position:relative;
+
+}
+
+#search{
+
+width:100%;
+padding:18px;
+font-size:18px;
+border:2px solid #ddd;
+border-radius:8px;
+
+}
+
+#results{
+
+position:absolute;
+width:100%;
+background:white;
+border:1px solid #ddd;
+border-top:none;
+max-height:350px;
+overflow-y:auto;
+display:none;
+z-index:100;
+
+}
+
+.result{
+
+padding:15px;
+cursor:pointer;
+text-align:left;
+border-bottom:1px solid #eee;
+
+}
+
+.result:hover{
+
+background:#f3f3f3;
+
+}
+
+.brand{
+
+font-weight:bold;
+
+}
+
+.model{
+
+color:#777;
+
+}
+
+.manual-category{
+    margin:20px 0;
+    border:1px solid #d9d9d9;
+    border-radius:10px;
+    overflow:hidden;
+    background:#fff;
+}
+
+.manual-category summary{
+    padding:18px 20px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    background:#f5f7fa;
+    color:#4e6e81;
+    list-style:none;
+    transition:.3s;
+}
+
+.manual-category summary:hover{
+    background:#e8edf1;
+}
+
+.manual-category summary::-webkit-details-marker{
+    display:none;
+}
+
+.manual-category summary::after{
+    content:"+";
+    float:right;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.manual-category[open] summary::after{
+    content:"−";
+}
+
+.manual-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+/* 6 cards per row */
+.manual-grid{
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    gap:15px;
+    justify-items:center;
+    padding:20px;
+}
+
+/* Tablet */
+@media (max-width:1200px){
+    .manual-grid{
+        grid-template-columns:repeat(4, 1fr);
+    }
+}
+
+/* Small tablet */
+@media (max-width:768px){
+    .manual-grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width:480px){
+    .manual-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+/* Card size */
+.manual-grid > div{
+    width:150px !important;
+    max-width:150px !important;
+    min-width:150px !important;
+
+    padding:10px !important;
+    box-sizing:border-box !important;
+}
+
+/* Title */
+.manual-grid > div h3{
+    font-size:14px !important;
+    line-height:1.3 !important;
+    margin:0 0 8px !important;
+}
+
+/* Button */
+.manual-grid > div .pdf-btn{
+    font-size:12px !important;
+    padding:6px 10px !important;
+}
+
+.manual-grid > div.hide-card{
+    display:none;
+}
+
+.show-more{
+    display:block;
+    margin:15px auto;
+    padding:10px 18px;
+    background:#4e6e81;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.show-more:hover{
+    background:#5f879a;
+}
+
+</style>
+</head>
+
+    
+<body>
+
+    
+<section style="max-width: 1200px; margin: 40px auto; padding: 20px;">
+    <h2 style="color: #4e6e81; font-size: 2.5rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
+        Available Electrolux PDF Manuals
+    </h2>
+
+    
+
+<style>
+
+body{
+font-family:Arial;
+background:#f5f7fa;
+}
+
+.container{
+
+width:800px;
+max-width:95%;
+margin:80px auto;
+text-align:center;
+
+}
+
+h1{
+
+font-size:48px;
+margin-bottom:10px;
+
+}
+
+.subtitle{
+
+font-size:20px;
+margin-bottom:30px;
+color:#666;
+
+}
+
+.search-wrapper{
+
+position:relative;
+
+}
+
+#search{
+
+width:100%;
+padding:18px;
+font-size:18px;
+border:2px solid #ddd;
+border-radius:8px;
+
+}
+
+#results{
+
+position:absolute;
+width:100%;
+background:white;
+border:1px solid #ddd;
+border-top:none;
+max-height:350px;
+overflow-y:auto;
+display:none;
+z-index:100;
+
+}
+
+.result{
+
+padding:15px;
+cursor:pointer;
+text-align:left;
+border-bottom:1px solid #eee;
+
+}
+
+.result:hover{
+
+background:#f3f3f3;
+
+}
+
+.brand{
+
+font-weight:bold;
+
+}
+
+.model{
+
+color:#777;
+
+}
+
+.manual-category{
+    margin:20px 0;
+    border:1px solid #d9d9d9;
+    border-radius:10px;
+    overflow:hidden;
+    background:#fff;
+}
+
+.manual-category summary{
+    padding:18px 20px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    background:#f5f7fa;
+    color:#4e6e81;
+    list-style:none;
+    transition:.3s;
+}
+
+.manual-category summary:hover{
+    background:#e8edf1;
+}
+
+.manual-category summary::-webkit-details-marker{
+    display:none;
+}
+
+.manual-category summary::after{
+    content:"+";
+    float:right;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.manual-category[open] summary::after{
+    content:"−";
+}
+
+.manual-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+/* 6 cards per row */
+.manual-grid{
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    gap:15px;
+    justify-items:center;
+    padding:20px;
+}
+
+/* Tablet */
+@media (max-width:1200px){
+    .manual-grid{
+        grid-template-columns:repeat(4, 1fr);
+    }
+}
+
+/* Small tablet */
+@media (max-width:768px){
+    .manual-grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width:480px){
+    .manual-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+/* Card size */
+.manual-grid > div{
+    width:150px !important;
+    max-width:150px !important;
+    min-width:150px !important;
+
+    padding:10px !important;
+    box-sizing:border-box !important;
+}
+
+/* Title */
+.manual-grid > div h3{
+    font-size:14px !important;
+    line-height:1.3 !important;
+    margin:0 0 8px !important;
+}
+
+/* Button */
+.manual-grid > div .pdf-btn{
+    font-size:12px !important;
+    padding:6px 10px !important;
+}
+
+.manual-grid > div.hide-card{
+    display:none;
+}
+
+.show-more{
+    display:block;
+    margin:15px auto;
+    padding:10px 18px;
+    background:#4e6e81;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.show-more:hover{
+    background:#5f879a;
+}
+
+</style>
+
+<body>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f5f7fa;
+}
+
+.container{
+
+width:800px;
+max-width:95%;
+margin:80px auto;
+text-align:center;
+
+}
+
+h1{
+
+font-size:48px;
+margin-bottom:10px;
+
+}
+
+.subtitle{
+
+font-size:20px;
+margin-bottom:30px;
+color:#666;
+
+}
+
+.search-wrapper{
+
+position:relative;
+
+}
+
+#search{
+
+width:100%;
+padding:18px;
+font-size:18px;
+border:2px solid #ddd;
+border-radius:8px;
+
+}
+
+#results{
+
+position:absolute;
+width:100%;
+background:white;
+border:1px solid #ddd;
+border-top:none;
+max-height:350px;
+overflow-y:auto;
+display:none;
+z-index:100;
+
+}
+
+.result{
+
+padding:15px;
+cursor:pointer;
+text-align:left;
+border-bottom:1px solid #eee;
+
+}
+
+.result:hover{
+
+background:#f3f3f3;
+
+}
+
+.brand{
+
+font-weight:bold;
+
+}
+
+.model{
+
+color:#777;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<p class="subtitle">
+Search by brand or model number.
+</p>
+
+<div class="search-wrapper">
+
+<input
+
+id="search"
+
+type="text"
+
+placeholder="Search by brand or model (e.g. Electrolux RF28T5101)"
+
+autocomplete="off"
+
+>
+
+<div id="results"></div>
+
+</div>
+
+</div>
+
+<script src="manuals.js"></script>
+
+<script>
+
+const input=document.getElementById("search");
+
+const results=document.getElementById("results");
+
+input.addEventListener("keyup",function(){
+
+const keyword=this.value.toLowerCase().trim();
+
+results.innerHTML="";
+
+if(keyword.length==0){
+
+results.style.display="none";
+
+return;
+
+}
+
+const matches=manuals.filter(item=>{
+
+return item.brand.toLowerCase().includes(keyword)
+
+||
+
+item.model.toLowerCase().includes(keyword)
+
+||
+
+item.title.toLowerCase().includes(keyword);
+
+});
+
+if(matches.length==0){
+
+results.innerHTML="<div class='result'>No manuals found.</div>";
+
+results.style.display="block";
+
+return;
+
+}
+
+matches.slice(0,20).forEach(item=>{
+
+results.innerHTML+=`
+
+<div class="result"
+
+onclick="window.location='${item.url}'">
+
+<div class="brand">${item.title}</div>
+
+<div class="model">${item.model}</div>
+
+</div>
+
+`;
+
+});
+
+results.style.display="block";
+
+});
+
+document.addEventListener("click",function(e){
+
+if(!e.target.closest(".search-wrapper")){
+
+results.style.display="none";
+
+}
+
+});
+
+</script>
 
         <div style="text-align: center; margin-top: 10px;">
             <a href="checkout.html" style="background:#4e6e81; 
@@ -149,10 +701,16 @@
             We will find it for you!
         </h2>
 
-        <div
+ <details class="manual-category" open>
+    <summary>🧺 Laundry </summary>
+
+    <div class="manual-grid">
+
+ <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Built-in <br>Warming Drawer<br>EWD1402DSE</strong></h3><a
-                href='Electrolux-pdf/Electrolux-Built-in-Warming-Drawer-EWD1402DSE.html'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Dryer <br>EDH80 </strong>
+            </h3><a
+                href='Electrolux-pdf/Electrolux-Dryer-EDH80.html'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -179,8 +737,9 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Canopy Rangehood<br>ERC925DSD </strong></h3><a
-                href='Electrolux-pdf/Electrolux-Canopy-Rangehood-ERC925DSD.html'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux<br> Dryer
+                <br>    EDH803R9WB </strong></h3><a
+                href='Electrolux-pdf/Electrolux-Dryer-EDH803R9WB.html'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -207,8 +766,9 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Canopy Rangehood<br>ERI655DSE </strong></h3><a
-                href='Electrolux-pdf/Electrolux-Canopy-Rangehood-ERI655DSE.html'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux<br> Dryer
+              <br>      EDH804U5WB </strong></h3><a
+                href='Electrolux-pdf/Electrolux-Dryer-EDH804U5WB.html'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -235,8 +795,9 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux<br> Canopy Rangehood<br>ERI955DSE </strong></h3><a
-                href='Electrolux-pdf/Electrolux-Canopy-Rangehood-ERI955DSE.html'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Dryer
+                   <br> EDH812R7WC </strong></h3><a
+                href='Electrolux-pdf/Electrolux-Dryer-EDH812R7WC.html'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -263,8 +824,9 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Ceramic Cooktop<br>EHC644BE </strong></h3><a
-                href='Electrolux-pdf/Electrolux-Ceramic-Cooktop-EHC644BE.html'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux<br> Dryer <br>EDH90 </strong>
+            </h3><a
+                href='Electrolux-pdf/Electrolux-Dryer-EDH90.html'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -291,8 +853,9 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Ceramic Cooktop<br>EHC644BF </strong></h3><a
-                href='Electrolux-pdf/Electrolux-Ceramic-Cooktop-EHC644BF.html'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Dryer <br>EDV60 </strong>
+            </h3><a
+                href='Electrolux-pdf/Electrolux-Dryer-EDV60.html'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -319,8 +882,67 @@
         </div>
         <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Ceramic Cooktop<br>EHC944BE </strong></h3><a
-                href='Electrolux-pdf/Electrolux-Ceramic-Cooktop-EHC944BE.html'
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux<br> Dryer
+                 <br>   EDV605H3WB </strong></h3><a
+                href='Electrolux-pdf/Electrolux-Dryer-EDV605H3WB.html'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
+
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
+        <div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux<br> Dryer <br>EDV70 </strong>
+            </h3><a
+                href='Electrolux-pdf/Electrolux-Dryer-EDV70.html'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
+
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
+        <div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Dryer
+                <br>    EDV705H3WB </strong></h3><a
+                href='Electrolux-pdf/Electrolux-Dryer-EDV705H3WB.html'
                 target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
                     height='22' stroke='white' fill='none' stroke-width='2'>
                     <style>
@@ -765,352 +1387,15 @@
                     <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
                 </svg>Download PDF</a>
         </div>
-        <div
-            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Dishwasher<br>ESF97400RKX </strong></h3><a
-                href='Electrolux-pdf/Electrolux-Dishwasher-ESF97400RKX.html'
-                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
-                    height='22' stroke='white' fill='none' stroke-width='2'>
-                    <style>
-                        @keyframes bounce {
+       
+</details>
 
-                            0%,
-                            100% {
-                                transform: translateY(0);
-                            }
+<details class="manual-category" open>
+    <summary>🍳 Cooking Appliances </summary>
 
-                            50% {
-                                transform: translateY(6px);
-                            }
-                        }
+    <div class="manual-grid">
 
-                        .arrow {
-                            animation: bounce 1s ease-in-out infinite;
-                        }
-                    </style>
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
-                </svg>Download PDF</a>
-        </div>
-        <div
-            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Dishwasher<br>ESF97400ROX </strong></h3><a
-                href='Electrolux-pdf/Electrolux-Dishwasher-ESF97400ROX.html'
-                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
-                    height='22' stroke='white' fill='none' stroke-width='2'>
-                    <style>
-                        @keyframes bounce {
-
-                            0%,
-                            100% {
-                                transform: translateY(0);
-                            }
-
-                            50% {
-                                transform: translateY(6px);
-                            }
-                        }
-
-                        .arrow {
-                            animation: bounce 1s ease-in-out infinite;
-                        }
-                    </style>
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
-                </svg>Download PDF</a>
-        </div>
-        <div
-            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Dishwasher<br>ESL79200RO </strong></h3><a
-                href='Electrolux-pdf/Electrolux-Dishwasher-ESL79200RO.html'
-                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
-                    height='22' stroke='white' fill='none' stroke-width='2'>
-                    <style>
-                        @keyframes bounce {
-
-                            0%,
-                            100% {
-                                transform: translateY(0);
-                            }
-
-                            50% {
-                                transform: translateY(6px);
-                            }
-                        }
-
-                        .arrow {
-                            animation: bounce 1s ease-in-out infinite;
-                        }
-                    </style>
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
-                </svg>Download PDF</a>
-        </div>
-        <div
-            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Dryer <br>EDH80 </strong>
-            </h3><a
-                href='Electrolux-pdf/Electrolux-Dryer-EDH80.html'
-                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
-                    height='22' stroke='white' fill='none' stroke-width='2'>
-                    <style>
-                        @keyframes bounce {
-
-                            0%,
-                            100% {
-                                transform: translateY(0);
-                            }
-
-                            50% {
-                                transform: translateY(6px);
-                            }
-                        }
-
-                        .arrow {
-                            animation: bounce 1s ease-in-out infinite;
-                        }
-                    </style>
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
-                </svg>Download PDF</a>
-        </div>
-        <div
-            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux<br> Dryer
-                <br>    EDH803R9WB </strong></h3><a
-                href='Electrolux-pdf/Electrolux-Dryer-EDH803R9WB.html'
-                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
-                    height='22' stroke='white' fill='none' stroke-width='2'>
-                    <style>
-                        @keyframes bounce {
-
-                            0%,
-                            100% {
-                                transform: translateY(0);
-                            }
-
-                            50% {
-                                transform: translateY(6px);
-                            }
-                        }
-
-                        .arrow {
-                            animation: bounce 1s ease-in-out infinite;
-                        }
-                    </style>
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
-                </svg>Download PDF</a>
-        </div>
-        <div
-            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux<br> Dryer
-              <br>      EDH804U5WB </strong></h3><a
-                href='Electrolux-pdf/Electrolux-Dryer-EDH804U5WB.html'
-                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
-                    height='22' stroke='white' fill='none' stroke-width='2'>
-                    <style>
-                        @keyframes bounce {
-
-                            0%,
-                            100% {
-                                transform: translateY(0);
-                            }
-
-                            50% {
-                                transform: translateY(6px);
-                            }
-                        }
-
-                        .arrow {
-                            animation: bounce 1s ease-in-out infinite;
-                        }
-                    </style>
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
-                </svg>Download PDF</a>
-        </div>
-        <div
-            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Dryer
-                   <br> EDH812R7WC </strong></h3><a
-                href='Electrolux-pdf/Electrolux-Dryer-EDH812R7WC.html'
-                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
-                    height='22' stroke='white' fill='none' stroke-width='2'>
-                    <style>
-                        @keyframes bounce {
-
-                            0%,
-                            100% {
-                                transform: translateY(0);
-                            }
-
-                            50% {
-                                transform: translateY(6px);
-                            }
-                        }
-
-                        .arrow {
-                            animation: bounce 1s ease-in-out infinite;
-                        }
-                    </style>
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
-                </svg>Download PDF</a>
-        </div>
-        <div
-            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux<br> Dryer <br>EDH90 </strong>
-            </h3><a
-                href='Electrolux-pdf/Electrolux-Dryer-EDH90.html'
-                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
-                    height='22' stroke='white' fill='none' stroke-width='2'>
-                    <style>
-                        @keyframes bounce {
-
-                            0%,
-                            100% {
-                                transform: translateY(0);
-                            }
-
-                            50% {
-                                transform: translateY(6px);
-                            }
-                        }
-
-                        .arrow {
-                            animation: bounce 1s ease-in-out infinite;
-                        }
-                    </style>
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
-                </svg>Download PDF</a>
-        </div>
-        <div
-            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Dryer <br>EDV60 </strong>
-            </h3><a
-                href='Electrolux-pdf/Electrolux-Dryer-EDV60.html'
-                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
-                    height='22' stroke='white' fill='none' stroke-width='2'>
-                    <style>
-                        @keyframes bounce {
-
-                            0%,
-                            100% {
-                                transform: translateY(0);
-                            }
-
-                            50% {
-                                transform: translateY(6px);
-                            }
-                        }
-
-                        .arrow {
-                            animation: bounce 1s ease-in-out infinite;
-                        }
-                    </style>
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
-                </svg>Download PDF</a>
-        </div>
-        <div
-            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux<br> Dryer
-                 <br>   EDV605H3WB </strong></h3><a
-                href='Electrolux-pdf/Electrolux-Dryer-EDV605H3WB.html'
-                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
-                    height='22' stroke='white' fill='none' stroke-width='2'>
-                    <style>
-                        @keyframes bounce {
-
-                            0%,
-                            100% {
-                                transform: translateY(0);
-                            }
-
-                            50% {
-                                transform: translateY(6px);
-                            }
-                        }
-
-                        .arrow {
-                            animation: bounce 1s ease-in-out infinite;
-                        }
-                    </style>
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
-                </svg>Download PDF</a>
-        </div>
-        <div
-            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux<br> Dryer <br>EDV70 </strong>
-            </h3><a
-                href='Electrolux-pdf/Electrolux-Dryer-EDV70.html'
-                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
-                    height='22' stroke='white' fill='none' stroke-width='2'>
-                    <style>
-                        @keyframes bounce {
-
-                            0%,
-                            100% {
-                                transform: translateY(0);
-                            }
-
-                            50% {
-                                transform: translateY(6px);
-                            }
-                        }
-
-                        .arrow {
-                            animation: bounce 1s ease-in-out infinite;
-                        }
-                    </style>
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
-                </svg>Download PDF</a>
-        </div>
-        <div
-            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Dryer
-                <br>    EDV705H3WB </strong></h3><a
-                href='Electrolux-pdf/Electrolux-Dryer-EDV705H3WB.html'
-                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
-                    height='22' stroke='white' fill='none' stroke-width='2'>
-                    <style>
-                        @keyframes bounce {
-
-                            0%,
-                            100% {
-                                transform: translateY(0);
-                            }
-
-                            50% {
-                                transform: translateY(6px);
-                            }
-                        }
-
-                        .arrow {
-                            animation: bounce 1s ease-in-out infinite;
-                        }
-                    </style>
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
-                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
-                </svg>Download PDF</a>
-        </div>
-        <div
+ <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
             <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Duo Oven<br>EFEP916 </strong></h3><a
                 href='Electrolux-pdf/Electrolux-Duo-Oven-EFEP916.html'
@@ -1502,7 +1787,8 @@
                     <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
                 </svg>Download PDF</a>
         </div>
-        <div
+       
+ <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
             <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux<br> Gas Cooktop<br>EHG313BD </strong></h3><a
                 href='Electrolux-pdf/Electrolux-Gas-Cooktop-EHG313BD.html'
@@ -2538,7 +2824,8 @@
                     <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
                 </svg>Download PDF</a>
         </div>
-        <div
+       
+ <div
             style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
             <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Microwave Oven<br>EMB2529DSE </strong></h3><a
                 href='Electrolux-pdf/Electrolux-Microwave-Oven-EMB2529DSE.html'
@@ -2739,80 +3026,339 @@
                     <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
                 </svg>Download PDF</a>
         </div>
+
+        <div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Ceramic Cooktop<br>EHC644BE </strong></h3><a
+                href='Electrolux-pdf/Electrolux-Ceramic-Cooktop-EHC644BE.html'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
+
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
+        <div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Ceramic Cooktop<br>EHC644BF </strong></h3><a
+                href='Electrolux-pdf/Electrolux-Ceramic-Cooktop-EHC644BF.html'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
+
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
+        <div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Ceramic Cooktop<br>EHC944BE </strong></h3><a
+                href='Electrolux-pdf/Electrolux-Ceramic-Cooktop-EHC944BE.html'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
+
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
+       
+<div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Built-in <br>Warming Drawer<br>EWD1402DSE</strong></h3><a
+                href='Electrolux-pdf/Electrolux-Built-in-Warming-Drawer-EWD1402DSE.html'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
+
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
+
+</details>
+
+<details class="manual-category" open>
+    <summary>💨 Ventilation </summary>
+
+    <div class="manual-grid">
+
+ <div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Canopy Rangehood<br>ERC925DSD </strong></h3><a
+                href='Electrolux-pdf/Electrolux-Canopy-Rangehood-ERC925DSD.html'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
+
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
+        <div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Canopy Rangehood<br>ERI655DSE </strong></h3><a
+                href='Electrolux-pdf/Electrolux-Canopy-Rangehood-ERI655DSE.html'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
+
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
+        <div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux<br> Canopy Rangehood<br>ERI955DSE </strong></h3><a
+                href='Electrolux-pdf/Electrolux-Canopy-Rangehood-ERI955DSE.html'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
+
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
+
+</details>
+
+<details class="manual-category" open>
+    <summary>🍽️ Dishwashing </summary>
+
+    <div class="manual-grid">
+
+ <div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Dishwasher<br>ESF97400RKX </strong></h3><a
+                href='Electrolux-pdf/Electrolux-Dishwasher-ESF97400RKX.html'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
+
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
+        <div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Dishwasher<br>ESF97400ROX </strong></h3><a
+                href='Electrolux-pdf/Electrolux-Dishwasher-ESF97400ROX.html'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
+
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
+        <div
+            style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
+            <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Electrolux <br>Dishwasher<br>ESL79200RO </strong></h3><a
+                href='Electrolux-pdf/Electrolux-Dishwasher-ESL79200RO.html'
+                target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
+                    height='22' stroke='white' fill='none' stroke-width='2'>
+                    <style>
+                        @keyframes bounce {
+
+                            0%,
+                            100% {
+                                transform: translateY(0);
+                            }
+
+                            50% {
+                                transform: translateY(6px);
+                            }
+                        }
+
+                        .arrow {
+                            animation: bounce 1s ease-in-out infinite;
+                        }
+                    </style>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
+                </svg>Download PDF</a>
+        </div>
+       
+</details>
         
 
-         <script>
-document.addEventListener("DOMContentLoaded", () => {
+<script>
+      
 
-    const search = document.getElementById("pdfSearch");
+      document.querySelectorAll(".manual-category").forEach((category)=>{
 
-    // This selects all your gray boxes
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    category.addEventListener("toggle",function(){
 
-    search.addEventListener("input", function () {
-        const q = this.value.toLowerCase().trim();
+        if(this.open){
 
-        boxes.forEach(box => {
-            const text = box.textContent.toLowerCase();
+            document.querySelectorAll(".manual-category").forEach((item)=>{
 
-            // show if matched, hide if not
-            if (text.includes(q)) {
-                box.style.display = "";
-            } else {
-                box.style.display = "none";
-            }
-        });
+                if(item!==this){
+
+                    item.removeAttribute("open");
+
+                }
+
+            });
+
+        }
+
     });
 
 });
-</script>
 
-
-</body>
-
-          
-          <script>
-      document.addEventListener("DOMContentLoaded", () => {
-
-        const search = document.getElementById("pdfSearch");
-
-        // This selects all your gray boxes
-        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
-
-        search.addEventListener("input", function () {
-          const q = this.value.toLowerCase().trim();
-
-          boxes.forEach(box => {
-            const text = box.textContent.toLowerCase();
-
-            // show if matched, hide if not
-            if (text.includes(q)) {
-              box.style.display = "";
-            } else {
-              box.style.display = "none";
-            }
-          });
-        });
-
-      });
     </script>
 
 
-</body>
-
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    // Move all PDF boxes into a responsive grid
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
-    if (boxes.length) {
-      const grid = document.createElement("div");
-      grid.className = "pdf-grid";
-      boxes.forEach(box => grid.appendChild(box));
-      const section = document.querySelector("section");
-      section.appendChild(grid);
-    }
-
+  
     
       const icon = btn.querySelector('svg');
       btn.style.display = 'inline-flex';
@@ -2863,26 +3409,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =========================
-       2. BUILD PDF GRID (FIXED ORDER)
-       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
-    ========================= */
-
-    const troubleshooting = document.querySelector(".lg-troubleshooting");
-
-    if (boxes.length && troubleshooting) {
-
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-
-        boxes.forEach(box => {
-            grid.appendChild(box);
-        });
-
-        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
-        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
-    }
-
+    
 
     /* =========================
        3. BUTTON STYLING (PDF BUTTONS)
@@ -2921,6 +3448,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 </script>
+
 
 <div id="pdfGridContainer"></div>
 
@@ -3018,7 +3546,9 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 </style>
 
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GE FAQ - Troubleshooting & Error Codes</title>
 
 <style>
 body{
@@ -3100,14 +3630,172 @@ function toggleFAQ(el){
 }
 </script>
 
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whirlpool FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+
+
+</style>
 
 <body>
 
-<div class="container">
+<h3 style="text-align: center; font-size: 2rem; font-weight: bold; margin-bottom: 30px;">
+    Electrolux Frequently Asked Questions
+</h3>
 
-    <h1>Electrolux FAQ - Frequently Asked Questions</h1>
-<p class="subtitle">Common questions and solutions for Electrolux appliances</p>
+<p class="subtitle">Common questions and solutions for GE home appliances and system errors</p>
 
 <!-- GENERAL -->
 <div class="faq-section">
@@ -3297,6 +3985,72 @@ Dirty filters, incorrect detergent usage, or clogged spray arms may cause this.
 </div>
 
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.querySelectorAll(".manual-category").forEach(category => {
+
+        const grid = category.querySelector(".manual-grid");
+        if (!grid) return;
+
+        const cards = [...grid.children];
+        const STEP = 6;
+
+        if (cards.length <= STEP) return;
+
+        let visible = STEP;
+
+        // Hide everything after the first 6
+        cards.forEach((card, index) => {
+            if (index >= STEP) card.style.display = "none";
+        });
+
+        // Create button
+        const btn = document.createElement("button");
+        btn.className = "show-more";
+        btn.textContent = "Show More";
+        category.appendChild(btn);
+
+        btn.addEventListener("click", function () {
+
+            if (visible < cards.length) {
+
+                const next = Math.min(visible + STEP, cards.length);
+
+                for (let i = visible; i < next; i++) {
+                    cards[i].style.display = "";
+                }
+
+                visible = next;
+
+                if (visible === cards.length) {
+                    btn.textContent = "Show Less";
+                }
+
+            } else {
+
+                // Collapse back to first 6
+                cards.forEach((card, index) => {
+                    if (index >= STEP) card.style.display = "none";
+                });
+
+                visible = STEP;
+                btn.textContent = "Show More";
+
+                // Scroll back to the category
+                category.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+
+        });
+
+    });
+
+});
+</script>
 
 </body>
 </html>
