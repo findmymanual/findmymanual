@@ -8739,4 +8739,497 @@ const manuals = [
   url:"Hitachi-pdf/Hitachi-Lever-Hoist.html"
 },
 
+{
+  brand:"HP",
+  model:"Victus Gaming Laptop 15-fa0000",
+  title:"HP Victus Gaming Laptop 15-fa0000",
+  url:"HP-pdf/HP-Victus-Gaming-Laptop-15-fa0000.html"
+},
+{
+  brand:"HP",
+  model:"Victus Gaming Laptop PC 16-e0000",
+  title:"HP Victus Gaming Laptop PC 16-e0000",
+  url:"HP-pdf/HP-Victus-Gaming-Laptop-PC-16-e0000.html"
+},
+{
+  brand:"HP",
+  model:"Victus Gaming Laptop PC 16-r1000",
+  title:"HP Victus Gaming Laptop PC 16-r1000",
+  url:"HP-pdf/HP-Victus-Gaming-Laptop-PC-16-r1000.html"
+},
+{
+  brand:"HP",
+  model:"ProBook 440 G9 Notebook PC",
+  title:"HP ProBook 440 G9 Notebook PC",
+  url:"HP-pdf/HP-ProBook-440-G9-Notebook-PC.html"
+},
+{
+  brand:"HP",
+  model:"ProBook Notebook AT6F4AV",
+  title:"HP ProBook Notebook AT6F4AV",
+  url:"HP-pdf/HP-ProBook-Notebook-AT6F4AV.html"
+},
+{
+  brand:"HP",
+  model:"OMEN Gaming Laptop PC 16-b0000",
+  title:"HP OMEN Gaming Laptop PC 16-b0000",
+  url:"HP-pdf/HP-OMEN-Gaming-Laptop-PC-16-b0000.html"
+},
+{
+  brand:"HP",
+  model:"OMEN MAX Gaming Laptop PC 16-ah0000",
+  title:"HP OMEN MAX Gaming Laptop PC 16-ah0000",
+  url:"HP-pdf/HP-OMEN-MAX-Gaming-Laptop-PC-16-ah0000.html"
+},
+{
+  brand:"HP",
+  model:"OMEN Transcend Gaming Laptop PC 14-fb0000 (9D8T1AV)",
+  title:"HP OMEN Transcend Gaming Laptop PC 14-fb0000 (9D8T1AV)",
+  url:"HP-pdf/HP-OMEN-Transcend-Gaming-Laptop-PC-14-fb0000-(9D8T1AV).html"
+},
+{
+  brand:"HP",
+  model:"OMEN Transcend Gaming Laptop PC 14-fb0000 (9P529AV)",
+  title:"HP OMEN Transcend Gaming Laptop PC 14-fb0000 (9P529AV)",
+  url:"HP-pdf/HP-OMEN-Transcend-Gaming-Laptop-PC-14-fb0000-(9P529AV).html"
+},
+{
+  brand:"HP",
+  model:"Pavilion 14-cd0002ne Laptop",
+  title:"HP Pavilion 14-cd0002ne Laptop",
+  url:"HP-pdf/HP-Pavilion-14-cd0002ne-Laptop.html"
+},
+{
+  brand:"HP",
+  model:"Mini 5101 Windows Vista Laptop",
+  title:"HP Mini 5101 Windows Vista Laptop",
+  url:"HP-pdf/HP-Mini-5101-Windows-Vista-Laptop.html"
+},
+
+{
+  brand:"HP",
+  model:"Mini 5101 Windows XP Laptop",
+  title:"HP Mini 5101 Windows XP Laptop",
+  url:"HP-pdf/HP-Mini-5101-Windows-XP-Laptop.html"
+},
+{
+  brand:"HP",
+  model:"ENVY Laptop PC 14-eb0000",
+  title:"HP ENVY Laptop PC 14-eb0000",
+  url:"HP-pdf/HP-ENVY-Laptop-PC-14-eb0000.html"
+},
+{
+  brand:"HP",
+  model:"ENVY Laptop PC 16-h1000",
+  title:"HP ENVY Laptop PC 16-h1000",
+  url:"HP-pdf/HP-ENVY-Laptop-PC-16-h1000.html"
+},
+{
+  brand:"HP",
+  model:"ENVY 2-in-1 Laptop PC 13-bf0000",
+  title:"HP ENVY 2-in-1 Laptop PC 13-bf0000",
+  url:"HP-pdf/HP-ENVY-2-in-1-Laptop-PC-13-bf0000.html"
+},
+{
+  brand:"HP",
+  model:"Dragonfly Pro Chromebook 7P097AV",
+  title:"HP Dragonfly Pro Chromebook 7P097AV",
+  url:"HP-pdf/HP-Dragonfly-Pro-Chromebook-7P097AV.html"
+},
+{
+  brand:"HP",
+  model:"EliteBook 8 G1i Notebook",
+  title:"HP EliteBook 8 G1i Notebook",
+  url:"HP-pdf/HP-EliteBook-8-G1i-Notebook.html"
+},
+{
+  brand:"HP",
+  model:"EliteBook 840 G1 Notebook PC",
+  title:"HP EliteBook 840 G1 Notebook PC",
+  url:"HP-pdf/HP-EliteBook-840-G1-Notebook-PC.html"
+},
+{
+  brand:"HP",
+  model:"EliteBook 840 G4 Notebook PC",
+  title:"HP EliteBook 840 G4 Notebook PC",
+  url:"HP-pdf/HP-EliteBook-840-G4-Notebook-PC.html"
+},
+{
+  brand:"HP",
+  model:"EliteBook 848 G4 Notebook PC",
+  title:"HP EliteBook 848 G4 Notebook PC",
+  url:"HP-pdf/HP-EliteBook-848-G4-Notebook-PC.html"
+},
+{
+  brand:"HP",
+  model:"EliteBook Ultra G1i Notebook Next Gen",
+  title:"HP EliteBook Ultra G1i Notebook Next Gen",
+  url:"HP-pdf/HP-EliteBook-Ultra-G1i-Notebook-Next-Gen.html"
+},
+{
+  brand:"HP",
+  model:"15-fd0000 Laptop",
+  title:"HP 15-fd0000 Laptop",
+  url:"HP-pdf/HP-15-fd0000-Laptop.html"
+},
+
+{
+  brand:"HP",
+  model:"Chromebook 14a-ca0000",
+  title:"HP Chromebook 14a-ca0000",
+  url:"HP-pdf/HP-Chromebook-14a-ca0000.html"
+},
+{
+  brand:"HP",
+  model:"Chromebook 14a-na0000 Series",
+  title:"HP Chromebook 14a-na0000 Series",
+  url:"HP-pdf/HP-Chromebook-14a-na0000-Series.html"
+},
+{
+  brand:"HP",
+  model:"Chromebook 14a-nd0000",
+  title:"HP Chromebook 14a-nd0000",
+  url:"HP-pdf/HP-Chromebook-14a-nd0000.html"
+},
+{
+  brand:"HP",
+  model:"Chromebook 14a-ne0000",
+  title:"HP Chromebook 14a-ne0000",
+  url:"HP-pdf/HP-Chromebook-14a-ne0000.html"
+},
+{
+  brand:"HP",
+  model:"Chromebook 14a-nf0000",
+  title:"HP Chromebook 14a-nf0000",
+  url:"HP-pdf/HP-Chromebook-14a-nf0000.html"
+},
+{
+  brand:"HP",
+  model:"ZBook Studio G11 Mobile Workstation PC",
+  title:"HP ZBook Studio G11 Mobile Workstation PC",
+  url:"HP-pdf/HP-ZBook-Studio-G11-Mobile-Workstation-PC.html"
+},
+{
+  brand:"HP",
+  model:"Spectre Convertible PC 14-ea0000",
+  title:"HP Spectre Convertible PC 14-ea0000",
+  url:"HP-pdf/HP-Spectre-Convertible-PC-14-ea0000.html"
+},
+{
+  brand:"HP",
+  model:"Pro Tower 400 G9 PCI Desktop PC",
+  title:"HP Pro Tower 400 G9 PCI Desktop PC",
+  url:"HP-pdf/HP-Pro-Tower-400-G9-PCI-Desktop-PC.html"
+},
+{
+  brand:"HP",
+  model:"Pavilion All-in-One PC 27-d0000a",
+  title:"HP Pavilion All-in-One PC 27-d0000a",
+  url:"HP-pdf/HP-Pavilion-All-in-One-PC-27-d0000a.html"
+},
+{
+  brand:"HP",
+  model:"OMEN Gaming Desktop PC GT22-0000i",
+  title:"HP OMEN Gaming Desktop PC GT22-0000i",
+  url:"HP-pdf/HP-OMEN-Gaming-Desktop-PC-GT22-0000i.html"
+},
+
+{
+  brand:"HP",
+  model:"Smart Tank 510",
+  title:"HP Smart Tank 510",
+  url:"HP-pdf/HP-Smart-Tank-510.html"
+},
+{
+  brand:"HP",
+  model:"Smart Tank 5100",
+  title:"HP Smart Tank 5100",
+  url:"HP-pdf/HP-Smart-Tank-5100.html"
+},
+{
+  brand:"HP",
+  model:"Smart Tank 6000",
+  title:"HP Smart Tank 6000",
+  url:"HP-pdf/HP-Smart-Tank-6000.html"
+},
+{
+  brand:"HP",
+  model:"Smart Tank 7000",
+  title:"HP Smart Tank 7000",
+  url:"HP-pdf/HP-Smart-Tank-7000.html"
+},
+{
+  brand:"HP",
+  model:"Smart Tank 7300",
+  title:"HP Smart Tank 7300",
+  url:"HP-pdf/HP-Smart-Tank-7300.html"
+},
+{
+  brand:"HP",
+  model:"Smart Tank 7600",
+  title:"HP Smart Tank 7600",
+  url:"HP-pdf/HP-Smart-Tank-7600.html"
+},
+{
+  brand:"HP",
+  model:"OfficeJet 250 Printer",
+  title:"HP OfficeJet 250 Printer",
+  url:"HP-pdf/HP-OfficeJet-250-Printer.html"
+},
+{
+  brand:"HP",
+  model:"OfficeJet Pro 8120e Printer",
+  title:"HP OfficeJet Pro 8120e Printer",
+  url:"HP-pdf/HP-OfficeJet-Pro-8120e-Printer.html"
+},
+{
+  brand:"HP",
+  model:"OfficeJet Pro 8130e Printer",
+  title:"HP OfficeJet Pro 8130e Printer",
+  url:"HP-pdf/HP-OfficeJet-Pro-8130e-Printer.html"
+},
+{
+  brand:"HP",
+  model:"ENVY Photo 7100 All-in-One",
+  title:"HP ENVY Photo 7100 All-in-One",
+  url:"HP-pdf/HP-ENVY-Photo-7100-All-in-One.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP Flow M631h",
+  title:"HP LaserJet Enterprise MFP Flow M631h",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-Flow-M631h.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP Flow M632z",
+  title:"HP LaserJet Enterprise MFP Flow M632z",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-Flow-M632z.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP Flow M633z",
+  title:"HP LaserJet Enterprise MFP Flow M633z",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-Flow-M633z.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP M631",
+  title:"HP LaserJet Enterprise MFP M631",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-M631.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP M631dn",
+  title:"HP LaserJet Enterprise MFP M631dn",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-M631dn.html"
+},
+
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP M631z",
+  title:"HP LaserJet Enterprise MFP M631z",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-M631z.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP M632",
+  title:"HP LaserJet Enterprise MFP M632",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-M632.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP M632fht",
+  title:"HP LaserJet Enterprise MFP M632fht",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-M632fht.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP M632h",
+  title:"HP LaserJet Enterprise MFP M632h",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-M632h.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP M633",
+  title:"HP LaserJet Enterprise MFP M633",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-M633.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP M633fh",
+  title:"HP LaserJet Enterprise MFP M633fh",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-M633fh.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP M634",
+  title:"HP LaserJet Enterprise MFP M634",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-M634.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP M635",
+  title:"HP LaserJet Enterprise MFP M635",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-M635.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP M636",
+  title:"HP LaserJet Enterprise MFP M636",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-M636.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Enterprise MFP M637",
+  title:"HP LaserJet Enterprise MFP M637",
+  url:"HP-pdf/HP-LaserJet-Enterprise-MFP-M637.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Managed Flow MFP E62665",
+  title:"HP LaserJet Managed Flow MFP E62665",
+  url:"HP-pdf/HP-LaserJet-Managed-Flow-MFP-E62665.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Managed Flow MFP E62675",
+  title:"HP LaserJet Managed Flow MFP E62675",
+  url:"HP-pdf/HP-LaserJet-Managed-Flow-MFP-E62675.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Managed MFP E62655",
+  title:"HP LaserJet Managed MFP E62655",
+  url:"HP-pdf/HP-LaserJet-Managed-MFP-E62655.html"
+},
+{
+  brand:"HP",
+  model:"LaserJet Managed MFP E62665",
+  title:"HP LaserJet Managed MFP E62665",
+  url:"HP-pdf/HP-LaserJet-Managed-MFP-E62665.html"
+},
+{
+  brand:"HP",
+  model:"ENVY Inspire 7200e",
+  title:"HP ENVY Inspire 7200e",
+  url:"HP-pdf/HP-ENVY-Inspire-7200e.html"
+},
+
+{
+  brand:"HP",
+  model:"ENVY Inspire 7900e",
+  title:"HP ENVY Inspire 7900e",
+  url:"HP-pdf/HP-ENVY-Inspire-7900e.html"
+},
+{
+  brand:"HP",
+  model:"DesignJet Z6 Printer",
+  title:"HP DesignJet Z6 Printer",
+  url:"HP-pdf/HP-DesignJet-Z6-Printer.html"
+},
+{
+  brand:"HP",
+  model:"DesignJet Z9 Printer",
+  title:"HP DesignJet Z9 Printer",
+  url:"HP-pdf/HP-DesignJet-Z9-Printer.html"
+},
+{
+  brand:"HP",
+  model:"DeskJet 2600 All-in-One",
+  title:"HP DeskJet 2600 All-in-One",
+  url:"HP-pdf/HP-DeskJet-2600-All-in-One.html"
+},
+{
+  brand:"HP",
+  model:"DeskJet 2620 All-in-One Printer",
+  title:"HP DeskJet 2620 All-in-One Printer",
+  url:"HP-pdf/HP-DeskJet-2620-All-in-One.html"
+},
+{
+  brand:"HP",
+  model:"DeskJet 2700 All-in-One Printer",
+  title:"HP DeskJet 2700 All-in-One Printer",
+  url:"HP-pdf/HP-DeskJet-2700-All-in-One-Printer.html"
+},
+{
+  brand:"HP",
+  model:"DeskJet 2720 All-in-One Printer",
+  title:"HP DeskJet 2720 All-in-One Printer",
+  url:"HP-pdf/HP-DeskJet-2720-All-in-One-Printer.html"
+},
+{
+  brand:"HP",
+  model:"DeskJet 4120e All-in-One Printer",
+  title:"HP DeskJet 4120e All-in-One Printer",
+  url:"HP-pdf/HP-DeskJet-4120e-All-in-One-Printer.html"
+},
+{
+  brand:"HP",
+  model:"DeskJet Plus 4100 All-in-One Printer",
+  title:"HP DeskJet Plus 4100 All-in-One Printer",
+  url:"HP-pdf/HP-DeskJet-Plus-4100-All-in-One-Printer.html"
+},
+{
+  brand:"HP",
+  model:"DeskJet Plus 4100e All-in-One Printer",
+  title:"HP DeskJet Plus 4100e All-in-One Printer",
+  url:"HP-pdf/HP-DeskJet-Plus-4100e-All-in-One-Printer.html"
+},
+{
+  brand:"HP",
+  model:"DeskJet Plus 4130 All-in-One Printer",
+  title:"HP DeskJet Plus 4130 All-in-One Printer",
+  url:"HP-pdf/HP-DeskJet-Plus-4130-All-in-One-Printer.html"
+},
+{
+  brand:"HP",
+  model:"Color LaserJet Pro MFP 3301-3304",
+  title:"HP Color LaserJet Pro MFP 3301-3304",
+  url:"HP-pdf/HP-Color-LaserJet-Pro-MFP-3301-3304.html"
+},
+{
+  brand:"HP",
+  model:"Color LaserJet Pro MFP 3301fdw",
+  title:"HP Color LaserJet Pro MFP 3301fdw",
+  url:"HP-pdf/HP-Color-LaserJet-Pro-MFP-3301fdw.html"
+},
+{
+  brand:"HP",
+  model:"Color LaserJet Pro MFP 3388 Series",
+  title:"HP Color LaserJet Pro MFP 3388 Series",
+  url:"HP-pdf/HP-Color-LaserJet-Pro-MFP-3388-Series.html"
+},
+{
+  brand:"HP",
+  model:"OMEN 34c WQHD Curved Gaming Monitor",
+  title:"HP OMEN 34c WQHD Curved Gaming Monitor",
+  url:"HP-pdf/HP-OMEN-34c-WQHD-Curved-Gaming-Monitor.html"
+},
+
+{
+  brand:"HP",
+  model:"EliteDisplay E273 Monitor",
+  title:"HP EliteDisplay E273 Monitor",
+  url:"HP-pdf/HP-EliteDisplay-E273-Monitor.html"
+},
+{
+  brand:"HP",
+  model:"D3500 Camera",
+  title:"HP D3500 Camera",
+  url:"HP-pdf/HP-D3500-Camera.html"
+},
+{
+  brand:"HP",
+  model:"Pro 612 G1 Windows 10",
+  title:"HP Pro 612 G1 Windows 10",
+  url:"HP-pdf/HP-Pro-612-G1-Windows-10.html"
+},
+{
+  brand:"HP",
+  model:"Pro 612 G1 Wndows 7",
+  title:"HP Pro 612 G1 Wndows 7",
+  url:"HP-pdf/HP-Pro-612-G1-Wndows-7.html"
+},
+
 ]
