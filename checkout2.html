@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Secure Checkout</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-17308900859');</script>
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+    <style>
+        :root {
+            --o: #f97316;
+            --od: #ea580c;
+            --bg: #fff7ed
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: #f5f5f5;
+            color: #222
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 24px;
+            padding: 20px
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 28px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, .08)
+        }
+
+        h1 {
+            margin: 0 0 8px
+        }
+
+        .sub {
+            color: #666;
+            margin-bottom: 24px
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin: 12px 0 6px
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-sizing: border-box
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 16px;
+            background: linear-gradient(135deg, var(--o), var(--od));
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 12px;
+            cursor: pointer
+        }
+
+        .summary {
+            background: var(--bg)
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee
+        }
+
+        .total {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--od)
+        }
+
+        .trust {
+            margin-top: 20px;
+            padding: 16px;
+            background: #fff7ed;
+            border: 1px solid #fed7aa;
+            border-radius: 12px
+        }
+
+        @media(max-width:800px) {
+            .wrap {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .logos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(90px,1fr));
+    gap:15px;
+    margin-top:20px;
+    align-items:center;
+    justify-items:center;
+}
+
+.logos img{
+    width:80px;
+    height:45px;
+    object-fit:contain;
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:8px;
+    padding:8px;
+    transition:0.3s ease;
+}
+
+.logos img:hover{
+    transform:scale(1.05);
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+/* ===========================
+   TRUST BOX
+=========================== */
+
+.trust-box{
+margin:25px 0;
+padding:18px;
+background:#f8fbff;
+border:1px solid #d9e9ff;
+border-radius:12px;
+}
+
+.trust-item{
+display:flex;
+align-items:flex-start;
+gap:14px;
+padding:10px 0;
+}
+
+.trust-item:first-child{
+border-bottom:1px solid #e6eef7;
+padding-bottom:14px;
+margin-bottom:6px;
+}
+
+.trust-icon{
+width:42px;
+height:42px;
+border-radius:50%;
+background:#0057b8;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:20px;
+font-weight:bold;
+flex-shrink:0;
+}
+
+.trust-title{
+font-weight:700;
+font-size:17px;
+color:#222;
+margin-bottom:4px;
+}
+
+.trust-text{
+font-size:15px;
+color:#555;
+line-height:1.5;
+}
+
+.question{
+  cursor:pointer;
+  font-weight:bold;
+  padding:10px;
+  background:#f2f2f2;
+  margin-top:5px;
+}
+
+.answer{
+  display:none;
+  margin-top:8px;
+}
+
+@media(max-width:600px){
+
+.trust-box{
+padding:15px;
+}
+
+.trust-icon{
+width:36px;
+height:36px;
+font-size:17px;
+}
+
+.trust-title{
+font-size:16px;
+}
+
+.trust-text{
+font-size:14px;
+}
+
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="card">
+            <h1>🔒 Secure Checkout</h1>
+            <div class="sub">Complete your order securely.</div>
+            <label>Full Name</label><input id=name>
+            <label>Email</label><input id=email type=email>
+            <label>Phone</label><input id=phone>
+            <label>Brand Name</label><input id=brand>
+            <label>Serial Number</label><input id=model>
+            <button id=payButton>Complete Secure Payment</button>
+            <div class="trust">
+
+                <div style="margin-top:20px; text-align:center;">
+<p style="font-weight:bold; margin-bottom:8px;">
+⭐ Trusted by Customers – Verified Reviews
+</p><br>
+
+<img src="https://cdn.trustpilot.net/brand-assets/4.1.0/logo-black.svg" 
+alt="Trustpilot Reviews" 
+style="height:50px; margin-bottom:8px;">
+</div><br><br>
+                
+    ✅ 14-day Money-Back Guarantee – no questions asked!<br>
+    🔒 Encrypted & Secure Checkout (SSL protected)<br>
+    💳 Trusted Payment Processors: PayPal, Visa, MasterCard, and Paddle<br>
+    📧 Instant Email Confirmation of Your Order<br>
+    🛡️ Fraud Protection for Safe Payments<br>
+    ⚡ Immediate Digital Delivery – Download your manual instantly<br>
+    🌎 Global Customer Support Available</div>
+
+        </div>
+        <div class="card summary">
+            <h2>Order Summary</h2>
+            <div class=row><span>Product</span><strong>User Manual PDF</strong></div>
+            <div class=row><span>Delivery</span><strong>Email</strong></div>
+            <div class="row total"><span>Total</span><strong>$19.95</strong></div>
+
+            <div class="trust-box">
+
+<div class="trust-item">
+<div class="trust-icon">🔒</div>
+<div>
+<div class="trust-title">Secure Checkout</div>
+<div class="trust-text">Bank-level encryption. No card details stored.</div>
+</div>
+</div>
+
+<div class="trust-item">
+<div class="trust-icon">✓</div>
+<div>
+<div class="trust-title">14-Day Money-Back Guarantee</div>
+<div class="trust-text">Shop with complete confidence.</div>
+</div>
+</div></div>
+
+            <h2>Secure & Trusted Payment</h2>
+<p>Your payment is 100% secure. We use Paddle, a trusted global payment processor.</p>
+
+<div class="logos">
+    <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
+    <img src="mastercard.png" alt="MasterCard">
+    <img src="visa.jpeg" alt="Visa">
+    <img src="Amex.png" alt="American Express">
+    <img src="Gpay.PNG" alt="Google Pay">
+    <img src="applepay.PNG" alt="Apple Pay">
+    <img src="Paddle.png" alt="Paddle">
+</div>
+
+        
+    </div>
+
+    
+
+</div>
+
+    <script>
+        Paddle.Initialize({ token: "live_7fd8fb2221b2b9ec5b3320c704e" });
+        function trackGtag(e, p) { if (typeof gtag === "function") gtag('event', e, p); }
+        document.getElementById("payButton").onclick = async () => {
+            trackGtag('begin_checkout', { send_to: 'AW-17308900859' });
+            let ids = ["name", "email", "phone", "brand", "model"], d = {};
+            for (let i of ids) { d[i] = document.getElementById(i).value.trim(); if (!d[i]) return alert("Please fill out all fields."); }
+            d.order_number = Math.floor(100000 + Math.random() * 900000).toString();
+            d.product = "User Manual"; d.amount = "$14.95"; d.status = "Pending Payment";
+            try { await fetch("https://formspree.io/f/xldpwdpb", { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(d) }); } catch (e) { }
+            Paddle.Checkout.open({ items: [{ priceId: "pri_01kkrgrb89fvnyhdrd1x0g8fsa", quantity: 1 }], customer: { email: d.email }, customData: d, successUrl: "thank-you.html?order=" + d.order_number + "&custom=" + encodeURIComponent(JSON.stringify(d)) });
+        }
+    </script>
+</body>
+
+</html>

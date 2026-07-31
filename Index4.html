@@ -1,282 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find My Manual</title>
 
-  <!-- SEO & Verification -->
-  <meta name="author" content="Find My Manual">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://findmymanual.live/">
-  <meta name="google-site-verification" content="9VtHF5Cduk8ms87GhroJ8whpG7OrQg9eq8YIgAFrhnY">
-  <meta name="google-site-verification" content="JurfCYshi7VZGsZ4J0Q6feUdmIwheNwzshcUrUbfbek">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <!-- Google Ads Tag (FIXED - ONLY ONCE) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-17308900859');
-  </script>
+<title>User Manuals Store</title>
 
-  <!-- Google AdSense -->
-  <script async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1424202759904253"
-    crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <script async custom-element="amp-auto-ads"
-    src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+<style>
 
-  <!-- BASE STYLES (UNCHANGED) -->
-  <style>
-    body {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      margin: 0;
-      background-color: #e8edf1;
-      color: #555;
+/*==================================================
+  RESET
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background:#f8f8f8;
+    color:#333;
+    line-height:1.7;
+    overflow-x:hidden;
+    padding-top:85px; /* Fixed header spacing */
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+    transition:.25s ease;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/*==================================================
+  LAYOUT
+==================================================*/
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+/*==================================================
+  HEADER
+==================================================*/
+
+/* ==========================
+   FIXED HEADER
+========================== */
+
+body{
+    margin:0;
+    padding-top:80px;   /* same height as navbar */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background:#fafafa;
+    color:#333;
+    line-height:1.7;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:80px;
+    background:#1d1d1d;
+    z-index:999999;
+    display:flex;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+.nav-inner{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:30px;
+    font-weight:700;
+    color:#cc6600;
+}
+
+.logo img{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+}
+
+.menu a{
+    color:#fff;
+    font-size:15px;
+    font-weight:500;
+    transition:.25s;
+}
+
+.menu a:hover{
+    color:#cc6600;
+}
+/*==================================================
+  HERO
+==================================================*/
+
+.hero{
+    padding:90px 0;
+    background:#fff;
+}
+
+.hero-flex{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:70px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:3.5rem;
+    line-height:1.1;
+    margin-bottom:25px;
+    color:#222;
+}
+
+.hero-text p{
+    font-size:1.15rem;
+    color:#666;
+    margin-bottom:35px;
+}
+
+/*==================================================
+  BUTTONS
+==================================================*/
+
+.btn{
+    display:inline-block;
+    padding:16px 34px;
+    background:#cc6600;
+    color:#fff;
+    border-radius:12px;
+    font-weight:600;
+    box-shadow:0 8px 20px rgba(204,102,0,.25);
+}
+
+.btn:hover{
+    background:#b35a00;
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(179,90,0,.35);
+}
+
+/*==================================================
+  SEARCH CARD
+==================================================*/
+
+.search-box{
+    flex:1;
+    background:#fff;
+    padding:40px;
+    border-radius:22px;
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+}
+
+.search-box input{
+    width:100%;
+    padding:16px 20px;
+    margin-bottom:18px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+    transition:.25s;
+}
+
+.search-box input:focus{
+    border-color:#cc6600;
+    box-shadow:0 0 0 4px rgba(204,102,0,.12);
+}
+
+.search-box button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#cc6600;
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.search-box button:hover{
+    background:#b35a00;
+}
+
+/*==================================================
+  SECTIONS
+==================================================*/
+
+section{
+    padding:90px 0;
+}
+
+.title{
+    text-align:center;
+    font-size:2.6rem;
+    color:#222;
+    margin-bottom:15px;
+}
+
+.subtitle{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 60px;
+    color:#777;
+    font-size:1.05rem;
+}
+
+/*==================================================
+  CARDS
+==================================================*/
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    padding:28px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 40px rgba(0,0,0,.10);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#222;
+}
+
+/*==================================================
+  ORANGE SECTION
+==================================================*/
+
+.orange{
+    background:#fff6ef;
+}
+
+/*==================================================
+  STATS
+==================================================*/
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.stat{
+    background:#fff;
+    padding:40px 25px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+}
+
+.stat h2{
+    font-size:3rem;
+    color:#cc6600;
+    margin-bottom:10px;
+}
+
+/*==================================================
+  FOOTER
+==================================================*/
+
+footer{
+    background:#1f1f1f;
+    color:#fff;
+    padding:70px 0;
+    margin-top:80px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:50px;
+}
+
+footer h3{
+    color:#cc6600;
+    margin-bottom:18px;
+}
+
+footer a{
+    display:block;
+    color:#ddd;
+    margin-bottom:12px;
+}
+
+footer a:hover{
+    color:#fff;
+}
+
+/*==================================================
+  RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+    .hero-flex{
+        flex-direction:column;
+        text-align:center;
     }
 
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 15px;
+    .hero-text h1{
+        font-size:2.8rem;
     }
 
-    .header img {
-      width: 60px;
-      height: auto;
+    .stats{
+        grid-template-columns:repeat(2,1fr);
     }
 
-    .header h1 {
-      margin: 0;
-      font-size: 28px;
+    .footer-grid{
+        grid-template-columns:1fr;
+        text-align:center;
     }
 
-    header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 40px;
-      background-color: white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+@media(max-width:768px){
+
+    body{
+        padding-top:140px;
     }
 
-    header h1 {
-      font-size: 1.5rem;
-      margin: 0;
-      color: #555;
+    .nav-inner{
+        flex-direction:column;
+        justify-content:center;
+        gap:15px;
+        height:auto;
+        padding:20px 0;
     }
 
-    nav a {
-      font-size: 0.95rem;
-      font-weight: bold;
-      color: #555;
-      text-decoration: none;
-      margin: 0 5px;
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:18px;
     }
 
-    .hero {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(to right, #e8edf1, #c8d6e5);
+}
+
+@media(max-width:576px){
+
+    .hero-text h1{
+        font-size:2.2rem;
     }
 
-    .brand-container {
-      background:#ffffff;
-      border:2px solid #555;
-      border-radius:16px;
-      padding:30px;
-      max-width:1100px;
-      margin: 30px auto;
+    .stats{
+        grid-template-columns:1fr;
     }
 
-    .brand-grid {
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
-      gap:15px;
+    .title{
+        font-size:2rem;
     }
 
-    .brand-grid a {
-      text-decoration:none;
-      border:2px solid #555;
-      background-color:#cde2ee;
-      color:#1a237e;
-      padding:12px 28px;
-      border-radius:50px;
-      font-weight:bold;
-      font-size:0.95rem;
-    }
+}
 
-    .flex-section {
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:space-between;
-      align-items:center;
-      gap:40px;
-      padding:60px 5%;
-    }
+</style>
 
-    .flex-section .text-col {
-      flex:1 1 50%;
-      max-width:600px;
-    }
-
-    .flex-section .text-col p {
-      line-height:1.6;
-      color:#444;
-      font-size:1.1rem;
-    }
-
-    .flex-section .img-col {
-      flex:1 1 40%;
-      text-align:center;
-    }
-
-    .flex-section .img-col img {
-      max-width:100%;
-      height:400px;
-      border-radius:12px;
-      object-fit:cover;
-      box-shadow:0 4px 15px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      background:#2c3e50;
-      color:#fff;
-      text-align:center;
-      padding:20px;
-      margin-top:50px;
-    }
-
-    .how-works {
-      display:flex;
-      justify-content:center;
-      flex-wrap:wrap;
-      gap:40px;
-      max-width:900px;
-      margin:0 auto;
-    }
-
-    .how-works div {
-      flex:1;
-      min-width:220px;
-      text-align:center;
-    }
-
-    .how-works img {
-      width:150px;
-      height:150px;
-      border-radius:50%;
-      object-fit:cover;
-    }
-
-    .comparison {
-      display:flex;
-      justify-content:center;
-      flex-wrap:wrap;
-      gap:40px;
-      max-width:900px;
-      margin:0 auto;
-    }
-
-    .comparison div {
-      flex:1;
-      min-width:250px;
-      background:#fff;
-      padding:25px;
-      border-radius:8px;
-      box-shadow:0 2px 5px rgba(0,0,0,0.05);
-    }
-
-    .comparison .service {
-      border:2px solid #555;
-      box-shadow:0 4px 10px rgba(0,0,0,0.08);
-    }
-  </style>
-</head>
 
 <body>
 
-<header class="header">
-  <div class="left">
-    <img src="logo2.png" alt="Logo" class="logo">
-    <h1>Find My Manual</h1>
-  </div>
+<nav>
+    <div class="nav-inner">
 
-  <nav class="right">
-    <a href="privacy.html" target="_blank">Privacy Policy</a> |
-    <a href="terms.html" target="_blank">Terms and Conditions</a> |
-    <a href="about.html" target="_blank">About Us</a>
-  </nav>
-</header>
+        <div class="logo">
+    <img src="UM.png" alt="User Manual Logo">
+    <span>UserManual Store</span>
+</div>
 
-<style>
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+        <div class="menu">
+            <a href="PrivacyManuals.html">Privacy Policy</a>
+            <a href="termsManuals.html">Terms and Conditions</a>
+            <a href="aboutManuals.html">About Us</a>
+        </div>
 
-    width: 100%;
-    padding: 10px 20px;
-
-    background: white;
-  }
-
-  .left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .logo {
-    width: 100px;
-    height: auto;
-  }
-
-  .left h1 {
-    margin: 0;
-  }
-
-  .right a {
-    text-decoration: none;
-    margin: 0 5px;
-  }
-
-  
-</style>
-
-<section class="hero" style="text-align:center; padding:60px 20px; background: linear-gradient(to right, #e8edf1, #c8d6e5);">
-   <h2 style="
-  font-size:2.5rem;
-  margin-bottom:20px;
-  color:#555;
-  
-">
-</h2></section>
+    </div>
+</nav>
 
 <section class="hero">
 
+<div class="container hero-flex">
 
-  <h2 style="font-size:2.5rem; margin-bottom:20px; color:#555;">
-    Find Your User Manual Instantly
-  </h2>
+<div class="hero-text">
 
-  <p style="font-size:1.1rem; color:#555; margin-bottom:25px;"> Find My Manual is an independent website providing user manuals and appliance guides.<br><br>
+<h1>Find Any User Manual In Minutes.</h1>
+
+<p>
+UserManual Store is an independent website providing user manuals and appliance guides.<br><br>
    Can't find the manual you're looking for? Submit a request and let us do the search for you. We've successfully located thousands of hard-to-find manuals, including rare, discontinued, and difficult-to-source documents that many other websites can't provide. Once found, we'll send the manual directly to your inbox.
- <br><br>
-  <bold> <strong>Simply enter your details below </strong></bold></p><br></p>
+</p>
 
-    
+</div>
 
- <form id="redirectForm" style="max-width: 400px; margin: 0 auto; text-align: center;" onsubmit="redirectToCheckout(event)">
-  
-  <input type="text" name="brand" id="brandInput" placeholder="Brand Name" required style="
+<div class="search-box">
+
+<form id="redirectForm" style="max-width: 400px; margin: 0 auto; text-align: center;" onsubmit="redirectToCheckout(event)">
+
+
+<input type="text" name="brand" id="brandInput" placeholder="Brand Name" required style="
     width: 100%;
     padding: 12px 20px;
     border-radius: 50px;
@@ -298,22 +467,15 @@
     font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; 
   ">
 
-  <button type="submit" style="
-    padding: 12px 30px;
-    background: linear-gradient(to right, #ffffff, #4e6e81);
-     color: #555;
-    border: none;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s;
-    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; 
-  ">
-    Submit
-  </button>
-</form><br><br><br><br>
+  
+
+<button>Search Manual</button>
+
+</div>
+
+</div>
+
+</section>
   
 
 
@@ -330,14 +492,22 @@
     (adsbygoogle = window.adsbygoogle || []).push({});
   </script>
 
-  <h2><b>Get Your Device & Appliance Manual</b></h2>
+ <h2 style="text-align:center;">
+  <b>Get Your Device & Appliance Manual</b>
+</h2>
 
-  <p style="font-size:1.1rem; color:#555; margin-bottom:25px;">
-    <strong>Fast • Secure • Instant Download or Delivered directly to your email</strong><br><br>
+<p style="
+  max-width:900px;
+  margin:25px auto;
+  text-align:center;
+  font-size:1.1rem;
+  color:#555;
+  line-height:1.8;
+">
+  <strong>Fast • Secure • Instant Download or Delivered directly to your email</strong><br><br>
 
-    Never waste time searching for lost booklets – access your complete manual instantly, with all setup instructions, troubleshooting tips, and safety guidelines ready whenever and wherever you need them. Say goodbye to frustration and enjoy full control of your device with ease and confidence.
-  </p>
-
+  Never waste time searching for lost booklets – access your complete manual instantly, with all setup instructions, troubleshooting tips, and safety guidelines ready whenever and wherever you need them. Say goodbye to frustration and enjoy full control of your device with ease and confidence.
+</p>
   
 </section>
 
@@ -349,7 +519,7 @@ function redirectToCheckout(event) {
   const brand = encodeURIComponent(document.getElementById('brandInput').value);
   const model = encodeURIComponent(document.getElementById('modelInput').value);
 
-  window.location.href = `checkout.html?brand=${brand}&model=${model}`;
+  window.location.href = `checkout2.html?brand=${brand}&model=${model}`;
 }
 </script>
 
@@ -366,93 +536,151 @@ function redirectToCheckout(event) {
 <meta name="description" content="Search and download free user manuals, repair guides, and troubleshooting instructions for appliances, electronics, RVs, and more.">
 
   <style>
-   body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  margin: 0;
-  background: #f5f5f5;
-  color: #222;
+
+/* =========================
+   GENERAL
+========================= */
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background:#f8f8f8;
+    color:#333;
+    margin:0;
+    overflow-x:hidden;
 }
 
-    header {
-      background: #111;
-      color: white;
-      padding: 25px;
-      text-align: center;
-    }
+/* =========================
+   CONTAINER
+========================= */
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-
-    .subtitle {
-      margin-top: 8px;
-      color: #ccc;
-    }
-
-    .section-title {
-      margin-top: 40px;
-      font-size: 30px;
-      border-left: 5px solid #007bff;
-      padding-left: 10px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-
-    .grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 6px;
-  margin-top: 20px;
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:0 auto;
+    padding:20px;
 }
 
-/* Tablet */
-@media (max-width: 900px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+/* =========================
+   PAGE HEADER
+========================= */
+
+header{
+    background:#1d1d1d;
+    color:#fff;
+    text-align:center;
+    padding:30px 20px;
 }
 
-/* Phone */
-@media (max-width: 600px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+header h1{
+    margin:0;
+    font-size:2rem;
+    font-weight:700;
 }
 
-body {
-  overflow-x: hidden;
+.subtitle{
+    margin-top:10px;
+    color:#ddd;
+    font-size:1rem;
 }
 
-.card {
-  background: white;
-  padding: 18px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: black;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-  text-align: center;
-  font-size: 15px;
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+    margin:50px 0 30px;
+    padding-left:15px;
+    border-left:6px solid #cc6600;
+    font-size:2rem;
+    font-weight:700;
+    color:#333;
 }
 
-    .card:hover {
-      transform: translateY(-3px);
-    }
+/* =========================
+   CATEGORY GRID
+========================= */
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      margin-top: 50px;
-      font-size: 13px;
-      color: #666;
-    }
-  </style>
+.grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:18px;
+    margin-top:25px;
+}
 
+.card{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:90px;
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    text-decoration:none;
+    color:#333;
+    font-size:16px;
+    font-weight:600;
+    text-align:center;
+    border:1px solid #e5e5e5;
+    box-shadow:0 4px 12px rgba(0,0,0,.06);
+    transition:all .25s ease;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    border-color:#cc6600;
+    color:#cc6600;
+    box-shadow:0 10px 24px rgba(0,0,0,.12);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:40px 20px;
+    margin-top:60px;
+    color:#777;
+    font-size:14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:900px){
+
+.grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+@media (max-width:600px){
+
+.grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.section-title{
+    font-size:1.7rem;
+}
+
+header h1{
+    font-size:1.7rem;
+}
+
+}
+
+@media (max-width:400px){
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
 
 <body>
 
@@ -721,133 +949,263 @@ body {
 
 <style>
 
-  .card {
-  background: white;
-  padding: 18px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: black;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-  text-align: center;
-  font-size: 20px;
-  border:2px solid #555;
+/* =========================
+   CARDS
+========================= */
 
-  transition: 0.2s ease;
+.card{
+    background:#fff;
+    padding:20px;
+    border:2px solid #555;
+    border-radius:12px;
+    text-align:center;
+    text-decoration:none;
+    color:#333;
+    font-size:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    transition:all .25s ease;
 }
 
-.card:hover {
-  transform: translateY(-3px);
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 
-  .brand-wrapper {
-    background: #ffffff;
-    border: 2px solid #4e6e81;
-    border-radius: 16px;
-    padding: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
+/* =========================
+   BRAND SECTION
+========================= */
 
-  .brand-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
-  margin: auto;
-  gap: 12px;
+.brand-wrapper{
+    max-width:1100px;
+    margin:0 auto;
+    padding:35px;
+    background:#fff;
+    border:2px solid #cc6600;
+    border-radius:18px;
 }
 
-
-
-  .brand-card {
-  width: 160px;   /* 👈 increase/decrease this */
-  height: 120px;  /* 👈 adjust height */
-  border: 2px solid #555;
-  border-radius: 10px;
-  background: #fff;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  text-decoration: none;
-  color: #333;
-
-  transition: 0.2s ease;
+.brand-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:16px;
 }
 
-  .brand-card:hover {
-    background-color: #b0c4d4;
-    transform: translateY(-3px);
-  }
-
-  .brand-card img {
-  width: 70%;
-  height: 70%;
-  object-fit: contain;
+.brand-card{
+    width:160px;
+    height:120px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#fff;
+    border:2px solid #555;
+    border-radius:12px;
+    text-decoration:none;
+    color:#333;
+    transition:all .25s ease;
 }
 
-.brand-card span {
-  font-size: 0.85rem;
-  text-align: center;
-  color: #333;
-  padding: 5px;
+.brand-card:hover{
+    background:#fff7f1;
+    border-color:#cc6600;
+    transform:translateY(-4px);
+    box-shadow:0 10px 20px rgba(0,0,0,.10);
 }
 
+.brand-card img{
+    width:70%;
+    height:70%;
+    object-fit:contain;
+}
 
-  /* Tablet */
-  @media (max-width: 992px) {
-    .brand-grid {
-      grid-template-columns: repeat(3, 1fr);
+.brand-card span{
+    padding:5px;
+    text-align:center;
+    font-size:.9rem;
+    font-weight:600;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.search-btn{
+    width:100%;
+    padding:16px 20px;
+    background:#cc6600;
+    color:#fff;
+    border:none;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:all .25s ease;
+    box-shadow:0 6px 15px rgba(204,102,0,.25);
+}
+
+.search-btn:hover{
+    background:#b35a00;
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(204,102,0,.35);
+}
+
+.hero-btn{
+    transition:all .25s ease;
+}
+
+.hero-btn:hover{
+    background:#b35a00;
+    border-color:#b35a00;
+    color:#fff !important;
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(179,90,0,.35);
+}
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-works{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    flex-wrap:wrap;
+    gap:30px;
+    max-width:1100px;
+    margin:50px auto;
+}
+
+.how-works .step{
+    flex:1;
+    min-width:240px;
+    max-width:300px;
+    padding:30px 25px;
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:all .25s ease;
+}
+
+.how-works .step:hover{
+    transform:translateY(-5px);
+    box-shadow:0 14px 30px rgba(0,0,0,.12);
+}
+
+.how-works h3{
+    font-size:2.2rem;
+    color:#cc6600;
+    margin-bottom:15px;
+}
+
+.how-works img{
+    width:160px;
+    height:160px;
+    object-fit:contain;
+    margin-bottom:20px;
+}
+
+.how-works p{
+    margin:0;
+    font-size:15px;
+    line-height:1.7;
+    color:#555;
+}
+
+.step{
+    text-align:center;
+}
+
+.step img{
+    display:block;
+    width:160px;
+    height:160px;
+    margin:15px auto;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #cc6600;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:992px){
+
+    .brand-card{
+        width:150px;
+        height:110px;
     }
-  }
 
-  /* Mobile */
-  @media (max-width: 768px) {
-    .brand-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+}
 
-  /* Small Mobile */
-  @media (max-width: 480px) {
-    .brand-grid {
-      grid-template-columns: 1fr;
+@media (max-width:768px){
+
+    .brand-grid{
+        gap:12px;
     }
-  }
-</style><br><br></div>
+
+    .brand-card{
+        width:140px;
+        height:100px;
+    }
+
+    .how-works{
+        gap:20px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .brand-card{
+        width:100%;
+        max-width:260px;
+        height:100px;
+    }
+
+    .how-works .step{
+        max-width:100%;
+    }
+
+    .how-works img{
+        width:120px;
+        height:120px;
+    }
+    
+
+}
+
+</style>
+
+<br><br></div>
 
 <section style="text-align:center;">
   <p style="font-size:1.2rem; color:#555; margin-bottom:30px;">
     <strong>Manual not on the list above? Send us your details and we’ll find it for you.</strong>
   </p>
 
-  <a id="manual-btn" href="checkout.html" class="hero-btn" style="
-      display: inline-block;
-      padding: 12px 30px;
-      background: linear-gradient(to right, #ffffff, #4e6e81);
-      color: #555;
-      border: none;
-      border-radius: 25px;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      transition: background 0.3s, color 0.3s;
-      font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-      text-decoration: none;
-      text-align: center;
-  ">
-    Order Your Manual Now
-  </a>
-</section><br><br>
-
-<script>
-  // Optional: enforce font color
-  document.getElementById('manual-btn').style.color = '#555';
-</script>
-
-
+  <a id="manual-btn" href="checkout2.html" class="hero-btn" style="
+    display:inline-block;
+    padding:16px 36px;
+    background:#cc6600;
+    color:#fff !important;
+    border:2px solid #cc6600;
+    border-radius:12px;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(204,102,0,0.25);
+    transition:all .25s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration:none;
+    text-align:center;
+">
+    📖 Order Your Manual Now
+</a>
+</section>
 
 <!-- AdSense -->
 <ins class="adsbygoogle"
@@ -861,30 +1219,44 @@ body {
   (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<!-- How It Works -->
-<section style="text-align:center;">
-  <h2 style="background:#555; color:#fff; display:inline-block; padding:12px 30px; border-radius:16px; margin-bottom:10px;">
-    How It Works
-  </h2>
 
-  <div class="how-works">
-    <div>
-      <h3 style="font-size:2rem; color:#555;">1</h3>
-      <img src="e.png" alt="Enter Details">
-      <p><strong>Enter your details, brand, and serial number of the device or appliance.</strong></p>
+  <section style="text-align:center;">
+
+    <h2 style="
+        display:inline-block;
+        background:#cc6600;
+        color:#fff;
+        padding:14px 35px;
+        border-radius:12px;
+        margin-bottom:20px;
+    ">
+        How It Works
+    </h2>
+
+    <div class="how-works">
+
+        <div class="step">
+            <h3>1</h3>
+            <img src="e.png" alt="Enter Details">
+            <p><strong>Enter your details, brand, and serial number of your device.</strong></p>
+        </div>
+
+        <div class="step">
+            <h3>2</h3>
+            <img src="q.png" alt="Checkout">
+            <p><strong>Complete your secure checkout using your preferred payment method.</strong></p>
+        </div>
+
+        <div class="step">
+            <h3>3</h3>
+            <img src="w.png" alt="Receive Manual">
+            <p><strong>Receive your manual instantly or by email if additional searching is required.</strong></p>
+        </div>
+
     </div>
 
-    <div>
-      <h3 style="font-size:2rem; color:#555;">2</h3>
-      <img src="q.png" alt="Checkout Securely">
-      <p><strong>Checkout securely — multiple payment options available</strong></p>
-    </div>
+</section>
 
-    <div>
-      <h3 style="font-size:2rem; color:#555;">3</h3>
-      <img src="w.png" alt="Receive Manual">
-      <p><strong>Receive your manual via email or download it immediately.</strong></p>
-    </div>
   </div>
 </section>
 
@@ -1111,16 +1483,17 @@ body {
 
 </div>
 
-
-
-
-<br><br><br><br>
-
-
 <section style="text-align:center;">
-  <h2 style="background:#555; color:#fff; display:inline-block; padding:12px 30px; border-radius:16px; margin-bottom:10px;">
-    Why Choose Us?
-  </h2>
+  <h2 style="
+        display:inline-block;
+        background:#cc6600;
+        color:#fff;
+        padding:14px 35px;
+        border-radius:12px;
+        margin-bottom:20px;
+    ">
+        How It Works
+    </h2>
 </section>
 
 
@@ -1151,7 +1524,7 @@ body {
 
   <!-- Column 3: Box 2 -->
   <div style="text-align: left; flex:1; min-width:200px; background:#fff; padding:20px; border:2px solid #555; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.08);">
-    <h3 style="color:#555; text-align: center;">FindMyManual ✅</h3><br>
+    <h3 style="color:#555; text-align: center;">UserManual ✅</h3><br>
     <ul style="list-style:none; padding-left:0; color:#555;">
   
       <li>✅ Money-back guarantee if your manual isn’t available</li>
@@ -1203,39 +1576,76 @@ body {
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: stretch; gap: 20px; max-width: 1000px; margin: 40px auto;">
 
   <!-- Badge Style -->
-    <style>
-      .badge {
-        background: #ffffff;
-        border: 2px solid #555;
-        border-radius: 10px;
-        padding: 12px 18px;
-        display: flex;
-        flex-direction: column;  /* change to column */
-        align-items: center;     /* center the content */
-        gap: 8px;
-        flex: 1 1 180px;
-        min-width: 180px;
-        box-sizing: border-box;
-        text-align: center;
-      }
 
-      .badge img {
-        width: 100px;   /* bigger image */
-        height: 100px;
-        object-fit: contain;
-      }
+   <style>
 
-      .badge strong {
-        color: #555;
-        display: block;
-        font-size: 1rem;
-      }
+/* =========================
+   TRUST BADGES
+========================= */
 
-      .badge small {
-        color: #666;
-        font-size: 0.85rem;
-      }
-    </style>
+.badge{
+    flex:1 1 180px;
+    min-width:180px;
+    padding:20px;
+    background:#fff;
+    border:2px solid #cc6600;
+    border-radius:16px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    gap:12px;
+    box-sizing:border-box;
+    box-shadow:0 6px 15px rgba(0,0,0,.08);
+    transition:all .25s ease;
+}
+
+.badge:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
+    border-color:#b35a00;
+}
+
+.badge img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+}
+
+.badge strong{
+    display:block;
+    font-size:1rem;
+    font-weight:700;
+    color:#333;
+}
+
+.badge small{
+    display:block;
+    font-size:.9rem;
+    line-height:1.5;
+    color:#666;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+    .badge{
+        min-width:150px;
+        padding:16px;
+    }
+
+    .badge img{
+        width:75px;
+        height:75px;
+    }
+
+}
+
+</style>
 
     <!-- SSL Secure -->
     <div class="badge">
@@ -1271,12 +1681,59 @@ body {
 </section>
 <div style="text-align:center; padding:40px 20px; background:#f8f9fb;">
 
-<h2 style="margin-bottom:15px; text-align:center;">
+<section class="orange">
+
+<div class="container">
+
+<h2 class="title">
+
 Trusted by Customers Worldwide
+
 </h2>
 
+<div class="stats">
+
+<div class="stat">
+
+<h2>100K+</h2>
+
+Manuals
+
+</div>
+
+<div class="stat">
+
+<h2>95%</h2>
+
+Success
+
+</div>
+
+<div class="stat">
+
+<h2>50+</h2>
+
+Countries
+
+</div>
+
+<div class="stat">
+
+<h2>24/7</h2>
+
+Support
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
 <p style="max-width:700px; margin:0 auto; font-size:16px; text-align:center;">
-Find My Manual provides secure digital downloads backed by trusted
+UserManual Store provides secure digital downloads backed by trusted
 payment processing and customer reviews.
 </p>
 
@@ -1310,8 +1767,8 @@ Customer satisfaction and secure checkout are our top priorities.
     <p style="color: #555; font-size: 1rem; line-height: 1.6; margin: 0;">
       ⏰ <strong>Open 24 hours a day, 7 days a week</strong><br>
       ✉️ Reach us anytime at 
-      <a href="mailto:findmymanual@outlook.com" style="color: #555; text-decoration: none; font-weight: bold;">
-        findmymanual@outlook.com
+      <a href="mailto:usermanual.store@outlook.com" style="color: #555; text-decoration: none; font-weight: bold;">
+        usermanual.store@outlook.com
       </a> — we’re always ready to help!
     </p>
 
@@ -1326,7 +1783,7 @@ font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; text-align: c
 
     <!-- Section wrapper (matches gradient style used in FAQ/Blog) -->
     <div class="testimonials-wrapper" style="padding: 18px; border-radius: 8px; 
-         background: linear-gradient(to right, #4e6e81, #2c3e50); color: #ffffff;">
+         background: linear-gradient(to right, #4e6e81, #cc6600); color: #ffffff;">
 
       <h2 style="font-size: 2.2rem; font-weight: 700; margin: 0 0 20px 0;">What Our Customers Say</h2>
       <p style="margin: 0 0 30px 0; color: rgba(255,255,255,0.92); font-size: 1rem;">
@@ -1359,7 +1816,7 @@ font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; text-align: c
 
         <!-- Testimonial 4 (appliance) -->
         <article class="testimonial-card" style="background-color: #f5f5f5; color: #080808; padding: 18px; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.08);">
-          <p style="margin: 0 0 12px 0; font-style: italic;">“My washing machine manual was impossible to find elsewhere, but Find My Manual sent it right away. Saved me so much time!”</p>
+          <p style="margin: 0 0 12px 0; font-style: italic;">“My washing machine manual was impossible to find elsewhere, but UserManual Store sent it right away. Saved me so much time!”</p>
           <div style="margin-bottom: 10px; font-weight: 700;">★★★★★</div>
           <p style="margin: 0; font-weight: 600;">– Daniel R.</p>
         </article>
@@ -1373,7 +1830,7 @@ font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; text-align: c
 
         <!-- Testimonial 6 (vehicle) -->
         <article class="testimonial-card" style="background-color: #f5f5f5; color: #080808; padding: 18px; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.08);">
-          <p style="margin: 0 0 12px 0; font-style: italic;">“I couldn’t locate the owner’s manual for my car anywhere. Find My Manual delivered a complete digital copy instantly. Excellent service!”</p>
+          <p style="margin: 0 0 12px 0; font-style: italic;">“I couldn’t locate the owner’s manual for my car anywhere. UserManual Store delivered a complete digital copy instantly. Excellent service!”</p>
           <div style="margin-bottom: 10px; font-weight: 700;">★★★★★</div>
           <p style="margin: 0; font-weight: 600;">– Robert C.</p>
         </article>
@@ -1422,7 +1879,7 @@ font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; text-align: c
 <!-- Footer Section -->
 <footer style="
   width: 100%;
-  background: linear-gradient(to right, #4e6e81, #2c3e50);
+  background: #1d1d1d;
   border-radius: 16px;
   color: #ffffff;
   padding: 60px 25px;
@@ -1452,16 +1909,16 @@ font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; text-align: c
         padding-bottom: 6px;
       ">About</h3>
       <ul style="list-style: none; padding: 0; margin: 0;">
-        <li><a href="about.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">About Us</a></li>
-        <li><a href="FAQ.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">F.A.Q.</a></li>
-        <li><a href="survey.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">What Our Customers Say</a></li>
-        <li><a href="mailto:findmymanual@outlook.com" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Contact Us</a></li>
+        <li><a href="aboutManuals.html" target="_blank" style="color: #e0e0e0; font-size: 1rem; text-decoration: none; display: block; padding: 5px 0;">About Us</a></li>
+        <li><a href="FAQManuals.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">F.A.Q.</a></li>
+        <li><a href="surveyManuals.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">What Our Customers Say</a></li>
+        <li><a href="mailto:usermanual.store@outlook.com" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Contact Us</a></li>
       </ul>
     </div>
 
     <!-- Logo -->
     <div style="flex: 0 0 auto; text-align: center;">
-      <img src="logo2.png" alt="Find My Manual Logo" style="
+      <img src="UM.png" alt="UserManual Logo" style="
         height: 180px;
         width: 180px;
         border-radius: 12px;
@@ -1481,38 +1938,24 @@ font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; text-align: c
         padding-bottom: 6px;
       ">Legal</h3>
       <ul style="list-style: none; padding: 0; margin: 0;">
-        <li><a href="privacy.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Privacy Policy</a></li>
-        <li><a href="cookie.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Cookie Policy</a></li>
-        <li><a href="terms.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Terms of Use</a></li>
-        <li><a href="refund.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Refund Policy</a></li>
-        <li><a href="Pricing.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Pricing Policy</a></li>
+        <li><a href="PrivacyManuals.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Privacy Policy</a></li>
+        <li><a href="cookieManuals.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Cookie Policy</a></li>
+        <li><a href="termsManuals.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Terms of Use</a></li>
+        <li><a href="refundManuals.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Refund Policy</a></li>
+        <li><a href="PricingManuals.html" target="_blank" style="color: #e0e0e0; text-decoration: none; display: block; padding: 5px 0;">Pricing Policy</a></li>
   
       </ul>
     </div>
   </div>
 
        
-
-
-  <a href="checkout.html" style="
-  position: fixed;
-  bottom: 50px; /* 👈 moved up above banner */
-  right: 20px;
-  background: linear-gradient(to right, #ffffff, #4e6e81);
-  color: #2c2b2b;
-  padding: 14px 22px;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-  z-index: 10000; /* 👈 higher than banner */
-">
-  Get Manual Now
-</a>
-
 <div id="trust-banner">
   <span id="trust-text"></span>
 </div>
+
+<a href="checkout2.html" class="floating-btn">
+    📖 Order Manual
+</a>
 
 <style>
 #trust-banner {
@@ -1529,7 +1972,38 @@ font-family: Georgia, 'Times New Roman', Times, serif, sans-serif; text-align: c
 body {
   margin-bottom: 40px; /* prevent overlap with content */
 }
+
+.floating-btn{
+    position:fixed;
+    bottom:50px;
+    right:20px;
+    background:#cc6600;
+    color:#fff;
+    padding:16px 28px;
+    border:2px solid #cc6600;
+    border-radius:50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:16px;
+    font-weight:600;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(204,102,0,.30);
+    transition:all .25s ease;
+    z-index:10000;
+}
+
+.floating-btn:hover{
+    background:#b35a00;
+    border-color:#b35a00;
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(179,90,0,.35);
+    color:#fff;
+}
+
+
+
 </style>
+
+
 
 <script>
 const messages = [
@@ -1584,15 +2058,12 @@ rotateMessage();
 </amp-auto-ads>
   
 
-  <!-- Footer Bottom Links -->
-  <div style="text-align: center; margin-top: 25px;">
-    <a href="privacy.html" target="_blank" style="font-size: 1rem; font-weight: bold; color: #ffffff; text-decoration: none; margin: 0 10px;">Privacy Policy</a> |
-    <a href="terms.html" target="_blank" style="font-size: 1rem; font-weight: bold; color: #ffffff; text-decoration: none; margin: 0 10px;">Terms and Conditions</a> |
-    <a href="about.html" target="_blank" style="font-size: 1rem; font-weight: bold; color: #ffffff; text-decoration: none; margin: 0 10px;">About Us</a>
-  </div>
+
+  
+</div>
 
   <!-- Footer Bottom -->
   <div style="margin-top: 50px; font-size: 1rem; color: #ffffff; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; padding-bottom: 20px; font-weight: bold; text-align: center;">
-    © 2026 Find My Manual — User Manuals & Appliance Guides
+    © 2026 UserManual Store — UserManual Store & Appliance Guides
   </div>
 </footer></body>
