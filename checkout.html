@@ -14,291 +14,402 @@ gtag('config', 'AW-17308900859');
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Checkout Page</title>
 
-<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+<script src="https://wise.com/pay/r/Xn3tpOjaRLa5JlY"></script>
 
 <style>
-body,h2,p,label,input,button{
-  font-family:Georgia,'Times New Roman',Times,serif;
-}
-body{
-  background-color:#e8edf1;
-  margin:0;
-  padding:20px;
-  display:flex;
-  justify-content:center;
-  align-items:flex-start;
-  min-height:100vh;
-  color:#080808;
-}
-.order-section{
-  background:linear-gradient(to right,#4e6e81,#2c3e50);
-  border-radius:12px;
-  padding:30px;
-  width:100%;
-  max-width:400px;
-  color:#fff;
-  text-align:center;
-  box-shadow:0 6px 20px rgba(0,0,0,0.2);
-}
-.order-section h2{
-  font-size:2.2rem;
-  margin-bottom:25px;
-  font-weight:bold;
-}
-.order-section label{
-  font-weight:bold;
-  margin-bottom:5px;
-  color:#fff;
-  display:block;
-  text-align:left;
-}
-.order-section input[type="text"],
-.order-section input[type="email"],
-.order-section input[type="tel"]{
-  width:100%;
-  padding:10px 12px;
-  border-radius:6px;
-  border:none;
-  font-size:1rem;
-  color:#33475b;
-  outline:none;
-  margin-bottom:15px;
-}
-.order-section input[readonly]{
-  background-color:#d1d5db;
-  cursor:not-allowed;
-}
-.order-section button{
-  background:#fff;
-  color:#2c3e50;
-  padding:12px 0;
-  border:none;
-  border-radius:6px;
-  font-size:1rem;
-  font-weight:bold;
-  cursor:pointer;
-  transition:background 0.3s ease;
-  width:100%;
-}
-.order-section button:hover{
-  background:#f5f5f5;
-}
-.trust-section{
-  padding:25px 20px;
-  border-radius:12px;
-  text-align:center;
-  margin-top:20px;
-  background:linear-gradient(to right,#4e6e81,#2c3e50);
-  color:#fff;
-}
-.trust-section h2{
-  font-size:1.8rem;
-  font-weight:bold;
-  margin-bottom:15px;
-}
-.trust-section p{
-  font-size:1rem;
-  line-height:1.6;
-  margin-bottom:20px;
-}
-.trust-section .logos{
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
-}
-.trust-section .logos img{
-  height:30px;
-  width:auto;
-}
-</style>
+        :root {
+            --o: #4e6e81;
+            --od: #4e6e81;
+            --bg: #fff7ed
+        }
 
+        body {
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: #f5f5f5;
+            color: #222
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 24px;
+            padding: 20px
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 28px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, .08)
+        }
+
+        h1 {
+            margin: 0 0 8px
+        }
+
+        .sub {
+            color: #666;
+            margin-bottom: 24px
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin: 12px 0 6px
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-sizing: border-box
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 16px;
+            background: linear-gradient(135deg, var(--o), var(--od));
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 12px;
+            cursor: pointer
+        }
+
+        .summary {
+            background: var(--bg)
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee
+        }
+
+        .total {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--od)
+        }
+
+        .trust {
+            margin-top: 20px;
+            padding: 16px;
+            background: #fff7ed;
+            border: 1px solid #fed7aa;
+            border-radius: 12px
+        }
+
+        @media(max-width:800px) {
+            .wrap {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .logos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(90px,1fr));
+    gap:15px;
+    margin-top:20px;
+    align-items:center;
+    justify-items:center;
+}
+
+.logos img{
+    width:80px;
+    height:45px;
+    object-fit:contain;
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:8px;
+    padding:8px;
+    transition:0.3s ease;
+}
+
+.logos img:hover{
+    transform:scale(1.05);
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+/* ===========================
+   TRUST BOX
+=========================== */
+
+.trust-box{
+margin:25px 0;
+padding:18px;
+background:#f8fbff;
+border:1px solid #d9e9ff;
+border-radius:12px;
+}
+
+.trust-item{
+display:flex;
+align-items:flex-start;
+gap:14px;
+padding:10px 0;
+}
+
+.trust-item:first-child{
+border-bottom:1px solid #e6eef7;
+padding-bottom:14px;
+margin-bottom:6px;
+}
+
+.trust-icon{
+width:42px;
+height:42px;
+border-radius:50%;
+background:#0057b8;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:20px;
+font-weight:bold;
+flex-shrink:0;
+}
+
+.trust-title{
+font-weight:700;
+font-size:17px;
+color:#222;
+margin-bottom:4px;
+}
+
+.trust-text{
+font-size:15px;
+color:#555;
+line-height:1.5;
+}
+
+.question{
+  cursor:pointer;
+  font-weight:bold;
+  padding:10px;
+  background:#f2f2f2;
+  margin-top:5px;
+}
+
+.answer{
+  display:none;
+  margin-top:8px;
+}
+
+@media(max-width:600px){
+
+.trust-box{
+padding:15px;
+}
+
+.trust-icon{
+width:36px;
+height:36px;
+font-size:17px;
+}
+
+.trust-title{
+font-size:16px;
+}
+
+.trust-text{
+font-size:14px;
+}
+
+}
+
+    </style>
 </head>
+
 <body>
 
-<div class="order-section">
+<div class="wrap">
 
-<h2>Order Your Manual</h2>
+    <!-- Checkout Form -->
+    <div class="card">
 
-<label for="name">Full Name</label>
-<input type="text" id="name" placeholder="Your full name" required>
+        <h1>🔒 Secure Checkout</h1>
+        <div class="sub">Complete your order securely.</div>
 
-<label for="email">Email</label>
-<input type="email" id="email" placeholder="your.email@example.com" required>
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Your full name">
 
-<label for="phone">Phone Number</label>
-<input type="tel" id="phone" placeholder="Phone Number" required>
+        <label>Email</label>
+        <input type="email" id="email" placeholder="your@email.com">
 
-<label for="brand">Brand Name</label>
-<input type="text" id="brand" placeholder="Brand Name" required>
+        <label>Phone</label>
+        <input type="tel" id="phone" placeholder="Phone number">
 
-<label for="model">Serial Number</label>
-<input type="text" id="model" placeholder="Serial Number" required>
+        <label>Brand Name</label>
+        <input type="text" id="brand" placeholder="Brand name">
 
-<label for="product">Product Name</label>
-<input type="text" value="User Manual" readonly>
+        <label>Serial Number</label>
+        <input type="text" id="model" placeholder="Serial number">
 
-<label for="amount">Amount (USD)</label>
-<input type="text" value="$14.95" readonly>
+        <button id="payButton">Complete Secure Payment</button>
 
-<button id="payButton">Submit Order & Pay</button>
+        <div class="trust">
 
-<div style="margin-top:20px; text-align:center;">
-<p style="font-weight:bold; margin-bottom:8px;">
-⭐ Trusted by Customers – Verified Reviews
-</p><br>
+            <div style="margin-top:20px;text-align:center;">
+                <p style="font-weight:bold;margin-bottom:8px;">
+                    ⭐ Trusted by Customers – Verified Reviews
+                </p>
 
-<img src="https://cdn.trustpilot.net/brand-assets/4.1.0/logo-black.svg" 
-alt="Trustpilot Reviews" 
-style="height:50px; margin-bottom:8px;">
-</div>
+                <img src="https://cdn.trustpilot.net/brand-assets/4.1.0/logo-black.svg"
+                     alt="Trustpilot Reviews"
+                     style="height:50px;">
+            </div>
 
-<!-- Trust & Security Section -->
-<div id="trustSecurity" style="margin-top:20px; text-align:center; padding:20px; background:#f5f7fa; border-radius:12px;">
-  <div style="text-align: left; max-width: 600px; margin: 20px auto; font-size: 16px; line-height: 1.6;">
-  <h3 style="color:#2c3e50; font-size:1.6rem; margin-bottom:10px;">Trust & Security – Buy with Confidence</h3>
-  <p style="font-size:1rem; color:#33475b; line-height:1.6; margin-bottom:15px;">
-    ✅ 14-day Money-Back Guarantee – no questions asked!<br>
-    🔒 Encrypted & Secure Checkout (SSL protected)<br>
-    💳 Trusted Payment Processors: PayPal, Visa, MasterCard, and Paddle<br>
-    📧 Instant Email Confirmation of Your Order<br>
-    🛡️ Fraud Protection for Safe Payments<br>
-    ⚡ Immediate Digital Delivery – Download your manual instantly<br>
-    🌎 Global Customer Support Available
-  </p></div>
-</div>
+            <br>
 
-<div class="trust-section">
-<h2>Secure & Trusted Payment</h2>
-<p>Your payment is 100% secure. We use Paddle, a trusted global payment processor.</p>
-<div class="logos">
-<img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" 
-     alt="PayPal" 
-     style="width:100px; height:auto;">
-<img src="mastercard.png" alt="MasterCard" style="width:100px; height:auto;">
-<img src="visa.jpeg" alt="Visa" style="width:100px; height:auto;">
-<img src="Amex.png" alt="Amex" style="width:100px; height:60px;">
-<img src="Gpay.PNG" alt="Gpay" style="width:100px; height:60px;">
-<img src="applepay.PNG" alt="applepay" style="width:100px; height:60px;">
-<img src="Paddle.png" alt="Paddle" style="width:100px; height:60px;">
+            ✅ 14-day Money-Back Guarantee – no questions asked!<br>
+            🔒 Encrypted & Secure Checkout (SSL protected)<br>
+            💳 Trusted Payment Processors: PayPal, Visa, MasterCard, and Paddle<br>
+            📧 Instant Email Confirmation of Your Order<br>
+            🛡️ Fraud Protection for Safe Payments<br>
+            ⚡ Immediate Digital Delivery – Download your manual instantly<br>
+            🌎 Global Customer Support Available
 
-</div>
-</div>
+        </div>
+
+    </div>
+
+    <!-- Order Summary -->
+    <div class="card summary">
+
+        <h2>Order Summary</h2>
+
+        <div class="row">
+            <span>Product</span>
+            <strong>User Manual PDF</strong>
+        </div>
+
+        <div class="row">
+            <span>Delivery</span>
+            <strong>Email</strong>
+        </div>
+
+        <div class="row total">
+            <span>Total</span>
+            <strong>$19.95</strong>
+        </div>
+
+        <div class="trust-box">
+
+            <div class="trust-item">
+                <div class="trust-icon">🔒</div>
+
+                <div>
+                    <div class="trust-title">Secure Checkout</div>
+                    <div class="trust-text">
+                        Bank-level encryption. No card details stored.
+                    </div>
+                </div>
+            </div>
+
+            <div class="trust-item">
+                <div class="trust-icon">✓</div>
+
+                <div>
+                    <div class="trust-title">
+                        14-Day Money-Back Guarantee
+                    </div>
+
+                    <div class="trust-text">
+                        Shop with complete confidence.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Secure & Trusted Payment</h2>
+
+        <p>
+            Your payment is 100% secure. We use trusted payment providers to
+            protect every transaction.
+        </p>
+
+        <div class="logos">
+            <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
+            <img src="mastercard.png" alt="MasterCard">
+            <img src="visa.jpeg" alt="Visa">
+            <img src="Amex.png" alt="American Express">
+            <img src="Gpay.PNG" alt="Google Pay">
+            <img src="applepay.PNG" alt="Apple Pay">
+            <img src="Paddle.png" alt="Paddle">
+        </div>
+
+    </div>
 
 </div>
 
 <script>
-// ==========================
-// INIT PADDLE
-// ==========================
-Paddle.Initialize({
-  token: "live_7fd8fb2221b2b9ec5b3320c704e"
-});
 
-// ==========================
-// SAFE GOOGLE TRACKING
-// ==========================
-function trackGtag(event, params) {
-  if (typeof gtag === "function") {
-    gtag('event', event, params);
-  }
+function trackGtag(event, params){
+    if(typeof gtag==="function"){
+        gtag("event", event, params);
+    }
 }
 
-// ==========================
-// BUTTON CLICK
-// ==========================
-document.getElementById("payButton").addEventListener("click", async function () {
+document.getElementById("payButton").addEventListener("click", async function(){
 
-  // Track checkout start
-  trackGtag('begin_checkout', {
-    send_to: 'AW-17308900859'
-  });
+    trackGtag("begin_checkout",{
+        send_to:"AW-17308900859"
+    });
 
-  // ==========================
-  // GET FORM VALUES
-  // ==========================
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const brand = document.getElementById("brand").value.trim();
-  const model = document.getElementById("model").value.trim();
+    const name=document.getElementById("name").value.trim();
+    const email=document.getElementById("email").value.trim();
+    const phone=document.getElementById("phone").value.trim();
+    const brand=document.getElementById("brand").value.trim();
+    const model=document.getElementById("model").value.trim();
 
-  // ==========================
-  // VALIDATION
-  // ==========================
-  if (!name || !email || !phone || !brand || !model) {
-    alert("Please fill out all required fields.");
-    return;
-  }
+    if(!name || !email || !phone || !brand || !model){
+        alert("Please fill out all required fields.");
+        return;
+    }
 
-  // ==========================
-  // GENERATE ORDER NUMBER
-  // ==========================
-  const order_number = Math.floor(100000 + Math.random() * 900000).toString();
+    const order_number=Math.floor(100000+Math.random()*900000).toString();
 
-  // ==========================
-  // PREPARE DATA
-  // ==========================
-  const orderData = {
-    name: name,
-    email: email,
-    phone: phone,
-    brand: brand,
-    model: model,
-    order_number: order_number,
-    product: "User Manual",
-    amount: "$14.95",
-    status: "Pending Payment"
-  };
+    const orderData={
+        name,
+        email,
+        phone,
+        brand,
+        model,
+        order_number,
+        product:"User Manual PDF",
+        amount:"$19.95",
+        status:"Pending Payment"
+    };
 
-  // ==========================
-  // SEND TO FORMSPREE
-  // ==========================
-  try {
-  const response = await fetch("https://formspree.io/f/xldpwdpb", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Accept": "application/json"
-    },
-    body: JSON.stringify(orderData)
-  });
+    localStorage.setItem("lastOrder",JSON.stringify(orderData));
 
-  if (!response.ok) {
-    console.log("Formspree failed:", await response.text());
-  } else {
-    console.log("Formspree success");
-  }
+    try{
+        await fetch("https://formspree.io/f/xldpwdpb",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json",
+                "Accept":"application/json"
+            },
+            body:JSON.stringify(orderData)
+        });
+    }catch(error){
+        console.error(error);
+    }
 
-} catch (error) {
-  console.error("Formspree Error:", error);
-}
-
-  // ==========================
-  // SAFETY CHECK FOR PADDLE
-  // ==========================
-  if (typeof Paddle === "undefined" || !Paddle.Checkout) {
-    alert("Payment system is still loading. Please try again.");
-    return;
-  }
-
-  // ==========================
-  // OPEN PADDLE CHECKOUT
-  // ==========================
-  Paddle.Checkout.open({
-    items: [
-      { priceId: "pri_01kkrgrb89fvnyhdrd1x0g8fsa", quantity: 1 }
-    ],
-    customer: {
-      email: email
-    },
-    customData: orderData,
-    successUrl:
-      "thank-you.html?order=" + order_number +
-      "&custom=" + encodeURIComponent(JSON.stringify(orderData))
-  });
+    // Redirect to Wise Payment
+    window.location.href="https://wise.com/pay/r/Xn3tpOjaRLa5JlY";
 
 });
+
 </script>
 
 </body>
