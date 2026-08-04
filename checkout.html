@@ -10,11 +10,11 @@ gtag('js', new Date());
 gtag('config', 'AW-17308900859');
 </script>
 
+<script src="https://www.paypal.com/sdk/js?client-id=BAA77KhSixDF5V_h-2_0kRFWcFZwm6ptJf6wpKtnd6295iW_wd4kx7BLENZpY5bcWVQSbcnXl2o9OQH5Ho&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Checkout Page</title>
-
-<script src="https://wise.com/pay/r/Xn3tpOjaRLa5JlY"></script>
 
 <style>
         :root {
@@ -223,6 +223,17 @@ font-size:16px;
 font-size:14px;
 }
 
+.migration-note{
+    background:#f8fbff;
+    border:1px solid #d9e9ff;
+    color:#333;
+    padding:15px;
+    border-radius:12px;
+    margin:20px 0;
+    font-size:14px;
+    line-height:1.5;
+}
+
 }
 
     </style>
@@ -253,7 +264,18 @@ font-size:14px;
         <label>Serial Number</label>
         <input type="text" id="model" placeholder="Serial number">
 
-        <button id="payButton">Complete Secure Payment</button>
+
+        <button id="payButton" type="button">
+            Complete Secure Payment
+        </button><br><br>
+
+        <div class="migration-note">
+    <strong>📢 Website Update:</strong><br>
+    We are currently migrating to our new website:
+    <strong>UserManual.store</strong>.<br>
+    Your order, payment, and customer support experience remain secure and uninterrupted.
+</div>
+
 
         <div class="trust">
 
@@ -271,15 +293,16 @@ font-size:14px;
 
             ✅ 14-day Money-Back Guarantee – no questions asked!<br>
             🔒 Encrypted & Secure Checkout (SSL protected)<br>
-            💳 Trusted Payment Processors: PayPal, Visa, MasterCard, and Paddle<br>
+            💳 Trusted Payment Processors: PayPal, Visa, MasterCard, Apple Pay & Google Pay<br>
             📧 Instant Email Confirmation of Your Order<br>
             🛡️ Fraud Protection for Safe Payments<br>
-            ⚡ Immediate Digital Delivery – Download your manual instantly<br>
+            ⚡ Immediate Digital Delivery<br>
             🌎 Global Customer Support Available
 
         </div>
 
     </div>
+
 
     <!-- Order Summary -->
     <div class="card summary">
@@ -301,18 +324,23 @@ font-size:14px;
             <strong>$14.95</strong>
         </div>
 
+
         <div class="trust-box">
 
             <div class="trust-item">
                 <div class="trust-icon">🔒</div>
 
                 <div>
-                    <div class="trust-title">Secure Checkout</div>
+                    <div class="trust-title">
+                        Secure Checkout
+                    </div>
+
                     <div class="trust-text">
                         Bank-level encryption. No card details stored.
                     </div>
                 </div>
             </div>
+
 
             <div class="trust-item">
                 <div class="trust-icon">✓</div>
@@ -330,86 +358,186 @@ font-size:14px;
 
         </div>
 
+
         <h2>Secure & Trusted Payment</h2>
 
         <p>
-            Your payment is 100% secure. We use trusted payment providers to
-            protect every transaction.
+            Your payment is protected by PayPal's secure payment system.
         </p>
 
+
         <div class="logos">
+
             <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
+
             <img src="mastercard.png" alt="MasterCard">
+
             <img src="visa.jpeg" alt="Visa">
+
             <img src="Amex.png" alt="American Express">
+
             <img src="Gpay.PNG" alt="Google Pay">
+
             <img src="applepay.PNG" alt="Apple Pay">
-            <img src="Paddle.png" alt="Paddle">
+
         </div>
+
 
     </div>
 
+
 </div>
+
+
 
 <script>
 
+
 function trackGtag(event, params){
+
     if(typeof gtag==="function"){
+
         gtag("event", event, params);
+
     }
+
 }
+
+
 
 document.getElementById("payButton").addEventListener("click", async function(){
 
-    trackGtag("begin_checkout",{
-        send_to:"AW-17308900859"
-    });
 
     const name=document.getElementById("name").value.trim();
+
     const email=document.getElementById("email").value.trim();
+
     const phone=document.getElementById("phone").value.trim();
+
     const brand=document.getElementById("brand").value.trim();
+
     const model=document.getElementById("model").value.trim();
 
+
+
     if(!name || !email || !phone || !brand || !model){
+
         alert("Please fill out all required fields.");
+
         return;
+
     }
+
+
+
+    trackGtag("begin_checkout",{
+
+        send_to:"AW-17308900859"
+
+    });
+
+
 
     const order_number=Math.floor(100000+Math.random()*900000).toString();
 
+
+
     const orderData={
+
         name,
+
         email,
+
         phone,
+
         brand,
+
         model,
+
         order_number,
+
         product:"User Manual PDF",
+
         amount:"$14.95",
+
         status:"Pending Payment"
+
     };
 
-    localStorage.setItem("lastOrder",JSON.stringify(orderData));
+
+
+    localStorage.setItem(
+
+        "lastOrder",
+
+        JSON.stringify(orderData)
+
+    );
+
+
 
     try{
+
+
         await fetch("https://formspree.io/f/xldpwdpb",{
+
             method:"POST",
+
             headers:{
+
                 "Content-Type":"application/json",
+
                 "Accept":"application/json"
+
             },
+
             body:JSON.stringify(orderData)
+
         });
+
+
     }catch(error){
+
         console.error(error);
+
     }
 
-    // Redirect to Wise Payment
-    window.location.href="https://wise.com/pay/r/Xn3tpOjaRLa5JlY";
+
+
+    // PayPal Payment Link
+    const paypalLink="https://www.paypal.com/ncp/payment/WYTY3RWBVMLSE";
+
+
+
+    // Open PayPal checkout window
+
+    window.open(
+
+        paypalLink,
+
+        "_blank",
+
+        "width=600,height=700"
+
+    );
+
+
 
 });
 
+
+
+</script>
+
+
+</body>
+
+</script>
+
+<script>
+paypal.HostedButtons({
+    hostedButtonId: "WYTY3RWBVMLSE"
+}).render("#paypal-container-WYTY3RWBVMLSE");
 </script>
 
 </body>
