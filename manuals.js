@@ -9232,4 +9232,930 @@ const manuals = [
   url:"HP-pdf/HP-Pro-612-G1-Wndows-7.html"
 },
 
+{
+  brand:"Janome",
+  model:"1000CPX",
+  title:"Janome 1000CPX Sewing Machine",
+  url:"Janome-pdf/Janome-1000CPX-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"1100D",
+  title:"Janome 1100D Professional Sewing Machine",
+  url:"Janome-pdf/Janome-1100D-Professional-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"1110DX",
+  title:"Janome 1110DX Sewing Machine",
+  url:"Janome-pdf/Janome-1110DX-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"1200D",
+  title:"Janome 1200D Professional Sewing Machine",
+  url:"Janome-pdf/Janome-1200D-Professional-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"124",
+  title:"Janome 124 Sewing Machine",
+  url:"Janome-pdf/Janome-124-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"128",
+  title:"Janome 128 Sewing Machine",
+  url:"Janome-pdf/Janome-128-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"1600P Series",
+  title:"Janome 1600P Series Sewing Machine",
+  url:"Janome-pdf/Janome-1600P-Series-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"2000CPX",
+  title:"Janome 2000CPX Sewing Machine",
+  url:"Janome-pdf/Janome-2000CPX-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"2030DC",
+  title:"Janome 2030DC Sewing Machine",
+  url:"Janome-pdf/Janome-2030DC-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"2160DC",
+  title:"Janome 2160DC Sewing Machine",
+  url:"Janome-pdf/Janome-2160DC-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"2206",
+  title:"Janome 2206 Sewing Machine",
+  url:"Janome-pdf/Janome-2206-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"2212",
+  title:"Janome 2212 Sewing Machine",
+  url:"Janome-pdf/Janome-2212-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"2222",
+  title:"Janome 2222 Sewing Machine",
+  url:"Janome-pdf/Janome-2222-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"234",
+  title:"Janome 234 Sewing Machine",
+  url:"Janome-pdf/Janome-234-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"3022",
+  title:"Janome 3022 Sewing Machine",
+  url:"Janome-pdf/Janome-3022-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"3128",
+  title:"Janome 3128 Sewing Machine",
+  url:"Janome-pdf/Janome-3128-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"3160QDC",
+  title:"Janome 3160QDC Sewing Machine",
+  url:"Janome-pdf/Janome-3160QDC-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"3434D",
+  title:"Janome 3434D Sewing Machine",
+  url:"Janome-pdf/Janome-3434D-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"41012",
+  title:"Janome 41012 Sewing Machine",
+  url:"Janome-pdf/Janome-41012-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"4120QDC",
+  title:"Janome 4120QDC Sewing Machine",
+  url:"Janome-pdf/Janome-4120QDC-Sewing-Machine.html"
+},
+
+{
+  brand:"Janome",
+  model:"49018",
+  title:"Janome 49018 Sewing Machine",
+  url:"Janome-pdf/Janome-49018-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"49360",
+  title:"Janome 49360 Sewing Machine",
+  url:"Janome-pdf/Janome-49360-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"50816",
+  title:"Janome 50816 Sewing Machine",
+  url:"Janome-pdf/Janome-50816-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"5300QDC-T",
+  title:"Janome 5300QDC-T Sewing Machine",
+  url:"Janome-pdf/Janome-5300QDC-T-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"6260QC",
+  title:"Janome 6260QC Sewing Machine",
+  url:"Janome-pdf/Janome-6260QC-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"712T",
+  title:"Janome 712T Sewing Machine",
+  url:"Janome-pdf/Janome-712T-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"792PG Serger Anniversary Edition",
+  title:"Janome 792PG Serger Anniversary Edition Sewing Machine",
+  url:"Janome-pdf/Janome-792PG-Serger-Anniversary-Edition-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"793PG Serger Anniversary Edition",
+  title:"Janome 793PG Serger Anniversary Edition Sewing Machine",
+  url:"Janome-pdf/Janome-793PG-Serger-Anniversary-Edition-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"8002D",
+  title:"Janome 8002D Sewing Machine",
+  url:"Janome-pdf/Janome-8002D-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"8048",
+  title:"Janome 8048 Sewing Machine",
+  url:"Janome-pdf/Janome-8048-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"8050",
+  title:"Janome 8050 Sewing Machine",
+  url:"Janome-pdf/Janome-8050-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"8100",
+  title:"Janome 8100 Sewing Machine",
+  url:"Janome-pdf/Janome-8100-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"AirThread 2000D Professional",
+  title:"Janome AirThread 2000D Professional Sewing Machine",
+  url:"Janome-pdf/Janome-AirThread-2000D-Professional-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"AirThread 2000D",
+  title:"Janome AirThread 2000D Sewing Machine",
+  url:"Janome-pdf/Janome-AirThread-2000D-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"AQS2009",
+  title:"Janome AQS2009 Sewing Machine",
+  url:"Janome-pdf/Janome-AQS2009-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Arctic Crystal",
+  title:"Janome Arctic Crystal Sewing Machine",
+  url:"Janome-pdf/Janome-Arctic-Crystal-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Buzzin Blue",
+  title:"Janome Buzzin Blue Sewing Machine",
+  url:"Janome-pdf/Janome-Buzzin-Blue-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"C30",
+  title:"Janome C30 Sewing Machine",
+  url:"Janome-pdf/Janome-C30-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"C30W",
+  title:"Janome C30W Sewing Machine",
+  url:"Janome-pdf/Janome-C30W-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Citrus Circus",
+  title:"Janome Citrus Circus Sewing Machine",
+  url:"Janome-pdf/Janome-Citrus-Circus-Sewing-Machine.html"
+},
+
+{
+  brand:"Janome",
+  model:"Continental M7",
+  title:"Janome Continental M7 Sewing Machine",
+  url:"Janome-pdf/Janome-Continental-M7-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Cover Pro 900CP",
+  title:"Janome Cover Pro 900CP Sewing Machine",
+  url:"Janome-pdf/Janome-Cover-Pro-900CP-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"CoverPro 3000P",
+  title:"Janome CoverPro 3000P Sewing Machine",
+  url:"Janome-pdf/Janome-Cover-Pro-3000P-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC1018",
+  title:"Janome DC1018 Sewing Machine",
+  url:"Janome-pdf/Janome-DC1018-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC1050",
+  title:"Janome DC1050 Sewing Machine",
+  url:"Janome-pdf/Janome-DC1050-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC2007LE",
+  title:"Janome DC2007LE Sewing Machine",
+  url:"Janome-pdf/Janome-DC2007LE-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC2010",
+  title:"Janome DC2010 Sewing Machine",
+  url:"Janome-pdf/Janome-DC2010-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC2011",
+  title:"Janome DC2011 Sewing Machine",
+  url:"Janome-pdf/Janome-DC2011-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC2012",
+  title:"Janome DC2012 Sewing Machine",
+  url:"Janome-pdf/Janome-DC2012-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC2013",
+  title:"Janome DC2013 Sewing Machine",
+  url:"Janome-pdf/Janome-DC2013-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC2014",
+  title:"Janome DC2014 Sewing Machine",
+  url:"Janome-pdf/Janome-DC2014-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC2015",
+  title:"Janome DC2015 Sewing Machine",
+  url:"Janome-pdf/Janome-DC2015-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC3018",
+  title:"Janome DC3018 Sewing Machine",
+  url:"Janome-pdf/Janome-DC3018-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC3050",
+  title:"Janome DC3050 Sewing Machine",
+  url:"Janome-pdf/Janome-DC3050-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC4030",
+  title:"Janome DC4030 Sewing Machine",
+  url:"Janome-pdf/Janome-DC4030-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC4030P",
+  title:"Janome DC4030P Sewing Machine",
+  url:"Janome-pdf/Janome-DC4030P-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC4030PR",
+  title:"Janome DC4030PR Sewing Machine",
+  url:"Janome-pdf/Janome-DC4030PR-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"DC5100",
+  title:"Janome DC5100 Sewing Machine",
+  url:"Janome-pdf/Janome-DC5100-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Fast Lane Fucshia",
+  title:"Janome Fast Lane Fucshia Sewing Machine",
+  url:"Janome-pdf/Janome-Fast-Lane-Fucshia-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Graceful Gray",
+  title:"Janome Graceful Gray Sewing Machine",
+  url:"Janome-pdf/Janome-Graceful-Gray-Sewing-Machine.html"
+},
+
+{
+  brand:"Janome",
+  model:"HD1000",
+  title:"Janome HD1000 Sewing Machine",
+  url:"Janome-pdf/Janome-HD1000-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"HD3000",
+  title:"Janome HD3000 Sewing Machine",
+  url:"Janome-pdf/Janome-HD3000-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"HD9 Professional",
+  title:"Janome HD9 Professional Sewing Machine",
+  url:"Janome-pdf/Janome-HD9-Professional-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Hello Kitty 13512",
+  title:"Janome Hello Kitty 13512 Sewing Machine",
+  url:"Janome-pdf/Janome-Hello-Kitty-13512-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Hello Kitty 14412",
+  title:"Janome Hello Kitty 14412 Sewing Machine",
+  url:"Janome-pdf/Janome-Hello-Kitty-14412-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Hello Kitty 15312",
+  title:"Janome Hello Kitty 15312 Sewing Machine",
+  url:"Janome-pdf/Janome-Hello-Kitty-15312-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Hello Kitty 18750",
+  title:"Janome Hello Kitty 18750 Sewing Machine",
+  url:"Janome-pdf/Janome-Hello-Kitty-18750-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"HF8077",
+  title:"Janome HF8077 Sewing Machine",
+  url:"Janome-pdf/Janome-HF8077-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Horizon Memory Craft 12000",
+  title:"Janome Horizon Memory Craft 12000 Sewing Machine",
+  url:"Janome-pdf/Janome-Horizon-Memory-Craft-12000-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Horizon Memory Craft 14000",
+  title:"Janome Horizon Memory Craft 14000 Sewing Machine",
+  url:"Janome-pdf/Janome-Horizon-Memory-Craft-14000-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Horizon Memory Craft 8200QCP",
+  title:"Janome Horizon Memory Craft 8200QCP Sewing Machine",
+  url:"Janome-pdf/Janome-Horizon-Memory-Craft-8200QCP-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Horizon Memory Craft 8900QCP",
+  title:"Janome Horizon Memory Craft 8900QCP Sewing Machine",
+  url:"Janome-pdf/Janome-Horizon-Memory-Craft-8900QCP-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Horizon Memory Craft 9400",
+  title:"Janome Horizon Memory Craft 9400 Sewing Machine",
+  url:"Janome-pdf/Janome-Horizon-Memory-Craft-9400-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"HT2008",
+  title:"Janome HT2008 Sewing Machine",
+  url:"Janome-pdf/Janome-HT2008-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Jem Gold 660",
+  title:"Janome Jem Gold 660 Sewing Machine",
+  url:"Janome-pdf/Janome-Jem-Gold-660-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Jem Platinum 760",
+  title:"Janome Jem Platinum 760 Sewing Machine",
+  url:"Janome-pdf/Janome-Jem-Platinum-760-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"JNH1860",
+  title:"Janome JNH1860 Sewing Machine",
+  url:"Janome-pdf/Janome-JNH1860-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"JNH2030DC",
+  title:"Janome JNH2030DC Sewing Machine",
+  url:"Janome-pdf/Janome-JNH2030DC-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"JW5622",
+  title:"Janome JW5622 Sewing Machine",
+  url:"Janome-pdf/Janome-JW5622-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"JW7630",
+  title:"Janome JW7630 Sewing Machine",
+  url:"Janome-pdf/Janome-JW7630-Sewing-Machine.html"
+},
+
+{
+  brand:"Janome",
+  model:"Lady Lilac",
+  title:"Janome Lady Lilac Sewing Machine",
+  url:"Janome-pdf/Janome-Lady-Lilac-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Magnolia 7034D",
+  title:"Janome Magnolia 7034D Sewing Machine",
+  url:"Janome-pdf/Janome-Magnolia-7034D-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Magnolia 7318",
+  title:"Janome Magnolia 7318 Sewing Machine",
+  url:"Janome-pdf/Janome-Magnolia-7318-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Magnolia 7330",
+  title:"Janome Magnolia 7330 Sewing Machine",
+  url:"Janome-pdf/Janome-Magnolia-7330-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Magnolia 7360",
+  title:"Janome Magnolia 7360 Sewing Machine",
+  url:"Janome-pdf/Janome-Magnolia-7360-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Marie Osmond 200QC",
+  title:"Janome Marie Osmond 200QC Sewing Machine",
+  url:"Janome-pdf/Janome-Marie-Osmond-200QC-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Marine Magic",
+  title:"Janome Marine Magic Sewing Machine",
+  url:"Janome-pdf/Janome-Marine-Magic-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"MB-4 with RCS",
+  title:"Janome MB-4 with RCS Sewing Machine",
+  url:"Janome-pdf/Janome-MB-4-with-RCS-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"MB-4S",
+  title:"Janome MB-4S Sewing Machine",
+  url:"Janome-pdf/Janome-MB-4S-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"MB-7",
+  title:"Janome MB-7 Sewing Machine",
+  url:"Janome-pdf/Janome-MB-7-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory 7 (5001)",
+  title:"Janome Memory 7 (5001) Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-7-(5001)-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 200E",
+  title:"Janome Memory Craft 200E Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-200E-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 2400",
+  title:"Janome Memory Craft 2400 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-2400-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 3000",
+  title:"Janome Memory Craft 3000 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-3000-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 300E",
+  title:"Janome Memory Craft 300E Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-300E-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 3500",
+  title:"Janome Memory Craft 3500 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-3500-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 350E",
+  title:"Janome Memory Craft 350E Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-350E-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 4000",
+  title:"Janome Memory Craft 4000 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-4000-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 400E",
+  title:"Janome Memory Craft 400E Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-400E-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 500E",
+  title:"Janome Memory Craft 500E Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-500E-Sewing-Machine.html"
+},
+
+{
+  brand:"Janome",
+  model:"Memory Craft 10000 Book 1",
+  title:"Janome Memory Craft 10000 Book 1 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-10000-Book-1-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 10000 Book 2",
+  title:"Janome Memory Craft 10000 Book 2 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-10000-Book-2-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 10000 Book 3",
+  title:"Janome Memory Craft 10000 Book 3 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-10000-Book-3-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 10001",
+  title:"Janome Memory Craft 10001 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-10001-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 11000",
+  title:"Janome Memory Craft 11000 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-11000-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 11000 Special Edition",
+  title:"Janome Memory Craft 11000 Special Edition Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-11000-Special-Edition-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 15000",
+  title:"Janome Memory Craft 15000 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-15000-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 4400",
+  title:"Janome Memory Craft 4400 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-4400-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 4800",
+  title:"Janome Memory Craft 4800 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-4800-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 4900QC",
+  title:"Janome Memory Craft 4900QC Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-4900QC-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 5000",
+  title:"Janome Memory Craft 5000 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-5000-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 5200",
+  title:"Janome Memory Craft 5200 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-5200-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 5500",
+  title:"Janome Memory Craft 5500 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-5500-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 5700",
+  title:"Janome Memory Craft 5700 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-5700-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 6000",
+  title:"Janome Memory Craft 6000 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-6000-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 6300",
+  title:"Janome Memory Craft 6300 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-6300-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 6600",
+  title:"Janome Memory Craft 6600 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-6600-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 7000",
+  title:"Janome Memory Craft 7000 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-7000-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 7500",
+  title:"Janome Memory Craft 7500 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-7500-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 8000",
+  title:"Janome Memory Craft 8000 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-8000-Sewing-Machine.html"
+},
+
+{
+  brand:"Janome",
+  model:"Memory Craft 9000",
+  title:"Janome Memory Craft 9000 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-9000-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 9450QCP",
+  title:"Janome Memory Craft 9450QCP Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-9450QCP-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 9500",
+  title:"Janome Memory Craft 9500 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-9500-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 9700",
+  title:"Janome Memory Craft 9700 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-9700-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft 9900",
+  title:"Janome Memory Craft 9900 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-9900-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Memory Craft P6700",
+  title:"Janome Memory Craft P6700 Sewing Machine",
+  url:"Janome-pdf/Janome-Memory-Craft-P6700-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"MOD-100",
+  title:"Janome MOD-100 Sewing Machine",
+  url:"Janome-pdf/Janome-MOD-100-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"MOD-15",
+  title:"Janome MOD-15 Sewing Machine",
+  url:"Janome-pdf/Janome-MOD-15-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"MOD-19",
+  title:"Janome MOD-19 Sewing Machine",
+  url:"Janome-pdf/Janome-MOD-19-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"MOD-30",
+  title:"Janome MOD-30 Sewing Machine",
+  url:"Janome-pdf/Janome-MOD-30-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"MOD-50",
+  title:"Janome MOD-50 Sewing Machine",
+  url:"Janome-pdf/Janome-MOD-50-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"MOD-Serger",
+  title:"Janome MOD-Serger Sewing Machine",
+  url:"Janome-pdf/Janome-MOD-Serger-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"MyLock 204D",
+  title:"Janome MyLock 204D Sewing Machine",
+  url:"Janome-pdf/Janome-MyLock-204D-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"MyLock 634D",
+  title:"Janome MyLock 634D Sewing Machine",
+  url:"Janome-pdf/Janome-MyLock-634D-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Mystical Mint",
+  title:"Janome Mystical Mint Sewing Machine",
+  url:"Janome-pdf/Janome-Mystical-Mint-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"MyStyle 100",
+  title:"Janome MyStyle 100 Sewing Machine",
+  url:"Janome-pdf/Janome-MyStyle-100-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"NQM2016",
+  title:"Janome NQM2016 Sewing Machine",
+  url:"Janome-pdf/Janome-NQM2016-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Orange Blaze",
+  title:"Janome Orange Blaze Sewing Machine",
+  url:"Janome-pdf/Janome-Orange-Blaze-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Pink Lightning",
+  title:"Janome Pink Lightning Sewing Machine",
+  url:"Janome-pdf/Janome-Pink-Lightning-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Purple Thunder",
+  title:"Janome Purple Thunder Sewing Machine",
+  url:"Janome-pdf/Janome-Purple-Thunder-Sewing-Machine.html"
+},
+
+{
+  brand:"Janome",
+  model:"S2015",
+  title:"Janome S2015 Sewing Machine",
+  url:"Janome-pdf/Janome-S2015-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"S650",
+  title:"Janome S650 Sewing Machine",
+  url:"Janome-pdf/Janome-S650-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Schoolmate S-7330",
+  title:"Janome Schoolmate S-7330 Sewing Machine",
+  url:"Janome-pdf/Janome-Schoolmate-S-7330-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Sewist 780DC",
+  title:"Janome Sewist 780DC Sewing Machine",
+  url:"Janome-pdf/Janome-Sewist-780DC-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Sewist 500",
+  title:"Janome Sewist 500 Sewing Machine",
+  url:"Janome-pdf/Janome-Sewist-500-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"SewMini Colors",
+  title:"Janome SewMini Colors Sewing Machine",
+  url:"Janome-pdf/Janome-SewMini-Colors-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Skyline S3",
+  title:"Janome Skyline S3 Sewing Machine",
+  url:"Janome-pdf/Janome-Skyline-S3-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Skyline S5",
+  title:"Janome Skyline S5 Sewing Machine",
+  url:"Janome-pdf/Janome-Skyline-S5-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Skyline S6",
+  title:"Janome Skyline S6 Sewing Machine",
+  url:"Janome-pdf/Janome-Skyline-S6-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Skyline S7",
+  title:"Janome Skyline S7 Sewing Machine",
+  url:"Janome-pdf/Janome-Skyline-S7-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Skyline S9",
+  title:"Janome Skyline S9 Sewing Machine",
+  url:"Janome-pdf/Janome-Skyline-S9-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"TB30",
+  title:"Janome TB30 Sewing Machine",
+  url:"Janome-pdf/Janome-TB30-Sewing-Machine.html"
+},
+{
+  brand:"Janome",
+  model:"Turbo Teal",
+  title:"Janome Turbo Teal Sewing Machine",
+  url:"Janome-pdf/Janome-Turbo-Teal-Sewing-Machine.html"
+}
+
 ]
