@@ -10,7 +10,6 @@ gtag('js', new Date());
 gtag('config', 'AW-17308900859');
 </script>
 
-<script src="https://www.paypal.com/sdk/js?client-id=BAA77KhSixDF5V_h-2_0kRFWcFZwm6ptJf6wpKtnd6295iW_wd4kx7BLENZpY5bcWVQSbcnXl2o9OQH5Ho&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -293,7 +292,7 @@ font-size:14px;
 
             ✅ 14-day Money-Back Guarantee – no questions asked!<br>
             🔒 Encrypted & Secure Checkout (SSL protected)<br>
-            💳 Trusted Payment Processors: PayPal, Visa, MasterCard, Apple Pay & Google Pay<br>
+            💳 Secure Payments via Wise Business<br>
             📧 Instant Email Confirmation of Your Order<br>
             🛡️ Fraud Protection for Safe Payments<br>
             ⚡ Immediate Digital Delivery<br>
@@ -362,8 +361,8 @@ font-size:14px;
         <h2>Secure & Trusted Payment</h2>
 
         <p>
-            Your payment is protected by PayPal's secure payment system.
-        </p>
+    Your payment is securely processed by Wise Business using bank-level encryption.
+</p>
 
 
         <div class="logos">
@@ -504,22 +503,13 @@ document.getElementById("payButton").addEventListener("click", async function(){
 
 
 
-    // PayPal Payment Link
-    const paypalLink="https://www.paypal.com/ncp/payment/WYTY3RWBVMLSE";
+    const wiseLink = "https://wise.com/pay/r/Xn3tpOjaRLa5JlY"; // Paste your complete Wise payment link here
 
-
-
-    // Open PayPal checkout window
-
-    window.open(
-
-        paypalLink,
-
-        "_blank",
-
-        "width=600,height=700"
-
-    );
+window.open(
+    wiseLink,
+    "_blank",
+    "width=700,height=800"
+);
 
 
 
@@ -534,11 +524,6 @@ document.getElementById("payButton").addEventListener("click", async function(){
 
 </script>
 
-<script>
-paypal.HostedButtons({
-    hostedButtonId: "WYTY3RWBVMLSE"
-}).render("#paypal-container-WYTY3RWBVMLSE");
-</script>
 
 </body>
 </html>
