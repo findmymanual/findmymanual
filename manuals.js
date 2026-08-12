@@ -10156,6 +10156,974 @@ const manuals = [
   model:"Turbo Teal",
   title:"Janome Turbo Teal Sewing Machine",
   url:"Janome-pdf/Janome-Turbo-Teal-Sewing-Machine.html"
+},
+{
+  brand:"Kenmore",
+  model:"46-51845",
+  title:"Kenmore Refrigerator 46-51845",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-46-51845.html"
+},
+{
+  brand:"Kenmore",
+  model:"51805",
+  title:"Kenmore Refrigerator 51805",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-51805.html"
+},
+{
+  brand:"Kenmore",
+  model:"61332",
+  title:"Kenmore Refrigerator 61332",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-61332.html"
+},
+{
+  brand:"Kenmore",
+  model:"61335",
+  title:"Kenmore Refrigerator 61335",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-61335.html"
+},
+{
+  brand:"Kenmore",
+  model:"75515",
+  title:"Kenmore Refrigerator 75515",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-75515.html"
+},
+{
+  brand:"Kenmore",
+  model:"75525",
+  title:"Kenmore Refrigerator 75525",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-75525.html"
+},
+{
+  brand:"Kenmore",
+  model:"75615",
+  title:"Kenmore Refrigerator 75615",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-75615.html"
+},
+{
+  brand:"Kenmore",
+  model:"75625",
+  title:"Kenmore Refrigerator 75625",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-75625.html"
+},
+{
+  brand:"Kenmore",
+  model:"75635",
+  title:"Kenmore Refrigerator 75635",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-75635.html"
+},
+{
+  brand:"Kenmore",
+  model:"75645",
+  title:"Kenmore Refrigerator 75645",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-75645.html"
+},
+{
+  brand:"Kenmore",
+  model:"KBC-70",
+  title:"Kenmore Refrigerator KBC-70",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-KBC-70.html"
+},
+{
+  brand:"Kenmore",
+  model:"KBC-190SS",
+  title:"Kenmore Refrigerator KBC-190SS",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-KBC-190SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKFDR30x17.5-SS",
+  title:"Kenmore Refrigerator KKFDR30x17.5-SS",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-KKFDR30x17.5-SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKFDR32.3X20-SS",
+  title:"Kenmore Refrigerator KKFDR32.3X20-SS",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-KKFDR32.3X20-SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKFDR36x20.3-SS",
+  title:"Kenmore Refrigerator KKFDR36x20.3-SS",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-KKFDR36x20.3-SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKFDR36x20.3HI-SS",
+  title:"Kenmore Refrigerator KKFDR36x20.3HI-SS",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-KKFDR36x20.3HI-SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKTMR20.5X33-SS",
+  title:"Kenmore Refrigerator KKTMR20.5X33-SS",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-KKTMR20.5X33-SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKTMR30X18.1-SSL",
+  title:"Kenmore Refrigerator KKTMR30X18.1-SSL",
+  url:"Kenmore-pdf/Kenmore-Refrigerator-KKTMR30X18.1-SSL.html"
+},
+{
+  brand:"Kenmore",
+  model:"99079",
+  title:"Kenmore Mini Fridge 99079",
+  url:"Kenmore-pdf/Kenmore-Mini-Fridge-99079.html"
+},
+{
+  brand:"Kenmore",
+  model:"99119",
+  title:"Kenmore Mini Fridge 99119",
+  url:"Kenmore-pdf/Kenmore-Mini-Fridge-99119.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCF25D-W",
+  title:"Kenmore Freezer KKCF25D-W",
+  url:"Kenmore-pdf/Kenmore-Freezer-KKCF25D-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCF25E-W",
+  title:"Kenmore Freezer KKCF25E-W",
+  url:"Kenmore-pdf/Kenmore-Freezer-KKCF25E-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKUF21-W",
+  title:"Kenmore Freezer KKUF21-W",
+  url:"Kenmore-pdf/Kenmore-Freezer-KKUF21-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"61339",
+  title:"Kenmore Freezer Refrigerator 61339",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-61339.html"
+},
+{
+  brand:"Kenmore",
+  model:"61342",
+  title:"Kenmore Freezer Refrigerator 61342",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-61342.html"
+},
+{
+  brand:"Kenmore",
+  model:"61352",
+  title:"Kenmore Freezer Refrigerator 61352",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-61352.html"
+},
+{
+  brand:"Kenmore",
+  model:"61355",
+  title:"Kenmore Freezer Refrigerator 61355",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-61355.html"
+},
+{
+  brand:"Kenmore",
+  model:"61359",
+  title:"Kenmore Freezer Refrigerator 61359",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-61359.html"
+},
+{
+  brand:"Kenmore",
+  model:"61362",
+  title:"Kenmore Freezer Refrigerator 61362",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-61362.html"
+},
+{
+  brand:"Kenmore",
+  model:"61365",
+  title:"Kenmore Freezer Refrigerator 61365",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-61365.html"
+},
+{
+  brand:"Kenmore",
+  model:"61369",
+  title:"Kenmore Freezer Refrigerator 61369",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-61369.html"
+},
+{
+  brand:"Kenmore",
+  model:"62312",
+  title:"Kenmore Freezer Refrigerator 62312",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-62312.html"
+},
+{
+  brand:"Kenmore",
+  model:"62315",
+  title:"Kenmore Freezer Refrigerator 62315",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-62315.html"
+},
+{
+  brand:"Kenmore",
+  model:"62319",
+  title:"Kenmore Freezer Refrigerator 62319",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-62319.html"
+},
+{
+  brand:"Kenmore",
+  model:"71332",
+  title:"Kenmore Freezer Refrigerator 71332",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-71332.html"
+},
+{
+  brand:"Kenmore",
+  model:"71335",
+  title:"Kenmore Freezer Refrigerator 71335",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-71335.html"
+},
+{
+  brand:"Kenmore",
+  model:"71339",
+  title:"Kenmore Freezer Refrigerator 71339",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-71339.html"
+},
+{
+  brand:"Kenmore",
+  model:"72312",
+  title:"Kenmore Freezer Refrigerator 72312",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-72312.html"
+},
+{
+  brand:"Kenmore",
+  model:"72315",
+  title:"Kenmore Freezer Refrigerator 72315",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-72315.html"
+},
+{
+  brand:"Kenmore",
+  model:"72319",
+  title:"Kenmore Freezer Refrigerator 72319",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-72319.html"
+},
+
+{
+  brand:"Kenmore",
+  model:"KKCF07-W",
+  title:"Kenmore Freezer Refrigerator KKCF07-W",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKCF07-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCF14.6-W",
+  title:"Kenmore Freezer Refrigerator KKCF14.6-W",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKCF14.6-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCF25D-W",
+  title:"Kenmore Freezer Refrigerator KKCF25D-W",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKCF25D-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCF25E-W",
+  title:"Kenmore Freezer Refrigerator KKCF25E-W",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKCF25E-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCF8.7-W",
+  title:"Kenmore Freezer Refrigerator KKCF8.7-W",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKCF8.7-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKPro1D23GLDIS",
+  title:"Kenmore Freezer Refrigerator KKPro1D23GLDIS",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKPro1D23GLDIS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKPro2D49GLDIS",
+  title:"Kenmore Freezer Refrigerator KKPro2D49GLDIS",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKPro2D49GLDIS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKPro3D66GLDIS",
+  title:"Kenmore Freezer Refrigerator KKPro3D66GLDIS",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKPro3D66GLDIS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKUF07-W-H",
+  title:"Kenmore Freezer Refrigerator KKUF07-W-H",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKUF07-W-H.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKUF07-W",
+  title:"Kenmore Freezer Refrigerator KKUF07-W",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKUF07-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKUF11E-W",
+  title:"Kenmore Freezer Refrigerator KKUF11E-W",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKUF11E-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKUF14-W",
+  title:"Kenmore Freezer Refrigerator KKUF14-W",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKUF14-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKUF17-W",
+  title:"Kenmore Freezer Refrigerator KKUF17-W",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKUF17-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKUF21-W-HO",
+  title:"Kenmore Freezer Refrigerator KKUF21-W-HO",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKUF21-W-HO.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKUF21-W",
+  title:"Kenmore Freezer Refrigerator KKUF21-W",
+  url:"Kenmore-pdf/Kenmore-Freezer-Refrigerator-KKUF21-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KCF51WNG",
+  title:"Kenmore Chest Freezer KCF51WNG",
+  url:"Kenmore-pdf/Kenmore-Chest-Freezer-KCF51WNG.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCF05-C",
+  title:"Kenmore Chest Freezer KKCF05-C",
+  url:"Kenmore-pdf/Kenmore-Chest-Freezer-KKCF05-C.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCF07-SSB",
+  title:"Kenmore Chest Freezer KKCF07-SSB",
+  url:"Kenmore-pdf/Kenmore-Chest-Freezer-KKCF07-SSB.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCF25D-W",
+  title:"Kenmore Chest Freezer KKCF25D-W",
+  url:"Kenmore-pdf/Kenmore-Chest-Freezer-KKCF25D-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCF25E-W",
+  title:"Kenmore Chest Freezer KKCF25E-W",
+  url:"Kenmore-pdf/Kenmore-Chest-Freezer-KKCF25E-W.html"
+},
+
+{
+  brand:"Kenmore",
+  model:"MOD90",
+  title:"Kenmore Bar Fridge MOD90",
+  url:"Kenmore-pdf/Kenmore-Bar-Fridge-MOD90.html"
+},
+{
+  brand:"Kenmore",
+  model:"WC12-35D",
+  title:"Kenmore Wine Cellar WC12-35D",
+  url:"Kenmore-pdf/Kenmore-Wine-Cellar-WC12-35D.html"
+},
+{
+  brand:"Kenmore",
+  model:"WC12-DZ",
+  title:"Kenmore Wine Cellar WC12-DZ",
+  url:"Kenmore-pdf/Kenmore-Wine-Cellar-WC12-DZ.html"
+},
+{
+  brand:"Kenmore",
+  model:"WC12DZ",
+  title:"Kenmore Wine Cellar WC12DZ",
+  url:"Kenmore-pdf/Kenmore-Wine-Cellar-WC12DZ.html"
+},
+{
+  brand:"Kenmore",
+  model:"WC12MG",
+  title:"Kenmore Wine Cellar WC12MG",
+  url:"Kenmore-pdf/Kenmore-Wine-Cellar-WC12MG.html"
+},
+{
+  brand:"Kenmore",
+  model:"WC18-DZ",
+  title:"Kenmore Wine Cellar WC18-DZ",
+  url:"Kenmore-pdf/Kenmore-Wine-Cellar-WC18-DZ.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKEWCBDZ111",
+  title:"Kenmore Wine Fridge KKEWCBDZ111",
+  url:"Kenmore-pdf/Kenmore-Wine-Fridge-KKEWCBDZ111.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKEWCBDZ112",
+  title:"Kenmore Wine Fridge KKEWCBDZ112",
+  url:"Kenmore-pdf/Kenmore-Wine-Fridge-KKEWCBDZ112.html"
+},
+{
+  brand:"Kenmore",
+  model:"KBBC22DZ",
+  title:"Kenmore Beverage & Wine Fridge KBBC22DZ",
+  url:"Kenmore-pdf/Kenmore-Beverage-&-Wine-Fridge-KBBC22DZ.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKEOVSMG",
+  title:"Kenmore Stand Mixer KKEOVSMG",
+  url:"Kenmore-pdf/Kenmore-Stand-Mixer-KKEOVSMG.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKEOVSMR",
+  title:"Kenmore Stand Mixer KKEOVSMR",
+  url:"Kenmore-pdf/Kenmore-Stand-Mixer-KKEOVSMR.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKESM600M",
+  title:"Kenmore Stand Mixer KKESM600M",
+  url:"Kenmore-pdf/Kenmore-Stand-Mixer-KKESM600M.html"
+},
+{
+  brand:"Kenmore",
+  model:"MBLS01",
+  title:"Kenmore Miracle Blender MBLS01",
+  url:"Kenmore-pdf/Kenmore-Miracle-Blender-MBLS01.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKHM5",
+  title:"Kenmore Hand Mixer KKHM5",
+  url:"Kenmore-pdf/Kenmore-Hand-Mixer-KKHM5.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKFP11CB",
+  title:"Kenmore Food Processor KKFP11CB",
+  url:"Kenmore-pdf/Kenmore-Food-Processor-KKFP11CB.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKEB1.3HSS",
+  title:"Kenmore Blender KKEB1.3HSS",
+  url:"Kenmore-pdf/Kenmore-Blender-KKEB1.3HSS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCBGDB",
+  title:"Kenmore Burr Grinder KKCBGDB",
+  url:"Kenmore-pdf/Kenmore-Burr-Grinder-KKCBGDB.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCM12B",
+  title:"Kenmore Drip Coffeemaker KKCM12B",
+  url:"Kenmore-pdf/Kenmore-Drip-Coffeemaker-KKCM12B.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCM12R",
+  title:"Kenmore Drip Coffeemaker KKCM12R",
+  url:"Kenmore-pdf/Kenmore-Drip-Coffeemaker-KKCM12R.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCM12S",
+  title:"Kenmore Drip Coffeemaker KKCM12S",
+  url:"Kenmore-pdf/Kenmore-Drip-Coffeemaker-KKCM12S.html"
+},
+
+{
+  brand:"Kenmore",
+  model:"KKCM12W",
+  title:"Kenmore Drip Coffeemaker KKCM12W",
+  url:"Kenmore-pdf/Kenmore-Drip-Coffeemaker-KKCM12W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKSACM-B",
+  title:"Kenmore Coffee Machine KKSACM-B",
+  url:"Kenmore-pdf/Kenmore-Coffee-Machine-KKSACM-B.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKSACM-W",
+  title:"Kenmore Coffee Machine KKSACM-W",
+  url:"Kenmore-pdf/Kenmore-Coffee-Machine-KKSACM-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKECM12SS",
+  title:"Kenmore Coffee Maker KKECM12SS",
+  url:"Kenmore-pdf/Kenmore-Coffee-Maker-KKECM12SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCM12B",
+  title:"Kenmore Coffeemaker KKCM12B",
+  url:"Kenmore-pdf/Kenmore-Coffee-Maker-KKCM12B.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCM12R",
+  title:"Kenmore Coffeemaker KKCM12R",
+  url:"Kenmore-pdf/Kenmore-Coffee-Maker-KKCM12R.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCM12S",
+  title:"Kenmore Coffeemaker KKCM12S",
+  url:"Kenmore-pdf/Kenmore-Coffee-Maker-KKCM12S.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCM12W",
+  title:"Kenmore Coffeemaker KKCM12W",
+  url:"Kenmore-pdf/Kenmore-Coffee-Maker-KKCM12W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKDF3B",
+  title:"Kenmore Deep Fryer KKDF3B",
+  url:"Kenmore-pdf/Kenmore-Deep-Fryer-KKDF3B.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKAF8Q",
+  title:"Kenmore Digital Air Fryer KKAF8Q",
+  url:"Kenmore-pdf/Kenmore-Digital-Air-Fryer-KKAF8Q.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKDW2RPH-49B",
+  title:"Kenmore Dishwasher KKDW2RPH-49B",
+  url:"Kenmore-pdf/Kenmore-Dishwasher-KKDW2RPH-49B.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKDW2RPH-49SS",
+  title:"Kenmore Dishwasher KKDW2RPH-49SS",
+  url:"Kenmore-pdf/Kenmore-Dishwasher-KKDW2RPH-49SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKDW2RPH-49W",
+  title:"Kenmore Dishwasher KKDW2RPH-49W",
+  url:"Kenmore-pdf/Kenmore-Dishwasher-KKDW2RPH-49W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKDW3RPH-49B",
+  title:"Kenmore Dishwasher KKDW3RPH-49B",
+  url:"Kenmore-pdf/Kenmore-Dishwasher-KKDW3RPH-49B.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKDW3RPH-49SS",
+  title:"Kenmore Dishwasher KKDW3RPH-49SS",
+  url:"Kenmore-pdf/Kenmore-Dishwasher-KKDW3RPH-49SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKDW3RPH-49W",
+  title:"Kenmore Dishwasher KKDW3RPH-49W",
+  url:"Kenmore-pdf/Kenmore-Dishwasher-KKDW3RPH-49W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKDW3RPHLIFT-45SS",
+  title:"Kenmore Dishwasher KKDW3RPHLIFT-45SS",
+  url:"Kenmore-pdf/Kenmore-Dishwasher-KKDW3RPHLIFT-45SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"TCFD05",
+  title:"Kenmore Food Dehydrator TCFD05",
+  url:"Kenmore-pdf/Kenmore-Food-Dehydrator-TCFD05.html"
+},
+{
+  brand:"Kenmore",
+  model:"CM20B",
+  title:"Kenmore Electric Chocolate Melting Pot CM20B",
+  url:"Kenmore-pdf/Kenmore-Electric-Chocolate-Melting-Pot-CM20B.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKTK1.7S",
+  title:"Kenmore Electric Kettle KKTK1.7S",
+  url:"Kenmore-pdf/Kenmore-Electric-Kettle-KKTK1.7S.html"
+},
+
+{
+  brand:"Kenmore",
+  model:"KMOMJB17S2W-10",
+  title:"Kenmore Microwave Oven KMOMJB17S2W-10",
+  url:"Kenmore-pdf/Kenmore-Microwave-Oven-KMOMJB17S2W-10.html"
+},
+{
+  brand:"Kenmore",
+  model:"KMOMJK12S2SW-10",
+  title:"Kenmore Microwave Oven KMOMJK12S2SW-10",
+  url:"Kenmore-pdf/Kenmore-Microwave-Oven-KMOMJK12S2SW-10.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKIRV2-5.0CAF-SS",
+  title:"Kenmore Induction Range KKIRV2-5.0CAF-SS",
+  url:"Kenmore-pdf/Kenmore-Induction-Range-KKIRV2-5.0CAF-SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKProGRFC36X6.2-AFC",
+  title:"Kenmore Gas Range KKProGRFC36X6.2-AFC",
+  url:"Kenmore-pdf/Kenmore-Gas-Range-KKProGRFC36X6.2-AFC.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCTR24-FC-SS",
+  title:"Kenmore Electric Range KKCTR24-FC-SS",
+  url:"Kenmore-pdf/Kenmore-Electric-Range-KKCTR24-FC-SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCTR24-FC-W",
+  title:"Kenmore Electric Range KKCTR24-FC-W",
+  url:"Kenmore-pdf/Kenmore-Electric-Range-KKCTR24-FC-W.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKCTR24-FC",
+  title:"Kenmore Electric Range KKCTR24-FC",
+  url:"Kenmore-pdf/Kenmore-Electric-Range-KKCTR24-FC.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKFTR4.8-RearAFC-SS",
+  title:"Kenmore Electric Range KKFTR4.8-RearAFC-SS",
+  url:"Kenmore-pdf/Kenmore-Electric-Range-KKFTR4.8-RearAFC-SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKFTR6.1-FCC-SS",
+  title:"Kenmore Electric Range KKFTR6.1-FCC-SS",
+  url:"Kenmore-pdf/Kenmore-Electric-Range-KKFTR6.1-FCC-SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKIMBF-26SS",
+  title:"Kenmore Ice Maker KKIMBF-26SS",
+  url:"Kenmore-pdf/Kenmore-Ice-Maker-KKIMBF-26SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKIMBF-26SSB",
+  title:"Kenmore Ice Maker KKIMBF-26SSB",
+  url:"Kenmore-pdf/Kenmore-Ice-Maker-KKIMBF-26SSB.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKELST4SS",
+  title:"Kenmore Toaster KKELST4SS",
+  url:"Kenmore-pdf/Kenmore-Toaster-KKELST4SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKTS2SB",
+  title:"Kenmore Toaster KKTS2SB",
+  url:"Kenmore-pdf/Kenmore-Toaster-KKTS2SB.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKTS2SR",
+  title:"Kenmore Toaster KKTS2SR",
+  url:"Kenmore-pdf/Kenmore-Toaster-KKTS2SR.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKTS2SS",
+  title:"Kenmore Toaster KKTS2SS",
+  url:"Kenmore-pdf/Kenmore-Toaster-KKTS2SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKTS2SW",
+  title:"Kenmore Toaster KKTS2SW",
+  url:"Kenmore-pdf/Kenmore-Toaster-KKTS2SW.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKTSDC4SB",
+  title:"Kenmore Toaster KKTSDC4SB",
+  url:"Kenmore-pdf/Kenmore-Toaster-KKTSDC4SB.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKTSDC4SR",
+  title:"Kenmore Toaster KKTSDC4SR",
+  url:"Kenmore-pdf/Kenmore-Toaster-KKTSDC4SR.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKTSDC4SS",
+  title:"Kenmore Toaster KKTSDC4SS",
+  url:"Kenmore-pdf/Kenmore-Toaster-KKTSDC4SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKTSDC4SW",
+  title:"Kenmore Toaster KKTSDC4SW",
+  url:"Kenmore-pdf/Kenmore-Toaster-KKTSDC4SW.html"
+},
+
+{
+  brand:"Kenmore",
+  model:"KKELST4SS",
+  title:"Kenmore Long Slot Toaster KKELST4SS",
+  url:"Kenmore-pdf/Kenmore-Long-Slot-Toaster-KKELST4SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKMFD-SS",
+  title:"Kenmore Milk Frother KKMFD-SS",
+  url:"Kenmore-pdf/Kenmore-Milk-Frother-KKMFD-SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKMFD-SS",
+  title:"Kenmore Milk Frother Steamer KKMFD-SS",
+  url:"Kenmore-pdf/Kenmore-Milk-Frother-Steamer-KKMFD-SS.html"
+},
+{
+  brand:"Kenmore",
+  model:"PD07",
+  title:"Kenmore Pet Dish PD07",
+  url:"Kenmore-pdf/Kenmore-Pet-Dish-PD07.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKIS310D",
+  title:"Kenmore Power Steam Iron KKIS310D",
+  url:"Kenmore-pdf/Kenmore-Power-Steam-Iron-KKIS310D.html"
+},
+{
+  brand:"Kenmore",
+  model:"KKTTUB07-W",
+  title:"Kenmore Washing Machine KKTTUB07-W",
+  url:"Kenmore-pdf/Kenmore-Washing-Machine-KKTTUB07-W.html"
+},
+
+{
+  brand:"Kirby",
+  model:"Avalir 2",
+  title:"Kirby Avalir 2 Home Cleaning",
+  url:"Kirby-pdf/Kirby-Avalir-2-Home-Cleaning.html"
+},
+{
+  brand:"Kirby",
+  model:"Avalir",
+  title:"Kirby Avalir Home Cleaning",
+  url:"Kirby-pdf/Kirby-Avalir-Home-Cleaning.html"
+},
+{
+  brand:"Kirby",
+  model:"Avalir Platinum",
+  title:"Kirby Avalir Platinum Home Cleaning",
+  url:"Kirby-pdf/Kirby-Avalir-Platinum-Home-Cleaning.html"
+},
+{
+  brand:"Kirby",
+  model:"Classic Cleaner",
+  title:"Kirby Classic Cleaner",
+  url:"Kirby-pdf/Kirby-Classic-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Classic III",
+  title:"Kirby Classic III Cleaner",
+  url:"Kirby-pdf/Kirby-Classic-III-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Classic Omega",
+  title:"Kirby Classic Omega Cleaner",
+  url:"Kirby-pdf/Kirby-Classic-Omega-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Dual Sanitronic 50",
+  title:"Kirby Dual Sanitronic 50 Cleaner",
+  url:"Kirby-pdf/Kirby-Dual-Sanitronic-50-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Dual Sanitronic 80",
+  title:"Kirby Dual Sanitronic 80 Cleaner",
+  url:"Kirby-pdf/Kirby-Dual-Sanitronic-80-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"G3",
+  title:"Kirby G3 Cleaner",
+  url:"Kirby-pdf/Kirby-G3-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"G4",
+  title:"Kirby G4 Cleaner",
+  url:"Kirby-pdf/Kirby-G4-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"G5",
+  title:"Kirby G5 Cleaner",
+  url:"Kirby-pdf/Kirby-G5-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Gsix",
+  title:"Kirby Gsix Cleaner",
+  url:"Kirby-pdf/Kirby-Gsix-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Heritage",
+  title:"Kirby Heritage Cleaner",
+  url:"Kirby-pdf/Kirby-Heritage-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Heritage II",
+  title:"Kirby Heritage II Cleaner",
+  url:"Kirby-pdf/Kirby-Heritage-II-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Heritage II Legend",
+  title:"Kirby Heritage II Legend Cleaner",
+  url:"Kirby-pdf/Kirby-Heritage-II-Legend-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Model 561",
+  title:"Kirby Model 561 Cleaner",
+  url:"Kirby-pdf/Kirby-Model-561-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Legend II",
+  title:"Kirby Legend II Cleaner",
+  url:"Kirby-pdf/Kirby-Legend-II-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Model 2C",
+  title:"Kirby Model 2C Cleaner",
+  url:"Kirby-pdf/Kirby-Model-2C-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Model 4C",
+  title:"Kirby Model 4C Cleaner",
+  url:"Kirby-pdf/Kirby-Model-4C-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Model 505",
+  title:"Kirby Model 505 Cleaner",
+  url:"Kirby-pdf/Kirby-Model-505-Cleaner.html"
+},
+
+{
+  brand:"Kirby",
+  model:"Model 508",
+  title:"Kirby Model 508 Cleaner",
+  url:"Kirby-pdf/Kirby-Model-508-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Model 509",
+  title:"Kirby Model 509 Cleaner",
+  url:"Kirby-pdf/Kirby-Model-509-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Model 510",
+  title:"Kirby Model 510 Cleaner",
+  url:"Kirby-pdf/Kirby-Model-510-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Model 513",
+  title:"Kirby Model 513 Cleaner",
+  url:"Kirby-pdf/Kirby-Model-513-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Model 514",
+  title:"Kirby Model 514 Cleaner",
+  url:"Kirby-pdf/Kirby-Model-514-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Model 515",
+  title:"Kirby Model 515 Cleaner",
+  url:"Kirby-pdf/Kirby-Model-515-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Model 516",
+  title:"Kirby Model 516 Cleaner",
+  url:"Kirby-pdf/Kirby-Model-516-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Model 517",
+  title:"Kirby Model 517 Cleaner",
+  url:"Kirby-pdf/Kirby-Model-517-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Model 518",
+  title:"Kirby Model 518 Cleaner",
+  url:"Kirby-pdf/Kirby-Model-518-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Model 519",
+  title:"Kirby Model 519 Cleaner",
+  url:"Kirby-pdf/Kirby-Model-519-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Sentria Home Care",
+  title:"Kirby Sentria Home Care",
+  url:"Kirby-pdf/Kirby-Sentria-Home-Care.html"
+},
+{
+  brand:"Kirby",
+  model:"Sentria II",
+  title:"Kirby Sentria II Home Care",
+  url:"Kirby-pdf/Kirby-Sentria-II-Home-Care.html"
+},
+{
+  brand:"Kirby",
+  model:"Tradition",
+  title:"Kirby Tradition Cleaner",
+  url:"Kirby-pdf/Kirby-Tradition-Cleaner.html"
+},
+{
+  brand:"Kirby",
+  model:"Ultimate G Series",
+  title:"Kirby Ultimate G Series Cleaner",
+  url:"Kirby-pdf/Kirby-Ultimate-G-Series.html"
 }
+
 
 ]

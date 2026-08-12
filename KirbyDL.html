@@ -33,64 +33,7 @@
 }
 </script>
 
-    <style>
-        /* PDF Grid Layout */
-        .pdf-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4 per row on desktop */
-            gap: 20px;
-            justify-items: center;
-            padding: 20px 0;
-        }
-
-        @media (max-width: 1024px) {
-            .pdf-grid {
-                grid-template-columns: repeat(3, 1fr); /* 3 per row on tablet */
-            }
-        }
-
-        @media (max-width: 768px) {
-            .pdf-grid {
-                grid-template-columns: repeat(3, 1fr); /* 3 per row on mobile */
-            }
-        }
-
-        .pdf-grid div[style*='background:#f5f5f5'] {
-            width: 100%;
-            max-width: 250px;
-        }
-    </style></head>
-
-    <style>
-        /* PDF Grid Layout */
-        .pdf-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4 per row on desktop */
-            gap: 20px;
-            justify-items: center;
-            padding: 20px 0;
-        }
-
-        @media (max-width: 1024px) {
-            .pdf-grid {
-                grid-template-columns: repeat(3, 1fr); /* 3 per row on tablet */
-            }
-        }
-
-        @media (max-width: 768px) {
-            .pdf-grid {
-                grid-template-columns: repeat(3, 1fr); /* 3 per row on mobile */
-            }
-        }
-
-        .pdf-grid div[style*='background:#f5f5f5'] {
-            width: 100%;
-            max-width: 250px;
-        }
-    </style>
-<body>
-
-    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17308900859'); </script>
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17308900859'); </script>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1424202759904253"
      crossorigin="anonymous"></script>
@@ -105,27 +48,641 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
+<style>
+
+body{
+font-family:Arial;
+background:#f5f7fa;
+}
+
+.container{
+
+width:800px;
+max-width:95%;
+margin:80px auto;
+text-align:center;
+
+}
+
+h1{
+
+font-size:48px;
+margin-bottom:10px;
+
+}
+
+.subtitle{
+
+font-size:20px;
+margin-bottom:30px;
+color:#666;
+
+}
+
+.search-wrapper{
+
+position:relative;
+
+}
+
+#search{
+
+width:100%;
+padding:18px;
+font-size:18px;
+border:2px solid #ddd;
+border-radius:8px;
+
+}
+
+#results{
+
+position:absolute;
+width:100%;
+background:white;
+border:1px solid #ddd;
+border-top:none;
+max-height:350px;
+overflow-y:auto;
+display:none;
+z-index:100;
+
+}
+
+.result{
+
+padding:15px;
+cursor:pointer;
+text-align:left;
+border-bottom:1px solid #eee;
+
+}
+
+.result:hover{
+
+background:#f3f3f3;
+
+}
+
+.brand{
+
+font-weight:bold;
+
+}
+
+.model{
+
+color:#777;
+
+}
+
+.manual-category{
+    margin:20px 0;
+    border:1px solid #d9d9d9;
+    border-radius:10px;
+    overflow:hidden;
+    background:#fff;
+}
+
+.manual-category summary{
+    padding:18px 20px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    background:#f5f7fa;
+    color:#4e6e81;
+    list-style:none;
+    transition:.3s;
+}
+
+.manual-category summary:hover{
+    background:#e8edf1;
+}
+
+.manual-category summary::-webkit-details-marker{
+    display:none;
+}
+
+.manual-category summary::after{
+    content:"+";
+    float:right;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.manual-category[open] summary::after{
+    content:"−";
+}
+
+.manual-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+/* 6 cards per row */
+.manual-grid{
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    gap:15px;
+    justify-items:center;
+    padding:20px;
+}
+
+/* Tablet */
+@media (max-width:1200px){
+    .manual-grid{
+        grid-template-columns:repeat(4, 1fr);
+    }
+}
+
+/* Small tablet */
+@media (max-width:768px){
+    .manual-grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width:480px){
+    .manual-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+/* Card size */
+.manual-grid > div{
+    width:150px !important;
+    max-width:150px !important;
+    min-width:150px !important;
+
+    padding:10px !important;
+    box-sizing:border-box !important;
+}
+
+/* Title */
+.manual-grid > div h3{
+    font-size:14px !important;
+    line-height:1.3 !important;
+    margin:0 0 8px !important;
+}
+
+/* Button */
+.manual-grid > div .pdf-btn{
+    font-size:12px !important;
+    padding:6px 10px !important;
+}
+
+.manual-grid > div.hide-card{
+    display:none;
+}
+
+.show-more{
+    display:block;
+    margin:15px auto;
+    padding:10px 18px;
+    background:#4e6e81;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.show-more:hover{
+    background:#5f879a;
+}
+
+</style>
+
+</head>
+
+    
+<body>
+
+    
 <section style="max-width: 1200px; margin: 40px auto; padding: 20px;">
-    <h2 style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
+    <h2 style="color: #4e6e81; font-size: 2.5rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
         Available Kirby PDF Manuals
     </h2>
 
-  
-    <input 
-    type="text" 
-    id="pdfSearch" 
-    placeholder="Search model number..." 
-    style="
-        width: 100%;
-        max-width: 400px;
-        padding: 12px 16px;
-        margin: 20px auto;
-        display: block;
-        font-size: 1rem;
-        border: 2px solid #4e6e81;
-        border-radius: 8px;
-        outline: none;
-    ">
+<style>
+
+body{
+font-family:Arial;
+background:#f5f7fa;
+}
+
+.container{
+
+width:800px;
+max-width:95%;
+margin:80px auto;
+text-align:center;
+
+}
+
+h1{
+
+font-size:48px;
+margin-bottom:10px;
+
+}
+
+.subtitle{
+
+font-size:20px;
+margin-bottom:30px;
+color:#666;
+
+}
+
+.search-wrapper{
+
+position:relative;
+
+}
+
+#search{
+
+width:100%;
+padding:18px;
+font-size:18px;
+border:2px solid #ddd;
+border-radius:8px;
+
+}
+
+#results{
+
+position:absolute;
+width:100%;
+background:white;
+border:1px solid #ddd;
+border-top:none;
+max-height:350px;
+overflow-y:auto;
+display:none;
+z-index:100;
+
+}
+
+.result{
+
+padding:15px;
+cursor:pointer;
+text-align:left;
+border-bottom:1px solid #eee;
+
+}
+
+.result:hover{
+
+background:#f3f3f3;
+
+}
+
+.brand{
+
+font-weight:bold;
+
+}
+
+.model{
+
+color:#777;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<p class="subtitle">
+Search by brand or model number.
+</p>
+
+<div class="search-wrapper">
+
+<input
+
+id="search"
+
+type="text"
+
+placeholder="Search by brand or model (e.g. Kirby RF28T5101)"
+
+autocomplete="off"
+
+>
+
+<div id="results"></div>
+
+</div>
+
+</div>
+
+<script src="manuals.js"></script>
+
+<script>
+
+const input=document.getElementById("search");
+
+const results=document.getElementById("results");
+
+input.addEventListener("keyup",function(){
+
+const keyword=this.value.toLowerCase().trim();
+
+results.innerHTML="";
+
+if(keyword.length==0){
+
+results.style.display="none";
+
+return;
+
+}
+
+const matches=manuals.filter(item=>{
+
+return item.brand.toLowerCase().includes(keyword)
+
+||
+
+item.model.toLowerCase().includes(keyword)
+
+||
+
+item.title.toLowerCase().includes(keyword);
+
+});
+
+if(matches.length==0){
+
+results.innerHTML="<div class='result'>No manuals found.</div>";
+
+results.style.display="block";
+
+return;
+
+}
+
+matches.slice(0,20).forEach(item=>{
+
+results.innerHTML+=`
+
+<div class="result"
+
+onclick="window.location='${item.url}'">
+
+<div class="brand">${item.title}</div>
+
+<div class="model">${item.model}</div>
+
+</div>
+
+`;
+
+});
+
+results.style.display="block";
+
+});
+
+document.addEventListener("click",function(e){
+
+if(!e.target.closest(".search-wrapper")){
+
+results.style.display="none";
+
+}
+
+});
+
+</script>
+
+
+<style>
+
+body{
+font-family:Arial;
+background:#f5f7fa;
+}
+
+.container{
+
+width:800px;
+max-width:95%;
+margin:80px auto;
+text-align:center;
+
+}
+
+h1{
+
+font-size:48px;
+margin-bottom:10px;
+
+}
+
+.subtitle{
+
+font-size:20px;
+margin-bottom:30px;
+color:#666;
+
+}
+
+.search-wrapper{
+
+position:relative;
+
+}
+
+#search{
+
+width:100%;
+padding:18px;
+font-size:18px;
+border:2px solid #ddd;
+border-radius:8px;
+
+}
+
+#results{
+
+position:absolute;
+width:100%;
+background:white;
+border:1px solid #ddd;
+border-top:none;
+max-height:350px;
+overflow-y:auto;
+display:none;
+z-index:100;
+
+}
+
+.result{
+
+padding:15px;
+cursor:pointer;
+text-align:left;
+border-bottom:1px solid #eee;
+
+}
+
+.result:hover{
+
+background:#f3f3f3;
+
+}
+
+.brand{
+
+font-weight:bold;
+
+}
+
+.model{
+
+color:#777;
+
+}
+
+.manual-category{
+    margin:20px 0;
+    border:1px solid #d9d9d9;
+    border-radius:10px;
+    overflow:hidden;
+    background:#fff;
+}
+
+.manual-category summary{
+    padding:18px 20px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    background:#f5f7fa;
+    color:#4e6e81;
+    list-style:none;
+    transition:.3s;
+}
+
+.manual-category summary:hover{
+    background:#e8edf1;
+}
+
+.manual-category summary::-webkit-details-marker{
+    display:none;
+}
+
+.manual-category summary::after{
+    content:"+";
+    float:right;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.manual-category[open] summary::after{
+    content:"−";
+}
+
+.manual-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+/* 6 cards per row */
+.manual-grid{
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    gap:15px;
+    justify-items:center;
+    padding:20px;
+}
+
+/* Tablet */
+@media (max-width:1200px){
+    .manual-grid{
+        grid-template-columns:repeat(4, 1fr);
+    }
+}
+
+/* Small tablet */
+@media (max-width:768px){
+    .manual-grid{
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width:480px){
+    .manual-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+/* Card size */
+.manual-grid > div{
+    width:150px !important;
+    max-width:150px !important;
+    min-width:150px !important;
+
+    padding:10px !important;
+    box-sizing:border-box !important;
+}
+
+/* Title */
+.manual-grid > div h3{
+    font-size:14px !important;
+    line-height:1.3 !important;
+    margin:0 0 8px !important;
+}
+
+/* Button */
+.manual-grid > div .pdf-btn{
+    font-size:12px !important;
+    padding:6px 10px !important;
+}
+
+.manual-grid > div.hide-card{
+    display:none;
+}
+
+.show-more{
+    display:block;
+    margin:15px auto;
+    padding:10px 18px;
+    background:#4e6e81;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.show-more:hover{
+    background:#5f879a;
+}
+
+</style>
+
+<body>
+    
+
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17308900859"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17308900859'); </script>
+
 
 <div style="text-align: center; margin-top: 10px;">
   <a href="checkout.html" 
@@ -146,12 +703,19 @@
 
 <h2 style="color: #4e6e81; font-size: 1.8rem; margin-bottom: 5px; text-align: center; font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;">
         We will find it for you!
-    </h2>
+    </h2><br>
+
+<details class="manual-category" open>
+    <summary>🧹 Vacuum Cleaners
+
+ </summary>
+
+    <div class="manual-grid">
 
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Avalir 2<br> Home Cleaning </strong>
-    </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Avalir%202%20Home%20Cleaning.pdf'
+    </h3><a href='Kirby-pdf/Kirby-Avalir-2-Home-Cleaning.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -179,7 +743,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Avalir <br>Home Cleaning </strong></h3>
-    <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Avalir%20Home%20Cleaning.pdf'
+    <a href='Kirby-pdf/Kirby-Avalir-Home-Cleaning.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -207,7 +771,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Avalir Platinum <br>Home Cleaning </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Avalir%20Platinum%20Home%20Cleaning.pdf'
+        href='Kirby-pdf/Kirby-Avalir-Platinum-Home-Cleaning.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -235,7 +799,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Classic Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Classic%20Cleaner.pdf' target='_blank'
+        href='Kirby-pdf/Kirby-Classic-Cleaner.html' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
             stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -263,7 +827,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby<br> Classic III <br>Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Classic%20III%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Classic-III-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -291,7 +855,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Classic Omega <br>Cleaner </strong></h3>
-    <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Classic%20Omega%20Cleaner.pdf'
+    <a href='Kirby-pdf/Kirby-Classic-Omega-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -320,7 +884,7 @@
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby<br> Dual Sanitronic 50 <br>Cleaner </strong>
     </h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Dual%20Sanitronic%2050%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Dual-Sanitronic-50-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -349,7 +913,7 @@
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Dual Sanitronic 80 <br>Cleaner </strong>
     </h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Dual%20Sanitronic%2080%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Dual-Sanitronic-80-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -377,7 +941,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby<br> G3 Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20G3%20Cleaner.pdf' target='_blank'
+        href='Kirby-pdf/Kirby-G3-Cleaner.html' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
             stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -405,7 +969,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby<br> G4 Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20G4%20Cleaner.pdf' target='_blank'
+        href='Kirby-pdf/Kirby-G4-Cleaner.html' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
             stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -433,7 +997,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>G5 Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20G5%20Cleaner.pdf' target='_blank'
+        href='Kirby-pdf/Kirby-G5-Cleaner.html' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
             stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -461,7 +1025,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Gsix <br>Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Gsix%20Cleaner.pdf' target='_blank'
+        href='Kirby-pdf/Kirby-Gsix-Cleaner.html' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
             stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -489,7 +1053,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Heritage Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Heritage%20Cleaner.pdf' target='_blank'
+        href='Kirby-pdf/Kirby-Heritage-Cleaner.html' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
             stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -517,7 +1081,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Heritage II <br>Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Heritage%20II%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Heritage-II-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -546,7 +1110,7 @@
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Heritage II Legend <br>Cleaner </strong>
     </h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Heritage%20II%20Legend%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Heritage-II-Legend-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -574,7 +1138,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Model 561 <br>Cleaner </strong>
-    </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Kirby%20Model%20561%20Cleaner.pdf'
+    </h3><a href='Kirby-pdf/Kirby-Model-561-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -602,7 +1166,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby<br> Legend II<br> Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Legend%20II%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Legend-II-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -630,7 +1194,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby<br> Model 2C <br>Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Model%202C%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Model-2C-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -658,7 +1222,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby<br> Model 4C <br>Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Model%204C%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Model-4C-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -686,7 +1250,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Model 505<br> Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Model%20505%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Model-505-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -714,7 +1278,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby<br> Model 508 <br>Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Model%20508%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Model-508-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -742,7 +1306,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br> Model 509 <br> Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Model%20509%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Model-509-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -770,7 +1334,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Model 510 <br>Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Model%20510%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Model-510-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -798,7 +1362,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Model 513 <br>Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Model%20513%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Model-513-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -826,7 +1390,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Model 514 <br>Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Model%20514%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Model-514-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -854,7 +1418,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Model 515 <br>Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Model%20515%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Model-515-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -882,7 +1446,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Model 516 <br>Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Model%20516%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Model-516-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -910,7 +1474,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Model 517<br> Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Model%20517%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Model-517-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -938,7 +1502,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Model 518 <br>Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Model%20518%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Model-518-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -966,35 +1530,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Model 519 <br>Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Model%20519%20Cleaner.pdf'
-        target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
-            height='22' stroke='white' fill='none' stroke-width='2'>
-            <style>
-                @keyframes bounce {
-
-                    0%,
-                    100% {
-                        transform: translateY(0);
-                    }
-
-                    50% {
-                        transform: translateY(6px);
-                    }
-                }
-
-                .arrow {
-                    animation: bounce 1s ease-in-out infinite;
-                }
-            </style>
-            <path stroke-linecap='round' stroke-linejoin='round' d='M12 4v12' class='arrow' />
-            <path stroke-linecap='round' stroke-linejoin='round' d='M8 12l4 4 4-4' class='arrow' />
-            <path stroke-linecap='round' stroke-linejoin='round' d='M4 20h16' />
-        </svg>Download PDF</a>
-</div>
-<div
-    style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
-    <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Model 561 <br>Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Model%20561%20Cleaner.pdf'
+        href='Kirby-pdf/Kirby-Model-519-Cleaner.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -1022,7 +1558,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Sentria Home Care</strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Sentria%20Home%20Care.pdf'
+        href='Kirby-pdf/Kirby-Sentria-Home-Care.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -1050,7 +1586,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Sentria II<br> Home Care </strong></h3>
-    <a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Sentria%20II%20Home%20Care.pdf'
+    <a href='Kirby-pdf/Kirby-Sentria-II-Home-Care.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -1078,7 +1614,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Tradition Cleaner </strong></h3><a
-        href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Tradition%20Cleaner.pdf' target='_blank'
+        href='Kirby-pdf/Kirby-Tradition-Cleaner.html' target='_blank'
         class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22' height='22'
             stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -1106,7 +1642,7 @@
 <div
     style='background:#f5f5f5; border:1px solid #ddd; border-radius:10px; padding:20px; text-align:center; width:100%; max-width:250px; border:2px solid #4e6e81;'>
     <h3 style='font-size:1rem; color:#4e6e81; margin-bottom:10px;'><strong>Kirby <br>Ultimate G Series <br>Cleaner </strong>
-    </h3><a href='https://pub-9146209e287d4fb7ae13d2b13875df0a.r2.dev/Kirby/Kirby%20Ultimate%20G%20Series%20Cleaner.pdf'
+    </h3><a href='Kirby-pdf/Kirby-Ultimate-G-Series.html'
         target='_blank' class='pdf-btn'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='22'
             height='22' stroke='white' fill='none' stroke-width='2'>
             <style>
@@ -1132,87 +1668,41 @@
         </svg>Download PDF</a>
 </div>
 
+</details>
+
 
      <script>
-      document.addEventListener("DOMContentLoaded", () => {
+      
 
-        const search = document.getElementById("pdfSearch");
+      document.querySelectorAll(".manual-category").forEach((category)=>{
 
-        // This selects all your gray boxes
-        const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
+    category.addEventListener("toggle",function(){
 
-        search.addEventListener("input", function () {
-          const q = this.value.toLowerCase().trim();
+        if(this.open){
 
-          boxes.forEach(box => {
-            const text = box.textContent.toLowerCase();
+            document.querySelectorAll(".manual-category").forEach((item)=>{
 
-            // show if matched, hide if not
-            if (text.includes(q)) {
-              box.style.display = "";
-            } else {
-              box.style.display = "none";
-            }
-          });
-        });
+                if(item!==this){
 
-      });
-    </script>
+                    item.removeAttribute("open");
 
-
-</body>
-
-       <script>
-            document.addEventListener("DOMContentLoaded", () => {
-
-                const search = document.getElementById("pdfSearch");
-
-                // This selects all your gray boxes
-                const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
-
-                search.addEventListener("input", function () {
-                    const q = this.value.toLowerCase().trim();
-
-                    boxes.forEach(box => {
-                        const text = box.textContent.toLowerCase();
-
-                        // show if matched, hide if not
-                        if (text.includes(q)) {
-                            box.style.display = "";
-                        } else {
-                            box.style.display = "none";
-                        }
-                    });
-                });
+                }
 
             });
-        </script>
 
+        }
 
-</body>
+    });
+
+});
+
+    </script>
 
 
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    // Move all PDF boxes into a responsive grid
-    const boxes = document.querySelectorAll("div[style*='background:#f5f5f5']");
-    if (boxes.length) {
-      const grid = document.createElement("div");
-      grid.className = "pdf-grid";
-      boxes.forEach(box => grid.appendChild(box));
-      const section = document.querySelector("section");
-      section.appendChild(grid);
-    }
-
-    // PDF button behavior & styling
-    document.querySelectorAll('.pdf-btn').forEach(btn => {
-      btn.addEventListener('click', function () {
-        const productId = this.getAttribute('data-product');
-        const checkoutUrl = `https://findmymanual.live/checkout.html?product=${encodeURIComponent(productId)}`;
-        window.location.href = checkoutUrl;
-      });
-
+  
+    
       const icon = btn.querySelector('svg');
       btn.style.display = 'inline-flex';
       btn.style.alignItems = 'center';
@@ -1262,26 +1752,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =========================
-       2. BUILD PDF GRID (FIXED ORDER)
-       IMPORTANT: INSERT BEFORE TROUBLESHOOTING
-    ========================= */
-
-    const troubleshooting = document.querySelector(".lg-troubleshooting");
-
-    if (boxes.length && troubleshooting) {
-
-        const grid = document.createElement("div");
-        grid.className = "pdf-grid";
-
-        boxes.forEach(box => {
-            grid.appendChild(box);
-        });
-
-        // INSERT GRID BEFORE TROUBLESHOOTING SECTION
-        troubleshooting.parentNode.insertBefore(grid, troubleshooting);
-    }
-
+    
 
     /* =========================
        3. BUTTON STYLING (PDF BUTTONS)
@@ -1402,7 +1873,9 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 </style>
 
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GE FAQ - Troubleshooting & Error Codes</title>
 
 <style>
 body{
@@ -1484,12 +1957,173 @@ function toggleFAQ(el){
 }
 </script>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whirlpool FAQ - Troubleshooting & Error Codes</title>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+</style>
+
+<script>
+function toggleFAQ(el){
+    const answer = el.nextElementSibling;
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+}
+</script>
+
+<style>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+}
+
+.faq-section{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-title{
+    font-size:22px;
+    font-weight:bold;
+    border-left:5px solid #4e6e81;
+    padding-left:10px;
+    margin-bottom:15px;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+.question{
+    font-weight:bold;
+    cursor:pointer;
+    padding:10px;
+    background:#f9f9f9;
+    border-radius:6px;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    line-height:1.6;
+    background:#fff;
+}
+
+.note{
+    background:#fff3cd;
+    border:1px solid #ffeeba;
+    padding:10px;
+    border-radius:6px;
+    margin-top:20px;
+}
+
+</style>
+
 </head>
 
-<div class="container">
 
-    <h1>Kirby FAQ - Frequently Asked Questions</h1>
-<p class="subtitle">Common Kirby vacuum cleaner problems and solutions</p>
+<h3 style="text-align: center; font-size: 2rem; font-weight: bold; margin-bottom: 30px;">
+    Kirby Frequently Asked Questions
+</h3>
+
+<p class="subtitle">Common questions and solutions for Kirby home appliances and system errors</p>
+
 
 <!-- GENERAL -->
 <div class="faq-section">
@@ -1734,6 +2368,72 @@ Blocked airflow, dirty filters, or continuous long usage can cause overheating.
 </div>
 
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.querySelectorAll(".manual-category").forEach(category => {
+
+        const grid = category.querySelector(".manual-grid");
+        if (!grid) return;
+
+        const cards = [...grid.children];
+        const STEP = 6;
+
+        if (cards.length <= STEP) return;
+
+        let visible = STEP;
+
+        // Hide everything after the first 6
+        cards.forEach((card, index) => {
+            if (index >= STEP) card.style.display = "none";
+        });
+
+        // Create button
+        const btn = document.createElement("button");
+        btn.className = "show-more";
+        btn.textContent = "Show More";
+        category.appendChild(btn);
+
+        btn.addEventListener("click", function () {
+
+            if (visible < cards.length) {
+
+                const next = Math.min(visible + STEP, cards.length);
+
+                for (let i = visible; i < next; i++) {
+                    cards[i].style.display = "";
+                }
+
+                visible = next;
+
+                if (visible === cards.length) {
+                    btn.textContent = "Show Less";
+                }
+
+            } else {
+
+                // Collapse back to first 6
+                cards.forEach((card, index) => {
+                    if (index >= STEP) card.style.display = "none";
+                });
+
+                visible = STEP;
+                btn.textContent = "Show More";
+
+                // Scroll back to the category
+                category.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+
+        });
+
+    });
+
+});
+</script>
 
 </body>
 </html>
