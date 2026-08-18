@@ -11123,7 +11123,1707 @@ const manuals = [
   model:"Ultimate G Series",
   title:"Kirby Ultimate G Series Cleaner",
   url:"Kirby-pdf/Kirby-Ultimate-G-Series.html"
-}
+},
 
+{
+  brand:"Kitchenaid",
+  model:"3 & 5 Speed",
+  title:"Kitchenaid 3 & 5 Speed Hand Mixers",
+  url:"Kitchenaid-pdf/Kitchenaid-3-&-5-Speed-Hand-Mixers.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"5 Speed Ultra Power",
+  title:"Kitchenaid 5 Speed Ultra Power Blender",
+  url:"Kitchenaid-pdf/Kitchenaid-5-Speed-Ultra-Power-Blender.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"5K45SS",
+  title:"Kitchenaid 5K45SS Stand Mixer",
+  url:"Kitchenaid-pdf/Kitchenaid-5K45SS-Stand-Mixer.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"5KHB2531",
+  title:"Kitchenaid 5KHB2531 Hand Blender",
+  url:"Kitchenaid-pdf/Kitchenaid-5KHB2531-Hand-Blender.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"5KHB2571",
+  title:"Kitchenaid 5KHB2571 Hand Blender",
+  url:"Kitchenaid-pdf/Kitchenaid-5KHB2571-Hand-Blender.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"5KSB1585",
+  title:"Kitchenaid 5KSB1585 Blender",
+  url:"Kitchenaid-pdf/Kitchenaid-5KSB1585-Blender.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"5KSM125",
+  title:"Kitchenaid 5KSM125 Stand Mixer",
+  url:"Kitchenaid-pdf/Kitchenaid-5KSM125-Stand-Mixer.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"5KSM175PS",
+  title:"Kitchenaid 5KSM175PS Stand Mixer",
+  url:"Kitchenaid-pdf/Kitchenaid-5KSM175PS-Stand-Mixer.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"5KSM45",
+  title:"Kitchenaid 5KSM45 Stand Mixer",
+  url:"Kitchenaid-pdf/Kitchenaid-5KSM45-Stand-Mixer.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"7 & 9 Speed",
+  title:"Kitchenaid 7 & 9 Speed Hand Mixer",
+  url:"Kitchenaid-pdf/Kitchenaid-7-&-9-Speed-Hand-Mixer.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"9706634D",
+  title:"Kitchenaid 9706634D Stand Mixer",
+  url:"Kitchenaid-pdf/Kitchenaid-9706634D-Stand-Mixer.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"9708307C",
+  title:"Kitchenaid 9708307C Stand Mixer",
+  url:"Kitchenaid-pdf/Kitchenaid-9708307C-Stand-Mixer.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KCO222",
+  title:"Kitchenaid Countertop Oven KCO222",
+  url:"Kitchenaid-pdf/Kitchenaid-Countertop-Oven-KCO222.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KCO223",
+  title:"Kitchenaid Countertop Oven KCO223",
+  url:"Kitchenaid-pdf/Kitchenaid-Countertop-Oven-KCO223.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KCO224",
+  title:"Kitchenaid Countertop Oven KCO224",
+  url:"Kitchenaid-pdf/Kitchenaid-Countertop-Oven-KCO224.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"W10321639B",
+  title:"Kitchenaid Countertop Oven W10321639B",
+  url:"Kitchenaid-pdf/Kitchenaid-Countertop-Oven-W10321639B.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KES2102",
+  title:"Kitchenaid Espresso Machine KES2102",
+  url:"Kitchenaid-pdf/Kitchenaid-Espresso-Machine-KES2102.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"5KFP0719",
+  title:"Kitchenaid Food Processor 5KFP0719",
+  url:"Kitchenaid-pdf/Kitchenaid-Food-Processor-5KFP0719.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"5KFP0719A",
+  title:"Kitchenaid Food Processor 5KFP0719A",
+  url:"Kitchenaid-pdf/Kitchenaid-Food-Processor-5KFP0719A.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KFP0718",
+  title:"Kitchenaid Food Processor KFP0718",
+  url:"Kitchenaid-pdf/Kitchenaid-Food-Processor-KFP0718.html"
+},
+
+{
+  brand:"Kitchenaid",
+  model:"KFP0718L",
+  title:"Kitchenaid Food Processor KFP0718L",
+  url:"Kitchenaid-pdf/Kitchenaid-Food-Processor-KFP0718L.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KFP0719",
+  title:"Kitchenaid Food Processor KFP0719",
+  url:"Kitchenaid-pdf/Kitchenaid-Food-Processor-KFP0719.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KFP0719L",
+  title:"Kitchenaid Food Processor KFP0719L",
+  url:"Kitchenaid-pdf/Kitchenaid-Food-Processor-KFP0719L.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"5KES8556",
+  title:"Kitchenaid Fully Automatic Espresso Machine 5KES8556",
+  url:"Kitchenaid-pdf/Kitchenaid-Fully-Automatic-Espresso-Machine-5KES8556.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"5KES8557",
+  title:"Kitchenaid Fully Automatic Espresso Machine 5KES8557",
+  url:"Kitchenaid-pdf/Kitchenaid-Fully-Automatic-Espresso-Machine-5KES8557.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"5KES8558",
+  title:"Kitchenaid Fully Automatic Espresso Machine 5KES8558",
+  url:"Kitchenaid-pdf/Kitchenaid-Fully-Automatic-Espresso-Machine-5KES8558.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"K45 Series",
+  title:"Kitchenaid K45 Series Stand Mixer",
+  url:"Kitchenaid-pdf/Kitchenaid-K45-Series-Stand-Mixer.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KERC607",
+  title:"Kitchenaid KERC607 Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-KERC607-Electric-Range.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KERS807",
+  title:"Kitchenaid KERS807 Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-KERS807-Electric-Range.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KESC307",
+  title:"Kitchenaid KESC307 Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-KESC307-Electric-Range.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KESH307",
+  title:"Kitchenaid KESH307 Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-KESH307-Electric-Range.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KESK901",
+  title:"Kitchenaid KESK901 Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-KESK901-Electric-Range.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KESS907",
+  title:"Kitchenaid KESS907 Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-KESS907-Electric-Range.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KESS908",
+  title:"Kitchenaid KESS908 Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-KESS908-Electric-Range.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KHM72",
+  title:"Kitchenaid KHM72 Hand Mixers",
+  url:"Kitchenaid-pdf/Kitchenaid-KHM72-Hand-Mixers.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KHM92",
+  title:"Kitchenaid KHM92 Hand Mixers",
+  url:"Kitchenaid-pdf/Kitchenaid-KHM92-Hand-Mixers.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KSM200",
+  title:"Kitchenaid KSM200 Stand Mixer",
+  url:"Kitchenaid-pdf/Kitchenaid-KSM200-Stand-Mixers.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KSM45",
+  title:"Kitchenaid KSM45 Stand Mixer",
+  url:"Kitchenaid-pdf/Kitchenaid-KSM45-Stand-Mixers.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KES6403",
+  title:"Kitchenaid Semi-Automatic Espresso Maker KES6403",
+  url:"Kitchenaid-pdf/Kitchenaid-Semi-Automatic-Espresso-Maker-KES6403.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"KES6503",
+  title:"Kitchenaid Semi-Automatic Espresso Maker KES6503",
+  url:"Kitchenaid-pdf/Kitchenaid-Semi-Automatic-Espresso-Maker-KES6503.html"
+},
+
+{
+  brand:"Kitchenaid",
+  model:"KES6551",
+  title:"Kitchenaid Semi-Automatic Espresso with Burr Grinder KES6551",
+  url:"Kitchenaid-pdf/Kitchenaid-Semi-Automatic-Espresso-with-Burr-Grinder-KES6551.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"W11556263C",
+  title:"Kitchenaid Semi-Automatic Espresso with Burr Grinder W11556263C",
+  url:"Kitchenaid-pdf/Kitchenaid-Semi-Automatic-Espresso-with-Burr-Grinder-W11556263C.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"5KSB13",
+  title:"Kitchenaid Stand Blender 5KSB13",
+  url:"Kitchenaid-pdf/Kitchenaid-Stand-Blender-5KSB13.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"Stand Mixer",
+  title:"Kitchenaid Stand Mixer",
+  url:"Kitchenaid-pdf/Kitchenaid-Stand-Mixer.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"W10246111B",
+  title:"Kitchenaid W10246111B Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-W10246111B-Electric-Range.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"W10524725A",
+  title:"Kitchenaid W10524725A Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-W10524725A-Electric-Range.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"YKERC607",
+  title:"Kitchenaid YKERC607 Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-YKERC607-Electric-Range.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"YKERS807",
+  title:"Kitchenaid YKERS807 Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-YKERS807-Electric-Range.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"YKESC307",
+  title:"Kitchenaid YKESC307 Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-YKESC307-Electric-Range.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"YKESH307",
+  title:"Kitchenaid YKESH307 Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-YKESH307-Electric-Range.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"YKESS907",
+  title:"Kitchenaid YKESS907 Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-YKESS907-Electric-Range.html"
+},
+{
+  brand:"Kitchenaid",
+  model:"YKESS908",
+  title:"Kitchenaid YKESS908 Electric Range",
+  url:"Kitchenaid-pdf/Kitchenaid-YKESS908-Electric-Range.html"
+},
+
+{
+  brand:"LG",
+  model:"S92T1-C",
+  title:"LG Cinema 3D Sound S92T1-C",
+  url:"LG-pdf/LG-Cinema-3D-Sound-S92T1-C.html"
+},
+{
+  brand:"LG",
+  model:"LPXS30866D",
+  title:"LG French Door Refrigerator LPXS30866D",
+  url:"LG-pdf/LG-French-Door-Refrigerator-LPXS30866D.html"
+},
+{
+  brand:"LG",
+  model:"UQ9000 PUD",
+  title:"LG 43 Inch Class UQ9000 PUD LED TV",
+  url:"LG-pdf/LG-43-Inch-Class-UQ9000-PUD-LED-TV.html"
+},
+{
+  brand:"LG",
+  model:"L6004-1",
+  title:"LG Air Conditioner L6004-1",
+  url:"LG-pdf/LG-Air-Conditioner-L6004-1.html"
+},
+{
+  brand:"LG",
+  model:"LWHD6500R",
+  title:"LG Air Conditioner LWHD6500R",
+  url:"LG-pdf/LG-Air-Conditioner-LWHD6500R.html"
+},
+{
+  brand:"LG",
+  model:"LWHD6500SR",
+  title:"LG Air Conditioner LWHD6500SR",
+  url:"LG-pdf/LG-Air-Conditioner-LWHD6500SR.html"
+},
+{
+  brand:"LG",
+  model:"AS10GD",
+  title:"LG Air Purifier AS10GD",
+  url:"LG-pdf/LG-Air-Purifier-as10GD.html"
+},
+{
+  brand:"LG",
+  model:"AS401WWA1",
+  title:"LG Air Purifier AS401WWA1",
+  url:"LG-pdf/LG-Air-Purifier-AS401WWA1.html"
+},
+{
+  brand:"LG",
+  model:"AS60GD",
+  title:"LG Air Purifier AS60GD",
+  url:"LG-pdf/LG-Air-Purifier-AS60GD.html"
+},
+{
+  brand:"LG",
+  model:"BH9520TW",
+  title:"LG Cinema 3D Sound BH9520TW",
+  url:"LG-pdf/LG-Cinema-3D-Sound-BH9520TW.html"
+},
+{
+  brand:"LG",
+  model:"S92T1-S W",
+  title:"LG Cinema 3D Sound S92T1-S W",
+  url:"LG-pdf/LG-Cinema-3D-Sound-S92T1-S-W.html"
+},
+{
+  brand:"LG",
+  model:"T2",
+  title:"LG Cinema 3D Sound T2",
+  url:"LG-pdf/LG-Cinema-3D-Sound-T2.html"
+},
+{
+  brand:"LG",
+  model:"W2",
+  title:"LG Cinema 3D Sound W2",
+  url:"LG-pdf/LG-Cinema-3D-Sound-W2.html"
+},
+{
+  brand:"LG",
+  model:"UQ7070 ZUE",
+  title:"LG Class UQ7070 ZUE LED TV",
+  url:"LG-pdf/LG-Class-UQ7070-ZUE-LED-TV.html"
+},
+{
+  brand:"LG",
+  model:"49XF3C",
+  title:"LG Digital Signage 49XF3C",
+  url:"LG-pdf/LG-Digital-Signage-49XF3C.html"
+},
+{
+  brand:"LG",
+  model:"55XF3C",
+  title:"LG Digital Signage 55XF3C",
+  url:"LG-pdf/LG-Digital-Signage-55XF3C.html"
+},
+{
+  brand:"LG",
+  model:"55XS2C",
+  title:"LG Digital Signage 55XS2C",
+  url:"LG-pdf/LG-Digital-Signage-55XS2C.html"
+},
+{
+  brand:"LG",
+  model:"G5 MFL69451901",
+  title:"LG G5 MFL69451901",
+  url:"LG-pdf/LG-G5-MFL69451901.html"
+},
+{
+  brand:"LG",
+  model:"26BQ500",
+  title:"LG LED LCD Monitor 26BQ500",
+  url:"LG-pdf/LG-LED-LCD-Monitor-26BQ500.html"
+},
+{
+  brand:"LG",
+  model:"26WQ500",
+  title:"LG LED LCD Monitor 26WQ500",
+  url:"LG-pdf/LG-LED-LCD-Monitor-26WQ500.html"
+},
+
+{
+  brand:"LG",
+  model:"29WQ500",
+  title:"LG LED LCD Monitor 29WQ500",
+  url:"LG-pdf/LG-LED-LCD-Monitor-29WQ500.html"
+},
+{
+  brand:"LG",
+  model:"29WQ50T",
+  title:"LG LED LCD Monitor 29WQ50T",
+  url:"LG-pdf/LG-LED-LCD-Monitor-29WQ50T.html"
+},
+{
+  brand:"LG",
+  model:"34WQ500",
+  title:"LG LED LCD Monitor 34WQ500",
+  url:"LG-pdf/LG-LED-LCD-Monitor-34WQ500.html"
+},
+{
+  brand:"LG",
+  model:"26BQ500",
+  title:"LG LED Monitor 26BQ500",
+  url:"LG-pdf/LG-LED-Monitor-26BQ500.html"
+},
+{
+  brand:"LG",
+  model:"26WQ500",
+  title:"LG LED Monitor 26WQ500",
+  url:"LG-pdf/LG-LED-Monitor-26WQ500.html"
+},
+{
+  brand:"LG",
+  model:"29WQ500",
+  title:"LG LED Monitor 29WQ500",
+  url:"LG-pdf/LG-LED-Monitor-29WQ500.html"
+},
+{
+  brand:"LG",
+  model:"29WQ50T",
+  title:"LG LED Monitor 29WQ50T",
+  url:"LG-pdf/LG-LED-Monitor-29WQ50T.html"
+},
+{
+  brand:"LG",
+  model:"34WQ500",
+  title:"LG LED Monitor 34WQ500",
+  url:"LG-pdf/LG-LED-Monitor-34WQ500.html"
+},
+{
+  brand:"LG",
+  model:"32LQ630",
+  title:"LG LED TV 32LQ630",
+  url:"LG-pdf/LG-LED-TV-32LQ630.html"
+},
+{
+  brand:"LG",
+  model:"32LQ630BAUA",
+  title:"LG LED TV 32LQ630BAUA",
+  url:"LG-pdf/LG-LED-TV-32LQ630BAUA.html"
+},
+{
+  brand:"LG",
+  model:"32LQ630BPUA",
+  title:"LG LED TV 32LQ630BPUA",
+  url:"LG-pdf/LG-LED-TV-32LQ630BPUA.html"
+},
+{
+  brand:"LG",
+  model:"43NANO7",
+  title:"LG LED TV 43NANO7",
+  url:"LG-pdf/LG-LED-TV-43NANO7.html"
+},
+{
+  brand:"LG",
+  model:"43NANO75UQA",
+  title:"LG LED TV 43NANO75UQA",
+  url:"LG-pdf/LG-LED-TV-43NANO75UQA.html"
+},
+{
+  brand:"LG",
+  model:"43UQ7070ZUD",
+  title:"LG LED TV 43UQ7070ZUD",
+  url:"LG-pdf/LG-LED-TV-43UQ7070ZUD.html"
+},
+{
+  brand:"LG",
+  model:"43UQ7070ZUM",
+  title:"LG LED TV 43UQ7070ZUM",
+  url:"LG-pdf/LG-LED-TV-43UQ7070ZUM.html"
+},
+{
+  brand:"LG",
+  model:"43UQ7590PUB",
+  title:"LG LED TV 43UQ7590PUB",
+  url:"LG-pdf/LG-LED-TV-43UQ7590PUB.html"
+},
+{
+  brand:"LG",
+  model:"43UQ7590PUK",
+  title:"LG LED TV 43UQ7590PUK",
+  url:"LG-pdf/LG-LED-TV-43UQ7590PUK.html"
+},
+{
+  brand:"LG",
+  model:"43UQ8000AUB",
+  title:"LG LED TV 43UQ8000AUB",
+  url:"LG-pdf/LG-LED-TV-43UQ8000AUB.html"
+},
+{
+  brand:"LG",
+  model:"43UQ8000AUK",
+  title:"LG LED TV 43UQ8000AUK",
+  url:"LG-pdf/LG-LED-TV-43UQ8000AUK.html"
+},
+{
+  brand:"LG",
+  model:"43UQ9000PUD",
+  title:"LG LED TV 43UQ9000PUD",
+  url:"LG-pdf/LG-LED-TV-43UQ9000PUD.html"
+},
+
+{
+  brand:"LG",
+  model:"50NANO7",
+  title:"LG LED TV 50NANO7",
+  url:"LG-pdf/LG-LED-TV-50NANO7.html"
+},
+{
+  brand:"LG",
+  model:"50NANO75UQA",
+  title:"LG Led TV 50NANO75UQA",
+  url:"LG-pdf/LG-LED-TV-50NANO75UQA.html"
+},
+{
+  brand:"LG",
+  model:"50NANO8",
+  title:"LG LED TV 50NANO8",
+  url:"LG-pdf/LG-LED-TV-50NANO8.html"
+},
+{
+  brand:"LG",
+  model:"50NANO80AQA",
+  title:"LG Led TV 50NANO80AQA",
+  url:"LG-pdf/LG-LED-TV-50NANO80AQA.html"
+},
+{
+  brand:"LG",
+  model:"50QNED8",
+  title:"LG LED TV 50QNED8",
+  url:"LG-pdf/LG-LED-TV-50QNED8.html"
+},
+{
+  brand:"LG",
+  model:"50QNED80AQA",
+  title:"LG Led TV 50QNED80AQA",
+  url:"LG-pdf/LG-LED-TV-50QNED80AQA.html"
+},
+{
+  brand:"LG",
+  model:"50QNED80UQA",
+  title:"LG Led TV 50QNED80UQA",
+  url:"LG-pdf/LG-LED-TV-50QNED80UQA.html"
+},
+{
+  brand:"LG",
+  model:"50UQ7070ZUE",
+  title:"LG Led TV 50UQ7070ZUE",
+  url:"LG-pdf/LG-LED-TV-50UQ7070ZUE.html"
+},
+{
+  brand:"LG",
+  model:"50UQ7070ZUN",
+  title:"LG Led TV 50UQ7070ZUN",
+  url:"LG-pdf/LG-LED-TV-50UQ7070ZUN.html"
+},
+{
+  brand:"LG",
+  model:"50UQ7590PUB",
+  title:"LG Led TV 50UQ7590PUB",
+  url:"LG-pdf/LG-LED-TV-50UQ7590PUB.html"
+},
+{
+  brand:"LG",
+  model:"50UQ7590PUK",
+  title:"LG Led TV 50UQ7590PUK",
+  url:"LG-pdf/LG-LED-TV-50UQ7590PUK.html"
+},
+{
+  brand:"LG",
+  model:"50UQ8000AUB",
+  title:"LG Led TV 50UQ8000AUB",
+  url:"LG-pdf/LG-LED-TV-50UQ8000AUB.html"
+},
+{
+  brand:"LG",
+  model:"50UQ8000AUK",
+  title:"LG Led TV 50UQ8000AUK",
+  url:"LG-pdf/LG-LED-TV-50UQ8000AUK.html"
+},
+{
+  brand:"LG",
+  model:"50UQ9000PUD",
+  title:"LG Led TV 50UQ9000PUD",
+  url:"LG-pdf/LG-LED-TV-50UQ9000PUD.html"
+},
+{
+  brand:"LG",
+  model:"55NANO7",
+  title:"LG LED TV 55NANO7",
+  url:"LG-pdf/LG-LED-TV-55NANO7.html"
+},
+{
+  brand:"LG",
+  model:"55NANO75UQA",
+  title:"LG Led TV 55NANO75UQA",
+  url:"LG-pdf/LG-LED-TV-55NANO75UQA.html"
+},
+{
+  brand:"LG",
+  model:"55NANO8",
+  title:"LG LED TV 55NANO8",
+  url:"LG-pdf/LG-LED-TV-55NANO8.html"
+},
+{
+  brand:"LG",
+  model:"55NANO80AQA",
+  title:"LG Led TV 55NANO80AQA",
+  url:"LG-pdf/LG-LED-TV-55NANO80AQA.html"
+},
+{
+  brand:"LG",
+  model:"55NANO9",
+  title:"LG LED TV 55NANO9",
+  url:"LG-pdf/LG-LED-TV-55NANO9.html"
+},
+{
+  brand:"LG",
+  model:"55QNED80AQA",
+  title:"LG Led TV 55QNED80AQA",
+  url:"LG-pdf/LG-LED-TV-55QNED80AQA.html"
+},
+
+{
+  brand:"LG",
+  model:"55QNED80UQA",
+  title:"LG Led TV 55QNED80UQA",
+  url:"LG-pdf/LG-LED-TV-55QNED80UQA.html"
+},
+{
+  brand:"LG",
+  model:"55QNED85AQA",
+  title:"LG Led TV 55QNED85AQA",
+  url:"LG-pdf/LG-LED-TV-55QNED85AQA.html"
+},
+{
+  brand:"LG",
+  model:"55QNED85UQA",
+  title:"LG Led TV 55QNED85UQA",
+  url:"LG-pdf/LG-LED-TV-55QNED85UQA.html"
+},
+{
+  brand:"LG",
+  model:"55UQ7030PUD",
+  title:"LG Led TV 55UQ7030PUD",
+  url:"LG-pdf/LG-LED-TV-55UQ7030PUD.html"
+},
+{
+  brand:"LG",
+  model:"55UQ7050ZUD",
+  title:"LG Led TV 55UQ7050ZUD",
+  url:"LG-pdf/LG-LED-TV-55UQ7050ZUD.html"
+},
+{
+  brand:"LG",
+  model:"55UQ7070ZUE",
+  title:"LG Led TV 55UQ7070ZUE",
+  url:"LG-pdf/LG-LED-TV-55UQ7070ZUE.html"
+},
+{
+  brand:"LG",
+  model:"55UQ7070ZUN",
+  title:"LG Led TV 55UQ7070ZUN",
+  url:"LG-pdf/LG-LED-TV-55UQ7070ZUN.html"
+},
+{
+  brand:"LG",
+  model:"55UQ7590PUK",
+  title:"LG Led TV 55UQ7590PUK",
+  url:"LG-pdf/LG-LED-TV-55UQ7590PUK.html"
+},
+{
+  brand:"LG",
+  model:"55UQ8000AUB",
+  title:"LG Led TV 55UQ8000AUB",
+  url:"LG-pdf/LG-LED-TV-55UQ8000AUB.html"
+},
+{
+  brand:"LG",
+  model:"55UQ8000AUK",
+  title:"LG Led TV 55UQ8000AUK",
+  url:"LG-pdf/LG-LED-TV-55UQ8000AUK.html"
+},
+{
+  brand:"LG",
+  model:"55UQ9000PUD",
+  title:"LG Led TV 55UQ9000PUD",
+  url:"LG-pdf/LG-LED-TV-55UQ9000PUD.html"
+},
+{
+  brand:"LG",
+  model:"65NANO7",
+  title:"LG LED TV 65NANO7",
+  url:"LG-pdf/LG-LED-TV-65NANO7.html"
+},
+{
+  brand:"LG",
+  model:"65NANO75UQA",
+  title:"LG Led TV 65NANO75UQA",
+  url:"LG-pdf/LG-LED-TV-65NANO75UQA.html"
+},
+{
+  brand:"LG",
+  model:"65NANO8",
+  title:"LG LED TV 65NANO8",
+  url:"LG-pdf/LG-LED-TV-65NANO8.html"
+},
+{
+  brand:"LG",
+  model:"65NANO80AQA",
+  title:"LG Led TV 65NANO80AQA",
+  url:"LG-pdf/LG-LED-TV-65NANO80AQA.html"
+},
+{
+  brand:"LG",
+  model:"65NANO9",
+  title:"LG LED TV 65NANO9",
+  url:"LG-pdf/LG-LED-TV-65NANO9.html"
+},
+{
+  brand:"LG",
+  model:"65QNED80AQA",
+  title:"LG Led TV 65QNED80AQA",
+  url:"LG-pdf/LG-LED-TV-65QNED80AQA.html"
+},
+{
+  brand:"LG",
+  model:"65QNED80UQA",
+  title:"LG Led TV 65QNED80UQA",
+  url:"LG-pdf/LG-LED-TV-65QNED80UQA.html"
+},
+{
+  brand:"LG",
+  model:"65QNED85AQA",
+  title:"LG Led TV 65QNED85AQA",
+  url:"LG-pdf/LG-LED-TV-65QNED85AQA.html"
+},
+{
+  brand:"LG",
+  model:"65QNED85UQA",
+  title:"LG Led TV 65QNED85UQA",
+  url:"LG-pdf/LG-LED-TV-65QNED85UQA.html"
+},
+
+{
+  brand:"LG",
+  model:"65QNED90UQA",
+  title:"LG Led TV 65QNED90UQA",
+  url:"LG-pdf/LG-LED-TV-65QNED90UQA.html"
+},
+{
+  brand:"LG",
+  model:"65QNED99UQA",
+  title:"LG Led TV 65QNED99UQA",
+  url:"LG-pdf/LG-LED-TV-65QNED99UQA.html"
+},
+{
+  brand:"LG",
+  model:"65UQ7030PUD",
+  title:"LG Led TV 65UQ7030PUD",
+  url:"LG-pdf/LG-LED-TV-65UQ7030PUD.html"
+},
+{
+  brand:"LG",
+  model:"65UQ7050ZUD",
+  title:"LG Led TV 65UQ7050ZUD",
+  url:"LG-pdf/LG-LED-TV-65UQ7050ZUD.html"
+},
+{
+  brand:"LG",
+  model:"65UQ7070ZUE",
+  title:"LG Led TV 65UQ7070ZUE",
+  url:"LG-pdf/LG-LED-TV-65UQ7070ZUE.html"
+},
+{
+  brand:"LG",
+  model:"65UQ7070ZUN",
+  title:"LG Led TV 65UQ7070ZUN",
+  url:"LG-pdf/LG-LED-TV-65UQ7070ZUN.html"
+},
+{
+  brand:"LG",
+  model:"65UQ7590PUB",
+  title:"LG Led TV 65UQ7590PUB",
+  url:"LG-pdf/LG-LED-TV-65UQ7590PUB.html"
+},
+{
+  brand:"LG",
+  model:"65UQ7590PUK",
+  title:"LG Led TV 65UQ7590PUK",
+  url:"LG-pdf/LG-LED-TV-65UQ7590PUK.html"
+},
+{
+  brand:"LG",
+  model:"65UQ8000AUB",
+  title:"LG Led TV 65UQ8000AUB",
+  url:"LG-pdf/LG-LED-TV-65UQ8000AUB.html"
+},
+{
+  brand:"LG",
+  model:"65UQ8000AUK",
+  title:"LG Led TV 65UQ8000AUK",
+  url:"LG-pdf/LG-LED-TV-65UQ8000AUK.html"
+},
+{
+  brand:"LG",
+  model:"65UQ9000PUD",
+  title:"LG Led TV 65UQ9000PUD",
+  url:"LG-pdf/LG-LED-TV-65UQ9000PUD.html"
+},
+{
+  brand:"LG",
+  model:"70NANO7",
+  title:"LG Led TV 70NANO7",
+  url:"LG-pdf/LG-LED-TV-70NANO7.html"
+},
+{
+  brand:"LG",
+  model:"70NANO75UQA",
+  title:"LG Led TV 70NANO75UQA",
+  url:"LG-pdf/LG-LED-TV-70NANO75UQA.html"
+},
+{
+  brand:"LG",
+  model:"70UQ7070ZUD",
+  title:"LG Led TV 70UQ7070ZUD",
+  url:"LG-pdf/LG-LED-TV-70UQ7070ZUD.html"
+},
+{
+  brand:"LG",
+  model:"70UQ7070ZUM",
+  title:"LG Led TV 70UQ7070ZUM",
+  url:"LG-pdf/LG-LED-TV-70UQ7070ZUM.html"
+},
+{
+  brand:"LG",
+  model:"70UQ7590PUB",
+  title:"LG Led TV 70UQ7590PUB",
+  url:"LG-pdf/LG-LED-TV-70UQ7590PUB.html"
+},
+{
+  brand:"LG",
+  model:"70UQ7590PUK",
+  title:"LG Led TV 70UQ7590PUK",
+  url:"LG-pdf/LG-LED-TV-70UQ7590PUK.html"
+},
+{
+  brand:"LG",
+  model:"70UQ8000AUB",
+  title:"LG Led TV 70UQ8000AUB",
+  url:"LG-pdf/LG-LED-TV-70UQ8000AUB.html"
+},
+{
+  brand:"LG",
+  model:"70UQ8000AUK",
+  title:"LG Led TV 70UQ8000AUK",
+  url:"LG-pdf/LG-LED-TV-70UQ8000AUK.html"
+},
+{
+  brand:"LG",
+  model:"70UQ9000PUD",
+  title:"LG Led TV 70UQ9000PUD",
+  url:"LG-pdf/LG-LED-TV-70UQ9000PUD.html"
+},
+
+{
+  brand:"LG",
+  model:"75NANO7",
+  title:"LG Led TV 75NANO7",
+  url:"LG-pdf/LG-LED-TV-75NANO7.html"
+},
+{
+  brand:"LG",
+  model:"75NANO75UQA",
+  title:"LG Led TV 75NANO75UQA",
+  url:"LG-pdf/LG-LED-TV-75NANO75UQA.html"
+},
+{
+  brand:"LG",
+  model:"75NANO8",
+  title:"LG Led TV 75NANO8",
+  url:"LG-pdf/LG-LED-TV-75NANO8.html"
+},
+{
+  brand:"LG",
+  model:"75NANO80AQA",
+  title:"LG Led TV 75NANO80AQA",
+  url:"LG-pdf/LG-LED-TV-75NANO80AQA.html"
+},
+{
+  brand:"LG",
+  model:"75NANO9",
+  title:"LG Led TV 75NANO9",
+  url:"LG-pdf/LG-LED-TV-75NANO9.html"
+},
+{
+  brand:"LG",
+  model:"75QNED80AQA",
+  title:"LG Led TV 75QNED80AQA",
+  url:"LG-pdf/LG-LED-TV-75QNED80AQA.html"
+},
+{
+  brand:"LG",
+  model:"75QNED80UQA",
+  title:"LG Led TV 75QNED80UQA",
+  url:"LG-pdf/LG-LED-TV-75QNED80UQA.html"
+},
+{
+  brand:"LG",
+  model:"75QNED85AQA",
+  title:"LG Led TV 75QNED85AQA",
+  url:"LG-pdf/LG-LED-TV-75QNED85AQA.html"
+},
+{
+  brand:"LG",
+  model:"75QNED85UQA",
+  title:"LG Led TV 75QNED85UQA",
+  url:"LG-pdf/LG-LED-TV-75QNED85UQA.html"
+},
+{
+  brand:"LG",
+  model:"75QNED90UQA",
+  title:"LG Led TV 75QNED90UQA",
+  url:"LG-pdf/LG-LED-TV-75QNED90UQA.html"
+},
+{
+  brand:"LG",
+  model:"75QNED99UQA",
+  title:"LG Led TV 75QNED99UQA",
+  url:"LG-pdf/LG-LED-TV-75QNED99UQA.html"
+},
+{
+  brand:"LG",
+  model:"75UQ7050ZUD",
+  title:"LG Led TV 75UQ7050ZUD",
+  url:"LG-pdf/LG-LED-TV-75UQ7050ZUD.html"
+},
+{
+  brand:"LG",
+  model:"75UQ7070ZUD",
+  title:"LG Led TV 75UQ7070ZUD",
+  url:"LG-pdf/LG-LED-TV-75UQ7070ZUD.html"
+},
+{
+  brand:"LG",
+  model:"75UQ7070ZUM",
+  title:"LG Led TV 75UQ7070ZUM",
+  url:"LG-pdf/LG-LED-TV-75UQ7070ZUM.html"
+},
+{
+  brand:"LG",
+  model:"75UQ7590PUB",
+  title:"LG Led TV 75UQ7590PUB",
+  url:"LG-pdf/LG-LED-TV-75UQ7590PUB.html"
+},
+{
+  brand:"LG",
+  model:"75UQ7590PUK",
+  title:"LG Led TV 75UQ7590PUK",
+  url:"LG-pdf/LG-LED-TV-75UQ7590PUK.html"
+},
+{
+  brand:"LG",
+  model:"75UQ8000AUB",
+  title:"LG Led TV 75UQ8000AUB",
+  url:"LG-pdf/LG-LED-TV-75UQ8000AUB.html"
+},
+{
+  brand:"LG",
+  model:"75UQ8000AUK",
+  title:"LG Led TV 75UQ8000AUK",
+  url:"LG-pdf/LG-LED-TV-75UQ8000AUK.html"
+},
+{
+  brand:"LG",
+  model:"75UQ9000PUD",
+  title:"LG Led TV 75UQ9000PUD",
+  url:"LG-pdf/LG-LED-TV-75UQ9000PUD.html"
+},
+{
+  brand:"LG",
+  model:"86NANO7",
+  title:"LG Led TV 86NANO7",
+  url:"LG-pdf/LG-LED-TV-86NANO7.html"
+},
+
+{
+  brand:"LG",
+  model:"86NANO75UQA",
+  title:"LG Led TV 86NANO75UQA",
+  url:"LG-pdf/LG-LED-TV-86NANO75UQA.html"
+},
+{
+  brand:"LG",
+  model:"86NANO8",
+  title:"LG LED TV 86NANO8",
+  url:"LG-pdf/LG-LED-TV-86NANO8.html"
+},
+{
+  brand:"LG",
+  model:"86NANO9",
+  title:"LG LED TV 86NANO9",
+  url:"LG-pdf/LG-LED-TV-86NANO9.html"
+},
+{
+  brand:"LG",
+  model:"86QNED80AQA",
+  title:"LG Led TV 86QNED80AQA",
+  url:"LG-pdf/LG-LED-TV-86QNED80AQA.html"
+},
+{
+  brand:"LG",
+  model:"86QNED80UQA",
+  title:"LG Led TV 86QNED80UQA",
+  url:"LG-pdf/LG-LED-TV-86QNED80UQA.html"
+},
+{
+  brand:"LG",
+  model:"86QNED85AQA",
+  title:"LG Led TV 86QNED85AQA",
+  url:"LG-pdf/LG-LED-TV-86QNED85AQA.html"
+},
+{
+  brand:"LG",
+  model:"86QNED85UQA",
+  title:"LG Led TV 86QNED85UQA",
+  url:"LG-pdf/LG-LED-TV-86QNED85UQA.html"
+},
+{
+  brand:"LG",
+  model:"86QNED90UQA",
+  title:"LG Led TV 86QNED90UQA",
+  url:"LG-pdf/LG-LED-TV-86QNED90UQA.html"
+},
+{
+  brand:"LG",
+  model:"86QNED99UQA",
+  title:"LG Led TV 86QNED99UQA",
+  url:"LG-pdf/LG-LED-TV-86QNED99UQA.html"
+},
+{
+  brand:"LG",
+  model:"86UQ7070ZUD",
+  title:"LG Led TV 86UQ7070ZUD",
+  url:"LG-pdf/LG-LED-TV-86UQ7070ZUD.html"
+},
+{
+  brand:"LG",
+  model:"86UQ7590PUD",
+  title:"LG Led TV 86UQ7590PUD",
+  url:"LG-pdf/LG-LED-TV-86UQ7590PUD.html"
+},
+{
+  brand:"LG",
+  model:"86UQ8000AUB",
+  title:"LG Led TV 86UQ8000AUB",
+  url:"LG-pdf/LG-LED-TV-86UQ8000AUB.html"
+},
+{
+  brand:"LG",
+  model:"86UQ9000PUD",
+  title:"LG Led TV 86UQ9000PUD",
+  url:"LG-pdf/LG-LED-TV-86UQ9000PUD.html"
+},
+{
+  brand:"LG",
+  model:"LWHD6500R",
+  title:"LG Window-Type Air Conditioner LWHD6500R",
+  url:"LG-pdf/LG-Window-Type-Air-Conditioner-LWHD6500R.html"
+},
+{
+  brand:"LG",
+  model:"LWHD6500SR",
+  title:"LG Window-Type Air Conditioner LWHD6500SR",
+  url:"LG-pdf/LG-Window-Type-Air-Conditioner-LWHD6500SR.html"
+},
+{
+  brand:"LG",
+  model:"MB-3571MCD",
+  title:"LG Microwave Grill Oven MB-3571MCD",
+  url:"LG-pdf/LG-Microwave-Grill-Oven-MB-3571MCD.html"
+},
+{
+  brand:"LG",
+  model:"MFL71680504",
+  title:"LG Microwave Oven MFL71680504",
+  url:"LG-pdf/LG-Microwave-Oven-MFL71680504.html"
+},
+{
+  brand:"LG",
+  model:"MH6842B",
+  title:"LG Microwave Oven MH6842B",
+  url:"LG-pdf/LG-Microwave-Oven-MH6842B.html"
+},
+{
+  brand:"LG",
+  model:"CJ44",
+  title:"LG Mini Hi-Fi System CJ44",
+  url:"LG-pdf/LG-Mini-Hi-Fi-System-CJ44.html"
+},
+{
+  brand:"LG",
+  model:"CJS45F",
+  title:"LG Mini Hi-Fi System CJS45F",
+  url:"LG-pdf/LG-Mini-Hi-Fi-System-CJS45F.html"
+},
+
+{
+  brand:"LG",
+  model:"CJS45W",
+  title:"LG Mini Hi-Fi System CJS45W",
+  url:"LG-pdf/LG-Mini-Hi-Fi-System-CJS45W.html"
+},
+{
+  brand:"LG",
+  model:"CM4590",
+  title:"LG Mini Hi-Fi System CM4590",
+  url:"LG-pdf/LG-Mini-Hi-Fi-System-CM4590.html"
+},
+{
+  brand:"LG",
+  model:"SH7B",
+  title:"LG Musicflow SH7B",
+  url:"LG-pdf/LG-Musicflow-SH7B.html"
+},
+{
+  brand:"LG",
+  model:"27SR73U",
+  title:"LG MyView Smart Monitor 27SR73U",
+  url:"LG-pdf/LG-MyView-Smart-Monitor-27SR73U.html"
+},
+{
+  brand:"LG",
+  model:"32SR73U",
+  title:"LG MyView Smart Monitor 32SR73U",
+  url:"LG-pdf/LG-MyView-Smart-Monitor-32SR73U.html"
+},
+{
+  brand:"LG",
+  model:"Nano 81",
+  title:"LG LED TV Nano 81",
+  url:"LG-pdf/LG-LED-TV-Nano-81.html"
+},
+{
+  brand:"LG",
+  model:"43NANO7",
+  title:"LG NanoCell 75 Series 43NANO7",
+  url:"LG-pdf/LG-NanoCell-75-Series-43NANO7.html"
+},
+{
+  brand:"LG",
+  model:"50NANO7",
+  title:"LG NanoCell 75 Series 50NANO7",
+  url:"LG-pdf/LG-NanoCell-75-Series-50NANO7.html"
+},
+{
+  brand:"LG",
+  model:"50NANO8",
+  title:"LG NanoCell 75 Series 50NANO8",
+  url:"LG-pdf/LG-NanoCell-75-Series-50NANO8.html"
+},
+{
+  brand:"LG",
+  model:"55NANO7",
+  title:"LG NanoCell 75 Series 55NANO7",
+  url:"LG-pdf/LG-NanoCell-75-Series-55NANO7.html"
+},
+{
+  brand:"LG",
+  model:"55NANO8",
+  title:"LG NanoCell 75 Series 55NANO8",
+  url:"LG-pdf/LG-NanoCell-75-Series-55NANO8.html"
+},
+{
+  brand:"LG",
+  model:"55NANO9",
+  title:"LG NanoCell 75 Series 55NANO9",
+  url:"LG-pdf/LG-NanoCell-75-Series-55NANO9.html"
+},
+{
+  brand:"LG",
+  model:"65NANO7",
+  title:"LG NanoCell 75 Series 65NANO7",
+  url:"LG-pdf/LG-NanoCell-75-Series-65NANO7.html"
+},
+{
+  brand:"LG",
+  model:"65NANO8",
+  title:"LG NanoCell 75 Series 65NANO8",
+  url:"LG-pdf/LG-NanoCell-75-Series-65NANO8.html"
+},
+{
+  brand:"LG",
+  model:"65NANO9",
+  title:"LG NanoCell 75 Series 65NANO9",
+  url:"LG-pdf/LG-NanoCell-75-Series-65NANO9.html"
+},
+{
+  brand:"LG",
+  model:"75NANO7",
+  title:"LG NanoCell 75 Series 75NANO7",
+  url:"LG-pdf/LG-NanoCell-75-Series-75NANO7.html"
+},
+{
+  brand:"LG",
+  model:"75NANO8",
+  title:"LG NanoCell 75 Series 75NANO8",
+  url:"LG-pdf/LG-NanoCell-75-Series-75NANO8.html"
+},
+{
+  brand:"LG",
+  model:"75NANO9",
+  title:"LG NanoCell 75 Series 75NANO9",
+  url:"LG-pdf/LG-NanoCell-75-Series-75NANO9.html"
+},
+{
+  brand:"LG",
+  model:"86NANO7",
+  title:"LG NanoCell 75 Series 86NANO7",
+  url:"LG-pdf/LG-NanoCell-75-Series-86NANO7.html"
+},
+{
+  brand:"LG",
+  model:"86NANO8",
+  title:"LG NanoCell 75 Series 86NANO8",
+  url:"LG-pdf/LG-NanoCell-75-Series-86NANO8.html"
+},
+
+{
+  brand:"LG",
+  model:"86NANO9",
+  title:"LG NanoCell 75 Series 86NANO9",
+  url:"LG-pdf/LG-NanoCell-75-Series-86NANO9.html"
+},
+{
+  brand:"LG",
+  model:"2020",
+  title:"LG NanoCell 80 Series 2020",
+  url:"LG-pdf/LG-NanoCell-80-Series-2020.html"
+},
+{
+  brand:"LG",
+  model:"NANO76",
+  title:"LG NanoCell NANO76",
+  url:"LG-pdf/LG-NanoCell-NANO76.html"
+},
+{
+  brand:"LG",
+  model:"NANO81",
+  title:"LG NanoCell NANO81",
+  url:"LG-pdf/LG-NanoCell-NANO81.html"
+},
+{
+  brand:"LG",
+  model:"NanoCell TV",
+  title:"LG NanoCell TV",
+  url:"LG-pdf/LG-NanoCell-TV.html"
+},
+{
+  brand:"LG",
+  model:"17Z990",
+  title:"LG Notebook 17Z990",
+  url:"LG-pdf/LG-Notebook-17Z990.html"
+},
+{
+  brand:"LG",
+  model:"OLED TV",
+  title:"LG OLED TV",
+  url:"LG-pdf/LG-OLED-TV.html"
+},
+{
+  brand:"LG",
+  model:"OLED42C4PUA",
+  title:"LG OLED42C4PUA",
+  url:"LG-pdf/LG-OLED42C4PUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED48B4AUA",
+  title:"LG OLED48B4AUA",
+  url:"LG-pdf/LG-OLED48B4AUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED48B4PUA",
+  title:"LG OLED48B4PUA",
+  url:"LG-pdf/LG-OLED48B4PUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED48C4AUA",
+  title:"LG OLED48C4AUA",
+  url:"LG-pdf/LG-OLED48C4AUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED48C4PUA",
+  title:"LG OLED48C4PUA",
+  url:"LG-pdf/LG-OLED48C4PUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED55B4AUA",
+  title:"LG OLED55B4AUA",
+  url:"LG-pdf/LG-OLED55B4AUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED55B4EUA",
+  title:"LG OLED55B4EUA",
+  url:"LG-pdf/LG-OLED55B4EUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED55B4PUA",
+  title:"LG OLED55B4PUA",
+  url:"LG-pdf/LG-OLED55B4PUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED55C4AUA",
+  title:"LG OLED55C4AUA",
+  url:"LG-pdf/LG-OLED55C4AUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED55C4PUA",
+  title:"LG OLED55C4PUA",
+  url:"LG-pdf/LG-OLED55C4PUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED55G4SUB",
+  title:"LG OLED55G4SUB",
+  url:"LG-pdf/LG-OLED55G4SUB.html"
+},
+{
+  brand:"LG",
+  model:"OLED65B4AUA",
+  title:"LG OLED65B4AUA",
+  url:"LG-pdf/LG-OLED65B4AUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED65B4EUA",
+  title:"LG OLED65B4EUA",
+  url:"LG-pdf/LG-OLED65B4EUA.html"
+},
+
+{
+  brand:"LG",
+  model:"OLED65B4PUA",
+  title:"LG OLED65B4PUA",
+  url:"LG-pdf/LG-OLED65B4PUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED65C4AUA",
+  title:"LG OLED65C4AUA",
+  url:"LG-pdf/LG-OLED65C4AUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED65C4PUA",
+  title:"LG OLED65C4PUA",
+  url:"LG-pdf/LG-OLED65C4PUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED65G4SUB",
+  title:"LG OLED65G4SUB",
+  url:"LG-pdf/LG-OLED65G4SUB.html"
+},
+{
+  brand:"LG",
+  model:"OLED77B4AUA",
+  title:"LG OLED77B4AUA",
+  url:"LG-pdf/LG-OLED77B4AUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED77B4EUA",
+  title:"LG OLED77B4EUA",
+  url:"LG-pdf/LG-OLED77B4EUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED77B4PUA",
+  title:"LG OLED77B4PUA",
+  url:"LG-pdf/LG-OLED77B4PUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED77C4AUA",
+  title:"LG OLED77C4AUA",
+  url:"LG-pdf/LG-OLED77C4AUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED77C4PUA",
+  title:"LG OLED77C4PUA",
+  url:"LG-pdf/LG-OLED77C4PUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED77G4WUA",
+  title:"LG OLED77G4WUA",
+  url:"LG-pdf/LG-OLED77G4WUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED83B4PUA",
+  title:"LG OLED83B4PUA",
+  url:"LG-pdf/LG-OLED83B4PUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED83C4AUA",
+  title:"LG OLED83C4AUA",
+  url:"LG-pdf/LG-OLED83C4AUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED83C4PUA",
+  title:"LG OLED83C4PUA",
+  url:"LG-pdf/LG-OLED83C4PUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED83G4WUA",
+  title:"LG OLED83G4WUA",
+  url:"LG-pdf/LG-OLED83G4WUA.html"
+},
+{
+  brand:"LG",
+  model:"OLED97G4WUA",
+  title:"LG OLED97G4WUA",
+  url:"LG-pdf/LG-OLED97G4WUA.html"
+},
+{
+  brand:"LG",
+  model:"PL2B",
+  title:"LG Portable Bluetooth Speaker PL2B",
+  url:"LG-pdf/LG-Portable-Bluetooth-Speaker-PL2B.html"
+},
+{
+  brand:"LG",
+  model:"PL2C",
+  title:"LG Portable Bluetooth Speaker PL2C",
+  url:"LG-pdf/LG-Portable-Bluetooth-Speaker-PL2C.html"
+},
+{
+  brand:"LG",
+  model:"PL2M",
+  title:"LG Portable Bluetooth Speaker PL2M",
+  url:"LG-pdf/LG-Portable-Bluetooth-Speaker-PL2M.html"
+},
+{
+  brand:"LG",
+  model:"PL2P",
+  title:"LG Portable Bluetooth Speaker PL2P",
+  url:"LG-pdf/LG-Portable-Bluetooth-Speaker-PL2P.html"
+},
+{
+  brand:"LG",
+  model:"PL2S",
+  title:"LG Portable Bluetooth Speaker PL2S",
+  url:"LG-pdf/LG-Portable-Bluetooth-Speaker-PL2S.html"
+},
+
+{
+  brand:"LG",
+  model:"PL2W",
+  title:"LG Portable Bluetooth Speaker PL2W",
+  url:"LG-pdf/LG-Portable-Bluetooth-Speaker-PL2W.html"
+},
+{
+  brand:"LG",
+  model:"PL2",
+  title:"LG Portable Bluetooth Speaker PL2",
+  url:"LG-pdf/LG-Portable-Bluetooth-Speaker-PL2.html"
+},
+{
+  brand:"LG",
+  model:"Q8000 AUB Series",
+  title:"LG Q8000 AUB Series webOS",
+  url:"LG-pdf/LG-Q8000-AUB-Series-webOS.html"
+},
+{
+  brand:"LG",
+  model:"GM63SGS",
+  title:"LG Refrigerator GM63SGS",
+  url:"LG-pdf/LG-Refrigerator-GM63SGS.html"
+},
+{
+  brand:"LG",
+  model:"LFXS24623",
+  title:"LG Refrigerator LFXS24623",
+  url:"LG-pdf/LG-Refrigerator-LFXS24623.html"
+},
+{
+  brand:"LG",
+  model:"27SR73U",
+  title:"LG Smart Monitor 27SR73U",
+  url:"LG-pdf/LG-Smart-Monitor-27SR73U.html"
+},
+{
+  brand:"LG",
+  model:"32SR73U",
+  title:"LG Smart Monitor 32SR73U",
+  url:"LG-pdf/LG-Smart-Monitor-32SR73U.html"
+},
+{
+  brand:"LG",
+  model:"27MD5KL",
+  title:"LG UltraFine Display 27MD5KL",
+  url:"LG-pdf/LG-UltraFine-Display-27MD5KL.html"
+},
+{
+  brand:"LG",
+  model:"27MD5KLP",
+  title:"LG UltraFine Display 27MD5KLP",
+  url:"LG-pdf/LG-UltraFine-Display-27MD5KLP.html"
+},
+{
+  brand:"LG",
+  model:"27GL63T",
+  title:"LG UltraGear 27GL63T",
+  url:"LG-pdf/LG-UltraGear-27GL63T.html"
+},
+{
+  brand:"LG",
+  model:"32GN500",
+  title:"LG UltraGear 32GN500",
+  url:"LG-pdf/LG-UltraGear-32GN500.html"
+},
+{
+  brand:"LG",
+  model:"32GN550",
+  title:"LG UltraGear 32GN550",
+  url:"LG-pdf/LG-UltraGear-32GN550.html"
+},
+{
+  brand:"LG",
+  model:"32GN550P",
+  title:"LG UltraGear 32GN550P",
+  url:"LG-pdf/LG-UltraGear-32GN550P.html"
+},
+{
+  brand:"LG",
+  model:"34GL750",
+  title:"LG UltraGear 34GL750",
+  url:"LG-pdf/LG-UltraGear-34GL750.html"
+},
+{
+  brand:"LG",
+  model:"45GR65DC",
+  title:"LG UltraGear 45GR65DC",
+  url:"LG-pdf/LG-UltraGear-45GR65DC.html"
+},
+{
+  brand:"LG",
+  model:"45GR75DC",
+  title:"LG UltraGear 45GR75DC",
+  url:"LG-pdf/LG-UltraGear-45GR75DC.html"
+},
+{
+  brand:"LG",
+  model:"45GR95QE",
+  title:"LG UltraGear 45GR95QE",
+  url:"LG-pdf/LG-UltraGear-45GR95QE.html"
+},
+{
+  brand:"LG",
+  model:"32GN50T",
+  title:"LG UltraGear 32GN50T",
+  url:"LG-pdf/LG-UltraGear-32GN50T.html"
+},
+{
+  brand:"LG",
+  model:"UQ7590",
+  title:"LG UQ7590 4K LED TV",
+  url:"LG-pdf/LG-UQ7590-4K-LED-TV.html"
+},
+{
+  brand:"LG",
+  model:"F2V5PGP0W",
+  title:"LG Wash and Dryer F2V5PGP0W",
+  url:"LG-pdf/LG-Wash-and-Dryer-F2V5PGP0W.html"
+},
+
+{
+  brand:"LG",
+  model:"F2V5PGP2T",
+  title:"LG Wash and Dryer F2V5PGP2T",
+  url:"LG-pdf/LG-Wash-and-Dryer-F2V5PGP2T.html"
+},
+{
+  brand:"LG",
+  model:"WDV5148SGP",
+  title:"LG Wash and Dryer WDV5148SGP",
+  url:"LG-pdf/LG-Wash-and-Dryer-WDV5148SGP.html"
+},
+{
+  brand:"LG",
+  model:"WF-T1477TP",
+  title:"LG Washing Machine WF-T1477TP",
+  url:"LG-pdf/LG-Washing-Machine-WF-T1477TP.html"
+},
+{
+  brand:"LG",
+  model:"WM2077CW",
+  title:"LG Washing Machine WM2077CW",
+  url:"LG-pdf/LG-Washing-Machine-WM2077CW.html"
+},
+{
+  brand:"LG",
+  model:"WM2277H",
+  title:"LG Washing Machine WM2277H",
+  url:"LG-pdf/LG-Washing-Machine-WM2277H.html"
+},
+{
+  brand:"LG",
+  model:"WKEX200H",
+  title:"LG Washtower WKEX200H",
+  url:"LG-pdf/LG-Washtower-WKEX200H.html"
+},
+{
+  brand:"LG",
+  model:"WKGX201H",
+  title:"LG Washtower WKGX201H",
+  url:"LG-pdf/LG-Washtower-WKGX201H.html"
+},
+{
+  brand:"LG",
+  model:"LG-W280A MFL69843601",
+  title:"LG Watch Sport LG-W280A MFL69843601",
+  url:"LG-pdf/LG-Watch-Sport-LG-W280A-MFL69843601.html"
+},
+{
+  brand:"LG",
+  model:"LG-W150 MFL69183201",
+  title:"LG Watch Urbane LG-W150 MFL69183201",
+  url:"LG-pdf/LG-Watch-Urbane-LG-W150-MFL69183201.html"
+}
 
 ]
