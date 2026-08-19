@@ -260,22 +260,15 @@ font-size:14px;
         <label>Brand Name</label>
         <input type="text" id="brand" placeholder="Brand name">
 
-        <label>Serial Number</label>
-        <input type="text" id="model" placeholder="Serial number">
+        <label>Model Number</label>
+        <input type="text" id="model" placeholder="Model number">
 
 
         <button id="payButton" type="button">
             Complete Secure Payment
         </button><br><br>
 
-        <div class="migration-note">
-    <strong>📢 Website Update:</strong><br>
-    We are currently migrating to our new website:
-    <strong>UserManual.store</strong>.<br>
-    Your order, payment, and customer support experience remain secure and uninterrupted.
-</div>
-
-
+        
         <div class="trust">
 
             <div style="margin-top:20px;text-align:center;">
@@ -292,7 +285,7 @@ font-size:14px;
 
             ✅ 14-day Money-Back Guarantee – no questions asked!<br>
             🔒 Encrypted & Secure Checkout (SSL protected)<br>
-            💳 Secure Payments via Wise Business<br>
+            💳 Secure Payment via Lemon Squeezy<br>
             📧 Instant Email Confirmation of Your Order<br>
             🛡️ Fraud Protection for Safe Payments<br>
             ⚡ Immediate Digital Delivery<br>
@@ -391,131 +384,117 @@ font-size:14px;
 
 <script>
 
-
-function trackGtag(event, params){
-
-    if(typeof gtag==="function"){
-
+function trackGtag(event, params) {
+    if (typeof gtag === "function") {
         gtag("event", event, params);
-
     }
-
 }
 
+document.getElementById("payButton").addEventListener("click", async function () {
 
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const brand = document.getElementById("brand").value.trim();
+    const model = document.getElementById("model").value.trim();
 
-document.getElementById("payButton").addEventListener("click", async function(){
-
-
-    const name=document.getElementById("name").value.trim();
-
-    const email=document.getElementById("email").value.trim();
-
-    const phone=document.getElementById("phone").value.trim();
-
-    const brand=document.getElementById("brand").value.trim();
-
-    const model=document.getElementById("model").value.trim();
-
-
-
-    if(!name || !email || !phone || !brand || !model){
-
+    // Validate fields
+    if (!name || !email || !phone || !brand || !model) {
         alert("Please fill out all required fields.");
-
         return;
-
     }
 
-
-
-    trackGtag("begin_checkout",{
-
-        send_to:"AW-17308900859"
-
+    // Track Google Ads conversion/event
+    trackGtag("begin_checkout", {
+        send_to: "AW-17308900859"
     });
 
+    // Generate order number
+    const order_number = Math.floor(
+        100000 + Math.random() * 900000
+    ).toString();
 
-
-    const order_number=Math.floor(100000+Math.random()*900000).toString();
-
-
-
-    const orderData={
-
-        name,
-
-        email,
-
-        phone,
-
-        brand,
-
-        model,
-
-        order_number,
-
-        product:"User Manual PDF",
-
-        amount:"$14.95",
-
-        status:"Pending Payment"
-
+    // Create order data
+    const orderData = {
+        name: name,
+        email: email,
+        phone: phone,
+        brand: brand,
+        model: model,
+        order_number: order_number,
+        product: "User Manual PDF",
+        amount: "$14.95",
+        status: "Pending Payment"
     };
 
-
-
+    // Save locally
     localStorage.setItem(
-
         "lastOrder",
-
         JSON.stringify(orderData)
-
     );
 
+    // Send customer request to Formspree
+    try {
 
+        const response = await fetch(
+            "https://formspree.io/f/xldpwdpb",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify(orderData)
+            }
+        );
 
-    try{
+        if (!response.ok) {
+            throw new Error("Formspree submission failed.");
+        }
 
+    } catch (error) {
 
-        await fetch("https://formspree.io/f/xldpwdpb",{
+        console.error("Formspree error:", error);
 
-            method:"POST",
+        alert(
+            "We couldn't submit your request. " +
+            "Please check your internet connection and try again."
+        );
 
-            headers:{
-
-                "Content-Type":"application/json",
-
-                "Accept":"application/json"
-
-            },
-
-            body:JSON.stringify(orderData)
-
-        });
-
-
-    }catch(error){
-
-        console.error(error);
-
+        return;
     }
 
+    /*
+     * Lemon Squeezy checkout
+     *
+     * This is your reusable checkout URL.
+     */
+    const lemonSqueezyUrl =
+        "https://findmymanual.lemonsqueezy.com/checkout/buy/3f88230c-e372-4fe5-8d37-9aa5fb431ee7";
 
+    /*
+     * Add customer information and custom order information.
+     *
+     * Name and email will be pre-filled in Lemon Squeezy.
+     *
+     * Brand, model, phone and order number are passed
+     * as custom checkout data.
+     */
+    const checkoutUrl =
+        lemonSqueezyUrl +
+        "?checkout[name]=" + encodeURIComponent(name) +
+        "&checkout[email]=" + encodeURIComponent(email) +
+        "&checkout[custom][order_number]=" + encodeURIComponent(order_number) +
+        "&checkout[custom][brand]=" + encodeURIComponent(brand) +
+        "&checkout[custom][model]=" + encodeURIComponent(model) +
+        "&checkout[custom][phone]=" + encodeURIComponent(phone);
 
-    const wiseLink = "https://wise.com/pay/r/Xn3tpOjaRLa5JlY"; // Paste your complete Wise payment link here
-
-window.open(
-    wiseLink,
-    "_blank",
-    "width=700,height=800"
-);
-
-
+    /*
+     * Open Lemon Squeezy checkout
+     */
+    window.location.href = checkoutUrl;
 
 });
-
-
 
 </script>
 
