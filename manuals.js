@@ -12824,6 +12824,576 @@ const manuals = [
   model:"LG-W150 MFL69183201",
   title:"LG Watch Urbane LG-W150 MFL69183201",
   url:"LG-pdf/LG-Watch-Urbane-LG-W150-MFL69183201.html"
+},
+
+{
+  brand:"Maytag",
+  model:"MCIT8030SB",
+  title:"Maytag Cooktop MCIT8030SB",
+  url:"Maytag-pdf/Maytag-Cooktop-MCIT8030SB.html"
+},
+{
+  brand:"Maytag",
+  model:"MEC8830HS",
+  title:"Maytag Cooktop MEC8830HS",
+  url:"Maytag-pdf/Maytag-Cooktop-MEC8830HS.html"
+},
+{
+  brand:"Maytag",
+  model:"MEC8836HS",
+  title:"Maytag Cooktop MEC8836HS",
+  url:"Maytag-pdf/Maytag-Cooktop-MEC8836HS.html"
+},
+{
+  brand:"Maytag",
+  model:"MGC7430DS",
+  title:"Maytag Cooktop MGC7430DS",
+  url:"Maytag-pdf/Maytag-Cooktop-MGC7430DS.html"
+},
+{
+  brand:"Maytag",
+  model:"MGC7536DS",
+  title:"Maytag Cooktop MGC7536DS",
+  url:"Maytag-pdf/Maytag-Cooktop-MGC7536DS.html"
+},
+{
+  brand:"Maytag",
+  model:"MGC9536DS",
+  title:"Maytag Cooktop MGC9536DS",
+  url:"Maytag-pdf/Maytag-Cooktop-MGC9536DS.html"
+},
+{
+  brand:"Maytag",
+  model:"MDB4949SKZ",
+  title:"Maytag Dishwasher MDB4949SKZ",
+  url:"Maytag-pdf/Maytag-Dishwasher-MDB4949SKZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MDB8959SKW",
+  title:"Maytag Dishwasher MDB8959SKW",
+  url:"Maytag-pdf/Maytag-Dishwasher-MDB8959SKW.html"
+},
+{
+  brand:"Maytag",
+  model:"MDFS3924RB",
+  title:"Maytag Dishwasher MDFS3924RB",
+  url:"Maytag-pdf/Maytag-Dishwasher-MDFS3924RB.html"
+},
+{
+  brand:"Maytag",
+  model:"MDFS3924RW",
+  title:"Maytag Dishwasher MDFS3924RW",
+  url:"Maytag-pdf/Maytag-Dishwasher-MDFS3924RW.html"
+},
+{
+  brand:"Maytag",
+  model:"MDPS7024SZ",
+  title:"Maytag Dishwasher MDPS7024SZ",
+  url:"Maytag-pdf/Maytag-Dishwasher-MDPS7024SZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MDTS7024SZ",
+  title:"Maytag Dishwasher MDTS7024SZ",
+  url:"Maytag-pdf/Maytag-Dishwasher-MDTS7024SZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MED4500MW",
+  title:"Maytag Dryer MED4500MW",
+  url:"Maytag-pdf/Maytag-Dryer-MED4500MW.html"
+},
+{
+  brand:"Maytag",
+  model:"MED5030MW",
+  title:"Maytag Dryer MED5030MW",
+  url:"Maytag-pdf/Maytag-Dryer-MED5030MW.html"
+},
+{
+  brand:"Maytag",
+  model:"MED5430MW",
+  title:"Maytag Dryer MED5430MW",
+  url:"Maytag-pdf/Maytag-Dryer-MED5430MW.html"
+},
+{
+  brand:"Maytag",
+  model:"MED5605RW",
+  title:"Maytag Dryer MED5605RW",
+  url:"Maytag-pdf/Maytag-Dryer-MED5605RW.html"
+},
+{
+  brand:"Maytag",
+  model:"MED5630MBK",
+  title:"Maytag Dryer MED5630MBK",
+  url:"Maytag-pdf/Maytag-Dryer-MED5630MBK.html"
+},
+{
+  brand:"Maytag",
+  model:"MED6200KW",
+  title:"Maytag Dryer MED6200KW",
+  url:"Maytag-pdf/Maytag-Dryer-MED6200KW.html"
+},
+{
+  brand:"Maytag",
+  model:"MED6230HW",
+  title:"Maytag Dryer MED6230HW",
+  url:"Maytag-pdf/Maytag-Dryer-MED6230HW.html"
+},
+{
+  brand:"Maytag",
+  model:"MED6630HC",
+  title:"Maytag Dryer MED6630HC",
+  url:"Maytag-pdf/Maytag-Dryer-MED6630HC.html"
+},
+
+{
+  brand:"Maytag",
+  model:"MED7020RF",
+  title:"Maytag Dryer MED7020RF",
+  url:"Maytag-pdf/Maytag-Dryer-MED7020RF.html"
+},
+{
+  brand:"Maytag",
+  model:"MED7205RR",
+  title:"Maytag Dryer MED7205RR",
+  url:"Maytag-pdf/Maytag-Dryer-MED7205RR.html"
+},
+{
+  brand:"Maytag",
+  model:"MED7405RR",
+  title:"Maytag Dryer MED7405RR",
+  url:"Maytag-pdf/Maytag-Dryer-MED7405RR.html"
+},
+{
+  brand:"Maytag",
+  model:"MEDP586KW",
+  title:"Maytag Dryer MEDP586KW",
+  url:"Maytag-pdf/Maytag-Dryer-MEDP586KW.html"
+},
+{
+  brand:"Maytag",
+  model:"MGD4005SW",
+  title:"Maytag Dryer MGD4005SW",
+  url:"Maytag-pdf/Maytag-Dryer-MGD4005SW.html"
+},
+{
+  brand:"Maytag",
+  model:"MGD4500MW",
+  title:"Maytag Dryer MGD4500MW",
+  url:"Maytag-pdf/Maytag-Dryer-MGD4500MW.html"
+},
+{
+  brand:"Maytag",
+  model:"MGD5430MW",
+  title:"Maytag Dryer MGD5430MW",
+  url:"Maytag-pdf/Maytag-Dryer-MGD5430MW.html"
+},
+{
+  brand:"Maytag",
+  model:"MGD5605RW",
+  title:"Maytag Dryer MGD5605RW",
+  url:"Maytag-pdf/Maytag-Dryer-MGD5605RW.html"
+},
+{
+  brand:"Maytag",
+  model:"MGD5630MBK",
+  title:"Maytag Dryer MGD5630MBK",
+  url:"Maytag-pdf/Maytag-Dryer-MGD5630MBK.html"
+},
+{
+  brand:"Maytag",
+  model:"MGD6200KW",
+  title:"Maytag Dryer MGD6200KW",
+  url:"Maytag-pdf/Maytag-Dryer-MGD6200KW.html"
+},
+{
+  brand:"Maytag",
+  model:"MGD6205RF",
+  title:"Maytag Dryer MGD6205RF",
+  url:"Maytag-pdf/Maytag-Dryer-MGD6205RF.html"
+},
+{
+  brand:"Maytag",
+  model:"MGD6230HC",
+  title:"Maytag Dryer MGD6230HC",
+  url:"Maytag-pdf/Maytag-Dryer-MGD6230HC.html"
+},
+{
+  brand:"Maytag",
+  model:"MGD6500MW",
+  title:"Maytag Dryer MGD6500MW",
+  url:"Maytag-pdf/Maytag-Dryer-MGD6500MW.html"
+},
+{
+  brand:"Maytag",
+  model:"MGD6630HC",
+  title:"Maytag Dryer MGD6630HC",
+  url:"Maytag-pdf/Maytag-Dryer-MGD6630HC.html"
+},
+{
+  brand:"Maytag",
+  model:"MGD7020RU",
+  title:"Maytag Dryer MGD7020RU",
+  url:"Maytag-pdf/Maytag-Dryer-MGD7020RU.html"
+},
+{
+  brand:"Maytag",
+  model:"MGD7205RW",
+  title:"Maytag Dryer MGD7205RW",
+  url:"Maytag-pdf/Maytag-Dryer-MGD7205RW.html"
+},
+{
+  brand:"Maytag",
+  model:"MGD7230HC",
+  title:"Maytag Dryer MGD7230HC",
+  url:"Maytag-pdf/Maytag-Dryer-MGD7230HC.html"
+},
+{
+  brand:"Maytag",
+  model:"MGD7405RR",
+  title:"Maytag Dryer MGD7405RR",
+  url:"Maytag-pdf/Maytag-Dryer-MGD7405RR.html"
+},
+{
+  brand:"Maytag",
+  model:"MGDP586KW",
+  title:"Maytag Dryer MGDP586KW",
+  url:"Maytag-pdf/Maytag-Dryer-MGDP586KW.html"
+},
+{
+  brand:"Maytag",
+  model:"MZC5216LW",
+  title:"Maytag Freezer MZC5216LW",
+  url:"Maytag-pdf/Maytag-Freezer-MZC5216LW.html"
+},
+
+{
+  brand:"Maytag",
+  model:"MZF34X16DW",
+  title:"Maytag Freezer MZF34X16DW",
+  url:"Maytag-pdf/Maytag-Freezer-MZF34X16DW.html"
+},
+{
+  brand:"Maytag",
+  model:"MZF34X18FW",
+  title:"Maytag Freezer MZF34X18FW",
+  url:"Maytag-pdf/Maytag-Freezer-MZF34X18FW.html"
+},
+{
+  brand:"Maytag",
+  model:"MZF34X20DW",
+  title:"Maytag Freezer MZF34X20DW",
+  url:"Maytag-pdf/Maytag-Freezer-MZF34X20DW.html"
+},
+{
+  brand:"Maytag",
+  model:"MFW7020RW",
+  title:"Maytag Front Load Washer MFW7020RW",
+  url:"Maytag-pdf/Maytag-Front-Load-Washer-MFW7020RW.html"
+},
+{
+  brand:"Maytag",
+  model:"MHW5630HW",
+  title:"Maytag Front Load Washer MHW5630HW",
+  url:"Maytag-pdf/Maytag-Front-Load-Washer-MHW5630HW.html"
+},
+{
+  brand:"Maytag",
+  model:"MHW6630HC",
+  title:"Maytag Front Load Washer MHW6630HC",
+  url:"Maytag-pdf/Maytag-Front-Load-Washer-MHW6630HC.html"
+},
+{
+  brand:"Maytag",
+  model:"MHW8630HW",
+  title:"Maytag Front Load Washer MHW8630HW",
+  url:"Maytag-pdf/Maytag-Front-Load-Washer-MHW8630HW.html"
+},
+{
+  brand:"Maytag",
+  model:"MMMF6030PB",
+  title:"Maytag Microwave MMMF6030PB",
+  url:"Maytag-pdf/Maytag-Microwave-MMMF6030PB.html"
+},
+{
+  brand:"Maytag",
+  model:"MMMF6030PW",
+  title:"Maytag Microwave MMMF6030PW",
+  url:"Maytag-pdf/Maytag-Microwave-MMMF6030PW.html"
+},
+{
+  brand:"Maytag",
+  model:"MMMF6030PZ",
+  title:"Maytag Microwave MMMF6030PZ",
+  url:"Maytag-pdf/Maytag-Microwave-MMMF6030PZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MMMF8030PZ",
+  title:"Maytag Microwave MMMF8030PZ",
+  url:"Maytag-pdf/Maytag-Microwave-MMMF8030PZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MMMS4230PZ",
+  title:"Maytag Microwave MMMS4230PZ",
+  url:"Maytag-pdf/Maytag-Microwave-MMMS4230PZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MMV4207JB",
+  title:"Maytag Microwave MMV4207JB",
+  url:"Maytag-pdf/Maytag-Microwave-MMV4207JB.html"
+},
+{
+  brand:"Maytag",
+  model:"MMV4207JW",
+  title:"Maytag Microwave MMV4207JW",
+  url:"Maytag-pdf/Maytag-Microwave-MMV4207JW.html"
+},
+{
+  brand:"Maytag",
+  model:"MMV5227JZ",
+  title:"Maytag Microwave MMV5227JZ",
+  url:"Maytag-pdf/Maytag-Microwave-MMV5227JZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MFES4030RB",
+  title:"Maytag Range MFES4030RB",
+  url:"Maytag-pdf/Maytag-Range-MFES4030RB.html"
+},
+{
+  brand:"Maytag",
+  model:"MFES4030RS",
+  title:"Maytag Range MFES4030RS",
+  url:"Maytag-pdf/Maytag-Range-MFES4030RS.html"
+},
+{
+  brand:"Maytag",
+  model:"MFES4030RW",
+  title:"Maytag Range MFES4030RW",
+  url:"Maytag-pdf/Maytag-Range-MFES4030RW.html"
+},
+{
+  brand:"Maytag",
+  model:"MFES6030RB",
+  title:"Maytag Range MFES6030RB",
+  url:"Maytag-pdf/Maytag-Range-MFES6030RB.html"
+},
+{
+  brand:"Maytag",
+  model:"MFES6030RW",
+  title:"Maytag Range MFES6030RW",
+  url:"Maytag-pdf/Maytag-Range-MFES6030RW.html"
+},
+
+{
+  brand:"Maytag",
+  model:"MFES7030SZ",
+  title:"Maytag Range MFES7030SZ",
+  url:"Maytag-pdf/Maytag-Range-MFES7030SZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MFES8030RZ",
+  title:"Maytag Range MFES8030RZ",
+  url:"Maytag-pdf/Maytag-Range-MFES8030RZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MGR7700LZ",
+  title:"Maytag Range MGR7700LZ",
+  url:"Maytag-pdf/Maytag-Range-MGR7700LZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MGS8800PZ",
+  title:"Maytag Range MGS8800PZ",
+  url:"Maytag-pdf/Maytag-Range-MGS8800PZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MGT8800FZ",
+  title:"Maytag Range MGT8800FZ",
+  url:"Maytag-pdf/Maytag-Range-MGT8800FZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MSES7030SZ",
+  title:"Maytag Range MSES7030SZ",
+  url:"Maytag-pdf/Maytag-Range-MSES7030SZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MSGS7030SZ",
+  title:"Maytag Range MSGS7030SZ",
+  url:"Maytag-pdf/Maytag-Range-MSGS7030SZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MBF1958FEZ",
+  title:"Maytag Refrigerator MBF1958FEZ",
+  url:"Maytag-pdf/Maytag-Refrigerator-MBF1958FEZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MBF2258FEZ",
+  title:"Maytag Refrigerator MBF2258FEZ",
+  url:"Maytag-pdf/Maytag-Refrigerator-MBF2258FEZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MFC2062FEZ",
+  title:"Maytag Refrigerator MFC2062FEZ",
+  url:"Maytag-pdf/Maytag-Refrigerator-MFC2062FEZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MFI2570FEB",
+  title:"Maytag Refrigerator MFI2570FEB",
+  url:"Maytag-pdf/Maytag-Refrigerator-MFI2570FEB.html"
+},
+{
+  brand:"Maytag",
+  model:"MFT2772HEZ",
+  title:"Maytag Refrigerator MFT2772HEZ",
+  url:"Maytag-pdf/Maytag-Refrigerator-MFT2772HEZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MRFF4136RZ",
+  title:"Maytag Refrigerator MRFF4136RZ",
+  url:"Maytag-pdf/Maytag-Refrigerator-MRFF4136RZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MRSF4036PB",
+  title:"Maytag Refrigerator MRSF4036PB",
+  url:"Maytag-pdf/Maytag-Refrigerator-MRSF4036PB.html"
+},
+{
+  brand:"Maytag",
+  model:"MRT311FFFE",
+  title:"Maytag Refrigerator MRT311FFFE",
+  url:"Maytag-pdf/Maytag-Refrigerator-MRT311FFFE.html"
+},
+{
+  brand:"Maytag",
+  model:"MSS25C4MGZ",
+  title:"Maytag Refrigerator MSS25C4MGZ",
+  url:"Maytag-pdf/Maytag-Refrigerator-MSS25C4MGZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MSS25N4MKZ",
+  title:"Maytag Refrigerator MSS25N4MKZ",
+  url:"Maytag-pdf/Maytag-Refrigerator-MSS25N4MKZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MTW5205TW",
+  title:"Maytag Top Load Washer MTW5205TW",
+  url:"Maytag-pdf/Maytag-Top-Load-Washer-MTW5205TW.html"
+},
+{
+  brand:"Maytag",
+  model:"MTW5600RU",
+  title:"Maytag Top Load Washer MTW5600RU",
+  url:"Maytag-pdf/Maytag-Top-Load-Washer-MTW5600RU.html"
+},
+{
+  brand:"Maytag",
+  model:"MTW6200RF",
+  title:"Maytag Top Load Washer MTW6200RF",
+  url:"Maytag-pdf/Maytag-Top-Load-Washer-MTW6200RF.html"
+},
+
+{
+  brand:"Maytag",
+  model:"MTW6205RW",
+  title:"Maytag Top Load Washer MTW6205RW",
+  url:"Maytag-pdf/Maytag-Top-Load-Washer-MTW6205RW.html"
+},
+{
+  brand:"Maytag",
+  model:"MTW7200RF",
+  title:"Maytag Top Load Washer MTW7200RF",
+  url:"Maytag-pdf/Maytag-Top-Load-Washer-MTW7200RF.html"
+},
+{
+  brand:"Maytag",
+  model:"MTW7205RF",
+  title:"Maytag Top Load Washer MTW7205RF",
+  url:"Maytag-pdf/Maytag-Top-Load-Washer-MTW7205RF.html"
+},
+{
+  brand:"Maytag",
+  model:"MVW4005SW",
+  title:"Maytag Top Load Washer MVW4005SW",
+  url:"Maytag-pdf/Maytag-Top-Load-Washer-MVW4005SW.html"
+},
+{
+  brand:"Maytag",
+  model:"MVW5435PW",
+  title:"Maytag Top Load Washer MVW5435PW",
+  url:"Maytag-pdf/Maytag-Top-Load-Washer-MVW5435PW.html"
+},
+{
+  brand:"Maytag",
+  model:"MVW6200KW",
+  title:"Maytag Top Load Washer MVW6200KW",
+  url:"Maytag-pdf/Maytag-Top-Load-Washer-MVW6200KW.html"
+},
+{
+  brand:"Maytag",
+  model:"W11197727A",
+  title:"Maytag Top Load Washer W11197727A",
+  url:"Maytag-pdf/Maytag-Top-Load-Washer-W11197727A.html"
+},
+{
+  brand:"Maytag",
+  model:"W11354658B",
+  title:"Maytag Top Load Washer W11354658B",
+  url:"Maytag-pdf/Maytag-Top-Load-Washer-W11354658B.html"
+},
+{
+  brand:"Maytag",
+  model:"W11354659D-SP",
+  title:"Maytag Top Load Washer W11354659D-SP",
+  url:"Maytag-pdf/Maytag-Top-Load-Washer-W11354659D-SP.html"
+},
+{
+  brand:"Maytag",
+  model:"MOEC6030LZ",
+  title:"Maytag Wall Oven MOEC6030LZ",
+  url:"Maytag-pdf/Maytag-Wall-Oven-MOEC6030LZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MOED6027LZ",
+  title:"Maytag Wall Oven MOED6027LZ",
+  url:"Maytag-pdf/Maytag-Wall-Oven-MOED6027LZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MOED6030LZ",
+  title:"Maytag Wall Oven MOED6030LZ",
+  url:"Maytag-pdf/Maytag-Wall-Oven-MOED6030LZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MOES6027LZ",
+  title:"Maytag Wall Oven MOES6027LZ",
+  url:"Maytag-pdf/Maytag-Wall-Oven-MOES6027LZ.html"
+},
+{
+  brand:"Maytag",
+  model:"MOES6030LZ",
+  title:"Maytag Wall Oven MOES6030LZ",
+  url:"Maytag-pdf/Maytag-Wall-Oven-MOES6030LZ.html"
 }
+
 
 ]
