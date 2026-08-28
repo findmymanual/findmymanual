@@ -13393,6 +13393,1886 @@ const manuals = [
   model:"MOES6030LZ",
   title:"Maytag Wall Oven MOES6030LZ",
   url:"Maytag-pdf/Maytag-Wall-Oven-MOES6030LZ.html"
+},
+
+{
+  brand:"Midea",
+  model:"MSFS07RW6GB",
+  title:"Midea Air Circulator MSFS07RW6GB",
+  url:"Midea-pdf/Midea-Air-Circulator-MSFS07RW6GB.html"
+},
+{
+  brand:"Midea",
+  model:"DUCMI105IHC",
+  title:"Midea Air Conditioner DUCMI105IHC",
+  url:"Midea-pdf/Midea-Air-Conditioner-DUCMI105IHC.html"
+},
+{
+  brand:"Midea",
+  model:"DUCMI125IHB",
+  title:"Midea Air Conditioner DUCMI125IHB",
+  url:"Midea-pdf/Midea-Air-Conditioner-DUCMI125IHB.html"
+},
+{
+  brand:"Midea",
+  model:"DUCMI125IHC",
+  title:"Midea Air Conditioner DUCMI125IHC",
+  url:"Midea-pdf/Midea-Air-Conditioner-DUCMI125IHC.html"
+},
+{
+  brand:"Midea",
+  model:"DUCMI140IHB",
+  title:"Midea Air Conditioner DUCMI140IHB",
+  url:"Midea-pdf/Midea-Air-Conditioner-DUCMI140IHB.html"
+},
+{
+  brand:"Midea",
+  model:"DUCMI140IHC",
+  title:"Midea Air Conditioner DUCMI140IHC",
+  url:"Midea-pdf/Midea-Air-Conditioner-DUCMI140IHC.html"
+},
+{
+  brand:"Midea",
+  model:"DUCMI170IHB",
+  title:"Midea Air Conditioner DUCMI170IHB",
+  url:"Midea-pdf/Midea-Air-Conditioner-DUCMI170IHB.html"
+},
+{
+  brand:"Midea",
+  model:"DUCMI170IHC",
+  title:"Midea Air Conditioner DUCMI170IHC",
+  url:"Midea-pdf/Midea-Air-Conditioner-DUCMI170IHC.html"
+},
+{
+  brand:"Midea",
+  model:"DUCMI70IB",
+  title:"Midea Air Conditioner DUCMI70IB",
+  url:"Midea-pdf/Midea-Air-Conditioner-DUCMI70IB.html"
+},
+{
+  brand:"Midea",
+  model:"DUCMI70IC",
+  title:"Midea Air Conditioner DUCMI70IC",
+  url:"Midea-pdf/Midea-Air-Conditioner-DUCMI70IC.html"
+},
+{
+  brand:"Midea",
+  model:"DUCMI90IB",
+  title:"Midea Air Conditioner DUCMI90IB",
+  url:"Midea-pdf/Midea-Air-Conditioner-DUCMI90IB.html"
+},
+{
+  brand:"Midea",
+  model:"DUCMI90IC",
+  title:"Midea Air Conditioner DUCMI90IC",
+  url:"Midea-pdf/Midea-Air-Conditioner-DUCMI90IC.html"
+},
+{
+  brand:"Midea",
+  model:"MAW05M1BWT",
+  title:"Midea Air Conditioner MAW05M1BWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW05M1BWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW05M1WBL-N",
+  title:"Midea Air Conditioner MAW05M1WBL-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW05M1WBL-N.html"
+},
+{
+  brand:"Midea",
+  model:"MAW05M1WBL-T",
+  title:"Midea Air Conditioner MAW05M1WBL-T",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW05M1WBL-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAW05M1WWT-N",
+  title:"Midea Air Conditioner MAW05M1WWT-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW05M1WWT-N.html"
+},
+{
+  brand:"Midea",
+  model:"MAW05M1WWT-T",
+  title:"Midea Air Conditioner MAW05M1WWT-T",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW05M1WWT-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAW05R1JWT-B",
+  title:"Midea Air Conditioner MAW05R1JWT-B",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW05R1JWT-B.html"
+},
+{
+  brand:"Midea",
+  model:"MAW05R1WBL-T",
+  title:"Midea Air Conditioner MAW05R1WBL-T",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW05R1WBL-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAW05R1WWT-T",
+  title:"Midea Air Conditioner MAW05R1WWT-T",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW05R1WWT-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAW06R1CWT",
+  title:"Midea Air Conditioner MAW06R1CWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW06R1CWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW06R1JWT-B",
+  title:"Midea Air Conditioner MAW06R1JWT-B",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW06R1JWT-B.html"
+},
+{
+  brand:"Midea",
+  model:"MAW06R1WBL-T",
+  title:"Midea Air Conditioner MAW06R1WBL-T",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW06R1WBL-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAW06R1WWT-T",
+  title:"Midea Air Conditioner MAW06R1WWT-T",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW06R1WWT-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAW06V1UBL",
+  title:"Midea Air Conditioner MAW06V1UBL",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW06V1UBL.html"
+},
+{
+  brand:"Midea",
+  model:"MAW06V1UWT",
+  title:"Midea Air Conditioner MAW06V1UWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW06V1UWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW08HN1CWT",
+  title:"Midea Air Conditioner MAW08HN1CWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08HN1CWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW08HV1CWT",
+  title:"Midea Air Conditioner MAW08HV1CWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08HV1CWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW08R1BWT",
+  title:"Midea Air Conditioner MAW08R1BWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08R1BWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW08S1DWBL-T",
+  title:"Midea Air Conditioner MAW08S1DWBL-T",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08S1DWBL-T.html"
+},
+
+{
+  brand:"Midea",
+  model:"MAW08S1DWBL",
+  title:"Midea Air Conditioner MAW08S1DWBL",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08S1DWBL.html"
+},
+{
+  brand:"Midea",
+  model:"MAW08S1DWWT-T",
+  title:"Midea Air Conditioner MAW08S1DWWT-T",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08S1DWWT-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAW08S1DWWT",
+  title:"Midea Air Conditioner MAW08S1DWWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08S1DWWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW08S1JWT-B",
+  title:"Midea Air Conditioner MAW08S1JWT-B",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08S1JWT-B.html"
+},
+{
+  brand:"Midea",
+  model:"MAW08S1VWT-A",
+  title:"Midea Air Conditioner MAW08S1VWT-A",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08S1VWT-A.html"
+},
+{
+  brand:"Midea",
+  model:"MAW08U1QWT",
+  title:"Midea Air Conditioner MAW08U1QWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08U1QWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW08V1DWT",
+  title:"Midea Air Conditioner MAW08V1DWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08V1DWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW08V1QWT-T",
+  title:"Midea Air Conditioner MAW08V1QWT-T",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08V1QWT-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAW08V1QWT",
+  title:"Midea Air Conditioner MAW08V1QWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08V1QWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW08V1UWT",
+  title:"Midea Air Conditioner MAW08V1UWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08V1UWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW08V1YWT-S",
+  title:"Midea Air Conditioner MAW08V1YWT-S",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW08V1YWT-S.html"
+},
+{
+  brand:"Midea",
+  model:"MAW10R1BWT",
+  title:"Midea Air Conditioner MAW10R1BWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW10R1BWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW10RV1CWT",
+  title:"Midea Air Conditioner MAW10RV1CWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW10RV1CWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW10S1DWBL-T",
+  title:"Midea Air Conditioner MAW10S1DWBL-T",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW10S1DWBL-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAW10S1DWBL",
+  title:"Midea Air Conditioner MAW10S1DWBL",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW10S1DWBL.html"
+},
+{
+  brand:"Midea",
+  model:"MAW10S1DWWT-T",
+  title:"Midea Air Conditioner MAW10S1DWWT-T",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW10S1DWWT-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAW10S1DWWT",
+  title:"Midea Air Conditioner MAW10S1DWWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW10S1DWWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW10V1DWT",
+  title:"Midea Air Conditioner MAW10V1DWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW10V1DWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW10V1QWT",
+  title:"Midea Air Conditioner MAW10V1QWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW10V1QWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW10V1UWT",
+  title:"Midea Air Conditioner MAW10V1UWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW10V1UWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW12HN1CWT",
+  title:"Midea Air Conditioner MAW12HN1CWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW12HN1CWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW12HV1CWT-A",
+  title:"Midea Air Conditioner MAW12HV1CWT-A",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW12HV1CWT-A.html"
+},
+{
+  brand:"Midea",
+  model:"MAW12HV1CWT",
+  title:"Midea Air Conditioner MAW12HV1CWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW12HV1CWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW12R1BWT",
+  title:"Midea Air Conditioner MAW12R1BWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW12R1BWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW12RV1CWT",
+  title:"Midea Air Conditioner MAW12RV1CWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW12RV1CWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW12S1DWWT-T",
+  title:"Midea Air Conditioner MAW12S1DWWT-T",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW12S1DWWT-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAW12S1DWWT",
+  title:"Midea Air Conditioner MAW12S1DWWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW12S1DWWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW12S1JWT-B",
+  title:"Midea Air Conditioner MAW12S1JWT-B",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW12S1JWT-B.html"
+},
+
+{
+  brand:"Midea",
+  model:"MAW12S1VWT-A",
+  title:"Midea Air Conditioner MAW12S1VWT-A",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW12S1VWT-A.html"
+},
+{
+  brand:"Midea",
+  model:"MAW12U1QWT",
+  title:"Midea Air Conditioner MAW12U1QWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW12U1QWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW12V1DWT",
+  title:"Midea Air Conditioner MAW12V1DWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW12V1DWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW12V1QWT",
+  title:"Midea Air Conditioner MAW12V1QWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW12V1QWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW12V1UWT",
+  title:"Midea Air Conditioner MAW12V1UWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW12V1UWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW12V1YWT-S",
+  title:"Midea Air Conditioner MAW12V1YWT-S",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW12V1YWT-S.html"
+},
+{
+  brand:"Midea",
+  model:"MAW14RV1CWT",
+  title:"Midea Air Conditioner MAW14RV1CWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW14RV1CWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW14S1VWT-A",
+  title:"Midea Air Conditioner MAW14S1VWT-A",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW14S1VWT-A.html"
+},
+{
+  brand:"Midea",
+  model:"MAW14V1YWT-S",
+  title:"Midea Air Conditioner MAW14V1YWT-S",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW14V1YWT-S.html"
+},
+{
+  brand:"Midea",
+  model:"MAW15S1DWWT-T",
+  title:"Midea Air Conditioner MAW15S1DWWT-T",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW15S1DWWT-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAW15S1DWWT",
+  title:"Midea Air Conditioner MAW15S1DWWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW15S1DWWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAW25S2ZWT",
+  title:"Midea Air Conditioner MAW25S2ZWT",
+  url:"Midea-pdf/Midea-Air-Conditioner-MAW25S2ZWT.html"
+},
+{
+  brand:"Midea",
+  model:"MFAB-20NC",
+  title:"Midea Air Conditioner MFAB-20NC",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFAB-20NC.html"
+},
+{
+  brand:"Midea",
+  model:"MFAB-20WC",
+  title:"Midea Air Conditioner MFAB-20WC",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFAB-20WC.html"
+},
+{
+  brand:"Midea",
+  model:"MFAB26NB",
+  title:"Midea Air Conditioner MFAB26NB",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFAB26NB.html"
+},
+{
+  brand:"Midea",
+  model:"MFAG20VB-N",
+  title:"Midea Air Conditioner MFAG20VB-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFAG20VB-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFAG26VB-N",
+  title:"Midea Air Conditioner MFAG26VB-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFAG26VB-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFAG35VB-N",
+  title:"Midea Air Conditioner MFAG35VB-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFAG35VB-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFAG50VB-N",
+  title:"Midea Air Conditioner MFAG50VB-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFAG50VB-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFAG60VB-N",
+  title:"Midea Air Conditioner MFAG60VB-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFAG60VB-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFAG70VB-N",
+  title:"Midea Air Conditioner MFAG70VB-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFAG70VB-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFAG80VB-N",
+  title:"Midea Air Conditioner MFAG80VB-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFAG80VB-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFAG90VB-N",
+  title:"Midea Air Conditioner MFAG90VB-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFAG90VB-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFCA26VA-N",
+  title:"Midea Air Conditioner MFCA26VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFCA26VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFCA35VA-N",
+  title:"Midea Air Conditioner MFCA35VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFCA35VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFCA50VA-N",
+  title:"Midea Air Conditioner MFCA50VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFCA50VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFCA70VA-N",
+  title:"Midea Air Conditioner MFCA70VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFCA70VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFEP26VA-N",
+  title:"Midea Air Conditioner MFEP26VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFEP26VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFEP35VA-N",
+  title:"Midea Air Conditioner MFEP35VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFEP35VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFEP50VA-N",
+  title:"Midea Air Conditioner MFEP50VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFEP50VA-N.html"
+},
+
+{
+  brand:"Midea",
+  model:"MFEP70VA-N",
+  title:"Midea Air Conditioner MFEP70VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFEP70VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFEP80VA-N",
+  title:"Midea Air Conditioner MFEP80VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFEP80VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFEZ20VA-N",
+  title:"Midea Air Conditioner MFEZ20VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFEZ20VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFEZ26VA-N",
+  title:"Midea Air Conditioner MFEZ26VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFEZ26VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFEZ35VA-N",
+  title:"Midea Air Conditioner MFEZ35VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFEZ35VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFEZ50VA-N",
+  title:"Midea Air Conditioner MFEZ50VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFEZ50VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFEZ60VA-N",
+  title:"Midea Air Conditioner MFEZ60VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFEZ60VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFEZ70VA-N",
+  title:"Midea Air Conditioner MFEZ70VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFEZ70VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MFEZ80VA-N",
+  title:"Midea Air Conditioner MFEZ80VA-N",
+  url:"Midea-pdf/Midea-Air-Conditioner-MFEZ80VA-N.html"
+},
+{
+  brand:"Midea",
+  model:"MPPA20C",
+  title:"Midea Air Conditioner MPPA20C",
+  url:"Midea-pdf/Midea-Air-Conditioner-MPPA20C.html"
+},
+{
+  brand:"Midea",
+  model:"MPPA26C",
+  title:"Midea Air Conditioner MPPA26C",
+  url:"Midea-pdf/Midea-Air-Conditioner-MPPA26C.html"
+},
+{
+  brand:"Midea",
+  model:"MPPD25C",
+  title:"Midea Air Conditioner MPPD25C",
+  url:"Midea-pdf/Midea-Air-Conditioner-MPPD25C.html"
+},
+{
+  brand:"Midea",
+  model:"MPPD30C",
+  title:"Midea Air Conditioner MPPD30C",
+  url:"Midea-pdf/Midea-Air-Conditioner-MPPD30C.html"
+},
+{
+  brand:"Midea",
+  model:"MPPD33C",
+  title:"Midea Air Conditioner MPPD33C",
+  url:"Midea-pdf/Midea-Air-Conditioner-MPPD33C.html"
+},
+{
+  brand:"Midea",
+  model:"MPPD33H",
+  title:"Midea Air Conditioner MPPD33H",
+  url:"Midea-pdf/Midea-Air-Conditioner-MPPD33H.html"
+},
+{
+  brand:"Midea",
+  model:"MPPD35C",
+  title:"Midea Air Conditioner MPPD35C",
+  url:"Midea-pdf/Midea-Air-Conditioner-MPPD35C.html"
+},
+{
+  brand:"Midea",
+  model:"MPPD40C",
+  title:"Midea Air Conditioner MPPD40C",
+  url:"Midea-pdf/Midea-Air-Conditioner-MPPD40C.html"
+},
+{
+  brand:"Midea",
+  model:"MSXS-10CRDN8",
+  title:"Midea Air Conditioner MSXS-10CRDN8",
+  url:"Midea-pdf/Midea-Air-Conditioner-MSXS-10CRDN8.html"
+},
+{
+  brand:"Midea",
+  model:"MSXS-13CRDN8",
+  title:"Midea Air Conditioner MSXS-13CRDN8",
+  url:"Midea-pdf/Midea-Air-Conditioner-MSXS-13CRDN8.html"
+},
+{
+  brand:"Midea",
+  model:"MSXS-19CRDN8",
+  title:"Midea Air Conditioner MSXS-19CRDN8",
+  url:"Midea-pdf/Midea-Air-Conditioner-MSXS-19CRDN8.html"
+},
+{
+  brand:"Midea",
+  model:"MSXS-25CRDN8",
+  title:"Midea Air Conditioner MSXS-25CRDN8",
+  url:"Midea-pdf/Midea-Air-Conditioner-MSXS-25CRDN8.html"
+},
+{
+  brand:"Midea",
+  model:"MULMI0250B",
+  title:"Midea Air Conditioner MULMI0250B",
+  url:"Midea-pdf/Midea-Air-Conditioner-MULMI0250B.html"
+},
+{
+  brand:"Midea",
+  model:"MULMI0371B",
+  title:"Midea Air Conditioner MULMI0371B",
+  url:"Midea-pdf/Midea-Air-Conditioner-MULMI0371B.html"
+},
+{
+  brand:"Midea",
+  model:"MULMI0480B",
+  title:"Midea Air Conditioner MULMI0480B",
+  url:"Midea-pdf/Midea-Air-Conditioner-MULMI0480B.html"
+},
+{
+  brand:"Midea",
+  model:"MULMI0511B",
+  title:"Midea Air Conditioner MULMI0511B",
+  url:"Midea-pdf/Midea-Air-Conditioner-MULMI0511B.html"
+},
+{
+  brand:"Midea",
+  model:"MULMI0513B",
+  title:"Midea Air Conditioner MULMI0513B",
+  url:"Midea-pdf/Midea-Air-Conditioner-MULMI0513B.html"
+},
+{
+  brand:"Midea",
+  model:"MULMI0618B",
+  title:"Midea Air Conditioner MULMI0618B",
+  url:"Midea-pdf/Midea-Air-Conditioner-MULMI0618B.html"
+},
+{
+  brand:"Midea",
+  model:"MULMI0619B",
+  title:"Midea Air Conditioner MULMI0619B",
+  url:"Midea-pdf/Midea-Air-Conditioner-MULMI0619B.html"
+},
+{
+  brand:"Midea",
+  model:"MWFF22H",
+  title:"Midea Air Conditioner MWFF22H",
+  url:"Midea-pdf/Midea-Air-Conditioner-MWFF22H.html"
+},
+{
+  brand:"Midea",
+  model:"MFAB-20NC",
+  title:"Midea Air Conditioner Remote Controller MFAB-20NC",
+  url:"Midea-pdf/Midea-Air-Conditioner-Remote-Controller-MFAB-20NC.html"
+},
+
+{
+  brand:"Midea",
+  model:"MFAB-20WC",
+  title:"Midea Air Conditioner Remote Controller MFAB-20WC",
+  url:"Midea-pdf/Midea-Air-Conditioner-Remote-Controller-MFAB-20WC.html"
+},
+{
+  brand:"Midea",
+  model:"DUCMI200IHC-3PH",
+  title:"Midea Air Conditioner Service Manual DUCMI200IHC-3PH",
+  url:"Midea-pdf/Midea-Air-Conditioner-Service-Manual-DUCMI200IHC-3PH.html"
+},
+{
+  brand:"Midea",
+  model:"DUCMI220IHC-3PH",
+  title:"Midea Air Conditioner Service Manual DUCMI220IHC-3PH",
+  url:"Midea-pdf/Midea-Air-Conditioner-Service-Manual-DUCMI220IHC-3PH.html"
+},
+{
+  brand:"Midea",
+  model:"UCMI200OC-3PH",
+  title:"Midea Air Conditioner Service Manual UCMI200OC-3PH",
+  url:"Midea-pdf/Midea-Air-Conditioner-Service-Manual-UCMI200OC-3PH.html"
+},
+{
+  brand:"Midea",
+  model:"UCMI220OC-3PH",
+  title:"Midea Air Conditioner Service Manual UCMI220OC-3PH",
+  url:"Midea-pdf/Midea-Air-Conditioner-Service-Manual-UCMI220OC-3PH.html"
+},
+{
+  brand:"Midea",
+  model:"RSJ-15 190RDN7-L2",
+  title:"Midea Air-source Heat Pump Water Heater RSJ-15 190RDN7-L2",
+  url:"Midea-pdf/Midea-Air-source-Heat-Pump-Water-Heater-RSJ-15-190RDN7-L2.html"
+},
+{
+  brand:"Midea",
+  model:"RSJ-23 300RDN7-L2-C",
+  title:"Midea Air-source Heat Pump Water Heater RSJ-23 300RDN7-L2-C",
+  url:"Midea-pdf/Midea-Air-source-Heat-Pump-Water-Heater-RSJ-23 300RDN7-L2-C.html"
+},
+{
+  brand:"Midea",
+  model:"RSJ-23 300RDN7-L2-D",
+  title:"Midea Air-source Heat Pump Water Heater RSJ-23 300RDN7-L2-D",
+  url:"Midea-pdf/Midea-Air-source-Heat-Pump-Water-Heater-RSJ-23 300RDN7-L2-D.html"
+},
+{
+  brand:"Midea",
+  model:"RSJ-23 300RDN7-L2",
+  title:"Midea Air-source Heat Pump Water Heater RSJ-23 300RDN7-L2",
+  url:"Midea-pdf/Midea-Air-source-Heat-Pump-Water-Heater-RSJ-23 300RDN7-L2.html"
+},
+{
+  brand:"Midea",
+  model:"RSJ-V28 235RDN7-L2",
+  title:"Midea Air-source Heat Pump Water Heater RSJ-V28 235RDN7-L2",
+  url:"Midea-pdf/Midea-Air-source-Heat-Pump-Water-Heater-RSJ-V28-235RDN7-L2.html"
+},
+{
+  brand:"Midea",
+  model:"MC-SU140-RN8L-B",
+  title:"Midea Aqua Thermal MC-SU140-RN8L-B",
+  url:"Midea-pdf/Midea-Aqua-Thermal-MC-SU140-RN8L-B.html"
+},
+{
+  brand:"Midea",
+  model:"MC-SU180-RN8L-B",
+  title:"Midea Aqua Thermal MC-SU180-RN8L-B",
+  url:"Midea-pdf/Midea-Aqua-Thermal-MC-SU180-RN8L-B.html"
+},
+{
+  brand:"Midea",
+  model:"MC-SU75-RN8L-B",
+  title:"Midea Aqua Thermal MC-SU75-RN8L-B",
+  url:"Midea-pdf/Midea-Aqua-Thermal-MC-SU75-RN8L-B.html"
+},
+{
+  brand:"Midea",
+  model:"MC-SU90-RN8L-B",
+  title:"Midea Aqua Thermal MC-SU90-RN8L-B",
+  url:"Midea-pdf/Midea-Aqua-Thermal-MC-SU90-RN8L-B.html"
+},
+{
+  brand:"Midea",
+  model:"MVT30W9AST",
+  title:"Midea Cooker Hood MVT30W9AST",
+  url:"Midea-pdf/Midea-Cooker-Hood-MVT30W9AST.html"
+},
+{
+  brand:"Midea",
+  model:"MVU30W2AST",
+  title:"Midea Cooker Hood MVU30W2AST",
+  url:"Midea-pdf/Midea-Cooker-Hood-MVU30W2AST.html"
+},
+{
+  brand:"Midea",
+  model:"MVU30W4AST",
+  title:"Midea Cooker Hood MVU30W4AST",
+  url:"Midea-pdf/Midea-Cooker-Hood-MVU30W4AST.html"
+},
+{
+  brand:"Midea",
+  model:"MAD20S1QWT",
+  title:"Midea Dehumidifier MAD20S1QWT",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD20S1QWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAD22C1AWS",
+  title:"Midea Dehumidifier MAD22C1AWS",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD22C1AWS.html"
+},
+{
+  brand:"Midea",
+  model:"MAD22S1AWWT",
+  title:"Midea Dehumidifier MAD22S1AWWT",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD22S1AWWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAD22S1CWWT",
+  title:"Midea Dehumidifier MAD22S1CWWT",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD22S1CWWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAD35C1AWS",
+  title:"Midea Dehumidifier MAD35C1AWS",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD35C1AWS.html"
+},
+{
+  brand:"Midea",
+  model:"MAD35S1AWWT",
+  title:"Midea Dehumidifier MAD35S1AWWT",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD35S1AWWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAD35S1CWWT",
+  title:"Midea Dehumidifier MAD35S1CWWT",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD35S1CWWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAD35S1QGR-A",
+  title:"Midea Dehumidifier MAD35S1QGR-A",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD35S1QGR-A.html"
+},
+{
+  brand:"Midea",
+  model:"MAD35S1QWT-A",
+  title:"Midea Dehumidifier MAD35S1QWT-A",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD35S1QWT-A.html"
+},
+{
+  brand:"Midea",
+  model:"MAD35S1QWT",
+  title:"Midea Dehumidifier MAD35S1QWT",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD35S1QWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAD50C1AWS",
+  title:"Midea Dehumidifier MAD50C1AWS",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50C1AWS.html"
+},
+{
+  brand:"Midea",
+  model:"MAD50P1AWS",
+  title:"Midea Dehumidifier MAD50P1AWS",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50P1AWS.html"
+},
+{
+  brand:"Midea",
+  model:"MAD50PE1QWT-B",
+  title:"Midea Dehumidifier MAD50PE1QWT-B",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50PE1QWT.html"
+},
+
+{
+  brand:"Midea",
+  model:"MAD50PE1QWT-S",
+  title:"Midea Dehumidifier MAD50PE1QWT-S",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50PE1QWT-S.html"
+},
+{
+  brand:"Midea",
+  model:"MAD50PS1AWBL",
+  title:"Midea Dehumidifier MAD50PS1AWBL",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50PS1AWBL.html"
+},
+{
+  brand:"Midea",
+  model:"MAD50PS1BQGR",
+  title:"Midea Dehumidifier MAD50PS1BQGR",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50PS1BQGR.html"
+},
+{
+  brand:"Midea",
+  model:"MAD50PS1CWBL",
+  title:"Midea Dehumidifier MAD50PS1CWBL",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50PS1CWBL.html"
+},
+{
+  brand:"Midea",
+  model:"MAD50PS1QGR",
+  title:"Midea Dehumidifier MAD50PS1QGR",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50PS1QGR.html"
+},
+{
+  brand:"Midea",
+  model:"MAD50PS1QWT-A",
+  title:"Midea Dehumidifier MAD50PS1QWT-A",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50PS1QWT-A.html"
+},
+{
+  brand:"Midea",
+  model:"MAD50PS1QWT-B",
+  title:"Midea Dehumidifier MAD50PS1QWT-B",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50PS1QWT-B.html"
+},
+{
+  brand:"Midea",
+  model:"MAD50PS1QWT-S",
+  title:"Midea Dehumidifier MAD50PS1QWT-S",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50PS1QWT-S.html"
+},
+{
+  brand:"Midea",
+  model:"MAD50PS1QWT",
+  title:"Midea Dehumidifier MAD50PS1QWT",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50PS1QWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAD50PS1WS",
+  title:"Midea Dehumidifier MAD50PS1WS",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50PS1WS.html"
+},
+{
+  brand:"Midea",
+  model:"MAD50S1QWT-A",
+  title:"Midea Dehumidifier MAD50S1QWT-A",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50S1QWT-A.html"
+},
+{
+  brand:"Midea",
+  model:"MAD50S1QWT",
+  title:"Midea Dehumidifier MAD50S1QWT",
+  url:"Midea-pdf/Midea-Dehumidifier-MAD50S1QWT.html"
+},
+{
+  brand:"Midea",
+  model:"MDDM20",
+  title:"Midea Dehumidifier MDDM20",
+  url:"Midea-pdf/Midea-Dehumidifier-MDDM20.html"
+},
+{
+  brand:"Midea",
+  model:"MDDP50",
+  title:"Midea Dehumidifier MDDP50",
+  url:"Midea-pdf/Midea-Dehumidifier-MDDP50.html"
+},
+{
+  brand:"Midea",
+  model:"MDDQ12",
+  title:"Midea Dehumidifier MDDQ12",
+  url:"Midea-pdf/Midea-Dehumidifier-MDDQ12.html"
+},
+{
+  brand:"Midea",
+  model:"MDP30SR71",
+  title:"Midea Dehumidifier MDP30SR71",
+  url:"Midea-pdf/Midea-Dehumidifier-MDP30SR71.html"
+},
+{
+  brand:"Midea",
+  model:"MDP50SR71",
+  title:"Midea Dehumidifier MDP50SR71",
+  url:"Midea-pdf/Midea-Dehumidifier-MDP50SR71.html"
+},
+{
+  brand:"Midea",
+  model:"MDP70PR71",
+  title:"Midea Dehumidifier MDP70PR71",
+  url:"Midea-pdf/Midea-Dehumidifier-MDP70PR71.html"
+},
+{
+  brand:"Midea",
+  model:"MDP70SR71",
+  title:"Midea Dehumidifier MDP70SR71",
+  url:"Midea-pdf/Midea-Dehumidifier-MDP70SR71.html"
+},
+{
+  brand:"Midea",
+  model:"MDDM20",
+  title:"Midea Dehumidifier Smart Kit MDDM20",
+  url:"Midea-pdf/Midea-Dehumidifier-Smart-Kit-MDDM20.html"
+},
+{
+  brand:"Midea",
+  model:"MDC17P0ABB",
+  title:"Midea Dishwasher MDC17P0ABB",
+  url:"Midea-pdf/Midea-Dishwasher-MDC17P0ABB.html"
+},
+{
+  brand:"Midea",
+  model:"MDC17P2BWW",
+  title:"Midea Dishwasher MDC17P2BWW",
+  url:"Midea-pdf/Midea-Dishwasher-MDC17P2BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MDC17P2DWW",
+  title:"Midea Dishwasher MDC17P2DWW",
+  url:"Midea-pdf/Midea-Dishwasher-MDC17P2DWW.html"
+},
+{
+  brand:"Midea",
+  model:"MDC17P4CWW",
+  title:"Midea Dishwasher MDC17P4CWW",
+  url:"Midea-pdf/Midea-Dishwasher-MDC17P4CWW.html"
+},
+{
+  brand:"Midea",
+  model:"MDC22P1AWW",
+  title:"Midea Dishwasher MDC22P1AWW",
+  url:"Midea-pdf/Midea-Dishwasher-MDC22P1AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MDC22P2ASS",
+  title:"Midea Dishwasher MDC22P2ASS",
+  url:"Midea-pdf/Midea-Dishwasher-MDC22P2ASS.html"
+},
+{
+  brand:"Midea",
+  model:"MDF18A1ABB",
+  title:"Midea Dishwasher MDF18A1ABB",
+  url:"Midea-pdf/Midea-Dishwasher-MDF18A1ABB.html"
+},
+{
+  brand:"Midea",
+  model:"MDF18A1AST",
+  title:"Midea Dishwasher MDF18A1AST",
+  url:"Midea-pdf/Midea-Dishwasher-MDF18A1AST.html"
+},
+{
+  brand:"Midea",
+  model:"MDF18A1AWW",
+  title:"Midea Dishwasher MDF18A1AWW",
+  url:"Midea-pdf/Midea-Dishwasher-MDF18A1AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MDF24P1BST",
+  title:"Midea Dishwasher MDF24P1BST",
+  url:"Midea-pdf/Midea-Dishwasher-MDF24P1BST.html"
+},
+
+{
+  brand:"Midea",
+  model:"MDF24P2BST",
+  title:"Midea Dishwasher MDF24P2BST",
+  url:"Midea-pdf/Midea-Dishwasher-MDF24P2BST.html"
+},
+{
+  brand:"Midea",
+  model:"MDT24P3CST",
+  title:"Midea Dishwasher MDT24P3CST",
+  url:"Midea-pdf/Midea-Dishwasher-MDT24P3CST.html"
+},
+{
+  brand:"Midea",
+  model:"MDT24P6CST",
+  title:"Midea Dishwasher MDT24P6CST",
+  url:"Midea-pdf/Midea-Dishwasher-MDT24P6CST.html"
+},
+{
+  brand:"Midea",
+  model:"MLE45N1AWW",
+  title:"Midea Dryer MLE45N1AWW",
+  url:"Midea-pdf/Midea-Dryer-MLE45N1AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLG45N1AWW",
+  title:"Midea Dryer MLG45N1AWW",
+  url:"Midea-pdf/Midea-Dryer-MLG45N1AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLHE27H7BCG",
+  title:"Midea Dryer MLHE27H7BCG",
+  url:"Midea-pdf/Midea-Dryer-MLHE27H7BCG.html"
+},
+{
+  brand:"Midea",
+  model:"MLHE27H7BWW",
+  title:"Midea Dryer MLHE27H7BWW",
+  url:"Midea-pdf/Midea-Dryer-MLHE27H7BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTE37N1BWW",
+  title:"Midea Dryer MLTE37N1BWW",
+  url:"Midea-pdf/Midea-Dryer-MLTE37N1BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTE39N1AWW",
+  title:"Midea Dryer MLTE39N1AWW",
+  url:"Midea-pdf/Midea-Dryer-MLTE39N1AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTE41N1BWW",
+  title:"Midea Dryer MLTE41N1BWW",
+  url:"Midea-pdf/Midea-Dryer-MLTE41N1BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTE70N1AWW",
+  title:"Midea Dryer MLTE70N1AWW",
+  url:"Midea-pdf/Midea-Dryer-MLTE70N1AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTG37N1BWW",
+  title:"Midea Dryer MLTG37N1BWW",
+  url:"Midea-pdf/Midea-Dryer-MLTG37N1BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTG39N1AWW",
+  title:"Midea Dryer MLTG39N1AWW",
+  url:"Midea-pdf/Midea-Dryer-MLTG39N1AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTG41N1BWW",
+  title:"Midea Dryer MLTG41N1BWW",
+  url:"Midea-pdf/Midea-Dryer-MLTG41N1BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTG70N1AWW",
+  title:"Midea Dryer MLTG70N1AWW",
+  url:"Midea-pdf/Midea-Dryer-MLTG70N1AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MER30S2ABB",
+  title:"Midea Electric Range MER30S2ABB",
+  url:"Midea-pdf/Midea-Electric-Range-MER30S2ABB.html"
+},
+{
+  brand:"Midea",
+  model:"MER30S2AST",
+  title:"Midea Electric Range MER30S2AST",
+  url:"Midea-pdf/Midea-Electric-Range-MER30S2AST.html"
+},
+{
+  brand:"Midea",
+  model:"MER30S2AWW",
+  title:"Midea Electric Range MER30S2AWW",
+  url:"Midea-pdf/Midea-Electric-Range-MER30S2AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MES30S2AST",
+  title:"Midea Electric Range MES30S2AST",
+  url:"Midea-pdf/Midea-Electric-Range-MES30S2AST.html"
+},
+{
+  brand:"Midea",
+  model:"MES30S4AST",
+  title:"Midea Electric Range MES30S4AST",
+  url:"Midea-pdf/Midea-Electric-Range-MES30S4AST.html"
+},
+{
+  brand:"Midea",
+  model:"ESG-INV M Series",
+  title:"Midea ESG-INV M Series Pool Heat Pump",
+  url:"Midea-pdf/Midea-ESG-INV-M-Series-Pool-Heat-Pump.html"
+},
+{
+  brand:"Midea",
+  model:"MSHC23R6BB",
+  title:"Midea Fan Heater MSHC23R6BB",
+  url:"Midea-pdf/Midea-Fan-Heater-MSHC23R6BB.html"
+},
+{
+  brand:"Midea",
+  model:"MFS4022WARB",
+  title:"Midea Fan MFS4022WARB",
+  url:"Midea-pdf/Midea-Fan-MFS4022WARB.html"
+},
+{
+  brand:"Midea",
+  model:"MSAF421DWW",
+  title:"Midea Fan MSAF421DWW",
+  url:"Midea-pdf/Midea-Fan-MSAF421DWW.html"
+},
+{
+  brand:"Midea",
+  model:"MSF42B9ASV",
+  title:"Midea Fan MSF42B9ASV",
+  url:"Midea-pdf/Midea-Fan-MSF42B9ASV.html"
+},
+{
+  brand:"Midea",
+  model:"MSF42B9AWT",
+  title:"Midea Fan MSF42B9AWT",
+  url:"Midea-pdf/Midea-Fan-MSF42B9AWT.html"
+},
+{
+  brand:"Midea",
+  model:"MSFAT06R6WW",
+  title:"Midea Fan MSFAT06R6WW",
+  url:"Midea-pdf/Midea-Fan-MSFAT06R6WW.html"
+},
+{
+  brand:"Midea",
+  model:"MSFAT06W5SB",
+  title:"Midea Fan MSFAT06W5SB",
+  url:"Midea-pdf/Midea-Fan-MSFAT06W5SB.html"
+},
+{
+  brand:"Midea",
+  model:"MGR30S2ABB",
+  title:"Midea Gas Range MGR30S2ABB",
+  url:"Midea-pdf/Midea-Gas-Range-MGR30S2ABB.html"
+},
+{
+  brand:"Midea",
+  model:"MGR30S2AST",
+  title:"Midea Gas Range MGR30S2AST",
+  url:"Midea-pdf/Midea-Gas-Range-MGR30S2AST.html"
+},
+{
+  brand:"Midea",
+  model:"MGR30S2AWW",
+  title:"Midea Gas Range MGR30S2AWW",
+  url:"Midea-pdf/Midea-Gas-Range-MGR30S2AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MGS30S2AST",
+  title:"Midea Gas Range MGS30S2AST",
+  url:"Midea-pdf/Midea-Gas-Range-MGS30S2AST.html"
+},
+{
+  brand:"Midea",
+  model:"MGS30S4AST",
+  title:"Midea Gas Range MGS30S4AST",
+  url:"Midea-pdf/Midea-Gas-Range-MGS30S4AST.html"
+},
+{
+  brand:"Midea",
+  model:"MSH20Q3ABBV",
+  title:"Midea Heater MSH20Q3ABBV",
+  url:"Midea-pdf/Midea-Heater-MSH20Q3ABBV.html"
+},
+{
+  brand:"Midea",
+  model:"MSH20Q3AWWV",
+  title:"Midea Heater MSH20Q3AWWV",
+  url:"Midea-pdf/Midea-Heater-MSH20Q3AWWV.html"
+},
+{
+  brand:"Midea",
+  model:"MSH23FT3DSB",
+  title:"Midea Heater MSH23FT3DSB",
+  url:"Midea-pdf/Midea-Heater-MSH23FT3DSB.html"
+},
+{
+  brand:"Midea",
+  model:"MSU16U6SBB",
+  title:"Midea Humidifier MSU16U6SBB",
+  url:"Midea-pdf/Midea-Humidifier-MSU16U6SBB.html"
+},
+{
+  brand:"Midea",
+  model:"MSU16UW6WB",
+  title:"Midea Humidifier MSU16UW6WB",
+  url:"Midea-pdf/Midea-Humidifier-MSU16UW6WB.html"
+},
+{
+  brand:"Midea",
+  model:"MAP05R1AWWT-T",
+  title:"Midea Portable Air Conditioner MAP05R1AWWT-T",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP05R1AWWT-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAP05R1AWWT",
+  title:"Midea Portable Air Conditioner MAP05R1AWWT",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP05R1AWWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAP05S1AWT",
+  title:"Midea Portable Air Conditioner MAP05S1AWT",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP05S1AWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAP06S1AWGR-T",
+  title:"Midea Portable Air Conditioner MAP06S1AWGR-T",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP06S1AWGR-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAP06S1JWT-B",
+  title:"Midea Portable Air Conditioner MAP06S1JWT-B",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP06S1JWT-B.html"
+},
+{
+  brand:"Midea",
+  model:"MAP07S1AWT",
+  title:"Midea Portable Air Conditioner MAP07S1AWT",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP07S1AWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAP07S1XWT-S",
+  title:"Midea Portable Air Conditioner MAP07S1XWT-S",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP07S1XWT-S.html"
+},
+{
+  brand:"Midea",
+  model:"MAP08S1JWT-B",
+  title:"Midea Portable Air Conditioner MAP08S1JWT-B",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP08S1JWT-B.html"
+},
+{
+  brand:"Midea",
+  model:"MAP08S1XWGR-T",
+  title:"Midea Portable Air Conditioner MAP08S1XWGR-T",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP08S1XWGR-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAP08S1XWT",
+  title:"Midea Portable Air Conditioner MAP08S1XWT",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP08S1XWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAP10HS1XWGR-T",
+  title:"Midea Portable Air Conditioner MAP10HS1XWGR-T",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP10HS1XWGR-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAP10HS1XWT",
+  title:"Midea Portable Air Conditioner MAP10HS1XWT",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP10HS1XWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAP10S1XWBL-T",
+  title:"Midea Portable Air Conditioner MAP10S1XWBL-T",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP10S1XWBL-T.html"
+},
+{
+  brand:"Midea",
+  model:"MAP10S1XWT",
+  title:"Midea Portable Air Conditioner MAP10S1XWT",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP10S1XWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAP10V1JWT-B",
+  title:"Midea Portable Air Conditioner MAP10V1JWT-B",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP10V1JWT-B.html"
+},
+{
+  brand:"Midea",
+  model:"MAP12S1TBL",
+  title:"Midea Portable Air Conditioner MAP12S1TBL",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP12S1TBL.html"
+},
+{
+  brand:"Midea",
+  model:"MAP12S1TGR-S",
+  title:"Midea Portable Air Conditioner MAP12S1TGR-S",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP12S1TGR-S.html"
+},
+{
+  brand:"Midea",
+  model:"MAP14HS1TWT-S",
+  title:"Midea Portable Air Conditioner MAP14HS1TWT-S",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP14HS1TWT-S.html"
+},
+{
+  brand:"Midea",
+  model:"MAP14HS1TWT",
+  title:"Midea Portable Air Conditioner MAP14HS1TWT",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP14HS1TWT.html"
+},
+{
+  brand:"Midea",
+  model:"MAP14S1TBL",
+  title:"Midea Portable Air Conditioner MAP14S1TBL",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MAP14S1TBL.html"
+},
+{
+  brand:"Midea",
+  model:"MPT1412HVRU",
+  title:"Midea Portable Air Conditioner MPT1412HVRU",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MPT1412HVRU.html"
+},
+{
+  brand:"Midea",
+  model:"MPX0812CWRU",
+  title:"Midea Portable Air Conditioner MPX0812CWRU",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MPX0812CWRU.html"
+},
+{
+  brand:"Midea",
+  model:"MPX1011CWRU",
+  title:"Midea Portable Air Conditioner MPX1011CWRU",
+  url:"Midea-pdf/Midea-Portable-Air-Conditioner-MPX1011CWRU.html"
+},
+{
+  brand:"Midea",
+  model:"MDRP27DK3AU",
+  title:"Midea Portable Fridge MDRP27DK3AU",
+  url:"Midea-pdf/Midea-Portable-Fridge-MDRP27DK3AU.html"
+},
+{
+  brand:"Midea",
+  model:"MVG30W8AST",
+  title:"Midea Range Hood MVG30W8AST",
+  url:"Midea-pdf/Midea-Range-Hood-MVG30W8AST.html"
+},
+{
+  brand:"Midea",
+  model:"MVP30W6AST",
+  title:"Midea Range Hood MVP30W6AST",
+  url:"Midea-pdf/Midea-Range-Hood-MVP30W6AST.html"
+},
+{
+  brand:"Midea",
+  model:"MVU30W6AST",
+  title:"Midea Range Hood MVU30W6AST",
+  url:"Midea-pdf/Midea-Range-Hood-MVU30W6AST.html"
+},
+{
+  brand:"Midea",
+  model:"HD-113FN",
+  title:"Midea Refrigerator HD-113FN",
+  url:"Midea-pdf/Midea-Refrigerator-HD-113FN.html"
+},
+{
+  brand:"Midea",
+  model:"MD-RT339WEDMX02",
+  title:"Midea Refrigerator Instruction Manual MD-RT339WEDMX02",
+  url:"Midea-pdf/Midea-Refrigerator-Instruction-Manual-MD-RT339WEDMX02.html"
+},
+{
+  brand:"Midea",
+  model:"MD-RT339WEDMX06",
+  title:"Midea Refrigerator Instruction Manual MD-RT339WEDMX06",
+  url:"Midea-pdf/Midea-Refrigerator-Instruction-Manual-MD-RT339WEDMX06.html"
+},
+{
+  brand:"Midea",
+  model:"MDRB424FGE",
+  title:"Midea Refrigerator MDRB424FGE",
+  url:"Midea-pdf/Midea-Refrigerator-MDRB424FGE.html"
+},
+{
+  brand:"Midea",
+  model:"MDRB521MGB",
+  title:"Midea Refrigerator MDRB521MGB",
+  url:"Midea-pdf/Midea-Refrigerator-MDRB521MGB.html"
+},
+{
+  brand:"Midea",
+  model:"MDRD142FGE",
+  title:"Midea Refrigerator MDRD142FGE",
+  url:"Midea-pdf/Midea-Refrigerator-MDRD142FGE.html"
+},
+{
+  brand:"Midea",
+  model:"MDRD229FGD28-MY",
+  title:"Midea Refrigerator MDRD229FGD28-MY",
+  url:"Midea-pdf/Midea-Refrigerator-MDRD229FGD28-MY.html"
+},
+{
+  brand:"Midea",
+  model:"MDRD229FGD42-MY",
+  title:"Midea Refrigerator MDRD229FGD42-MY",
+  url:"Midea-pdf/Midea-Refrigerator-MDRD229FGD42-MY.html"
+},
+{
+  brand:"Midea",
+  model:"MDRD268FGD28-MY",
+  title:"Midea Refrigerator MDRD268FGD28-MY",
+  url:"Midea-pdf/Midea-Refrigerator-MDRD268FGD28-MY.html"
+},
+{
+  brand:"Midea",
+  model:"MDRD268FGD42-MY",
+  title:"Midea Refrigerator MDRD268FGD42-MY",
+  url:"Midea-pdf/Midea-Refrigerator-MDRD268FGD42-MY.html"
+},
+{
+  brand:"Midea",
+  model:"MDRM706BIE",
+  title:"Midea Refrigerator MDRM706BIE",
+  url:"Midea-pdf/Midea-Refrigerator-MDRM706BIE.html"
+},
+{
+  brand:"Midea",
+  model:"MDRS791MIC",
+  title:"Midea Refrigerator MDRS791MIC",
+  url:"Midea-pdf/Midea-Refrigerator-MDRS791MIC.html"
+},
+{
+  brand:"Midea",
+  model:"MDRS791MIE",
+  title:"Midea Refrigerator MDRS791MIE",
+  url:"Midea-pdf/Midea-Refrigerator-MDRS791MIE.html"
+},
+{
+  brand:"Midea",
+  model:"MDRT267MTB28",
+  title:"Midea Refrigerator MDRT267MTB28",
+  url:"Midea-pdf/Midea-Refrigerator-MDRT267MTB28.html"
+},
+{
+  brand:"Midea",
+  model:"MDRT267MTB30",
+  title:"Midea Refrigerator MDRT267MTB30",
+  url:"Midea-pdf/Midea-Refrigerator-MDRT267MTB30.html"
+},
+{
+  brand:"Midea",
+  model:"MDRT267MTB50",
+  title:"Midea Refrigerator MDRT267MTB50",
+  url:"Midea-pdf/Midea-Refrigerator-MDRT267MTB50.html"
+},
+{
+  brand:"Midea",
+  model:"MDRT489MT",
+  title:"Midea Refrigerator MDRT489MT",
+  url:"Midea-pdf/Midea-Refrigerator-MDRT489MT.html"
+},
+{
+  brand:"Midea",
+  model:"MDRT489MTB46-MY",
+  title:"Midea Refrigerator MDRT489MTB46-MY",
+  url:"Midea-pdf/Midea-Refrigerator-MDRT489MTB46-MY.html"
+},
+{
+  brand:"Midea",
+  model:"MDRU385MTE46",
+  title:"Midea Refrigerator MDRU385MTE46",
+  url:"Midea-pdf/Midea-Refrigerator-MDRU385MTE46.html"
+},
+{
+  brand:"Midea",
+  model:"MERM45S3ABB",
+  title:"Midea Refrigerator MERM45S3ABB",
+  url:"Midea-pdf/Midea-Refrigerator-MERM45S3ABB.html"
+},
+{
+  brand:"Midea",
+  model:"MERM45S3AST",
+  title:"Midea Refrigerator MERM45S3AST",
+  url:"Midea-pdf/Midea-Refrigerator-MERM45S3AST.html"
+},
+{
+  brand:"Midea",
+  model:"MRB19B7AST",
+  title:"Midea Refrigerator MRB19B7AST",
+  url:"Midea-pdf/Midea-Refrigerator-MRB19B7AST.html"
+},
+{
+  brand:"Midea",
+  model:"MRB19B7AWW",
+  title:"Midea Refrigerator MRB19B7AWW",
+  url:"Midea-pdf/Midea-Refrigerator-MRB19B7AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MRM45D3ASL",
+  title:"Midea Refrigerator MRM45D3ASL",
+  url:"Midea-pdf/Midea-Refrigerator-MRM45D3ASL.html"
+},
+{
+  brand:"Midea",
+  model:"MRQ23B4AST",
+  title:"Midea Refrigerator MRQ23B4AST",
+  url:"Midea-pdf/Midea-Refrigerator-MRQ23B4AST.html"
+},
+{
+  brand:"Midea",
+  model:"MRT14D2BBB",
+  title:"Midea Refrigerator MRT14D2BBB",
+  url:"Midea-pdf/Midea-Refrigerator-MRT14D2BBB.html"
+},
+{
+  brand:"Midea",
+  model:"MRT14D2BST",
+  title:"Midea Refrigerator MRT14D2BST",
+  url:"Midea-pdf/Midea-Refrigerator-MRT14D2BST.html"
+},
+{
+  brand:"Midea",
+  model:"MRT14D2BWW",
+  title:"Midea Refrigerator MRT14D2BWW",
+  url:"Midea-pdf/Midea-Refrigerator-MRT14D2BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MRT14D3BBB",
+  title:"Midea Refrigerator MRT14D3BBB",
+  url:"Midea-pdf/Midea-Refrigerator-MRT14D3BBB.html"
+},
+{
+  brand:"Midea",
+  model:"MRT14D3BST",
+  title:"Midea Refrigerator MRT14D3BST",
+  url:"Midea-pdf/Midea-Refrigerator-MRT14D3BST.html"
+},
+{
+  brand:"Midea",
+  model:"MRT14D3BWW",
+  title:"Midea Refrigerator MRT14D3BWW",
+  url:"Midea-pdf/Midea-Refrigerator-MRT14D3BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MRT18D2BBB",
+  title:"Midea Refrigerator MRT18D2BBB",
+  url:"Midea-pdf/Midea-Refrigerator-MRT18D2BBB.html"
+},
+{
+  brand:"Midea",
+  model:"MRT18D2BST",
+  title:"Midea Refrigerator MRT18D2BST",
+  url:"Midea-pdf/Midea-Refrigerator-MRT18D2BST.html"
+},
+{
+  brand:"Midea",
+  model:"MRT18D2BWW",
+  title:"Midea Refrigerator MRT18D2BWW",
+  url:"Midea-pdf/Midea-Refrigerator-MRT18D2BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MRT18D3BBB",
+  title:"Midea Refrigerator MRT18D3BBB",
+  url:"Midea-pdf/Midea-Refrigerator-MRT18D3BBB.html"
+},
+{
+  brand:"Midea",
+  model:"MRT18D3BST",
+  title:"Midea Refrigerator MRT18D3BST",
+  url:"Midea-pdf/Midea-Refrigerator-MRT18D3BST.html"
+},
+{
+  brand:"Midea",
+  model:"MRT18D3BWW",
+  title:"Midea Refrigerator MRT18D3BWW",
+  url:"Midea-pdf/Midea-Refrigerator-MRT18D3BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MRT18S3ABB",
+  title:"Midea Refrigerator MRT18S3ABB",
+  url:"Midea-pdf/Midea-Refrigerator-MRT18S3ABB.html"
+},
+{
+  brand:"Midea",
+  model:"MRT18S3AST",
+  title:"Midea Refrigerator MRT18S3AST",
+  url:"Midea-pdf/Midea-Refrigerator-MRT18S3AST.html"
+},
+{
+  brand:"Midea",
+  model:"MRT18S3AWW",
+  title:"Midea Refrigerator MRT18S3AWW",
+  url:"Midea-pdf/Midea-Refrigerator-MRT18S3AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MRU21C7BST",
+  title:"Midea Refrigerator MRU21C7BST",
+  url:"Midea-pdf/Midea-Refrigerator-MRU21C7BST.html"
+},
+{
+  brand:"Midea",
+  model:"MRU21C7BWW",
+  title:"Midea Refrigerator MRU21C7BWW",
+  url:"Midea-pdf/Midea-Refrigerator-MRU21C7BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MRU21F5BST",
+  title:"Midea Refrigerator MRU21F5BST",
+  url:"Midea-pdf/Midea-Refrigerator-MRU21F5BST.html"
+},
+{
+  brand:"Midea",
+  model:"MRU21F5BWW",
+  title:"Midea Refrigerator MRU21F5BWW",
+  url:"Midea-pdf/Midea-Refrigerator-MRU21F5BWW.html"
+},
+{
+  brand:"Midea",
+  model:"HD-332RWEN",
+  title:"Midea Refrigerator Service Manual HD-332RWEN",
+  url:"Midea-pdf/Midea-Refrigerator-Service-Manual-HD-332RWEN.html"
+},
+{
+  brand:"Midea",
+  model:"WHD-113FB1",
+  title:"Midea Refrigerator WHD-113FB1",
+  url:"Midea-pdf/Midea-Refrigerator-WHD-113FB1.html"
+},
+{
+  brand:"Midea",
+  model:"WHD-113FSS1",
+  title:"Midea Refrigerator WHD-113FSS1",
+  url:"Midea-pdf/Midea-Refrigerator-WHD-113FSS1.html"
+},
+{
+  brand:"Midea",
+  model:"WHD-113FW1",
+  title:"Midea Refrigerator WHD-113FW1",
+  url:"Midea-pdf/Midea-Refrigerator-WHD-113FW1.html"
+},
+{
+  brand:"Midea",
+  model:"WHS-87LB1",
+  title:"Midea Refrigerator WHS-87LB1",
+  url:"Midea-pdf/Midea-Refrigerator-WHS-87LB1.html"
+},
+{
+  brand:"Midea",
+  model:"WHS-87LSS1",
+  title:"Midea Refrigerator WHS-87LSS1",
+  url:"Midea-pdf/Midea-Refrigerator-WHS-87LSS1.html"
+},
+{
+  brand:"Midea",
+  model:"WHS-87LW1",
+  title:"Midea Refrigerator WHS-87LW1",
+  url:"Midea-pdf/Midea-Refrigerator-WHS-87LW1.html"
+},
+{
+  brand:"Midea",
+  model:"MHC-V10WD2N7-B",
+  title:"Midea Thermal Nature Heat Pump MHC-V10WD2N7-B",
+  url:"Midea-pdf/Midea-Thermal-Nature-Heat-Pump-MHC-V10WD2N7-B.html"
+},
+{
+  brand:"Midea",
+  model:"MHC-V12WD2N7-B",
+  title:"Midea Thermal Nature Heat Pump MHC-V12WD2N7-B",
+  url:"Midea-pdf/Midea-Thermal-Nature-Heat-Pump-MHC-V12WD2N7-B.html"
+},
+{
+  brand:"Midea",
+  model:"MHC-V8WD2N7-B",
+  title:"Midea Thermal Nature Heat Pump MHC-V8WD2N7-B",
+  url:"Midea-pdf/Midea-Thermal-Nature-Heat-Pump-MHC-V8WD2N7-B.html"
+},
+
+{
+  brand:"Midea",
+  model:"MHC-V14WD2N7-B",
+  title:"Midea Thermal Nature Heat Pump MHC-V14WD2N7-B",
+  url:"Midea-pdf/Midea-Thermal-Nature-Heat-Pump-MHC-V14WD2N7-B.html"
+},
+{
+  brand:"Midea",
+  model:"MHC-V16WD2N7-B",
+  title:"Midea Thermal Nature Heat Pump MHC-V16WD2N7-B",
+  url:"Midea-pdf/Midea-Thermal-Nature-Heat-Pump-MHC-V16WD2N7-B.html"
+},
+{
+  brand:"Midea",
+  model:"MFT1021CRWB",
+  title:"Midea Tower Fan MFT1021CRWB",
+  url:"Midea-pdf/Midea-Tower-Fan-MFT1021CRWB.html"
+},
+{
+  brand:"Midea",
+  model:"MSFT42RW6BL",
+  title:"Midea Tower Fan MSFT42RW6BL",
+  url:"Midea-pdf/Midea-Tower-Fan-MSFT42RW6BL.html"
+},
+{
+  brand:"Midea",
+  model:"MLH25N7BWW",
+  title:"Midea Washer MLH25N7BWW",
+  url:"Midea-pdf/Midea-Washer-MLH25N7BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLHW27S7BCG",
+  title:"Midea Washer MLHW27S7BCG",
+  url:"Midea-pdf/Midea-Washer-MLHW27S7BCG.html"
+},
+{
+  brand:"Midea",
+  model:"MLHW27S7BWW",
+  title:"Midea Washer MLHW27S7BWW",
+  url:"Midea-pdf/Midea-Washer-MLHW27S7BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTW37A1BWW",
+  title:"Midea Washer MLTW37A1BWW",
+  url:"Midea-pdf/Midea-Washer-MLTW37A1BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTW39A1AWW",
+  title:"Midea Washer MLTW39A1AWW",
+  url:"Midea-pdf/Midea-Washer-MLTW39A1AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTW41A1BWW",
+  title:"Midea Washer MLTW41A1BWW",
+  url:"Midea-pdf/Midea-Washer-MLTW41A1BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTW44A1AWW",
+  title:"Midea Washer MLTW44A1AWW",
+  url:"Midea-pdf/Midea-Washer-MLTW44A1AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTW44A4BWW",
+  title:"Midea Washer MLTW44A4BWW",
+  url:"Midea-pdf/Midea-Washer-MLTW44A4BWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTW45M1AWW",
+  title:"Midea Washer MLTW45M1AWW",
+  url:"Midea-pdf/Midea-Washer-MLTW45M1AWW.html"
+},
+{
+  brand:"Midea",
+  model:"MLTW45M4BWW",
+  title:"Midea Washer MLTW45M4BWW",
+  url:"Midea-pdf/Midea-Washer-MLTW45M4BWW.html"
+},
+{
+  brand:"Midea",
+  model:"XTREME Inverter Series",
+  title:"Midea XTREME Inverter Series Service Manual",
+  url:"Midea-pdf/Midea-XTREME-Inverter-Series-Service-Manual.html"
 }
 
 
