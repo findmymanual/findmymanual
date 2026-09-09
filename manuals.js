@@ -17019,6 +17019,1593 @@ const manuals = [
   model:"Wireless Speedlight Commander SU-800",
   title:"Nikon Wireless Speedlight Commander SU-800",
   url:"Nikon-pdf/Nikon-Wireless-Speedlight-Commander-SU-800.html"
+},
+
+{
+  brand:"Ninja",
+  model:"AD100",
+  title:"Ninja Foodi 2-Basket Air Fryer AD100",
+  url:"Ninja-pdf/Ninja-AD100-Foodi-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"AD100A",
+  title:"Ninja Foodi 2-Basket Air Fryer AD100A",
+  url:"Ninja-pdf/Ninja-AD100A-Foodi-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"AF100",
+  title:"Ninja Air Fryer AF100",
+  url:"Ninja-pdf/Ninja-Air-Fryer-AF100.html"
+},
+{
+  brand:"Ninja",
+  model:"AF100C",
+  title:"Ninja Air Fryer AF100C",
+  url:"Ninja-pdf/Ninja-Air-Fryer-AF100C.html"
+},
+{
+  brand:"Ninja",
+  model:"AF100WM",
+  title:"Ninja Air Fryer AF100WM",
+  url:"Ninja-pdf/Ninja-Air-Fryer-AF100WM.html"
+},
+{
+  brand:"Ninja",
+  model:"AF100WMNV",
+  title:"Ninja Air Fryer AF100WMNV",
+  url:"Ninja-pdf/Ninja-Air-Fryer-AF100WMNV.html"
+},
+{
+  brand:"Ninja",
+  model:"AF100WMRD",
+  title:"Ninja Air Fryer AF100WMRD",
+  url:"Ninja-pdf/Ninja-Air-Fryer-AF100WMRD.html"
+},
+{
+  brand:"Ninja",
+  model:"AF100WMWH",
+  title:"Ninja Air Fryer AF100WMWH",
+  url:"Ninja-pdf/Ninja-Air-Fryer-AF100WMWH.html"
+},
+{
+  brand:"Ninja",
+  model:"AF300ANZ",
+  title:"Ninja Air Fryer AF300ANZ",
+  url:"Ninja-pdf/Ninja-Air-Fryer-AF300ANZ.html"
+},
+{
+  brand:"Ninja",
+  model:"AF300SM",
+  title:"Ninja Air Fryer AF300SM",
+  url:"Ninja-pdf/Ninja-Air-Fryer-AF300SM.html"
+},
+{
+  brand:"Ninja",
+  model:"AF150",
+  title:"Ninja Air Fryer Max XL AF150",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Max-XL-AF150.html"
+},
+{
+  brand:"Ninja",
+  model:"AF150AMZ",
+  title:"Ninja Air Fryer Max XL AF150AMZ",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Max-XL-AF150AMZ.html"
+},
+{
+  brand:"Ninja",
+  model:"AF150CO",
+  title:"Ninja Air Fryer Max XL AF150CO",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Max-XL-AF150CO.html"
+},
+{
+  brand:"Ninja",
+  model:"AF150WM",
+  title:"Ninja Air Fryer Max XL AF150WM",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Max-XL-AF150WM.html"
+},
+{
+  brand:"Ninja",
+  model:"AF150WMC",
+  title:"Ninja Air Fryer Max XL AF150WMC",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Max-XL-AF150WMC.html"
+},
+{
+  brand:"Ninja",
+  model:"AF160",
+  title:"Ninja Air Fryer Max XL AF160",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Max-XL-AF160.html"
+},
+{
+  brand:"Ninja",
+  model:"AF160SM",
+  title:"Ninja Air Fryer Max XL AF160SM",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Max-XL-AF160SM.html"
+},
+{
+  brand:"Ninja",
+  model:"AF161",
+  title:"Ninja Air Fryer Max XL AF161",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Max-XL-AF161.html"
+},
+{
+  brand:"Ninja",
+  model:"AF161BK",
+  title:"Ninja Air Fryer Max XL AF161BK",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Max-XL-AF161BK.html"
+},
+{
+  brand:"Ninja",
+  model:"AF161C",
+  title:"Ninja Air Fryer Max XL AF161C",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Max-XL-AF161C.html"
+},
+{
+  brand:"Ninja",
+  model:"AF161CM",
+  title:"Ninja Air Fryer Max XL AF161CM",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Max-XL-AF161CM.html"
+},
+{
+  brand:"Ninja",
+  model:"AF162",
+  title:"Ninja Air Fryer Max XL AF162",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Max-XL-AF162.html"
+},
+{
+  brand:"Ninja",
+  model:"AF140",
+  title:"Ninja Air Fryer Pro 3-in-1 AF140",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Pro-3-in-1-AF140.html"
+},
+{
+  brand:"Ninja",
+  model:"AF141",
+  title:"Ninja Air Fryer Pro 3-in-1 AF141",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Pro-3-in-1-AF141.html"
+},
+{
+  brand:"Ninja",
+  model:"AF180",
+  title:"Ninja Air Fryer Pro XL 4-in-1 AF180",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Pro-XL-4-in-1-AF180.html"
+},
+{
+  brand:"Ninja",
+  model:"AF181",
+  title:"Ninja Air Fryer Pro XL 4-in-1 AF181",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Pro-XL-4-in-1-AF181.html"
+},
+{
+  brand:"Ninja",
+  model:"AF181BK",
+  title:"Ninja Air Fryer Pro XL 4-in-1 AF181BK",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Pro-XL-4-in-1-AF181BK.html"
+},
+{
+  brand:"Ninja",
+  model:"AF181C",
+  title:"Ninja Air Fryer Pro XL 4-in-1 AF181C",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Pro-XL-4-in-1-AF181C.html"
+},
+{
+  brand:"Ninja",
+  model:"AF181CM",
+  title:"Ninja Air Fryer Pro XL 4-in-1 AF181CM",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Pro-XL-4-in-1-AF181CM.html"
+},
+{
+  brand:"Ninja",
+  model:"AF181CN",
+  title:"Ninja Air Fryer Pro XL 4-in-1 AF181CN",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Pro-XL-4-in-1-AF181CN.html"
+},
+{
+  brand:"Ninja",
+  model:"AF181GY",
+  title:"Ninja Air Fryer Pro XL 4-in-1 AF181GY",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Pro-XL-4-in-1-AF181GY.html"
+},
+{
+  brand:"Ninja",
+  model:"AF181LAA",
+  title:"Ninja Air Fryer Pro XL 4-in-1 AF181LAA",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Pro-XL-4-in-1-AF181LAA.html"
+},
+{
+  brand:"Ninja",
+  model:"AF182AMZ",
+  title:"Ninja Air Fryer Pro XL 4-in-1 AF182AMZ",
+  url:"Ninja-pdf/Ninja-Air-Fryer-Pro-XL-4-in-1-AF182AMZ.html"
+},
+{
+  brand:"Ninja",
+  model:"SL400SM",
+  title:"Ninja Air Fryer SL400SM",
+  url:"Ninja-pdf/Ninja-Air-Fryer-SL400SM.html"
+},
+{
+  brand:"Ninja",
+  model:"AS100",
+  title:"Ninja Countertop Glass Air Fryer AS100",
+  url:"Ninja-pdf/Ninja-AS100-Countertop-Glass-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"AS100GN",
+  title:"Ninja Countertop Glass Air Fryer AS100GN",
+  url:"Ninja-pdf/Ninja-AS100GN-Countertop-Glass-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"AS100WH",
+  title:"Ninja Countertop Glass Air Fryer AS100WH",
+  url:"Ninja-pdf/Ninja-AS100WH-Countertop-Glass-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"AS101CY",
+  title:"Ninja Countertop Glass Air Fryer AS101CY",
+  url:"Ninja-pdf/Ninja-AS101CY-Countertop-Glass-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"AS101DG",
+  title:"Ninja Countertop Glass Air Fryer AS101DG",
+  url:"Ninja-pdf/Ninja-AS101DG-Countertop-Glass-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"AS101LG",
+  title:"Ninja Countertop Glass Air Fryer AS101LG",
+  url:"Ninja-pdf/Ninja-AS101LG-Countertop-Glass-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"AS101RS",
+  title:"Ninja Countertop Glass Air Fryer AS101RS",
+  url:"Ninja-pdf/Ninja-AS101RS-Countertop-Glass-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"BL780",
+  title:"Ninja Blender BL780",
+  url:"Ninja-pdf/Ninja-Blender-BL780.html"
+},
+{
+  brand:"Ninja",
+  model:"BL800",
+  title:"Ninja Blender BL800",
+  url:"Ninja-pdf/Ninja-Blender-BL800.html"
+},
+{
+  brand:"Ninja",
+  model:"BL800C",
+  title:"Ninja Blender BL800C",
+  url:"Ninja-pdf/Ninja-Blender-BL800C.html"
+},
+{
+  brand:"Ninja",
+  model:"BL910",
+  title:"Ninja Blender BL910",
+  url:"Ninja-pdf/Ninja-Blender-BL910.html"
+},
+{
+  brand:"Ninja",
+  model:"BN300",
+  title:"Ninja Blender BN300",
+  url:"Ninja-pdf/Ninja-Blender-BN300.html"
+},
+{
+  brand:"Ninja",
+  model:"BN300C",
+  title:"Ninja Blender BN300C",
+  url:"Ninja-pdf/Ninja-Blender-BN300C.html"
+},
+{
+  brand:"Ninja",
+  model:"BN300WM",
+  title:"Ninja Blender BN300WM",
+  url:"Ninja-pdf/Ninja-Blender-BN300WM.html"
+},
+{
+  brand:"Ninja",
+  model:"BN301",
+  title:"Ninja Blender BN301",
+  url:"Ninja-pdf/Ninja-Blender-BN301.html"
+},
+{
+  brand:"Ninja",
+  model:"BN500SM",
+  title:"Ninja Blender BN500SM",
+  url:"Ninja-pdf/Ninja-Blender-BN500SM.html"
+},
+{
+  brand:"Ninja",
+  model:"BN642",
+  title:"Ninja Blender BN642",
+  url:"Ninja-pdf/Ninja-Blender-BN642.html"
+},
+{
+  brand:"Ninja",
+  model:"CB402SM",
+  title:"Ninja Blender CB402SM",
+  url:"Ninja-pdf/Ninja-Blender-CB402SM.html"
+},
+{
+  brand:"Ninja",
+  model:"CT610",
+  title:"Ninja Blender CT610",
+  url:"Ninja-pdf/Ninja-Blender-CT610.html"
+},
+{
+  brand:"Ninja",
+  model:"CT610C",
+  title:"Ninja Blender CT610C",
+  url:"Ninja-pdf/Ninja-Blender-CT610C.html"
+},
+{
+  brand:"Ninja",
+  model:"CT611C",
+  title:"Ninja Blender CT611C",
+  url:"Ninja-pdf/Ninja-Blender-CT611C.html"
+},
+{
+  brand:"Ninja",
+  model:"CT641",
+  title:"Ninja Blender CT641",
+  url:"Ninja-pdf/Ninja-Blender-CT641.html"
+},
+{
+  brand:"Ninja",
+  model:"BC701CCO",
+  title:"Ninja Blender Duo BC701CCO",
+  url:"Ninja-pdf/Ninja-Blender-Duo-BC701CCO.html"
+},
+{
+  brand:"Ninja",
+  model:"BN700",
+  title:"Ninja Blender Duo BN700",
+  url:"Ninja-pdf/Ninja-Blender-Duo-BN700.html"
+},
+{
+  brand:"Ninja",
+  model:"BN701",
+  title:"Ninja Blender Duo BN701",
+  url:"Ninja-pdf/Ninja-Blender-Duo-BN701.html"
+},
+{
+  brand:"Ninja",
+  model:"BN701BRN",
+  title:"Ninja Blender Duo BN701BRN",
+  url:"Ninja-pdf/Ninja-Blender-Duo-BN701BRN.html"
+},
+
+{
+  brand:"Ninja",
+  model:"BN701C",
+  title:"Ninja Blender Duo BN701C",
+  url:"Ninja-pdf/Ninja-Blender-Duo-BN701C.html"
+},
+{
+  brand:"Ninja",
+  model:"BN701CCO",
+  title:"Ninja Blender Duo BN701CCO",
+  url:"Ninja-pdf/Ninja-Blender-Duo-BN701CCO.html"
+},
+{
+  brand:"Ninja",
+  model:"BN750",
+  title:"Ninja Blender Duo BN750",
+  url:"Ninja-pdf/Ninja-Blender-Duo-BN750.html"
+},
+{
+  brand:"Ninja",
+  model:"BN750C",
+  title:"Ninja Blender Duo BN750C",
+  url:"Ninja-pdf/Ninja-Blender-Duo-BN750C.html"
+},
+{
+  brand:"Ninja",
+  model:"BN751",
+  title:"Ninja Blender Duo BN751",
+  url:"Ninja-pdf/Ninja-Blender-Duo-BN751.html"
+},
+{
+  brand:"Ninja",
+  model:"BN751C",
+  title:"Ninja Blender Duo BN751C",
+  url:"Ninja-pdf/Ninja-Blender-Duo-BN751C.html"
+},
+{
+  brand:"Ninja",
+  model:"BN753TGT",
+  title:"Ninja Blender Duo BN753TGT",
+  url:"Ninja-pdf/Ninja-Blender-Duo-BN753TGT.html"
+},
+{
+  brand:"Ninja",
+  model:"DB751A",
+  title:"Ninja Blender Duo DB751A",
+  url:"Ninja-pdf/Ninja-Blender-Duo-DB751A.html"
+},
+{
+  brand:"Ninja",
+  model:"HB150ANZ",
+  title:"Ninja Blender HB150ANZ",
+  url:"Ninja-pdf/Ninja-Blender-HB150ANZ.html"
+},
+{
+  brand:"Ninja",
+  model:"HB150SM",
+  title:"Ninja Blender HB150SM",
+  url:"Ninja-pdf/Ninja-Blender-HB150SM.html"
+},
+{
+  brand:"Ninja",
+  model:"NJ600WM",
+  title:"Ninja Blender NJ600WM",
+  url:"Ninja-pdf/Ninja-Blender-NJ600WM.html"
+},
+{
+  brand:"Ninja",
+  model:"NJ601AMZ",
+  title:"Ninja Blender NJ601AMZ",
+  url:"Ninja-pdf/Ninja-Blender-NJ601AMZ.html"
+},
+{
+  brand:"Ninja",
+  model:"CI201",
+  title:"Ninja Blender Whisk CI201",
+  url:"Ninja-pdf/Ninja-Blender-Whisk-CI201.html"
+},
+{
+  brand:"Ninja",
+  model:"CI201CGY",
+  title:"Ninja Blender Whisk CI201CGY",
+  url:"Ninja-pdf/Ninja-Blender-Whisk-CI201CGY.html"
+},
+{
+  brand:"Ninja",
+  model:"CI201CND",
+  title:"Ninja Blender Whisk CI201CND",
+  url:"Ninja-pdf/Ninja-Blender-Whisk-CI201CND.html"
+},
+{
+  brand:"Ninja",
+  model:"CI201GY",
+  title:"Ninja Blender Whisk CI201GY",
+  url:"Ninja-pdf/Ninja-Blender-Whisk-CI201GY.html"
+},
+{
+  brand:"Ninja",
+  model:"CI201ND",
+  title:"Ninja Blender Whisk CI201ND",
+  url:"Ninja-pdf/Ninja-Blender-Whisk-CI201ND.html"
+},
+{
+  brand:"Ninja",
+  model:"TB200",
+  title:"Ninja Blender with Blendsense TB200",
+  url:"Ninja-pdf/Ninja-Blender-with-Blendsense-TB200.html"
+},
+{
+  brand:"Ninja",
+  model:"TB201",
+  title:"Ninja Blender with Blendsense TB201",
+  url:"Ninja-pdf/Ninja-Blender-with-Blendsense-TB201.html"
+},
+{
+  brand:"Ninja",
+  model:"TB301",
+  title:"Ninja Blender with Blendsense TB301",
+  url:"Ninja-pdf/Ninja-Blender-with-Blendsense-TB301.html"
+},
+{
+  brand:"Ninja",
+  model:"IV700",
+  title:"Ninja Blender with Micro-Juice IV700",
+  url:"Ninja-pdf/Ninja-Blender-with-Micro-Juice-IV700.html"
+},
+{
+  brand:"Ninja",
+  model:"IV700C",
+  title:"Ninja Blender with Micro-Juice IV700C",
+  url:"Ninja-pdf/Ninja-Blender-with-Micro-Juice-IV700C.html"
+},
+{
+  brand:"Ninja",
+  model:"IV701",
+  title:"Ninja Blender with Micro-Juice IV701",
+  url:"Ninja-pdf/Ninja-Blender-with-Micro-Juice-IV701.html"
+},
+{
+  brand:"Ninja",
+  model:"IV701C",
+  title:"Ninja Blender with Micro-Juice IV701C",
+  url:"Ninja-pdf/Ninja-Blender-with-Micro-Juice-IV701C.html"
+},
+{
+  brand:"Ninja",
+  model:"IV702",
+  title:"Ninja Blender with Micro-Juice IV702",
+  url:"Ninja-pdf/Ninja-Blender-with-Micro-Juice-IV702.html"
+},
+{
+  brand:"Ninja",
+  model:"HB100",
+  title:"Ninja Cold & Hot Blender HB100",
+  url:"Ninja-pdf/Ninja-Cold-&-Hot-Blender-HB100.html"
+},
+{
+  brand:"Ninja",
+  model:"HB150",
+  title:"Ninja Cold & Hot Blender HB150",
+  url:"Ninja-pdf/Ninja-Cold-&-Hot-Blender-HB150.html"
+},
+{
+  brand:"Ninja",
+  model:"HB150C",
+  title:"Ninja Cold & Hot Blender HB150C",
+  url:"Ninja-pdf/Ninja-Cold-&-Hot-Blender-HB150C.html"
+},
+{
+  brand:"Ninja",
+  model:"HB152",
+  title:"Ninja Cold & Hot Blender HB152",
+  url:"Ninja-pdf/Ninja-Cold-&-Hot-Blender-HB152.html"
+},
+{
+  brand:"Ninja",
+  model:"HB152BRN",
+  title:"Ninja Cold & Hot Blender HB152BRN",
+  url:"Ninja-pdf/Ninja-Cold-&-Hot-Blender-HB152BRN.html"
+},
+
+{
+  brand:"Ninja",
+  model:"HB152W",
+  title:"Ninja Cold & Hot Blender HB152W",
+  url:"Ninja-pdf/Ninja-Cold-&-Hot-Blender-HB152W.html"
+},
+{
+  brand:"Ninja",
+  model:"SL451SM",
+  title:"Ninja Double Stack XL 2-Drawer with Smart Cook System SL451SM",
+  url:"Ninja-pdf/Ninja-Double-Stack-XL-2-Drawer-with-Smart-Cook-System-SL451SM.html"
+},
+{
+  brand:"Ninja",
+  model:"SL400",
+  title:"Ninja Doublestack XL 2-Basket Air Fryer SL400",
+  url:"Ninja-pdf/Ninja-Doublestack-XL-2-Basket-Air-Fryer-SL400.html"
+},
+{
+  brand:"Ninja",
+  model:"SL401",
+  title:"Ninja Doublestack XL 2-Basket Air Fryer SL401",
+  url:"Ninja-pdf/Ninja-Doublestack-XL-2-Basket-Air-Fryer-SL401.html"
+},
+{
+  brand:"Ninja",
+  model:"WC1000",
+  title:"Ninja Drink System WC1000",
+  url:"Ninja-pdf/Ninja-Drink-System-WC1000.html"
+},
+{
+  brand:"Ninja",
+  model:"DZ070",
+  title:"Ninja DZ070 Air Fryer with MegaZone",
+  url:"Ninja-pdf/Ninja-DZ070-Air-Fryer-with-MegaZone.html"
+},
+{
+  brand:"Ninja",
+  model:"DZ090",
+  title:"Ninja DZ090 2-Basket Air Fryer",
+  url:"Ninja-pdf/Ninja-DZ090-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"DZ090C",
+  title:"Ninja DZ090C 2-Basket Air Fryer",
+  url:"Ninja-pdf/Ninja-DZ090C-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"DZ100",
+  title:"Ninja DZ100 Foodi 2-Basket Air Fryer",
+  url:"Ninja-pdf/Ninja-DZ100-Foodi-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"DZ100CCO",
+  title:"Ninja DZ100CCO Foodi 2-Basket Air Fryer",
+  url:"Ninja-pdf/Ninja-DZ100CCO-Foodi-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"DZ100WM",
+  title:"Ninja DZ100WM Foodi 2-Basket Air Fryer",
+  url:"Ninja-pdf/Ninja-DZ100WM-Foodi-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"DZ400",
+  title:"Ninja DZ400 XL 2-Basket Air Fryer",
+  url:"Ninja-pdf/Ninja-DZ400-XL-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"DZ401",
+  title:"Ninja DZ401 Series XL 2-Basket Air Fryer",
+  url:"Ninja-pdf/Ninja-DZ401-Series-XL-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"DZ401QBK",
+  title:"Ninja DZ401QBK XL 2-Basket Air Fryer",
+  url:"Ninja-pdf/Ninja-DZ401QBK-XL-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"DZ401QCM",
+  title:"Ninja DZ401QCM XL 2-Basket Air Fryer",
+  url:"Ninja-pdf/Ninja-DZ401QCM-XL-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"DZ401QGY",
+  title:"Ninja DZ401QGY XL 2-Basket Air Fryer",
+  url:"Ninja-pdf/Ninja-DZ401QGY-XL-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"DZ401QNV",
+  title:"Ninja DZ401QNV XL 2-Basket Air Fryer",
+  url:"Ninja-pdf/Ninja-DZ401QNV-XL-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"DZ401QWH",
+  title:"Ninja DZ401QWH XL 2-Basket Air Fryer",
+  url:"Ninja-pdf/Ninja-DZ401QWH-XL-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"DZ550",
+  title:"Ninja DZ550 Foodi Smart XL 2-Basket Air Fryer",
+  url:"Ninja-pdf/Ninja-DZ550-Foodi-Smart-XL-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"AF170",
+  title:"Ninja EZView Air Fryer Max XL AF170",
+  url:"Ninja-pdf/Ninja-EZView-Air-Fryer-Max-XL-AF170.html"
+},
+{
+  brand:"Ninja",
+  model:"AF171",
+  title:"Ninja EZView Air Fryer Max XL AF171",
+  url:"Ninja-pdf/Ninja-EZView-Air-Fryer-Max-XL-AF171.html"
+},
+{
+  brand:"Ninja",
+  model:"AD600CO",
+  title:"Ninja FlexBasket Air Fryer AD600CO",
+  url:"Ninja-pdf/Ninja-FlexBasket-Air-Fryer-AD600CO.html"
+},
+{
+  brand:"Ninja",
+  model:"PG301",
+  title:"Ninja FlexFlame Outdoor Cooking PG301",
+  url:"Ninja-pdf/Ninja-FlexFlame-Outdoor-Cooking-PG301.html"
+},
+{
+  brand:"Ninja",
+  model:"PG301BK",
+  title:"Ninja FlexFlame Outdoor Cooking PG301BK",
+  url:"Ninja-pdf/Ninja-FlexFlame-Outdoor-Cooking-PG301BK.html"
+},
+{
+  brand:"Ninja",
+  model:"PG301C",
+  title:"Ninja FlexFlame Outdoor Cooking PG301C",
+  url:"Ninja-pdf/Ninja-FlexFlame-Outdoor-Cooking-PG301C.html"
+},
+{
+  brand:"Ninja",
+  model:"PG301CSL",
+  title:"Ninja FlexFlame Outdoor Cooking PG301CSL",
+  url:"Ninja-pdf/Ninja-FlexFlame-Outdoor-Cooking-PG301CSL.html"
+},
+{
+  brand:"Ninja",
+  model:"PG302",
+  title:"Ninja FlexFlame Outdoor Cooking PG302",
+  url:"Ninja-pdf/Ninja-FlexFlame-Outdoor-Cooking-PG302.html"
+},
+{
+  brand:"Ninja",
+  model:"PG302C",
+  title:"Ninja FlexFlame Outdoor Cooking PG302C",
+  url:"Ninja-pdf/Ninja-FlexFlame-Outdoor-Cooking-PG302C.html"
+},
+{
+  brand:"Ninja",
+  model:"PG302CSL",
+  title:"Ninja FlexFlame Outdoor Cooking PG302CSL",
+  url:"Ninja-pdf/Ninja-FlexFlame-Outdoor-Cooking-PG302CSL.html"
+},
+{
+  brand:"Ninja",
+  model:"PG304C",
+  title:"Ninja FlexFlame Outdoor Cooking PG304C",
+  url:"Ninja-pdf/Ninja-FlexFlame-Outdoor-Cooking-PG304C.html"
+},
+
+{
+  brand:"Ninja",
+  model:"PG304CD",
+  title:"Ninja FlexFlame Outdoor Cooking PG304CD",
+  url:"Ninja-pdf/Ninja-FlexFlame-Outdoor-Cooking-PG304CD.html"
+},
+{
+  brand:"Ninja",
+  model:"FN100",
+  title:"Ninja FN100 Crispi Portable Cooking System",
+  url:"Ninja-pdf/Ninja-FN100-Crispi-Portable-Cooking-System.html"
+},
+{
+  brand:"Ninja",
+  model:"AG301ANZ",
+  title:"Ninja Food Grill AG301ANZ",
+  url:"Ninja-pdf/Ninja-Food-Grill-AG301ANZ.html"
+},
+{
+  brand:"Ninja",
+  model:"AG301SM",
+  title:"Ninja Food Grill AG301SM",
+  url:"Ninja-pdf/Ninja-Food-Grill-AG301SM.html"
+},
+{
+  brand:"Ninja",
+  model:"BN650SM",
+  title:"Ninja Food Processor BN650SM",
+  url:"Ninja-pdf/Ninja-Food-Processor-BN650SM.html"
+},
+{
+  brand:"Ninja",
+  model:"QB750",
+  title:"Ninja Frozen Treat & Drink Maker QB750",
+  url:"Ninja-pdf/Ninja-Frozen-Treat-Drink-Maker-QB750.html"
+},
+{
+  brand:"Ninja",
+  model:"KS500",
+  title:"Ninja Grand Kitchen KS500",
+  url:"Ninja-pdf/Ninja-Grand-Kitchen-KS500.html"
+},
+{
+  brand:"Ninja",
+  model:"OF100",
+  title:"Ninja Heater & Fire Pit OF100",
+  url:"Ninja-pdf/Ninja-Heater-&-Fire-Pit-OF100.html"
+},
+{
+  brand:"Ninja",
+  model:"SS150",
+  title:"Ninja High-Speed Blender SS150",
+  url:"Ninja-pdf/Ninja-High-Speed-Blender-SS150.html"
+},
+{
+  brand:"Ninja",
+  model:"SS150C",
+  title:"Ninja High-Speed Blender SS150C",
+  url:"Ninja-pdf/Ninja-High-Speed-Blender-SS150C.html"
+},
+{
+  brand:"Ninja",
+  model:"SS151",
+  title:"Ninja High-Speed Blender SS151",
+  url:"Ninja-pdf/Ninja-High-Speed-Blender-SS151.html"
+},
+{
+  brand:"Ninja",
+  model:"SS151C",
+  title:"Ninja High-Speed Blender SS151C",
+  url:"Ninja-pdf/Ninja-High-Speed-Blender-SS151C.html"
+},
+{
+  brand:"Ninja",
+  model:"SS151HMT",
+  title:"Ninja High-Speed Blender SS151HMT",
+  url:"Ninja-pdf/Ninja-High-Speed-Blender-SS151HMT.html"
+},
+{
+  brand:"Ninja",
+  model:"SS151HRD",
+  title:"Ninja High-Speed Blender SS151HRD",
+  url:"Ninja-pdf/Ninja-High-Speed-Blender-SS151HRD.html"
+},
+{
+  brand:"Ninja",
+  model:"SS151HSL",
+  title:"Ninja High-Speed Blender SS151HSL",
+  url:"Ninja-pdf/Ninja-High-Speed-Blender-SS151HSL.html"
+},
+{
+  brand:"Ninja",
+  model:"NC300ANZ",
+  title:"Ninja Ice Cream Maker NC300ANZ",
+  url:"Ninja-pdf/Ninja-Ice-Cream-Maker-NC300ANZ.html"
+},
+{
+  brand:"Ninja",
+  model:"NC300SM",
+  title:"Ninja Ice Cream Maker NC300SM",
+  url:"Ninja-pdf/Ninja-Ice-Cream-Maker-NC300SM.html"
+},
+{
+  brand:"Ninja",
+  model:"CT680",
+  title:"Ninja Intelli-Sense CT680",
+  url:"Ninja-pdf/Ninja-Intelli-Sense-CT680.html"
+},
+{
+  brand:"Ninja",
+  model:"CT680A",
+  title:"Ninja Intelli-Sense CT680A",
+  url:"Ninja-pdf/Ninja-Intelli-Sense-CT680A.html"
+},
+{
+  brand:"Ninja",
+  model:"CT680W",
+  title:"Ninja Intelli-Sense CT680W",
+  url:"Ninja-pdf/Ninja-Intelli-Sense-CT680W.html"
+},
+{
+  brand:"Ninja",
+  model:"CT681",
+  title:"Ninja Intelli-Sense CT681",
+  url:"Ninja-pdf/Ninja-Intelli-Sense-CT681.html"
+},
+{
+  brand:"Ninja",
+  model:"BL700",
+  title:"Ninja Kitchen BL700",
+  url:"Ninja-pdf/Ninja-Kitchen-BL700.html"
+},
+{
+  brand:"Ninja",
+  model:"BL700C",
+  title:"Ninja Kitchen BL700C",
+  url:"Ninja-pdf/Ninja-Kitchen-BL700C.html"
+},
+{
+  brand:"Ninja",
+  model:"BL700RC",
+  title:"Ninja Kitchen BL700RC",
+  url:"Ninja-pdf/Ninja-Kitchen-BL700RC.html"
+},
+{
+  brand:"Ninja",
+  model:"BL700WM",
+  title:"Ninja Kitchen BL700WM",
+  url:"Ninja-pdf/Ninja-Kitchen-BL700WM.html"
+},
+{
+  brand:"Ninja",
+  model:"BL701WM",
+  title:"Ninja Kitchen BL701WM",
+  url:"Ninja-pdf/Ninja-Kitchen-BL701WM.html"
+},
+{
+  brand:"Ninja",
+  model:"NJ602",
+  title:"Ninja Kitchen NJ602",
+  url:"Ninja-pdf/Ninja-Kitchen-NJ602.html"
+},
+{
+  brand:"Ninja",
+  model:"WC2001",
+  title:"Ninja Max Custom Hydration WC2001",
+  url:"Ninja-pdf/Ninja-Max-Custom-Hydration-WC2001.html"
+},
+{
+  brand:"Ninja",
+  model:"BL770",
+  title:"Ninja Mega Kitchen BL770",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL770.html"
+},
+{
+  brand:"Ninja",
+  model:"BL770A",
+  title:"Ninja Mega Kitchen BL770A",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL770A.html"
+},
+
+{
+  brand:"Ninja",
+  model:"BL770AMZ",
+  title:"Ninja Mega Kitchen BL770AMZ",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL770AMZ.html"
+},
+{
+  brand:"Ninja",
+  model:"BL770BRN",
+  title:"Ninja Mega Kitchen BL770BRN",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL770BRN.html"
+},
+{
+  brand:"Ninja",
+  model:"BL770C",
+  title:"Ninja Mega Kitchen BL770C",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL770C.html"
+},
+{
+  brand:"Ninja",
+  model:"BL770W",
+  title:"Ninja Mega Kitchen BL770W",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL770W.html"
+},
+{
+  brand:"Ninja",
+  model:"BL771",
+  title:"Ninja Mega Kitchen BL771",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL771.html"
+},
+{
+  brand:"Ninja",
+  model:"BL771A",
+  title:"Ninja Mega Kitchen BL771A",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL771A.html"
+},
+{
+  brand:"Ninja",
+  model:"BL771C",
+  title:"Ninja Mega Kitchen BL771C",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL771C.html"
+},
+{
+  brand:"Ninja",
+  model:"BL772",
+  title:"Ninja Mega Kitchen BL772",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL772.html"
+},
+{
+  brand:"Ninja",
+  model:"BL772Q",
+  title:"Ninja Mega Kitchen BL772Q",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL772Q.html"
+},
+{
+  brand:"Ninja",
+  model:"BL772QBK",
+  title:"Ninja Mega Kitchen BL772QBK",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL772QBK.html"
+},
+{
+  brand:"Ninja",
+  model:"BL772QCN",
+  title:"Ninja Mega Kitchen BL772QCN",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL772QCN.html"
+},
+{
+  brand:"Ninja",
+  model:"BL772QPL",
+  title:"Ninja Mega Kitchen BL772QPL",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL772QPL.html"
+},
+{
+  brand:"Ninja",
+  model:"BL772QT",
+  title:"Ninja Mega Kitchen BL772QT",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL772QT.html"
+},
+{
+  brand:"Ninja",
+  model:"BL772QWH",
+  title:"Ninja Mega Kitchen BL772QWH",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-BL772QWH.html"
+},
+{
+  brand:"Ninja",
+  model:"AF080",
+  title:"Ninja Mini Air Fryer AF080",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-AF080.html"
+},
+{
+  brand:"Ninja",
+  model:"AF080C",
+  title:"Ninja Mini Air Fryer AF080C",
+  url:"Ninja-pdf/Ninja-Mega-Kitchen-AF080C.html"
+},
+{
+  brand:"Ninja",
+  model:"OP350ANZ",
+  title:"Ninja Multi Cooker OP350ANZ",
+  url:"Ninja-pdf/Ninja-Multi-Cooker-OP350ANZ.html"
+},
+{
+  brand:"Ninja",
+  model:"OP350SM",
+  title:"Ninja Multi Cooker OP350SM",
+  url:"Ninja-pdf/Ninja-Multi-Cooker-OP350SM.html"
+},
+{
+  brand:"Ninja",
+  model:"OL550SM",
+  title:"Ninja Multi-Cooker OL550SM",
+  url:"Ninja-pdf/Ninja-Multi-Cooker-OL550SM.html"
+},
+{
+  brand:"Ninja",
+  model:"NN100",
+  title:"Ninja Nutri Bowl Duo NN100",
+  url:"Ninja-pdf/Ninja-Nutri-Bowl-Duo-NN100.html"
+},
+{
+  brand:"Ninja",
+  model:"QB3000",
+  title:"Ninja Nutri QB3000",
+  url:"Ninja-pdf/Ninja-Nutri-QB3000.html"
+},
+{
+  brand:"Ninja",
+  model:"QB3000Q",
+  title:"Ninja Nutri QB3000Q",
+  url:"Ninja-pdf/Ninja-Nutri-QB3000Q.html"
+},
+{
+  brand:"Ninja",
+  model:"QB3004",
+  title:"Ninja Nutri QB3004",
+  url:"Ninja-pdf/Ninja-Nutri-QB3004.html"
+},
+{
+  brand:"Ninja",
+  model:"QB3005",
+  title:"Ninja Nutri QB3005",
+  url:"Ninja-pdf/Ninja-Nutri-QB3005.html"
+},
+{
+  brand:"Ninja",
+  model:"BC151SM",
+  title:"Ninja Portable Blender BC151SM",
+  url:"Ninja-pdf/Ninja-Portable-Blender-BC151SM.html"
+},
+{
+  brand:"Ninja",
+  model:"SS200",
+  title:"Ninja Power Blender & Processor SS200",
+  url:"Ninja-pdf/Ninja-Power-Blender-&-Processor-SS200.html"
+},
+{
+  brand:"Ninja",
+  model:"SS200C",
+  title:"Ninja Power Blender & Processor SS200C",
+  url:"Ninja-pdf/Ninja-Power-Blender-&-Processor-SS200C.html"
+},
+{
+  brand:"Ninja",
+  model:"SS201",
+  title:"Ninja Power Blender & Processor SS201",
+  url:"Ninja-pdf/Ninja-Power-Blender-&-Processor-SS201.html"
+},
+{
+  brand:"Ninja",
+  model:"SS201C",
+  title:"Ninja Power Blender & Processor SS201C",
+  url:"Ninja-pdf/Ninja-Power-Blender-&-Processor-SS201C.html"
+},
+{
+  brand:"Ninja",
+  model:"SS300",
+  title:"Ninja Power Blender & Processor SS300",
+  url:"Ninja-pdf/Ninja-Power-Blender-&-Processor-SS300.html"
+},
+{
+  brand:"Ninja",
+  model:"SS300C",
+  title:"Ninja Power Blender & Processor SS300C",
+  url:"Ninja-pdf/Ninja-Power-Blender-&-Processor-SS300C.html"
+},
+{
+  brand:"Ninja",
+  model:"SS350",
+  title:"Ninja Power Blender & Processor SS350",
+  url:"Ninja-pdf/Ninja-Power-Blender-&-Processor-SS350.html"
+},
+{
+  brand:"Ninja",
+  model:"SS351",
+  title:"Ninja Power Blender & Processor SS351",
+  url:"Ninja-pdf/Ninja-Power-Blender-&-Processor-SS351.html"
+},
+{
+  brand:"Ninja",
+  model:"SS351C",
+  title:"Ninja Power Blender & Processor SS351C",
+  url:"Ninja-pdf/Ninja-Power-Blender-&-Processor-SS351C.html"
+},
+{
+  brand:"Ninja",
+  model:"SS351CO",
+  title:"Ninja Power Blender & Processor SS351CO",
+  url:"Ninja-pdf/Ninja-Power-Blender-&-Processor-SS351CO.html"
+},
+{
+  brand:"Ninja",
+  model:"SS351TGT",
+  title:"Ninja Power Blender & Processor SS351TGT",
+  url:"Ninja-pdf/Ninja-Power-Blender-&-Processor-SS351TGT.html"
+},
+{
+  brand:"Ninja",
+  model:"TB401",
+  title:"Ninja Power Blender + Processor TB401",
+  url:"Ninja-pdf/Ninja-Power-Blender-Processor-TB401.html"
+},
+{
+  brand:"Ninja",
+  model:"SS400",
+  title:"Ninja Power Blender SS400",
+  url:"Ninja-pdf/Ninja-Power-Blender-SS400.html"
+},
+{
+  brand:"Ninja",
+  model:"SS400C",
+  title:"Ninja Power Blender SS400C",
+  url:"Ninja-pdf/Ninja-Power-Blender-SS400C.html"
+},
+{
+  brand:"Ninja",
+  model:"SS401",
+  title:"Ninja Power Blender SS401",
+  url:"Ninja-pdf/Ninja-Power-Blender-SS401.html"
+},
+{
+  brand:"Ninja",
+  model:"SS401C",
+  title:"Ninja Power Blender SS401C",
+  url:"Ninja-pdf/Ninja-Power-Blender-SS401C.html"
+},
+{
+  brand:"Ninja",
+  model:"CC101CO",
+  title:"Ninja Power Mixer CC101CO",
+  url:"Ninja-pdf/Ninja-Power-Mixer-CC101CO.html"
+},
+{
+  brand:"Ninja",
+  model:"CC105A",
+  title:"Ninja Power Mixer CC105A",
+  url:"Ninja-pdf/Ninja-Power-Mixer-CC105A.html"
+},
+{
+  brand:"Ninja",
+  model:"CI100",
+  title:"Ninja Power Mixer CI100",
+  url:"Ninja-pdf/Ninja-Power-Mixer-CI100.html"
+},
+{
+  brand:"Ninja",
+  model:"CI101",
+  title:"Ninja Power Mixer CI101",
+  url:"Ninja-pdf/Ninja-Power-Mixer-CI101.html"
+},
+{
+  brand:"Ninja",
+  model:"CI101H",
+  title:"Ninja Power Mixer CI101H",
+  url:"Ninja-pdf/Ninja-Power-Mixer-CI101H.html"
+},
+{
+  brand:"Ninja",
+  model:"CI101HBL",
+  title:"Ninja Power Mixer CI101HBL",
+  url:"Ninja-pdf/Ninja-Power-Mixer-CI101HBL.html"
+},
+{
+  brand:"Ninja",
+  model:"CI101HRD",
+  title:"Ninja Power Mixer CI101HRD",
+  url:"Ninja-pdf/Ninja-Power-Mixer-CI101HRD.html"
+},
+{
+  brand:"Ninja",
+  model:"CI101HWH",
+  title:"Ninja Power Mixer CI101HWH",
+  url:"Ninja-pdf/Ninja-Power-Mixer-CI101HWH.html"
+},
+{
+  brand:"Ninja",
+  model:"CO101B",
+  title:"Ninja Power Nutri Duo CO101B",
+  url:"Ninja-pdf/Ninja-Power-Nutri-Duo-CO101B.html"
+},
+{
+  brand:"Ninja",
+  model:"SS100",
+  title:"Ninja Power Nutri Duo SS100",
+  url:"Ninja-pdf/Ninja-Power-Nutri-Duo-SS100.html"
+},
+{
+  brand:"Ninja",
+  model:"SS100C",
+  title:"Ninja Power Nutri Duo SS100C",
+  url:"Ninja-pdf/Ninja-Power-Nutri-Duo-SS100C.html"
+},
+{
+  brand:"Ninja",
+  model:"SS101",
+  title:"Ninja Power Nutri Duo SS101",
+  url:"Ninja-pdf/Ninja-Power-Nutri-Duo-SS101.html"
+},
+{
+  brand:"Ninja",
+  model:"SS101BRN",
+  title:"Ninja Power Nutri Duo SS101BRN",
+  url:"Ninja-pdf/Ninja-Power-Nutri-Duo-SS101BRN.html"
+},
+{
+  brand:"Ninja",
+  model:"SS101C",
+  title:"Ninja Power Nutri Duo SS101C",
+  url:"Ninja-pdf/Ninja-Power-Nutri-Duo-SS101C.html"
+},
+{
+  brand:"Ninja",
+  model:"SS101Q",
+  title:"Ninja Power Nutri Duo SS101Q",
+  url:"Ninja-pdf/Ninja-Power-Nutri-Duo-SS101Q.html"
+},
+{
+  brand:"Ninja",
+  model:"SS101QBK",
+  title:"Ninja Power Nutri Duo SS101QBK",
+  url:"Ninja-pdf/Ninja-Power-Nutri-Duo-SS101QBK.html"
+},
+{
+  brand:"Ninja",
+  model:"SS101QCP",
+  title:"Ninja Power Nutri Duo SS101QCP",
+  url:"Ninja-pdf/Ninja-Power-Nutri-Duo-SS101QCP.html"
+},
+{
+  brand:"Ninja",
+  model:"SS101QRD",
+  title:"Ninja Power Nutri Duo SS101QRD",
+  url:"Ninja-pdf/Ninja-Power-Nutri-Duo-SS101QRD.html"
+},
+{
+  brand:"Ninja",
+  model:"SS101QRG",
+  title:"Ninja Power Nutri Duo SS101QRG",
+  url:"Ninja-pdf/Ninja-Power-Nutri-Duo-SS101QRG.html"
+},
+
+{
+  brand:"Ninja",
+  model:"SS101QS",
+  title:"Ninja Power Nutri Duo SS101QS",
+  url:"Ninja-pdf/Ninja-Power-Nutri-Duo-SS101QS.html"
+},
+{
+  brand:"Ninja",
+  model:"SS101QTQ",
+  title:"Ninja Power Nutri Duo SS101QTQ",
+  url:"Ninja-pdf/Ninja-Power-Nutri-Duo-SS101QTQ.html"
+},
+{
+  brand:"Ninja",
+  model:"SS101TGT",
+  title:"Ninja Power Nutri Duo SS101TGT",
+  url:"Ninja-pdf/Ninja-Power-Nutri-Duo-SS101TGT.html"
+},
+{
+  brand:"Ninja",
+  model:"BL450ANZMN",
+  title:"Ninja Pro Blender BL450ANZMN",
+  url:"Ninja-pdf/Ninja-Pro-Blender-BL450ANZMN.html"
+},
+{
+  brand:"Ninja",
+  model:"BL450SM",
+  title:"Ninja Pro Blender BL450SM",
+  url:"Ninja-pdf/Ninja-Pro-Blender-BL450SM.html"
+},
+{
+  brand:"Ninja",
+  model:"BN800",
+  title:"Ninja Professional Plus Kitchen BN800",
+  url:"Ninja-pdf/Ninja-Professional-Plus-Kitchen-BN800.html"
+},
+{
+  brand:"Ninja",
+  model:"BN800C",
+  title:"Ninja Professional Plus Kitchen BN800C",
+  url:"Ninja-pdf/Ninja-Professional-Plus-Kitchen-BN800C.html"
+},
+{
+  brand:"Ninja",
+  model:"BN801",
+  title:"Ninja Professional Plus Kitchen BN801",
+  url:"Ninja-pdf/Ninja-Professional-Plus-Kitchen-BN801.html"
+},
+{
+  brand:"Ninja",
+  model:"BN801BBYC",
+  title:"Ninja Professional Plus Kitchen BN801BBYC",
+  url:"Ninja-pdf/Ninja-Professional-Plus-Kitchen-BN801BBYC.html"
+},
+{
+  brand:"Ninja",
+  model:"BN801BRIE",
+  title:"Ninja Professional Plus Kitchen BN801BRIE",
+  url:"Ninja-pdf/Ninja-Professional-Plus-Kitchen-BN801BRIE.html"
+},
+{
+  brand:"Ninja",
+  model:"BN801C",
+  title:"Ninja Professional Plus Kitchen BN801C",
+  url:"Ninja-pdf/Ninja-Professional-Plus-Kitchen-BN801C.html"
+},
+{
+  brand:"Ninja",
+  model:"BN801NP",
+  title:"Ninja Professional Plus Kitchen BN801NP",
+  url:"Ninja-pdf/Ninja-Professional-Plus-Kitchen-BN801NP.html"
+},
+{
+  brand:"Ninja",
+  model:"BN801WBKT",
+  title:"Ninja Professional Plus Kitchen BN801WBKT",
+  url:"Ninja-pdf/Ninja-Professional-Plus-Kitchen-BN801WBKT.html"
+},
+{
+  brand:"Ninja",
+  model:"DB805A",
+  title:"Ninja Professional Plus Kitchen DB805A",
+  url:"Ninja-pdf/Ninja-Professional-Plus-Kitchen-DB805A.html"
+},
+{
+  brand:"Ninja",
+  model:"SL200",
+  title:"Ninja SL200 DoubleStack 2-Basket Air Fryer",
+  url:"Ninja-pdf/Ninja-SL200-DoubleStack-2-Basket-Air-Fryer.html"
+},
+{
+  brand:"Ninja",
+  model:"CT650",
+  title:"Ninja Smart Screen Blender CT650",
+  url:"Ninja-pdf/Ninja-Smart-Screen-Blender-CT650.html"
+},
+{
+  brand:"Ninja",
+  model:"CT670",
+  title:"Ninja Smart Screen CT670",
+  url:"Ninja-pdf/Ninja-Smart-Screen-CT670.html"
+},
+{
+  brand:"Ninja",
+  model:"CT670V",
+  title:"Ninja Smart Screen CT670V",
+  url:"Ninja-pdf/Ninja-Smart-Screen-CT670V.html"
+},
+{
+  brand:"Ninja",
+  model:"CT671AV",
+  title:"Ninja Smart Screen CT671AV",
+  url:"Ninja-pdf/Ninja-Smart-Screen-CT671AV.html"
+},
+{
+  brand:"Ninja",
+  model:"CT672V",
+  title:"Ninja Smart Screen CT672V",
+  url:"Ninja-pdf/Ninja-Smart-Screen-CT672V.html"
+},
+{
+  brand:"Ninja",
+  model:"AG551ANZ",
+  title:"Ninja Smart XL Grill AG551ANZ",
+  url:"Ninja-pdf/Ninja-Smart-XL-Grill-AG551ANZ.html"
+},
+{
+  brand:"Ninja",
+  model:"AG551SM",
+  title:"Ninja Smart XL Grill AG551SM",
+  url:"Ninja-pdf/Ninja-Smart-XL-Grill-AG551SM.html"
+},
+{
+  brand:"Ninja",
+  model:"QB750Q",
+  title:"Ninja Storm QB750Q",
+  url:"Ninja-pdf/Ninja-Storm-QB750Q.html"
+},
+{
+  brand:"Ninja",
+  model:"QB751Q",
+  title:"Ninja Storm QB751Q",
+  url:"Ninja-pdf/Ninja-Storm-QB751Q.html"
+},
+{
+  brand:"Ninja",
+  model:"DB300",
+  title:"Ninja Tumbler Blender DB300",
+  url:"Ninja-pdf/Ninja-Tumbler-Blender-DB300.html"
+},
+{
+  brand:"Ninja",
+  model:"DB301BLBRN",
+  title:"Ninja Tumbler Blender DB301BLBRN",
+  url:"Ninja-pdf/Ninja-Tumbler-Blender-DB301BLBRN.html"
+},
+{
+  brand:"Ninja",
+  model:"DB301CBL",
+  title:"Ninja Tumbler Blender DB301CBL",
+  url:"Ninja-pdf/Ninja-Tumbler-Blender-DB301CBL.html"
+},
+{
+  brand:"Ninja",
+  model:"DB301CCY",
+  title:"Ninja Tumbler Blender DB301CCY",
+  url:"Ninja-pdf/Ninja-Tumbler-Blender-DB301CCY.html"
+},
+{
+  brand:"Ninja",
+  model:"DB301CND",
+  title:"Ninja Tumbler Blender DB301CND",
+  url:"Ninja-pdf/Ninja-Tumbler-Blender-DB301CND.html"
+},
+{
+  brand:"Ninja",
+  model:"DB301CPR",
+  title:"Ninja Tumbler Blender DB301CPR",
+  url:"Ninja-pdf/Ninja-Tumbler-Blender-DB301CPR.html"
+},
+
+
+{
+  brand:"Ninja",
+  model:"DB301CWH",
+  title:"Ninja Tumbler Blender DB301CWH",
+  url:"Ninja-pdf/Ninja-Tumbler-Blender-DB301CWH.html"
+},
+{
+  brand:"Ninja",
+  model:"DB301CYBRN",
+  title:"Ninja Tumbler Blender DB301CYBRN",
+  url:"Ninja-pdf/Ninja-Tumbler-Blender-DB301CYBRN.html"
+},
+{
+  brand:"Ninja",
+  model:"DB301GNBRN",
+  title:"Ninja Tumbler Blender DB301GNBRN",
+  url:"Ninja-pdf/Ninja-Tumbler-Blender-DB301GNBRN.html"
+},
+{
+  brand:"Ninja",
+  model:"DB301PRBRN",
+  title:"Ninja Tumbler Blender DB301PRBRN",
+  url:"Ninja-pdf/Ninja-Tumbler-Blender-DB301PRBRN.html"
+},
+{
+  brand:"Ninja",
+  model:"DB301WHBRN",
+  title:"Ninja Tumbler Blender DB301WHBRN",
+  url:"Ninja-pdf/Ninja-Tumbler-Blender-DB301WHBRN.html"
+},
+{
+  brand:"Ninja",
+  model:"OG850",
+  title:"Ninja Woodfire Outdoor Grill & Smoker OG850",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Grill-&-Smoker-OG850.html"
+},
+{
+  brand:"Ninja",
+  model:"OG851HBL",
+  title:"Ninja Woodfire Outdoor Grill & Smoker OG851HBL",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Grill-&-Smoker-OG851HBL.html"
+},
+{
+  brand:"Ninja",
+  model:"OG851HGN",
+  title:"Ninja Woodfire Outdoor Grill & Smoker OG851HGN",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Grill-&-Smoker-OG851HGN.html"
+},
+{
+  brand:"Ninja",
+  model:"OG851HGY",
+  title:"Ninja Woodfire Outdoor Grill & Smoker OG851HGY",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Grill-&-Smoker-OG851HGY.html"
+},
+{
+  brand:"Ninja",
+  model:"OG851HRD",
+  title:"Ninja Woodfire Outdoor Grill & Smoker OG851HRD",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Grill-&-Smoker-OG851HRD.html"
+},
+{
+  brand:"Ninja",
+  model:"OG900",
+  title:"Ninja Woodfire Outdoor Grill OG900",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Grill-OG900.html"
+},
+{
+  brand:"Ninja",
+  model:"OG901",
+  title:"Ninja Woodfire Outdoor Grill OG901",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Grill-OG901.html"
+},
+{
+  brand:"Ninja",
+  model:"OG901C",
+  title:"Ninja Woodfire Outdoor Grill OG901C",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Grill-OG901C.html"
+},
+{
+  brand:"Ninja",
+  model:"OG901LWV",
+  title:"Ninja Woodfire Outdoor Grill OG901LWV",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Grill-OG901LWV.html"
+},
+{
+  brand:"Ninja",
+  model:"OG951",
+  title:"Ninja Woodfire Outdoor Grill OG951",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Grill-OG951.html"
+},
+{
+  brand:"Ninja",
+  model:"OG952",
+  title:"Ninja Woodfire Outdoor Grill OG952",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Grill-OG952.html"
+},
+{
+  brand:"Ninja",
+  model:"OG953A",
+  title:"Ninja Woodfire Outdoor Grill OG953A",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Grill-OG953A.html"
+},
+{
+  brand:"Ninja",
+  model:"OO100",
+  title:"Ninja Woodfire Outdoor Oven OO100",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Oven-OO100.html"
+},
+{
+  brand:"Ninja",
+  model:"OO100C",
+  title:"Ninja Woodfire Outdoor Oven OO100C",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Oven-OO100C.html"
+},
+{
+  brand:"Ninja",
+  model:"OO101",
+  title:"Ninja Woodfire Outdoor Oven OO101",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Oven-OO101.html"
+},
+{
+  brand:"Ninja",
+  model:"OO102",
+  title:"Ninja Woodfire Outdoor Oven OO102",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Oven-OO102.html"
+},
+{
+  brand:"Ninja",
+  model:"OO102C",
+  title:"Ninja Woodfire Outdoor Oven OO102C",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Oven-OO102C.html"
+},
+{
+  brand:"Ninja",
+  model:"OO151",
+  title:"Ninja Woodfire Outdoor Oven OO151",
+  url:"Ninja-pdf/Ninja-Woodfire-Outdoor-Oven-OO151.html"
 }
+
 
 ]
